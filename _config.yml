@@ -10,7 +10,10 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
-  projects:
+  places:
+    output: true
+    permalink: /project/:slug
+  themes:
     output: true
     permalink: /project/:slug
 
@@ -35,7 +38,13 @@ defaults:
   -
     scope:
       path: ""
-      type: "projects"
+      type: "places"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: ""
+      type: "themes"
     values:
       layout: "project"
 

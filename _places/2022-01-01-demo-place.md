@@ -1,8 +1,8 @@
 ---
-title: 'Demo Project'
+title: 'Demo Place'
 subtitle: 'This is a demo'
-date: 2018-06-30 00:00:00
-description: Board is a stylish full-width masonry grid theme. Made for designers, artists, photographers and developers to show off their best work.
+date: 2022-01-01 00:00:00
+description: SEO Description
 featured_image: '/images/demo/square-05.jpg'
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Photographer
+title: Themes
 description: SEO Description
 featured_image: /images/social.jpg
 ---
@@ -9,20 +9,20 @@ featured_image: /images/social.jpg
 
 	<div class="content-wrap listing-wrap">
 
-		{% for project in site.projects reversed %}
+		{% for theme in site.themes reversed %}
 
 		<div class="listing-item">
 
-			<a class="listing-item__link" href="{{ project.url | relative_url }}">
+			<a class="listing-item__link" href="{{ theme.url | relative_url }}">
 
 				<div class="listing-item__image">
-					<img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
+					<img src="{{ theme.featured_image | relative_url }}" alt="{{ project.title }}">
 				</div>
 
 				<div class="listing-item__content listing-item__content--{{ site.data.settings.grid_settings.content_alignment }}">
 					<div class="listing-item__info">
-						<h2 class="listing-item__title">{{ project.title }}</h2>
-						<p class="listing-item__subtitle">{{ project.subtitle }}</p>
+						<h2 class="listing-item__title">{{ theme.title }}</h2>
+						<p class="listing-item__subtitle">{{ theme.subtitle }}</p>
 					</div>
 				</div>
 

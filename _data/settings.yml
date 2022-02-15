@@ -8,10 +8,14 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Projects'
-      url: '/'
+    - title: 'Places'
+      url: '/places/'
+    - title: 'Themes'
+      url: '/themes/'
     - title: 'Blog'
       url: '/blog/'
+    - title: 'Prints'
+      url: '/prints/'
     - title: 'About'
       url: '/about'
     - title: 'Contact'
