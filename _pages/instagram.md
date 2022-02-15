@@ -11,5 +11,5 @@ I am Nicholas Eager: Husband, Software Engineer, Designer, Filmmaker, Adventurer
 
 <a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g" class="button button--small">YouTube Channel</a>
 
-<a href="/contact" class="button button--small">Contact Me</a>
+<a href="{{ "/contact" | relative_url }}" class="button button--small">Contact Me</a>
 
