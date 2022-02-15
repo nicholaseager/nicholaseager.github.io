@@ -12,10 +12,10 @@ collections:
     permalink: /blog/:slug
   places:
     output: true
-    permalink: /project/:slug
+    permalink: /place/:slug
   themes:
     output: true
-    permalink: /project/:slug
+    permalink: /theme/:slug
 
 defaults:
   -
