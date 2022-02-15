@@ -30,7 +30,7 @@ grid_settings:
   content_alignment: bottom
 
 contact_settings:
-  form_action: ''
+  form_action: 'https://formspree.io/f/mvolakjj'
   confirmation_url: '/thanks'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
