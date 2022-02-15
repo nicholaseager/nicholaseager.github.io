@@ -35,3 +35,5 @@ featured_image: /images/social.jpg
 	<img src="/images/photos/ne/2021/AFADA5BA-12DB-4DA1-A07B-179102650E6B-4380-000001AEF3CD2A1B.jpg">
 	<img src="/images/photos/ne/2021/DSCF0622.jpeg">
 </div>
+
+<a href="{{ "/about" | relative_url }}" class="button button--large">Learn More</a>
