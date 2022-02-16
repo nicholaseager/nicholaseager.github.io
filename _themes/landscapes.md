@@ -2,7 +2,7 @@
 title: 'Landscapes'
 subtitle: 'Letting nature do most of the work :)'
 date: 2022-01-01 00:00:00
-description: SEO Description
+description: Landscape photography
 featured_image: '/images/photos/us/2020/DSCF2200.JPG'
 ---
 
@@ -12,7 +12,7 @@ featured_image: '/images/photos/us/2020/DSCF2200.JPG'
 	<img src="/images/photos/us/2020/77DA4F9D-D710-4C2B-8224-28EB7104C979-1302-000000969DE81EFE.jpg">
 </div>
 
-<img src="/images/photos/nz/2018/IMG_3391.jpeg">
+<img src="/images/photos/ne/2021/DSCF1844.jpeg">
 
 <div class="gallery" data-columns="2">
 	<img src="/images/photos/us/2020/IMG_3446.JPG">

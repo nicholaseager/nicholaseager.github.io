@@ -42,6 +42,19 @@ featured_image: /images/social.jpg
 
 ---
 
+# Adventure
+
+<div class="gallery" data-columns="3">
+	<img src="/images/photos/us/2020/IMG_3528.JPG">
+	<img src="/images/photos/zh/2018/IMG_1539.jpeg">
+	<img src="/images/photos/zh/2018/IMG_2253.jpeg">
+	<img src="/images/photos/vi/2021/IMG_0263.JPG">
+</div>
+
+<a href="{{ "/theme/adventure" | relative_url }}" class="button button--small">See More Adventure</a>
+
+---
+
 # Astrophotography
 
 <div class="gallery" data-columns="3">
