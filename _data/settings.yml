@@ -27,7 +27,7 @@ footer_settings:
 grid_settings:
   overlay_opacity: 0.8
   grid_spacing: 20
-  content_alignment: bottom
+  content_alignment: center
 
 contact_settings:
   form_action: 'https://formspree.io/f/mvolakjj'
@@ -51,7 +51,7 @@ social_settings:
   android_url: ''
   tumblr_url: ''
   dribbble_url: ''
-  behance_url: ''
+  behance_url: 'https://www.behance.net/nicholaseager'
   deviantart_url: ''
   github_url: ''
   reddit_url: ''
