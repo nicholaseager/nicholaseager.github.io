@@ -15,25 +15,76 @@ featured_image: /images/social.jpg
 	<img src="/images/photos/vi/2021/DSCF9547.jpeg">
 </div>
 
-<div class="gallery" data-columns="2">
+---
+
+<!-- TODO: Use front matter -->
+<!-- {% for theme in site.themes reversed %}
+
+<div class="gallery" data-columns="3">
+	{% for image in theme.images reversed %}
+
+	<img src="{{ image }}">
+
+	{% endfor %}
+</div>
+
+{% endfor %} -->
+
+# Landscapes
+
+<div class="gallery" data-columns="3">
 	<img src="/images/photos/us/2020/3275C406-EBB1-452C-9D60-DE475EC4CFD8-6804-000003F0ABCA067D.jpg">
 	<img src="/images/photos/us/2020/77DA4F9D-D710-4C2B-8224-28EB7104C979-1302-000000969DE81EFE.jpg">
 	<img src="/images/photos/us/2020/DSCF2200.JPG">
-	<img src="/images/photos/us/2020/DSCF0240.JPG">
 </div>
 
-<div class="gallery" data-columns="2">
-	<img src="/images/photos/vi/2021/8C28C6DE-5782-4820-B717-48CC595772F0.jpg">
-	<img src="/images/photos/vi/2021/707EE16B-3135-47A9-9236-3797C0A1F56F-8934-000003EAE2734E42.jpg">
-	<img src="/images/photos/vi/2021/C20F1705-02F2-4073-90C3-4917F3807467-377-000000033BEF797B.jpg">
+<a href="{{ "/theme/landscapes" | relative_url }}" class="button button--small">See More Landscapes</a>
+
+---
+
+# Astrophotography
+
+<div class="gallery" data-columns="3">
+	<img src="/images/photos/us/2020/DSCF1452.jpeg">
 	<img src="/images/photos/us/2020/DSCF2485.jpeg">
+	<img src="/images/photos/ne/2021/DSCF0575.jpeg">
+	<img src="/images/photos/ne/2021/DSCF1970.jpeg">
 </div>
+
+<a href="{{ "/theme/astrophotography" | relative_url }}" class="button button--small">See More Astrophotography</a>
+
+---
+
+# Close Up
+
+<div class="gallery" data-columns="3">
+	<img src="/images/photos/us/2020/DSCF0239.JPG">
+	<img src="/images/photos/us/2020/DSCF0240.JPG">
+	<img src="/images/photos/us/2020/43B0FFAD-F2F7-4E74-946F-722086009D77-823-00000042F9BC4D7A.jpg">
+</div>
+
+<a href="{{ "/theme/closeup" | relative_url }}" class="button button--small">See More Close Up</a>
+
+---
+
+# Even More
 
 <div class="gallery" data-columns="1">
-	<img src="/images/photos/ne/2021/DSCF2559.jpeg">
-	<img src="/images/photos/ne/2021/DSCF1970.jpeg">
-	<img src="/images/photos/ne/2021/AFADA5BA-12DB-4DA1-A07B-179102650E6B-4380-000001AEF3CD2A1B.jpg">
-	<img src="/images/photos/ne/2021/DSCF0622.jpeg">
+	<img src="/images/photos/us/2020/B6F74771-2175-47E7-AEF6-E538C8ED5B90-12240-000004648EFAADA5.jpg">
+	<img src="/images/photos/vi/2021/D24C55DD-A473-43B9-9754-D5DDC099D2F2-3716-000001C4102B9C77.jpg">
+	<img src="/images/photos/ne/2021/DSCF0929.jpeg">
 </div>
 
+Want to see other photos? Browse by <a href="{{ "/themes" | relative_url }}">themes</a> or <a href="{{ "/places" | relative_url }}">places</a> to find what you've been searching for.
+
+---
+
+# What They Say
+
+> “The best photographer and brother I could ever ask for!” - anonymous
+
+> “I see a bright, beautiful, and (most importantly) real world through his photos” - Maru Pippy
+
 <a href="{{ "/about" | relative_url }}" class="button button--large">Learn More</a>
+
+---

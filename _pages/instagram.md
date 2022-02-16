@@ -5,7 +5,7 @@ description: Nicholas Eager - explore. capture. share.
 
 ![](/images/profile.jpeg)
 
-I am Nicholas Eager: Husband, Software Engineer, Designer, Filmmaker, Adventurer, and Photographer.
+I am Nicholas Eager: Husband, Software Engineer, Runner, Designer, Filmmaker, Adventurer, and Photographer.
 
 <a href="/" class="button button--small">My Portfolio</a>
 
