@@ -95,9 +95,9 @@ Want to see other photos? Browse by <a href="{{ "/themes" | relative_url }}">the
 
 # What They Say
 
-> “The best photographer and brother I could ever ask for!” - anonymous
-
 > “I see a bright, beautiful, and (most importantly) real world through his photos” - Maru Pippy
+
+> “The best photographer and brother I could ever ask for!” - anonymous
 
 ---
 
