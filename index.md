@@ -69,10 +69,11 @@ featured_image: /images/social.jpg
 
 # Even More
 
-<div class="gallery" data-columns="1">
-	<img src="/images/photos/us/2020/B6F74771-2175-47E7-AEF6-E538C8ED5B90-12240-000004648EFAADA5.jpg">
+<div class="gallery" data-columns="4">
 	<img src="/images/photos/vi/2021/D24C55DD-A473-43B9-9754-D5DDC099D2F2-3716-000001C4102B9C77.jpg">
 	<img src="/images/photos/ne/2021/DSCF0929.jpeg">
+	<img src="/images/photos/vi/2021/DSCF6275.jpeg">
+	<img src="/images/photos/us/2020/DSCF0896.JPG">
 </div>
 
 Want to see other photos? Browse by <a href="{{ "/themes" | relative_url }}">themes</a> or <a href="{{ "/places" | relative_url }}">places</a> to find what you've been searching for.
