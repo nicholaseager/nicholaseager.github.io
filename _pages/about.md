@@ -30,4 +30,4 @@ After continuing his career in the US for a couple years, he moved to Vietnam to
 
 ## Interested?
 
-I'd love to chat about photography tips, traveling, ordering custom prints, or media inquiries. <a href="{{ "/contact" | relative_url }}">Contact</a> me and I'll get back to you as soon as I can!
+I'd love to chat about photography tips, traveling, ordering custom prints, licensing, or media inquiries. <a href="{{ "/contact" | relative_url }}">Contact</a> me and I'll get back to you as soon as I can!
