@@ -3,9 +3,13 @@ title: Hello, Instagram!
 description: Nicholas Eager - explore. capture. share.
 ---
 
-![](/images/profile.jpeg)
+<figure>
+<img src="/images/profile.jpeg">
+<br>
+<figcaption align = "center">Photo by <a href="https://www.instagram.com/pippymaru/">@pippymaru</a></figcaption>
+</figure>
 
-I am Nicholas Eager: Husband, Software Engineer, Runner, Designer, Filmmaker, Adventurer, and Photographer.
+I am Nicholas Eager: Husband, Photographer, Software Engineer, Runner, Designer, Filmmaker, and Adventurer.
 
 <a href="/" class="button button--small">My Portfolio</a>
 
@@ -13,3 +17,4 @@ I am Nicholas Eager: Husband, Software Engineer, Runner, Designer, Filmmaker, Ad
 
 <a href="{{ "/contact" | relative_url }}" class="button button--small">Contact Me</a>
 
+<a href="{{ "/about" | relative_url }}" class="button button--small">About Me</a>

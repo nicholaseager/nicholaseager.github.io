@@ -7,12 +7,12 @@ featured_image: /images/social.jpg
 
 <div class="gallery" data-columns="1">
 	<img src="/images/photos/ne/2021/DSCF1864.jpeg">
-	<img src="/images/photos/ne/2021/DSCF1896.jpeg">
+	<img src="/images/photos/vi/2021/DSCF9547.jpeg">
+	<img src="/images/photos/ne/2021/DSCF1844.jpeg">
 	<img src="/images/photos/vi/2021/DSCF5938.JPG">
 	<img src="/images/photos/ne/2021/DSCF0681.jpeg">
 	<img src="/images/photos/vi/2021/DSCF6275.jpeg">
 	<img src="/images/photos/ne/2021/DSCF0855.jpeg">
-	<img src="/images/photos/vi/2021/DSCF9547.jpeg">
 </div>
 
 ---
@@ -99,6 +99,10 @@ Want to see other photos? Browse by <a href="{{ "/themes" | relative_url }}">the
 
 > “I see a bright, beautiful, and (most importantly) real world through his photos” - Maru Pippy
 
-<a href="{{ "/about" | relative_url }}" class="button button--large">Learn More</a>
-
 ---
+
+## Interested?
+
+I'd love to chat about photography tips, traveling, ordering custom prints, or media inquiries. <a href="{{ "/contact" | relative_url }}">Contact</a> me and I'll get back to you as soon as I can!
+
+<a href="{{ "/about" | relative_url }}" class="button button--large">Learn More</a>
