@@ -2,7 +2,7 @@
 title: 'Adventure'
 subtitle: 'Getting off the beaten path'
 date: 2022-01-01 00:00:00
-description: Wildlife photography, pet photography
+description: Adventure photography
 featured_image: '/images/photos/vi/2021/IMG_2592.JPG'
 ---
 
