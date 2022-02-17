@@ -323,6 +323,7 @@
 }
 
 .image-wrap,
+.map-wrap,
 .video-wrap {
 	position: relative;
 	max-width: 90%;
@@ -359,4 +360,10 @@
 		width: 100%;
 		height: 100%;
 	}
+}
+
+.map {
+	position: relative;
+	width: 100%;
+	height: 500px;
 }
