@@ -31,7 +31,3 @@ Later on, Nicholas moved to Vietnam to marry the love of his life and continue h
 ## Interested?
 
 I'd love to chat about photography tips, traveling, ordering custom prints, licensing, or media inquiries. <a href="{{ "/contact" | relative_url }}">Contact</a> me and I'll get back to you as soon as I can!
-
----
-
-{% include donate.html %}
