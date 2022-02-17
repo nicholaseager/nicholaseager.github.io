@@ -16,6 +16,8 @@ menu_settings:
       url: '/blog/'
     # - title: 'Prints'
     #   url: '/prints/'
+    - title: 'Motion'
+      url: '/motion/'
     - title: 'About'
       url: '/about'
     - title: 'Contact'
