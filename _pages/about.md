@@ -22,11 +22,11 @@ Nicholas is a full-stack, mobile software engineer by trade, with over {{ 'now' 
 
 ---
 
-Nicholas started his journey in the world at Saint Louis, MO, USA. Being in a flat, landlocked, and corn-filled part of the world did have its benefits: The urge to see the world was unrelenting. During university, he decided to study abroad in Hong Kong, which nurtured his love for understanding cultures on the other side of the world, exploring the path less-traveled, and of course photography and filmmaking.
+Nicholas started his journey in the world at Saint Louis, MO, USA. Being in a flat, landlocked, and corn-filled part of the world did have its benefits: the urge to see the world was unrelenting. During university, he decided to study abroad in Hong Kong, which nurtured his love for understanding cultures on the other side of the world, exploring the path less-traveled, and of course photography and filmmaking.
 
 After spending a few years to focus on his career, he quit his full-time job to spend a year traveling the world. He volunteered in Nepal building a school for five months, worked on a permaculture farm in Indonesia, traveled to Japan, Iceland, China, Vietnam, and New Zealand. These initial travels further cemented his love for travel, landscape photography and story-telling.
 
-After continuing his career in the US for a couple years, he moved to Vietnam to marry the love of his life and continue his passion for photography. Nowadays, Nicholas spends his time focusing on his iOS development work at Bending Spoons and photography. Nicholas and his wife are based in Italy.
+Later on, Nicholas moved to Vietnam to marry the love of his life and continue his passion for photography. Nowadays, Nicholas and his wife are living in Italy, where he spends his time focusing on his iOS development work at Bending Spoons and photography.
 
 ## Interested?
 
