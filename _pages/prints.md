@@ -1,12 +1,16 @@
 ---
 title: Prints
-subtitle: Printing makes the moment real
-description: SEO Description
-featured_image: /images/demo/about.jpg
+subtitle: Thank you for your interest in prints by Nicholas Eager Photography.
+description: Nicholas Eager Photography Prints
 ---
 
-Thank you for your interest in prints by Nicholas Eager Photography!
+<div class="gallery" data-columns="2">
+	<img src="/images/prints/1.jpeg">
+	<img src="/images/prints/2.jpeg">
+	<img src="/images/prints/3.jpeg">
+	<img src="/images/prints/4.jpeg">
+</div>
 
-Please fill out the following form. Thank You!
+Currently I am only doing custom order prints while I set up a dedicated store. Please have the size, type, and photo in mind when filling out the following form. Thank You!
 
-<a href="#" class="button button--large">Request A Print</a>
+<a href="https://forms.gle/chBE8mDb6hEoSt987" class="button button--large">Request A Print</a>
