@@ -18,3 +18,7 @@ I am Nicholas Eager: Husband, Photographer, Software Engineer, Runner, Designer,
 <a href="{{ "/contact" | relative_url }}" class="button button--small">Contact Me</a>
 
 <a href="{{ "/about" | relative_url }}" class="button button--small">About Me</a>
+
+---
+
+{% include donate.html %}
