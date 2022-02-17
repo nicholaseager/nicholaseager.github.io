@@ -14,3 +14,7 @@ description: Nicholas Eager Photography Prints
 Currently I am only doing custom order prints while I set up a dedicated store. Please have the size, type, and photo in mind when filling out the following form. Thank You!
 
 <a href="https://forms.gle/chBE8mDb6hEoSt987" class="button button--large">Request A Print</a>
+
+---
+
+If you have any comments, questions, or other inquiries, please <a href="{{ "/contact" | relative_url }}">contact</a> me separately.
