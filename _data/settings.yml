@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: Nicholas Eager
+  site_title: Nicholas Eager Photography
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -22,7 +22,7 @@ menu_settings:
       url: '/contact'
 
 footer_settings:
-  footer_tagline: Nicholas Eager - explore. capture. share.
+  footer_tagline: Nicholas Eager Photography
 
 grid_settings:
   overlay_opacity: 0.8

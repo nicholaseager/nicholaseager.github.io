@@ -1,7 +1,7 @@
 ---
 layout: home
 title: explore. capture. share.
-description: SEO Description
+description: Nicholas Eager Photography
 featured_image: /images/social.jpg
 ---
 

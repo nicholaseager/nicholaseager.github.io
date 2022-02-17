@@ -1,6 +1,6 @@
 ---
 title: Hello, Instagram!
-description: Nicholas Eager - explore. capture. share.
+description: Nicholas Eager Photography
 ---
 
 <figure>
