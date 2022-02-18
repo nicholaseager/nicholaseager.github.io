@@ -4,7 +4,7 @@ title: Getting to Vietnam During the Pandemic
 date: 2021-01-05
 categories: travel vietnam
 description: Commenting on the insane amount of red tape my wife and I had to cut through in order to be together again
-featured_image: /images/photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7.jpg
+featured_image: https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7.jpg
 ---
 
 Right about the time the Covid-19 global pandemic started picking up steam, in May 2020, I left my job at Google in the US. I had been separated from my fiancée, Van, for nearly two years, and wanted desperately to reunite. Little did I know at the time how difficult it would be to travel to Vietnam. I knew the borders were currently closed. However, I had no idea that I would eventually have to fake a business visa, purchase an unlisted flight indirectly, and photoshop a Covid test.[^1]
@@ -64,7 +64,7 @@ After a very long night, I made it to my second, and final, quarantine hotel. Th
 
 <div class="gallery" data-columns="2">
     <img src="/images/blog/vi/2020/quarantine/leoandfelix2.PNG">
-    <img src="/images/photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7.jpg">
+    <img src="https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7.jpg">
 </div>
 
 ## Reunited

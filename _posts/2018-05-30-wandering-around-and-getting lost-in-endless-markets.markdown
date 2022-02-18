@@ -4,7 +4,7 @@ title: Wandering Around And Getting Lost in Endless Markets
 date: 2018-05-30
 categories: travel
 description: Navigating the twists and turns of the alleyways that are Southeast Asian markets.
-featured_image: /images/photos/th/2017/P1000668.jpeg
+featured_image: https://d10smlm4r150o9.cloudfront.net/photos/th/2017/P1000668.jpeg
 ---
 
 One of my favorite activities to do in a city is to randomly walk through all kinds of markets.
