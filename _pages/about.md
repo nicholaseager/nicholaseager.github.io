@@ -12,7 +12,7 @@ description: Nicholas Eager Photography
 
 ## Explore. Capture. Share.
 
-Whether it's chasing the golden hour off the coast, pitching a tent above the tree-line, or hunting clouds at the fringes of the day, you'll find Nicholas with his camera. Nicholas' adventurous spirit, mixed with a strong determination to capture a moment, is an attestation to his passion to capture the world around him and share it with others. 
+Whether it's chasing the golden hour off the coast, pitching a tent above the tree-line, or hunting clouds at the fringes of the day, you'll find Nicholas with his camera. Nicholas' adventurous spirit, mixed with a strong determination, is an attestation to his passion to capture the world around him and share it with others. 
 
 > "Capturing the most beautiful moments, and going on epic adventures, is meaningless if you can't share that beauty with others." - Nicholas Eager
 
