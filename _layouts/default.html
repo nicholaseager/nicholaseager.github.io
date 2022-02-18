@@ -50,10 +50,15 @@
 	<style>{{ site.data.settings.advanced_settings.custom_styles }}</style>
 	{% endif %}
 
-	{% if site.data.settings.advanced_settings.analytics_code %}
-	<!-- Analytics Code -->
-	{{ site.data.settings.advanced_settings.analytics_code }}
-	{% endif %}
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV277DE08"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MGV277DE08');
+    </script>
 
 	{% if site.data.settings.advanced_settings.header_js %}
 	<!-- Extra Header JS Code -->

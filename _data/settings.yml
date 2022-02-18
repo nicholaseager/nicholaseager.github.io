@@ -171,7 +171,6 @@ font_settings:
 
 advanced_settings:
   ajax_loading: false
-  analytics_code: ""
   custom_styles: ""
   header_js: ""
   footer_js: ""
