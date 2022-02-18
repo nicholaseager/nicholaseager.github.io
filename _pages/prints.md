@@ -5,10 +5,10 @@ description: Nicholas Eager Photography Prints
 ---
 
 <div class="gallery" data-columns="2">
-	<img src="/images/prints/1.jpeg">
-	<img src="/images/prints/2.jpeg">
-	<img src="/images/prints/3.jpeg">
-	<img src="/images/prints/4.jpeg">
+	<img src="https://d10smlm4r150o9.cloudfront.net/prints/1.jpeg">
+	<img src="https://d10smlm4r150o9.cloudfront.net/prints/2.jpeg">
+	<img src="https://d10smlm4r150o9.cloudfront.net/prints/3.jpeg">
+	<img src="https://d10smlm4r150o9.cloudfront.net/prints/4.jpeg">
 </div>
 
 Currently I am only doing custom order prints while I set up a dedicated store. Please have the size, type, and photo in mind when filling out the following form. Thank You!
