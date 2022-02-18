@@ -3,7 +3,7 @@ layout: post
 title:  "Exploring Northern Vietnam"
 date:   2018-12-21
 categories: travel vietnam
-description: Eating mouthwatering food at every corner, watching stunning landscapes, walking across bamboo bridges, failing to speak Vietnamese, somehow floating on concrete boats, walking past do not enter signs, trying to catch a glimpse of monkeys, getting lost on a motorbike, and enjoying great company.
+excerpt: Eating mouthwatering food at every corner, watching stunning landscapes, walking across bamboo bridges, failing to speak Vietnamese, somehow floating on concrete boats, walking past do not enter signs, trying to catch a glimpse of monkeys, getting lost on a motorbike, and enjoying great company.
 featured_image: /images/photos/vi/2018/IMG_3650.jpeg
 ---
 

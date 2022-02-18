@@ -3,7 +3,7 @@ layout: post
 title: Volcano Hunting in Indonesia by Motorbike
 date: 2018-05-30
 categories: travel
-description: Riding the open road, camping on beaches, and hiking volcanoes.
+excerpt: Riding the open road, camping on beaches, and hiking volcanoes.
 featured_image: /images/photos/id/2018/20180510171402.jpeg
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Backpacking through Southern China and Hiking Tiger Leaping Gorge
 date: 2018-11-07
 categories: travel
-description: Another phenomenal adventure full of hiking stunning landscapes, petting wild goats, crossing rickety bridges, chasing waterfalls, climbing steep ladders, picking wild fruit, dropping food with chopsticks, and enjoying the company of so many new friends.
+excerpt: Another phenomenal adventure full of hiking stunning landscapes, petting wild goats, crossing rickety bridges, chasing waterfalls, climbing steep ladders, picking wild fruit, dropping food with chopsticks, and enjoying the company of so many new friends.
 featured_image: /images/photos/zh/2018/IMG_2253.jpeg
 ---
 

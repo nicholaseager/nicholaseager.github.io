@@ -3,7 +3,7 @@ layout: post
 title: Interpreting Signs
 date: 2018-06-03
 categories: travel
-description: Finding my way around when I can't read signs or talk to anyone.
+excerpt: Finding my way around when I can't read signs or talk to anyone.
 featured_image: /images/photos/jp/2018/P1020673.jpeg
 ---
 

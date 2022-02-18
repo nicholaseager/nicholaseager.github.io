@@ -3,7 +3,7 @@ layout: post
 title:  "Working on a Permaculture Farm on A Tiny Indonesian Island"
 date:   2018-04-28
 categories: travel indonesia
-description: Understanding the methods behind permaculture, learning about all sorts of tropical plants, and helping take down the monoculture industry.
+excerpt: Understanding the methods behind permaculture, learning about all sorts of tropical plants, and helping take down the monoculture industry.
 featured_image: /images/photos/id/2018/20180429121029.jpeg
 ---
 

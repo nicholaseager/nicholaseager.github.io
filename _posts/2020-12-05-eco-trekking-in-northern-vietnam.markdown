@@ -3,7 +3,7 @@ layout: post
 title: Eco Trekking in Northern Vietnam
 date: 2020-12-05
 categories: travel vietnam
-description: Hiking through cloudy jungles, spending a few nights in a local village, going to a highland market, playing with all sorts of animals, summit Pu Ta Leng peak twice, and cook our own delicious dinner in a shelter.
+excerpt: Hiking through cloudy jungles, spending a few nights in a local village, going to a highland market, playing with all sorts of animals, summit Pu Ta Leng peak twice, and cook our own delicious dinner in a shelter.
 featured_image: /images/photos/vi/2021/0E3A2D59-EA8D-4115-84C0-E7B16BE900D4-4451-000001D0949E8BCA.jpg
 ---
 

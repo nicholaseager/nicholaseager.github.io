@@ -3,7 +3,7 @@ layout: post
 title: Final Thoughts on Over a Year of Travel
 date: 2019-01-03
 categories: travel
-description: Learning invaluable lessons, meeting incredible people, and making many mistakes.
+excerpt: Learning invaluable lessons, meeting incredible people, and making many mistakes.
 featured_image: /images/photos/nz/2018/IMG_2762.jpeg
 ---
 
