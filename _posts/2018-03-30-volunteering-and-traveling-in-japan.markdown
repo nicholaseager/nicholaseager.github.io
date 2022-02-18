@@ -3,7 +3,7 @@ layout: post
 title: Volunteering and Traveling in Japan
 date: 2018-03-30
 categories: travel japan
-excerpt: Working at a traditional guest house, meeting local Couchsurfers, hiking pilgrimage routes, biking off the beaten path, sumo wrestling, domesticated deer, and eating mouth-watering food.
+description: Working at a traditional guest house, meeting local Couchsurfers, hiking pilgrimage routes, biking off the beaten path, sumo wrestling, domesticated deer, and eating mouth-watering food.
 featured_image: /images/photos/jp/2018/20180314123526.jpeg
 ---
 

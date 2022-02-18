@@ -3,7 +3,7 @@ layout: post
 title: Rebuilding A School in Sindhupalchok, Nepal
 date: 2018-02-24
 categories: travel nepal
-excerpt: Camping in the foothills of the Himalayas for four months, helping children who deserve a better future, and becoming part of a community.
+description: Camping in the foothills of the Himalayas for four months, helping children who deserve a better future, and becoming part of a community.
 featured_image: /images/photos/ne/2018/P1010714.jpeg
 ---
 

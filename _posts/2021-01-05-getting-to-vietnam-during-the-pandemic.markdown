@@ -3,7 +3,7 @@ layout: post
 title: Getting to Vietnam During the Pandemic
 date: 2021-01-05
 categories: travel vietnam
-excerpt: Commenting on the insane amount of red tape my wife and I had to cut through in order to be together again
+description: Commenting on the insane amount of red tape my wife and I had to cut through in order to be together again
 featured_image: /images/photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7.jpg
 ---
 

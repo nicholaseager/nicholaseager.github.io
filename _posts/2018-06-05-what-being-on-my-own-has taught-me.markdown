@@ -3,7 +3,7 @@ layout: post
 title:  "What Being On My Own Has Taught Me"
 date:   2018-06-05
 categories: travel
-excerpt: Pondering how my experiences volunteering, traveling, and adventuring around the world changed me as a person.
+description: Pondering how my experiences volunteering, traveling, and adventuring around the world changed me as a person.
 featured_image: /images/photos/ne/2018/P1010716.jpeg
 ---
 

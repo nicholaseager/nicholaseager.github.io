@@ -3,7 +3,7 @@ layout: post
 title: An Icelandic Voyage
 date: 2018-10-03
 categories: travel
-excerpt: Navigating the Icelandic roads between fissures, craters, volcanoes, glaciers, and mountains.
+description: Navigating the Icelandic roads between fissures, craters, volcanoes, glaciers, and mountains.
 featured_image: /images/photos/is/2018/IMG_0847.jpeg
 ---
 

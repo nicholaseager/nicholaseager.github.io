@@ -3,7 +3,7 @@ layout: post
 title: Hiking the Great Wild Wall of China
 date: 2018-11-10
 categories: travel china
-excerpt: Straying off the beaten path, making life-long friends, and exploring the ruins of an ancient wall.
+description: Straying off the beaten path, making life-long friends, and exploring the ruins of an ancient wall.
 featured_image: /images/photos/zh/2018/IMG_1539.jpeg
 ---
 
