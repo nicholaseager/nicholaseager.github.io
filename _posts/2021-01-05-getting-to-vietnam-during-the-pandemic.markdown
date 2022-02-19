@@ -7,7 +7,7 @@ description: Commenting on the insane amount of red tape my wife and I had to cu
 featured_image: https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7.jpg
 ---
 
-Right about the time the Covid-19 global pandemic started picking up steam, in May 2020, I left my job at Google in the US. I had been separated from my fiancée, Van, for nearly two years, and wanted desperately to reunite. Little did I know at the time how difficult it would be to travel to Vietnam. I knew the borders were currently closed. However, I had no idea that I would eventually have to fake a business visa, purchase an unlisted flight indirectly, and photoshop a Covid test.[^1]
+In May 2020, right about the time the Covid-19 global pandemic started picking up steam, I left my job at Google in the US. I had been separated from my fiancée, Van, for nearly two years, and wanted desperately to reunite. Little did I know at the time how difficult it would be to travel to Vietnam. I knew the borders were currently closed. However, I had no idea that I would eventually have to fake a business visa, purchase an unlisted flight indirectly, and photoshop a Covid test.[^1]
 
 [^1]: We needed to photoshop one Covid test due to strange Vietnamese bureaucracy. The test was legitimate and negative, but my name was not the same as my passport, the name of the test was not visible, and the date was off by a day.
 
@@ -17,15 +17,15 @@ The 13 pieces of paper required for my entry into Vietnam included my flight iti
 
 ## Taking Off
 
-After spending what seemed like an eternity talking with the Korean Airlines staff in Chicago, who seemed to think there was no way I could possibly be flying to Vietnam at that time, I finally received my boarding pass. The checked and double-checked every single piece of paperwork and cross-referenced them with each other for legitimacy. What an enormous relief it was to finally be done with that. But the journey, and all of its complications, had only just begun.
+After spending what seemed like an eternity talking with the Korean Airlines staff in Chicago, who seemed to think there was no way I could possibly be flying to Vietnam at that time, I finally received my boarding pass. They checked and double-checked every single piece of paperwork and cross-referenced them with each other for legitimacy. What an enormous relief it was to finally be done with that. But the journey, and all of its complications, had only just begun.
 
 ## Landing
 
-Upon landing in Ho Chi Minh City and going through immigration, I was asked only to show my hotel reservation and my Covid-19 test. The staff did not even look at any details; they only waved passively, wanting to be done with work I assume. Korean Airlines in Chicago was thorough, but only so they wouldn't be liable. Having all of our preparations dismissed so easily back in Vietnam was a little aggravating, but again, only the beginning. One of the most notable moments after immigrating, was witnessing over 50 people in protective equipment. Not a single one of these people had the slightest idea that we (the only people in the airport at the time) were coming. After three hours of people running back-and-fourth trying to figure out what to do, I arrived at my quarantine hotel.
+Upon landing in Ho Chi Minh City and going through immigration, I was asked only to show my hotel reservation and my Covid-19 test. The staff did not even look at any details; they only waved passively, wanting to be done with work I assume. Korean Airlines in Chicago was thorough, but only so they wouldn't be liable. Having all of our preparations dismissed so easily back in Vietnam was a little aggravating, but again, only the beginning. One of the most notable moments after immigrating, was witnessing over 50 people in protective hazmat suits. Not a single one of these people had the slightest idea that we (the only people in the airport at the time) were coming. After three hours of people running back-and-fourth trying to figure out what to do, I arrived at my quarantine hotel.
 
 ## Quarantine
 
-Staying at the quarantine hotel was pretty normal, for the first two days. I had a daily routine of eating, studying Vietnamese, working on editing a video, and working out. After the second day, there was a power surge that fried my laptop. I didn't bring any books or anything else to do for the next 12 days. So I had to be a bit creative to not lose my mind.
+ As a foreigner, I was required to stay at a "government approved" hotel instead of the quarantine complex Vietnamese citizens used. The hotels seemed to be "approved" based on their relationship with the government or how much they bribed. As a foreigner, we pay nearly $1500 for two weeks of quarantine, while the complex is free. Staying at the quarantine hotel was pretty normal, for the first two days. I had a daily routine of eating, studying Vietnamese, working on editing a video, and working out. After the second day, there was a power surge that fried my laptop. I didn't bring any books or anything else to do for the next 12 days. So I had to be a bit creative to not lose my mind.
 
 <div class="gallery" data-columns="3">
     <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/calendar.jpg">
