@@ -11,6 +11,15 @@ description: Nicholas Eager Photography
 
 I am Nicholas Eager: Husband, Photographer, Software Engineer, Runner, Designer, Filmmaker, and Adventurer.
 
+---
+
+{% for post in site.posts limit:1 %}
+#### Latest Blog Post
+<span>{{ post.title }} <a href="{{ post.url | relative_url }}">Read Now</a></span>
+{% endfor %}
+
+---
+
 <a href="{{ "/prints" | relative_url }}" class="button button--small">Get Prints!</a>
 
 <a href="/" class="button button--small">My Portfolio</a>
