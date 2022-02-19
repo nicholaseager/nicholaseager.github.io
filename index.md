@@ -5,15 +5,7 @@ description: Nicholas Eager Photography
 featured_image: /images/social.jpg
 ---
 
-<div class="gallery" data-columns="1">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1864.jpeg">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/DSCF9547.jpeg">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1844.jpeg">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/DSCF5938.JPG">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0681.jpeg">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/DSCF6275.jpeg">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0855.jpeg">
-</div>
+<img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1844.jpeg">
 
 ---
 
