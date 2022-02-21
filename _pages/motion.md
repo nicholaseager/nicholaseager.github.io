@@ -1,6 +1,6 @@
 ---
 title: Motion
-subtitle: Capturing the smallest details
+subtitle: Capturing the smallest details on hikes around the world
 description: Nicholas Eager Motion
 ---
 
