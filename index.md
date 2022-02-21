@@ -7,7 +7,7 @@ featured_image: /images/social.jpg
 
 <center><h1>Adventure, Travel, Landscape Photography</h1></center>
 
-<img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1844.jpeg">
+<img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1864.jpeg">
 
 ---
 
