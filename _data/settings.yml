@@ -65,6 +65,7 @@ social_settings:
   bandcamp_url: ''
   linkedin_url: ''
   500px_url: 'https://500px.com/p/nicholaseager'
+  strava_url: 'https://www.strava.com/athletes/33260389'
 
 color_settings:
   background_color: '#ffffff'
