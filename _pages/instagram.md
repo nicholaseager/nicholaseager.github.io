@@ -15,18 +15,21 @@ I am Nicholas Eager: Husband, Photographer, Software Engineer, Runner, Designer,
 
 {% for post in site.posts limit:1 %}
 #### Latest Blog Post
-<span>{{ post.title }} <a href="{{ post.url | relative_url }}">Read Now</a></span>
+### {{ post.title }}
+{{ post.description }}
+ <a href="{{ post.url | relative_url }}">Read More</a>
 {% endfor %}
+
+---
+
+#### Latest YouTube
+{% include latest-youtube.html %}
 
 ---
 
 <a href="{{ "/prints" | relative_url }}" class="button button--small">Get Prints!</a>
 
 <a href="/" class="button button--small">My Portfolio</a>
-
-<a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g" class="button button--small">YouTube Channel</a>
-
-<a href="{{ "/contact" | relative_url }}" class="button button--small">Contact Me</a>
 
 <a href="{{ "/about" | relative_url }}" class="button button--small">About Me</a>
 
