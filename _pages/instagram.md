@@ -15,6 +15,7 @@ I am Nicholas Eager: Husband, Photographer, Software Engineer, Runner, Designer,
 
 {% for post in site.posts limit:1 %}
 #### Latest Blog Post
+<img src="{{ post.featured_image }}"/>
 ### {{ post.title }}
 {{ post.description }}
  <a href="{{ post.url | relative_url }}">Read More</a>
