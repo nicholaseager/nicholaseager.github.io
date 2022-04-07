@@ -4,11 +4,7 @@ subtitle: Husband, Photographer, Software Engineer, Runner, Designer, Filmmaker,
 description: Nicholas Eager Photography
 ---
 
-<figure>
 <img src="https://d10smlm4r150o9.cloudfront.net/profile.jpeg">
-<br>
-<figcaption align = "center">Photo by <a href="https://www.instagram.com/pippymaru/">@pippymaru</a></figcaption>
-</figure>
 
 ## Explore. Capture. Share.
 
