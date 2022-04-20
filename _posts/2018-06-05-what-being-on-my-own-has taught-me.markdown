@@ -4,7 +4,7 @@ title:  "What Being On My Own Has Taught Me"
 date:   2018-06-05
 categories: travel
 description: Pondering how my experiences volunteering, traveling, and adventuring around the world changed me as a person.
-featured_image: https://d10smlm4r150o9.cloudfront.net/photos/ne/2018/P1010716.jpeg
+featured_image: https://d10smlm4r150o9.cloudfront.net/photos/ne/2018/P1010716.jpg
 ---
 
 After eight months of being on my own out in this world, I’m bound to learn something about myself, other people, or the world in general. And I believe I have. I improved my social skills, I reordered my priorities, and I wrote more often.

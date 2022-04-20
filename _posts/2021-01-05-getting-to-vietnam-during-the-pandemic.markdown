@@ -29,19 +29,19 @@ Upon landing in Ho Chi Minh City and going through immigration, I was asked only
 
 <div class="gallery" data-columns="3">
     <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/calendar.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/menu.JPG">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/food.JPG">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/drawing.JPG">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/gift.JPG">
+    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/menu.jpg">
+    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/food.jpg">
+    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/drawing.jpg">
+    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/gift.jpg">
 </div>
 
 But to be honest, none of that mattered because Van was able to come visit me :) What an incredible feeling it was to finally be so close to Van. After seven unexpected, additional months of being apart, we were finally able to stay at least two meters apart from each other. The security staff didn't always like us seeing each other, but eventually they became accustomed to it. Each day, Van secretly brought me snacks, and I gave her gifts.
 
 <figure>
     <div class="gallery" data-columns="3">
-        <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/myview.JPG">
-        <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/herview.JPG">
-        <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/ourview.JPG">
+        <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/myview.jpg">
+        <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/herview.jpg">
+        <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/ourview.jpg">
     </div>
     <figcaption align = "center">My View v.s. Her View</figcaption>
 </figure>
@@ -49,7 +49,7 @@ But to be honest, none of that mattered because Van was able to come visit me :)
 Felix and Leo, our stuffed animal pets who traveled all the way from the US to see Van, enjoyed people watching out the window almost as much as I did. Watching folks deliver packages or pick up laundry made up most of my down time. At 05:00AM every morning on the dot, a group of retired people get up to exercise, which to them means dancing to really loud electronic music. I got in the habit of exercising at the same time.
 
 <figure>
-<img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/leoandfelix.jpeg">
+<img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/leoandfelix.jpg">
 <br>
 <figcaption align = "center">Leo and Felix: My Quarantine View</figcaption>
 </figure>
