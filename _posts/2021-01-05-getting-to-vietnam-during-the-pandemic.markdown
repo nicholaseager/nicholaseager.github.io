@@ -63,7 +63,7 @@ After falling asleep peacefully on the last night of quarantine, I awoke abruptl
 After a very long night, I made it to my second, and final, quarantine hotel. This time I was on the seventh floor, so I couldn't see Van except by telescope (a.k.a my 200mm lens). But Felix and Leo seemed to enjoy their new view. Calling Van on my phone and watching each other from a distance helped pass the time until I could escape.
 
 <div class="gallery" data-columns="2">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/leoandfelix2.PNG">
+    <img src="https://d10smlm4r150o9.cloudfront.net/blog/vi/2020/quarantine/leoandfelix2.jpg">
     <img src="https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7.jpg">
 </div>
 
