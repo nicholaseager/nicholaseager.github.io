@@ -5,7 +5,7 @@ description: Nicholas Eager Photography
 
 <img src="https://d10smlm4r150o9.cloudfront.net/profile.jpeg">
 
-I am Nicholas Eager: Husband, Photographer, Software Engineer, Runner, Designer, Filmmaker, and Adventurer.
+I am an international adventure photographer and film-maker. I specialize in documenting all of the tiny, special moments from off the beaten path adventures around the world.
 
 ---
 
@@ -24,7 +24,7 @@ I am Nicholas Eager: Husband, Photographer, Software Engineer, Runner, Designer,
 
 ---
 
-<a href="{{ "/prints" | relative_url }}" class="button button--small">Get Prints!</a>
+<a href="{{ "/testimonials" | relative_url }}" class="button button--small">Testimonials</a>
 
 <a href="/" class="button button--small">My Portfolio</a>
 
