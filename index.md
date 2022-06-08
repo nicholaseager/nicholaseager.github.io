@@ -97,9 +97,11 @@ Want to see other photos? Browse by <a href="{{ "/themes" | relative_url }}">the
 
 # What They Say
 
-> “I see a bright, beautiful, and (most importantly) real world through his photos” - Maru Pippy
+"Beautifully edited. Loved your choice for music, minimum dialog. It was akin to hiking with you." - <a href="https://www.youtube.com/watch?v=I2I4EySGYEU&lc=UgwWpmod0Qe_xrYgbtd4AaABAg" target="_blank">Lini Golden-Rudy</a>
 
-> “The best photographer and brother I could ever ask for!” - anonymous
+"There were choices you made which I found admirable. Your music picks and discretionary sparse inclusions left us to hear the sounds (beautifully recorded) of the environs. You kindly spared us chatter, and we heard the ambience of those villages lilting with the shimmer of the bells the donkeys wear and the play of children. You also spared us a narrative, and I find that rare and peaceful. I loved that you touched all the prayer wheels. 👍💐" - <a href="https://www.youtube.com/watch?v=I2I4EySGYEU&lc=UgwEC8RKkWgGSvRCYWh4AaABAg.9bW-ue2UgdI9b_LsKthlEa" target="_blank">Peter Chabanowich</a>
+
+<a href="{{ "/testimonials" | relative_url }}" class="button button--small">See More Testimonials</a>
 
 ---
 
