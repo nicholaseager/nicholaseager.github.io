@@ -24,9 +24,9 @@ After spending a few years to focus on his career, he quit his full-time job to 
 
 Later on, Nicholas moved to Vietnam to marry the love of his life and continue his passion for photography. Nowadays, Nicholas and his wife are living in Italy, where he spends his time focusing on his iOS development work at Bending Spoons and photography.
 
-## Interested?
+## Ready To Work Together?
 
-I'd love to chat about photography tips, traveling, ordering custom prints, licensing, or media inquiries. <a href="{{ "/contact" | relative_url }}">Contact</a> me and I'll get back to you as soon as I can!
+<a href="{{ "/contact" | relative_url }}" class="button button--large">Get In Touch</a>
 
 <br><br>
 
