@@ -3,6 +3,10 @@ title: Testimonials
 description: Nicholas Eager Testimonials
 ---
 
+"Nicholas Eager’s photos help us capture the beauty and rich culture of our remote Himalayan valley along the Manaslu Circuit, Nepal. With his photos, we can tell our story and succeed in our mission to create a brighter and more sustainable future for our home, the Tsum-Nubri Valley. Nicholas, thu-chi che and thank you!" - Tenzing from <a href="https://www.himalayantahrtreks.com/" target="_blank">Himalayan Tahr Treks</a>
+
+---
+
 "Beautifully edited. Loved your choice for music, minimum dialog. It was akin to hiking with you." - <a href="https://www.youtube.com/watch?v=I2I4EySGYEU&lc=UgwWpmod0Qe_xrYgbtd4AaABAg" target="_blank">Lini Golden-Rudy</a>
 
 ---
