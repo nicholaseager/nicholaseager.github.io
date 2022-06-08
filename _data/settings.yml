@@ -12,7 +12,7 @@ menu_settings:
       url: '/places'
     - title: 'Themes'
       url: '/themes'
-    - title: 'Motion'
+    - title: 'Film'
       url: '/motion'
     - title: 'Blog'
       url: '/blog'
