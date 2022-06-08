@@ -9,6 +9,10 @@ featured_image: /images/social.jpg
 
 <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1864.jpg">
 
+I am an international adventure photographer and film-maker. I specialize in documenting all of the tiny, special moments from off-the-beaten path adventures around the world.
+
+<a href="{{ "/about" | relative_url }}" class="button button--small">Learn More</a>
+
 ---
 
 <!-- TODO: Use front matter -->
@@ -107,4 +111,4 @@ Want to see other photos? Browse by <a href="{{ "/themes" | relative_url }}">the
 
 ## Ready To Work Together?
 
-<a href="{{ "/about" | relative_url }}" class="button button--large">Get In Touch</a>
+<a href="{{ "/contact" | relative_url }}" class="button button--large">Get In Touch</a>
