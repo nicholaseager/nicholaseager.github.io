@@ -25,25 +25,25 @@ Running up though coastal cliffs, down to pastel-colored villages, and up again 
 
 You can find the full route on AllTrails <a href="https://www.alltrails.com/explore/recording/cinque-terre-c95fd52" target="_blank">here</a>.
 
-## Best Time To Go
+## Best Time to Go
 
 Go from June to August if you want great weather. Go in September or October if you want less crowds. During the fall and winter, sometimes the trails are not accessible due to very heavy rainfall.
 
-## How To Get To The Trail
+## How to Get to The Trail
 
 You can take a train from Milan or Genoa, depending on where you are coming from. Milan has a well-connected international airport. But you would have to take one train from the airport into the city center, and then another train to Cinque Terre. If you fly into Genoa, you can take the train towards La Spezia, and then get off at any of the five villages. Because we were already in Milan Center, we booked a direct train to Levanto with <a href="https://www.trenitalia.com/en.html" target="_blank">Trenitalia</a>. 
 
-## Accommodation
+## Where You Should Stay
 
 ![](https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/camping.jpg)
 
 If you want to beat the crowds, you’ll have to get up early. We decided to spend the night on the coast to help us do this. If you’d like to save money, camping (really just glamping in a park) is an option here. Wild camping is not allowed within Cinque Terre, so we stayed in a <a href="https://goo.gl/maps/gJXdH4jbPXgD99gJA" target="_blank">campsite</a> just outside, in Levanto. Staying in Monterosso, or another coastal town is also an option if you prefer. I’d recommend Monterosso if you want to run Southeast along the coast and visit all the cities in one direction. Cornigilia and Manarola if you want something more quiet.
 
-## Logistics
+## How to Plan Your Run
 
 Since I was starting in Levanto and wanted to make it to La Spezia, I woke up at 4am. Crowds of people start to get out on the popular trails (Monterosso to Vernazza to Cornigilia) around 9am. Pro tip: these popular trails have toll booths where you need to pay a fee. However, they aren’t occupied before 9am. So basically, make it to Cornigilia before 9am to beat the crowds and the fees. 
 
-## Navigation
+## How to Navigate on the Trail
 
 <div class="gallery" data-columns="2">
     <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4853.jpg">
@@ -54,7 +54,7 @@ Since I was starting in Levanto and wanted to make it to La Spezia, I woke up at
 
 The trails are really well-marked. You have signs to the next city at most intersections. The trails are also blazed with symbols and numbers. In the case that you get lost, you can use <a href="https://maps.me/" target="_blank">maps.me</a> to find your way. 
 
-## Water and Food
+## Finding Water and Bringing Food
 
 ![](https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4809.jpg)
 
