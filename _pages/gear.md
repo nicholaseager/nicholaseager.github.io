@@ -1,7 +1,17 @@
 ---
-title: Hiking Photography Gear
-subtitle: Gear I choose to use on a daily basis
+layout: default
 ---
+
+<section class="intro">
+
+	<div class="wrap">
+
+		<h1>Hiking Photography Gear</h1>
+		<br><br>
+
+	</div>
+
+</section>
 
 <section class="listing">
 
