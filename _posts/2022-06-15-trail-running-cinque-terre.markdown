@@ -54,11 +54,9 @@ Water is easy to come by if you don’t mind drinking tap water. All of the citi
 
 ## Cost 
 
-| Item       | Cost |
-|------------|------|
-| Camping    | €29  |
-| Train      | €5   |
-| Food       | €12  |
+* Camping for one night - €21
+* Train from La Spezia to Levanto - €5
+* Food during the run - €12
 
 ## Conclusion
 
