@@ -8,12 +8,12 @@ header_settings:
 
 menu_settings:
   menu_items:
+    - title: 'Film'
+      url: '/motion'
     - title: 'Places'
       url: '/places'
     - title: 'Themes'
       url: '/themes'
-    - title: 'Film'
-      url: '/motion'
     - title: 'Blog'
       url: '/blog'
     - title: 'Prints'
