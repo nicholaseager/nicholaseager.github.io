@@ -8,7 +8,7 @@ featured_image: https://d10smlm4r150o9.cloudfront.net/photos/it/2022/DSCF0140.jp
 
 ## Our Mistakes in Cinque Terre
 
-When we arrived in Cinque Terre at 10am on Monday morning, the sun was beating down, people were queuing in stop-and-go traffic on a tiny section of coastal trail on the way to Vernazza. Being a trail runner, this was an absolute nightmare. But the trails were still beautiful and had awakened the trail runner within me. So, I was determined to figure out a way to enjoy a run on these popular trails. Hint: I hit the trails early and ran fast. If you’d like to do the same, keep reading!
+When we arrived in Cinque Terre at 10am on Monday morning, the sun was beating down, people were queuing in stop-and-go traffic on a tiny section of coastal trail on the way to Vernazza. It was really not how you want to spend your time on a trail run. But the trails were still beautiful and had awakened the trail runner within me. So, I was determined to figure out a way to enjoy a run on these popular trails. Hint: I hit the trails early and ran fast. If you’d like to do the same, keep reading!
 
 ## Overview / Route
 
