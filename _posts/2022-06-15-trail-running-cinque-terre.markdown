@@ -19,11 +19,19 @@ When we arrived in Monterosso at 10am on Monday morning, the sun was beating dow
     <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4836.jpg">
 </div>
 
-Running up though coastal cliffs, down to pastel colored villages, and up again through terraced vineyards is an experience you won't soon forget. My route was 30.54km with 1911m elevation gain from Levanto, Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore, to La Spezia. I took some extra time and visited all the cities, clocking in five hours. If I had more time, I would have gone all the way down the peninsula to Portovenere. I took the train back from La Spezia to Levanto.
+Running up though coastal cliffs, down to pastel-colored villages, and up again through terraced vineyards is an experience you won't soon forget. My route in Cinque Terre was 30.54km with 1911m elevation gain from Levanto, Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore, to La Spezia. I took some extra time and visited all the cities, clocking in five hours. If I had more time, I would have gone all the way down the peninsula to Portovenere. I took the train back from La Spezia to Levanto.
 
 ![](https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/alltrails.jpg)
 
 You can find the full route on AllTrails <a href="https://www.alltrails.com/explore/recording/cinque-terre-c95fd52" target="_blank">here</a>.
+
+## Best Time To Go
+
+Go from June to August if you want great weather. Go in September or October if you want less crowds. During the fall and winter, sometimes the trails are not accessible due to very heavy rainfall.
+
+## How To Get To The Trail
+
+You can take a train from Milan or Genoa, depending on where you are coming from. Milan has a well-connected international airport. But you would have to take one train from the airport into the city center, and then another train to Cinque Terre. If you fly into Genoa, you can take the train towards La Spezia, and then get off at any of the five villages. Because we were already in Milan Center, we booked a direct train to Levanto with <a href="https://www.trenitalia.com/en.html" target="_blank">Trenitalia</a>. 
 
 ## Accommodation
 
@@ -55,9 +63,10 @@ Water is easy to come by if you don’t mind drinking tap water. All of the citi
 ## Cost 
 
 * Camping for one night - €21
+* Train from Milan to Levanto - €26
 * Train from La Spezia to Levanto - €5
 * Food during the run - €12
 
-## Conclusion
+## Final Thoughts on Trail Running in Cinque Terre
 
-In all 30.54km, I didn’t see a single other person on the trail. With a little more planning and getting up at the crack of dawn, you’ll be rewarded with a peaceful sunrise void of crowds and a trail run in Italy like no other. You can make the route longer or shorter by not taking the train back, or by going all the way down to Portovenere. Just make sure to get past Corniglia before 9am. Thanks for reading 😊
+Cinque Terre is a beautiful coastal paradise with pastel-colored villages, terraced vineyards, and delicious food. If you want to trail run or even hike here, spend the night and go early in the morning. In all 30.54km, I didn’t see a single other person on the trail. With a little more planning and getting up at the crack of dawn, you’ll be rewarded with a peaceful sunrise void of crowds and a trail run in Italy like no other. You can make the route longer or shorter by not taking the train back, or by going all the way down to Portovenere. Just make sure to get past Corniglia before 9am. Thanks for reading 😊
