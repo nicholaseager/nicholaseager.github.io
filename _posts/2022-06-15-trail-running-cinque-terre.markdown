@@ -37,7 +37,7 @@ You can take a train from Milan or Genoa, depending on where you are coming from
 
 ![](https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/camping.jpg)
 
-If you want to beat the crowds, you’ll have to get up early. We decided to spend the night on the coast to help us do this. If you’d like to save money, camping (really just glamping in a be park) is an option here. Wild camping is not allowed within Cinque Terre, so we stayed in a <a href="https://goo.gl/maps/gJXdH4jbPXgD99gJA" target="_blank">campsite</a> just outside, in Levanto. Staying in Monterosso, or another coastal town is also an option if you prefer. I’d recommend Monterosso if you want to run Southeast along the coast and visit all the cities in one direction. Cornigilia and Manarola if you want something more quiet.
+If you want to beat the crowds, you’ll have to get up early. We decided to spend the night on the coast to help us do this. If you’d like to save money, camping (really just glamping in a park) is an option here. Wild camping is not allowed within Cinque Terre, so we stayed in a <a href="https://goo.gl/maps/gJXdH4jbPXgD99gJA" target="_blank">campsite</a> just outside, in Levanto. Staying in Monterosso, or another coastal town is also an option if you prefer. I’d recommend Monterosso if you want to run Southeast along the coast and visit all the cities in one direction. Cornigilia and Manarola if you want something more quiet.
 
 ## Logistics
 
