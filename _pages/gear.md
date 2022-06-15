@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Gear
+title: Hiking Photography Gear
+subtitle: Gear I choose to use on a daily basis
 ---
 
 <section class="listing">
@@ -31,5 +31,10 @@ title: Gear
 		{% endfor %}
 
 	</div>
+
+    <br><br><br>
+    <p>
+    Disclaimer: Some of these links are affiliate links. Any purchase made through the links helps support my channel and allows me to continue making videos, at no cost to you. Thank you for the support!
+    </p>
 
 </section>
