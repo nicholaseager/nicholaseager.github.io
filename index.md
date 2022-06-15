@@ -1,15 +1,15 @@
 ---
 layout: home
-title: Adventure Photography and Film
-description: Nicholas Eager Adventure Photography and Film
+title: Adventure Film and Photography
+description: Nicholas Eager Adventure Film and Photography
 featured_image: /images/social.jpg
 ---
 
-<center><h1>Adventure Photography and Film</h1></center>
+<center><h1>Adventure Film and Photography</h1></center>
 
 <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1864.jpg">
 
-I am an international adventure photographer and film-maker. I specialize in documenting all of the tiny, special moments from off the beaten path adventures around the world.
+I am an international adventure film-maker and photographer. I specialize in documenting all of the tiny, special moments from off the beaten path adventures around the world.
 
 <a href="{{ "/about" | relative_url }}" class="button button--small">Learn More</a>
 
