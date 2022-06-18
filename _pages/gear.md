@@ -44,7 +44,7 @@ layout: default
 
     <br><br><br>
     <p>
-    Disclaimer: Some of these links are affiliate links. Any purchase made through the links helps support my channel and allows me to continue making videos, at no cost to you. Thank you for the support!
+    Disclaimer: Some of the links above are affiliate links. Buying anything through these links doesn’t cost you anything extra, but does supports me. Anything I link, I genuinely like and use, and recommend you try them out for yourself. Thank you for the support!
     </p>
 
 </section>
