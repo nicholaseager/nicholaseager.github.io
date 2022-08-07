@@ -67,7 +67,7 @@ You will need to find transportation to <a href="https://goo.gl/maps/P6yo7uXeNqE
 
 ## When Should You Go?
 
-March to May and October to November are the most popular for trekking. However, going in the shoulder season or off season has its benefits. We went in December and couldn't have been happier because we had clear skies and few people but you might still encounter deep snow in Larka Pass.
+March to May and October to November are the most popular for trekking the Manaslu Circuit. However, going in the shoulder season or off season has its benefits. We went in December and couldn't have been happier because we had clear skies and few people but you might still encounter deep snow in Larka Pass.
 
 ## 21 Day Itinerary
 
@@ -90,7 +90,7 @@ March to May and October to November are the most popular for trekking. However,
 
 ## Cost
 
-This largely depends on your preferred trekking style and what you eat :) You can make this as cheap or expensive as you want, but there are a few required costs.
+The cost of trekking the Manaslu Circuit largely depends on your preferred trekking style and what you eat :) You can make this as cheap or expensive as you want, but there are a few required costs.
 
 #### Daily
 
