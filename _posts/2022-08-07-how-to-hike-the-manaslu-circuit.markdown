@@ -4,6 +4,8 @@ title: 21 Days on the Manaslu Circuit
 date: 2022-08-07
 description: How to hike the Manaslu Circuit Trek, our favorite highlights, and more.
 featured_image: https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0855.jpg
+redirect_from:
+    - /p/manaslu
 ---
 
 ## Manaslu Circuit Trekking
@@ -87,6 +89,8 @@ March to May and October to November are the most popular for trekking the Manas
 | 15    | Samagaon to Samdo                                      | (8km / 350m)           |
 | 16    | Samdo to Larka Pass Viewpoint to Samdo                 | (22km / 2000m)         |
 | 17-21 | Return from Samdo to Sotikhola                         | (102km / 4200m)        |
+
+Your Manaslu Circuit itinerary can be as flexible as you want. There are tons of side trips you can choose from, or you can choose to rest somewhere for an extra few days if your schedule allows. Due to deep (1m+) snow in Larka pass, we decided to turn back at the end instead of continuing to Bhimtang and finishing in Syange. Even so it was such an amazing experience and I hope yours will be too!
 
 ## Cost
 
