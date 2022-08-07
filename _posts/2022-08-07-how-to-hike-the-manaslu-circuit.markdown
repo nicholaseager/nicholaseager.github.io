@@ -120,7 +120,7 @@ The above costs are of course without a guide or porter, the costs of which vary
 This also largely depends on your style of trekking, when you go, and if you decide to hire a tour company. Some key takeaways:
 - Because you will be eating and sleeping in tea houses, you do not need to bring sleeping or cooking gear.
 - Even in winter, you do not need a sleeping bag because the tea house owners are happy to give you an extra blanket. However, if you get cold easily, you can bring one anyway.
-- If decide to hire a tour company, your list will most likely be shorter. You should discuss with them about what is necessary.
+- If you decide to hire a tour company, your list will most likely be shorter. You should discuss with them about what is necessary.
 
 ## What I Brought
 
