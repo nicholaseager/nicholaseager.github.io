@@ -115,13 +115,26 @@ By staying in simple housing and eating Dal Bhat everyday, we were able to keep 
 
 The above costs are of course without a guide or porter, the costs of which vary based on your needs. We spent maybe $500 for a freelance guide and $180 for a porter.
 
+## What Should You Bring?
+
+This also largely depends on your style of trekking, when you go, and if you decide to hire a tour company. Some key takeaways:
+- Because you will be eating and sleeping in tea houses, you do not need to bring sleeping or cooking gear.
+- Even in winter, you do not need a sleeping bag because the tea house owners are happy to give you an extra blanket. However, if you get cold easily, you can bring one anyway.
+- If decide to hire a tour company, your list will most likely be shorter. You should discuss with them about what is necessary.
+
+## What I Brought
+
+I brought a 60L backpack, a 3L water bladder, first aid (mainly just antibacterial, antiseptic, and bandaids), water proof boots, two sets of hiking clothes, one set of swimming/running clothes, a sleeping bag, a sun hat, two down jackets (-10°C each), thermal underwear, three pairs of merino wool socks, flip flops for tea house exploring, toiletries, extra cash, wind proof gloves, a headlamp, a journal, and tons of snacks. I also brought all my <a href="{{ "/gear" | relative_url }}">photography gear</a>.
+
+I did not use the sleeping bag except once because the tea house owners were always kind enough to give us extra blankets. But we went in winter when there weren’t that many other folks. I’d really recommend first aid because you never know when you might find someone who needs it (we treated a lumber worker’s serious finger wound close to Sereng Gumba, and my own little cuts here and there). I would have also brought my own water purification for use at lower elevations. 
+
 ## Should You Hire A Guide?
 
 If you want to trek in the Manaslu Conservation Area, you are required to find a guide.  You can either find a freelance guide before reaching Jagat (the first police checkpoint), find a guide in Kathmandu or Pokhara, or hire a tour company to do all the things for you. I'd recommend reaching out to Tenzing at <a href="https://www.himalayantahrtreks.com/" target="_blank">Himalayan Tahr Treks</a> if you have more questions.
 
 ## Want More?
 
-Please <a href="{{ "/contact" | relative_url }}">contact</a> me if you want to ask questions, I am happy to help. Check out a video that I made about our entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)
+Please <a href="{{ "/contact" | relative_url }}">contact</a> me if you want to ask questions; I am happy to help. Check out a video that I made about our entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I2I4EySGYEU?autoplay=1&mute=1" frameborder="0" allow="autoplay"></iframe>
 
