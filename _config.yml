@@ -48,6 +48,18 @@ defaults:
     values:
       layout: "project"
 
+author:
+  name: Nicholas Eager
+  image: https://d10smlm4r150o9.cloudfront.net/profile.jpeg
+twitter:
+  username: eager_photo
+  card: summary_large_image
+social:
+  name: Nicholas Eager
+  links:
+    - https://www.instagram.com/nicholas.eager/
+    - https://www.youtube.com/c/NicholasEager
+
 markdown: kramdown
 
 kramdown:
@@ -61,6 +73,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 paginate: 10
 paginate_path: "/blog/page:num/"
