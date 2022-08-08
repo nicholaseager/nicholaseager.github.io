@@ -3,7 +3,7 @@ title: 'Minimalism'
 subtitle: 'Photography is not about trying to capture something. Instead it is about what we try to not capture that makes a photograph great.'
 date: 2022-01-01 00:00:00
 description: Minimalist photography
-featured_image: 'https://d10smlm4r150o9.cloudfront.net/photos/us/2020/IMG_4340.jpg'
+image: 'https://d10smlm4r150o9.cloudfront.net/photos/us/2020/IMG_4340.jpg'
 ---
 
 <img src="https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/DSCF7561.jpg">

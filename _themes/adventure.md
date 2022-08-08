@@ -3,7 +3,7 @@ title: 'Adventure'
 subtitle: 'Getting off the beaten path'
 date: 2022-01-01 00:00:00
 description: Adventure photography
-featured_image: 'https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/IMG_2592.jpg'
+image: 'https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/IMG_2592.jpg'
 ---
 
 <img src="https://d10smlm4r150o9.cloudfront.net/photos/zh/2018/IMG_2253.jpg">

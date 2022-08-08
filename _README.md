@@ -139,7 +139,7 @@ This is your website home page. You can edit some details in the Front Matter at
 
 `title` – this sets the page title, which shows up in the browser's title bar and on search engine results, social shares etc.
 `description` – this sets the page meta description, which shows up on search engine results, social shares etc.
-`featured_image` – this sets the page meta image, which shows up on social shares.
+`image` – this sets the page meta image, which shows up on social shares.
 
 ### The blog page – `/blog/index.html`
 

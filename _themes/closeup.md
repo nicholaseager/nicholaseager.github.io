@@ -3,7 +3,7 @@ title: 'Close Ups'
 subtitle: 'Finding the smallest and typically unnoticed details of our world'
 date: 2022-01-01 00:00:00
 description: Macro photography
-featured_image: 'https://d10smlm4r150o9.cloudfront.net/photos/us/2020/DSCF0240.jpg'
+image: 'https://d10smlm4r150o9.cloudfront.net/photos/us/2020/DSCF0240.jpg'
 ---
 
 <img src="https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/DSCF7561.jpg">

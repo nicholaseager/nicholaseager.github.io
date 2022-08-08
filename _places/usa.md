@@ -3,7 +3,7 @@ title: 'United States'
 subtitle: 'Seemingly infinite land and beauty'
 date: 2022-01-01 00:00:00
 description: America photography
-featured_image: 'https://d10smlm4r150o9.cloudfront.net/photos/us/2020/DSCF2129.jpg'
+image: 'https://d10smlm4r150o9.cloudfront.net/photos/us/2020/DSCF2129.jpg'
 ---
 
 <div class="gallery" data-columns="3">

@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Photographer
-description: SEO Description
-featured_image: /images/social.jpg
+image: /images/social.jpg
 ---
 
 <section class="listing">
@@ -16,7 +15,7 @@ featured_image: /images/social.jpg
 			<a class="listing-item__link" href="{{ place.url | relative_url }}">
 
 				<div class="listing-item__image">
-					<img src="{{ place.featured_image | relative_url }}" alt="{{ place.title }}">
+					<img src="{{ place.image | relative_url }}" alt="{{ place.title }}">
 				</div>
 
 				<div class="listing-item__content listing-item__content--{{ site.data.settings.grid_settings.content_alignment }}">

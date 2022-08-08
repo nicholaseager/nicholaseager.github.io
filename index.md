@@ -2,7 +2,7 @@
 layout: home
 title: Adventure Film and Photography
 description: Nicholas Eager Adventure Film and Photography
-featured_image: /images/social.jpg
+image: /images/social.jpg
 ---
 
 <center><h1>Adventure Film and Photography</h1></center>

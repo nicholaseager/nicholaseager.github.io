@@ -4,7 +4,7 @@ title: Riding Public Buses in Nepal
 date: 2018-03-06
 categories: travel nepal
 description: Fearing for my life on the unmaintained, rocky, treacherous paths of Nepal's rural roads.
-featured_image: https://d10smlm4r150o9.cloudfront.net/photos/ne/2018/IMG_20171220_073013588_HDR.jpg
+image: https://d10smlm4r150o9.cloudfront.net/photos/ne/2018/IMG_20171220_073013588_HDR.jpg
 ---
 
 Gripping the edge of my seat with all of my might and staring out of the window at a cliff just inches away from our tires, I hung on as we sped forward on the unmaintained, rocky, treacherous paths of Nepal's rural roads.
