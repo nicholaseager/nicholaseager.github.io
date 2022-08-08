@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 21 Days on the Manaslu Circuit
+title: How to Hike the Manaslu Circuit
 date: 2022-08-07
-description: How to hike the Manaslu Circuit Trek, our favorite highlights, and more.
+description: 21 Days on the Manaslu Circuit with our favorite highlights, and more.
 image: https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0855.jpg
 redirect_from:
     - /p/manaslu
