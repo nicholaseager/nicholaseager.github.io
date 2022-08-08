@@ -17,8 +17,9 @@
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image | relative_url }}">
+	<title>{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}</title>
 	
-	{% seo %}
+	{% seo title=false %}
 
 	{% if site.data.settings.font_settings.font_embed %}
 	<!-- Font Embed Code -->
