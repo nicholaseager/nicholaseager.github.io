@@ -126,6 +126,10 @@ This also largely depends on your style of trekking, when you go, and if you dec
 - Even in winter, you do not need a sleeping bag because the tea house owners are happy to give you an extra blanket. However, if you get cold easily, you can bring one anyway.
 - If you decide to hire a tour company, your list will most likely be shorter. You should discuss with them about what is necessary.
 
+##### If you'd like to bring something to give to children along your route
+
+I think it helps the children if you give them something useful or interesting. For example, you could bring school supplies like notebooks and pens, which are uncommon in more remote areas. Nothing beats the smile on a child's face when they use the pen to draw in their new notebook. You could also bring simple medical supplies like bandaids, antiseptic, and antibacterial cream. You never know who might need it (see below). Try not to bring chocolate, candy, or money because this tends to make kids approach and ask every trekker for them instead of going to school.
+
 ## What I Brought
 
 I brought a 60L backpack, a 3L water bladder, first aid (mainly just antibacterial, antiseptic, and bandaids), water proof boots, two sets of hiking clothes, one set of swimming/running clothes, a sleeping bag, a sun hat, two down jackets (-10°C each), thermal underwear, three pairs of merino wool socks, flip flops for tea house exploring, toiletries, extra cash, wind proof gloves, a headlamp, a journal, and tons of snacks. I also brought all my <a href="{{ "/gear" | relative_url }}">photography gear</a>.
