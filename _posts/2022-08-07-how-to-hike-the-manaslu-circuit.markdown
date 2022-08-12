@@ -12,6 +12,16 @@ redirect_from:
 
 Trekking in Nepal is undoubtedly a lifetime experience you won't soon forget. Any route you choose is full of its own suprises and wonders. While some of the more popular treks are full of breathtaking views and convenient services, the lesser-known ones are sparsely populated, more authentic, and still come with some amazing views. We chose to trek in Manaslu during the shoulder season (December) because we wanted to avoid tourists and see a more authentic Nepal and Tibet. If you feel the same and want to know more, keep reading :)
 
+### Table of Contents
+1. [Our Favorite Highlights](#our-favorite-highlights)
+2. [How To Get There](#how-to-get-there)
+3. [When You Should Go](#when-should-you-go)
+4. [Itinerary](#21-day-itinerary)
+5. [Cost](#cost)
+6. [What You Should Bring](#what-should-you-bring)
+7. [Should You Hire A Guide?](#should-you-hire-a-guide)
+8. [Conclusion](#want-more)
+
 ## Our Favorite Highlights
 
 Every part of our 21 days was breathtaking, and there are infinite possibilities to add side trips to your itinerary, but here is what stands out most for us.
@@ -130,7 +140,7 @@ This also largely depends on your style of trekking, when you go, and if you dec
 
 I think it helps the children if you give them something useful or interesting. For example, you could bring school supplies like notebooks and pens, which are uncommon in more remote areas. Nothing beats the smile on a child's face when they use the pen to draw in their new notebook. You could also bring simple medical supplies like bandaids, antiseptic, and antibacterial cream. You never know who might need it (see below). Try not to bring chocolate, candy, or money because this tends to make kids approach and ask every trekker for them instead of going to school.
 
-## What I Brought
+### What I Brought
 
 I brought a 60L backpack, a 3L water bladder, first aid (mainly just antibacterial, antiseptic, and bandaids), water proof boots, two sets of hiking clothes, one set of swimming/running clothes, a sleeping bag, a sun hat, two down jackets (-10°C each), thermal underwear, three pairs of merino wool socks, flip flops for tea house exploring, toiletries, extra cash, wind proof gloves, a headlamp, a journal, and tons of snacks. I also brought all my <a href="{{ "/gear" | relative_url }}">photography gear</a>.
 
