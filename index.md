@@ -30,7 +30,7 @@ I am an international adventure film-maker and photographer. I specialize in doc
 
 # Film
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I2I4EySGYEU?autoplay=1&mute=1" frameborder="0" allow="autoplay"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I2I4EySGYEU?autoplay=1&mute=1" frameborder="0" allow="autoplay" loading="lazy"></iframe>
 
 <a href="{{ "/motion" | relative_url }}" class="button button--small">See More Film</a>
 
