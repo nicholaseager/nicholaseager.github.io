@@ -1,11 +1,19 @@
 <img
   srcset="
     https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ include.src }}.jpg 320w,
+    https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ include.src }}.jpg 480w,
     https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ include.src }}.jpg 640w,
     https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ include.src }}.jpg 960w,
     https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.src }}.jpg 1280w,
   "
-  src="https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ include.src }}.jpg"
+  sizes="
+    (max-width: 400px) 320px,
+    (max-width: 600px) 480px,
+    (max-width: 900px) 640px,
+    (max-width: 1200px) 960px,
+    1200px
+  "
+  src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ include.src }}.jpg"
   alt="{{ include.alt }}"
   loading="lazy"
 />
