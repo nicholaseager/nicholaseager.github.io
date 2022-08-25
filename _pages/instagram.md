@@ -16,7 +16,7 @@ I am an international adventure photographer and film-maker. I specialize in doc
 
 {% for post in site.posts limit:1 %}
 #### Latest Blog Post
-<img src="{{ post.image }}"/>
+{% include image.html src=post.image %}
 ### {{ post.title }}
 {{ post.description }}
  <a href="{{ post.url | relative_url }}">Read More</a>
