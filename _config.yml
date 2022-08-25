@@ -50,7 +50,7 @@ defaults:
 
 author:
   name: Nicholas Eager
-  image: https://d10smlm4r150o9.cloudfront.net/profile.jpeg
+  image: https://d10smlm4r150o9.cloudfront.net/profile-480px.jpg
 twitter:
   username: eager_photo
   card: summary_large_image

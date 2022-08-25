@@ -4,7 +4,7 @@ subtitle: Husband, Photographer, Software Engineer, Runner, Designer, Filmmaker,
 description: Nicholas Eager Photography
 ---
 
-<img src="https://d10smlm4r150o9.cloudfront.net/profile.jpeg">
+{% include image.html src="profile" %}
 
 ## Explore. Capture. Share.
 

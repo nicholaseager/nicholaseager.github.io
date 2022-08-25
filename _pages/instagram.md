@@ -3,7 +3,7 @@ title: Hello, Instagram!
 description: Nicholas Eager Photography
 ---
 
-<img src="https://d10smlm4r150o9.cloudfront.net/profile.jpeg">
+{% include image.html src="profile" %}
 
 I am an international adventure photographer and film-maker. I specialize in documenting all of the tiny, special moments from off the beaten path adventures around the world.
 
