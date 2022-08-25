@@ -13,12 +13,12 @@ When we arrived in Cinque Terre at 10am on Monday morning, the sun was beating d
 ## Overview / Route
 
 <div class="gallery" data-columns="3">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4804.jpg">
-	<img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4813.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4801.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4823.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4856.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/it/2022/DSCF0140.jpg">
+    {% include image.html src="blog/it/2022/cinqueterre/IMG_4804" %}
+	{% include image.html src="blog/it/2022/cinqueterre/IMG_4813" %}
+    {% include image.html src="blog/it/2022/cinqueterre/IMG_4801" %}
+    {% include image.html src="blog/it/2022/cinqueterre/IMG_4823" %}
+    {% include image.html src="blog/it/2022/cinqueterre/IMG_4856" %}
+    {% include image.html src="photos/it/2022/DSCF0140" %}
 </div>
 
 Running up trail though coastal cliffs, down to pastel-colored villages, and running up again through terraced vineyards is an experience you won't soon forget. My route in Cinque Terre was 30.54km with 1911m elevation gain from Levanto, Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore, to La Spezia. I took some extra time and visited all the cities, clocking in five hours. If I had more time, I would have gone all the way down the peninsula to Portovenere. I took the train back from La Spezia to Levanto.
@@ -48,10 +48,10 @@ Since I was starting in Levanto and wanted to make it to La Spezia, I woke up at
 ## How to Navigate While Trail Running
 
 <div class="gallery" data-columns="2">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4853.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4864.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4881.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/blog/it/2022/cinqueterre/IMG_4810.jpg">
+    {% include image.html src="blog/it/2022/cinqueterre/IMG_4853" %}
+    {% include image.html src="blog/it/2022/cinqueterre/IMG_4864" %}
+    {% include image.html src="blog/it/2022/cinqueterre/IMG_4881" %}
+    {% include image.html src="blog/it/2022/cinqueterre/IMG_4810" %}
 </div>
 
 The trails are really well-marked. You have signs to the next city at most intersections. The trails are also blazed with symbols and numbers. In the case that you get lost, you can use <a href="https://maps.me/" target="_blank">maps.me</a> to find your way. 

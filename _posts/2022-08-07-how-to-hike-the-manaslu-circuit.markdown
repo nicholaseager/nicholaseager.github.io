@@ -28,44 +28,44 @@ Every part of our 21 days was breathtaking, and there are infinite possibilities
 
 ### Sereng Gumba (Monastery)
 <div class="gallery" data-columns="3">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0449.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0452.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0681.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0575.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0565.jpg">
+    {% include image.html src="photos/ne/2021/DSCF0449" %}
+    {% include image.html src="photos/ne/2021/DSCF0452" %}
+    {% include image.html src="photos/ne/2021/DSCF0681" %}
+    {% include image.html src="photos/ne/2021/DSCF0575" %}
+    {% include image.html src="photos/ne/2021/DSCF0565" %}
 </div>
 
 Sereng Gumba is a little ways off the beaten path, but was easily the best part of our trek. We stayed there for nearly three days, waking up early to Tibetan tea and roti, listening to ceremonies, playing football with monks-in-training, and hiking around the surrounding area with our four-legged guide. Check out this <a href="https://www.youtube.com/watch?v=I2I4EySGYEU&t=816s" target="blank">video</a> if you would like to see more.
 
 ### Samagaon and Birendra Lake
 <div class="gallery" data-columns="3">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0979.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0929.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0858.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0855.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1229.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1206.jpg">
+    {% include image.html src="photos/ne/2021/DSCF0979" %}
+    {% include image.html src="photos/ne/2021/DSCF0929" %}
+    {% include image.html src="photos/ne/2021/DSCF0858" %}
+    {% include image.html src="photos/ne/2021/DSCF0855" %}
+    {% include image.html src="photos/ne/2021/DSCF1229" %}
+    {% include image.html src="photos/ne/2021/DSCF1206" %}
 </div>
 
 Samagaon is the starting point for mountaineers to summit the Manaslu mountain. But even if you're not keen on doing that, Samagaon has a lot to offer. We were told by our guide that Samagaon has retained a lot of Tibetan influence and culture. People still trade over the border from Samaguan. The houses are mostly made of rock, and you have great views of Manaslu and the surrounding mountains. Birendra Lake, which is just North of Samagaon is beautiful, especially in winter because you can walk on the crystal clear ice! Check out this <a href="https://www.youtube.com/watch?v=I2I4EySGYEU&t=1756s" target="blank">video</a> if you would like to see more.
 
 ### Manaslu Base Camp
 <div class="gallery" data-columns="3">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1024.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1040.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1003.jpg">
+    {% include image.html src="photos/ne/2021/DSCF1024" %}
+    {% include image.html src="photos/ne/2021/DSCF1040" %}
+    {% include image.html src="photos/ne/2021/DSCF1003" %}
 </div>
 
 From Samagaon you can also hike up to Manaslu Base Camp. It offers stellar views of Manaslu, Samagaon, and Birendra Lake. Depending on the time you go, and your luck, you might be able to see some mountaineers there.
 
 ### Everything Else
 <div class="gallery" data-columns="3">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0681.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1150.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1195.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1283.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1405.jpg">
-    <img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1490.jpg">
+    {% include image.html src="photos/ne/2021/DSCF0681" %}
+    {% include image.html src="photos/ne/2021/DSCF1150" %}
+    {% include image.html src="photos/ne/2021/DSCF1195" %}
+    {% include image.html src="photos/ne/2021/DSCF1283" %}
+    {% include image.html src="photos/ne/2021/DSCF1405" %}
+    {% include image.html src="photos/ne/2021/DSCF1490" %}
 </div>
 
 Like I said, the Manaslu region is breathtaking no matter where you look. I would include all of my side trips and photos but I want you to finish reading sometime soon so you can plan yourself!

@@ -6,14 +6,14 @@ image: 'https://d10smlm4r150o9.cloudfront.net/photos/us/2020/DSCF2485.jpg'
 ---
 
 <div class="gallery" data-columns="2">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/us/2020/DSCF2485.jpg">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/us/2020/DSCF1452.jpg">
+	{% include image.html src="photos/us/2020/DSCF2485" %}
+	{% include image.html src="photos/us/2020/DSCF1452" %}
 </div>
 
-<img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF1970.jpg">
+{% include image.html src="photos/ne/2021/DSCF1970" %}
 
 <div class="gallery" data-columns="3">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/ne/2021/DSCF0575.jpg">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/us/2017/IMG_1084.jpg">
-	<img src="https://d10smlm4r150o9.cloudfront.net/photos/us/2021/DSCF4962.jpg">
+	{% include image.html src="photos/ne/2021/DSCF0575" %}
+	{% include image.html src="photos/us/2017/IMG_1084" %}
+	{% include image.html src="photos/us/2021/DSCF4962" %}
 </div>
