@@ -15,7 +15,8 @@ image: /images/social.jpg
 			<a class="listing-item__link" href="{{ post.url | relative_url }}">
 
 				<div class="listing-item__image">
-					<img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+					{% assign post_image =  post.image | relative_url %}
+					{% include image.html src=post_image alt=post.title %}
 				</div>
 
 				<div class="listing-item__content listing-item__content--{{ site.data.settings.grid_settings.content_alignment }}">

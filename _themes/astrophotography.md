@@ -2,7 +2,7 @@
 title: 'Astrophotography'
 subtitle: 'Bringing the infiinite awe and beauty of our universe down to Earth'
 date: 2022-01-01 00:00:00
-image: 'https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/us/2020/DSCF2485.jpg'
+image: photos/us/2020/DSCF2485
 ---
 
 <div class="gallery" data-columns="2">

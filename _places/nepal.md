@@ -3,7 +3,7 @@ title: 'Nepal'
 subtitle: 'Mindful mountains, waving prayer flags, kind people'
 date: 2022-01-01 00:00:00
 description: Nepal photography
-image: 'https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/ne/2021/DSCF0855.jpg'
+image: photos/ne/2021/DSCF0855
 ---
 
 {% include image.html src="photos/ne/2021/DSCF1896" %}
