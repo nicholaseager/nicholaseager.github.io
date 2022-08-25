@@ -4,7 +4,7 @@ title: An Icelandic Voyage
 date: 2018-10-03
 categories: travel
 description: Navigating the Icelandic roads between fissures, craters, volcanoes, glaciers, and mountains.
-image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/is/2018/IMG_0847.jpg
+image: photos/is/2018/IMG_0847
 ---
 
 {% include map.html query="Iceland" %}

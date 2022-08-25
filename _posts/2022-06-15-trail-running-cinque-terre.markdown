@@ -3,7 +3,7 @@ layout: post
 title: Trail Running in Cinque Terre
 date: 2022-06-15
 description: Running on coastal trails between the pastel-colored villages, cascading vineyards, and blue oceans of Cinque Terre
-image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/blog/it/2022/cinqueterre/IMG_4837.jpg
+image: blog/it/2022/cinqueterre/IMG_4837
 ---
 
 ## What Not To Do in Cinque Terre

@@ -4,7 +4,7 @@ title: Eco Trekking in Northern Vietnam
 date: 2020-12-05
 categories: travel vietnam
 description: Hiking through cloudy jungles, spending a few nights in a local village, going to a highland market, playing with all sorts of animals, summit Pu Ta Leng peak twice, and cook our own delicious dinner in a shelter.
-image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/vi/2021/0E3A2D59-EA8D-4115-84C0-E7B16BE900D4-4451-000001D0949E8BCA.jpg
+image: photos/vi/2021/0E3A2D59-EA8D-4115-84C0-E7B16BE900D4-4451-000001D0949E8BCA
 ---
 
 Our only guide, Báo, lives just in the foothills of the same mountain we set out to climb. We stayed at his place with his family before and after the hike, eating delicious dinners, getting to know each other, and playing with all of his animals. In addition to being a trekking guide, Báo and his family grow rice and corn in terraces, and cardamom in the jungle.

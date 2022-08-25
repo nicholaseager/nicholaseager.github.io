@@ -4,7 +4,7 @@ title: Final Thoughts on Over a Year of Travel
 date: 2019-01-03
 categories: travel
 description: Learning invaluable lessons, meeting incredible people, and making many mistakes.
-image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/nz/2018/IMG_2762.jpg
+image: photos/nz/2018/IMG_2762
 ---
 
 I remember the day I went into my supervisor's office, intent on quitting my job. I was a nervous wreck. I walked around the office, past his door, a few times before actually going in. Countless thoughts were spiraling around in my head: How will he react? Will I be fired immediately? Could I ever find another job again? What am I going to do when I run out of money? But none of these questions stopped me. I knew what I wanted to do.

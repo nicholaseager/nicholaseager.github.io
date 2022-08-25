@@ -4,7 +4,7 @@ title:  "Exploring Northern Vietnam"
 date:   2018-12-21
 categories: travel vietnam
 description: Eating mouthwatering food at every corner, watching stunning landscapes, walking across bamboo bridges, failing to speak Vietnamese, somehow floating on concrete boats, walking past do not enter signs, trying to catch a glimpse of monkeys, getting lost on a motorbike, and enjoying great company.
-image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/vi/2018/IMG_3650.jpg
+image: photos/vi/2018/IMG_3650
 ---
 
 After over one year of traveling around the world, I had to choose my last stop. I thought about where I would want to go. I thought about what I had learned over the past year. I thought about how I had changed. I thought about how I learned to value people and relationships over places and things. I learned to travel not for the destination, but for the journey.

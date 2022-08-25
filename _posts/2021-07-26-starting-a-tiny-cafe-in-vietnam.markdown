@@ -3,7 +3,7 @@ layout: post
 title: Starting A Tiny Cafe In Vietnam
 date: 2021-07-26
 description: Starting our own restaurant outside our home in Vietnam, practicing commercial photography, cooking, and gardening.
-image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/vi/2021/DSCF5964.jpg
+image: photos/vi/2021/DSCF5964
 ---
 
 Have you ever had a dream to start a restaurant? What if I told you it is as easy as placing a sign outside the door of your home? Well, in Vietnam it is that easy, at least starting out.

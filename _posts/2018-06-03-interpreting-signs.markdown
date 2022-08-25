@@ -4,7 +4,7 @@ title: Interpreting Signs
 date: 2018-06-03
 categories: travel
 description: Finding my way around when I can't read signs or talk to anyone.
-image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/jp/2018/P1020673.jpg
+image: photos/jp/2018/P1020673
 ---
 
 Getting lost is much easier when you don't have any help from people or the signs they post. And I did just that in almost every country I visited.
