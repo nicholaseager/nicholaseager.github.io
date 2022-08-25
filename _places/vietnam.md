@@ -3,7 +3,7 @@ title: 'Vietnam'
 subtitle: 'Tropical Jungles, mesmerizing beaches, and bustling cities'
 date: 2022-01-01 00:00:00
 description: Vietnam photography
-image: 'https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/DSCF9547.jpg'
+image: 'https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/vi/2021/DSCF9547.jpg'
 ---
 
 {% include image.html src="photos/vi/2021/DSCF5938" %}

@@ -4,7 +4,7 @@ title: Volunteering and Traveling in Japan
 date: 2018-03-30
 categories: travel japan
 description: Working at a traditional guest house, meeting local Couchsurfers, hiking pilgrimage routes, biking off the beaten path, sumo wrestling, domesticated deer, and eating mouth-watering food.
-image: https://d10smlm4r150o9.cloudfront.net/photos/jp/2018/20180314123526.jpg
+image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/jp/2018/20180314123526.jpg
 ---
 
 Spending a month and a half in Japan was a thrilling, fast-paced experience. Compared to living in Nepal, Japan was  futuristically alien.

@@ -3,7 +3,7 @@ title: 'Landscapes'
 subtitle: 'Letting nature do most of the work :)'
 date: 2022-01-01 00:00:00
 description: Landscape photography
-image: 'https://d10smlm4r150o9.cloudfront.net/photos/us/2020/DSCF2200.jpg'
+image: 'https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/us/2020/DSCF2200.jpg'
 ---
 
 <div class="gallery" data-columns="3">

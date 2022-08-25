@@ -4,7 +4,7 @@ title:  "Working on a Permaculture Farm on A Tiny Indonesian Island"
 date:   2018-04-28
 categories: travel indonesia
 description: Understanding the methods behind permaculture, learning about all sorts of tropical plants, and helping take down the monoculture industry.
-image: https://d10smlm4r150o9.cloudfront.net/photos/id/2018/20180429121029.jpg
+image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/id/2018/20180429121029.jpg
 ---
 
 {% include map.html query="Bintan,%20Indonesia" %}

@@ -3,7 +3,7 @@ layout: post
 title: How Running Helps You Take Better Photos
 date: 2022-06-08
 description: Chasing sunsets and hunting for clouds.
-image: https://d10smlm4r150o9.cloudfront.net/photos/vi/2021/IMG_0263.jpg
+image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/vi/2021/IMG_0263.jpg
 ---
 
 Undeniably, the best parts of the day are the very fringes, around dawn and dusk, when Earth's atmosphere causes the sun's light to refract. This happens quickly. Your schedule or pace has no effect; the golden hour train departs on time, every time. If you are hiking to the top of a mountain for sunrise or sunset, you'd better be there on time :)

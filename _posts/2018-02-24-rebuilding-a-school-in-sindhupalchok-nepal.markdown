@@ -4,7 +4,7 @@ title: Rebuilding A School in Sindhupalchok, Nepal
 date: 2018-02-24
 categories: travel nepal
 description: Camping in the foothills of the Himalayas for four months, helping children who deserve a better future, and becoming part of a community.
-image: https://d10smlm4r150o9.cloudfront.net/photos/ne/2018/P1010714.jpg
+image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/ne/2018/P1010714.jpg
 ---
 
 Nepal has been my most life-changing, eye-opening, and fulfilling experience to date. The selfless act of helping a community, the thrill of traveling abroad, and the countless connections made in the process.

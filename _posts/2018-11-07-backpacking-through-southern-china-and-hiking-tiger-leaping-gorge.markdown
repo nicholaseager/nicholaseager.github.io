@@ -4,7 +4,7 @@ title: Backpacking through Southern China and Hiking Tiger Leaping Gorge
 date: 2018-11-07
 categories: travel
 description: Another phenomenal adventure full of hiking stunning landscapes, petting wild goats, crossing rickety bridges, chasing waterfalls, climbing steep ladders, picking wild fruit, dropping food with chopsticks, and enjoying the company of so many new friends.
-image: https://d10smlm4r150o9.cloudfront.net/photos/zh/2018/IMG_2253.jpg
+image: https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/zh/2018/IMG_2253.jpg
 ---
 
 After having spent a couple weeks exploring China, I'd climbed the wild and rugged Great Wall, taught English in Xi'an, climbed the famous Huashan mountain, eaten spicy hot pot in Chengdu, and visited an old thatched cottage of a famous poet. But I was still looking for another thrilling adventure. After traveling by train for a couple days, I made my way to one of the most beautiful villages in China, Lijang.
