@@ -183,7 +183,7 @@
 
 			// Wrap images
 			$this.find('.gallery__wrap img').each( function() {
-				var imageSrc = $(this).attr('src');
+				var imageSrc = $(this).attr('srcHigh');
 				$(this).wrapAll('<div class="gallery__item"><a href="' + imageSrc + '" class="gallery__item__link"></div></div>').appendTo();
 			});
 
