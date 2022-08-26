@@ -303,19 +303,12 @@
 
 		// For each iframe
 		$('.single iframe').each( function() {
+			var width = $(this).attr('width');
+			var height = $(this).attr('height');
+			var ratio = (height/width)*100;
 
-			// If it's YouTube or Vimeo
-			if ( $(this).attr('src').indexOf('youtube') >= 0 || $(this).attr('src').indexOf('vimeo') >= 0 ) {
-
-				var width = $(this).attr('width');
-				var height = $(this).attr('height');
-				var ratio = (height/width)*100;
-
-				// Wrap in video container
-				$(this).wrapAll('<div class="video-wrap"><div class="video" style="padding-bottom:' + ratio + '%;"></div></div>');
-
-			}
-
+			// Wrap in video container
+			$(this).wrapAll('<div class="video-wrap"><div class="video" style="padding-bottom:' + ratio + '%;"></div></div>');
 		});
 
 

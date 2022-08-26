@@ -154,6 +154,6 @@ If you want to trek in the Manaslu Conservation Area, you are required to find a
 
 Please <a href="{{ "/contact" | relative_url }}">contact</a> me if you want to ask questions; I am happy to help. Check out a video that I made about our entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I2I4EySGYEU?autoplay=1&mute=1" frameborder="0" allow="autoplay"></iframe>
+{% include youtube.html id="I2I4EySGYEU" %}
 
 Prayer flags sending wishes in the wind with every thread, sunsets setting fire to the mountains, cheery nuns cooking nourishing treats over a crackling fire, energetic monks playing football over a cliff, loyal dogs guiding lost trekkers along the trail, squeaky prayer wheels spinning endlessly, furry yaks eying strange non-furry humans curiously from afar, swaying bridges hanging high above rushing teal-colored rivers, weary donkeys hauling heavy supplies, shoes sinking abruptly into the snow, majestic mountain goats strutting across the field, milk tea melting treacherously frozen lakes, all powered by Dal Bhat.
