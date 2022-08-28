@@ -113,4 +113,6 @@ Want to see other photos? Browse by <a href="{{ "/themes" | relative_url }}">the
 
 ## Ready To Work Together?
 
+For business inquiries, please contact me by using the form below. All copyrighted images and videos on this website are available for licensing.
+
 <a href="{{ "/contact" | relative_url }}" class="button button--large">Get In Touch</a>
