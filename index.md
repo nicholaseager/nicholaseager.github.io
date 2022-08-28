@@ -7,7 +7,7 @@ image: /images/social.jpg
 
 <center><h1>Adventure Film and Photography</h1></center>
 
-{% include image.html src="photos/ne/2021/DSCF1864" %}
+{% include image.html src="photos/it/2022/DSCF2628_DLCI2w8yj" %}
 
 I am an international adventure film-maker and photographer. I specialize in documenting all of the tiny, special moments from off the beaten path adventures around the world.
 
