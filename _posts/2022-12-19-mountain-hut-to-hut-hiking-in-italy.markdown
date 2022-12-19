@@ -56,6 +56,11 @@ Well, that depends on which hut, the type of hut, the area, and what you choose 
 
 If you'd like discounts on mountain huts, consider joining an alpine club such as [CAI](https://www.cai.it/) or [SAT](https://www.sat.tn.it/). For about $45, you can get discounts of up to 50% sometimes. To register, you usually need to find a physical office in the city you're staying.
 
+## What facilities are available at mountain huts?
+{% include image.html src="blog/it/2022/huts/water_ozqXZfdse" %}
+
+When it comes to food, water, and facilities, of course this depends on the location and type of hut. At a bivacco, you will always need to bring your own food, usually find water on your own, and make a toilet on your own. Delicious food is always available at rifugi, even if some require an advanced booking. At some rifugio, water is scarce or not potable. You have the option to buy water, but it comes in plastic and can cost quite a bit. I always prefer to use the tap or a natural source and treat, if available. Rifugios often have toilet facilities as well.
+
 ## Alta Via and Via Ferrata
 
 In Italy there are tons of different types of hiking and climbing you can do. While some trails just require your own two feet, others require technical skill or equipment.
