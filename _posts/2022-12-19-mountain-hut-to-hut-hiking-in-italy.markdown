@@ -1,0 +1,82 @@
+---
+layout: post
+title: A Guide to Mountain Hut to Hut Hiking in Italy
+date: 2022-12-08
+description: Everything you need to know about hiking and mountain huts in Italy
+image: blog/it/2022/huts/locatelli2_Xhta297X2
+---
+
+What is hiking like in Italy? How do I book a mountain hut? What types of mountain huts are there? How much does it cost? Is wild camping in a tent allowed? What is an alta via or via ferrata?
+
+Let's start things off by talking about some of the basics.
+
+## What is hiking like in Italy?
+{% include image.html src="blog/it/2022/huts/hiking1_TCh6w-PSu" %}
+
+Hiking in Italy is very popular. That being said, at certain times and places there are a lot of people, and there is loads of infrastructure (i.e. paved roads, cable cars) placed around hiking. Depending on your hiking style, this may be a good thing or a bad thing. In you're more of a wild hiker, no worries. It is still possible to get out to areas with less people and development. If you do a little bit of work beforehand, you will have a great trip.
+
+## What kinds of mountain huts are there in Italy?
+
+Not all mountain huts in Italy are created equal. Depending on your personal preferences and hiking style, you may want to stay at a certain type.
+
+### Rifugi
+{% include image.html src="blog/it/2022/huts/locatelli2_Xhta297X2" %}
+
+<div class="gallery" data-columns="2">
+    {% include gallery-image.html src="blog/it/2022/huts/locatelli_OgjcCnXTM" %}
+    {% include gallery-image.html src="blog/it/2022/huts/alta-via-hut_7g23HMnkU1" %}
+</div>
+
+Rifugi are fully-equipped, fully-staffed, and ready to cater to your every need with kitchens that prepare delicious traditional food, wine, beer, and of course espresso. Some of my favorite rifugios even made their own beer or wine! You can find a very comfy bed to sleep in at night. Rifugios are typically easy to reach with a short hike, cable car, or even by car. This of course makes them popular, and they fill up far in advance.
+
+<div class="gallery" data-columns="3">
+    {% include gallery-image.html src="blog/it/2022/huts/strudel_CFZRmkc1R" %}
+    {% include gallery-image.html src="blog/it/2022/huts/cafe_03J-tTBwz" %}
+    {% include gallery-image.html src="blog/it/2022/huts/dinner_hbiEabgOS" %}
+</div>
+
+You can never go wrong with ordering food at a rifugio. Some of the best food I have had in Italy has been at a mountain hut. Nothing beats some warm dumplings and a refreshing beer after a long day of hiking.
+
+### Bivacco
+
+{% include image.html src="photos/it/2022/DJI_0021_MGWR4vA17" %}
+
+Bivacco are small and not staffed, but quite nice nonetheless. They usually come with a few beds with thin mattresses and sometimes blankets and a wood-burning stove. Personally, I love Bivacco because they are usually off of the beaten path and very well-designed. If you're used to solo hiking and camping, this will feel like luxury to you. If you prefer to stay in hotels and don't like camping, I'd go for the rifugi.
+
+### Others
+In addition to rifugi and bivvaco, you have Malga. These are homes that family usually stay at long term and offer you food but not a bed. There are also unmaintained simple stone buildings with no facilities (or even beds) scattered around the alps. These are useful for emergency situations.
+
+## How do you book a mountain hut in Italy?
+
+Unfortunately, as of writing this post there is no centralized booking system for mountain huts in Italy. Usually there is a different website to visit or phone number to call for every hut. If you know a trail you'd like to hike, finding a [Cicerone Guidebook](https://www.cicerone.co.uk/), or a quick google search for huts along the trail or in the area usually comes up with some options. If you know the name or location of a hut you'd like to visit, you can usually find the hut on Google Maps. However, if you want to discover something new, it is a bit more difficult. For Rifugio owned by CAI, you can find a list on the [CAI website](http://www.cai.it/) For less official sources but easier to follow, there are some curated social media accounts you can follow like [Il Bivacco Alpino](https://instagram.com/il_bivacco_alpino).
+
+## How much does it cost to stay at a mountain hut in Italy?
+
+Well, that depends on which hut, the type of hut, the area, and what you choose to eat. Rifugi usually offer half-board and bed-only options. Half-board means you book your bed along with a three-course dinner and breakfast. Personally, I like to book the bed and meal separately. Rifugi have very different costs for half-board, usually ranging from $50 to $150 per person per night. A single bed can cost as little as $30. Bivacco tend to be free, but of course they are smaller with limited beds, and there are no services or meals.
+
+If you'd like discounts on mountain huts, consider joining an alpine club such as [CAI](https://www.cai.it/) or [SAT](https://www.sat.tn.it/). For about $45, you can get discounts of up to 50% sometimes. To register, you usually need to find a physical office in the city you're staying.
+
+## Alta Via and Via Ferrata
+
+In Italy there are tons of different types of hiking and climbing you can do. While some trails just require your own two feet, others require technical skill or equipment.
+
+### Alta Via
+{% include image.html src="blog/it/2022/huts/alta-via-sign_fl8Tqdh0S" %}
+
+Alta Via is just a name for trekking routes that go up higher into the mountains. "Alta Via" literally means "High Street". Some of the route on alta vias is rocky, steep, and exposed. Additionally, they can include ladders, chains, or iron ropes. However, you usually do not need any equipment. In the Dolomites, there are more well-known longer Alta Via, creatively named Alta Via 1, Alta Via 2, Alta Via 3, and so on. The most famous are the first two, with Alta Via 2 being slightly more difficult and less-traveled.
+
+### Via Ferrata
+{% include image.html src="blog/it/2022/huts/via-ferrata_degCWS8wg" %}
+
+Via Ferrata are routes where experience and equipment is necessary. These routes are essentially vertical climbing routes with steel ropes, rungs, and ladders stuck into the side of the mountain. These routes were established during the first world war to help soldiers cross the mountain ranges easier. Via Ferrata can be a lot of fun. If you decide to try your hand at these, make sure to do your own research and rent the right equipment or go with a guide.
+
+## Is wild camping allowed in Italy?
+{% include image.html src="photos/it/2022/DSCF3863_a_XzYk-Nl" %}
+
+In short, not really. But if you setup camp around sunset, pack up at sunrise, be respectful of nature, and follow leave-no-trace principles, it is generally tolerated. In more popular areas, sometimes rangers come around and give people fines. But if you're hiking a long Alta Via and are keeping a distance from huts or popular areas, you will be fine. Sometimes we have seen people even camping right next to very popular huts with no issue.
+
+## Want more?
+
+Please <a href="{{ "/contact" | relative_url }}">contact</a> me if you want to ask questions; I am happy to help. Check out a video that I made about my trip to the Dolomites! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)
+
+{% include youtube.html id="djldGrhYFdo" %}
