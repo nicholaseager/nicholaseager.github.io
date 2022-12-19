@@ -44,7 +44,7 @@ You can never go wrong with ordering food at a rifugio. Some of the best food I 
 Bivacco are small and not staffed, but quite nice nonetheless. They usually come with a few beds with thin mattresses and sometimes blankets and a wood-burning stove. Personally, I love Bivacco because they are usually off of the beaten path and very well-designed. If you're used to solo hiking and camping, this will feel like luxury to you. If you prefer to stay in hotels and don't like camping, I'd go for the rifugi.
 
 ### Others
-In addition to rifugi and bivvaco, you have Malga. These are homes that family usually stay at long term and offer you food but not a bed. There are also unmaintained simple stone buildings with no facilities (or even beds) scattered around the alps. These are useful for emergency situations.
+In addition to rifugi and bivacco, you have Malga. These are homes that family usually stay at long term and offer you food but not a bed. There are also unmaintained simple stone buildings with no facilities (or even beds) scattered around the alps. These are useful for emergency situations.
 
 ## How do you book a mountain hut in Italy?
 
