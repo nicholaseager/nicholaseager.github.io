@@ -22,10 +22,18 @@
 // for arrows
 div.swiper-button-prev,
 div.swiper-button-next {
-    color: white;
+    color: transparent;
+
+	@include mq(phonel) {
+		color: white;
+	}
 }
 
 // for bullets
 span.swiper-pagination-bullet {
-    background-color: white;
+    background-color: transparent;
+
+	@include mq(phonel) {
+		background-color: white;
+	}
 }
