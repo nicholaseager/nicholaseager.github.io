@@ -17,6 +17,7 @@ const singleSlideSwiper = new Swiper('.swiperSingle', {
 const dynamicSlideSwiper = new Swiper('.swiperDynamic', {
     // Optional parameters
     direction: 'horizontal',
+    loop: true,
 
     autoplay: {
         delay: 5000,
