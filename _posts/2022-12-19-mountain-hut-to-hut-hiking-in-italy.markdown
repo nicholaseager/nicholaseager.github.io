@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Guide to Mountain Hut to Hut Hiking in Italy
-date: 2022-12-08
+date: 2022-12-19
 description: Everything you need to know about hiking and mountain huts in Italy
 image: blog/it/2022/huts/locatelli2_Xhta297X2
 ---
