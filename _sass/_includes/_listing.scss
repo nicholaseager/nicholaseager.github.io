@@ -32,21 +32,19 @@
 	position: relative;
 	display: block;
 
+	border-radius: 15px;
+	overflow: hidden;
+
+	@include transition(all 0.3s ease-in-out);
+
 	@include mq(tabletl) {
 
 		&:hover {
-
-			.listing-item__content {
-				opacity: 1;
-				visibility: visible;
-			}
-
-			.listing-item__info {
-				opacity: 1;
-				@include translate(0,0);
-			}
+			filter: drop-shadow(0px 0px 4px rgba(black, 0.2));
+			@include scale(1.025);
 		}
 	}
+
 }
 
 .listing-item__image {
@@ -54,45 +52,15 @@
 }
 
 .listing-item__content {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	display: flex;
-	padding: 17px 20px;
-	background: rgba($overlay-background-color, $overlay-opacity);
-
-	opacity: 0;
-	visibility: hidden;
-	@include transition(all 0.3s ease-in-out);
-}
-
-.listing-item__content--top {
-	align-items: top;
-}
-
-.listing-item__content--bottom {
 	align-items: flex-end;
-}
-
-.listing-item__content--center {
-	align-items: center;
-	justify-content: center;
-
-	.listing-item__info {
-		text-align: center;
-	}
-}
-
-.listing-item__info {
-	opacity: 0;
-	@include translate(0,10px);
-	@include transition(all 0.3s ease-in-out);
+	text-align: start;
+	padding: 17px 20px;
+	background-color: $background_alt_color;
 }
 
 .listing-item__title {
-	color: $overlay-text-color;
+	color: $text-dark-color;
 	font-size: $grid-item-title-small;
 	font-weight: $grid-item-title-weight;
 	letter-spacing: $grid-item-title-spacing;
@@ -108,7 +76,7 @@
 
 .listing-item__subtitle {
 	margin-top: 5px;
-	color: rgba($overlay-text-color, 0.7);
+	color: rgba($text-dark-color, 0.7);
 	font-size: $grid-item-subtitle-small;
 	font-weight: $grid-item-subtitle-weight;
 	letter-spacing: $grid-item-subtitle-spacing;

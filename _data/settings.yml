@@ -27,7 +27,6 @@ footer_settings:
 grid_settings:
   overlay_opacity: 0.8
   grid_spacing: 20
-  content_alignment: center
 
 contact_settings:
   form_action: 'https://formspree.io/f/mvolakjj'

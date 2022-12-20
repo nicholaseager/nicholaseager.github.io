@@ -27,7 +27,7 @@ layout: default
 					<img src="{{ gear.img }}" alt="{{ gear.title }}">
 				</div>
 
-				<div class="listing-item__content listing-item__content--{{ site.data.settings.grid_settings.content_alignment }}">
+				<div class="listing-item__content listing-item__content">
 					<div class="listing-item__info">
 						<h2 class="listing-item__title">{{ gear.title }}</h2>
 						<p class="listing-item__subtitle">{{ gear.subtitle }}</p>
