@@ -1,20 +1,9 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
-const swiper = new Swiper('.swiper', {
+const singleSlideSwiper = new Swiper('.swiperSingle', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 
     autoplay: {
         delay: 5000,
@@ -23,4 +12,31 @@ const swiper = new Swiper('.swiper', {
     lazy: {
         loadPrevNext: true,
     },
+});
+
+const dynamicSlideSwiper = new Swiper('.swiperDynamic', {
+    // Optional parameters
+    direction: 'horizontal',
+
+    autoplay: {
+        delay: 5000,
+    },
+
+    lazy: {
+        loadPrevNext: true,
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        960: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    }
 });

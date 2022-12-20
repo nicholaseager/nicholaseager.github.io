@@ -13,7 +13,9 @@
 
 {% assign slides = slides_array | strip | newline_to_br | strip_newlines | split: "<br />" %}
 
-<div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+{% assign class = include.class | default: "swiperSingle" %}
+
+<div class="swiper {{ class }} swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
     <div class="swiper-wrapper">
       <!-- Slides -->
       {% for slide in slides %}
@@ -31,15 +33,7 @@
             data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg"
             class="swiper-lazy"
         />
-        <div class="swiper-lazy-preloader"></div>
       </div>
       {% endfor %}
     </div>
-
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
