@@ -20,12 +20,11 @@ Hiking in Italy is very popular. That being said, at certain times and places th
 Not all mountain huts in Italy are created equal. Depending on your personal preferences and hiking style, you may want to stay at a certain type.
 
 ### Rifugi
-{% include image.html src="blog/it/2022/huts/locatelli2_Xhta297X2" %}
-
-<div class="gallery" data-columns="2">
-    {% include gallery-image.html src="blog/it/2022/huts/locatelli_OgjcCnXTM" %}
-    {% include gallery-image.html src="blog/it/2022/huts/alta-via-hut_7g23HMnkU1" %}
-</div>
+{% include swiper.html
+    i0="blog/it/2022/huts/locatelli2_Xhta297X2"
+    i1="blog/it/2022/huts/locatelli_OgjcCnXTM"
+    i2="blog/it/2022/huts/alta-via-hut_7g23HMnkU1"
+%}
 
 Rifugi are fully-equipped, fully-staffed, and ready to cater to your every need with kitchens that prepare delicious traditional food, wine, beer, and of course espresso. Some of my favorite rifugios even made their own beer or wine! You can find a very comfy bed to sleep in at night. Rifugios are typically easy to reach with a short hike, cable car, or even by car. This of course makes them popular, and they fill up far in advance.
 
