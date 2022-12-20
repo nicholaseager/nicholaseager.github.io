@@ -1,0 +1,31 @@
+// - - - - - - - - - - - - - - - - - -
+
+// Swiper Customization
+
+// - - - - - - - - - - - - - - - - - -
+
+.swiper {
+    max-width: 90%;
+	margin: 20px auto;
+
+	@include mq(tabletp) {
+		max-width: 75%;
+		margin: 30px auto;
+	}
+
+	@include mq(laptop) {
+		max-width: 60%;
+		margin: 40px auto;
+	}
+}
+
+// for arrows
+div.swiper-button-prev,
+div.swiper-button-next {
+    color: white;
+}
+
+// for bullets
+span.swiper-pagination-bullet {
+    background-color: white;
+}
