@@ -76,18 +76,13 @@
 }
 
 .banner__title {
-    font-size: 64px;
+    font-size: 9vw;
     font-weight: 800;
     color: $text-dark-color;
 
 	@include mq(tabletp) {
         color: white;
         filter: drop-shadow(0px 0px 4px rgba(black, 0.9));
-        font-size: 96px;
-	}
-
-	@include mq(laptop) {
-        font-size: 128px;
 	}
 }
 
