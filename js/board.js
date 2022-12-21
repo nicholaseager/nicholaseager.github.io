@@ -286,6 +286,21 @@
 
 		});
 
+		// If there's a gallery
+		$('.image-gallery').each( function() {
+
+			// Get gallery element
+			var $this = $(this);
+
+			// Wait for images to load
+			$this.imagesLoaded( function() {		
+				// Init fluidbox
+				$this.find('.image-gallery-link').fluidbox({
+					loader: true
+				});
+			});
+
+		});
 
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Images
