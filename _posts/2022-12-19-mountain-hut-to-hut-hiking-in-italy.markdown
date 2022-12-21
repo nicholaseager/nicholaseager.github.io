@@ -28,11 +28,12 @@ Not all mountain huts in Italy are created equal. Depending on your personal pre
 
 Rifugi are fully-equipped, fully-staffed, and ready to cater to your every need with kitchens that prepare delicious traditional food, wine, beer, and of course espresso. Some of my favorite rifugios even made their own beer or wine! You can find a very comfy bed to sleep in at night. Rifugios are typically easy to reach with a short hike, cable car, or even by car. This of course makes them popular, and they fill up far in advance.
 
-<div class="gallery" data-columns="3">
-    {% include gallery-image.html src="blog/it/2022/huts/strudel_CFZRmkc1R" %}
-    {% include gallery-image.html src="blog/it/2022/huts/cafe_03J-tTBwz" %}
-    {% include gallery-image.html src="blog/it/2022/huts/dinner_hbiEabgOS" %}
-</div>
+{% include swiper.html
+    class="swiperDynamic"
+    i0="blog/it/2022/huts/strudel_CFZRmkc1R"
+    i1="blog/it/2022/huts/cafe_03J-tTBwz"
+    i2="blog/it/2022/huts/dinner_hbiEabgOS"
+%}
 
 You can never go wrong with ordering food at a rifugio. Some of the best food I have had in Italy has been at a mountain hut. Nothing beats some warm dumplings and a refreshing beer after a long day of hiking.
 

@@ -15,19 +15,6 @@ I am an international adventure film-maker and photographer. I specialize in doc
 
 ---
 
-<!-- TODO: Use front matter -->
-<!-- {% for theme in site.themes reversed %}
-
-<div class="gallery" data-columns="3">
-	{% for image in theme.images reversed %}
-
-	<img src="{{ image }}">
-
-	{% endfor %}
-</div>
-
-{% endfor %} -->
-
 # Film
 
 {% include youtube.html id="I2I4EySGYEU" %}

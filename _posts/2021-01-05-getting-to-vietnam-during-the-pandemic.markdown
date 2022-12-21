@@ -27,22 +27,22 @@ Upon landing in Ho Chi Minh City and going through immigration, I was asked only
 
  As a foreigner, I was required to stay at a "government approved" hotel instead of the quarantine complex Vietnamese citizens used. The hotels seemed to be "approved" based on their relationship with the government or how much they bribed. As a foreigner, we pay nearly $1500 for two weeks of quarantine, while the complex is free. Staying at the quarantine hotel was pretty normal, for the first two days. I had a daily routine of eating, studying Vietnamese, working on editing a video, and working out. After the second day, there was a power surge that fried my laptop. I didn't bring any books or anything else to do for the next 12 days. So I had to be a bit creative to not lose my mind.
 
-<div class="gallery" data-columns="3">
-    {% include gallery-image.html src="blog/vi/2020/quarantine/calendar" %}
-    {% include gallery-image.html src="blog/vi/2020/quarantine/menu" %}
-    {% include gallery-image.html src="blog/vi/2020/quarantine/food" %}
-    {% include gallery-image.html src="blog/vi/2020/quarantine/drawing" %}
-    {% include gallery-image.html src="blog/vi/2020/quarantine/gift" %}
-</div>
+{% include gallery.html
+	i0="blog/vi/2020/quarantine/calendar"
+	i1="blog/vi/2020/quarantine/menu"
+	i2="blog/vi/2020/quarantine/food"
+	i3="blog/vi/2020/quarantine/drawing"
+    i4="blog/vi/2020/quarantine/gift"
+%}
 
 But to be honest, none of that mattered because Van was able to come visit me :) What an incredible feeling it was to finally be so close to Van. After seven unexpected, additional months of being apart, we were finally able to stay at least two meters apart from each other. The security staff didn't always like us seeing each other, but eventually they became accustomed to it. Each day, Van secretly brought me snacks, and I gave her gifts.
 
 <figure>
-    <div class="gallery" data-columns="3">
-        {% include gallery-image.html src="blog/vi/2020/quarantine/myview" %}
-        {% include gallery-image.html src="blog/vi/2020/quarantine/herview" %}
-        {% include gallery-image.html src="blog/vi/2020/quarantine/ourview" %}
-    </div>
+    {% include gallery.html
+        i0="blog/vi/2020/quarantine/myview"
+        i1="blog/vi/2020/quarantine/herview"
+        i2="blog/vi/2020/quarantine/ourview"
+    %}
     <figcaption align = "center">My View v.s. Her View</figcaption>
 </figure>
 
@@ -62,10 +62,10 @@ After falling asleep peacefully on the last night of quarantine, I awoke abruptl
 
 After a very long night, I made it to my second, and final, quarantine hotel. This time I was on the seventh floor, so I couldn't see Van except by telescope (a.k.a my 200mm lens). But Felix and Leo seemed to enjoy their new view. Calling Van on my phone and watching each other from a distance helped pass the time until I could escape.
 
-<div class="gallery" data-columns="2">
-    {% include gallery-image.html src="blog/vi/2020/quarantine/leoandfelix2" %}
-    {% include gallery-image.html src="photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7" %}
-</div>
+{% include swiper.html
+    i0="blog/vi/2020/quarantine/leoandfelix2"
+    i1="photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7"
+%}
 
 ## Reunited
 
