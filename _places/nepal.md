@@ -1,4 +1,5 @@
 ---
+layout: place
 title: 'Nepal'
 subtitle: 'Mindful mountains, waving prayer flags, kind people'
 date: 2022-01-01 00:00:00

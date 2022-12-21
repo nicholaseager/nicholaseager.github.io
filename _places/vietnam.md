@@ -1,4 +1,5 @@
 ---
+layout: place
 title: 'Vietnam'
 subtitle: 'Tropical Jungles, mesmerizing beaches, and bustling cities'
 date: 2022-01-01 00:00:00

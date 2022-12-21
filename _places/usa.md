@@ -1,4 +1,5 @@
 ---
+layout: place
 title: 'United States'
 subtitle: 'Seemingly infinite land and beauty'
 date: 2022-01-01 00:00:00
