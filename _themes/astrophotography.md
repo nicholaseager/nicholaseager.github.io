@@ -1,8 +1,9 @@
 ---
+layout: place
 title: 'Astrophotography'
 subtitle: 'Bringing the infiinite awe and beauty of our universe down to Earth'
 date: 2022-01-01 00:00:00
-image: photos/us/2020/DSCF2485
+image: photos/ne/2021/DSCF0575
 ---
 
 {% include gallery.html

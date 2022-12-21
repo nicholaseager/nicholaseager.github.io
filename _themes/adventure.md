@@ -1,9 +1,10 @@
 ---
+layout: place
 title: 'Adventure'
 subtitle: 'Getting off the beaten path'
 date: 2022-01-01 00:00:00
 description: Adventure photography
-image: photos/vi/2021/IMG_2592
+image: photos/zh/2018/IMG_2253
 ---
 
 {% include gallery.html

@@ -1,9 +1,10 @@
 ---
+layout: place
 title: 'Animals'
 subtitle: 'Calling our furry (and non-furry) friends closer'
 date: 2022-01-01 00:00:00
 description: Wildlife photography, pet photography
-image: photos/vi/2021/C20F1705-02F2-4073-90C3-4917F3807467-377-000000033BEF797B
+image: photos/vi/2021/DSCF9546
 ---
 
 {% include gallery.html

@@ -1,9 +1,10 @@
 ---
+layout: place
 title: 'Close Ups'
 subtitle: 'Finding the smallest and typically unnoticed details of our world'
 date: 2022-01-01 00:00:00
 description: Macro photography
-image: photos/us/2020/DSCF0240
+image: photos/vi/2021/DSCF6275
 ---
 
 {% include gallery.html

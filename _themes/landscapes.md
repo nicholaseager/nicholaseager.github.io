@@ -1,9 +1,10 @@
 ---
+layout: place
 title: 'Landscapes'
 subtitle: 'Letting nature do most of the work :)'
 date: 2022-01-01 00:00:00
 description: Landscape photography
-image: photos/us/2020/DSCF2200
+image: photos/it/2022/DSCF2628_DLCI2w8yj
 ---
 
 {% include gallery.html
