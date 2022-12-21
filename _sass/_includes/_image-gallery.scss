@@ -1,3 +1,24 @@
+.image-gallery-wrap {
+    position: relative;
+	max-width: 100%;
+	margin: 0px auto;
+
+    @include mq(phonel) {
+		max-width: 90%;
+		margin: 20px auto;
+	}
+
+	@include mq(tabletp) {
+		max-width: 83%;
+		margin: 30px auto;
+	}
+
+	@include mq(laptop) {
+		max-width: 75%;
+		margin: 40px auto;
+	}
+}
+
 .image-gallery {
     /* Prevent vertical gaps */
     line-height: 0;
