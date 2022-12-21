@@ -3,23 +3,9 @@ layout: default
 ---
 
 <section class="section__banner">
-	<div class="banner">
-		<div class="banner__background">
-			{% include image.html src=page.image %}
-		</div>
-		<div class="banner__background__shading"></div>
-	</div>
-
-	<div class="banner__content__background">
-		<div class="banner__content">
-			<h1 class="banner__title">{{ page.title }}</h1>
-			<p class="banner__description">{{ page.subtitle }}</p>
-		</div>
-	</div>
+	{% include banner.html image=page.image title=page.title subtitle=page.subtitle %}
 </section>
 
 <section class="single">
-
 	{{ page.content }}
-
 </section>
