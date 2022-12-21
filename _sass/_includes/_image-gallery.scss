@@ -28,18 +28,6 @@
         column-count: 3;
     }
 
-    @include mq(laptop) {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
-    }
-
-    @include mq(desktop) {
-        -moz-column-count: 5;
-        -webkit-column-count: 5;
-        column-count: 5;
-    }
-
     a {
         display: block;
 
