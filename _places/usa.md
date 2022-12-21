@@ -22,4 +22,4 @@ image: photos/us/2020/DSCF2129
 	i12="photos/us/2020/3275C406-EBB1-452C-9D60-DE475EC4CFD8-6804-000003F0ABCA067D"
 %}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kEwDgYxZXVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="kEwDgYxZXVA" %}

@@ -29,4 +29,4 @@ Prayer flags sending wishes in the wind with every thread, sunsets setting fire 
 
 21 days of relaxing hiking on the Manaslu Circuit, through the Nepal Himalayas, close to Tibet and Annapurna. Join my friend Hung and I on our trek through narrow valleys, along rushing rivers, and over majestic mountains. Rest with us at a Tibetan monastery, go hiking with dogs, goats, yaks, and donkeys, and experience authentic Tibetan and Nepalese life. The trek was in December 2021.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I2I4EySGYEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="I2I4EySGYEU" %}

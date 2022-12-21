@@ -22,4 +22,4 @@ image: photos/vi/2021/DSCF9547
 	i12="photos/vi/2021/DSCF6984"
 %}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5Gu7jRlsllg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="5Gu7jRlsllg" %}
