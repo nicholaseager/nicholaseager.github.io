@@ -6,16 +6,15 @@ description: Adventure photography
 image: photos/vi/2021/IMG_2592
 ---
 
-{% include image.html src="photos/zh/2018/IMG_2253" %}
-
-<div class="gallery" data-columns="3">
-	{% include gallery-image.html src="photos/vi/2018/IMG_3680" %}
-	{% include gallery-image.html src="photos/vi/2021/IMG_0263" %}
-	{% include gallery-image.html src="photos/vi/2021/IMG_2592" %}
-	{% include gallery-image.html src="photos/zh/2018/IMG_1539" %}
-	{% include gallery-image.html src="photos/id/2018/IMG_20180509_082201286" %}
-	{% include gallery-image.html src="photos/us/2020/IMG_3528" %}
-	{% include gallery-image.html src="photos/ne/2018/P1010412" %}
-	{% include gallery-image.html src="photos/ne/2021/DSCF0266" %}
-	{% include gallery-image.html src="photos/ne/2021/DSCF1352" %}
-</div>
+{% include gallery.html
+	i0="photos/zh/2018/IMG_2253"
+	i1="photos/vi/2018/IMG_3680"
+	i2="photos/vi/2021/IMG_0263"
+	i3="photos/vi/2021/IMG_2592"
+	i4="photos/zh/2018/IMG_1539"
+	i5="photos/id/2018/IMG_20180509_082201286"
+	i6="photos/us/2020/IMG_3528"
+	i7="photos/ne/2018/P1010412"
+	i8="photos/ne/2021/DSCF0266"
+	i9="photos/ne/2021/DSCF1352"
+%}
