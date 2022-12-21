@@ -25,16 +25,20 @@
 
 <div class="image-gallery">
     {% for slide in slides %}
-    <img
-        srcset="
-        https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
-        https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
-        https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w,
-        https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ slide }}.jpg 960w,
-        https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ slide }}.jpg 1280w,
-        "
-        sizes="100vw"
-        src="https://ik.imagekit.io/qn1gkawvy/tr:h-500/{{ slide }}.jpg"
-    />
+    <a href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ slide }}.jpg">
+        <div class="image-gallery-image">
+            <img
+                srcset="
+                https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
+                https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
+                https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w,
+                https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ slide }}.jpg 960w,
+                https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ slide }}.jpg 1280w,
+                "
+                sizes="100vw"
+                src="https://ik.imagekit.io/qn1gkawvy/tr:h-500/{{ slide }}.jpg"
+            />
+        </div>
+    </a>
     {% endfor %}
 </div>
