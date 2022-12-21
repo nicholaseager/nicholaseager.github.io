@@ -1,0 +1,40 @@
+{% capture slides_array %}
+{{ include.i0 }}
+{{ include.i1 }}
+{{ include.i2 }}
+{{ include.i3 }}
+{{ include.i4 }}
+{{ include.i5 }}
+{{ include.i6 }}
+{{ include.i7 }}
+{{ include.i8 }}
+{{ include.i9 }}
+{{ include.i10 }}
+{{ include.i11 }}
+{{ include.i12 }}
+{{ include.i13 }}
+{{ include.i14 }}
+{{ include.i15 }}
+{{ include.i16 }}
+{{ include.i17 }}
+{{ include.i18 }}
+{{ include.i19 }}
+{% endcapture %}
+
+{% assign slides = slides_array | strip | newline_to_br | strip_newlines | split: "<br />" %}
+
+<div class="image-gallery">
+    {% for slide in slides %}
+    <img
+        srcset="
+        https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
+        https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
+        https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w,
+        https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ slide }}.jpg 960w,
+        https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ slide }}.jpg 1280w,
+        "
+        sizes="100vw"
+        src="https://ik.imagekit.io/qn1gkawvy/tr:h-500/{{ slide }}.jpg"
+    />
+    {% endfor %}
+</div>
