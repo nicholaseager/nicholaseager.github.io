@@ -2,11 +2,19 @@
 layout: default
 ---
 
-<section class="intro">
-	<div class="wrap">
-		<h1>{{ page.title }}</h1>
-		<br>
-		{% include image.html src=page.image %}
+<section class="section__banner">
+	<div class="banner">
+		<div class="banner__background">
+			{% include image.html src=page.image %}
+		</div>
+		<div class="banner__background__shading"></div>
+	</div>
+
+	<div class="banner__content__background">
+		<div class="banner__content">
+			<h1 class="banner__title">{{ page.title }}</h1>
+			<p class="banner__description">{{ page.subtitle }}</p>
+		</div>
 	</div>
 </section>
 

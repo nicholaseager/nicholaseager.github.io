@@ -150,6 +150,7 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 @import "_includes/_image-gallery";
 @import "_includes/_syntax";
 @import "_includes/_listing";
+@import "_includes/_banner";
 @import "_includes/_contact-form";
 
 
