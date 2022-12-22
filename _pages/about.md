@@ -22,7 +22,7 @@ Nicholas started his journey in the world at Saint Louis, MO, USA. Being in a fl
 
 After spending a few years to focus on his career, he quit his full-time job to spend a year traveling the world. He volunteered in Nepal building a school for five months, worked on a permaculture farm in Indonesia, traveled to Japan, Iceland, China, Vietnam, and New Zealand. These initial travels further cemented his love for travel, landscape photography and story-telling.
 
-Later on, Nicholas moved to Vietnam to marry the love of his life and continue his passion for photography. Nowadays, Nicholas and his wife are living in Italy, where he spends his time focusing on his iOS development work at Bending Spoons and photography.
+Later on, Nicholas moved to Vietnam to marry the love of his life and continue his passion for photography. Nowadays, Nicholas and his wife are living in Vietnam, where he spends his time focusing on freelance software development and photography.
 
 ## Ready To Work Together?
 
