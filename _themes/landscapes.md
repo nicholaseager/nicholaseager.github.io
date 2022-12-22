@@ -14,4 +14,5 @@ image: photos/it/2022/DSCF2628_DLCI2w8yj
 	i3="photos/ne/2021/DSCF1844"
 	i4="photos/us/2020/IMG_3446"
 	i5="photos/nz/2018/IMG_3536"
+	i6="photos/tz/2022/DSCF8119_0mh-NAHz_"
 %}

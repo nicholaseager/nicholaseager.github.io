@@ -64,16 +64,16 @@ I am an international adventure film-maker and photographer. I specialize in doc
 
 ---
 
-# Close Up
+# Minimalism
 
 {% include swiper.html
 	class="swiperDynamic"
-    i0="photos/us/2020/DSCF0239"
-    i1="photos/us/2020/DSCF0240"
-    i2="photos/us/2020/43B0FFAD-F2F7-4E74-946F-722086009D77-823-00000042F9BC4D7A"
+    i0="photos/us/2020/DSCF0587"
+    i1="photos/us/2020/IMG_4340"
+    i2="photos/it/2022/DSCF2650_RUF5kxqYe"
 %}
 
-<a href="{{ "/theme/closeup" | relative_url }}" class="button button--small">See More Close Up</a>
+<a href="{{ "/theme/minimalism" | relative_url }}" class="button button--small">See More Minimalism</a>
 
 ---
 

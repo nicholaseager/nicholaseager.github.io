@@ -7,6 +7,8 @@ description: America photography
 image: photos/us/2020/DSCF2129
 ---
 
+{% include youtube.html id="kEwDgYxZXVA" %}
+
 {% include gallery.html
 	i0="photos/us/2020/94C4D7C8-B8EB-44BC-9292-7BAF1A8EB910-1302-000000969B0E7613"
 	i1="photos/us/2020/80F81373-3D41-4C32-B248-D5C7A6DD660B-5872-0000033D364EEA17"
@@ -22,5 +24,3 @@ image: photos/us/2020/DSCF2129
 	i11="photos/us/2020/C1AA918D-E46A-433A-89AA-A3F855EB2FE4-2431-0000014D6985B59B"
 	i12="photos/us/2020/3275C406-EBB1-452C-9D60-DE475EC4CFD8-6804-000003F0ABCA067D"
 %}
-
-{% include youtube.html id="kEwDgYxZXVA" %}

@@ -7,6 +7,8 @@ description: Vietnam photography
 image: photos/vi/2021/DSCF9547
 ---
 
+{% include youtube.html id="5Gu7jRlsllg" %}
+
 {% include gallery.html
 	i0="photos/vi/2021/DSCF5938"
 	i1="photos/vi/2021/707EE16B-3135-47A9-9236-3797C0A1F56F-8934-000003EAE2734E42"
@@ -21,6 +23,7 @@ image: photos/vi/2021/DSCF9547
 	i10="photos/vi/2021/DSCF9468"
 	i11="photos/vi/2021/DSCF7570"
 	i12="photos/vi/2021/DSCF6984"
+	i13="photos/vi/2021/DSCF7132_djR8XgSvO"
+	i14="photos/vi/2021/DJI_0128_PZWrzIF25"
+	i15="photos/vi/2021/DJI_0098_S6Fv6i6ct"
 %}
-
-{% include youtube.html id="5Gu7jRlsllg" %}
