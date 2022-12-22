@@ -2,12 +2,8 @@
     <div class="banner__background">
         {% include image.html src=include.image %}
     </div>
-    <div class="banner__background__shading"></div>
-</div>
-
-<div class="banner__content__background">
-    <div class="banner__content">
-        <h1 class="banner__title">{{ include.title }}</h1>
-        <p class="banner__description">{{ include.subtitle }}</p>
+    <div class="banner__container">
+        <div class="banner__background__shading"></div>
+        <h1 class="banner__background__title">{{ include.title }}</h1>
     </div>
 </div>
