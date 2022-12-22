@@ -1,10 +1,10 @@
 ---
 layout: place
 title: 'Commercial'
-subtitle: 'Commercial stuff'
+subtitle: 'Capturing the essence of a product or business.'
 date: 2022-01-01 00:00:00
 description: Commercial photography
-image: photos/it/2022/DSCF4127_owOqZcUzB
+image: photos/vi/2021/DSCF8525
 ---
 
 {% include gallery.html

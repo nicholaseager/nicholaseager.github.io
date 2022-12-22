@@ -1,10 +1,10 @@
 ---
 layout: place
 title: 'Snow'
-subtitle: 'Snow stuff'
+subtitle: 'A blanket of sparkling, crystalline beauty, covers our planet creating a peaceful and serene atmosphere.'
 date: 2022-01-01 00:00:00
 description: Snow photography
-image: photos/us/2021/DSCF2748__EXnmrh7z
+image: photos/ne/2021/DSCF1863
 ---
 
 {% include youtube.html id="2kh0VEQqUI0" %}

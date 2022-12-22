@@ -1,7 +1,7 @@
 ---
 layout: place
 title: 'Animals'
-subtitle: 'Calling our furry (and non-furry) friends closer'
+subtitle: 'Our planet has a diverse range of animals, which is a testament to the incredible adaptability and resilience of life.'
 date: 2022-01-01 00:00:00
 description: Wildlife photography, pet photography
 image: photos/vi/2021/DSCF9546

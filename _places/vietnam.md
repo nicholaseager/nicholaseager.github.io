@@ -1,13 +1,11 @@
 ---
 layout: place
 title: 'Vietnam'
-subtitle: 'Tropical Jungles, mesmerizing beaches, and bustling cities'
+subtitle: 'Stunning natural beauty, breathtaking rice terraces, lush green mountains, crystal-clear beaches, and bustling cities.'
 date: 2022-01-01 00:00:00
 description: Vietnam photography
 image: photos/vi/2021/DSCF9547
 ---
-
-{% include youtube.html id="5Gu7jRlsllg" %}
 
 {% include gallery.html
 	i0="photos/vi/2021/DSCF5938"
@@ -27,3 +25,5 @@ image: photos/vi/2021/DSCF9547
 	i14="photos/vi/2021/DJI_0128_PZWrzIF25"
 	i15="photos/vi/2021/DJI_0098_S6Fv6i6ct"
 %}
+
+{% include youtube.html id="5Gu7jRlsllg" %}

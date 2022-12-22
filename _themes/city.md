@@ -1,10 +1,10 @@
 ---
 layout: place
 title: 'City'
-subtitle: 'City stuff'
+subtitle: 'A testament to the ingenuity and creativity of humanity, cities pulsate with life and activity, even as the rest of the world sleeps.'
 date: 2022-01-01 00:00:00
 description: City photography
-image: photos/vi/2021/DSCF5950
+image: photos/ko/2022/DSCF4267_fe4k_dcRJ
 ---
 
 {% include gallery.html

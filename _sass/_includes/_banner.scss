@@ -20,83 +20,29 @@
     }
 }
 
-.banner__background__shading {
+.banner__container {
     position: absolute;
     left: 0;
     right: 0; 
     bottom: 0;
     top: 0;
 
-    @include mq(tabletp) {
-        background-color: rgba(black, 0.40);
-	}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner__logo {
+.banner__background__shading {
     position: absolute;
-    left: 0;
-    right: 0; 
-    bottom: 0;
-    margin-left: auto; 
-    margin-right: auto; 
-    padding: 0px;
-    width: 60%;
-    max-height: 100%;
-    max-width: 500px;
-}
-
-.banner__content__background {
-    position: relative;
     width: 100%;
-
-	@include mq(tabletp) {
-        position: absolute;
-        left: 0; 
-        right: 0;
-        bottom: 0;
-	}
+    height: 100%;
+    background-color: rgba(black, 0.25);
 }
 
-.banner__content {
-    position: relative;
-	padding: 0 20px;
-    max-width: 90%;
-	margin: 20px auto;
-
-	@include mq(tabletp) {
-		max-width: 83%;
-		padding-top: 60px;
-		max-width: 100%;
-        margin: 50px;
-	}
-
-	@include mq(laptop) {
-		max-width: 75%;
-	}
-}
-
-.banner__title {
-    font-size: 9vw;
+.banner__background__title {    
+    font-size: 8vw;
     font-weight: 800;
-    color: $text-dark-color;
-
-	@include mq(tabletp) {
-        color: white;
-        filter: drop-shadow(0px 0px 4px rgba(black, 0.9));
-	}
-}
-
-.banner__description {
-    font-size: 16px;
-    color: $text-dark-color;
-
-	@include mq(tabletp) {
-        color: white;
-        filter: drop-shadow(0px 0px 4px rgba(black, 0.9));
-        font-size: 24px;
-	}
-
-	@include mq(laptop) {
-        font-size: 32px;
-	}
+    text-transform: uppercase;
+    color: white;
+    filter: drop-shadow(0px 0px 4px rgba(black, 0.9));
 }
