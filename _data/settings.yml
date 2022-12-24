@@ -35,7 +35,7 @@ contact_settings:
   send_button_text: 'Send Message'
 
 social_settings:
-  facebook_url: ''
+  facebook_url: 'https://www.facebook.com/nicholas.eager.photo'
   twitter_url: ''
   instagram_url: 'https://www.instagram.com/nicholas.eager/'
   snapchat_url: ''
