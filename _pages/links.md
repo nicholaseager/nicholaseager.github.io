@@ -37,5 +37,3 @@ layout: home
 {{ post.description }}
  <a href="{{ post.url | relative_url }}">Read More</a>
 {% endfor %}
-
----
