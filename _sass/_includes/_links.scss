@@ -1,0 +1,30 @@
+.profile-image {
+    border-radius: 50%;
+    max-width: 300px;
+    padding: 10px 40px;
+    margin: 0 auto;
+}
+
+.links-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.link {
+    display: block;
+    margin: 10px;
+    height: 60px;
+    line-height: 60px;
+	font-size: 16px;
+	background: $accent-color;
+	color: $background-color;
+    text-align: center;
+	cursor: pointer;
+
+    &:hover {
+		background: adjust-hue($accent-color,15%);
+		border-color: adjust-hue($accent-color,15%);
+		color: $background-color;
+	}
+}
