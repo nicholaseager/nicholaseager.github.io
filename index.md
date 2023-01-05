@@ -51,6 +51,6 @@ Browse by common <a href="{{ "/themes" | relative_url }}">themes</a> or <a href=
 
 ## Ready To Work Together?
 
-For business inquiries, please contact me by using the form below. All copyrighted images and videos on this website are available for licensing.
+For business inquiries, such as a collaboration or licensing, please contact me by using the form below.
 
 <a href="{{ "/contact" | relative_url }}" class="button button--large">Get In Touch</a>
