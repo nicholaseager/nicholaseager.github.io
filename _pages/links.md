@@ -13,13 +13,13 @@ layout: home
         <i class="fab fa-instagram" aria-hidden="true"></i>
         Instagram
     </a>
+    <a href="https://store.nicholaseager.com" class="link">
+        <i class="fas fa-image" aria-hidden="true"></i>
+        Prints
+    </a>
     <a href="{{ "/gear" | relative_url }}" class="link">
         <i class="fas fa-camera" aria-hidden="true"></i>
         Gear
-    </a>
-    <a href="{{ "/about" | relative_url }}" class="link">
-        <i class="fas fa-lightbulb" aria-hidden="true"></i>
-        Learn More
     </a>
 </div>
 
