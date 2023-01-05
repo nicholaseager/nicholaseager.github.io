@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Adventure Photography Gear
-subtitle: All of the gear I genuinely like and use, and recommend to try them out for yourself.
+subtitle: All of the gear I genuinely like and use, and recommend to try out for yourself.
 items:
   - title: 'Main Camera'
     description: 'My main video and photo camera.'
