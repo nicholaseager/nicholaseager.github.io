@@ -1,0 +1,47 @@
+.gear-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 500px;
+
+    @include mq(tabletp) {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 60%;
+    }
+
+    @include mq(tabletl) {
+        max-width: 55%;
+    }
+
+    @include mq(laptop) {
+        max-width: 50%;
+    }
+
+    @include mq(desktop) {
+        max-width: 45%;
+    }
+}
+
+.gear-list {
+    
+}
+
+.gear-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        padding-right: 20px;
+    }
+
+    h4 {
+        margin-bottom: -15px;
+        padding: 0;
+    }
+}
