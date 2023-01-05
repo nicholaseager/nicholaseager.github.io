@@ -8,12 +8,10 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Film'
-      url: '/motion'
-    - title: 'Places'
-      url: '/places'
-    - title: 'Themes'
-      url: '/themes'
+    - title: 'Work'
+      url: '/work'
+    - title: 'Store'
+      url: 'https://store.nicholaseager.com'
     - title: 'Blog'
       url: '/blog'
     - title: 'About'
