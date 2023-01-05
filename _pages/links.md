@@ -21,6 +21,10 @@ layout: home
         <i class="fas fa-camera" aria-hidden="true"></i>
         Gear
     </a>
+    <a href="{{ "/contact" | relative_url }}" class="link">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+        Collaboration
+    </a>
 </div>
 
 ---
