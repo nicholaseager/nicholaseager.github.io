@@ -14,7 +14,7 @@ Whether it's chasing the golden hour off the coast, pitching a tent above the tr
 
 ## Who is Nicholas?
 
-Nicholas is a full-stack, mobile software engineer by trade, with over {{ 'now' | date: "%Y" | minus: 2010 }} years of experience at companies like Google, Garmin, Boeing, and others. Nicholas pursues his passion for photography and filmmaking whenever he gets the chance.
+Nicholas is a international adventure film-maker and photographer. He spends a lot of his time exploring and documenting exciting and unique locations, activities, and cultures. He loves to travel to remote or challenging environments to capture footage and photos of adventurous activities such as mountain climbing or backpacking and camping. He is responsible for all aspects of the filmmaking process, including planning and executing shoots, as well as editing and post-production work. He is driven by a desire to share my experiences and inspire others to pursue their own adventures.
 
 ---
 

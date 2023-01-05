@@ -15,79 +15,25 @@ I am an international adventure film-maker and photographer. I specialize in doc
 
 ---
 
-# Film
-
 {% include youtube.html id="I2I4EySGYEU" %}
 
-<a href="{{ "/motion" | relative_url }}" class="button button--small">See More Film</a>
-
----
-
-# Landscapes
-
-{% include swiper.html
-	class="swiperDynamic"
-    i0="photos/us/2020/3275C406-EBB1-452C-9D60-DE475EC4CFD8-6804-000003F0ABCA067D"
-    i1="photos/us/2020/77DA4F9D-D710-4C2B-8224-28EB7104C979-1302-000000969DE81EFE"
-    i2="photos/us/2020/DSCF2200"
+{% include gallery.html
+	i0="photos/ne/2021/DSCF1896"
+	i1="photos/id/2018/20180429121733"
+	i2="photos/it/2022/DSCF2628_DLCI2w8yj"
+	i3="photos/ne/2021/DSCF0681"
+	i4="photos/tz/2022/DSCF8119_0mh-NAHz_"
+	i5="photos/us/2020/DSCF2129"
+	i6="photos/vi/2021/DSCF9547"
+	i7="photos/zh/2018/IMG_2253"
+	i8="photos/vi/2021/DSCF9546"
+	i9="photos/ne/2021/DSCF0575"
+	i10="photos/ko/2022/DSCF4267_fe4k_dcRJ"
+	i11="photos/vi/2021/DSCF7561"
+	i12="photos/ne/2021/DSCF1863"
 %}
 
-<a href="{{ "/theme/landscapes" | relative_url }}" class="button button--small">See More Landscapes</a>
-
----
-
-# Adventure
-
-{% include swiper.html
-	class="swiperDynamic"
-    i0="photos/us/2020/IMG_3528"
-    i1="photos/zh/2018/IMG_1539"
-    i2="photos/zh/2018/IMG_2253"
-	i3="photos/vi/2021/IMG_0263"
-%}
-
-<a href="{{ "/theme/adventure" | relative_url }}" class="button button--small">See More Adventure</a>
-
----
-
-# Astrophotography
-
-{% include swiper.html
-	class="swiperDynamic"
-    i0="photos/us/2020/DSCF1452"
-    i1="photos/us/2020/DSCF2485"
-    i2="photos/ne/2021/DSCF0575"
-	i3="photos/ne/2021/DSCF1970"
-%}
-
-<a href="{{ "/theme/astrophotography" | relative_url }}" class="button button--small">See More Astrophotography</a>
-
----
-
-# Minimalism
-
-{% include swiper.html
-	class="swiperDynamic"
-    i0="photos/us/2020/DSCF0587"
-    i1="photos/us/2020/IMG_4340"
-    i2="photos/it/2022/DSCF2650_RUF5kxqYe"
-%}
-
-<a href="{{ "/theme/minimalism" | relative_url }}" class="button button--small">See More Minimalism</a>
-
----
-
-# Even More
-
-{% include swiper.html
-	class="swiperDynamic"
-    i0="photos/vi/2021/D24C55DD-A473-43B9-9754-D5DDC099D2F2-3716-000001C4102B9C77"
-    i1="photos/ne/2021/DSCF0929"
-    i2="photos/vi/2021/DSCF6275"
-	i3="photos/us/2020/DSCF0896"
-%}
-
-Want to see other photos? Browse by <a href="{{ "/themes" | relative_url }}">themes</a> or <a href="{{ "/places" | relative_url }}">places</a> to find what you've been searching for.
+Browse by common <a href="{{ "/themes" | relative_url }}">themes</a> or <a href="{{ "/places" | relative_url }}">places</a> to find a specific photo or style.
 
 ---
 
