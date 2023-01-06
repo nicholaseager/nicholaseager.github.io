@@ -248,6 +248,11 @@ a {
 	}
 }
 
+.button.active {
+	background: adjust-hue($accent-color,15%);
+	border-color: adjust-hue($accent-color,15%);
+}
+
 .button--large {
 	padding: 15px 20px 16px;
 	font-size: 13px;

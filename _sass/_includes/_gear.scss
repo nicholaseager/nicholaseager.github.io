@@ -1,47 +1,60 @@
-.gear-wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 500px;
-
-    @include mq(tabletp) {
-        padding-left: 0;
-        padding-right: 0;
-        max-width: 60%;
-    }
-
-    @include mq(tabletl) {
-        max-width: 55%;
-    }
-
-    @include mq(laptop) {
-        max-width: 50%;
-    }
-
-    @include mq(desktop) {
-        max-width: 45%;
-    }
-}
-
-.gear-list {
-    
-}
-
-.gear-item {
+.gear-buttons {
     display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: center;
+}
 
-    img {
-        width: 150px;
-        height: 150px;
-        object-fit: contain;
-        padding-right: 20px;
+.gear-gallery-wrap {
+    position: relative;
+	max-width: 100%;
+	margin: 0px auto;
+
+    @include mq(phonel) {
+		max-width: 90%;
+		margin: 20px auto;
+	}
+
+	@include mq(tabletp) {
+		max-width: 83%;
+		margin: 30px auto;
+	}
+
+	@include mq(laptop) {
+		max-width: 75%;
+		margin: 40px auto;
+	}
+}
+
+.gear-gallery {
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px 10px;
+    grid-template-columns: 50% 50%;
+
+    @include mq(phonel) {
+        grid-template-columns: 30% 30% 30%;
     }
 
-    h4 {
-        margin-bottom: -15px;
-        padding: 0;
+    @include mq(tabletp) {
+        grid-template-columns: 25% 25% 25% 25%;
     }
+}
+
+.gear-gallery-image {
+    display: none;
+
+    a {
+        display: block;
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            padding: 5px;
+        }
+    }
+}
+
+.gear-gallery-image.show {
+    display: block;
 }
