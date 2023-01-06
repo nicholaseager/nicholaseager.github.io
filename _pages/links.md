@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: blank
 ---
 
 {% include image.html src="profile-square_7r8XDOfQj" class="profile-image" %}
