@@ -17,6 +17,8 @@ I am an international adventure film-maker and photographer. I specialize in doc
 
 <a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g" class="button button--small">See More Film</a>
 
+---
+
 ### Photography
 
 {% include gallery.html
