@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: place
+title: My Work
+subtitle: Through my films and photos, you will explore exciting and unique locations, and discover the cultures within.
+image: photos/it/2022/DSCF2628_DLCI2w8yj
 ---
-
-Through my films and photos, you will explore exciting and unique locations, and discover the cultures within.
 
 ## Film
 
