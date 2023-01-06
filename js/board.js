@@ -149,6 +149,18 @@
 
 		$('a[href="' + navTarget + '"]').addClass('active-link');
 
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Main Video Source Switching
+
+		var mainVideo = $('video#homeVideo');
+		var mobileSrc = "https://ik.imagekit.io/qn1gkawvy/home-intro-low.mp4";
+		var desktopSrc = "https://ik.imagekit.io/qn1gkawvy/home-intro.mp4";
+		
+		if ($(window).width() < 980) {
+			mainVideo.append("<source type='video/mp4' src='" + mobileSrc + "' />");
+		} else {
+			mainVideo.append("<source type='video/mp4' src='" + desktopSrc + "' />");
+		}
+
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Galleries
 
 		// If there's a gallery
