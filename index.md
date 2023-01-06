@@ -11,7 +11,13 @@ I am an international adventure film-maker and photographer. I specialize in doc
 
 ---
 
+### Latest Film
+
 {% include latest-youtube.html %}
+
+<a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g" class="button button--small">See More Film</a>
+
+### Photography
 
 {% include gallery.html
 	i0="photos/ne/2021/DSCF1896"
@@ -31,6 +37,8 @@ I am an international adventure film-maker and photographer. I specialize in doc
 
 Browse by common <a href="{{ "/themes" | relative_url }}">themes</a> or <a href="{{ "/places" | relative_url }}">places</a> to find a specific photo or style.
 
+<a href="https://store.nicholaseager.com" class="button button--small">Order Prints</a>
+
 ---
 
 # What They Say
@@ -49,4 +57,4 @@ Browse by common <a href="{{ "/themes" | relative_url }}">themes</a> or <a href=
 
 For business inquiries, such as a collaboration or licensing, please contact me by using the form below.
 
-<a href="{{ "/contact" | relative_url }}" class="button button--large">Get In Touch</a>
+<a href="{{ "/contact" | relative_url }}" class="button button--small">Get In Touch</a>
