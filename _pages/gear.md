@@ -5,10 +5,10 @@ subtitle: All of the gear I genuinely like and use, and recommend to try out for
 ---
 
 <div id="gear-buttons" class="gear-buttons">
-    <button class="button button--small active" onclick="filterSelection('all')">All</button>
-    <button class="button button--small" onclick="filterSelection('filming')">Filming</button>
-    <button class="button button--small" onclick="filterSelection('travel')">Travel</button>
-    <button class="button button--small" onclick="filterSelection('hiking')">Hiking</button>
+    <button class="button button--large active" onclick="filterSelection('all')">All</button>
+    <button class="button button--large" onclick="filterSelection('filming')">Filming</button>
+    <button class="button button--large" onclick="filterSelection('travel')">Travel</button>
+    <button class="button button--large" onclick="filterSelection('hiking')">Hiking</button>
 </div>
 <div class="gear-gallery-wrap">
     <div id="gear-gallery" class="gear-gallery">
