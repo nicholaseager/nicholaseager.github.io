@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'Vietnam'
-subtitle: 'Stunning natural beauty, breathtaking rice terraces, lush green mountains, crystal-clear beaches, and bustling cities.'
+description: 'Stunning natural beauty, breathtaking rice terraces, lush green mountains, crystal-clear beaches, and bustling cities.'
 date: 2022-01-01 00:00:00
-description: Vietnam photography
 image: photos/vi/2021/DSCF9547
 ---
 

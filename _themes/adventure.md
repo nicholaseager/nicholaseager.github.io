@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'Adventure'
-subtitle: 'Seeking out the unbeaten path, exploring unknown territory, and discovering new cultures.'
+description: 'Seeking out the unbeaten path, exploring unknown territory, and discovering new cultures.'
 date: 2022-01-01 00:00:00
-description: Adventure photography
 image: photos/zh/2018/IMG_2253
 ---
 

@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'Nepal'
-subtitle: 'A breathtakingly beautiful country with stunning mountain vistas, lush forests, rolling hills, majestic waterfalls, fascinating culture, ancient temples and monasteries, picturesque villages, and varied, colorful landscapes.'
+description: 'A breathtakingly beautiful country with stunning mountain vistas, lush forests, rolling hills, majestic waterfalls, fascinating culture, ancient temples and monasteries, picturesque villages, and varied, colorful landscapes.'
 date: 2022-01-01 00:00:00
-description: Nepal photography
 image: photos/ne/2021/DSCF1896
 ---
 

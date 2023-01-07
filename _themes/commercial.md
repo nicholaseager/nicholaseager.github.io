@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'Commercial'
-subtitle: 'Capturing the essence of a product or business.'
+description: 'Capturing the essence of a product or business.'
 date: 2022-01-01 00:00:00
-description: Commercial photography
 image: photos/vi/2021/DSCF8525
 ---
 

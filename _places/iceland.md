@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'Iceland'
-subtitle: 'A captivating country lines with rugged coastlines and waterfalls, glaciers and geysers, and unique geological features.'
+description: 'A captivating country lines with rugged coastlines and waterfalls, glaciers and geysers, and unique geological features.'
 date: 2022-01-01 00:00:00
-description: Iceland photography
 image: photos/is/2018/IMG_1187
 ---
 

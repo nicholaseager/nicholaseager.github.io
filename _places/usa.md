@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'United States'
-subtitle: 'Seemingly infinite land, diverse natural beauty, and a wide range of landscapes including mountains, forests, beaches, deserts, and more.'
+description: 'Seemingly infinite land, diverse natural beauty, and a wide range of landscapes including mountains, forests, beaches, deserts, and more.'
 date: 2022-01-01 00:00:00
-description: America photography
 image: photos/us/2020/DSCF2129
 ---
 

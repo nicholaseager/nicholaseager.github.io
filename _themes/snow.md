@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'Snow'
-subtitle: 'A blanket of sparkling, crystalline beauty, covers our planet creating a peaceful and serene atmosphere.'
+description: 'A blanket of sparkling, crystalline beauty, covers our planet creating a peaceful and serene atmosphere.'
 date: 2022-01-01 00:00:00
-description: Snow photography
 image: photos/ne/2021/DSCF1863
 ---
 

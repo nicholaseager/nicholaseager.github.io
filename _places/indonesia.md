@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'Indonesia'
-subtitle: 'A beautiful country with a diverse landscape featuring stunning beaches, lush rainforests, towering volcanoes, and vibrant cultural traditions.'
+description: 'A beautiful country with a diverse landscape featuring stunning beaches, lush rainforests, towering volcanoes, and vibrant cultural traditions.'
 date: 2022-01-01 00:00:00
-description: Indonesia photography
 image: photos/id/2018/20180429121733
 ---
 

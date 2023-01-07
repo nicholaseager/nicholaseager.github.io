@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'Italy'
-subtitle: 'Stunning mountain ranges featuring rugged peaks, crystal clear lakes, and picturesque valleys dotted with charming villages and alpine meadows.'
+description: 'Stunning mountain ranges featuring rugged peaks, crystal clear lakes, and picturesque valleys dotted with charming villages and alpine meadows.'
 date: 2022-01-01 00:00:00
-description: Italy photography
 image: photos/it/2022/DSCF2628_DLCI2w8yj
 ---
 

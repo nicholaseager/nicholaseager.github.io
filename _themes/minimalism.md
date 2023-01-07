@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'Minimalism'
-subtitle: 'Photography is not about trying to capture something. Instead it is about what we try to not capture that makes a photograph great.'
+description: 'Photography is not about trying to capture something. Instead it is about what we try to not capture that makes a photograph great.'
 date: 2022-01-01 00:00:00
-description: Minimalist photography
 image: photos/vi/2021/DSCF7561
 ---
 

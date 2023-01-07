@@ -1,9 +1,8 @@
 ---
 layout: place
 title: 'City'
-subtitle: 'A testament to the ingenuity and creativity of humanity, cities pulsate with life and activity, even as the rest of the world sleeps.'
+description: 'A testament to the ingenuity and creativity of humanity, cities pulsate with life and activity, even as the rest of the world sleeps.'
 date: 2022-01-01 00:00:00
-description: City photography
 image: photos/ko/2022/DSCF4267_fe4k_dcRJ
 ---
 
