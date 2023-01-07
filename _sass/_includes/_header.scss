@@ -57,7 +57,11 @@
 }
 
 .header__title-home {
-	display: none;
+	color: white;
+
+	&:hover {
+		color: $accent-color;
+	}
 }
 
 .header__title-page {
