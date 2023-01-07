@@ -15,6 +15,8 @@ I am an international adventure film-maker and photographer. I specialize in doc
 
 {% include latest-youtube.html %}
 
+I spend a lot of my time exploring and documenting exciting and unique locations, activities, and cultures. I am responsible for all aspects of the filmmaking process, including planning and executing shoots, as well as editing and post-production work. Want to come along? <a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g?sub_confirmation=1" target="_blank">Subscribe</a> to my channel on YouTube.
+
 <a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g" class="button button--small">See More Film</a>
 
 ---
