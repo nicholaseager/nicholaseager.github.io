@@ -1,4 +1,10 @@
-<header class="header">
+{% if page.url == "/" %}
+{% assign color-style = "home" %}
+{% else %}
+{% assign color-style = "page" %}
+{% endif %}
+
+<header class="header header-{{ color-style }}">
 
 	<div class="wrap">
 
@@ -7,20 +13,20 @@
 			<img src="{{ site.data.settings.header_settings.logo_image | relative_url }}" class="header__logo__img">
 		</a>
 		{% else %}
-		<a href="{{ site.baseurl }}/" class="header__title">
+		<a href="{{ site.baseurl }}/" class="header__title header__title-{{ color-style }}">
 			{{ site.data.settings.basic_settings.site_title }}
 		</a>
 		{% endif %}
 
 		<div class="menu">
-			<div class="menu__toggle js-menu-toggle">
-				<div class="menu__toggle__icon"><span></span></div>
+			<div class="menu__toggle menu__toggle-{{ color-style }} js-menu-toggle">
+				<div class="menu__toggle__icon menu__toggle__icon-{{ color-style }}"><span></span></div>
 			</div>
 			<div class="menu__wrap">
 				<ul class="menu__list">
 					{% for item in site.data.settings.menu_settings.menu_items %}
 					<li class="menu__list__item">
-						<a href="{{ item.url | relative_url }}" class="menu__list__item__link">{{ item.title }}</a>
+						<a href="{{ item.url | relative_url }}" class="menu__list__item__link menu__list__item__link-{{ color-style }}">{{ item.title }}</a>
 					</li>
 					{% endfor %}
 				</ul>
