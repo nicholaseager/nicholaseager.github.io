@@ -5,6 +5,8 @@ description: Nicholas Eager Adventure Film and Photography
 image: photos/ne/2021/DSCF1896
 ---
 
+{% include image.html src="profile-square_7r8XDOfQj" class="profile-image" %}
+### Hi, folks!
 I am an international adventure film-maker and photographer. I specialize in documenting all of the tiny, special moments from off the beaten path adventures around the world.
 
 <a href="{{ "/about" | relative_url }}" class="button button--small">Learn More</a>
@@ -45,7 +47,7 @@ Browse by common <a href="{{ "/themes" | relative_url }}">themes</a> or <a href=
 
 ---
 
-# What They Say
+## What They Say
 
 "Nicholas Eager’s photos help us capture the beauty and rich culture of our remote Himalayan valley along the Manaslu Circuit, Nepal. With his photos, we can tell our story and succeed in our mission to create a brighter and more sustainable future for our home, the Tsum-Nubri Valley. Nicholas, thu-chi che and thank you!" - Tenzing from <a href="https://www.himalayantahrtreks.com/" target="_blank">Himalayan Tahr Treks</a>
 
