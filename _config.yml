@@ -10,6 +10,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
+  guides:
+    output: true
+    permalink: /guides/:slug
   places:
     output: true
     permalink: /place/:slug

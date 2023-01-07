@@ -1,0 +1,37 @@
+---
+layout: default
+title: Travel Guides
+description: A collection of how-to guides to help you on your next journey
+---
+
+<section class="listing">
+
+	<div class="content-wrap listing-wrap">
+
+		{% for guide in site.guides %}
+
+		<article class="listing-item">
+
+			<a class="listing-item__link" href="{{ guide.url | relative_url }}">
+
+				<div class="listing-item__image">
+					{% assign guide_image =  guide.image | relative_url %}
+					{% include gallery-image.html src=guide_image alt=guide.title %}
+				</div>
+
+				<div class="listing-item__content">
+					<div class="listing-item__info">
+						<h2 class="listing-item__title">{{ guide.title }}</h2>
+						<p class="listing-item__subtitle">{{ guide.date | date_to_long_string }}</p>
+					</div>
+				</div>
+
+			</a>
+
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>
