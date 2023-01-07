@@ -1,37 +1,7 @@
 ---
-layout: default
+layout: collection
 title: Themes
-image: /images/social.jpg
+description: Collections of common ideas, concepts, styles, and even some experimentation :)
 ---
 
-<section class="listing">
-
-	<div class="content-wrap listing-wrap">
-
-		{% for theme in site.themes reversed %}
-
-		<div class="listing-item">
-
-			<a class="listing-item__link" href="{{ theme.url | relative_url }}">
-
-				<div class="listing-item__image">
-					{% assign theme_image = theme.image | relative_url %}
-					{% include gallery-image.html src=theme_image alt=theme.title %}
-				</div>
-
-				<div class="listing-item__content listing-item__content">
-					<div class="listing-item__info">
-						<h2 class="listing-item__title">{{ theme.title }}</h2>
-						<p class="listing-item__subtitle">{{ theme.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		{% endfor %}
-
-	</div>
-
-</section>
+{% include collection.html items=site.themes %}

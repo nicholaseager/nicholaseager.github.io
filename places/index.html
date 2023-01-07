@@ -1,37 +1,7 @@
 ---
-layout: default
-title: Photographer
-image: /images/social.jpg
+layout: collection
+title: Places
+description: Exploring and documenting exciting and unique locations and cultures.
 ---
 
-<section class="listing">
-
-	<div class="content-wrap listing-wrap">
-
-		{% for place in site.places reversed %}
-
-		<div class="listing-item">
-
-			<a class="listing-item__link" href="{{ place.url | relative_url }}">
-
-				<div class="listing-item__image">
-					{% assign place_image = place.image | relative_url %}
-					{% include gallery-image.html src=place_image alt=place.title %}
-				</div>
-
-				<div class="listing-item__content listing-item__content">
-					<div class="listing-item__info">
-						<h2 class="listing-item__title">{{ place.title }}</h2>
-						<p class="listing-item__subtitle">{{ place.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		{% endfor %}
-
-	</div>
-
-</section>
+{% include collection.html items=site.places %}

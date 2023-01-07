@@ -1,0 +1,31 @@
+<section class="listing">
+
+	<div class="content-wrap listing-wrap">
+
+		{% for post in include.items reversed %}
+
+		<article class="listing-item">
+
+			<a class="listing-item__link" href="{{ post.url | relative_url }}">
+
+				<div class="listing-item__image">
+					{% assign post_image =  post.image | relative_url %}
+					{% include gallery-image.html src=post_image alt=post.title %}
+				</div>
+
+				<div class="listing-item__content">
+					<div class="listing-item__info">
+						<h2 class="listing-item__title">{{ post.title }}</h2>
+						<p class="listing-item__subtitle">{{ post.subtitle }}</p>
+					</div>
+				</div>
+
+			</a>
+
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>
