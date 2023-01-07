@@ -4,6 +4,8 @@ title: A Guide to Mountain Hut to Hut Hiking in Italy
 date: 2022-12-19
 description: Everything you need to know about hiking and mountain huts in Italy
 image: blog/it/2022/huts/locatelli2_Xhta297X2
+redirect_from:
+    - /g/mountain-huts
 ---
 
 What is hiking like in Italy? How do I book a mountain hut? What types of mountain huts are there? How much does it cost? Is wild camping in a tent allowed? What is an alta via or via ferrata?
