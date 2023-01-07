@@ -1,5 +1,12 @@
-filterSelection("all") // Execute the function and show all columns
+updateElements("all") // Execute the function and show all columns
 function filterSelection(c) {
+    $("#gear-gallery").fadeOut("fast", function () {
+        updateElements(c);
+        $("#gear-gallery").fadeIn("slow");
+    });
+}
+
+function updateElements(c) {
     var x, i;
     x = document.getElementsByClassName("gear-gallery-image");
     if (c == "all") c = "";

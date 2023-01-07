@@ -11,7 +11,7 @@ subtitle: All of the gear I genuinely like and use, and recommend to try out for
     <button class="button button--small" onclick="filterSelection('hiking')">Hiking</button>
 </div>
 <div class="gear-gallery-wrap">
-    <div class="gear-gallery">
+    <div id="gear-gallery" class="gear-gallery">
       {% for gear in site.data.gear %}
       <div class="gear-gallery-image {{ gear.tags }}">
         <a href="{{ gear.url }}">
