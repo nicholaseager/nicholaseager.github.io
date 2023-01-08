@@ -34,10 +34,11 @@ layout: blank
 
 ---
 
-{% for post in site.posts limit:1 %}
-#### Latest Blog Post
-{% include image.html src=post.image %}
-### {{ post.title }}
-{{ post.description }}
- <a href="{{ post.url | relative_url }}">Read More</a>
+{% assign guides = site.guides | reverse %}
+{% for guide in guides limit:1 %}
+#### Latest Travel Guide
+{% include image.html src=guide.image %}
+### {{ guide.title }}
+{{ guide.description }}
+ <a href="{{ guide.url | relative_url }}">Read More</a>
 {% endfor %}
