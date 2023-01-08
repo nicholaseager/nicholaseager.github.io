@@ -1,0 +1,28 @@
+<div class="swiper swiperCollection swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for guide in site.guides %}
+        <div class="swiper-slide">
+            <article class="collection-item">
+
+                <a href="{{ guide.url | relative_url }}">
+
+                    <div class="collection-item-image">
+                        {% assign guide_image = guide.image | relative_url %}
+                        {% include gallery-image.html src=guide_image alt=guide.title %}
+                    </div>
+
+                    <div class="collection-item-content">
+                        <div>
+                            <div class="collection-item-title">{{ guide.title }}</div>
+                            <div class="collection-item-subtitle">{{ guide.description }}</div>
+                        </div>
+                    </div>
+
+                </a>
+
+            </article>
+        </div>
+        {% endfor %}
+    </div>
+</div>

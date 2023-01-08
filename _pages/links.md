@@ -34,11 +34,5 @@ layout: blank
 
 ---
 
-{% assign guides = site.guides | reverse %}
-{% for guide in guides limit:1 %}
-#### Latest Travel Guide
-{% include image.html src=guide.image %}
-### {{ guide.title }}
-{{ guide.description }}
- <a href="{{ guide.url | relative_url }}">Read More</a>
-{% endfor %}
+#### Latest Travel Guides
+{% include latest-guides.html %}

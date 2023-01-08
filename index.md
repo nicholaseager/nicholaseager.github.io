@@ -23,6 +23,14 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 
 ---
 
+### Latest Travel Guides
+
+{% include latest-guides.html %}
+
+<a href="{{ "/guides/" | relative_url }}" class="button button--small">See More</a>
+
+---
+
 ### Photography
 
 {% include gallery.html

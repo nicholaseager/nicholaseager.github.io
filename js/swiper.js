@@ -41,3 +41,31 @@ const dynamicSlideSwiper = new Swiper('.swiperDynamic', {
         }
     }
 });
+
+const collectionSwiper = new Swiper('.swiperCollection', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+
+    autoplay: {
+        delay: 5000,
+    },
+
+    lazy: {
+        loadPrevNext: true,
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        960: {
+            slidesPerView: 2,
+            spaceBetween: 5
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        }
+    }
+});
