@@ -1,0 +1,15 @@
+
+<div class="swiper swiperSingle swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for testimonial in site.data.testimonials %}
+        <div class="swiper-slide">
+            <div class="testimonial">
+                {{ testimonial.quote }}
+                <span>{{ testimonial.author }}</span>
+                <a href="{{ testimonial.url }}" target="_blank">More</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

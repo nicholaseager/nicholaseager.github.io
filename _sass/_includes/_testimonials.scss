@@ -1,0 +1,60 @@
+.testimonial {
+	font-style: italic;
+	color: $text-dark-color;
+	padding: 1.2em 20px 1.2em 20px;
+	border-left: 4px solid rgba($text-dark-color, $alpha: 0.5);
+	line-height: 1.6;
+	position: relative;
+	background: rgba($background-alt-color, 0.9);
+
+    font-size: 18px;
+    max-width: 100%;
+    margin: 5px auto;
+
+    @include mq(tabletp) {
+        padding: 1.2em 30px 1.2em 75px;
+        font-size: 22px;
+        margin: 30px auto;
+    }
+
+    @include mq(laptop) {
+        font-size: 25px;
+        margin: 40px auto;
+    }
+
+    a {
+        @include mq(tabletp) {
+            position: absolute;
+            right: 40px;
+            bottom: 20px;
+        }
+
+        font-size: 14px;
+		border-bottom: 2px solid $accent-color;
+	}
+}
+
+.testimonial::before {
+    content: '';
+    
+    @include mq(tabletp) {
+        content: "\201C";
+        color: #78C0A8;
+        font-size: 4em;
+        position: absolute;
+        left: 10px;
+        top: -10px;
+    }
+}
+
+.testimonial::after {
+	content: '';
+}
+
+.testimonial span {
+	display: block;
+	color: $text-dark-color;
+	font-style: normal;
+	margin-top: 1em;
+    font-weight: $bold-weight;
+}

@@ -1,0 +1,12 @@
+---
+layout: page
+title: Testimonials
+---
+
+{% for testimonial in site.data.testimonials %}
+<blockquote class="testimonial">
+    {{ testimonial.quote }}
+    <span>{{ testimonial.author }}</span>
+    <a href="{{ testimonial.url }}" target="_blank">More</a>
+</blockquote>
+{% endfor %}

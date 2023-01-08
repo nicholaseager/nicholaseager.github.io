@@ -4,6 +4,7 @@ const singleSlideSwiper = new Swiper('.swiperSingle', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    autoHeight: true,
 
     autoplay: {
         delay: 5000,
@@ -46,6 +47,7 @@ const collectionSwiper = new Swiper('.swiperCollection', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
+    autoHeight: true,
 
     autoplay: {
         delay: 5000,
