@@ -11,16 +11,6 @@ redirect_from:
 
 Trekking in Nepal is undoubtedly a lifetime experience you won't soon forget. Any route you choose is full of its own surprises and wonders. While some of the more popular treks are full of breathtaking views and convenient services, the lesser-known ones are sparsely populated, more authentic, and still come with some amazing views. We chose to trek in Manaslu during the shoulder season (December) because we wanted to avoid tourists and see a more authentic Nepal and Tibet. If you feel the same and want to know more, keep reading :)
 
-### Table of Contents
-1. [Our Favorite Highlights](#our-favorite-highlights)
-2. [How To Get There](#how-to-get-there)
-3. [When You Should Go](#when-should-you-go)
-4. [Itinerary](#21-day-itinerary)
-5. [Cost](#cost)
-6. [What You Should Bring](#what-should-you-bring)
-7. [Should You Hire A Guide?](#should-you-hire-a-guide)
-8. [Conclusion](#want-more)
-
 ## Our Favorite Highlights
 
 Every part of our 21 days was breathtaking, and there are infinite possibilities to add side trips to your itinerary, but here is what stands out most for us.

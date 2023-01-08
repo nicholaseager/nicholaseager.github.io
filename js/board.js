@@ -235,6 +235,21 @@
 			}
 		});
 
+		$('.guide-content').each( function() {
+			var $this = $(this);
+			var $toc_content = $this.find('.table-of-contents-content');
+			var $toc = $this.find('#table-of-contents').find('ol');
+
+			$toc_content.children("h2").map(function () {
+				var header = $(this);
+				var text = header.text();
+				var id = text.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z ]/g, "");
+
+				header.attr("id", id);
+
+				$toc.append('<li><a href="#' + id + '">' + text + '</a></li>');
+			});
+		});
 	}
 
 	// Run functions on load
