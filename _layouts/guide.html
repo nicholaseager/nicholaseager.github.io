@@ -8,6 +8,30 @@ layout: default
 
 <section id="content" class="single">
 	<h1>{{ page.description }}</h1>
+	{% if page.youtube %}
+	{% include youtube.html id=page.youtube %}
+	{% endif %}
+
+	<hr>
 
 	{{ page.content }}
+
+	<hr>
+
+	<h1>Practicalities</h1>
+
+	{% if page.alltrails %}
+	<h2>Route Overview</h2>
+	{% include alltrails.html id=page.alltrails %}
+	{% endif %}
+
+	<h2>Gear Required</h2>
+	<p>When you're out exploring, it's super important to have the right gear. The right stuff can keep you comfortable, safe, and happy on your trip, and it can also help you take care of the planet. Make sure to pack the right clothes and gear for your trip. A little bit of planning and preparation can go a long way towards making your adventure a success.</p>
+	<p>Check out the <a href="{{ "/gear" | relative_url }}">gear</a> I bring with me on most of my trips.</p>
+
+	<h2>Need More Help?</h2>
+	<p>Please <a href="{{ "/contact" | relative_url }}">contact</a> me if you want to ask questions; I am happy to help.</p>
+	{% if page.youtube %}
+	<p>You can also check out <a href="https://www.youtube.com/watch?v={{ page.youtube }}" target="_blank">a video</a> that I made about the entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)</p>
+	{% endif %}
 </section>

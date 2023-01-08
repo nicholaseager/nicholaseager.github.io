@@ -4,13 +4,12 @@ title: How to Hike the Manaslu Circuit
 date: 2022-08-07
 description: 21 Days on the Manaslu Circuit with our favorite highlights, and more.
 image: photos/ne/2021/DSCF0855
+youtube: I2I4EySGYEU
 redirect_from:
     - /g/manaslu
 ---
 
-## Manaslu Circuit Trekking
-
-Trekking in Nepal is undoubtedly a lifetime experience you won't soon forget. Any route you choose is full of its own suprises and wonders. While some of the more popular treks are full of breathtaking views and convenient services, the lesser-known ones are sparsely populated, more authentic, and still come with some amazing views. We chose to trek in Manaslu during the shoulder season (December) because we wanted to avoid tourists and see a more authentic Nepal and Tibet. If you feel the same and want to know more, keep reading :)
+Trekking in Nepal is undoubtedly a lifetime experience you won't soon forget. Any route you choose is full of its own surprises and wonders. While some of the more popular treks are full of breathtaking views and convenient services, the lesser-known ones are sparsely populated, more authentic, and still come with some amazing views. We chose to trek in Manaslu during the shoulder season (December) because we wanted to avoid tourists and see a more authentic Nepal and Tibet. If you feel the same and want to know more, keep reading :)
 
 ### Table of Contents
 1. [Our Favorite Highlights](#our-favorite-highlights)
@@ -149,11 +148,3 @@ I did not use the sleeping bag except once because the tea house owners were alw
 ## Should You Hire A Guide?
 
 If you want to trek in the Manaslu Conservation Area, you are required to find a guide.  You can either find a freelance guide before reaching Jagat (the first police checkpoint), find a guide in Kathmandu or Pokhara, or hire a tour company to do all the things for you. I'd recommend reaching out to Tenzing at <a href="https://www.himalayantahrtreks.com/" target="_blank">Himalayan Tahr Treks</a> if you have more questions.
-
-## Want More?
-
-Please <a href="{{ "/contact" | relative_url }}">contact</a> me if you want to ask questions; I am happy to help. Check out a video that I made about our entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)
-
-{% include youtube.html id="I2I4EySGYEU" %}
-
-Prayer flags sending wishes in the wind with every thread, sunsets setting fire to the mountains, cheery nuns cooking nourishing treats over a crackling fire, energetic monks playing football over a cliff, loyal dogs guiding lost trekkers along the trail, squeaky prayer wheels spinning endlessly, furry yaks eying strange non-furry humans curiously from afar, swaying bridges hanging high above rushing teal-colored rivers, weary donkeys hauling heavy supplies, shoes sinking abruptly into the snow, majestic mountain goats strutting across the field, milk tea melting treacherously frozen lakes, all powered by Dal Bhat.

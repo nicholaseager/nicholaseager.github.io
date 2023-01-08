@@ -4,6 +4,7 @@ title: A Guide to Mountain Hut to Hut Hiking in Italy
 date: 2022-12-19
 description: Everything you need to know about hiking and mountain huts in Italy
 image: blog/it/2022/huts/locatelli2_Xhta297X2
+youtube: djldGrhYFdo
 redirect_from:
     - /g/mountain-huts
 ---
@@ -81,9 +82,3 @@ Via Ferrata are routes where experience and equipment is necessary. These routes
 {% include image.html src="photos/it/2022/DSCF3863_a_XzYk-Nl" %}
 
 In short, not really. But if you setup camp around sunset, pack up at sunrise, be respectful of nature, and follow leave-no-trace principles, it is generally tolerated. In more popular areas, sometimes rangers come around and give people fines. But if you're hiking a long Alta Via and are keeping a distance from huts or popular areas, you will be fine. Sometimes we have seen people even camping right next to very popular huts with no issue.
-
-## Want more?
-
-Please <a href="{{ "/contact" | relative_url }}">contact</a> me if you want to ask questions; I am happy to help. Check out a video that I made about my trip to the Dolomites! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)
-
-{% include youtube.html id="djldGrhYFdo" %}
