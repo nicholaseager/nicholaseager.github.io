@@ -1,17 +1,7 @@
 .collection-wrap {
     position: relative;
 	max-width: 90%;
-	margin: 20px;
-
-	@include mq(tabletp) {
-		max-width: 83%;
-		margin: 30px auto;
-	}
-
-	@include mq(laptop) {
-		max-width: 75%;
-		margin: 40px auto;
-	}
+	margin: 20px auto;
 }
 
 .collection {
@@ -22,11 +12,15 @@
 	align-items: center;
 
     @include mq(phonel) {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(2, 50%);
     }
 
     @include mq(laptop) {
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: repeat(3, 33.33%);
+    }
+
+	@include mq(desktop) {
+        grid-template-columns: repeat(4, 25%);
     }
 }
 
