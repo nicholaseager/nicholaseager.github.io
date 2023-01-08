@@ -6,7 +6,7 @@
 
 .collection {
     display: grid;
-    grid-gap: 20px 10px;
+    grid-gap: 20px 0px;
     grid-template-columns: 100%;
 	justify-items: center;
 	align-items: center;
@@ -28,6 +28,8 @@
     position: relative;
 	display: block;
 
+	margin-left: 5px;
+	margin-right: 5px;
 	border-radius: 15px;
 	overflow: hidden;
 
