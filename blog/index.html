@@ -1,40 +1,10 @@
 ---
-layout: default
-title: Blog
-image: /images/social.jpg
+layout: collection
+title: Personal Blog
+description: Capturing my own memories of trips or experiences in the past
 ---
 
-<section class="listing">
-
-	<div class="content-wrap listing-wrap">
-
-		{% for post in paginator.posts %}
-
-		<article class="listing-item">
-
-			<a class="listing-item__link" href="{{ post.url | relative_url }}">
-
-				<div class="listing-item__image">
-					{% assign post_image =  post.image | relative_url %}
-					{% include gallery-image.html src=post_image alt=post.title %}
-				</div>
-
-				<div class="listing-item__content">
-					<div class="listing-item__info">
-						<h2 class="listing-item__title">{{ post.title }}</h2>
-						<p class="listing-item__subtitle">{{ post.date | date_to_long_string }}</p>
-					</div>
-				</div>
-
-			</a>
-
-		</article>
-
-		{% endfor %}
-
-	</div>
-
-</section>
+{% include collection.html items=paginator.posts %}
 
 {% if paginator.total_pages > 1 %}
 

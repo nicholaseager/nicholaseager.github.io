@@ -4,4 +4,5 @@ title: Places
 description: Exploring and documenting exciting and unique locations and cultures.
 ---
 
-{% include collection.html items=site.places %}
+{% assign places = site.places | reverse %}
+{% include collection.html items=places %}

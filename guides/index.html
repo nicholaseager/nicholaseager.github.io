@@ -4,4 +4,5 @@ title: Travel Guides
 description: A collection of how-to guides to help you on your next journey
 ---
 
-{% include collection.html items=site.guides %}
+{% assign guides = site.guides | reverse %}
+{% include collection.html items=guides %}

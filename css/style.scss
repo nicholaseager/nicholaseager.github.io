@@ -54,18 +54,6 @@ $menu-large: {{ site.data.settings.font_settings.menu.large_size }}px;
 $menu-weight: {{ site.data.settings.font_settings.menu.weight }};
 $menu-spacing: {{ site.data.settings.font_settings.menu.letter_spacing }}em;
 
-$grid-item-title-small: {{ site.data.settings.font_settings.grid_item_title.small_size }}px;
-$grid-item-title-medium: {{ site.data.settings.font_settings.grid_item_title.medium_size }}px;
-$grid-item-title-large: {{ site.data.settings.font_settings.grid_item_title.large_size }}px;
-$grid-item-title-weight: {{ site.data.settings.font_settings.grid_item_title.weight }};
-$grid-item-title-spacing: {{ site.data.settings.font_settings.grid_item_title.letter_spacing }}em;
-
-$grid-item-subtitle-small: {{ site.data.settings.font_settings.grid_item_subtitle.small_size }}px;
-$grid-item-subtitle-medium: {{ site.data.settings.font_settings.grid_item_subtitle.medium_size }}px;
-$grid-item-subtitle-large: {{ site.data.settings.font_settings.grid_item_subtitle.large_size }}px;
-$grid-item-subtitle-weight: {{ site.data.settings.font_settings.grid_item_subtitle.weight }};
-$grid-item-subtitle-spacing: {{ site.data.settings.font_settings.grid_item_subtitle.letter_spacing }}em;
-
 $h1-small: {{ site.data.settings.font_settings.h1.small_size }}px;
 $h1-medium: {{ site.data.settings.font_settings.h1.medium_size }}px;
 $h1-large: {{ site.data.settings.font_settings.h1.large_size }}px;
@@ -149,10 +137,10 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 @import "_includes/_swiper";
 @import "_includes/_image-gallery";
 @import "_includes/_syntax";
-@import "_includes/_listing";
 @import "_includes/_banner";
 @import "_includes/_contact-form";
 @import "_includes/_links";
 @import "_includes/_gear";
+@import "_includes/_collection";
 
 

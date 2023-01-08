@@ -144,14 +144,6 @@
 
 		// Wait until first image has loaded
 		$('.page__content').find('img:first').imagesLoaded( function() {
-	
-			// Portfolio grid layout
-			$('.listing-wrap').imagesLoaded( function() {
-				$('.listing-wrap').masonry({
-					itemSelector: '.listing-item',
-					transitionDuration: 0
-				});
-			});
 
 			// Show the content
 			$('body').removeClass('loading');

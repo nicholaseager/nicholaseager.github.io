@@ -1,31 +1,25 @@
-<section class="listing">
+<div class="collection-wrap">
+	<div class="collection">
+	{% for post in include.items limit:include.limit %}
+	  <article class="collection-item">
 
-	<div class="content-wrap listing-wrap">
+			<a href="{{ post.url | relative_url }}">
 
-		{% for post in include.items reversed %}
-
-		<article class="listing-item">
-
-			<a class="listing-item__link" href="{{ post.url | relative_url }}">
-
-				<div class="listing-item__image">
-					{% assign post_image =  post.image | relative_url %}
+				<div class="collection-item-image">
+					{% assign post_image = post.image | relative_url %}
 					{% include gallery-image.html src=post_image alt=post.title %}
 				</div>
 
-				<div class="listing-item__content">
-					<div class="listing-item__info">
-						<div class="listing-item__title">{{ post.title }}</div>
-						<div class="listing-item__subtitle">{{ post.description }}</div>
+				<div class="collection-item-content">
+					<div>
+						<div class="collection-item-title">{{ post.title }}</div>
+						<div class="collection-item-subtitle">{{ post.description }}</div>
 					</div>
 				</div>
 
 			</a>
 
 		</article>
-
-		{% endfor %}
-
-	</div>
-
-</section>
+	  {% endfor %}
+  </div>
+</div>

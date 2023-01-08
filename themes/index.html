@@ -4,4 +4,5 @@ title: Themes
 description: Collections of common ideas, concepts, styles, and even some experimentation :)
 ---
 
-{% include collection.html items=site.themes %}
+{% assign themes = site.themes | reverse %}
+{% include collection.html items=themes %}
