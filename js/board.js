@@ -113,26 +113,15 @@
 		
 	}
 
-	// Click event for any anchor tag that's href starts with #
-	$('a[href^="#"]').click(function (event) {
-
-		// The id of the section we want to go to.
+	$(document).on('click', '.scrollto', function (event){
 		var id = $(this).attr("href");
-
-		// An offset to push the content down from the top.
-		var offset = 60;
-
-		// Our scroll target : the top position of the
-		// section that has the id referenced by our href.
-		var target = $(id).offset().top - offset;
-
-		// The magic...smooth scrollin' goodness.
-		$('html, body').animate({ scrollTop: target }, 500);
-
-		// prevent the page from jumping down to our section.
-		event.preventDefault();
+		if (id) {
+			var offset = 30;
+			var target = $(id).offset().top - offset;
+			$('html, body').animate({ scrollTop: target }, 500);
+			event.preventDefault();
+		}
 	});
-
 
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page load
@@ -235,6 +224,8 @@
 			}
 		});
 
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Auto TOC
+
 		$('.guide-content').each( function() {
 			var $this = $(this);
 			var $toc_content = $this.find('.table-of-contents-content');
@@ -247,7 +238,7 @@
 
 				header.attr("id", id);
 
-				$toc.append('<li><a href="#' + id + '">' + text + '</a></li>');
+				$toc.append('<li><a class="scrollto" href="#' + id + '">' + text + '</a></li>');
 			});
 		});
 	}
