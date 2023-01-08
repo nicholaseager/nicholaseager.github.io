@@ -1,17 +1,3 @@
-<style>
-    .overlay {
-        background: transparent;
-        position: relative;
-        width: 640px;
-        height: 480px;
-        /* your iframe height */
-        top: 480px;
-        /* your iframe height */
-        margin-top: -480px;
-        /* your iframe height */
-    }
-</style>
-<div class="overlay" onClick="style.pointerEvents='none'"></div>
 <iframe
     id="lazyframe googlemap {{ include.id }}"
     srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{background:rgb(146,180,243);height:100%}</style>
