@@ -7,6 +7,8 @@ title: Testimonials
 <blockquote class="testimonial">
     {{ testimonial.quote }}
     <span>{{ testimonial.author }}</span>
+    {% if testimonial.url %}
     <a href="{{ testimonial.url }}" target="_blank">More</a>
+    {% endif %}
 </blockquote>
 {% endfor %}
