@@ -1,5 +1,6 @@
 ---
 layout: place
+header: transparent
 title: 'Nepal'
 description: 'A breathtakingly beautiful country with stunning mountain vistas, lush forests, rolling hills, majestic waterfalls, fascinating culture, ancient temples and monasteries, picturesque villages, and varied, colorful landscapes.'
 date: 2022-01-01 00:00:00

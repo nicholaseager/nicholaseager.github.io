@@ -1,5 +1,6 @@
 ---
 layout: place
+header: transparent
 title: 'Iceland'
 description: 'A captivating country lines with rugged coastlines and waterfalls, glaciers and geysers, and unique geological features.'
 date: 2022-01-01 00:00:00

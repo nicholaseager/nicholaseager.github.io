@@ -1,5 +1,6 @@
 ---
 layout: place
+header: transparent
 title: 'Snow'
 description: 'A blanket of sparkling, crystalline beauty, covers our planet creating a peaceful and serene atmosphere.'
 date: 2022-01-01 00:00:00

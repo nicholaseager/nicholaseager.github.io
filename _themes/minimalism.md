@@ -1,5 +1,6 @@
 ---
 layout: place
+header: transparent
 title: 'Minimalism'
 description: 'Photography is not about trying to capture something. Instead it is about what we try to not capture that makes a photograph great.'
 date: 2022-01-01 00:00:00

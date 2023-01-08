@@ -1,5 +1,6 @@
 ---
 layout: place
+header: transparent
 title: 'Indonesia'
 description: 'A beautiful country with a diverse landscape featuring stunning beaches, lush rainforests, towering volcanoes, and vibrant cultural traditions.'
 date: 2022-01-01 00:00:00

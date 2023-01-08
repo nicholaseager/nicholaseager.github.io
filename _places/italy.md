@@ -1,5 +1,6 @@
 ---
 layout: place
+header: transparent
 title: 'Italy'
 description: 'Stunning mountain ranges featuring rugged peaks, crystal clear lakes, and picturesque valleys dotted with charming villages and alpine meadows.'
 date: 2022-01-01 00:00:00

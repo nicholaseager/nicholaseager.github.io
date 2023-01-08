@@ -1,5 +1,6 @@
 ---
 layout: place
+header: transparent
 title: 'Commercial'
 description: 'Capturing the essence of a product or business.'
 date: 2022-01-01 00:00:00

@@ -1,5 +1,6 @@
 ---
 layout: place
+header: transparent
 title: 'Animals'
 description: 'Our planet has a diverse range of animals, which is a testament to the incredible adaptability and resilience of life.'
 date: 2022-01-01 00:00:00
