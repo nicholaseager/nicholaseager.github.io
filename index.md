@@ -55,7 +55,7 @@ Browse by common <a href="{{ "/themes" | relative_url }}">themes</a> or <a href=
 
 ---
 
-## What They Say
+### What They Say
 
 "Nicholas Eager’s photos help us capture the beauty and rich culture of our remote Himalayan valley along the Manaslu Circuit, Nepal. With his photos, we can tell our story and succeed in our mission to create a brighter and more sustainable future for our home, the Tsum-Nubri Valley. Nicholas, thu-chi che and thank you!" - Tenzing from <a href="https://www.himalayantahrtreks.com/" target="_blank">Himalayan Tahr Treks</a>
 
@@ -67,7 +67,7 @@ Browse by common <a href="{{ "/themes" | relative_url }}">themes</a> or <a href=
 
 ---
 
-## Ready To Work Together?
+### Ready To Work Together?
 
 For business inquiries, such as a collaboration or licensing, please contact me by using the form below.
 
