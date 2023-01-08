@@ -5,6 +5,7 @@ date: 2022-08-07
 description: 21 Days on the Manaslu Circuit with our favorite highlights, and more.
 image: photos/ne/2021/DSCF0855
 youtube: I2I4EySGYEU
+googlemap: 1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc
 redirect_from:
     - /g/manaslu
 ---

@@ -31,6 +31,12 @@ layout: default
 		<hr>
 		{% endif %}
 
+		{% if page.googlemap %}
+		<h2>Route Overview</h2>
+		{% include my-map.html id=page.googlemap %}
+		<hr>
+		{% endif %}
+
 		{{ page.content }}
 
 		<hr>
