@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: guide
 title: How to Hike the Manaslu Circuit
 date: 2022-08-07
 description: 21 Days on the Manaslu Circuit with our favorite highlights, and more.

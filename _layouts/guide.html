@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<section class="section__banner">
+	{% include banner.html image=page.image title=page.title %}
+</section>
+
+<section id="content" class="single">
+	<h1>{{ page.description }}</h1>
+
+	{{ page.content }}
+</section>

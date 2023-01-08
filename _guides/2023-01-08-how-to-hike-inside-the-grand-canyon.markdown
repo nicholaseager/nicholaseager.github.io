@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: guide
 title: How to Hike Inside the Grand Canyon
 date: 2023-01-08
 description: Everything you need to know about hiking down into the Grand Canyon and back up again
