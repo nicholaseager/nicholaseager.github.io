@@ -1,7 +1,6 @@
 ---
 title: About
-subtitle: Husband, Photographer, Software Engineer, Runner, Designer, Filmmaker, and Adventurer.
-description: Nicholas Eager Photography
+description: Husband, Photographer, Film-maker, and Adventurer
 ---
 
 {% include image.html src="profile" %}

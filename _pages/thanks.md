@@ -1,6 +1,6 @@
 ---
 title: Thank you
-subtitle: Your message was sent successfully.
+description: Your message was sent successfully.
 image: /images/demo/about.jpg
 ---
 

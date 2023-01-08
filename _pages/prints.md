@@ -1,7 +1,6 @@
 ---
 title: Prints
-subtitle: Thank you for your interest in prints by Nicholas Eager Photography.
-description: Nicholas Eager Photography Prints
+description: Thank you for your interest in prints by Nicholas Eager Photography.
 ---
 
 {% include gallery.html

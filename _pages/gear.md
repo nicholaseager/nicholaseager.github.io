@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Adventure Photography Gear
-subtitle: All of the gear I genuinely like and use, and recommend to try out for yourself. I will constantly update this list when I find and include new gear.
+description: All of the gear I genuinely like and use, and recommend to try out for yourself. I will constantly update this list when I find and include new gear.
 ---
 
 <div id="gear-buttons" class="gear-buttons">
