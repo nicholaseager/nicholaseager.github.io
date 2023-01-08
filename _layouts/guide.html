@@ -24,16 +24,18 @@ layout: default
 	<hr>
 
 	<div class="table-of-contents-content">
+
+		{% if page.alltrails %}
+		<h2>Route Overview</h2>
+		{% include alltrails.html id=page.alltrails %}
+		<hr>
+		{% endif %}
+
 		{{ page.content }}
 
 		<hr>
 
 		<h2>Practicalities</h2>
-
-		{% if page.alltrails %}
-		<h3>Route Overview</h3>
-		{% include alltrails.html id=page.alltrails %}
-		{% endif %}
 
 		<h3>Gear Required</h3>
 		<p>When you're out exploring, it's super important to have the right gear. The right stuff can keep you comfortable, safe, and happy on your trip, and it can also help you take care of the planet. Make sure to pack the right clothes and gear for your trip. A little bit of planning and preparation can go a long way towards making your adventure a success.</p>
