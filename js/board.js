@@ -223,6 +223,18 @@
 			$(this).wrapAll('<div class="table-wrap"></div>');
 		});
 
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Lazy iframes
+
+		$('iframe').each(function () {
+			var $this = $(this);
+			var id = $(this).attr('id');
+			if (id.startsWith("lazyframe")) {
+				setTimeout(function () {
+					$this.contents().find('#loadbutton').click();
+				}, 2000);
+			}
+		});
+
 	}
 
 	// Run functions on load
