@@ -76,9 +76,8 @@ We spent the night at a quaint trekker’s shelter run by two friendly Dao women
 {% include gallery.html
     i0="blog/vi/2020/pu-ta-leng/flag"
     i1="blog/vi/2020/pu-ta-leng/fire-top"
-    i2="blog/vi/2020/pu-ta-leng/IMG_1493"
-    i3="blog/vi/2020/pu-ta-leng/IMG_1539"
-    i4="blog/vi/2020/pu-ta-leng/IMG_1487"
+    i2="blog/vi/2020/pu-ta-leng/IMG_1539"
+    i3="blog/vi/2020/pu-ta-leng/IMG_1487"
 %}
 
 We decided to summit the same day, instead of waiting until tomorrow. Hiking through foggy bamboo forests was surreal and the steep incline was challenging enough, but the view at the top was little more than staring at a white canvas. After getting some warmth next to a small fire at the summit, we headed back to the shelter.
@@ -96,5 +95,9 @@ We decided to summit the same day, instead of waiting until tomorrow. Hiking thr
 Our dinner that night consisted of our supplies from the market as well as some cardamom picked from the jungle along the way. Everyone got to know each other around the fire through Vietnamese, Dao, and a little English. We were so tired that we went to bed at 19:30.
 
 ### Summiting Again
+
+{% include image.html
+    src="blog/vi/2020/pu-ta-leng/IMG_1493"
+%}
 
 After breakfast the next morning, we saw a small patch of blue sky. This gave me enough motivation to summit again alone. This time I ran to the top to be greeted with a view above the clouds themselves.
