@@ -243,7 +243,7 @@
 			$toc_content.children("h2").map(function () {
 				var header = $(this);
 				var text = header.text();
-				var id = text.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z ]/g, "");
+				var id = text.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z- ]/g, "");
 
 				header.attr("id", id);
 
