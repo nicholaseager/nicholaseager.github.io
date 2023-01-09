@@ -26,13 +26,13 @@ Introduction
     i1="photos/ne/2021/DSCF1352"
 %}
 
-## Getting There
-
-Getting there
-
 ## Best Time to Go
 
 Best time to go
+
+## Getting There
+
+Getting there
 
 ## Itinerary
 
