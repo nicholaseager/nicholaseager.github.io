@@ -77,7 +77,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jekyll-seo-tag
 
 paginate: 10
 paginate_path: "/blog/page:num/"
