@@ -29,11 +29,7 @@ https://ik.imagekit.io/qn1gkawvy/tr:w-640/profile.jpg
     "url": "{{ site.url }}{{ include.page.url }}",
     "name": {{ include.page.title | jsonify }},
     {% if include.page.url == "/" %}
-    "sameAs": [
-          "https://www.instagram.com/nicholas.eager/",
-          "https://www.youtube.com/c/NicholasEager",
-          "https://www.facebook.com/nicholas.eager.photo"
-      ],
+    "sameAs": {{ site.social.links | jsonify }},
     {% endif %}
     "headline": {{ include.page.title | jsonify }},
     "keywords": {{ include.page.tags | join: ',' | jsonify }},
@@ -43,7 +39,8 @@ https://ik.imagekit.io/qn1gkawvy/tr:w-640/profile.jpg
     "dateModified": {{ include.page.last_modified_at | default: include.page.date | jsonify }},
     "author": {
       "@type": "Person",
-      "name": {{ site.author.name | jsonify }}
+      "name": {{ site.author.name | jsonify }},
+      "url": {{ site.author.url | jsonify }}
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -73,7 +70,7 @@ https://ik.imagekit.io/qn1gkawvy/tr:w-640/profile.jpg
 <meta property="twitter:image" content="{{ image }}" />
 <meta property="twitter:title" content="{{ title }}" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@eager_photo" />
+<meta name="twitter:site" content="{{ site.twitter.username }}" />
 <meta name="twitter:creator" content="@{{ site.author.name }}" />
 <script type="application/ld+json">{{json}}</script>
 <!-- End SEO -->
