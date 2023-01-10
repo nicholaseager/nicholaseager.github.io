@@ -1,7 +1,7 @@
 ---
 layout: guide
 header: transparent
-title: How to Hike Inside the Grand Canyon
+title: How to Hike Inside the Grand Canyon in One Day
 date: 2023-01-08
 description: Everything you need to know about hiking down into the Grand Canyon and back up again
 image: photos/us/2021/DSCF5302_PCgI8Itex

@@ -2,7 +2,7 @@
 layout: guide
 header: transparent
 
-title: How to Go on a Safari in Tanzania
+title: How to Spend 9 Days on a Safari in Tanzania
 date: 2023-01-09
 description: Everything you need to know about going on a Safari in Tanzania
 image: photos/tz/2022/DSCF8119_0mh-NAHz_
