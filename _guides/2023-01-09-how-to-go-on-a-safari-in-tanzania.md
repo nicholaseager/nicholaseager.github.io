@@ -13,9 +13,9 @@ redirect_from:
     - /g/tanzania
 ---
 
-Tanzania is home to several beautiful national parks, including the Serengeti, Ngorongoro Crater, Tarangire, Lake Manyara, and Lake Eyasi. Keep reading to discover each of these places, and how to visit them on your own.
-
 ## The Parks
+
+Tanzania is home to several beautiful national parks, including the Serengeti, Ngorongoro Crater, Tarangire, Lake Manyara, and Lake Eyasi. Keep reading to discover each of these places, and how to visit them on your own.
 
 ### Serengeti
 
