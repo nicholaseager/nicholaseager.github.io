@@ -9,7 +9,7 @@ image: photos/vi/2021/DSCF7561
 
 {% include gallery.html
     i0="photos/vi/2021/DFB74740-6B89-431A-B73B-A69B5368654C-3169-0000017A26345938"
-    i1="photos/tz/2022/DSCF7758_KZHRJzCTP"
+    i1="photos/countries/tanzania/serengeti/acacia-tree-at-sunset"
     i2="photos/it/2022/DSCF4126_8WChv1pt9"
     i3="photos/it/2022/DSCF2650_RUF5kxqYe"
     i4="photos/it/2022/DSCF4127_owOqZcUzB"

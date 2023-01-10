@@ -30,7 +30,7 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 	i1="photos/id/2018/20180429121733"
 	i2="photos/it/2022/DSCF2628_DLCI2w8yj"
 	i3="photos/ne/2021/DSCF0681"
-	i4="photos/tz/2022/DSCF8119_0mh-NAHz_"
+	i4="photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset"
 	i5="photos/us/2020/DSCF2129"
 	i6="photos/vi/2021/DSCF9547"
 	i7="photos/zh/2018/IMG_2253"
