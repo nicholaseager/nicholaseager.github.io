@@ -38,7 +38,7 @@ https://ik.imagekit.io/qn1gkawvy/tr:w-640/profile.jpg
     "headline": {{ include.page.title | jsonify }},
     "keywords": {{ include.page.tags | join: ',' | jsonify }},
     "description": {{ include.page.description | strip_newlines | strip | jsonify }},
-    "image": {{ image | jsonify }},
+    "image": "{{ image }}",
     "datePublished": {{ include.page.date | jsonify }},
     "dateModified": {{ include.page.last_modified_at | default: include.page.date | jsonify }},
     "author": {
