@@ -241,6 +241,25 @@
 				$toc.append('<li><a class="scrollto" href="#' + id + '">' + text + '</a></li>');
 			});
 		});
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Auto Alts
+
+		// Add alt attributes to images that don't have them
+		// Use the filename to create the alt
+		$('img').each( function() {
+			var $this = $(this);
+			var alt = $this.attr("alt");
+			var src = $this.attr("src");
+			var data_src = $this.attr("data-src");
+
+			if (!alt && (src || data_src)) {
+				var parts = (src || data_src).split("/");
+				var filenameExt = parts[parts.length - 1];
+				var filename = filenameExt.split(".")[0];
+				var alt = filename.replaceAll("-", " ");
+				$this.attr("alt", alt);
+			}
+		});
 	}
 
 	// Run functions on load
