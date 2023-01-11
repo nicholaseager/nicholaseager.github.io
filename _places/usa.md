@@ -4,23 +4,25 @@ header: transparent
 title: 'United States'
 description: 'Seemingly infinite land, diverse natural beauty, and a wide range of landscapes including mountains, forests, beaches, deserts, and more.'
 date: 2022-01-01 00:00:00
-image: photos/us/2020/DSCF2129
+image: photos/countries/united-states/wyoming/cascading-rocky-mountains-at-dawn
 ---
 
 {% include youtube.html id="kEwDgYxZXVA" %}
 
 {% include gallery.html
-	i0="photos/us/2020/94C4D7C8-B8EB-44BC-9292-7BAF1A8EB910-1302-000000969B0E7613"
-	i1="photos/us/2020/80F81373-3D41-4C32-B248-D5C7A6DD660B-5872-0000033D364EEA17"
-	i2="photos/us/2020/DSCF2200"
-	i3="photos/us/2015/GOPR1498"
-	i4="photos/us/2020/IMG_3528"
-	i5="photos/us/2020/B251322F-5CD2-4CF4-99D2-90754902FE3A-3727-000001FA398064AD"
-	i6="photos/us/2020/IMG_3538"
-	i7="photos/us/2020/IMG_4215"
-	i8="photos/us/2020/IMG_3446"
-	i9="photos/us/2020/IMG_4340"
-	i10="photos/us/2015/IMG_0864"
-	i11="photos/us/2020/C1AA918D-E46A-433A-89AA-A3F855EB2FE4-2431-0000014D6985B59B"
-	i12="photos/us/2020/3275C406-EBB1-452C-9D60-DE475EC4CFD8-6804-000003F0ABCA067D"
+	i0="photos/countries/united-states/wyoming/rocky-trail-golden-hour-close-up"
+	i1="photos/countries/united-states/missouri/long-straight-highway"
+	i2="photos/countries/united-states/wyoming/layered-treelines"
+	i3="photos/countries/united-states/washington/mount-dickerson-view"
+	i4="photos/countries/united-states/washington/snow-camp-in-a-forest"
+	i5="photos/countries/united-states/missouri/one-sunflower-and-one-bee"
+	i6="photos/countries/united-states/washington/snow-covered-trees-looking-up"
+	i7="photos/countries/united-states/washington/kirkland-sunset-mountains"
+	i8="photos/countries/united-states/washington/winter-river-with-snow-covered-rocks"
+	i9="photos/countries/united-states/washington/dock-on-a-foggy-morning"
+	i10="photos/countries/united-states/washington/lake-serene-glacier-cave"
+	i11="photos/countries/united-states/utah/small-tree-in-the-desert"
+	i12="photos/countries/united-states/colorado/sunset-on-the-colorado-trail"
+	i13="photos/countries/united-states/utah/monument-valley-highway-aerial"
+	i14="photos/countries/united-states/utah/moon-red-rock-arch"
 %}

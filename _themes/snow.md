@@ -20,7 +20,7 @@ image: photos/countries/nepal/mardi-himal/viewpoint-shelter-mountains
     i7="photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain"
     i8="photos/countries/nepal/mardi-himal/german-shepherd-silhouette-in-clouds"
     i9="photos/countries/nepal/mardi-himal/snow-covered-shelter-on-mountain"
-    i10="photos/us/2021/DSCF4017_GyL8yiHys"
-    i11="photos/us/2021/DSCF2748__EXnmrh7z"
-    i12="photos/us/2021/DSCF2844_hwPSHyjj4"
+    i10="photos/countries/united-states/alaska/two-snow-shoes-stuck-in-a-snowy-hill"
+    i11="photos/countries/united-states/alaska/blue-pickup-truck-covered-in-snow"
+    i12="photos/countries/united-states/alaska/yellow-fire-hydrant-covered-in-snow"
 %}

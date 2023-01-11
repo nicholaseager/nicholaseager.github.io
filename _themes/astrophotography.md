@@ -8,10 +8,11 @@ image: photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery
 ---
 
 {% include gallery.html
-	i0="photos/us/2020/DSCF2485"
-	i1="photos/us/2020/DSCF1452"
+	i0="photos/countries/united-states/colorado/starry-night-campsite-glowing-tent"
+	i1="photos/countries/united-states/missouri/man-holding-a-glowing-orb-sitting-on-a-dock"
 	i2="photos/countries/nepal/mardi-himal/starry-night-over-fishtail-mountain"
 	i3="photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery"
-	i4="photos/us/2017/IMG_1084"
-	i5="photos/us/2021/DSCF4962"
+	i4="photos/countries/united-states/missouri/total-solar-eclipse"
+	i5="photos/countries/united-states/utah/glowing-tent-starry-night"
+	i6="photos/countries/united-states/missouri/starry-night-loggers-lake"
 %}

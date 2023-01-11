@@ -31,7 +31,7 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 	i2="photos/it/2022/DSCF2628_DLCI2w8yj"
 	i3="photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind"
 	i4="photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset"
-	i5="photos/us/2020/DSCF2129"
+	i5="photos/countries/united-states/wyoming/cascading-rocky-mountains-at-dawn"
 	i6="photos/countries/vietnam/hanoi/banana-farm-from-above"
 	i7="photos/countries/china/tiger-leaping-gorge/man-climbing-down-waterfall"
 	i8="photos/countries/vietnam/hanoi/buffalo-standing-in-rice-field-looking-at-me"
