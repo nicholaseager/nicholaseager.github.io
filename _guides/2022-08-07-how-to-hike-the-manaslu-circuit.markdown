@@ -17,8 +17,6 @@ Trekking in Nepal is undoubtedly a lifetime experience you won't soon forget. An
 
 Every part of our 21 days was breathtaking, and there are infinite possibilities to add side trips to your itinerary, but here is what stands out most for us.
 
-{% include image.html src="photos/countries/nepal/manaslu-circuit/posing-on-a-frozen-lake" %}
-
 ### Sereng Gumba (Monastery)
 {% include swiper.html
     i0="photos/countries/nepal/manaslu-circuit/sereng-monastery"
