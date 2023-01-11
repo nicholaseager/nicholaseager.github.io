@@ -2,7 +2,7 @@
 layout: home
 title: Adventure Film
 description: Nicholas Eager Adventure Film and Photography
-image: photos/ne/2021/DSCF1896
+image: photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain
 ---
 
 ### Latest Film
@@ -26,19 +26,19 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 ### Photography
 
 {% include gallery.html
-	i0="photos/ne/2021/DSCF1896"
+	i0="photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain"
 	i1="photos/id/2018/20180429121733"
 	i2="photos/it/2022/DSCF2628_DLCI2w8yj"
-	i3="photos/ne/2021/DSCF0681"
+	i3="photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind"
 	i4="photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset"
 	i5="photos/us/2020/DSCF2129"
 	i6="photos/countries/vietnam/hanoi/banana-farm-from-above"
 	i7="photos/countries/china/tiger-leaping-gorge/man-climbing-down-waterfall"
 	i8="photos/countries/vietnam/hanoi/buffalo-standing-in-rice-field-looking-at-me"
-	i9="photos/ne/2021/DSCF0575"
+	i9="photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery"
 	i10="photos/countries/south-korea/seoul/cityscape-at-night"
 	i11="photos/countries/vietnam/da-nang/single-purple-shell-on-beach"
-	i12="photos/ne/2021/DSCF1863"
+	i12="photos/countries/nepal/mardi-himal/viewpoint-shelter-mountains"
 %}
 
 Browse by common <a href="{{ "/themes" | relative_url }}">themes</a> or <a href="{{ "/places" | relative_url }}">places</a> to find a specific photo or style.

@@ -4,7 +4,7 @@ header: transparent
 title: How to Hike the Manaslu Circuit
 date: 2022-08-07
 description: 21 Days on the Manaslu Circuit with our favorite highlights, and more.
-image: photos/ne/2021/DSCF0855
+image: photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset
 youtube: I2I4EySGYEU
 googlemap: 1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc
 redirect_from:
@@ -17,46 +17,48 @@ Trekking in Nepal is undoubtedly a lifetime experience you won't soon forget. An
 
 Every part of our 21 days was breathtaking, and there are infinite possibilities to add side trips to your itinerary, but here is what stands out most for us.
 
+{% image src="photos/countries/nepal/manaslu-circuit/posing-on-a-frozen-lake" %}
+
 ### Sereng Gumba (Monastery)
 {% include swiper.html
-    i0="photos/ne/2021/gumba_ALAVkLWjp"
-    i1="photos/ne/2021/DSCF0452"
-    i2="photos/ne/2021/DSCF0681"
-    i3="photos/ne/2021/DSCF0575"
-    i4="photos/ne/2021/DSCF0565"
+    i0="photos/countries/nepal/manaslu-circuit/sereng-monastery"
+    i1="photos/countries/nepal/manaslu-circuit/tall-mountains-in-clouds"
+    i2="photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind"
+    i3="photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery"
+    i4="photos/countries/nepal/manaslu-circuit/moonrise-over-himalayas"
 %}
 
 Sereng Gumba is a little ways off the beaten path, but was easily the best part of our trek. We stayed there for nearly three days, waking up early to Tibetan tea and roti, listening to ceremonies, playing football with monks-in-training, and hiking around the surrounding area with our four-legged guide. Check out this <a href="https://www.youtube.com/watch?v=I2I4EySGYEU&t=816s" target="blank">video</a> if you would like to see more.
 
 ### Samagaon and Birendra Lake
 {% include swiper.html
-    i0="photos/ne/2021/DSCF0979"
-    i1="photos/ne/2021/DSCF0929"
-    i2="photos/ne/2021/DSCF0858"
-    i3="photos/ne/2021/DSCF0855"
-    i4="photos/ne/2021/DSCF1229"
-    i5="photos/ne/2021/DSCF1206"
+    i0="photos/countries/nepal/manaslu-circuit/three-people-drinking-tea-on-a-frozen-lake"
+    i1="photos/countries/nepal/manaslu-circuit/two-puppies-cuddling-in-the-dirt"
+    i2="photos/countries/nepal/manaslu-circuit/mountain-ridge-at-sunrise"
+    i3="photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset"
+    i4="photos/countries/nepal/manaslu-circuit/samagaon-village-stupa"
+    i5="photos/countries/nepal/manaslu-circuit/samagaon-village-houses"
 %}
 
 Samagaon is the starting point for mountaineers to summit the Manaslu mountain. But even if you're not keen on doing that, Samagaon has a lot to offer. We were told by our guide that Samagaon has retained a lot of Tibetan influence and culture. People still trade over the border from Samaguan. The houses are mostly made of rock, and you have great views of Manaslu and the surrounding mountains. Birendra Lake, which is just North of Samagaon is beautiful, especially in winter because you can walk on the crystal clear ice! Check out this <a href="https://www.youtube.com/watch?v=I2I4EySGYEU&t=1756s" target="blank">video</a> if you would like to see more.
 
 ### Manaslu Base Camp
 {% include swiper.html
-    i0="photos/ne/2021/DSCF1024"
-    i1="photos/ne/2021/DSCF1040"
-    i2="photos/ne/2021/DSCF1003"
+    i0="photos/countries/nepal/manaslu-circuit/manaslu-base-camp-prayer-flags"
+    i1="photos/countries/nepal/manaslu-circuit/view-of-frozen-birendra-lake"
+    i2="photos/countries/nepal/manaslu-circuit/hiker-climbing-a-hill-next-to-a-snow-covered-mountain"
 %}
 
 From Samagaon you can also hike up to Manaslu Base Camp. It offers stellar views of Manaslu, Samagaon, and Birendra Lake. Depending on the time you go, and your luck, you might be able to see some mountaineers there.
 
 ### Everything Else
 {% include swiper.html
-    i0="photos/ne/2021/DSCF0681"
-    i1="photos/ne/2021/DSCF1150"
-    i2="photos/ne/2021/DSCF1195"
-    i3="photos/ne/2021/DSCF1283"
-    i4="photos/ne/2021/DSCF1405"
-    i5="photos/ne/2021/DSCF1490"
+    i0="photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind"
+    i1="photos/countries/nepal/manaslu-circuit/backpack-laying-in-snow"
+    i2="photos/countries/nepal/manaslu-circuit/yak-wearing-bell"
+    i3="photos/countries/nepal/manaslu-circuit/stupa-on-the-trail"
+    i4="photos/countries/nepal/manaslu-circuit/donkey-carrying-heavy-load"
+    i5="photos/countries/nepal/manaslu-circuit/woman-carrying-basket-of-wood"
 %}
 
 Like I said, the Manaslu region is breathtaking no matter where you look. I would include all of my side trips and photos but I want you to finish reading sometime soon so you can plan yourself!

@@ -5,7 +5,7 @@ header: transparent
 title: How to Write a Travel Hiking Guide
 date: 2022-08-07
 description: Everything you need to know about writing a travel hiking guide
-image: photos/ne/2021/DSCF1844
+image: photos/countries/nepal/mardi-himal/annapurna-mountain-range-at-sunrise
 introduction: Introduction
 
 youtube: Rp4V6waPRZo
@@ -22,8 +22,8 @@ Introduction
 ### Highlight 1
 
 {% include swiper.html
-    i0="photos/ne/2021/DSCF1003"
-    i1="photos/ne/2021/DSCF1352"
+    i0="photos/countries/nepal/manaslu-circuit/hiker-climbing-a-hill-next-to-a-snow-covered-mountain"
+    i1="photos/countries/nepal/manaslu-circuit/hiker-crossing-long-bridge-in-valley"
 %}
 
 ## Best Time to Go
