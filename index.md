@@ -32,12 +32,12 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 	i3="photos/ne/2021/DSCF0681"
 	i4="photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset"
 	i5="photos/us/2020/DSCF2129"
-	i6="photos/vi/2021/DSCF9547"
+	i6="photos/countries/vietnam/hanoi/banana-farm-from-above"
 	i7="photos/countries/china/tiger-leaping-gorge/man-climbing-down-waterfall"
-	i8="photos/vi/2021/DSCF9546"
+	i8="photos/countries/vietnam/hanoi/buffalo-standing-in-rice-field-looking-at-me"
 	i9="photos/ne/2021/DSCF0575"
 	i10="photos/countries/south-korea/seoul/cityscape-at-night"
-	i11="photos/vi/2021/DSCF7561"
+	i11="photos/countries/vietnam/da-nang/single-purple-shell-on-beach"
 	i12="photos/ne/2021/DSCF1863"
 %}
 

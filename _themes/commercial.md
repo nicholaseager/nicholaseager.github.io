@@ -4,29 +4,28 @@ header: transparent
 title: 'Commercial'
 description: 'Capturing the essence of a product or business.'
 date: 2022-01-01 00:00:00
-image: photos/vi/2021/DSCF8525
+image: photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-assorted-nuts-on-tray
 ---
 
 {% include gallery.html
-    i0="photos/vi/2021/DSCF6812"
-    i1="photos/vi/2021/DSCF6540"
-    i2="photos/vi/2021/DSCF7169"
-    i3="photos/vi/2021/DSCF8062"
-    i4="photos/vi/2021/DSCF6275"
-    i5="photos/vi/2021/DSCF5989"
-    i6="photos/vi/2021/DSCF6098"
-    i7="photos/vi/2021/DSCF6286"
-    i8="photos/vi/2021/DSCF8128"
-    i9="photos/vi/2021/A2D5594E-20D3-4046-9855-D692DF544816"
-    i10="photos/vi/2021/8D337EE0-B7D7-462C-99B2-6980ABFE4B11"
-    i11="photos/vi/2021/DSCF8525"
-    i12="photos/vi/2021/DSCF6236"
-    i13="photos/vi/2021/DSCF8148"
-    i14="photos/vi/2021/DSCF6178"
-    i15="photos/vi/2021/DSCF6620"
-    i16="photos/vi/2021/DSCF6047"
-    i17="photos/vi/2021/DSCF5924"
-    i18="photos/vi/2021/DSCF6241"
-    i19="photos/vi/2021/DSCF6062"
-    i20="photos/vi/2021/D24C55DD-A473-43B9-9754-D5DDC099D2F2-3716-000001C4102B9C77"
+    i0="photos/countries/vietnam/da-nang/two-foxes-cafe/pouring-chocolate-cashew-milk-in-smoothie-bowl"
+    i1="photos/countries/vietnam/da-nang/two-foxes-cafe/four-tiny-kombucha-glasses-on-table"
+    i2="photos/countries/vietnam/da-nang/two-foxes-cafe/four-bottles-of-kombucha"
+    i3="photos/countries/vietnam/da-nang/two-foxes-cafe/bags-of-granola-on-table"
+    i4="photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-tiny-basil-plant"
+    i5="photos/countries/vietnam/da-nang/two-foxes-cafe/three-fruit-smoothies-on-table"
+    i6="photos/countries/vietnam/da-nang/two-foxes-cafe/cashew-milk-next-to-squash-on-tray"
+    i7="photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-kale-in-front-of-face"
+    i8="photos/countries/vietnam/da-nang/two-foxes-cafe/holding-label-in-hand"
+    i9="photos/countries/vietnam/da-nang/two-foxes-cafe/stuffed-fox-next-to-kombucha-bottle"
+    i10="photos/countries/vietnam/da-nang/two-foxes-cafe/book-next-to-kombucha"
+    i11="photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-assorted-nuts-on-tray"
+    i12="photos/countries/vietnam/da-nang/two-foxes-cafe/four-empty-kombucha-bottles-fruit-at-bottom"
+    i13="photos/countries/vietnam/da-nang/two-foxes-cafe/many-kombucha-bottles-on-table"
+    i14="photos/countries/vietnam/da-nang/two-foxes-cafe/pouring-chocolate-cashew-milk"
+    i15="photos/countries/vietnam/da-nang/two-foxes-cafe/stack-of-pancakes-butter-on-top-fruit-beside"
+    i16="photos/countries/vietnam/da-nang/beer-can-in-sand-by-ocean"
+    i17="photos/countries/vietnam/da-nang/two-foxes-cafe/avocado-smoothie-on-table"
+    i18="photos/countries/vietnam/da-nang/two-foxes-cafe/fermenting-red-peppers-in-jar"
+    i19="photos/countries/vietnam/da-nang/two-coconuts-on-beach"
 %}
