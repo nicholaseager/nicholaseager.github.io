@@ -4,7 +4,7 @@ header: transparent
 title: 'City'
 description: 'A testament to the ingenuity and creativity of humanity, cities pulsate with life and activity, even as the rest of the world sleeps.'
 date: 2022-01-01 00:00:00
-image: photos/ko/2022/DSCF4267_fe4k_dcRJ
+image: photos/countries/south-korea/seoul/cityscape-at-night
 ---
 
 {% include gallery.html
@@ -13,9 +13,9 @@ image: photos/ko/2022/DSCF4267_fe4k_dcRJ
     i2="photos/vi/2021/DSCF6093"
     i3="photos/vi/2021/DSCF9335"
     i4="photos/jp/2020/IMG_3696"
-    i5="photos/ko/2022/DSCF4279_wqb0OeSmH"
-    i6="photos/ko/2022/DSCF4267_fe4k_dcRJ"
-    i7="photos/ko/2022/DSCF4203_cu_abV8pZ"
+    i5="photos/countries/south-korea/seoul/bukchon-hanok-home-at-sunrise"
+    i6="photos/countries/south-korea/seoul/cityscape-at-night"
+    i7="photos/countries/south-korea/seoul/city-lanterns-at-night"
     i8="photos/it/2022/DSCF3986_Vgk2peHjAG"
     i9="photos/vi/2021/2686A3D0-517B-46AE-979C-D70E724D7832-1074-000000964D2A4A4F"
     i10="photos/vi/2021/F578D543-E1D6-4210-BADD-4D20433E75BD-3594-00000352EA3A3BC7"

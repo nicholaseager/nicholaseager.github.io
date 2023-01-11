@@ -36,7 +36,7 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 	i7="photos/zh/2018/IMG_2253"
 	i8="photos/vi/2021/DSCF9546"
 	i9="photos/ne/2021/DSCF0575"
-	i10="photos/ko/2022/DSCF4267_fe4k_dcRJ"
+	i10="photos/countries/south-korea/seoul/cityscape-at-night"
 	i11="photos/vi/2021/DSCF7561"
 	i12="photos/ne/2021/DSCF1863"
 %}
