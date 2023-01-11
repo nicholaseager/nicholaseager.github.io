@@ -33,7 +33,7 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 	i4="photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset"
 	i5="photos/us/2020/DSCF2129"
 	i6="photos/vi/2021/DSCF9547"
-	i7="photos/zh/2018/IMG_2253"
+	i7="photos/countries/china/tiger-leaping-gorge/man-climbing-down-waterfall"
 	i8="photos/vi/2021/DSCF9546"
 	i9="photos/ne/2021/DSCF0575"
 	i10="photos/countries/south-korea/seoul/cityscape-at-night"
