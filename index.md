@@ -27,8 +27,8 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 
 {% include gallery.html
 	i0="photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain"
-	i1="photos/id/2018/20180429121733"
-	i2="photos/it/2022/DSCF2628_DLCI2w8yj"
+	i1="photos/countries/indonesia/bintan/three-fisherman-boats-during-sunset-on-the-ocean"
+	i2="photos/countries/france/chamonix/green-mountain-range-in-clouds"
 	i3="photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind"
 	i4="photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset"
 	i5="photos/countries/united-states/wyoming/cascading-rocky-mountains-at-dawn"

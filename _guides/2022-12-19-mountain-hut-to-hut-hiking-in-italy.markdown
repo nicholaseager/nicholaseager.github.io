@@ -4,7 +4,7 @@ header: transparent
 title: A Guide to Mountain Hut to Hut Hiking in Italy
 date: 2022-12-19
 description: Everything you need to know about hiking and mountain huts in Italy
-image: blog/it/2022/huts/locatelli2_Xhta297X2
+image: photos/countries/italy/dolomites/locatelli-hut-tre-cime-sheep
 youtube: djldGrhYFdo
 redirect_from:
     - /g/mountain-huts
@@ -15,7 +15,7 @@ What is hiking like in Italy? How do I book a mountain hut? What types of mounta
 Let's start things off by talking about some of the basics.
 
 ## What is hiking like in Italy?
-{% include image.html src="blog/it/2022/huts/hiking1_TCh6w-PSu" %}
+{% include image.html src="photos/countries/italy/dolomites/man-sitting-on-a-cliff" %}
 
 Hiking in Italy is very popular. That being said, at certain times and places there are a lot of people, and there is loads of infrastructure (i.e. paved roads, cable cars) placed around hiking. Depending on your hiking style, this may be a good thing or a bad thing. In you're more of a wild hiker, no worries. It is still possible to get out to areas with less people and development. If you do a little bit of work beforehand, you will have a great trip.
 
@@ -25,25 +25,25 @@ Not all mountain huts in Italy are created equal. Depending on your personal pre
 
 ### Rifugi
 {% include swiper.html
-    i0="blog/it/2022/huts/locatelli2_Xhta297X2"
-    i1="blog/it/2022/huts/locatelli_OgjcCnXTM"
-    i2="blog/it/2022/huts/alta-via-hut_7g23HMnkU1"
+    i0="photos/countries/italy/dolomites/locatelli-hut-tre-cime-sheep"
+    i1="photos/countries/italy/dolomites/locatelli-hut-tre-cime"
+    i2="photos/countries/italy/dolomites/alta-via-piscadu-hut"
 %}
 
 Rifugi are fully-equipped, fully-staffed, and ready to cater to your every need with kitchens that prepare delicious traditional food, wine, beer, and of course espresso. Some of my favorite rifugios even made their own beer or wine! You can find a very comfy bed to sleep in at night. Rifugios are typically easy to reach with a short hike, cable car, or even by car. This of course makes them popular, and they fill up far in advance.
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="blog/it/2022/huts/strudel_CFZRmkc1R"
-    i1="blog/it/2022/huts/cafe_03J-tTBwz"
-    i2="blog/it/2022/huts/dinner_hbiEabgOS"
+    i0="photos/countries/italy/dolomites/apple-strudel"
+    i1="photos/countries/italy/dolomites/cafe-macchiato"
+    i2="photos/countries/italy/dolomites/spinach-dumplings-carbonara-dinner"
 %}
 
 You can never go wrong with ordering food at a rifugio. Some of the best food I have had in Italy has been at a mountain hut. Nothing beats some warm dumplings and a refreshing beer after a long day of hiking.
 
 ### Bivacco
 
-{% include image.html src="photos/it/2022/DJI_0021_MGWR4vA17" %}
+{% include image.html src="photos/countries/italy/dolomites/man-standing-next-to-bivvaco-aerial" %}
 
 Bivacco are small and not staffed, but quite nice nonetheless. They usually come with a few beds with thin mattresses and sometimes blankets and a wood-burning stove. Personally, I love Bivacco because they are usually off of the beaten path and very well-designed. If you're used to solo hiking and camping, this will feel like luxury to you. If you prefer to stay in hotels and don't like camping, I'd go for the rifugi.
 
@@ -61,7 +61,7 @@ Well, that depends on which hut, the type of hut, the area, and what you choose 
 If you'd like discounts on mountain huts, consider joining an alpine club such as [CAI](https://www.cai.it/) or [SAT](https://www.sat.tn.it/). For about $45, you can get discounts of up to 50% sometimes. To register, you usually need to find a physical office in the city you're staying.
 
 ## What facilities are available at mountain huts?
-{% include image.html src="blog/it/2022/huts/water_ozqXZfdse" %}
+{% include image.html src="photos/countries/italy/dolomites/refilling-water" %}
 
 When it comes to food, water, and facilities, of course this depends on the location and type of hut. At a bivacco, you will always need to bring your own food, usually find water on your own, and make a toilet on your own. Delicious food is always available at rifugi, even if some require an advanced booking. At some rifugio, water is scarce or not potable. You have the option to buy water, but it comes in plastic and can cost quite a bit. I always prefer to use the tap or a natural source and treat, if available. Rifugios often have toilet facilities as well.
 
@@ -70,16 +70,16 @@ When it comes to food, water, and facilities, of course this depends on the loca
 In Italy there are tons of different types of hiking and climbing you can do. While some trails just require your own two feet, others require technical skill or equipment.
 
 ### Alta Via
-{% include image.html src="blog/it/2022/huts/alta-via-sign_fl8Tqdh0S" %}
+{% include image.html src="photos/countries/italy/dolomites/alta-via-sign" %}
 
 Alta Via is just a name for trekking routes that go up higher into the mountains. "Alta Via" literally means "High Street". Some of the route on alta vias is rocky, steep, and exposed. Additionally, they can include ladders, chains, or iron ropes. However, you usually do not need any equipment. In the Dolomites, there are more well-known longer Alta Via, creatively named Alta Via 1, Alta Via 2, Alta Via 3, and so on. The most famous are the first two, with Alta Via 2 being slightly more difficult and less-traveled.
 
 ### Via Ferrata
-{% include image.html src="blog/it/2022/huts/via-ferrata_degCWS8wg" %}
+{% include image.html src="photos/countries/italy/dolomites/man-climbing-via-ferrata" %}
 
 Via Ferrata are routes where experience and equipment is necessary. These routes are essentially vertical climbing routes with steel ropes, rungs, and ladders stuck into the side of the mountain. These routes were established during the first world war to help soldiers cross the mountain ranges easier. Via Ferrata can be a lot of fun. If you decide to try your hand at these, make sure to do your own research and rent the right equipment or go with a guide.
 
 ## Is wild camping allowed in Italy?
-{% include image.html src="photos/it/2022/DSCF3863_a_XzYk-Nl" %}
+{% include image.html src="photos/countries/italy/dolomites/camping-tre-cime-dusk" %}
 
 In short, not really. But if you setup camp around sunset, pack up at sunrise, be respectful of nature, and follow leave-no-trace principles, it is generally tolerated. In more popular areas, sometimes rangers come around and give people fines. But if you're hiking a long Alta Via and are keeping a distance from huts or popular areas, you will be fine. Sometimes we have seen people even camping right next to very popular huts with no issue.

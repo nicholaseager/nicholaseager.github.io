@@ -3,7 +3,7 @@ layout: post
 title: Trail Running in Cinque Terre
 date: 2022-06-15
 description: Running on coastal trails between the pastel-colored villages, cascading vineyards, and blue oceans of Cinque Terre
-image: blog/it/2022/cinqueterre/IMG_4837
+image: photos/countries/italy/cinque-terre/manarola-city-terraces-aerial
 ---
 
 ## What Not To Do in Cinque Terre
@@ -13,17 +13,17 @@ When we arrived in Cinque Terre at 10am on Monday morning, the sun was beating d
 ## Overview / Route
 
 {% include gallery.html
-    i0="blog/it/2022/cinqueterre/IMG_4804"
-    i1="blog/it/2022/cinqueterre/IMG_4813"
-    i2="blog/it/2022/cinqueterre/IMG_4801"
-    i3="blog/it/2022/cinqueterre/IMG_4823"
-    i4="blog/it/2022/cinqueterre/IMG_4856"
-    i5="photos/it/2022/DSCF0140"
+    i0="photos/countries/italy/cinque-terre/path-to-vernazza"
+    i1="photos/countries/italy/cinque-terre/vernazza-ocean"
+    i2="photos/countries/italy/cinque-terre/boat-behind-purple-flowers"
+    i3="photos/countries/italy/cinque-terre/grape-terraces"
+    i4="photos/countries/italy/cinque-terre/path-to-riomaggiore"
+    i5="photos/countries/italy/cinque-terre/colorful-vernazza-aerial"
 %}
 
 Running up trail though coastal cliffs, down to pastel-colored villages, and running up again through terraced vineyards is an experience you won't soon forget. My route in Cinque Terre was 30.54km with 1911m elevation gain from Levanto, Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore, to La Spezia. I took some extra time and visited all the cities, clocking in five hours. If I had more time, I would have gone all the way down the peninsula to Portovenere. I took the train back from La Spezia to Levanto.
 
-![](https://ik.imagekit.io/qn1gkawvy/tr:w-960/blog/it/2022/cinqueterre/alltrails.jpg)
+![](https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/countries/italy/cinque-terre/alltrails.jpg)
 
 You can find the full trail running route on AllTrails <a href="https://www.alltrails.com/explore/recording/cinque-terre-c95fd52" target="_blank">here</a>.
 
@@ -37,7 +37,7 @@ You can take a train from Milan or Genoa, depending on where you are coming from
 
 ## Where You Should Stay
 
-![](https://ik.imagekit.io/qn1gkawvy/tr:w-960/blog/it/2022/cinqueterre/camping.jpg)
+![](https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/countries/italy/cinque-terre/camping.jpg)
 
 If you want to beat the crowds, you’ll have to get up early. We decided to spend the night on the coast to help us do this. If you’d like to save money, camping (really just glamping in a park) is an option here. Wild camping is not allowed within Cinque Terre, so we stayed in a <a href="https://goo.gl/maps/gJXdH4jbPXgD99gJA" target="_blank">campsite</a> just outside, in Levanto. Staying in Monterosso, or another coastal town is also an option if you prefer. I’d recommend Monterosso if you want to run Southeast along the coast and visit all the cities in one direction. Cornigilia and Manarola if you want something more quiet.
 
@@ -48,17 +48,17 @@ Since I was starting in Levanto and wanted to make it to La Spezia, I woke up at
 ## How to Navigate While Trail Running
 
 {% include swiper.html
-    i0="blog/it/2022/cinqueterre/IMG_4853"
-    i1="blog/it/2022/cinqueterre/IMG_4864"
-    i2="blog/it/2022/cinqueterre/IMG_4881"
-    i3="blog/it/2022/cinqueterre/IMG_4810"
+    i0="photos/countries/italy/cinque-terre/wooden-post-sign-manarola-riomaggiore"
+    i1="photos/countries/italy/cinque-terre/trail-marker-537"
+    i2="photos/countries/italy/cinque-terre/wine-bar-directions-sign"
+    i3="photos/countries/italy/cinque-terre/cornigilia-sign"
 %}
 
 The trails are really well-marked. You have signs to the next city at most intersections. The trails are also blazed with symbols and numbers. In the case that you get lost, you can use <a href="https://maps.me/" target="_blank">maps.me</a> to find your way. 
 
 ## Finding Water and Bringing Food
 
-![](https://ik.imagekit.io/qn1gkawvy/tr:w-960/blog/it/2022/cinqueterre/IMG_4809.jpg)
+![](https://ik.imagekit.io/qn1gkawvy/tr:w-960/photos/countries/italy/cinque-terre/water-fountain.jpg)
 
 Water and food are the most important considerations when you're trail running. Water is easy to come by if you don’t mind drinking tap water. All of the cities have water fountains in the center. I filled up at Vernazza, Corniglia, and Riomaggiore. For food, there are supermarkets and bakeries in all the cities. But I’d recommend bringing some with you if you can. Depending on how early to leave, the supermarkets and bakeries might not be open. I brought a banana, some bread, and a few energy gels (carbohydrates and sugars).
 

@@ -4,21 +4,19 @@ header: transparent
 title: 'Iceland'
 description: 'A captivating country lines with rugged coastlines and waterfalls, glaciers and geysers, and unique geological features.'
 date: 2022-01-01 00:00:00
-image: photos/is/2018/IMG_1187
+image: photos/countries/iceland/seljalandsfoss-waterfall-sunset
 ---
 
 {% include gallery.html
-	i0="photos/is/2018/IMG_0847"
-	i1="photos/is/2018/IMG_0900"
-	i2="photos/is/2018/IMG_1038"
-	i3="photos/is/2018/IMG_1043"
-	i4="photos/is/2018/IMG_1187"
-	i5="photos/is/2018/IMG_1065"
-	i6="photos/is/2018/IMG_0902"
-	i7="photos/is/2018/IMG_0936"
-	i8="photos/is/2018/IMG_0972"
-	i9="photos/is/2018/IMG_1185"
-	i10="photos/is/2018/IMG_1116"
-	i11="photos/is/2018/IMG_1129"
-	i12="photos/is/2018/IMG_1132"
+	i0="photos/countries/iceland/smooth-wet-rock-beach"
+	i1="photos/countries/iceland/red-mushroom-growing-in-moss"
+	i2="photos/countries/iceland/black-sand-beach-with-mountains-in-the-background"
+	i3="photos/countries/iceland/walking-on-black-sand-beach"
+	i4="photos/countries/iceland/glacier-on-lagoon"
+	i5="photos/countries/iceland/glacial-clear-ice-over-lake"
+	i6="photos/countries/iceland/seljalandsfoss-waterfall-sunset"
+	i7="photos/countries/iceland/skogafoss-waterfall-gloomy"
+	i8="photos/countries/iceland/svartifoss-waterfall-gloomy-cloudy"
+	i9="photos/countries/iceland/rainbow-over-house"
+	i10="photos/countries/iceland/kirkjufell-church-mountain-reflection"
 %}

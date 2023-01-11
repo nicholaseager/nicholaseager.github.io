@@ -4,7 +4,7 @@ title: Volcano Hunting in Indonesia by Motorbike
 date: 2018-05-30
 categories: travel
 description: Riding the open road, camping on beaches, and hiking volcanoes.
-image: photos/id/2018/20180510171402
+image: photos/countries/indonesia/java/semeru-eruption-close-up
 ---
 
 We woke up up at 01:00, in the dark, with the entire Milky Way galaxy cluster above us, packing only a torch, a small snack, and water. We made our way to an incline so steep that it might as well have been a wall. But waking up in the dead of night, the intense climb, and the cold was worth it. The stars were absolutely brilliant, the sunset was beyond gorgeous, and the views at the summit were phenomenal. Indonesia is home to countless volcanoes, each with their own unique attributes.
