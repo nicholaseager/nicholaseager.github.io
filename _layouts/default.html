@@ -20,10 +20,20 @@
 	
 	{% include seo.html page=page %}
 
-	{% if site.data.settings.font_settings.font_embed %}
 	<!-- Font Embed Code -->
-	{{ site.data.settings.font_settings.font_embed }}
-	{% endif %}
+	<link
+		rel="preload"
+		href="https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap"
+		as="style"
+		onload="this.onload=null;this.rel='stylesheet'"
+	/>
+	<noscript>
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap"
+			rel="stylesheet"
+			type="text/css"
+		/>
+	</noscript>
 
 	<!-- Styles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
