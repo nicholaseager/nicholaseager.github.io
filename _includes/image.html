@@ -1,3 +1,6 @@
+{% assign parts = include.src | split: "/" %}
+{% assign alt = parts.last | replace: "-", " " %}
+
 <img
   class="{{ include.class }}"
   width="100%"
@@ -10,5 +13,5 @@
   "
   sizes="100vw"
   src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ include.src }}.jpg"
-  alt="{{ include.alt }}"
+  alt="{{ alt }}"
 />

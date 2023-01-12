@@ -36,6 +36,8 @@
 <div class="image-gallery-wrap">
     <div class="image-gallery">
         {% for slide in slides %}
+        {% assign parts = slide | split: "/" %}
+        {% assign alt = parts.last | replace: "-", " " %}
         <a class="image-gallery-link" href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ slide }}.jpg">
             <img
                 srcset="
@@ -45,6 +47,7 @@
                 "
                 sizes="100vw"
                 src="https://ik.imagekit.io/qn1gkawvy/tr:h-480/{{ slide }}.jpg"
+                alt="{{ alt }}"
             />
         </a>
         {% endfor %}
