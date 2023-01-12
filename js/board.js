@@ -220,7 +220,7 @@
 			if (id && id.startsWith("lazyframe")) {
 				setTimeout(function () {
 					$this.contents().find('#loadbutton').click();
-				}, 2000);
+				}, 3000);
 			}
 		});
 
