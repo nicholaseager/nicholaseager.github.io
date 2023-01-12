@@ -43,7 +43,7 @@
       {% assign alt = parts.last | replace: "-", " " %}
       <div class="swiper-slide">
         <img
-            width="100%"
+            style="aspect-ratio: 3/2;width: 100%;object-fit: cover;background-color: lightgrey;"
             data-srcset="
               https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
               https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,

@@ -5,6 +5,7 @@ const singleSlideSwiper = new Swiper('.swiperSingle', {
     direction: 'horizontal',
     loop: true,
     autoHeight: true,
+    preloadImages: false,
 
     autoplay: {
         delay: 5000,
@@ -19,6 +20,7 @@ const dynamicSlideSwiper = new Swiper('.swiperDynamic', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    preloadImages: false,
 
     autoplay: {
         delay: 5000,
