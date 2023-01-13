@@ -60,18 +60,19 @@
                 {% assign alt = parts.last | replace: "-", " " %}
                 <div class="swiper-slide">
                     <img
-                    data-srcset="
-                    https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
-                    https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
-                    https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w,
-                    https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ slide }}.jpg 960w,
-                    https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ slide }}.jpg 1280w,
-                    "
-                    sizes="100vw"
-                    data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg"
-                    class="swiper-lazy"
-                    alt="{{ alt }}"
-                />
+                        data-srcset="
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ slide }}.jpg 960w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ slide }}.jpg 1280w,
+                        "
+                        sizes="100vw"
+                        data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg"
+                        class="swiper-lazy"
+                        alt="{{ alt }}"
+                    />
+                    <div class="swiper-lazy-preloader"></div>
                 </div>
                 {% endfor %}
             </div>
