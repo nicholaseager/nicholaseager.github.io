@@ -77,7 +77,26 @@
     width: 100vw;
     height: 100vh;
     z-index: 1000;
+}
+
+.image-gallery-swiper-backgound {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: black;
+    animation: FadeIn 0.3s ease-out forwards;
+
+    @keyframes FadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
 .image-gallery-swiper {
@@ -85,6 +104,23 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    animation: FadeInUpDelayed 0.5s ease-out forwards;
+
+    @keyframes FadeInUpDelayed {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        50% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
 .swiper-slide {
