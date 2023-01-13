@@ -1,10 +1,4 @@
-//
-//
-// Board JS
-//
-//
-
-
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
 (function ($) {
 	'use strict';
@@ -128,7 +122,6 @@
 
 	function pageFunctions() {
 
-
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Show content
 
 		// Wait until first image has loaded
@@ -165,19 +158,62 @@
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Galleries
 
 		// If there's a gallery
-		$('.image-gallery').each( function() {
+		$('.gallery').each( function() {
 
 			// Get gallery element
 			var $this = $(this);
 
+			// Get image gallery
+			var $image_gallery = $this.find('.image-gallery');
+
 			// Wait for images to load
-			$this.imagesLoaded( function() {		
-				// Init fluidbox
-				$this.find('.image-gallery-link').fluidbox({
-					loader: true
+			$image_gallery.imagesLoaded( function() {		
+				$image_gallery.find('.image-gallery-link').click(function(event) {
+					var id = $(this).attr('data-index');
+					const gallerySwiper = new Swiper('.image-gallery-swiper', {
+						direction: 'horizontal',
+						loop: true,
+						initialSlide: parseInt(id) - 1,
+					
+						lazy: {
+							loadPrevNext: true,
+						},
+
+						pagination: {
+							el: '.swiper-pagination',
+							type: 'bullets',
+						},
+
+						keyboard: {
+							enabled: true,
+							onlyInViewport: false,
+						},
+
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+					});
+
+					if ($(window).width() > 960) {
+						// Get container
+						var $swiper = $this.find('.image-gallery-swiper-container');
+						$swiper.removeClass('image-gallery-swiper-hidden');
+					}
+
+					event.preventDefault();
 				});
 			});
 
+			// Close button
+			var $close = $this.find('.swiper-close-button');
+			$close.click(function(event) {
+				// Get container
+				var $swiper = $this.find('.image-gallery-swiper-container');
+				$swiper.addClass('image-gallery-swiper-hidden');
+
+				event.preventDefault();
+			});
 		});
 
 

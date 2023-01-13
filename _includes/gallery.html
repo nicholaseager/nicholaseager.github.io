@@ -33,23 +33,53 @@
 
 {% assign slides = slides_array | strip | newline_to_br | strip_newlines | split: "<br />" %}
 
-<div class="image-gallery-wrap">
-    <div class="image-gallery">
-        {% for slide in slides %}
-        {% assign parts = slide | split: "/" %}
-        {% assign alt = parts.last | replace: "-", " " %}
-        <a class="image-gallery-link" href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ slide }}.jpg">
-            <img
-                srcset="
-                https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
-                https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
-                https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w
-                "
-                sizes="100vw"
-                src="https://ik.imagekit.io/qn1gkawvy/tr:h-480/{{ slide }}.jpg"
-                alt="{{ alt }}"
-            />
+<div class="gallery">
+    <div class="image-gallery-wrap">
+        <div class="image-gallery">
+            {% for slide in slides %}
+            {% assign parts = slide | split: "/" %}
+            {% assign alt = parts.last | replace: "-", " " %}
+            <a data-index="{{forloop.index}}" class="image-gallery-link" href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ slide }}.jpg">
+                <img srcset="
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w
+                    " sizes="100vw" src="https://ik.imagekit.io/qn1gkawvy/tr:h-480/{{ slide }}.jpg" alt="{{ alt }}" />
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="image-gallery-swiper-container image-gallery-swiper-hidden">
+        <div
+            class="swiper image-gallery-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                {% for slide in slides %}
+                {% assign parts = slide | split: "/" %}
+                {% assign alt = parts.last | replace: "-", " " %}
+                <div class="swiper-slide">
+                    <img
+                    data-srcset="
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ slide }}.jpg 960w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ slide }}.jpg 1280w,
+                    "
+                    sizes="100vw"
+                    data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg"
+                    class="swiper-lazy"
+                    alt="{{ alt }}"
+                />
+                </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <a class="swiper-close-button">
+            <i class="fas fa-window-close fa-2x" aria-hidden="true"></i>
         </a>
-        {% endfor %}
     </div>
 </div>
