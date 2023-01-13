@@ -195,11 +195,9 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 						},
 					});
 
-					if ($(window).width() > 960) {
-						// Get container
-						var $swiper = $this.find('.image-gallery-swiper-container');
-						$swiper.removeClass('image-gallery-swiper-hidden');
-					}
+					// Get container
+					var $swiper = $this.find('.image-gallery-swiper-container');
+					$swiper.removeClass('image-gallery-swiper-hidden');
 
 					event.preventDefault();
 				});
