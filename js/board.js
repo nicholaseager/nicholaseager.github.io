@@ -160,6 +160,30 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 		// If there's a gallery
 		$('.gallery').each( function() {
 
+			const gallerySwiper = new Swiper('.image-gallery-swiper', {
+				direction: 'horizontal',
+				loop: true,
+			
+				lazy: {
+					loadPrevNext: true,
+				},
+			
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+				},
+			
+				keyboard: {
+					enabled: true,
+					onlyInViewport: false,
+				},
+			
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+
 			// Get gallery element
 			var $this = $(this);
 
@@ -170,31 +194,8 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 			$image_gallery.imagesLoaded( function() {		
 				$image_gallery.find('.image-gallery-link').click(function(event) {
 					var id = $(this).attr('data-index');
-					const gallerySwiper = new Swiper('.image-gallery-swiper', {
-						direction: 'horizontal',
-						loop: true,
-						initialSlide: parseInt(id) - 1,
+					gallerySwiper.slideTo(parseInt(id), 0);
 					
-						lazy: {
-							loadPrevNext: true,
-						},
-
-						pagination: {
-							el: '.swiper-pagination',
-							type: 'bullets',
-						},
-
-						keyboard: {
-							enabled: true,
-							onlyInViewport: false,
-						},
-
-						navigation: {
-							nextEl: '.swiper-button-next',
-							prevEl: '.swiper-button-prev',
-						},
-					});
-
 					// Get container
 					var $swiper = $this.find('.image-gallery-swiper-container');
 					$swiper.removeClass('image-gallery-swiper-hidden');
