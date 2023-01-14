@@ -64,45 +64,6 @@
     }
 }
 
-.image-gallery-link-content {
-    position: relative;
-}
-
-.order-button {
-    a {
-        position: absolute;
-        top: 0;
-        right: 0;
-        color: white;
-        padding: 20px;
-	}
-}
-
-.order-button::before,
-.order-button::after {
-    content: '';
-    position: absolute;
-    top: 0.25em;
-    right: 0.25em;
-    border-color: transparent;
-    border-style: solid;
-}
-
-.order-button::before {
-    border-width: 2.5em;
-    border-right-color: rgba(black, 0.5);
-    border-top-color: rgba(black, 0.5);
-}
-
-.image-gallery-link-content .order-button {
-    display: none;
-}
-
-.image-gallery-link-content:hover .order-button {
-    display: block;
-    color: green;
-}
-
 .gallery {
     position: relative;
 }
