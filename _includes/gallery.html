@@ -40,11 +40,18 @@
             {% assign parts = slide | split: "/" %}
             {% assign alt = parts.last | replace: "-", " " %}
             <a data-index="{{forloop.index}}" class="image-gallery-link" href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ slide }}.jpg">
-                <img srcset="
+                <div class="image-gallery-link-content">
+                    <img srcset="
                     https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
                     https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
                     https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w
                     " sizes="100vw" src="https://ik.imagekit.io/qn1gkawvy/tr:h-480/{{ slide }}.jpg" alt="{{ alt }}" />
+                    <div class="order-button">
+                        <a href="{{ "/order?id=" | append: slide | relative_url }}">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
             </a>
             {% endfor %}
         </div>
@@ -85,7 +92,7 @@
         </a>
         <a href="{{ "/order" | relative_url }}" data-prefix="{{ "/order?id=" | relative_url }}" class="button button--gallery order-prints">
             <i class="fas fa-shopping-cart"></i>
-            Order Prints
+            Order Print
         </a>
     </div>
 </div>
