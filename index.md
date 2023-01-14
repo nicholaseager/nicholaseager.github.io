@@ -25,6 +25,8 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 
 ### Photography
 
+Click on any photo on my website to order a print! 
+
 {% include gallery.html
 	i0="photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain"
 	i1="photos/countries/indonesia/bintan/three-fisherman-boats-during-sunset-on-the-ocean"
@@ -41,9 +43,7 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 	i12="photos/countries/nepal/mardi-himal/viewpoint-shelter-mountains"
 %}
 
-Browse by common <a href="{{ "/themes" | relative_url }}">themes</a> or <a href="{{ "/places" | relative_url }}">places</a> to find a specific photo or style.
-
-<a href="https://store.nicholaseager.com" class="button button--small">Order Prints</a>
+Browse by certain <a href="{{ "/themes" | relative_url }}">themes</a> or specific <a href="{{ "/places" | relative_url }}">places</a> to find what you're looking for.
 
 ---
 

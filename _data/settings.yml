@@ -8,8 +8,6 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Store'
-      url: 'https://store.nicholaseager.com'
     - title: 'Gear'
       url: '/gear'
     - title: 'Guides'
