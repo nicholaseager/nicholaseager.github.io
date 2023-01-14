@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Order a Print
-description: Thank you for your interest in my art!
+description: Thank you for your interest in my art! Please fill out the form below and I will personally reach out to you.
 ---
-
-Please fill out the form below and I will personally reach out to you. Thank You!
 
 {% include order-form.html %}
 
