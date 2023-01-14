@@ -205,6 +205,10 @@ a {
 	}
 }
 
+img {
+	pointer-events: none;
+}
+
 .button {
 	display: inline-block;
 	padding: 9px 10px 10px;
