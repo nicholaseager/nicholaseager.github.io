@@ -286,6 +286,20 @@ a {
 	}
 }
 
+.button--gallery {
+	border-radius: 15px;
+
+	background: black;
+	border-color: white;
+	color: white;
+
+	&:hover {
+		background: rgba(white, 0.5);
+		border-color: white;
+		color: white;
+	}
+}
+
 hr {
 	margin: 40px 0;
 	border: 0;

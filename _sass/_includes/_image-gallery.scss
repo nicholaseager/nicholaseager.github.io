@@ -143,3 +143,11 @@
 .image-gallery-swiper-hidden {
     display: none;
 }
+
+.order-prints {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    z-index: 1001;
+}
