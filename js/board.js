@@ -512,17 +512,11 @@
 			nameField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
-		// Validate message
-		if ( messageField.val() === '' ) {
-			messageField.closest('.eager-form__item').addClass('eager-form__item--error');
-		}
-
 		// If all fields are filled, except gotcha
 		if ( 	sizeField.val() !== '' &&
 				materialField.val() !== '' &&	
 				emailField.val() !== '' &&
 				nameField.val() !== '' &&
-				messageField.val() !== '' &&
 				gotchaField.val().length === 0 ) {
 
 			// Submit the form!
