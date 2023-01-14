@@ -231,10 +231,22 @@
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Galleries
 
+		var galleryID = 0;
+
 		// If there's a gallery
 		$('.gallery').each( function() {
+			// Get gallery element
+			var $this = $(this);
 
-			const gallerySwiper = new Swiper('.image-gallery-swiper', {
+			var swiperID = 'swiper-' + galleryID.toString();
+			$this.find('.swiper').attr('data-id', swiperID);
+			galleryID += 1;
+
+			// Get image gallery
+			var $image_gallery = $this.find('.image-gallery');
+
+			// Create a unique swiper for each gallery
+			const gallerySwiper = new Swiper('.image-gallery-swiper[data-id="' + swiperID + '"]', {
 				direction: 'horizontal',
 				loop: true,
 			
@@ -257,12 +269,6 @@
 					prevEl: '.swiper-button-prev',
 				},
 			});
-
-			// Get gallery element
-			var $this = $(this);
-
-			// Get image gallery
-			var $image_gallery = $this.find('.image-gallery');
 
 			// Wait for images to load
 			$image_gallery.imagesLoaded( function() {		
