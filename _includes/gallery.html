@@ -58,7 +58,7 @@
                 {% for slide in slides %}
                 {% assign parts = slide | split: "/" %}
                 {% assign alt = parts.last | replace: "-", " " %}
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-src="{{ slide }}">
                     <img
                         data-srcset="
                         https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
@@ -83,7 +83,7 @@
         <a class="swiper-close-button">
             <i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i>
         </a>
-        <a href="https://store.nicholaseager.com" target="_blank" class="button button--gallery order-prints">
+        <a href="{{ "/order" | relative_url }}" data-prefix="{{ "/order?id=" | relative_url }}" class="button button--gallery order-prints">
             <i class="fas fa-shopping-cart"></i>
             Order Prints
         </a>

@@ -271,10 +271,22 @@
 			});
 
 			// Wait for images to load
-			$image_gallery.imagesLoaded( function() {		
+			$image_gallery.imagesLoaded( function() {
+				// Update order button on slide change
+				const onSlideChange = function () {
+					const index = gallerySwiper.activeIndex - 1;
+					var $slide = $this.find('.swiper-slide[data-swiper-slide-index="' + index + '"]');
+					var src = $slide.attr('data-src');
+					var printButton = $this.find('.order-prints');
+					var link = printButton.attr('data-prefix') + encodeURIComponent(src);
+					printButton.attr('href', link);
+				}
+				gallerySwiper.on('slideChange', onSlideChange);
+
 				$image_gallery.find('.image-gallery-link').click(function(event) {
 					var id = $(this).attr('data-index');
 					gallerySwiper.slideTo(parseInt(id), 0);
+					onSlideChange();
 					
 					// Get container
 					var $swiper = $this.find('.image-gallery-swiper-container');
