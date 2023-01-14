@@ -441,6 +441,100 @@
 		}
 
 	});
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Order Form
+
+	// Set the photo and content based on the url
+	$('#order-form').each(function () {
+		const searchParams = new URLSearchParams(window.location.search);
+		const src = decodeURIComponent(searchParams.get('id') ?? "");
+
+		console.log(src);
+		if (!src) {
+			$(this).html('No photo found');
+			return;
+		}
+		
+		// Set photo
+		const $image = $(this).find('#order-photo');
+		const $input = $(this).find('#order-photo-input');
+		const href = 'https://ik.imagekit.io/qn1gkawvy/tr:w-1280/' + src + '.jpg';
+		$image.attr('src', href);
+		$input.attr('value', href);
+
+
+		// Remove -'s and capitalize		
+		const normalize = (s) => {
+			return s.split('-').map(p => p[0].toUpperCase() + p.substr(1)).join(' ');
+		};
+
+		// Set content
+		const $title = $(this).find('#order-title');
+		const $description = $(this).find('#order-description');
+		const parts = src.split('/').filter(p => p !== 'photos' && p !== 'countries');
+		const title = normalize(parts.pop());
+		const tags = parts.reverse().map(p => normalize(p)).join(', ');
+		$title.html(title);
+		$description.html(tags);
+	});
+
+	// Override the submit event
+	$(document).on('submit', '#order-form', function (e) {
+
+		// Clear previous classes
+		$('.eager-form__item--error').removeClass('eager-form__item--error');
+
+		// Get form elements
+		var sizeField = $('.eager-form__input[name="size"]');
+		var materialField = $('.eager-form__input[name="material"]');
+		var emailField = $('.eager-form__input[name="email"]');
+		var nameField = $('.eager-form__input[name="name"]');
+		var messageField = $('.eager-form__textarea[name="message"]');
+		var gotchaField = $('.eager-form__gotcha');
+
+		// Validate size
+		if ( sizeField.val() === '' ) {
+			sizeField.closest('.eager-form__item').addClass('eager-form__item--error');
+		}
+
+		// Validate material
+		if ( materialField.val() === '' ) {
+			materialField.closest('.eager-form__item').addClass('eager-form__item--error');
+		}
+
+		// Validate email
+		if ( emailField.val() === '' ) {
+			emailField.closest('.eager-form__item').addClass('eager-form__item--error');
+		}
+
+		// Validate name
+		if ( nameField.val() === '' ) {
+			nameField.closest('.eager-form__item').addClass('eager-form__item--error');
+		}
+
+		// Validate message
+		if ( messageField.val() === '' ) {
+			messageField.closest('.eager-form__item').addClass('eager-form__item--error');
+		}
+
+		// If all fields are filled, except gotcha
+		if ( 	sizeField.val() !== '' &&
+				materialField.val() !== '' &&	
+				emailField.val() !== '' &&
+				nameField.val() !== '' &&
+				messageField.val() !== '' &&
+				gotchaField.val().length === 0 ) {
+
+			// Submit the form!
+		}
+
+		else {
+
+			// Stop submission
+			e.preventDefault();
+		}
+
+	});
 	
 	
 	

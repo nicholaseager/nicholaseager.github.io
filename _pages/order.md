@@ -1,14 +1,11 @@
 ---
 layout: page
-title: Order
-description: Something
+title: Order a Print
+description: Thank you for your interest in my art!
 ---
 
-<img id="order-photo" src="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain.jpg">
+Please fill out the form below and I will personally reach out to you. Thank You!
 
-<script>
-    const searchParams = new URLSearchParams(window.location.search);
-    const src = decodeURIComponent(searchParams.get('id'));
-    const image = document.getElementById('order-photo');
-    image.setAttribute('src', 'https://ik.imagekit.io/qn1gkawvy/tr:w-1280/' + src + '.jpg');
-</script>
+{% include order-form.html %}
+
+If you have any comments, questions, or other inquiries, please <a href="{{ "/contact" | relative_url }}">contact</a> me separately.
