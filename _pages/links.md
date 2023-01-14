@@ -21,7 +21,7 @@ layout: blank
         <i class="fas fa-camera" aria-hidden="true"></i>
         Gear
     </a>
-    <a href="https://store.nicholaseager.com" class="link">
+    <a href="{{ "/prints" | relative_url }}" class="link">
         <i class="fas fa-image" aria-hidden="true"></i>
         Prints
     </a>
@@ -39,4 +39,5 @@ layout: blank
 ---
 
 #### Latest Travel Guides
-{% include latest-guides.html %}
+{% assign guides = site.guides | reverse %}
+{% include latest-collection.html items=guides %}

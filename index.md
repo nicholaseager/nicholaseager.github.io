@@ -17,7 +17,8 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 
 ### Latest Travel Guides
 
-{% include latest-guides.html %}
+{% assign guides = site.guides | reverse %}
+{% include latest-collection.html items=guides %}
 
 <a href="{{ "/guides/" | relative_url }}" class="button button--small">See More</a>
 
@@ -25,7 +26,7 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 
 ### Photography
 
-Click on any photo on my website to order a print! 
+Sometimes a picture is all you need to tell a story. Select a picture to order a print and share the story in your home.
 
 {% include gallery.html
 	i0="photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain"
@@ -43,7 +44,7 @@ Click on any photo on my website to order a print!
 	i12="photos/countries/nepal/mardi-himal/viewpoint-shelter-mountains"
 %}
 
-Browse by certain <a href="{{ "/themes" | relative_url }}">themes</a> or specific <a href="{{ "/places" | relative_url }}">places</a> to find what you're looking for.
+<a href="{{ "/prints" | relative_url }}" class="button button--small">See All Prints</a>
 
 ---
 
