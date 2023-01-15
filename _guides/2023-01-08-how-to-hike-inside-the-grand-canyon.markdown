@@ -19,7 +19,7 @@ When I did this hike, we started from Bright Angel Trailhead, hiked down to Plat
 
 ## Preparation
 
-Make sure to pack plenty of water (at least a gallon per person), sunscreen, and a hat to protect yourself from the sun. Wear sturdy, comfortable shoes and bring layers of clothing as the temperature can vary significantly from the rim to the river. It's also a good idea to bring energy snacks, such as granola bars or nuts, to fuel your hike.
+Bring at least four liters of water per person, some sunscreen, and a hat to protect yourself from the sun. Bring layers of clothing and wear sturdy, comfortable shoes because the temperature can change significantly from the rim to the river. Bringing energy snacks for your hike, like granola bars or nuts, is also a good idea.
 
 ## Itinerary
 
@@ -39,19 +39,19 @@ You'll want to start this hike early, to avoid possible crowds and also to give 
 Mather Campground is located within walking distance of Grand Canyon Village, where you will find a variety of amenities, such as a general store, restaurants, and a post office. It's a great base for starting your hike from the South Rim of the Grand Canyon.
 
 ### Hike down to Plateau Point
-The Bright Angel Trail is a well-maintained, switchbacking trail that takes you down to Plateau Point. The hike takes about 4-5 hours one way and is considered moderate in difficulty. Make sure to take plenty of breaks and drink water to stay hydrated.
+You can descend to Plateau Point on the well-maintained Bright Angel Trail, which includes many many switchbacks. The hike is rated as moderately difficult and takes about 4-5 hours one way. Keep hydrated by taking frequent breaks and drinking water.
 
 ### Continue down to Phantom Ranch
-From Plateau Point, you can continue down the Bright Angel Trail to Phantom Ranch, which is located at the bottom of the canyon near the Colorado River. This section of the trail is steeper and more challenging, so make sure you are up for the extra effort. It takes about 2-3 hours to reach Phantom Ranch from Plateau Point.
+From Plateau Point, take the Bright Angel Trail south to Phantom Ranch, which is near the Colorado River at the bottom of the canyon. Make sure you are prepared for the extra effort because this part of the trail is steeper and more difficult. From Plateau Point, it takes 1-2 hours to get to Phantom Ranch.
 
 ### Take a break at Phantom Ranch
 Once you reach Phantom Ranch, take a break to rest, hydrate, and refuel. You can also refill your water bottles at the ranch if needed. If you would like to spend the night, read more [here](#spending-the-night-at-the-bottom).
 
 ### Hike back up to the rim
-From Phantom Ranch, you can either take the Bright Angel Trail or the South Kaibab Trail back up to the rim. The Bright Angel Trail is a longer, but less steep route back up to the rim, while the South Kaibab Trail is a more direct, but steeper route. It takes about 4-5 hours to reach the rim from Phantom Ranch, depending on which trail you take.
+You can return to the rim by either taking the Bright Angel Trail or the South Kaibab Trail. The South Kaibab Trail is a more direct but steeper route back up to the rim, while the Bright Angel Trail is longer but less strenuous. Depending on the trail you choose, you can get to the rim from Phantom Ranch in 4-5 hours.
 
-## Celebrate your accomplishment
-Once you reach the rim, you've completed the rim to river and back to rim hike in one day! Take some time to celebrate your accomplishment and rest your feet before catching the shuttle back to Mather Campground. There are several restaurants and bars located in Grand Canyon Village that offer a variety of food and drinks. We grabbed some craft beer 🍻 and plenty of snacks from the Grand Canyon Village Market & Deli before heading back to camp for dinner.
+## Enjoy what you've accomplished
+You've finished! Celebrate your success and give your feet a break before boarding the shuttle back to Mather Campground, or extending your walk like we did :) Grand Canyon Village is home to a number of eateries and bars that serve a wide selection of meals and beverages. Before returning to camp for dinner, we picked up some craft beer and a ton of snacks from the Grand Canyon Village Market & Deli.
 
 ## Spending the Night at the Bottom
 
@@ -59,16 +59,16 @@ If you want to spend the night at the bottom of the Grand Canyon, you have three
 
 ### Phantom Ranch
 
-Phantom Ranch is a historic lodge located at the bottom of the canyon near the Colorado River. It offers cabin accommodations, as well as dormitory-style bunkhouses for both men and women. All cabins and bunkhouses have shared bathrooms and showers. Phantom Ranch also has a dining room where you can purchase meals. Reservations for Phantom Ranch are required and can be made up to 13 months in advance.
+At the bottom of the canyon, close to the Colorado River, is the historic lodge known as Phantom Ranch. Both men's and women's dormitory-style bunkhouses and cabins are available. Showers and bathrooms are shared by all cabins and bunkhouses. Additionally, Phantom Ranch has a dining area where you can buy food. Phantom Ranch requires reservations, which can be made up to 13 months in advance.
 
 ### Bright Angel Campground
 
-Bright Angel Campground is a National Park Service campground located near Phantom Ranch. It offers tent camping sites and a few group sites. There are no showers or hook-ups at the campground, but there is a water spigot and pit toilets. Reservations for Bright Angel Campground can be made up to 6 months in advance.
+A National Park Service campground called Bright Angel Campground is close to Phantom Ranch. It provides a few group sites as well as tent camping areas. The campground has pit toilets and a water spigot, but no showers or hookups. Bright Angel Campground accepts reservations up to six months in advance.
 
 ### Backcountry Camping
 
-Backcountry camping in the Grand Canyon is an exciting and challenging way to experience the park's rugged beauty. If you are interested in backcountry camping, you will need to obtain a permit from the National Park Service. 
+Backcountry camping in the Grand Canyon is an exciting and difficult way to experience the park's untamed beauty. The National Park Service will issue you a permit if backcountry camping is something you're interested in.
 
-To obtain a backcountry permit, you will need to fill out an application and pay a fee. You can apply for a permit online or in person at the Backcountry Information Center, located at the park headquarters. Backcountry permits are issued on a rolling basis, with applications accepted up to four months in advance of the trip start date.
+You must submit an application and pay a fee in order to get a backcountry permit. At the Backcountry Information Center, which is situated at the park's administrative center, you can apply for a permit in person or online. Applications can be submitted up to four months before the trip's start date, and backcountry permits are issued on a rolling basis.
 
-Backcountry camping in the Grand Canyon requires a high level of planning and preparation. Make sure to bring enough water, food, and gear to sustain you during your trip. It's also important to follow Leave No Trace principles to protect the natural environment.
+Grand Canyon backcountry camping requires thorough planning and preparation. Bring enough supplies to last you the duration of your journey, including food, water, and gear. To protect the environment, it's also critical to adhere to the Leave No Trace philosophy.
