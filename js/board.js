@@ -449,19 +449,18 @@
 		const searchParams = new URLSearchParams(window.location.search);
 		const src = decodeURIComponent(searchParams.get('id') ?? "");
 
-		console.log(src);
 		if (!src) {
 			$(this).html('No photo found');
 			return;
 		}
 		
 		// Set photo
-		const $image = $(this).find('#order-photo');
-		const $input = $(this).find('#order-photo-input');
 		const href = 'https://ik.imagekit.io/qn1gkawvy/tr:w-1280/' + src + '.jpg';
-		$image.attr('src', href);
+		$(this).find('.order-photo').each(function() {
+			$(this).attr('src', href);
+		});
+		const $input = $(this).find('#order-photo-input');
 		$input.attr('value', href);
-
 
 		// Remove -'s and capitalize		
 		const normalize = (s) => {
@@ -476,6 +475,20 @@
 		const tags = parts.reverse().map(p => normalize(p)).join(', ');
 		$title.html(title);
 		$description.html(tags);
+
+		const orderSwiper = new Swiper('.order-swiper', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+		
+			autoplay: {
+				delay: 3000,
+			},
+		
+			lazy: {
+				loadPrevNext: true,
+			},
+		});
 	});
 
 	// Override the submit event

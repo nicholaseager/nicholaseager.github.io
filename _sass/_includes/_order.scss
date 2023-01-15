@@ -1,0 +1,126 @@
+.order-swiper {
+    .swiper-slide {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+        .display-photo {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            max-width: 100%;
+            max-height: 100%;
+            background-size: contain;
+        }
+
+        .display-photo-container {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                border: 5px solid white;
+                filter: drop-shadow(0px 0px 4px rgba(black, 0.25));
+            }
+        }
+
+        .blue-wall-wooden-chairs {
+            aspect-ratio: 1.0;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/blue-wall-wooden-chairs.jpg');
+
+            .display-photo-container {
+                width: 70%;
+                height: 30%;
+                top: 10%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%, 0%);
+            }
+        }
+
+        .white-wall-wooden-floor-dog {
+            aspect-ratio: 0.72733333;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-wooden-floor-dog.jpg');
+
+            .display-photo-container {
+                width: 40%;
+                height: 50%;
+                top: 5%;
+                left: 10%;
+            }
+        }
+
+        .brick-wall-bicycle {
+            aspect-ratio: 0.886;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/brick-wall-bicycle.jpg');
+
+            .display-photo-container {
+                width: 80%;
+                height: 40%;
+                top: 5%;
+                left: 10%;
+            }
+        }
+
+        .brown-wall-wooden-furntiure {
+            aspect-ratio: 1.00874243;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/brown-wall-wooden-furntiure.jpg');
+
+            .display-photo-container {
+                width: 40%;
+                height: 30%;
+                top: 20%;
+                right: 20%;
+            }
+        }
+
+        .white-wall-tropical-plants-natural-light {
+            aspect-ratio: 1;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-tropical-plants-natural-light.jpg');
+
+            .display-photo-container {
+                width: 40%;
+                height: 30%;
+                top: 20%;
+                right: 10%;
+            }
+        }
+
+        .white-wall-wooden-cabinet {
+            aspect-ratio: 1;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-wooden-cabinet.jpg');
+
+            .display-photo-container {
+                width: 40%;
+                height: 40%;
+                top: 10%;
+                right: 23%;
+            }
+        }
+
+        .white-wall-gray-couch-dog {
+            aspect-ratio: 1.5;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-gray-couch-dog.jpg');
+
+            .display-photo-container {
+                width: 30%;
+                height: 40%;
+                top: 10%;
+                right: 25%;
+            }
+        }
+    }
+}
+
+.order-full-photo {
+    max-height: 60vh;
+    margin: 0 auto;
+}
