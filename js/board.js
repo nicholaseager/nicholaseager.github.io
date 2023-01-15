@@ -278,7 +278,7 @@
 					var $slide = $this.find('.swiper-slide[data-swiper-slide-index="' + index + '"]');
 					var src = $slide.attr('data-src');
 					var printButton = $this.find('.order-prints');
-					var link = printButton.attr('data-prefix') + encodeURIComponent(src);
+					var link = printButton.attr('data-prefix') + btoa(src);
 					printButton.attr('href', link);
 				}
 				gallerySwiper.on('slideChange', onSlideChange);
@@ -447,7 +447,7 @@
 	// Set the photo and content based on the url
 	$('#order-form').each(function () {
 		const searchParams = new URLSearchParams(window.location.search);
-		const src = decodeURIComponent(searchParams.get('id') ?? "");
+		const src = atob(searchParams.get('id') ?? "");
 
 		if (!src) {
 			$(this).html('No photo found');
