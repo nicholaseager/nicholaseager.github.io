@@ -32,6 +32,30 @@
             }
         }
 
+        .solid-white {
+            aspect-ratio: 1.0;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/solid-white.jpg');
+
+            .display-photo-container {
+                top: 20px;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+            }
+        }
+
+        .solid-concrete {
+            aspect-ratio: 1.0;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/solid-concrete.jpg');
+
+            .display-photo-container {
+                top: 20px;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+            }
+        }
+
         .blue-wall-wooden-chairs {
             aspect-ratio: 1.0;
             background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/blue-wall-wooden-chairs.jpg');
@@ -115,6 +139,18 @@
                 height: 40%;
                 top: 10%;
                 right: 25%;
+            }
+        }
+
+        .dark-grey-wall-wooden-dresser {
+            aspect-ratio: 1.08303249;
+            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/dark-grey-wall-wooden-dresser.jpg');
+
+            .display-photo-container {
+                width: 50%;
+                height: 50%;
+                top: 10%;
+                right: 15%;
             }
         }
     }
