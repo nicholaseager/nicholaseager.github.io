@@ -26,8 +26,6 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 
 ### Photography
 
-Sometimes a picture is all you need to tell a story. Select a picture to order a print and share the story in your home.
-
 {% include gallery.html
 	i0="photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain"
 	i1="photos/countries/indonesia/bintan/three-fisherman-boats-during-sunset-on-the-ocean"
@@ -43,6 +41,8 @@ Sometimes a picture is all you need to tell a story. Select a picture to order a
 	i11="photos/countries/vietnam/da-nang/single-purple-shell-on-beach"
 	i12="photos/countries/nepal/mardi-himal/viewpoint-shelter-mountains"
 %}
+
+Sometimes a single photo is all you need to tell a story. Select a picture to order a print and share the story in your home.
 
 <a href="{{ "/prints" | relative_url }}" class="button button--small">See All Prints</a>
 
