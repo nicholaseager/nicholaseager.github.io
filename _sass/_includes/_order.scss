@@ -1,4 +1,39 @@
+.order-swiper-thumbs {
+    display: none;
+
+    @include mq(tabletp) {
+        display: block;
+    }
+
+    .swiper-slide {
+        max-height: 200px;
+    }
+
+    .swiper-slide-thumb-active {
+        .display-photo {
+            border: 2px solid black;
+        }
+    }
+}
+
 .order-swiper {
+    background: $background-alt-color;
+}
+
+.order-swiper, .order-swiper-thumbs {
+    max-width: 90%;
+    margin: 20px auto;
+
+    @include mq(tabletp) {
+        max-width: 75%;
+        margin: 30px auto;
+    }
+
+    @include mq(laptop) {
+        max-width: 60%;
+        margin: 40px auto;
+    }
+
     .swiper-slide {
         position: relative;
         display: flex;

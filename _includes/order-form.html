@@ -1,142 +1,109 @@
-<div class="eager-form">
+{% capture displays %}
+white-wall-wooden-floor-dog
+white-wall-tropical-plants-natural-light
+white-wall-wooden-cabinet
+white-wall-gray-couch-dog
+blue-wall-wooden-chairs
+brick-wall-bicycle
+brown-wall-wooden-furntiure
+dark-grey-wall-wooden-dresser
+solid-white
+solid-concrete
+{% endcapture %}
 
-	<form method="post" action="https://formspree.io/f/mqkoakkg" id="order-form">
+{% assign displays = displays | strip | newline_to_br | strip_newlines | split: "<br />" %}
 
-        <div class="eager-form__item">
-            <label id="order-title" class="eager-form__title">Selected Photo</label>
-            <br>
-			<label id="order-description" class="eager-form__label">Location</label>
-            <br>
-            <div class="eager-form__input">
-                <div class="swiper order-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="order-photo order-full-photo" src="">
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo white-wall-wooden-floor-dog">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo white-wall-tropical-plants-natural-light">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo white-wall-wooden-cabinet">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo white-wall-gray-couch-dog">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo blue-wall-wooden-chairs">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo brick-wall-bicycle">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo brown-wall-wooden-furntiure">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo dark-grey-wall-wooden-dresser">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo solid-white">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="display-photo solid-concrete">
-                                <div class="display-photo-container">
-                                    <img class="order-photo" src="">
-                                </div>
-                            </div>
-                        </div>
+<div id="order-form-container">
+    <h2 id="order-title">Selected Photo</h2>
+    <p id="order-description">Location</p>
+    <div class="swiper order-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="order-photo order-full-photo" src="">
+            </div>
+            {% for display in displays %}
+            <div class="swiper-slide">
+                <div class="display-photo {{ display }}">
+                    <div class="display-photo-container">
+                        <img class="order-photo" src="">
                     </div>
                 </div>
             </div>
-            <br>
-            <caption>Want a different photo? Browse by certain <a href="{{ "/themes" | relative_url }}">themes</a> or specific <a href="{{ "/places" | relative_url }}">places</a> to find what you're looking for.</caption>
-            <input id="order-photo-input" type="hidden" name="image" value="" />
-		</div>
+            {% endfor %}
+        </div>
+    </div>
+    <div thumbsSlider="" class="swiper order-swiper-thumbs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="order-photo order-full-photo" src="">
+            </div>
+            {% for display in displays %}
+            <div class="swiper-slide">
+                <div class="display-photo {{ display }}">
+                    <div class="display-photo-container">
+                        <img class="order-photo" src="">
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+      </div>
+    <p>Want a different photo? Browse by certain <a href="{{ " /themes" | relative_url }}">themes</a> or specific
+        <a href="{{ " /places" | relative_url }}">places</a> to find what you're looking for.</p>
+    <div class="eager-form">
 
-        <div class="eager-form__item">
-			<label class="eager-form__label">Size *</label>
-            <input list="size" name="size" class="eager-form__input">
-            <datalist id="size">
-                <option value="12in x 18in"></option>
-                <option value="16in x 24in"></option>
-                <option value="20in x 30in"></option>
-                <option value="24in x 36in"></option>
-                <option value="30in x 40in"></option>
-                <option value="40in x 60in"></option>
-            </datalist>
-		</div>
+        <form method="post" action="https://formspree.io/f/mqkoakkg" id="order-form">
+            <div class="eager-form__item">
+                <input id="order-photo-input" type="hidden" name="image" value="" />
+            </div>
 
-        <div class="eager-form__item">
-			<label class="eager-form__label">Material *</label>
-            <input list="material" name="material" class="eager-form__input">
-            <datalist id="material">
-                <option value="Lustre Print (without frame)"></option>
-                <option value="Metallic Print (without frame)"></option>
-                <option value="Giclée Canvas Wrap"></option>
-            </datalist>
-		</div>
+            <div class="eager-form__item">
+                <label class="eager-form__label">Size *</label>
+                <input list="size" name="size" class="eager-form__input">
+                <datalist id="size">
+                    <option value="12in x 18in"></option>
+                    <option value="16in x 24in"></option>
+                    <option value="20in x 30in"></option>
+                    <option value="24in x 36in"></option>
+                    <option value="30in x 40in"></option>
+                    <option value="40in x 60in"></option>
+                </datalist>
+            </div>
 
-        <div class="eager-form__item">
-			<label class="eager-form__label">Name *</label>
-			<input type="text" name="name" placeholder="Your name..." class="eager-form__input">
-		</div>
+            <div class="eager-form__item">
+                <label class="eager-form__label">Material *</label>
+                <input list="material" name="material" class="eager-form__input">
+                <datalist id="material">
+                    <option value="Lustre Print (without frame)"></option>
+                    <option value="Metallic Print (without frame)"></option>
+                    <option value="Giclée Canvas Wrap"></option>
+                </datalist>
+            </div>
 
-        <div class="eager-form__item">
-			<label class="eager-form__label">Email Address *</label>
-			<input type="text" name="email" placeholder="Your email address..." class="eager-form__input">
-		</div>
+            <div class="eager-form__item">
+                <label class="eager-form__label">Name *</label>
+                <input type="text" name="name" placeholder="Your name..." class="eager-form__input">
+            </div>
 
-		<div class="eager-form__item">
-			<label class="eager-form__label">Comments or Questions?</label>
-			<textarea name="message" placeholder="Your comments..." class="eager-form__textarea"></textarea>
-		</div>
+            <div class="eager-form__item">
+                <label class="eager-form__label">Email Address *</label>
+                <input type="text" name="email" placeholder="Your email address..." class="eager-form__input">
+            </div>
 
-		<input type="hidden" name="_next" value="/thanks" />
-		<input type="hidden" name="_subject" value="Order Prints" />
-		<input type="text" name="_gotcha" style="display: none;" class="eager-form__gotcha" val="">
+            <div class="eager-form__item">
+                <label class="eager-form__label">Comments or Questions?</label>
+                <textarea name="message" placeholder="Your comments..." class="eager-form__textarea"></textarea>
+            </div>
 
-		<div class="eager-form__item">
-			<input type="submit" value="Request" class="button button--large">
-		</div>
+            <input type="hidden" name="_next" value="/thanks" />
+            <input type="hidden" name="_subject" value="Order Prints" />
+            <input type="text" name="_gotcha" style="display: none;" class="eager-form__gotcha" val="">
 
-	</form>
+            <div class="eager-form__item">
+                <input type="submit" value="Request" class="button button--large">
+            </div>
 
+        </form>
+
+    </div>
 </div>

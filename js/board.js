@@ -445,7 +445,7 @@
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Order Form
 
 	// Set the photo and content based on the url
-	$('#order-form').each(function () {
+	$('#order-form-container').each(function () {
 		const searchParams = new URLSearchParams(window.location.search);
 		const src = atob(searchParams.get('id') ?? "");
 
@@ -476,17 +476,24 @@
 		$title.html(title);
 		$description.html(tags);
 
+		const orderSwiperThumbs = new Swiper(".order-swiper-thumbs", {
+			spaceBetween: 10,
+			slidesPerView: 4,
+			freeMode: true,
+			watchSlidesProgress: true,
+		});
+
 		const orderSwiper = new Swiper('.order-swiper', {
 			// Optional parameters
 			direction: 'horizontal',
 			loop: true,
 		
-			autoplay: {
-				delay: 3000,
-			},
-		
 			lazy: {
 				loadPrevNext: true,
+			},
+
+			thumbs: {
+				swiper: orderSwiperThumbs,
 			},
 		});
 	});
