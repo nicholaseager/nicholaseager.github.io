@@ -488,6 +488,10 @@
 			direction: 'horizontal',
 			loop: true,
 		
+			autoplay: {
+				delay: 5000,
+			},
+
 			lazy: {
 				loadPrevNext: true,
 			},
