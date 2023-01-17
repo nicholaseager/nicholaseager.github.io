@@ -1,10 +1,6 @@
 <div class="eager-form">
     <form method="post" action="https://formspree.io/f/mqkoakkg" id="order-form">
-        <input
-            type="hidden"
-            name="image"
-            value="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.path }}.jpg"
-        />
+        <label class="eager-form__title">Request this Print</label>
 
         <div class="eager-form__item">
             <label class="eager-form__label">Name *</label>
@@ -20,6 +16,12 @@
             <label class="eager-form__label">Comments or Questions?</label>
             <textarea name="message" placeholder="Your comments..." class="eager-form__textarea"></textarea>
         </div>
+
+        <input
+            type="hidden"
+            name="image"
+            value="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.path }}.jpg"
+        />
 
         <input type="hidden" name="_next" value="/thanks" />
         <input type="hidden" name="_subject" value="Order Prints" />

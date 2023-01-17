@@ -1,3 +1,56 @@
+.order-wrap {
+    max-width: 90%;
+    margin: 20px auto;
+
+    @include mq(tabletp) {
+        max-width: 75%;
+        margin: 30px auto;
+    }
+
+    @include mq(laptop) {
+        max-width: 60%;
+        margin: 40px auto;
+    }
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(tabletp) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+.order-images {
+    max-width: 100%;
+    margin-bottom: 10px;
+
+    @include mq(tabletp) {
+        max-width: 60%;
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
+
+    @include mq(tabletl) {
+        margin-right: 30px;
+    }
+
+    @include mq(laptop) {
+        margin-right: 40px;
+    }
+}
+
+.order-content {
+    width: 100%;
+
+    @include mq(tabletp) {
+        width: 60%;
+    }
+}
+
 .order-swiper-thumbs {
     display: none;
 
@@ -18,22 +71,10 @@
 
 .order-swiper {
     background: $background-alt-color;
+    margin-bottom: 20px;
 }
 
 .order-swiper, .order-swiper-thumbs {
-    max-width: 90%;
-    margin: 20px auto;
-
-    @include mq(tabletp) {
-        max-width: 75%;
-        margin: 30px auto;
-    }
-
-    @include mq(laptop) {
-        max-width: 60%;
-        margin: 40px auto;
-    }
-
     .swiper-slide {
         position: relative;
         display: flex;
@@ -42,14 +83,8 @@
         height: auto;
 
         .display-photo {
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            max-width: 100%;
-            max-height: 100%;
+            position: relative;
+            width: 100%;
             background-size: contain;
         }
 

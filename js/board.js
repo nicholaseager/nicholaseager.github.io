@@ -240,6 +240,7 @@
 			// Optional parameters
 			direction: 'horizontal',
 			loop: true,
+			autoHeight: true,
 		
 			autoplay: {
 				delay: 5000,
