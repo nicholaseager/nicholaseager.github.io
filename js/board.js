@@ -430,27 +430,27 @@
 	$(document).on('submit', '#contact-form', function (e) {
 
 		// Clear previous classes
-		$('.contact-form__item--error').removeClass('contact-form__item--error');
+		$('.eager-form__item--error').removeClass('eager-form__item--error');
 
 		// Get form elements
-		var emailField = $('.contact-form__input[name="email"]');
-		var nameField = $('.contact-form__input[name="name"]');
-		var messageField = $('.contact-form__textarea[name="message"]');
-		var gotchaField = $('.contact-form__gotcha');
+		var emailField = $('.eager-form__input[name="email"]');
+		var nameField = $('.eager-form__input[name="name"]');
+		var messageField = $('.eager-form__textarea[name="message"]');
+		var gotchaField = $('.eager-form__gotcha');
 
 		// Validate email
 		if ( emailField.val() === '' ) {
-			emailField.closest('.contact-form__item').addClass('contact-form__item--error');
+			emailField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// Validate name
 		if ( nameField.val() === '' ) {
-			nameField.closest('.contact-form__item').addClass('contact-form__item--error');
+			nameField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// Validate message
 		if ( messageField.val() === '' ) {
-			messageField.closest('.contact-form__item').addClass('contact-form__item--error');
+			messageField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// If all fields are filled, except gotcha
