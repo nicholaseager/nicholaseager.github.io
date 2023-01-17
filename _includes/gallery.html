@@ -23,7 +23,7 @@
 <div class="gallery">
     <div class="image-gallery-wrap">
         <div class="image-gallery">
-            {% for photo in photos %}
+            {% for photo in photos limit:include.limit %}
             {% assign path = photo | strip %}
             {% assign parts = path | split: "/" %}
             {% assign alt = parts.last | replace: "-", " " %}
@@ -43,7 +43,7 @@
             class="swiper image-gallery-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                {% for photo in photos %}
+                {% for photo in photos limit:include.limit %}
                 {% assign path = photo | strip %}
                 {% assign parts = path | split: "/" %}
                 {% assign alt = parts.last | replace: "-", " " %}
