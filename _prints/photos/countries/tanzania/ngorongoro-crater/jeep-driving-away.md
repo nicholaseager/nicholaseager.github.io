@@ -5,4 +5,5 @@ title: Jeep Driving Away
 location: Ngorongoro Crater, Tanzania
 description: Jeep Driving Away (Ngorongoro Crater, Tanzania)
 tags: ["tanzania", "adventure"]
+jsonld: print
 ---

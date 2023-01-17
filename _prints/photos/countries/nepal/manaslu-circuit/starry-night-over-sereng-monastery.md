@@ -5,4 +5,5 @@ title: Starry Night Over Sereng Monastery
 location: Manaslu Circuit, Nepal
 description: Starry Night Over Sereng Monastery (Manaslu Circuit, Nepal)
 tags: ["nepal", "astrophotography", "showcase"]
+jsonld: print
 ---

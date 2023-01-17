@@ -5,4 +5,5 @@ title: Sunset With A Single Palm Tree Silhouette
 location: Lake Eyasi, Tanzania
 description: Sunset With A Single Palm Tree Silhouette (Lake Eyasi, Tanzania)
 tags: ["tanzania", "landscape"]
+jsonld: print
 ---

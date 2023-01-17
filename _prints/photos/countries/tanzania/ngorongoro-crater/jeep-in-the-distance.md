@@ -5,4 +5,5 @@ title: Jeep In The Distance
 location: Ngorongoro Crater, Tanzania
 description: Jeep In The Distance (Ngorongoro Crater, Tanzania)
 tags: ["tanzania", "adventure"]
+jsonld: print
 ---

@@ -5,4 +5,5 @@ title: Herb Gardens From Above
 location: Hoi An, Vietnam
 description: Herb Gardens From Above (Hoi An, Vietnam)
 tags: ["vietnam", "aerial", "culture"]
+jsonld: print
 ---

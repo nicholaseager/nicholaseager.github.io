@@ -5,4 +5,5 @@ title: Tre Cime Mountains In Clouds
 location: Dolomites, Italy
 description: Tre Cime Mountains In Clouds (Dolomites, Italy)
 tags: ["italy", "landscape"]
+jsonld: print
 ---

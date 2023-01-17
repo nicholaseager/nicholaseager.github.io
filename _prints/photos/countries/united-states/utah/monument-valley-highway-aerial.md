@@ -5,4 +5,5 @@ title: Monument Valley Highway Aerial
 location: Utah, United States
 description: Monument Valley Highway Aerial (Utah, United States)
 tags: ["united-states", "landscape"]
+jsonld: print
 ---

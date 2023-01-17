@@ -5,4 +5,5 @@ title: Cityscape At Sunset
 location: Da Nang, Vietnam
 description: Cityscape At Sunset (Da Nang, Vietnam)
 tags: ["vietnam", "city"]
+jsonld: print
 ---

@@ -5,4 +5,5 @@ title: Glowing Tent Starry Night
 location: Utah, United States
 description: Glowing Tent Starry Night (Utah, United States)
 tags: ["united-states", "astrophotography"]
+jsonld: print
 ---

@@ -5,4 +5,5 @@ title: Two Security Cameras In Tangles Wires
 location: Kathmandu, Nepal
 description: Two Security Cameras In Tangles Wires (Kathmandu, Nepal)
 tags: ["nepal", "city"]
+jsonld: print
 ---

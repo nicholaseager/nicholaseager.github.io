@@ -5,4 +5,5 @@ title: Banana Farm From Above
 location: Hanoi, Vietnam
 description: Banana Farm From Above (Hanoi, Vietnam)
 tags: ["vietnam", "landscape", "showcase"]
+jsonld: print
 ---

@@ -5,4 +5,5 @@ title: Suspension Bridge Over River
 location: Da Nang, Vietnam
 description: Suspension Bridge Over River (Da Nang, Vietnam)
 tags: ["vietnam", "city"]
+jsonld: print
 ---

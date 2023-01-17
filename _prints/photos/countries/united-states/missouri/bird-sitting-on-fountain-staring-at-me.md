@@ -5,4 +5,5 @@ title: Bird Sitting On Fountain Staring At Me
 location: Missouri, United States
 description: Bird Sitting On Fountain Staring At Me (Missouri, United States)
 tags: ["united-states", "animals"]
+jsonld: print
 ---

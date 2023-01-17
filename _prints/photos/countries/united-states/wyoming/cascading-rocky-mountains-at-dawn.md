@@ -5,4 +5,5 @@ title: Cascading Rocky Mountains At Dawn
 location: Wyoming, United States
 description: Cascading Rocky Mountains At Dawn (Wyoming, United States)
 tags: ["united-states", "landscape", "showcase"]
+jsonld: print
 ---

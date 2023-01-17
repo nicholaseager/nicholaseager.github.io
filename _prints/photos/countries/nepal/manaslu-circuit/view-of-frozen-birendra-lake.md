@@ -5,4 +5,5 @@ title: View Of Frozen Birendra Lake
 location: Manaslu Circuit, Nepal
 description: View Of Frozen Birendra Lake (Manaslu Circuit, Nepal)
 tags: ["nepal", "landscape", "snow"]
+jsonld: print
 ---

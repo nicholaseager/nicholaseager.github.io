@@ -5,4 +5,5 @@ title: Locatelli Hut Tre Cime Sheep
 location: Dolomites, Italy
 description: Locatelli Hut Tre Cime Sheep (Dolomites, Italy)
 tags: ["italy", "adventure"]
+jsonld: print
 ---

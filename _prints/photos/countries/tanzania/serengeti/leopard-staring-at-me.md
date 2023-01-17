@@ -5,4 +5,5 @@ title: Leopard Staring At Me
 location: Serengeti, Tanzania
 description: Leopard Staring At Me (Serengeti, Tanzania)
 tags: ["tanzania", "animals"]
+jsonld: print
 ---

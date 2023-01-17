@@ -5,4 +5,5 @@ title: Monterosso Blue White Beach Umbrellas
 location: Cinque Terre, Italy
 description: Monterosso Blue White Beach Umbrellas (Cinque Terre, Italy)
 tags: ["italy", "city"]
+jsonld: print
 ---

@@ -5,4 +5,5 @@ title: Hiker Standing In Canyon At Dusk
 location: Manaslu Circuit, Nepal
 description: Hiker Standing In Canyon At Dusk (Manaslu Circuit, Nepal)
 tags: ["nepal", "adventure"]
+jsonld: print
 ---

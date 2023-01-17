@@ -5,4 +5,5 @@ title: Jeep Offroad
 location: Serengeti, Tanzania
 description: Jeep Offroad (Serengeti, Tanzania)
 tags: ["tanzania", "adventure"]
+jsonld: print
 ---

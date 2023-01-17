@@ -1,0 +1,17 @@
+{%- capture json -%}
+{
+    "@context": "https://schema.org/",
+    "@type": "ImageObject",
+    "contentUrl": "https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.page.image }}.jpg",
+    "license": "{{ site.url }}/license",
+    "acquireLicensePage": "{{ site.url }}/how-to-use-my-images",
+    "creditText": "Nicholas Eager Photography",
+    "creator": {
+      "@type": "Person",
+      "name": "Nicholas Eager"
+     },
+    "copyrightNotice": "Nicholas Eager Photography, LLC"
+}
+{%- endcapture -%}
+{%- assign json = json | strip_newlines | normalize_whitespace -%}
+<script type="application/ld+json">{{json}}</script>

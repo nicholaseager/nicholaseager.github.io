@@ -58,6 +58,10 @@ for row_index, row in enumerate(datareader):
 		if store_url != '':
 				yaml_text += 'storeurl: ' + store_url + '\n'
 
+		# SEO
+
+		yaml_text += 'jsonld: print\n'
+
 		# Finish
 
 		yaml_text += "---\n"

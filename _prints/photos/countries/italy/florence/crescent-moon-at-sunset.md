@@ -5,4 +5,5 @@ title: Crescent Moon At Sunset
 location: Florence, Italy
 description: Crescent Moon At Sunset (Florence, Italy)
 tags: ["italy", "minimalism"]
+jsonld: print
 ---

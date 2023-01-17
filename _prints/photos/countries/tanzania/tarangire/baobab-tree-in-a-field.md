@@ -5,4 +5,5 @@ title: Baobab Tree In A Field
 location: Tarangire, Tanzania
 description: Baobab Tree In A Field (Tarangire, Tanzania)
 tags: ["tanzania"]
+jsonld: print
 ---

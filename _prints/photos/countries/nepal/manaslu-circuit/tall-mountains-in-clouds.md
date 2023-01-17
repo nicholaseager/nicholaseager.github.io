@@ -5,4 +5,5 @@ title: Tall Mountains In Clouds
 location: Manaslu Circuit, Nepal
 description: Tall Mountains In Clouds (Manaslu Circuit, Nepal)
 tags: ["nepal", "landscape"]
+jsonld: print
 ---

@@ -5,4 +5,5 @@ title: Starry Night Over Fishtail Mountain
 location: Mardi Himal, Nepal
 description: Starry Night Over Fishtail Mountain (Mardi Himal, Nepal)
 tags: ["nepal", "astrophotography", "adventure"]
+jsonld: print
 ---

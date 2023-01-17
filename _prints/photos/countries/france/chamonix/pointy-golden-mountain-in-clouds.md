@@ -5,4 +5,5 @@ title: Pointy Golden Mountain In Clouds
 location: Chamonix, France
 description: Pointy Golden Mountain In Clouds (Chamonix, France)
 tags: ["france", "landscape"]
+jsonld: print
 ---

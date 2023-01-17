@@ -5,4 +5,5 @@ title: Donkey Carrying Heavy Load
 location: Manaslu Circuit, Nepal
 description: Donkey Carrying Heavy Load (Manaslu Circuit, Nepal)
 tags: ["nepal", "adventure"]
+jsonld: print
 ---

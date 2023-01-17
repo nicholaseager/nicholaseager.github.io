@@ -5,4 +5,5 @@ title: Winter River With Snow Covered Rocks
 location: Washington, United States
 description: Winter River With Snow Covered Rocks (Washington, United States)
 tags: ["united-states", "snow", "landscape"]
+jsonld: print
 ---

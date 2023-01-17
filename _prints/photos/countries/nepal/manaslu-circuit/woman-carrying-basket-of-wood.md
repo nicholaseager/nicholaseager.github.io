@@ -5,4 +5,5 @@ title: Woman Carrying Basket Of Wood
 location: Manaslu Circuit, Nepal
 description: Woman Carrying Basket Of Wood (Manaslu Circuit, Nepal)
 tags: ["nepal", "adventure", "culture"]
+jsonld: print
 ---

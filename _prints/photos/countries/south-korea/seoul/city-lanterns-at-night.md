@@ -5,4 +5,5 @@ title: City Lanterns At Night
 location: Seoul, South Korea
 description: City Lanterns At Night (Seoul, South Korea)
 tags: ["south-korea", "city", "showcase"]
+jsonld: print
 ---

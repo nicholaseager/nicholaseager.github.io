@@ -5,4 +5,5 @@ title: Cityscape At Night
 location: Seoul, South Korea
 description: Cityscape At Night (Seoul, South Korea)
 tags: ["south-korea", "city"]
+jsonld: print
 ---

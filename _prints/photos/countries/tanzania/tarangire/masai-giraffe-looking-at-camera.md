@@ -5,4 +5,5 @@ title: Masai Giraffe Looking At Camera
 location: Tarangire, Tanzania
 description: Masai Giraffe Looking At Camera (Tarangire, Tanzania)
 tags: ["tanzania", "animals"]
+jsonld: print
 ---

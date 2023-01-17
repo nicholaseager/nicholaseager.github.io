@@ -5,4 +5,5 @@ title: Rainbow Herb Gardens
 location: Hoi An, Vietnam
 description: Rainbow Herb Gardens (Hoi An, Vietnam)
 tags: ["vietnam", "culture"]
+jsonld: print
 ---

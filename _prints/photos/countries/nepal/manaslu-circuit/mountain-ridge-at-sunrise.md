@@ -5,4 +5,5 @@ title: Mountain Ridge At Sunrise
 location: Manaslu Circuit, Nepal
 description: Mountain Ridge At Sunrise (Manaslu Circuit, Nepal)
 tags: ["nepal", "landscape"]
+jsonld: print
 ---

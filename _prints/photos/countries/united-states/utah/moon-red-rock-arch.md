@@ -5,4 +5,5 @@ title: Moon Red Rock Arch
 location: Utah, United States
 description: Moon Red Rock Arch (Utah, United States)
 tags: ["united-states", "landscape"]
+jsonld: print
 ---

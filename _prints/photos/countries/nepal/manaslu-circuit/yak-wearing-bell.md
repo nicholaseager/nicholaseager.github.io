@@ -5,4 +5,5 @@ title: Yak Wearing Bell
 location: Manaslu Circuit, Nepal
 description: Yak Wearing Bell (Manaslu Circuit, Nepal)
 tags: ["nepal", "animals"]
+jsonld: print
 ---

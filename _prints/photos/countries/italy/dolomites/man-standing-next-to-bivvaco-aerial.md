@@ -5,4 +5,5 @@ title: Man Standing Next To Bivvaco Aerial
 location: Dolomites, Italy
 description: Man Standing Next To Bivvaco Aerial (Dolomites, Italy)
 tags: ["italy", "adventure"]
+jsonld: print
 ---
