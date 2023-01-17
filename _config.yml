@@ -19,6 +19,9 @@ collections:
   themes:
     output: true
     permalink: /theme/:slug
+  prints:
+    output: true
+    permalink: :path
 
 defaults:
   -
