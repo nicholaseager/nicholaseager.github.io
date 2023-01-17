@@ -1,10 +1,20 @@
 {% if include.tags %}
 
+{% assign tags_to_ignore = include.ignore_tags | split: ',' %}
+{% assign photos_to_ignore = include.ignore_photos | split: ',' %}
+
 {% assign photos = "" | split: ',' %}
 {% for print in site.data.prints %}
+    {% if photos_to_ignore contains print.path %}
+        {% continue %}
+    {% endif %}
+
     {% assign tags = print.tags | split: " " %}
     {% assign should_include = "yes" %}
     {% for tag in include.tags %}
+        {% if tags_to_ignore contains tag %}
+            {% continue %}
+        {% endif %}
         {% unless tags contains tag %}
             {% assign should_include = "no" %}
         {% endunless %}
