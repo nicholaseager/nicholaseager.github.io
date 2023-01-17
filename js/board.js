@@ -476,21 +476,9 @@
 		$('.eager-form__item--error').removeClass('eager-form__item--error');
 
 		// Get form elements
-		var sizeField = $('.eager-form__input[name="size"]');
-		var materialField = $('.eager-form__input[name="material"]');
 		var emailField = $('.eager-form__input[name="email"]');
 		var nameField = $('.eager-form__input[name="name"]');
 		var gotchaField = $('.eager-form__gotcha');
-
-		// Validate size
-		if ( sizeField.val() === '' ) {
-			sizeField.closest('.eager-form__item').addClass('eager-form__item--error');
-		}
-
-		// Validate material
-		if ( materialField.val() === '' ) {
-			materialField.closest('.eager-form__item').addClass('eager-form__item--error');
-		}
 
 		// Validate email
 		if ( emailField.val() === '' ) {
@@ -503,9 +491,7 @@
 		}
 
 		// If all fields are filled, except gotcha
-		if ( 	sizeField.val() !== '' &&
-				materialField.val() !== '' &&	
-				emailField.val() !== '' &&
+		if ( 	emailField.val() !== '' &&
 				nameField.val() !== '' &&
 				gotchaField.val().length === 0 ) {
 

@@ -1,29 +1,10 @@
 <div class="eager-form">
     <form method="post" action="https://formspree.io/f/mqkoakkg" id="order-form">
-        <input id="order-photo-input" type="hidden" name="image" value="" />
-
-        <div class="eager-form__item">
-            <label class="eager-form__label">Size *</label>
-            <input list="size" name="size" class="eager-form__input">
-            <datalist id="size">
-                <option value="12in x 18in"></option>
-                <option value="16in x 24in"></option>
-                <option value="20in x 30in"></option>
-                <option value="24in x 36in"></option>
-                <option value="30in x 40in"></option>
-                <option value="40in x 60in"></option>
-            </datalist>
-        </div>
-
-        <div class="eager-form__item">
-            <label class="eager-form__label">Material *</label>
-            <input list="material" name="material" class="eager-form__input">
-            <datalist id="material">
-                <option value="Lustre Print (without frame)"></option>
-                <option value="Metallic Print (without frame)"></option>
-                <option value="Giclée Canvas Wrap"></option>
-            </datalist>
-        </div>
+        <input
+            type="hidden"
+            name="image"
+            value="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.path }}.jpg"
+        />
 
         <div class="eager-form__item">
             <label class="eager-form__label">Name *</label>
