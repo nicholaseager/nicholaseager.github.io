@@ -1,0 +1,47 @@
+{% capture displays %}
+white-wall-wooden-floor-dog
+white-wall-tropical-plants-natural-light
+white-wall-wooden-cabinet
+white-wall-gray-couch-dog
+blue-wall-wooden-chairs
+brick-wall-bicycle
+brown-wall-wooden-furntiure
+dark-grey-wall-wooden-dresser
+solid-white
+solid-concrete
+{% endcapture %}
+
+{% assign displays = displays | strip | newline_to_br | strip_newlines | split: "<br />" %}
+
+<div class="swiper order-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img class="order-full-photo" src="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.path }}.jpg">
+        </div>
+        {% for display in displays %}
+        <div class="swiper-slide">
+            <div class="display-photo {{ display }}">
+                <div class="display-photo-container">
+                    <img src="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.path }}.jpg">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div thumbsSlider="" class="swiper order-swiper-thumbs">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img class="order-full-photo" src="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.path }}.jpg">
+        </div>
+        {% for display in displays %}
+        <div class="swiper-slide">
+            <div class="display-photo {{ display }}">
+                <div class="display-photo-container">
+                    <img src="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.path }}.jpg">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

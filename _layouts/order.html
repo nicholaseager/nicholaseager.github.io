@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section class="intro">
+
+	<div class="wrap">
+
+		<h1>{{ page.title }}</h1>
+		<p><i>{{ page.location }}</i></p>
+	</div>
+
+</section>
+
+<section class="single">
+
+	{% include photo-display.html path=page.image %}
+
+	<p>Want a different photo? Browse by certain <a href="{{ "/themes" | relative_url }}">themes</a> or specific
+        <a href="{{ "/places" | relative_url }}">places</a> to find what you're looking for.</p>
+
+    {% include order-form.html path=page.image %}
+
+	<p>If you have any comments, questions, or other inquiries, please <a href="{{ "/contact" | relative_url }}">contact</a> me separately.</p>
+
+</section>
