@@ -3,12 +3,12 @@
     margin: 20px auto;
 
     @include mq(tabletp) {
-        max-width: 75%;
+        max-width: 80%;
         margin: 30px auto;
     }
 
     @include mq(laptop) {
-        max-width: 60%;
+        max-width: 70%;
         margin: 40px auto;
     }
 }
@@ -29,7 +29,7 @@
     margin-bottom: 10px;
 
     @include mq(tabletp) {
-        max-width: 60%;
+        max-width: 50%;
         margin-right: 20px;
         margin-bottom: 0px;
     }
@@ -240,9 +240,4 @@
             }
         }
     }
-}
-
-.order-full-photo {
-    max-height: 60vh;
-    margin: 0 auto;
 }
