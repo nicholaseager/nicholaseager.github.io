@@ -1,0 +1,67 @@
+{% assign photos = "" | split: ',' %}
+
+{% for print in site.data.prints %}
+    {% assign tags = print.tags | split: " " %}
+    {% for tag in tags %}
+        {% if include.tags contains tag %}
+        {% assign photos = photos | push: print %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+<div class="gallery">
+    <div class="image-gallery-wrap">
+        <div class="image-gallery">
+            {% for photo in photos %}
+            {% assign parts = photo.path | split: "/" %}
+            {% assign alt = parts.last | replace: "-", " " %}
+            <a data-index="{{forloop.index}}" class="image-gallery-link" href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ photo.path }}.jpg">
+                <img srcset="
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ photo.path }}.jpg 320w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ photo.path }}.jpg 480w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ photo.path }}.jpg 640w
+                    " sizes="100vw" src="https://ik.imagekit.io/qn1gkawvy/tr:h-480/{{ photo.path }}.jpg" alt="{{ alt }}" />
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="image-gallery-swiper-container image-gallery-swiper-hidden">
+        <div class="image-gallery-swiper-backgound"></div>
+        <div
+            class="swiper image-gallery-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                {% for photo in photos %}
+                {% assign parts = photo.path | split: "/" %}
+                {% assign alt = parts.last | replace: "-", " " %}
+                <div class="swiper-slide" data-src="{{ photo.path }}">
+                    <img
+                        data-srcset="
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ photo.path }}.jpg 320w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ photo.path }}.jpg 480w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ photo.path }}.jpg 640w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ photo.path }}.jpg 960w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ photo.path }}.jpg 1280w,
+                        "
+                        sizes="100vw"
+                        data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ photo.path }}.jpg"
+                        class="swiper-lazy"
+                        alt="{{ alt }}"
+                    />
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <a class="swiper-close-button">
+            <i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="{{ "/order" | relative_url }}" data-prefix="{{ "/order?id=" | relative_url }}" class="button button--gallery order-prints">
+            <i class="fas fa-shopping-cart"></i>
+            Order Print
+        </a>
+    </div>
+</div>
