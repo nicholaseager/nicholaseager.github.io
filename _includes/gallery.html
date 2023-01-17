@@ -3,11 +3,15 @@
 {% assign photos = "" | split: ',' %}
 {% for print in site.data.prints %}
     {% assign tags = print.tags | split: " " %}
-    {% for tag in tags %}
-        {% if include.tags contains tag %}
-        {% assign photos = photos | push: print.path %}
-        {% endif %}
+    {% assign should_include = "yes" %}
+    {% for tag in include.tags %}
+        {% unless tags contains tag %}
+            {% assign should_include = "no" %}
+        {% endunless %}
     {% endfor %}
+    {% if should_include == "yes" %}
+    {% assign photos = photos | push: print.path %}
+    {% endif %}
 {% endfor %}
 
 {% elsif include.photos %}
