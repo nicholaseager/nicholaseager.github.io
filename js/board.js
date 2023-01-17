@@ -229,6 +229,31 @@
 			}
 		});
 
+		const orderSwiperThumbs = new Swiper(".order-swiper-thumbs", {
+			spaceBetween: 10,
+			slidesPerView: 4,
+			freeMode: true,
+			watchSlidesProgress: true,
+		});
+
+		const orderSwiper = new Swiper('.order-swiper', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+		
+			autoplay: {
+				delay: 5000,
+			},
+
+			lazy: {
+				loadPrevNext: true,
+			},
+
+			thumbs: {
+				swiper: orderSwiperThumbs,
+			},
+		});
+
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Galleries
 
 		var galleryID = 0;
@@ -278,7 +303,7 @@
 					var $slide = $this.find('.swiper-slide[data-swiper-slide-index="' + index + '"]');
 					var src = $slide.attr('data-src');
 					var printButton = $this.find('.order-prints');
-					var link = printButton.attr('data-prefix') + btoa(src);
+					var link = printButton.attr('data-prefix') + src;
 					printButton.attr('href', link);
 				}
 				gallerySwiper.on('slideChange', onSlideChange);
@@ -444,64 +469,6 @@
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Order Form
 
-	// Set the photo and content based on the url
-	$('#order-form-container').each(function () {
-		const searchParams = new URLSearchParams(window.location.search);
-		const src = atob(searchParams.get('id') ?? "");
-
-		if (!src) {
-			$(this).html('No photo found');
-			return;
-		}
-		
-		// Set photo
-		const href = 'https://ik.imagekit.io/qn1gkawvy/tr:w-1280/' + src + '.jpg';
-		$(this).find('.order-photo').each(function() {
-			$(this).attr('src', href);
-		});
-		const $input = $(this).find('#order-photo-input');
-		$input.attr('value', href);
-
-		// Remove -'s and capitalize		
-		const normalize = (s) => {
-			return s.split('-').map(p => p[0].toUpperCase() + p.substr(1)).join(' ');
-		};
-
-		// Set content
-		const $title = $(this).find('#order-title');
-		const $description = $(this).find('#order-description');
-		const parts = src.split('/').filter(p => p !== 'photos' && p !== 'countries');
-		const title = normalize(parts.pop());
-		const tags = parts.reverse().map(p => normalize(p)).join(', ');
-		$title.html(title);
-		$description.html(tags);
-
-		const orderSwiperThumbs = new Swiper(".order-swiper-thumbs", {
-			spaceBetween: 10,
-			slidesPerView: 4,
-			freeMode: true,
-			watchSlidesProgress: true,
-		});
-
-		const orderSwiper = new Swiper('.order-swiper', {
-			// Optional parameters
-			direction: 'horizontal',
-			loop: true,
-		
-			autoplay: {
-				delay: 5000,
-			},
-
-			lazy: {
-				loadPrevNext: true,
-			},
-
-			thumbs: {
-				swiper: orderSwiperThumbs,
-			},
-		});
-	});
-
 	// Override the submit event
 	$(document).on('submit', '#order-form', function (e) {
 
@@ -513,7 +480,6 @@
 		var materialField = $('.eager-form__input[name="material"]');
 		var emailField = $('.eager-form__input[name="email"]');
 		var nameField = $('.eager-form__input[name="name"]');
-		var messageField = $('.eager-form__textarea[name="message"]');
 		var gotchaField = $('.eager-form__gotcha');
 
 		// Validate size
