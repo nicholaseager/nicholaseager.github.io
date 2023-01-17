@@ -45,18 +45,25 @@ for row_index, row in enumerate(datareader):
 
 		yaml_text += 'title: ' + title + '\n'
 		yaml_text += 'location: ' + location + '\n'
-		yaml_text += 'description: ' + title + ' (' + location + ')' + '\n'
+
+		# Description
+
+		description = row[1]
+		if description != '':
+			yaml_text += 'description: ' + description + '\n'
+		else:
+			yaml_text += 'description: ' + title + ' (' + location + ')' + '\n'
 
 		# Tags
 
-		tags = '["' + '", "'.join(row[1].split(' ')) + '"]'
+		tags = '["' + '", "'.join(row[2].split(' ')) + '"]'
 		yaml_text += 'tags: ' + tags + '\n'
 
 		# Store URL
 
-		store_url = row[2]
+		store_url = row[3]
 		if store_url != '':
-				yaml_text += 'storeurl: ' + store_url + '\n'
+			yaml_text += 'storeurl: ' + store_url + '\n'
 
 		# SEO
 
