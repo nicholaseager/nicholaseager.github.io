@@ -13,8 +13,10 @@ Have you ever had a dream to start a restaurant? What if I told you it is as eas
 In January 2021, my wife and I moved to Danang, Vietnam. We were looking to start our lives as newlyweds in a new city. We chose Danang because it was a relaxing beach town (with only 1.2 million people as opposed to Ho Chi Minh City's 9 million or Hanoi's 5 million), there are areas to hike and run close by, and we had friends who lived there. Wanting to live out in the "suburbs" to be away from the noisy city life and to do a bit of gardening, we chose a house with a small courtyard in front. As time passed, we cooked more of our own food, such as fluffy American pancakes, smoothies, kombucha, granola bowls, and so much more.
 
 {% include swiper.html
-    i0="photos/countries/vietnam/da-nang/beach-at-sunset-city-background"
-    i1="photos/countries/vietnam/da-nang/two-coconuts-on-beach"
+    photos="
+        photos/countries/vietnam/da-nang/beach-at-sunset-city-background
+        photos/countries/vietnam/da-nang/two-coconuts-on-beach
+    "
 %}
 
 {% include map.html query="Danang, Vietnam" %}

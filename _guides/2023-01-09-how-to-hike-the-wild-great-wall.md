@@ -52,10 +52,12 @@ Once you arrive in Xizhazi, you can hire a local guide to take you to the Great 
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="photos/countries/china/jiankou/bus-station-timetable"
-    i1="photos/countries/china/jiankou/h25-bus"
-    i2="photos/countries/china/jiankou/inside-a-bus"
-    i3="photos/countries/china/jiankou/leave-nothing-but-footprints"
+    photos="
+        photos/countries/china/jiankou/bus-station-timetable
+        photos/countries/china/jiankou/h25-bus
+        photos/countries/china/jiankou/inside-a-bus
+        photos/countries/china/jiankou/leave-nothing-but-footprints
+    "
 %}
 
 You will start your trip off in Beijing. To get to Xizhazi, you can take a couple of buses, or a taxi. However, buses are always more prone to adventure. But you will have to navigate your way around by signs all in Chinese. Catch the first bus to Huairou, a city north of Beijing. Then you can take a local bus (H25) to Xizhazi. You will most likely be the only foreigner on the bus. This section of wall you will hike is not popular with foreign tourists. So, the only people on the bus were locals of the village.
@@ -66,20 +68,24 @@ You can see the bus stations in the map above. If you leave from Beijing early, 
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="photos/countries/china/jiankou/window-in-the-wild-great-wall"
-    i1="photos/countries/china/jiankou/person-climbing-the-wild-great-wall"
-    i2="photos/countries/china/jiankou/many-people-climbing-the-wild-great-wall"
-    i3="photos/countries/china/jiankou/wild-great-wall"
-    i4="photos/countries/china/jiankou/hikers-on-the-wild-great-wall"
-    i5="photos/countries/china/jiankou/people-climbing-the-wild-great-wall"
+    photos="
+        photos/countries/china/jiankou/window-in-the-wild-great-wall
+        photos/countries/china/jiankou/person-climbing-the-wild-great-wall
+        photos/countries/china/jiankou/many-people-climbing-the-wild-great-wall
+        photos/countries/china/jiankou/wild-great-wall
+        photos/countries/china/jiankou/hikers-on-the-wild-great-wall
+        photos/countries/china/jiankou/people-climbing-the-wild-great-wall
+    "
 %}
 
 There are many beautiful and ancient sections of the wild wall, such as the Beijing Knot, the The Eagle Flies Facing Upward, and the Sky Stairs. Explore around to your heart's content and then head back to Xizhazi for a huge dinner and a good night's rest.
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="photos/countries/china/jiankou/group-dinner-table"
-    i1="photos/countries/china/jiankou/group-of-people-eating-dinner-cheers"
+    photos="
+        photos/countries/china/jiankou/group-dinner-table
+        photos/countries/china/jiankou/group-of-people-eating-dinner-cheers
+    "
 %}
 
 At our guest house, there was an enormous table, with an equally as large lazy-suzan. The table fit eleven people, and the lazy-suzan fit all of the food. In China, it is customary for everyone to share the food. From the rotating lazy-suzan. All of the dining utensils, including plates, bowls, chopsticks, and teacups were individually wrapped in plastic. Apparently, many Chinese restaurants outsource dishwashing, and the outsourced company returns the dishes wrapped. When the food actually came, I was stunned by the intoxicating aromas of so many dishes. I can't remember any of the names, but all of the flavors were so vivid. Except when I accidentally took a bite of fermented tofu. As a toast to new friends, we drank Chinese rice wine. Once finished, we rested up for our big hike tomorrow.
@@ -88,12 +94,14 @@ At our guest house, there was an enormous table, with an equally as large lazy-s
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="photos/countries/china/jiankou/looking-over-the-wild-great-wall"
-    i1="photos/countries/china/jiankou/two-people-walking-on-the-great-wall"
-    i2="photos/countries/china/jiankou/eight-people-sitting-on-the-great-wall"
-    i3="photos/countries/china/jiankou/group-of-people-hiking-the-wild-great-wall"
-    i4="photos/countries/china/jiankou/wild-great-wall-climbing"
-    i5="photos/countries/china/jiankou/side-of-the-wild-great-wall"
+    photos="
+        photos/countries/china/jiankou/looking-over-the-wild-great-wall
+        photos/countries/china/jiankou/two-people-walking-on-the-great-wall
+        photos/countries/china/jiankou/eight-people-sitting-on-the-great-wall
+        photos/countries/china/jiankou/group-of-people-hiking-the-wild-great-wall
+        photos/countries/china/jiankou/wild-great-wall-climbing
+        photos/countries/china/jiankou/side-of-the-wild-great-wall
+    "
 %}
 
 In the morning, have a quick breakfast before starting your journey. Mutianyu is the the touristy and restored section of the wall. Once you arrive, you'll see the difference. The wall is completely restored, and there are hoards of people. It might be nice to see if you'd like to understand the impact of tourism.

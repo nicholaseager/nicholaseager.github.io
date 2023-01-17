@@ -50,10 +50,12 @@ Since I was starting in Levanto and wanted to make it to La Spezia, I woke up at
 ## How to Navigate While Trail Running
 
 {% include swiper.html
-    i0="photos/countries/italy/cinque-terre/wooden-post-sign-manarola-riomaggiore"
-    i1="photos/countries/italy/cinque-terre/trail-marker-537"
-    i2="photos/countries/italy/cinque-terre/wine-bar-directions-sign"
-    i3="photos/countries/italy/cinque-terre/cornigilia-sign"
+    photos="
+        photos/countries/italy/cinque-terre/wooden-post-sign-manarola-riomaggiore
+        photos/countries/italy/cinque-terre/trail-marker-537
+        photos/countries/italy/cinque-terre/wine-bar-directions-sign
+        photos/countries/italy/cinque-terre/cornigilia-sign
+    "
 %}
 
 The trails are really well-marked. You have signs to the next city at most intersections. The trails are also blazed with symbols and numbers. In the case that you get lost, you can use <a href="https://maps.me/" target="_blank">maps.me</a> to find your way. 

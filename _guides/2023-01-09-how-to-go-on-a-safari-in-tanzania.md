@@ -21,32 +21,34 @@ Tanzania is home to several beautiful national parks, including the Serengeti, N
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="photos/countries/tanzania/serengeti/wildebeest-migration"
-    i1="photos/countries/tanzania/serengeti/three-kopjes"
-    i2="photos/countries/tanzania/serengeti/single-acacia-tree-daylight"
-    i3="photos/countries/tanzania/serengeti/sunset-with-a-single-tree"
-    i4="photos/countries/tanzania/serengeti/three-acacia-trees"
-    i5="photos/countries/tanzania/serengeti/safari-jeep-waiting"
-    i6="photos/countries/tanzania/serengeti/lonely-acacia-tree-silhouette"
-    i7="photos/countries/tanzania/serengeti/love-birds"
-    i8="photos/countries/tanzania/serengeti/ostrich-and-two-zebras"
-    i9="photos/countries/tanzania/serengeti/lion-resting-in-tree-from-a-distance"
-    i10="photos/countries/tanzania/serengeti/lion-resting-in-tree"
-    i11="photos/countries/tanzania/serengeti/lion-stalking-wildebeest-laying-in-a-tree"
-    i12="photos/countries/tanzania/serengeti/lion-yawning"
-    i13="photos/countries/tanzania/serengeti/leopard-walking-on-a-road"
-    i14="photos/countries/tanzania/serengeti/lion-resting-in-a-bush-from-a-distance"
-    i15="photos/countries/tanzania/serengeti/lion-resting-in-a-bush"
-    i16="photos/countries/tanzania/serengeti/lion-resting-in-the-grass-from-a-distance"
-    i17="photos/countries/tanzania/serengeti/hot-air-ballon-on-the-plains"
-    i18="photos/countries/tanzania/serengeti/jeep-offroad"
-    i19="photos/countries/tanzania/serengeti/leopard-staring-at-me"
-    i20="photos/countries/tanzania/serengeti/leopard-walking-away"
-    i21="photos/countries/tanzania/serengeti/acacia-tree-close"
-    i22="photos/countries/tanzania/serengeti/acacia-tree"
-    i23="photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset"
-    i24="photos/countries/tanzania/serengeti/acacia-tree-at-sunset"
-    i25="photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset-dark"
+    photos="
+        photos/countries/tanzania/serengeti/wildebeest-migration
+        photos/countries/tanzania/serengeti/three-kopjes
+        photos/countries/tanzania/serengeti/single-acacia-tree-daylight
+        photos/countries/tanzania/serengeti/sunset-with-a-single-tree
+        photos/countries/tanzania/serengeti/three-acacia-trees
+        photos/countries/tanzania/serengeti/safari-jeep-waiting
+        photos/countries/tanzania/serengeti/lonely-acacia-tree-silhouette
+        photos/countries/tanzania/serengeti/love-birds
+        photos/countries/tanzania/serengeti/ostrich-and-two-zebras
+        photos/countries/tanzania/serengeti/lion-resting-in-tree-from-a-distance
+        photos/countries/tanzania/serengeti/lion-resting-in-tree
+        photos/countries/tanzania/serengeti/lion-stalking-wildebeest-laying-in-a-tree
+        photos/countries/tanzania/serengeti/lion-yawning
+        photos/countries/tanzania/serengeti/leopard-walking-on-a-road
+        photos/countries/tanzania/serengeti/lion-resting-in-a-bush-from-a-distance
+        photos/countries/tanzania/serengeti/lion-resting-in-a-bush
+        photos/countries/tanzania/serengeti/lion-resting-in-the-grass-from-a-distance
+        photos/countries/tanzania/serengeti/hot-air-ballon-on-the-plains
+        photos/countries/tanzania/serengeti/jeep-offroad
+        photos/countries/tanzania/serengeti/leopard-staring-at-me
+        photos/countries/tanzania/serengeti/leopard-walking-away
+        photos/countries/tanzania/serengeti/acacia-tree-close
+        photos/countries/tanzania/serengeti/acacia-tree
+        photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset
+        photos/countries/tanzania/serengeti/acacia-tree-at-sunset
+        photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset-dark
+    "
 %}
 
 This vast national park is home to a variety of wildlife, including the big five (lions, leopards, rhinos, elephants, and buffaloes). There are rocky hills, grassy plains, and acacia woodlands in the diverse landscape. Along with having numerous rivers and lakes, the park is also home to a variety of birds and other animals.
@@ -55,27 +57,29 @@ This vast national park is home to a variety of wildlife, including the big five
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="photos/countries/tanzania/ngorongoro-crater/warthogs-and-wildebeest"
-    i1="photos/countries/tanzania/ngorongoro-crater/two-safari-jeeps"
-    i2="photos/countries/tanzania/ngorongoro-crater/various-birds-standing-by-a-lake"
-    i3="photos/countries/tanzania/ngorongoro-crater/round-tree-under-the-clouds"
-    i4="photos/countries/tanzania/ngorongoro-crater/safari-jeep-in-the-distance"
-    i5="photos/countries/tanzania/ngorongoro-crater/safari-jeep"
-    i6="photos/countries/tanzania/ngorongoro-crater/serval-cat-looking-at-me"
-    i7="photos/countries/tanzania/ngorongoro-crater/two-hippos-playing-in-the-water"
-    i8="photos/countries/tanzania/ngorongoro-crater/jeep-driving-away"
-    i9="photos/countries/tanzania/ngorongoro-crater/jeep-in-the-distance"
-    i10="photos/countries/tanzania/ngorongoro-crater/large-tree-in-fog"
-    i11="photos/countries/tanzania/ngorongoro-crater/massa-homes"
-    i12="photos/countries/tanzania/ngorongoro-crater/massa-people-under-tree"
-    i13="photos/countries/tanzania/ngorongoro-crater/muddy-buffalo-staring-at-me"
-    i14="photos/countries/tanzania/ngorongoro-crater/open-tent-in-fog"
-    i15="photos/countries/tanzania/ngorongoro-crater/hyena-carrying-wildebeest-head"
-    i16="photos/countries/tanzania/ngorongoro-crater/family-of-lions-drinking-water"
-    i17="photos/countries/tanzania/ngorongoro-crater/flamingo-walking-by-a-lake"
-    i18="photos/countries/tanzania/ngorongoro-crater/grey-crowned-crane-dancing"
-    i20="photos/countries/tanzania/ngorongoro-crater/herd-of-buffalos-from-above"
-    i21="photos/countries/tanzania/ngorongoro-crater/elephant-crossing-the-road-in-front-of-a-safari-jeep"
+    photos="
+        photos/countries/tanzania/ngorongoro-crater/warthogs-and-wildebeest
+        photos/countries/tanzania/ngorongoro-crater/two-safari-jeeps
+        photos/countries/tanzania/ngorongoro-crater/various-birds-standing-by-a-lake
+        photos/countries/tanzania/ngorongoro-crater/round-tree-under-the-clouds
+        photos/countries/tanzania/ngorongoro-crater/safari-jeep-in-the-distance
+        photos/countries/tanzania/ngorongoro-crater/safari-jeep
+        photos/countries/tanzania/ngorongoro-crater/serval-cat-looking-at-me
+        photos/countries/tanzania/ngorongoro-crater/two-hippos-playing-in-the-water
+        photos/countries/tanzania/ngorongoro-crater/jeep-driving-away
+        photos/countries/tanzania/ngorongoro-crater/jeep-in-the-distance
+        photos/countries/tanzania/ngorongoro-crater/large-tree-in-fog
+        photos/countries/tanzania/ngorongoro-crater/massa-homes
+        photos/countries/tanzania/ngorongoro-crater/massa-people-under-tree
+        photos/countries/tanzania/ngorongoro-crater/muddy-buffalo-staring-at-me
+        photos/countries/tanzania/ngorongoro-crater/open-tent-in-fog
+        photos/countries/tanzania/ngorongoro-crater/hyena-carrying-wildebeest-head
+        photos/countries/tanzania/ngorongoro-crater/family-of-lions-drinking-water
+        photos/countries/tanzania/ngorongoro-crater/flamingo-walking-by-a-lake
+        photos/countries/tanzania/ngorongoro-crater/grey-crowned-crane-dancing
+        photos/countries/tanzania/ngorongoro-crater/herd-of-buffalos-from-above
+        photos/countries/tanzania/ngorongoro-crater/elephant-crossing-the-road-in-front-of-a-safari-jeep
+    "
 %}
 
 There are many different kinds of animals living in Tanzania's Ngorongoro Crater, including large predators like lions and leopards as well as herbivores like buffalo and giraffe. There are numerous smaller lakes and streams inside the crater, which is surrounded by thick grasslands and forests. The crater's rim offers stunning views, making it a well-liked location for tourists to view sunsets.
@@ -84,18 +88,20 @@ There are many different kinds of animals living in Tanzania's Ngorongoro Crater
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="photos/countries/tanzania/tarangire/zebra"
-    i1="photos/countries/tanzania/tarangire/two-elephants-drinking-from-a-lake"
-    i2="photos/countries/tanzania/tarangire/vervet-blue-balled-monkey-with-long-tail"
-    i3="photos/countries/tanzania/tarangire/vervet-monkey-sitting-in-grass"
-    i4="photos/countries/tanzania/tarangire/masai-giraffe-looking-at-camera"
-    i5="photos/countries/tanzania/tarangire/mother-and-son-baboon"
-    i6="photos/countries/tanzania/tarangire/safari-jeep-driving-through-dust"
-    i7="photos/countries/tanzania/tarangire/safari-jeep"
-    i8="photos/countries/tanzania/tarangire/tent-at-twiga-campsite"
-    i9="photos/countries/tanzania/tarangire/baobab-tree-in-a-field"
-    i10="photos/countries/tanzania/tarangire/herd-of-elephants-roaming"
-    i11="photos/countries/tanzania/tarangire/jeeps-parked-off-the-road"
+    photos="
+        photos/countries/tanzania/tarangire/zebra
+        photos/countries/tanzania/tarangire/two-elephants-drinking-from-a-lake
+        photos/countries/tanzania/tarangire/vervet-blue-balled-monkey-with-long-tail
+        photos/countries/tanzania/tarangire/vervet-monkey-sitting-in-grass
+        photos/countries/tanzania/tarangire/masai-giraffe-looking-at-camera
+        photos/countries/tanzania/tarangire/mother-and-son-baboon
+        photos/countries/tanzania/tarangire/safari-jeep-driving-through-dust
+        photos/countries/tanzania/tarangire/safari-jeep
+        photos/countries/tanzania/tarangire/tent-at-twiga-campsite
+        photos/countries/tanzania/tarangire/baobab-tree-in-a-field
+        photos/countries/tanzania/tarangire/herd-of-elephants-roaming
+        photos/countries/tanzania/tarangire/jeeps-parked-off-the-road
+    "
 %}
 
 Large elephant herds, baobab trees, and a variety of birdlife can all be found in Tarangire National Park. The park is a great place to go on game drives and nature walks given that it is home to a diverse range of wildlife, including lions, leopards, zebras, and giraffes.
@@ -104,9 +110,11 @@ Large elephant herds, baobab trees, and a variety of birdlife can all be found i
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="photos/countries/tanzania/lake-manyara/safari-jeep-driving-through-jungle"
-    i1="photos/countries/tanzania/lake-manyara/baboon-sleeping"
-    i2="photos/countries/tanzania/lake-manyara/baboon-rolling-over"
+    photos="
+        photos/countries/tanzania/lake-manyara/safari-jeep-driving-through-jungle
+        photos/countries/tanzania/lake-manyara/baboon-sleeping
+        photos/countries/tanzania/lake-manyara/baboon-rolling-over
+    "
 %}
 
 Flamingos are common in Lake Manyara National Park and are frequently spotted there along the lake's shores. Along with a wide range of other animals, the park is home to elephants, giraffes, and baboons. It is a great location for game drives and for visiting the hot springs inside the park.
@@ -115,18 +123,20 @@ Flamingos are common in Lake Manyara National Park and are frequently spotted th
 
 {% include swiper.html
     class="swiperDynamic"
-    i0="photos/countries/tanzania/lake-eyasi/sunset-with-a-single-palm-tree-silhouette"
-    i1="photos/countries/tanzania/lake-eyasi/hadzabe-tribe-digging-for-roots"
-    i2="photos/countries/tanzania/lake-eyasi/hadzabe-tribe-home"
-    i3="photos/countries/tanzania/lake-eyasi/hadzabe-tribe-member-with-bow"
-    i4="photos/countries/tanzania/lake-eyasi/fisherman-pulling-fishing-rope"
-    i5="photos/countries/tanzania/lake-eyasi/hadzabe-tribe-child-with-bow"
-    i6="photos/countries/tanzania/lake-eyasi/hadzabe-tribe-children-walking"
-    i7="photos/countries/tanzania/lake-eyasi/fisherman-boat-during-sunset"
-    i8="photos/countries/tanzania/lake-eyasi/fisherman-catching-fish"
-    i9="photos/countries/tanzania/lake-eyasi/fisherman-home"
-    i10="photos/countries/tanzania/lake-eyasi/fish-caught"
-    i11="photos/countries/tanzania/lake-eyasi/beer-at-sunset"
+    photos="
+        photos/countries/tanzania/lake-eyasi/sunset-with-a-single-palm-tree-silhouette
+        photos/countries/tanzania/lake-eyasi/hadzabe-tribe-digging-for-roots
+        photos/countries/tanzania/lake-eyasi/hadzabe-tribe-home
+        photos/countries/tanzania/lake-eyasi/hadzabe-tribe-member-with-bow
+        photos/countries/tanzania/lake-eyasi/fisherman-pulling-fishing-rope
+        photos/countries/tanzania/lake-eyasi/hadzabe-tribe-child-with-bow
+        photos/countries/tanzania/lake-eyasi/hadzabe-tribe-children-walking
+        photos/countries/tanzania/lake-eyasi/fisherman-boat-during-sunset
+        photos/countries/tanzania/lake-eyasi/fisherman-catching-fish
+        photos/countries/tanzania/lake-eyasi/fisherman-home
+        photos/countries/tanzania/lake-eyasi/fish-caught
+        photos/countries/tanzania/lake-eyasi/beer-at-sunset
+    "
 %}
 
 A grassy savanna and an acacia forest surround the shallow soda lake known as Lake Eyasi. Numerous bird species can be found around the lake, making it a well-liked location for birdwatching. The Hadzabe and Datoga tribes, who have inhabited the region for centuries, also call the lake home. These communities can be visited, and you can find out more about their way of life.

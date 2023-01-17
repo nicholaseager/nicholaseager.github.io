@@ -22,8 +22,10 @@ Introduction
 ### Highlight 1
 
 {% include swiper.html
-    i0="photos/countries/nepal/manaslu-circuit/hiker-climbing-a-hill-next-to-a-snow-covered-mountain"
-    i1="photos/countries/nepal/manaslu-circuit/hiker-crossing-long-bridge-in-valley"
+    photos="
+        photos/countries/nepal/manaslu-circuit/hiker-climbing-a-hill-next-to-a-snow-covered-mountain
+        photos/countries/nepal/manaslu-circuit/hiker-crossing-long-bridge-in-valley
+    "
 %}
 
 ## Best Time to Go

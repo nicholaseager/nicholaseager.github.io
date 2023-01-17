@@ -35,8 +35,10 @@ You might enjoy cooler months or the warmer months. It's worth considering the w
 ### Staying at Our Guide's Home
 
 {% include swiper.html
-    i0="photos/countries/vietnam/pu-ta-leng/four-people-in-trekking-guides-home"
-    i1="photos/countries/vietnam/pu-ta-leng/duck-standing-on-top-of-fence"
+    photos="
+        photos/countries/vietnam/pu-ta-leng/four-people-in-trekking-guides-home
+        photos/countries/vietnam/pu-ta-leng/duck-standing-on-top-of-fence
+    "
 %}
 
 Our only guide, Báo, lives just in the foothills of the same mountain we set out to climb. We stayed at his place with his family before and after the hike, eating delicious dinners, getting to know each other, and playing with all of his animals. In addition to being a trekking guide, Báo and his family grow rice and corn in terraces, and cardamom in the jungle.
