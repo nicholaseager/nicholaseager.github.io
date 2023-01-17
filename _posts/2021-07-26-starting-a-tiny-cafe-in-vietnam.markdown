@@ -24,10 +24,12 @@ In January 2021, my wife and I moved to Danang, Vietnam. We were looking to star
 Our house was right next to a popular visa office, to which 30+ people visited per day. There was also a primary school nearby. Teachers, parents, and their kids walked down our street to a football field a couple times a week. One day, we started wondering what would happen if we put a sign and table outside. In Vietnam, most people run a business out of the first floor of their home, and live on the second floor. We wanted to keep our first floor private for an Airbnb, but we were already starting to transform our front courtyard into a beautiful garden. Why not make it a place to eat too? We cleared some space by moving a few kale plants to our upper balcony, and painted one of our coffee tables a bright yellow.
 
 {% include gallery.html
-    i0="photos/countries/vietnam/da-nang/two-foxes-cafe/vietnamese-home-front"
-    i1="photos/countries/vietnam/da-nang/two-foxes-cafe/garden-courtyard-with-single-yellow-table"
-    i2="photos/countries/vietnam/da-nang/two-foxes-cafe/resturant-sign"
-    i3="photos/countries/vietnam/da-nang/two-foxes-cafe/living-room"
+    photos="
+        photos/countries/vietnam/da-nang/two-foxes-cafe/vietnamese-home-front
+        photos/countries/vietnam/da-nang/two-foxes-cafe/garden-courtyard-with-single-yellow-table
+        photos/countries/vietnam/da-nang/two-foxes-cafe/resturant-sign
+        photos/countries/vietnam/da-nang/two-foxes-cafe/living-room
+    "
 %}
 
 ## What To Sell?
@@ -35,11 +37,13 @@ Our house was right next to a popular visa office, to which 30+ people visited p
 Our neighboring visa office's clientele entirely consisted of foreigners. So we decided to continue making what we were already making for ourselves! We were already brewing our own kombucha, toasting granola, blending healthy smoothies and cashew milk, and frying fluffy pancakes with homemade jam. We made these because it was difficult to find them in good quality around Vietnam.
 
 {% include gallery.html
-    i0="photos/countries/vietnam/da-nang/two-foxes-cafe/three-fruit-smoothies-on-table"
-    i1="photos/countries/vietnam/da-nang/two-foxes-cafe/stack-of-pancakes-butter-on-top-fruit-beside"
-    i2="photos/countries/vietnam/da-nang/two-foxes-cafe/pouring-chocolate-cashew-milk"
-    i3="photos/countries/vietnam/da-nang/two-foxes-cafe/pouring-chocolate-cashew-milk-in-smoothie-bowl"
-    i4="photos/countries/vietnam/da-nang/two-foxes-cafe/bags-of-granola-on-table"
+    photos="
+        photos/countries/vietnam/da-nang/two-foxes-cafe/three-fruit-smoothies-on-table
+        photos/countries/vietnam/da-nang/two-foxes-cafe/stack-of-pancakes-butter-on-top-fruit-beside
+        photos/countries/vietnam/da-nang/two-foxes-cafe/pouring-chocolate-cashew-milk
+        photos/countries/vietnam/da-nang/two-foxes-cafe/pouring-chocolate-cashew-milk-in-smoothie-bowl
+        photos/countries/vietnam/da-nang/two-foxes-cafe/bags-of-granola-on-table
+    "
 %}
 
 ## Meeting Fellow Expats
@@ -51,11 +55,13 @@ Talking with people as they came in was the best part of running the cafe. Peopl
 Eventually, we started to make our own labels for packaging and started to ship to a distributor in Hoi An, a neighboring city. At first, we designed plastic labels, but then switched to more environmentally friendly cardboard labels. To improve our presence online and point people to our menu easily, we designed and engineered a multilingual website, which is still up at <a target="#" href="https://www.twofoxescafe.com/">twofoxescafe.com</a>.
 
 {% include gallery.html
-    i0="photos/countries/vietnam/da-nang/two-foxes-cafe/four-bottles-of-kombucha"
-    i1="photos/countries/vietnam/da-nang/two-foxes-cafe/kombucha-label-design"
-    i2="photos/countries/vietnam/da-nang/two-foxes-cafe/stuffed-fox-next-to-kombucha-bottle"
-    i3="photos/countries/vietnam/da-nang/two-foxes-cafe/many-kombucha-bottles-on-table"
-    i4="photos/countries/vietnam/da-nang/two-foxes-cafe/holding-label-in-hand"
+    photos="
+        photos/countries/vietnam/da-nang/two-foxes-cafe/four-bottles-of-kombucha
+        photos/countries/vietnam/da-nang/two-foxes-cafe/kombucha-label-design
+        photos/countries/vietnam/da-nang/two-foxes-cafe/stuffed-fox-next-to-kombucha-bottle
+        photos/countries/vietnam/da-nang/two-foxes-cafe/many-kombucha-bottles-on-table
+        photos/countries/vietnam/da-nang/two-foxes-cafe/holding-label-in-hand
+    "
 %}
 
 ## Scaling Down
@@ -69,11 +75,13 @@ As a software engineer and photographer, never in my life would I have thought t
 {% include image.html src="photos/countries/vietnam/da-nang/two-foxes-cafe/book-next-to-kombucha" %}
 
 {% include gallery.html
-    i0="photos/countries/vietnam/da-nang/two-foxes-cafe/smoothie-bowl-bananas-berries"
-    i1="photos/countries/vietnam/da-nang/two-foxes-cafe/pineapple-smoothie-on-yellow-table"
-    i2="photos/countries/vietnam/da-nang/two-foxes-cafe/dragonfruit-chia-jam-next-to-dragonfruit"
-    i3="photos/countries/vietnam/da-nang/two-foxes-cafe/spoonful-of-peanut-butter"
-    i4="photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-assorted-nuts-on-tray"
-    i5="photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-tiny-basil-plant"
-    i6="photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-kale-in-front-of-face"
+    photos="
+        photos/countries/vietnam/da-nang/two-foxes-cafe/smoothie-bowl-bananas-berries
+        photos/countries/vietnam/da-nang/two-foxes-cafe/pineapple-smoothie-on-yellow-table
+        photos/countries/vietnam/da-nang/two-foxes-cafe/dragonfruit-chia-jam-next-to-dragonfruit
+        photos/countries/vietnam/da-nang/two-foxes-cafe/spoonful-of-peanut-butter
+        photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-assorted-nuts-on-tray
+        photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-tiny-basil-plant
+        photos/countries/vietnam/da-nang/two-foxes-cafe/girl-holding-kale-in-front-of-face
+    "
 %}

@@ -19,6 +19,7 @@ The countless styles and themes that photography has to offer continually inspir
 
 ## Showcase
 
-{% include gallery-prints.html
+{% include gallery.html
+	orderable=true
 	tags="showcase"
 %}

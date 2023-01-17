@@ -8,8 +8,11 @@ layout: default
 
 <section id="content" class="single">
 	<blockquote>{{ page.description }}</blockquote>
-    {% include gallery-prints.html
+    {% if page.tags %}
+	{% include gallery.html
+		orderable=true
 		tags=page.tags
 	%}
+	{% endif %}
 	{{ page.content }}
 </section>

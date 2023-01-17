@@ -28,20 +28,24 @@ Upon landing in Ho Chi Minh City and going through immigration, I was asked only
  As a foreigner, I was required to stay at a "government approved" hotel instead of the quarantine complex Vietnamese citizens used. The hotels seemed to be "approved" based on their relationship with the government or how much they bribed. As a foreigner, we pay nearly $1500 for two weeks of quarantine, while the complex is free. Staying at the quarantine hotel was pretty normal, for the first two days. I had a daily routine of eating, studying Vietnamese, working on editing a video, and working out. After the second day, there was a power surge that fried my laptop. I didn't bring any books or anything else to do for the next 12 days. So I had to be a bit creative to not lose my mind.
 
 {% include gallery.html
-	i0="photos/countries/vietnam/ho-chi-minh-city/quarantine/calendar"
-	i1="photos/countries/vietnam/ho-chi-minh-city/quarantine/menu"
-	i2="photos/countries/vietnam/ho-chi-minh-city/quarantine/food"
-	i3="photos/countries/vietnam/ho-chi-minh-city/quarantine/drawing"
-    i4="photos/countries/vietnam/ho-chi-minh-city/quarantine/gift"
+    photos="
+	    photos/countries/vietnam/ho-chi-minh-city/quarantine/calendar
+	    photos/countries/vietnam/ho-chi-minh-city/quarantine/menu
+	    photos/countries/vietnam/ho-chi-minh-city/quarantine/food
+	    photos/countries/vietnam/ho-chi-minh-city/quarantine/drawing
+        photos/countries/vietnam/ho-chi-minh-city/quarantine/gift
+    "
 %}
 
 But to be honest, none of that mattered because Van was able to come visit me :) What an incredible feeling it was to finally be so close to Van. After seven unexpected, additional months of being apart, we were finally able to stay at least two meters apart from each other. The security staff didn't always like us seeing each other, but eventually they became accustomed to it. Each day, Van secretly brought me snacks, and I gave her gifts.
 
 <figure>
     {% include gallery.html
-        i0="photos/countries/vietnam/ho-chi-minh-city/quarantine/myview"
-        i1="photos/countries/vietnam/ho-chi-minh-city/quarantine/herview"
-        i2="photos/countries/vietnam/ho-chi-minh-city/quarantine/ourview"
+        photos="
+            photos/countries/vietnam/ho-chi-minh-city/quarantine/myview
+            photos/countries/vietnam/ho-chi-minh-city/quarantine/herview
+            photos/countries/vietnam/ho-chi-minh-city/quarantine/ourview
+        "
     %}
     <figcaption align = "center">My View v.s. Her View</figcaption>
 </figure>

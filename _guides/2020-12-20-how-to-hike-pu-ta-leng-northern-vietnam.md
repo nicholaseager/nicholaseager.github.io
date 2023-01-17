@@ -54,11 +54,13 @@ We grabbed some pork, veggies, and other goodies from a local highland market an
 ### Starting the Climb
 
 {% include gallery.html
-    i0="photos/countries/vietnam/pu-ta-leng/two-people-climbing-through-bamboo-tunnel"
-    i1="photos/countries/vietnam/pu-ta-leng/girl-hiking-through-corn-farm-in-the-mountains"
-    i2="photos/countries/vietnam/pu-ta-leng/dense-forest-in-fog"
-    i3="photos/countries/vietnam/pu-ta-leng/camera-hanging-on-tree"
-    i4="photos/countries/vietnam/pu-ta-leng/girl-hiking-in-misty-cardamom-jungle"
+    photos="
+        photos/countries/vietnam/pu-ta-leng/two-people-climbing-through-bamboo-tunnel
+        photos/countries/vietnam/pu-ta-leng/girl-hiking-through-corn-farm-in-the-mountains
+        photos/countries/vietnam/pu-ta-leng/dense-forest-in-fog
+        photos/countries/vietnam/pu-ta-leng/camera-hanging-on-tree
+        photos/countries/vietnam/pu-ta-leng/girl-hiking-in-misty-cardamom-jungle
+    "
 %}
 
 We started off walking through local villages, farms, and rivers. Eventually we started the steep seemingly endless climb up the mountain.
@@ -74,10 +76,12 @@ We spent the night at a quaint trekker’s shelter run by two friendly Dao women
 ### Summiting
 
 {% include gallery.html
-    i0="photos/countries/vietnam/pu-ta-leng/tattered-vietnamese-flag-on-top-of-mountain"
-    i1="photos/countries/vietnam/pu-ta-leng/warming-hands-over-small-fire"
-    i2="photos/countries/vietnam/pu-ta-leng/two-people-summiting-mountain-next-to-sign"
-    i3="photos/countries/vietnam/pu-ta-leng/misty-jungle-hill"
+    photos="
+        photos/countries/vietnam/pu-ta-leng/tattered-vietnamese-flag-on-top-of-mountain
+        photos/countries/vietnam/pu-ta-leng/warming-hands-over-small-fire
+        photos/countries/vietnam/pu-ta-leng/two-people-summiting-mountain-next-to-sign
+        photos/countries/vietnam/pu-ta-leng/misty-jungle-hill
+    "
 %}
 
 We decided to summit the same day, instead of waiting until tomorrow. Hiking through foggy bamboo forests was surreal and the steep incline was challenging enough, but the view at the top was little more than staring at a white canvas. After getting some warmth next to a small fire at the summit, we headed back to the shelter.
@@ -85,11 +89,13 @@ We decided to summit the same day, instead of waiting until tomorrow. Hiking thr
 ### Eating at the Shelter
 
 {% include gallery.html
-    i0="photos/countries/vietnam/pu-ta-leng/two-plates-of-pork-on-dinner-mat"
-    i1="photos/countries/vietnam/pu-ta-leng/cutting-meat-with-herbs"
-    i2="photos/countries/vietnam/pu-ta-leng/cooking-meat-in-large-wok"
-    i3="photos/countries/vietnam/pu-ta-leng/grilling-pork-over-fire-close-up"
-    i4="photos/countries/vietnam/pu-ta-leng/grilling-pork-over-fire"
+    photos="
+        photos/countries/vietnam/pu-ta-leng/two-plates-of-pork-on-dinner-mat
+        photos/countries/vietnam/pu-ta-leng/cutting-meat-with-herbs
+        photos/countries/vietnam/pu-ta-leng/cooking-meat-in-large-wok
+        photos/countries/vietnam/pu-ta-leng/grilling-pork-over-fire-close-up
+        photos/countries/vietnam/pu-ta-leng/grilling-pork-over-fire
+    "
 %}
 
 Our dinner that night consisted of our supplies from the market as well as some cardamom picked from the jungle along the way. Everyone got to know each other around the fire through Vietnamese, Dao, and a little English. We were so tired that we went to bed at 19:30.

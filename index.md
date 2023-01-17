@@ -26,7 +26,8 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 
 ### Photography
 
-{% include gallery-prints.html
+{% include gallery.html
+	orderable=true
 	tags="showcase"
 %}
 

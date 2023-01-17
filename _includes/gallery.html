@@ -1,50 +1,34 @@
-{% capture slides_array %}
-{{ include.i0 }}
-{{ include.i1 }}
-{{ include.i2 }}
-{{ include.i3 }}
-{{ include.i4 }}
-{{ include.i5 }}
-{{ include.i6 }}
-{{ include.i7 }}
-{{ include.i8 }}
-{{ include.i9 }}
-{{ include.i10 }}
-{{ include.i11 }}
-{{ include.i12 }}
-{{ include.i13 }}
-{{ include.i14 }}
-{{ include.i15 }}
-{{ include.i16 }}
-{{ include.i17 }}
-{{ include.i18 }}
-{{ include.i19 }}
-{{ include.i20 }}
-{{ include.i21 }}
-{{ include.i22 }}
-{{ include.i23 }}
-{{ include.i24 }}
-{{ include.i25 }}
-{{ include.i26 }}
-{{ include.i27 }}
-{{ include.i28 }}
-{{ include.i29 }}
-{% endcapture %}
+{% if include.tags %}
 
-{% assign slides = slides_array | strip | newline_to_br | strip_newlines | split: "<br />" %}
+{% assign photos = "" | split: ',' %}
+{% for print in site.data.prints %}
+    {% assign tags = print.tags | split: " " %}
+    {% for tag in tags %}
+        {% if include.tags contains tag %}
+        {% assign photos = photos | push: print.path %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+{% elsif include.photos %}
+
+{% assign photos = include.photos | strip | newline_to_br | strip_newlines | split: "<br />" %}
+
+{% endif %}
 
 <div class="gallery">
     <div class="image-gallery-wrap">
         <div class="image-gallery">
-            {% for slide in slides %}
-            {% assign parts = slide | split: "/" %}
+            {% for photo in photos %}
+            {% assign path = photo | strip %}
+            {% assign parts = path | split: "/" %}
             {% assign alt = parts.last | replace: "-", " " %}
-            <a data-index="{{forloop.index}}" class="image-gallery-link" href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ slide }}.jpg">
+            <a data-index="{{forloop.index}}" class="image-gallery-link" href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ path }}.jpg">
                 <img srcset="
-                    https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
-                    https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
-                    https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w
-                    " sizes="100vw" src="https://ik.imagekit.io/qn1gkawvy/tr:h-480/{{ slide }}.jpg" alt="{{ alt }}" />
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ path }}.jpg 320w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg 480w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg 640w
+                    " sizes="100vw" src="https://ik.imagekit.io/qn1gkawvy/tr:h-480/{{ path }}.jpg" alt="{{ alt }}" />
             </a>
             {% endfor %}
         </div>
@@ -55,20 +39,21 @@
             class="swiper image-gallery-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                {% for slide in slides %}
-                {% assign parts = slide | split: "/" %}
+                {% for photo in photos %}
+                {% assign path = photo | strip %}
+                {% assign parts = path | split: "/" %}
                 {% assign alt = parts.last | replace: "-", " " %}
-                <div class="swiper-slide" data-src="{{ slide }}">
+                <div class="swiper-slide" data-src="{{ path }}">
                     <img
                         data-srcset="
-                        https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ slide }}.jpg 320w,
-                        https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ slide }}.jpg 480w,
-                        https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg 640w,
-                        https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ slide }}.jpg 960w,
-                        https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ slide }}.jpg 1280w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ path }}.jpg 320w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg 480w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg 640w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ path }}.jpg 960w,
+                        https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ path }}.jpg 1280w,
                         "
                         sizes="100vw"
-                        data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ slide }}.jpg"
+                        data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg"
                         class="swiper-lazy"
                         alt="{{ alt }}"
                     />
@@ -83,5 +68,11 @@
         <a class="swiper-close-button">
             <i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i>
         </a>
+        {% if include.orderable %}
+        <a href="{{ "/order" | relative_url }}" data-prefix="{{ "/order?id=" | relative_url }}" class="button button--gallery order-prints">
+            <i class="fas fa-shopping-cart"></i>
+            Order Print
+        </a>
+        {% endif %}
     </div>
 </div>

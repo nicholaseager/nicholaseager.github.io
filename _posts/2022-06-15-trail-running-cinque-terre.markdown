@@ -13,12 +13,14 @@ When we arrived in Cinque Terre at 10am on Monday morning, the sun was beating d
 ## Overview / Route
 
 {% include gallery.html
-    i0="photos/countries/italy/cinque-terre/path-to-vernazza"
-    i1="photos/countries/italy/cinque-terre/vernazza-ocean"
-    i2="photos/countries/italy/cinque-terre/boat-behind-purple-flowers"
-    i3="photos/countries/italy/cinque-terre/grape-terraces"
-    i4="photos/countries/italy/cinque-terre/path-to-riomaggiore"
-    i5="photos/countries/italy/cinque-terre/colorful-vernazza-aerial"
+    photos="
+        photos/countries/italy/cinque-terre/path-to-vernazza
+        photos/countries/italy/cinque-terre/vernazza-ocean
+        photos/countries/italy/cinque-terre/boat-behind-purple-flowers
+        photos/countries/italy/cinque-terre/grape-terraces
+        photos/countries/italy/cinque-terre/path-to-riomaggiore
+        photos/countries/italy/cinque-terre/colorful-vernazza-aerial
+    "
 %}
 
 Running up trail though coastal cliffs, down to pastel-colored villages, and running up again through terraced vineyards is an experience you won't soon forget. My route in Cinque Terre was 30.54km with 1911m elevation gain from Levanto, Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore, to La Spezia. I took some extra time and visited all the cities, clocking in five hours. If I had more time, I would have gone all the way down the peninsula to Portovenere. I took the train back from La Spezia to Levanto.
