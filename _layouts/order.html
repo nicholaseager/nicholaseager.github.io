@@ -28,4 +28,12 @@ layout: default
 <section class="single">
 	<p>Want a different photo? Browse by certain <a href="{{ "/themes" | relative_url }}">themes</a> or specific <a href="{{ "/places" | relative_url }}">places</a> to find what you're looking for.</p>
 	<p>If you have any comments, questions, or other inquiries, please <a href="{{ "/contact" | relative_url }}">contact</a> me separately.</p>
+
+
+	<h2>You Might Also Like</h2>
+	{% include gallery.html
+		orderable=true
+		limit=6
+		tags=page.tags
+	%}
 </section>
