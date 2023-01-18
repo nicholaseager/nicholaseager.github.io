@@ -1,6 +1,7 @@
 <div class="eager-form-small">
     <form method="post" action="https://formspree.io/f/mqkoakkg" id="order-form">
-        <label class="eager-form__title">Request this Print</label>
+        <label class="eager-form__title">Request a Print</label>
+        <p>No Commitment 🎉 I'll be in touch shortly after you fill out the form below.</p>
 
         <div class="eager-form__item">
             <label class="eager-form__label">Name *</label>
@@ -10,6 +11,34 @@
         <div class="eager-form__item">
             <label class="eager-form__label">Email Address *</label>
             <input type="text" name="email" placeholder="Your email address..." class="eager-form__input">
+        </div>
+
+        <div class="eager-form__item">
+            <label class="eager-form__label" for="size">Size:</label>
+            <select id="size" name="size" class="eager-form__input">
+                <option value="12x18" selected>12in x 18in</option>
+                <option value="16x24">16in x 24in</option>
+                <option value="24x36">24in x 36in</option>
+                <option value="Other">Other (Specify in comments)</option>
+            </select>
+        </div>
+
+        <div class="eager-form__item">
+            <label class="eager-form__label" for="material">Material:</label>
+            <select id="material" name="material" class="eager-form__input">
+                <option value="Lustre Print" selected>Lustre Print</option>
+                <option value="Deep Matte Print">Deep Matte Print</option>
+                <option value="Canvas Wrap">Canvas Wrap</option>
+                <option value="Other">Other (Specify in comments)</option>
+            </select>
+        </div>
+
+        <div class="eager-form__item">
+            <label class="eager-form__label" for="frame">Frame:</label>
+            <select id="frame" name="frame" class="eager-form__input">
+                <option value="No" selected>No</option>
+                <option value="Yes">Yes (Specify in Comments)</option>
+            </select>
         </div>
 
         <div class="eager-form__item">
