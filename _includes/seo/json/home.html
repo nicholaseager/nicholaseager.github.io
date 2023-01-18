@@ -1,3 +1,11 @@
+{%- capture image -%}
+{%- if include.page.image -%}
+https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ include.page.image }}.jpg
+{%- else -%}
+https://ik.imagekit.io/qn1gkawvy/tr:w-640/profile.jpg
+{%- endif -%}
+{%- endcapture -%}
+{%- assign image = image | strip_newlines -%}
 {%- capture json -%}
 {
   "@context": "https://schema.org",
@@ -7,7 +15,7 @@
   "sameAs": {{ site.social.links | jsonify }},
   "headline": {{ include.page.title | jsonify }},
   "description": {{ include.page.description | strip_newlines | strip | jsonify }},
-  "image": "https://ik.imagekit.io/qn1gkawvy/tr:w-640/profile.jpg",
+  "image": "{{ image }}",
   "datePublished": {{ include.page.date | jsonify }},
   "dateModified": {{ include.page.last_modified_at | default: include.page.date | jsonify }},
   "author": {
