@@ -22,6 +22,9 @@ collections:
   photos:
     output: true
     permalink: :path
+  galleries:
+    output: true
+    permalink: /gallery/:slug
 
 defaults:
   -
