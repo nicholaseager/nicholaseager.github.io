@@ -31,6 +31,31 @@
 	}
 }
 
+.eager-form-small {
+	background: $background-alt-color;
+	margin: 10px auto;
+	width: 100%;
+	max-width: 100%;
+	padding: 20px;
+
+	@include mq(tabletp) {
+		margin: 15px auto;
+		padding: 20px;
+	}
+
+	@include mq(tabletl) {
+	}
+
+	@include mq(laptop) {
+		margin: 40px auto;
+		padding: 25px;
+	}
+
+	@include mq(desktop) {
+		padding: 30px;
+	}
+}
+
 .eager-form__item {
 	margin-top: 15px;
 

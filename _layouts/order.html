@@ -15,14 +15,21 @@ jsonld: print
 				<p class="order-author">By <a href="{{ "/about" | relative_url }}">Nicholas Eager</a><br>
 				<b>© {{ 'now' | date: "%Y" }}</b> Nicholas Eager Photography</p>
 				<p>{{ page.description }}</p>
-
+				
 				{% if page.youtubeurl %}
-				<p>Watch the video behind the photo on <a href="{{page.youtubeurl}}">YouTube</a></p>
+				<p>
+					<a href="{{page.youtubeurl}}" target="_blank" class="button button--small order-youtube">
+						Watch the video behind the photo
+						<i class="fab fa-youtube" aria-hidden="true"></i>
+					</a>
+				</p>
 				{% endif %}
 
 				{% if page.storeurl %}
-				<p>Order a print to share the story in your own home.</p>
-				<p><a href="{{ page.storeurl }}" target="_blank" class="button button--small">Order Print</a></p>
+				<div class="eager-form-small">
+					<p>Order a print to share the story in your own home.</p>
+					<p><a href="{{ page.storeurl }}" target="_blank" class="button button--large">Order Print</a></p>
+				</div>
 				{% else %}
 				<p>This photo has not been setup on my external store quite yet. Please fill out the form below and I will get back to you as soon as I can. Thank you!</p>
 				{% include order-form.html path=page.image %}
