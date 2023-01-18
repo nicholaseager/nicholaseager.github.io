@@ -5,6 +5,5 @@ title: Small Conocybe Mushroom Surrounded By Grass
 location: Missouri, United States
 description: A beautiful and often overlooked part of the natural world, with their delicate caps and slender stems, they are a sight to behold. This photo was taking in the US in my backyard.
 tags: ["united-states", "minimalism"]
-storeurl: https://store.nicholaseager.com/listing/tiny-mushroom?product=652
 jsonld: print
 ---
