@@ -9,10 +9,21 @@ layout: default
 <section id="content" class="single">
 	<blockquote>{{ page.description }}</blockquote>
     {% if page.tags %}
+	<h2>Gallery</h2>
 	{% include gallery.html
 		orderable=true
 		tags=page.tags
 	%}
 	{% endif %}
+
+	{% if page.youtubeid %}
+	<h2>Film</h2>
+	{% include youtube.html
+		id=page.youtubeid
+	%}
+	<p>Want to come along? <a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g?sub_confirmation=1" target="_blank">Subscribe</a> to my channel on YouTube.</p>
+	<p><a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g" class="button button--small">See More Film</a></p>
+	{% endif %}
+
 	{{ page.content }}
 </section>
