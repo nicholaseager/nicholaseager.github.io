@@ -199,35 +199,6 @@
 				}
 			}
 		});
-		
-		const collectionSwiper = new Swiper('.swiperCollection', {
-			// Optional parameters
-			direction: 'horizontal',
-			loop: false,
-			autoHeight: true,
-		
-			autoplay: {
-				delay: 5000,
-			},
-		
-			lazy: {
-				loadPrevNext: true,
-			},
-			breakpoints: {
-				480: {
-					slidesPerView: 1,
-					spaceBetween: 0
-				},
-				960: {
-					slidesPerView: 2,
-					spaceBetween: 5
-				},
-				1440: {
-					slidesPerView: 3,
-					spaceBetween: 10
-				}
-			}
-		});
 
 		const orderSwiperThumbs = new Swiper(".order-swiper-thumbs", {
 			spaceBetween: 10,
@@ -333,6 +304,60 @@
 			});
 		});
 
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Collections
+
+		var collectionID = 0;
+
+		// If there's a gallery
+		$('.swiper-collection-container').each( function() {
+			// Get collection element
+			var $this = $(this);
+
+			// We need to manually hook up the swiper navigation/pagination elements
+			// because they are outside of the swiper contianer.
+			var swiperID = 'swiper-' + collectionID.toString();
+			$this.find('.swiper').attr('data-id', swiperID);
+			$this.find('.swiper-pagination-outside').attr('data-id', swiperID);
+			$this.find('.swiper-button-next-outside').attr('data-id', swiperID);
+			$this.find('.swiper-button-prev-outside').attr('data-id', swiperID);
+			collectionID += 1;
+
+			const collectionSwiper = new Swiper('.swiper-collection[data-id="' + swiperID + '"]', {
+				// Optional parameters
+				direction: 'horizontal',
+				loop: false,
+				autoHeight: true,
+			
+				lazy: {
+					loadPrevNext: true,
+				},
+	
+				pagination: {
+					el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
+					type: 'bullets',
+				},
+			
+				navigation: {
+					nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
+					prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]'
+				},
+	
+				breakpoints: {
+					480: {
+						slidesPerView: 1,
+						spaceBetween: 0
+					},
+					960: {
+						slidesPerView: 2,
+						spaceBetween: 5
+					},
+					1440: {
+						slidesPerView: 3,
+						spaceBetween: 10
+					}
+				}
+			});
+		});
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Images
 

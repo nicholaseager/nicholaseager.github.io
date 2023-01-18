@@ -5,7 +5,6 @@
 // - - - - - - - - - - - - - - - - - -
 
 .swiperSingle,
-.swiperCollection,
 .swiperDynamic {
     max-width: 90%;
 	margin: 20px auto;
@@ -29,5 +28,72 @@ div.swiper-button-next {
 
 // for bullets
 span.swiper-pagination-bullet {
-    background-color: white;
+    background-color: black;
+}
+
+//
+
+.swiper-collection-container {
+	position: relative;
+
+	// To keep navigation elements outside
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+
+	max-width: 100%;
+	margin: 20px auto;
+
+	@include mq(tabletp) {
+		max-width: 75%;
+		margin: 30px auto;
+
+		// To keep navigation elements outside
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 40px;
+	}
+
+	@include mq(laptop) {
+		max-width: 60%;
+		margin: 40px auto;
+	}
+}
+
+// for arrows outside
+div.swiper-button-prev-outside {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	margin: auto 0;
+    color: $accent-color;
+
+	transform: scale(0.5);
+
+	@include mq(tabletp) {
+		transform: scale(1.0);
+	}
+}
+
+div.swiper-button-next-outside {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto 0;
+    color: $accent-color;
+
+	transform: scale(0.5);
+
+	@include mq(tabletp) {
+		transform: scale(1.0);
+	}
+}
+
+div.swiper-pagination-outside {
+	// for bullets outside
+	span.swiper-pagination-bullet {
+		background-color: $accent-color;
+	}
 }
