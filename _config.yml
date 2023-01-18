@@ -19,7 +19,7 @@ collections:
   themes:
     output: true
     permalink: /theme/:slug
-  prints:
+  photos:
     output: true
     permalink: :path
 

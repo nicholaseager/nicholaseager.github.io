@@ -4,7 +4,7 @@
 {% assign photos_to_ignore = include.ignore_photos | split: ',' %}
 
 {% assign photos = "" | split: ',' %}
-{% for print in site.data.prints %}
+{% for print in site.data.photos %}
     {% if photos_to_ignore contains print.path %}
         {% continue %}
     {% endif %}
