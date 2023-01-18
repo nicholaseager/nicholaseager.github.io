@@ -5,5 +5,6 @@ title: Jeep Offroad
 location: Serengeti, Tanzania
 description: Jeep Offroad (Serengeti, Tanzania)
 tags: ["tanzania", "adventure"]
+youtubeurl: https://www.youtube.com/watch?v=ODLfcfoppas
 jsonld: print
 ---

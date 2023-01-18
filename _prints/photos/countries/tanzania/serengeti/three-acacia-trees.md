@@ -5,5 +5,6 @@ title: Three Acacia Trees
 location: Serengeti, Tanzania
 description: Three Acacia Trees (Serengeti, Tanzania)
 tags: ["tanzania"]
+youtubeurl: https://www.youtube.com/watch?v=ODLfcfoppas
 jsonld: print
 ---
