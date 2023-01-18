@@ -56,15 +56,21 @@
 	color: $text-light-color;
 }
 
+.order-heading {
+	p {
+        margin: 0 5px;
+    }
+}
+
 .order-youtube {
-	background: $background-alt-color;
+    background: $background-alt-color;
     border-color: $background-alt-color;
-	color: $text-dark-color;
+    color: $text-dark-color;
     padding: 5px 10px;
 
     &:hover {
 		background: $text-dark-color;
-		border-color: $text-dark-color;
+        border-color: $text-dark-color;
         color: $background-alt-color;
 	}
 }
