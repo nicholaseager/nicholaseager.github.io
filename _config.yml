@@ -13,12 +13,6 @@ collections:
   guides:
     output: true
     permalink: /guides/:slug
-  places:
-    output: true
-    permalink: /place/:slug
-  themes:
-    output: true
-    permalink: /theme/:slug
   photos:
     output: true
     permalink: :path
@@ -44,18 +38,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  -
-    scope:
-      path: ""
-      type: "places"
-    values:
-      layout: "project"
-  -
-    scope:
-      path: ""
-      type: "themes"
-    values:
-      layout: "project"
 
 author:
   name: Nicholas Eager

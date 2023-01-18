@@ -1,8 +1,8 @@
 ---
 layout: collection
-title: Places
+title: Galleries
 description: Every country and region offers distinctive natural landscapes and phenomena that can be explored through the lens, providing a photographer with the opportunity to capture one-of-a-kind and exquisite photographs of nature, from the grandest landscapes to the subtlest details.
 ---
 
-{% assign places = site.places | reverse %}
-{% include collection.html items=places %}
+{% assign galleries = site.galleries %}
+{% include collection.html items=galleries %}
