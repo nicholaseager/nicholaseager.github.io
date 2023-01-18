@@ -1,5 +1,5 @@
 ---
-title: Prints
+title: Photos
 description: Thank you for your interest in my art! Select any photo to order a print.
 ---
 
