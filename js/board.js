@@ -406,7 +406,7 @@
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Auto TOC
 
-		$('.guide-content').each( function() {
+		$('.table-of-contents-container').each( function() {
 			var $this = $(this);
 			var $toc_content = $this.find('.table-of-contents-content');
 			var $toc = $this.find('#table-of-contents').find('ol');
