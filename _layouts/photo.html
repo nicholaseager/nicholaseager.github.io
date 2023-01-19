@@ -31,7 +31,12 @@ jsonld: print
 				{% if page.darkroomid %}
 				<div class="eager-form-small">
 					<p>Order a print to share the story in your own home.</p>
-					<p><a href="https://nicholaseagerphoto.darkroom.tech/products/{{ page.darkroomid }}" target="_blank" class="button button--large">Order Print</a></p>
+					<p>
+						<a href="https://nicholaseagerphoto.darkroom.tech/products/{{ page.darkroomid }}" target="_blank" class="button button--large">
+							Order Print
+							<i class="fas fa-arrow-up-right-from-square"></i>
+						</a>
+					</p>
 				</div>
 				{% else %}
 				{% include order-form.html path=page.image %}
