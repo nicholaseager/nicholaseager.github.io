@@ -11,6 +11,7 @@ wget --quiet "https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75
 wget --quiet "https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/export?format=csv&gid=1653272967" -O "_data/galleries.csv"
 wget --quiet "https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/export?format=csv&gid=1477561361" -O "_data/gear.csv"
 wget --quiet "https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/export?format=csv&gid=1788831756" -O "_data/testimonials.csv"
+wget --quiet "https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/export?format=csv&gid=1937712754" -O "_data/films.csv"
 
 # Generate Pages
 echo '📸 generating pages ...'

@@ -46,11 +46,6 @@ for row_index, row in enumerate(datareader):
 		path = row[3];
 		yaml_text += 'image: ' + path + '\n'
 
-		# YouTube
-		youtube = row[4];
-		if youtube != '':
-			yaml_text += 'youtubeid: ' + youtube + '\n'
-
 		# Finish
 		yaml_text += "---\n"
 
