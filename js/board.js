@@ -270,20 +270,22 @@
 			// Wait for images to load
 			$image_gallery.imagesLoaded( function() {
 				// Update order button on slide change
-				const onSlideChange = function () {
-					const index = gallerySwiper.activeIndex - 1;
+				const onIndexChange = function (index) {
 					var $slide = $this.find('.swiper-slide[data-swiper-slide-index="' + index + '"]');
 					var src = $slide.attr('data-src');
 					var printButton = $this.find('.order-prints');
 					var link = printButton.attr('data-prefix') + src;
 					printButton.attr('href', link);
 				}
-				gallerySwiper.on('slideChange', onSlideChange);
+				gallerySwiper.on('slideChange', () => {
+					onIndexChange(gallerySwiper.realIndex);
+				});
 
 				$image_gallery.find('.image-gallery-link').click(function(event) {
 					var id = $(this).attr('data-index');
-					gallerySwiper.slideTo(parseInt(id), 0);
-					onSlideChange();
+					var index = parseInt(id);
+					gallerySwiper.slideTo(index, 0);
+					onIndexChange(index - 1);
 					
 					// Get container
 					var $swiper = $this.find('.image-gallery-swiper-container');
