@@ -20,6 +20,13 @@ menu_settings:
       url: '/about'
     - title: 'Contact'
       url: '/contact'
+  footer_items:
+    - title: Privacy
+      url: /privacy-policy
+    - title: Terms
+      url: /terms-and-conditions
+    - title: Licensing
+      url: /how-to-use-my-art
 
 footer_settings:
   footer_tagline: Nicholas Eager Photography

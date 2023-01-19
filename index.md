@@ -48,6 +48,6 @@ Sometimes a single photo is all you need to tell a story. Select a picture to or
 
 ### Ready To Work Together?
 
-For business inquiries, such as a collaboration or licensing, please contact me by using the form below.
+For business inquiries, such as a collaboration or licensing, please contact me. Read more about how to use my art <a href="{{ "/how-to-use-my-art" | relative_url }}">here</a>.
 
 <a href="{{ "/contact" | relative_url }}" class="button button--small">Get In Touch</a>
