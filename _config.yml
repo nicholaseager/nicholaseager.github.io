@@ -18,7 +18,7 @@ collections:
     permalink: :path
   galleries:
     output: true
-    permalink: /gallery/:slug
+    permalink: /galleries/:slug
 
 defaults:
   -

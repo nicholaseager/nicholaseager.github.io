@@ -11,7 +11,7 @@ menu_settings:
     - title: 'Photos'
       url: '/photos'
     - title: 'Guides'
-      url: '/guides/'
+      url: '/guides'
     - title: 'Gear'
       url: '/gear'
     - title: 'Blog'
