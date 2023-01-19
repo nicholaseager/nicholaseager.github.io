@@ -5,6 +5,6 @@ title: Moonrise Over Himalayas
 location: Manaslu Circuit, Nepal
 description: Moonrise Over Himalayas (Manaslu Circuit, Nepal)
 tags: ["nepal", "landscapes", "mountains"]
-youtubeurl: https://www.youtube.com/watch?v=I2I4EySGYEU
+youtubeid: I2I4EySGYEU
 jsonld: print
 ---

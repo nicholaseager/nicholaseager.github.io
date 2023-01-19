@@ -1,4 +1,4 @@
-path,description,tags,store-link,youtube-link
+path,description,tags,store-link,youtube-id
 photos/countries/france/chamonix/green-mountain-range-in-clouds,,france landscapes showcase mountains,,
 photos/countries/france/chamonix/pointy-golden-mountain-in-clouds,,france landscapes mountains,,
 photos/countries/italy/cinque-terre/colorful-vernazza-aerial,,italy city,,
@@ -14,22 +14,22 @@ photos/countries/italy/florence/old-brick-roof-in-tuscany,,italy,,
 photos/countries/nepal/kathmandu/cute-puppy-sitting-on-a-chair,,nepal animals,,
 photos/countries/nepal/kathmandu/lightbulb-in-tangled-wires,,nepal city,,
 photos/countries/nepal/kathmandu/two-security-cameras-in-tangles-wires,,nepal city,,
-photos/countries/nepal/manaslu-circuit/backpack-laying-in-snow,,nepal adventure mountains,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/donkey-carrying-heavy-load,,nepal adventure,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/hiker-crossing-long-bridge-in-valley,,nepal adventure,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/hiker-standing-in-canyon-at-dusk,,nepal adventure,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/manaslu-base-camp-prayer-flags,,nepal landscapes adventure mountains,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset,Some of the most breathtaking views of mountians in the world can be seen from valleys in Nepal. This photo was taken during the sunset on the Manaslu trek.,nepal landscapes showcase mountains,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/moonrise-over-himalayas,,nepal landscapes mountains,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/mountain-ridge-at-sunrise,,nepal landscapes mountains,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind,"Prayer flags are a symbol of the grace and tenacity of the human spirit and are frequently found strung over mountain ridges and peaks, or fluttering in the wind in front of homes and temples.",nepal adventure showcase,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery,,nepal astrophotography showcase,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/stupa-on-the-trail,,nepal,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/tall-mountains-in-clouds,,nepal landscapes mountains,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/two-puppies-cuddling-in-the-dirt,"Himalayan puppies are simply too cute! It's impossible not to adore these lovely little balls of fur with their fluffy coats, round faces, and large, soulful eyes.This photo was taken at the village of Samagaon in Nepal.",nepal animals,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/view-of-frozen-birendra-lake,,nepal landscapes mountains,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/woman-carrying-basket-of-wood,,nepal adventure,,https://www.youtube.com/watch?v=I2I4EySGYEU
-photos/countries/nepal/manaslu-circuit/yak-wearing-bell,,nepal animals,,https://www.youtube.com/watch?v=I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/backpack-laying-in-snow,,nepal adventure mountains,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/donkey-carrying-heavy-load,,nepal adventure,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/hiker-crossing-long-bridge-in-valley,,nepal adventure,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/hiker-standing-in-canyon-at-dusk,,nepal adventure,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/manaslu-base-camp-prayer-flags,,nepal landscapes adventure mountains,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset,Some of the most breathtaking views of mountians in the world can be seen from valleys in Nepal. This photo was taken during the sunset on the Manaslu trek.,nepal landscapes showcase mountains,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/moonrise-over-himalayas,,nepal landscapes mountains,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/mountain-ridge-at-sunrise,,nepal landscapes mountains,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind,"Prayer flags are a symbol of the grace and tenacity of the human spirit and are frequently found strung over mountain ridges and peaks, or fluttering in the wind in front of homes and temples.",nepal adventure showcase,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery,,nepal astrophotography showcase,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/stupa-on-the-trail,,nepal,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/tall-mountains-in-clouds,,nepal landscapes mountains,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/two-puppies-cuddling-in-the-dirt,"Himalayan puppies are simply too cute! It's impossible not to adore these lovely little balls of fur with their fluffy coats, round faces, and large, soulful eyes.This photo was taken at the village of Samagaon in Nepal.",nepal animals,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/view-of-frozen-birendra-lake,,nepal landscapes mountains,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/woman-carrying-basket-of-wood,,nepal adventure,,I2I4EySGYEU
+photos/countries/nepal/manaslu-circuit/yak-wearing-bell,,nepal animals,,I2I4EySGYEU
 photos/countries/nepal/mardi-himal/annapurna-mountain-range-at-sunrise,,nepal landscapes mountains,,
 photos/countries/nepal/mardi-himal/fishtail-mountain-behind-snow-covered-shelter,,nepal landscapes adventure mountains,,
 photos/countries/nepal/mardi-himal/fishtail-mountain-looming-over-hiker,,nepal landscapes adventure mountains,,
@@ -45,24 +45,24 @@ photos/countries/nepal/volunteering/sunset-behind-barbed-wire,,nepal landscapes,
 photos/countries/south-korea/seoul/bukchon-hanok-home-at-sunrise,"Explore the modern and ancient, a juxtaposition of new and old, in Seoul's Bukchon Hanok Village.",south-korea city,,
 photos/countries/south-korea/seoul/city-lanterns-at-night,,south-korea city,,
 photos/countries/south-korea/seoul/cityscape-at-night,,south-korea city,,
-photos/countries/tanzania/lake-eyasi/sunset-with-a-single-palm-tree-silhouette,,tanzania landscapes,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/ngorongoro-crater/jeep-driving-away,,tanzania adventure,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/ngorongoro-crater/jeep-in-the-distance,,tanzania adventure,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/ngorongoro-crater/round-tree-under-the-clouds,,tanzania landscapes,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/tarangire/jeeps-parked-off-the-road,,tanzania adventure,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/wildebeest-migration,,tanzania animals,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/lion-resting-in-a-bush,,tanzania animals,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/lion-stalking-wildebeest-laying-in-a-tree,,tanzania animals,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/tarangire/vervet-monkey-sitting-in-grass,,tanzania animals,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/jeep-offroad,,tanzania adventure,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/tarangire/masai-giraffe-looking-at-camera,,tanzania animals,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/single-acacia-tree-daylight,,tanzania landscapes,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/three-acacia-trees,,tanzania,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/sunset-with-a-single-tree,,tanzania landscapes minimalism,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/leopard-staring-at-me,,tanzania animals,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/acacia-tree-at-sunset,,tanzania,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/tarangire/baobab-tree-in-a-field,,tanzania,,https://www.youtube.com/watch?v=ODLfcfoppas
-photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset,"The silhouettes of acacia trees are bathed in the golden glory of the setting sun, resulting in a sight of breathtaking beauty. This photo was taken while on safari in the Serengeti.",tanzania landscapes showcase,,https://www.youtube.com/watch?v=ODLfcfoppas
+photos/countries/tanzania/lake-eyasi/sunset-with-a-single-palm-tree-silhouette,,tanzania landscapes,,ODLfcfoppas
+photos/countries/tanzania/ngorongoro-crater/jeep-driving-away,,tanzania adventure,,ODLfcfoppas
+photos/countries/tanzania/ngorongoro-crater/jeep-in-the-distance,,tanzania adventure,,ODLfcfoppas
+photos/countries/tanzania/ngorongoro-crater/round-tree-under-the-clouds,,tanzania landscapes,,ODLfcfoppas
+photos/countries/tanzania/tarangire/jeeps-parked-off-the-road,,tanzania adventure,,ODLfcfoppas
+photos/countries/tanzania/serengeti/wildebeest-migration,,tanzania animals,,ODLfcfoppas
+photos/countries/tanzania/serengeti/lion-resting-in-a-bush,,tanzania animals,,ODLfcfoppas
+photos/countries/tanzania/serengeti/lion-stalking-wildebeest-laying-in-a-tree,,tanzania animals,,ODLfcfoppas
+photos/countries/tanzania/tarangire/vervet-monkey-sitting-in-grass,,tanzania animals,,ODLfcfoppas
+photos/countries/tanzania/serengeti/jeep-offroad,,tanzania adventure,,ODLfcfoppas
+photos/countries/tanzania/tarangire/masai-giraffe-looking-at-camera,,tanzania animals,,ODLfcfoppas
+photos/countries/tanzania/serengeti/single-acacia-tree-daylight,,tanzania landscapes,,ODLfcfoppas
+photos/countries/tanzania/serengeti/three-acacia-trees,,tanzania,,ODLfcfoppas
+photos/countries/tanzania/serengeti/sunset-with-a-single-tree,,tanzania landscapes minimalism,,ODLfcfoppas
+photos/countries/tanzania/serengeti/leopard-staring-at-me,,tanzania animals,,ODLfcfoppas
+photos/countries/tanzania/serengeti/acacia-tree-at-sunset,,tanzania,,ODLfcfoppas
+photos/countries/tanzania/tarangire/baobab-tree-in-a-field,,tanzania,,ODLfcfoppas
+photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset,"The silhouettes of acacia trees are bathed in the golden glory of the setting sun, resulting in a sight of breathtaking beauty. This photo was taken while on safari in the Serengeti.",tanzania landscapes showcase,,ODLfcfoppas
 photos/countries/united-states/alaska/blue-pickup-truck-covered-in-snow,,united-states snow,,
 photos/countries/united-states/alaska/two-snow-shoes-stuck-in-a-snowy-hill,,united-states snow,,
 photos/countries/united-states/alaska/yellow-fire-hydrant-covered-in-snow,,united-states snow,,

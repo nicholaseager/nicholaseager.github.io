@@ -5,6 +5,6 @@ title: Vervet Monkey Sitting In Grass
 location: Tarangire, Tanzania
 description: Vervet Monkey Sitting In Grass (Tarangire, Tanzania)
 tags: ["tanzania", "animals"]
-youtubeurl: https://www.youtube.com/watch?v=ODLfcfoppas
+youtubeid: ODLfcfoppas
 jsonld: print
 ---

@@ -67,9 +67,9 @@ for row_index, row in enumerate(datareader):
 
 		# YouTube URL
 
-		youtube_url = row[4]
-		if youtube_url != '':
-			yaml_text += 'youtubeurl: ' + youtube_url + '\n'
+		youtube_id = row[4]
+		if youtube_id != '':
+			yaml_text += 'youtubeid: ' + youtube_id + '\n'
 
 		# SEO
 

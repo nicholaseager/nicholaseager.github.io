@@ -5,6 +5,6 @@ title: Single Acacia Tree Daylight
 location: Serengeti, Tanzania
 description: Single Acacia Tree Daylight (Serengeti, Tanzania)
 tags: ["tanzania", "landscapes"]
-youtubeurl: https://www.youtube.com/watch?v=ODLfcfoppas
+youtubeid: ODLfcfoppas
 jsonld: print
 ---

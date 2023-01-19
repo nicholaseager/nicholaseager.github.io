@@ -5,6 +5,6 @@ title: Sunset With A Single Tree
 location: Serengeti, Tanzania
 description: Sunset With A Single Tree (Serengeti, Tanzania)
 tags: ["tanzania", "landscapes", "minimalism"]
-youtubeurl: https://www.youtube.com/watch?v=ODLfcfoppas
+youtubeid: ODLfcfoppas
 jsonld: print
 ---
