@@ -145,4 +145,5 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 @import "_includes/_about";
 @import "_includes/_form";
 @import "_includes/_order";
+@import "_includes/_loader";
 
