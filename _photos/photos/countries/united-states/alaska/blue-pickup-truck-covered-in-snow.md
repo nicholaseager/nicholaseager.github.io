@@ -5,5 +5,6 @@ title: Blue Pickup Truck Covered In Snow
 location: Alaska, United States
 description: Blue Pickup Truck Covered In Snow (Alaska, United States)
 tags: ["united-states", "snow"]
+youtubeid: 2kh0VEQqUI0
 jsonld: print
 ---

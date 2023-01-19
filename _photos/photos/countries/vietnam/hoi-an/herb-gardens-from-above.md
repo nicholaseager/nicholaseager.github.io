@@ -5,5 +5,6 @@ title: Herb Gardens From Above
 location: Hoi An, Vietnam
 description: A rainbow of different colored herbs in Hoi An, Vietnam.
 tags: ["vietnam", "aerial"]
+youtubeid: q24U-_cM9IY
 jsonld: print
 ---

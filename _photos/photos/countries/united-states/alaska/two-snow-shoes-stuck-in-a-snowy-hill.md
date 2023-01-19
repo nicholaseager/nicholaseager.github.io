@@ -5,5 +5,6 @@ title: Two Snow Shoes Stuck In A Snowy Hill
 location: Alaska, United States
 description: Two Snow Shoes Stuck In A Snowy Hill (Alaska, United States)
 tags: ["united-states", "snow"]
+youtubeid: 2kh0VEQqUI0
 jsonld: print
 ---
