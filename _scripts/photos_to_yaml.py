@@ -59,11 +59,11 @@ for row_index, row in enumerate(datareader):
 		tags = '["' + '", "'.join(row[2].split(' ')) + '"]'
 		yaml_text += 'tags: ' + tags + '\n'
 
-		# Store URL
+		# Darkroom ID
 
-		store_url = row[3]
-		if store_url != '':
-			yaml_text += 'storeurl: ' + store_url + '\n'
+		darkroomid = row[3]
+		if darkroomid != '':
+			yaml_text += 'darkroomid: ' + darkroomid + '\n'
 
 		# YouTube URL
 
