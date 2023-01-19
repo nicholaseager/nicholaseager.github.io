@@ -21,7 +21,7 @@ layout: blank
         <i class="fas fa-camera" aria-hidden="true"></i>
         Gear
     </a>
-    <a href="{{ "/prints" | relative_url }}" class="link">
+    <a href="{{ "/photos" | relative_url }}" class="link">
         <i class="fas fa-image" aria-hidden="true"></i>
         Prints
     </a>
