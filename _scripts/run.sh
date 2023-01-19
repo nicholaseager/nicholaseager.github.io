@@ -1,5 +1,4 @@
 #!/bin/bash
 
-# Serve Website
-echo '📸 serving website ... done!'
+echo '📸 serving website ...'
 bundle exec jekyll serve
