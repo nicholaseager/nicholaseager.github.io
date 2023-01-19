@@ -9,6 +9,8 @@ rm js/plugins-min.js && uglifyjs js/plugins/*.js >> js/plugins-min.js
 echo '📸 downloading data ...'
 wget --quiet "https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/export?format=csv&gid=0" -O "_data/photos.csv"
 wget --quiet "https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/export?format=csv&gid=1653272967" -O "_data/galleries.csv"
+wget --quiet "https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/export?format=csv&gid=1477561361" -O "_data/gear.csv"
+wget --quiet "https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/export?format=csv&gid=1788831756" -O "_data/testimonials.csv"
 
 # Generate Pages
 echo '📸 generating pages ...'
