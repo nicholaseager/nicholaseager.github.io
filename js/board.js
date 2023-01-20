@@ -115,6 +115,18 @@
 		}
 	});
 
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Helpers
+
+	function isScrolledIntoView(elem) {
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+
+		var elemTop = $(elem).offset().top;
+		var elemBottom = elemTop + $(elem).height();
+
+		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}
+
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page load
 
@@ -394,15 +406,26 @@
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Lazy iframes
 
-		$('iframe').each(function () {
-			var $this = $(this);
-			var id = $(this).attr('id');
-			if (id && id.startsWith("lazyframe")) {
-				setTimeout(function () {
-					$this.contents().find('#loadbutton').click();
-				}, 3000);
-			}
-		});
+		function loadFrames(inViewportOnly) {
+			$('iframe').each(function () {
+				var $this = $(this);
+				var id = $this.attr('id');
+				if (id && id.startsWith("lazyframe")) {
+					if (!inViewportOnly || isScrolledIntoView($this)) {
+						$this.removeAttr("srcdoc");
+						$this.attr('src', $this.attr('data-src'));
+						$this.attr('id', id.replace('lazyframe', ''));
+					}
+				}
+			});
+		}
+
+		loadFrames(true);
+		setTimeout(function () {
+			loadFrames(false);
+		}, 5000);
+
+		$(window).bind('scroll', () => loadFrames(true));
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Auto TOC
 
