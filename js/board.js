@@ -125,7 +125,8 @@
 		var elemBottom = elemTop + $(elem).height();
 
 		return ((elemTop <= docViewBottom) && (elemBottom >= docViewBottom)) ||
-				((elemBottom >= docViewTop) && (elemTop <= docViewTop));
+				((elemBottom >= docViewTop) && (elemTop <= docViewTop)) ||
+				((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 	}
 
 
