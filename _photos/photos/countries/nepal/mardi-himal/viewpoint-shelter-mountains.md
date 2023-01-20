@@ -5,6 +5,6 @@ title: Viewpoint Shelter Mountains
 location: Mardi Himal, Nepal
 description: Viewpoint Shelter Mountains (Mardi Himal, Nepal)
 tags: ["nepal", "landscapes", "adventure", "showcase", "mountains"]
-darkroomid: 1402001
+darkroomid: 881332
 jsonld: print
 ---
