@@ -1,4 +1,4 @@
-{%- capture link -%}https://www.youtube-nocookie.com/embed/{{ include.id }}?modestbranding=1&iv_load_policy=3&theme=light&playsinline=1{%- endcapture -%}
+{%- capture link -%}https://www.youtube-nocookie.com/embed/{{ include.id }}?autoplay=1&modestbranding=1&iv_load_policy=3&theme=light&playsinline=1&mute=1{%- endcapture -%}
 {%- capture placeholder -%}https://img.youtube.com/vi/{{ include.id }}/hqdefault.jpg{%- endcapture -%}
 {% include lazy-frame.html
   link=link
