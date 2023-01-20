@@ -406,12 +406,12 @@
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Lazy iframes
 
-		function loadFrames(inViewportOnly) {
+		function loadFrames() {
 			$('iframe').each(function () {
 				var $this = $(this);
 				var id = $this.attr('id');
 				if (id && id.startsWith("lazyframe")) {
-					if (!inViewportOnly || isScrolledIntoView($this)) {
+					if (isScrolledIntoView($this)) {
 						$this.removeAttr("srcdoc");
 						$this.attr('src', $this.attr('data-src'));
 						$this.attr('id', id.replace('lazyframe', ''));
@@ -420,12 +420,8 @@
 			});
 		}
 
-		loadFrames(true);
-		setTimeout(function () {
-			loadFrames(false);
-		}, 5000);
-
-		$(window).bind('scroll', () => loadFrames(true));
+		loadFrames();
+		$(window).bind('scroll', loadFrames);
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Auto TOC
 
