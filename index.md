@@ -21,7 +21,7 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 {% assign guides = site.guides | reverse %}
 {% include latest-collection.html items=guides %}
 
-<a href="{{ "/guides/" | relative_url }}" class="button button--small">Explore Travel Guides</a>
+<a href="{{ "/guides" | relative_url }}" class="button button--small">Explore Travel Guides</a>
 
 ---
 
