@@ -1,8 +1,4 @@
-{% include lazy-frame.html
-  link="https://www.youtube.com/embed/videoseries?list=PLJc3NWKmFGS1jkly5WML4PBVXEs1IF71b&autoplay=1&modestbranding=1&iv_load_policy=3&theme=light&playsinline=1&mute=1"
-  id="latest-youtube"
-  width="640"
-  height="360"
-  placeholder="https://img.youtube.com/vi/I2I4EySGYEU/hqdefault.jpg"
-  loadbutton-src="https://ik.imagekit.io/qn1gkawvy/web/youtube-logo.svg"
-%}
+{%- assign films = site.data.films | reverse -%}
+{%- for film in films limit:1 -%}
+{% include youtube.html id=film.id %}
+{%- endfor -%}
