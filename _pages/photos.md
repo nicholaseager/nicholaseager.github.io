@@ -15,4 +15,4 @@ Every country and region offers distinctive natural landscapes and phenomena tha
 {% assign galleries = site.galleries %}
 {% include latest-collection.html items=galleries %}
 
-<a href="{{ "/galleries" | relative_url }}" class="button button--small">See All Galleries</a>
+<a href="{{ "/galleries" | relative_url }}" class="button button--small">Explore All Galleries</a>

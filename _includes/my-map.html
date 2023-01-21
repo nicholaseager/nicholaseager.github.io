@@ -14,7 +14,7 @@
     }
 </style>
 <div class="map-wrapper">
-    <p>Below is a map with points of interest. To see it in full-screen, click <a href="https://www.google.com/maps/d/viewer?mid={{ include.id }}" target="_blank">here</a>.</p>
+    <p>Below is a map with points of interest. To better view the map, <a href="https://www.google.com/maps/d/viewer?mid={{ include.id }}" target="_blank">see it in full-screen</a>.</p>
     {%- capture link -%}https://www.google.com/maps/d/u/0/embed?mid={{ include.id }}{%- endcapture -%}
     {% include lazy-frame.html
         link=link
