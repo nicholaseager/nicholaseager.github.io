@@ -34,7 +34,7 @@ I spend a lot of my time exploring and documenting exciting and unique locations
 
 Sometimes a single photo is all you need to tell a story. Select a picture to order a print and share the story in your home.
 
-<a href="{{ "/photos" | relative_url }}" class="button button--small">See All Photos</a>
+<a href="{{ "/galleries" | relative_url }}" class="button button--small">Explore Galleries</a>
 
 ---
 
