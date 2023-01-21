@@ -117,12 +117,12 @@
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Helpers
 
-	function isScrolledIntoView(elem) {
+	function isScrolledIntoView(elem, offset=0) {
 		var docViewTop = $(window).scrollTop();
 		var docViewBottom = docViewTop + $(window).height();
 
-		var elemTop = $(elem).offset().top;
-		var elemBottom = elemTop + $(elem).height();
+		var elemTop = $(elem).offset().top - offset;
+		var elemBottom = elemTop + $(elem).height() + offset;
 
 		return ((elemTop <= docViewBottom) && (elemBottom >= docViewBottom)) ||
 				((elemBottom >= docViewTop) && (elemTop <= docViewTop)) ||
@@ -413,7 +413,7 @@
 				var $this = $(this);
 				var id = $this.attr('id');
 				if (id && id.startsWith("lazyframe")) {
-					if (isScrolledIntoView($this)) {
+					if (isScrolledIntoView($this, 200)) {
 						$this.removeAttr("srcdoc");
 						$this.attr('src', $this.attr('data-src'));
 						$this.attr('id', id.replace('lazyframe', ''));
