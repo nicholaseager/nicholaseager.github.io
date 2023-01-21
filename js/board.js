@@ -342,7 +342,6 @@
 				// Optional parameters
 				direction: 'horizontal',
 				loop: false,
-				autoHeight: true,
 			
 				lazy: {
 					loadPrevNext: true,
