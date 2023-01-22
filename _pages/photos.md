@@ -1,6 +1,7 @@
 ---
 title: Photos
-description: Thank you for your interest in my art! Select any photo to see more info or order a print.
+description: Sometimes a single photo is all you need to tell a story. Browse my most unique stories.
+image: photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain
 ---
 
 {% include gallery.html
