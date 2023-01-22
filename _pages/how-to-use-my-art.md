@@ -2,6 +2,7 @@
 layout: legal
 title: How to Use My Art
 date: 2023-01-19
+sitemap: false
 ---
 
 Welcome to my Licensing page. All the photographs, film, and other content on my website are protected by copyright laws and can only be used with a valid license. On this page, you will find information on the types of licenses I offer, how to purchase a license, and the terms and conditions of usage.

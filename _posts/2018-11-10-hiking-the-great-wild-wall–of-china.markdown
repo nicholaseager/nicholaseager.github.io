@@ -5,6 +5,7 @@ date: 2018-11-10
 categories: travel china
 description: Straying off the beaten path, making life-long friends, and exploring the ruins of an ancient wall.
 image: photos/countries/china/jiankou/two-people-walking-on-the-great-wall
+sitemap: false
 ---
 
 Backpacking through China was an unforgettable experience. Compared to traveling in the United States, Europe, or even Hong Kong, China is an entirely separate world. The cultural differences are stark, but I still learned quite a few lessons. Yes, they have a communist government, the food is entirely different, most major companies are blocked on the internet, and education/work are strictly valued. But when talking with individual people, I noticed that we aren't really so different. Just like any other place I've visited, I find people to be kind, welcoming, and enthusiastic about life.

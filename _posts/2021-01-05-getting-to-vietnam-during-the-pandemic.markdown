@@ -5,6 +5,7 @@ date: 2021-01-05
 categories: travel vietnam
 description: Commenting on the insane amount of red tape my wife and I had to cut through in order to be together again
 image: photos/countries/vietnam/ho-chi-minh-city/man-climbing-repairing-cell-tower
+sitemap: false
 ---
 
 In May 2020, right about the time the Covid-19 global pandemic started picking up steam, I left my job at Google in the US. I had been separated from my fiancée, Van, for nearly two years, and wanted desperately to reunite. Little did I know at the time how difficult it would be to travel to Vietnam. I knew the borders were currently closed. However, I had no idea that I would eventually have to fake a business visa, purchase an unlisted flight indirectly, and photoshop a Covid test.[^1]

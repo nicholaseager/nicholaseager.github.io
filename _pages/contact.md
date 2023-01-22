@@ -1,6 +1,7 @@
 ---
 title: Contact
 description: For business inquiries, such as a collaboration or licensing, please contact me by using the form below.
+sitemap: false
 ---
 
 {% include contact-form.html %}

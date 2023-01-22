@@ -5,6 +5,7 @@ date:   2018-04-28
 categories: travel indonesia
 description: Understanding the methods behind permaculture, learning about all sorts of tropical plants, and helping take down the monoculture industry.
 image: photos/countries/indonesia/bintan/bamboo-house-on-a-farm
+sitemap: false
 ---
 
 {% include map.html query="Bintan,%20Indonesia" %}

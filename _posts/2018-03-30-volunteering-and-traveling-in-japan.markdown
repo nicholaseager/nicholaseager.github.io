@@ -5,6 +5,7 @@ date: 2018-03-30
 categories: travel japan
 description: Working at a traditional guest house, meeting local Couchsurfers, hiking pilgrimage routes, biking off the beaten path, sumo wrestling, domesticated deer, and eating mouth-watering food.
 image: photos/countries/japan/osaka/colorful-sumo-wrestling-flags
+sitemap: false
 ---
 
 Spending a month and a half in Japan was a thrilling, fast-paced experience. Compared to living in Nepal, Japan was  futuristically alien.

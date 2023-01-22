@@ -5,6 +5,7 @@ date: 2018-03-06
 categories: travel nepal
 description: Fearing for my life on the unmaintained, rocky, treacherous paths of Nepal's rural roads.
 image: photos/countries/nepal/volunteering/bus-stop-countryside
+sitemap: false
 ---
 
 Gripping the edge of my seat with all of my might and staring out of the window at a cliff just inches away from our tires, I hung on as we sped forward on the unmaintained, rocky, treacherous paths of Nepal's rural roads.

@@ -2,6 +2,7 @@
 layout: legal
 title: Terms and Conditions
 date: 2023-01-19
+sitemap: false
 ---
 
 Welcome to my photography website (the "Site"). By using the Site, you agree to be bound by the following terms and conditions (the "Terms"). If you do not agree to the Terms, please do not use the Site.

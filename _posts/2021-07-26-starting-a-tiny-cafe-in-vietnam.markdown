@@ -4,6 +4,7 @@ title: Starting A Tiny Cafe In Vietnam
 date: 2021-07-26
 description: Starting our own restaurant outside our home in Vietnam, practicing commercial photography, cooking, and gardening.
 image: photos/countries/vietnam/da-nang/two-foxes-cafe/three-glasses-of-berry-kombucha-on-a-table
+sitemap: false
 ---
 
 Have you ever had a dream to start a restaurant? What if I told you it is as easy as placing a sign outside the door of your home? Well, in Vietnam it is that easy, at least starting out.

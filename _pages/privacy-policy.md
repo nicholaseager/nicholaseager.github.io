@@ -2,6 +2,7 @@
 layout: legal
 title: Privacy Policy
 date: 2023-01-19
+sitemap: false
 ---
 
 This privacy policy (the "Policy") explains how we collect, use, and disclose information through our photography website (the "Site"). By using the Site, you consent to the collection, use, and disclosure of your information in accordance with this Policy.

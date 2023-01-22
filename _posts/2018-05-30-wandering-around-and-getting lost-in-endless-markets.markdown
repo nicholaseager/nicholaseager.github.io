@@ -5,6 +5,7 @@ date: 2018-05-30
 categories: travel
 description: Navigating the twists and turns of the alleyways that are Southeast Asian markets.
 image: photos/countries/thailand/bangkok/tuk-tuks-in-a-row
+sitemap: false
 ---
 
 One of my favorite activities to do in a city is to randomly walk through all kinds of markets.

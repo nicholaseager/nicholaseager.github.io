@@ -4,6 +4,7 @@ title: Trail Running in Cinque Terre
 date: 2022-06-15
 description: Running on coastal trails between the pastel-colored villages, cascading vineyards, and blue oceans of Cinque Terre
 image: photos/countries/italy/cinque-terre/manarola-city-terraces-aerial
+sitemap: false
 ---
 
 ## What Not To Do in Cinque Terre

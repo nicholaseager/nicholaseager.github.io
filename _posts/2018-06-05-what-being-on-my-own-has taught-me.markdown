@@ -5,6 +5,7 @@ date:   2018-06-05
 categories: travel
 description: Pondering how my experiences volunteering, traveling, and adventuring around the world changed me as a person.
 image: photos/countries/nepal/volunteering/two-people-looking-at-the-mountains-sunset
+sitemap: false
 ---
 
 After eight months of being on my own out in this world, I’m bound to learn something about myself, other people, or the world in general. And I believe I have. I improved my social skills, I reordered my priorities, and I wrote more often.

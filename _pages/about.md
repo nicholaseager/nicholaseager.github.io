@@ -1,6 +1,7 @@
 ---
 title: About
 description: Husband, Photographer, Film-maker, and Adventurer
+sitemap: false
 ---
 
 {% include image.html src="profile" %}

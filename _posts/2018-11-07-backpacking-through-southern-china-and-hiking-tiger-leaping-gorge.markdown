@@ -5,6 +5,7 @@ date: 2018-11-07
 categories: travel
 description: Another phenomenal adventure full of hiking stunning landscapes, petting wild goats, crossing rickety bridges, chasing waterfalls, climbing steep ladders, picking wild fruit, dropping food with chopsticks, and enjoying the company of so many new friends.
 image: photos/countries/china/tiger-leaping-gorge/man-climbing-down-waterfall
+sitemap: false
 ---
 
 After having spent a couple weeks exploring China, I'd climbed the wild and rugged Great Wall, taught English in Xi'an, climbed the famous Huashan mountain, eaten spicy hot pot in Chengdu, and visited an old thatched cottage of a famous poet. But I was still looking for another thrilling adventure. After traveling by train for a couple days, I made my way to one of the most beautiful villages in China, Lijang.
