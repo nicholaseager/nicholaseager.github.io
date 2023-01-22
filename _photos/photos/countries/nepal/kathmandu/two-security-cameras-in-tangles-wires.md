@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/kathmandu/two-security-cameras-in-tangles-wires
 title: Two Security Cameras In Tangles Wires
 location: Kathmandu, Nepal

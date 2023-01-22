@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/manaslu-circuit/donkey-carrying-heavy-load
 title: Donkey Carrying Heavy Load
 location: Manaslu Circuit, Nepal

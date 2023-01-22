@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/utah/small-tree-in-the-desert
 title: Small Tree In The Desert
 location: Utah, United States

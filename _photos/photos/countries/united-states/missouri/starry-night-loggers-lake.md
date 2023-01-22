@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/missouri/starry-night-loggers-lake
 title: Starry Night Loggers Lake
 location: Missouri, United States

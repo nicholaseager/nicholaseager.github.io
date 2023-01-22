@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/kathmandu/cute-puppy-sitting-on-a-chair
 title: Cute Puppy Sitting On A Chair
 location: Kathmandu, Nepal

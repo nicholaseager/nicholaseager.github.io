@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/tanzania/serengeti/acacia-tree-at-sunset
 title: Acacia Tree At Sunset
 location: Serengeti, Tanzania

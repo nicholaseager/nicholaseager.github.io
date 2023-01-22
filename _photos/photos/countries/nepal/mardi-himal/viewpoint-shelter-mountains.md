@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/mardi-himal/viewpoint-shelter-mountains
 title: Viewpoint Shelter Mountains
 location: Mardi Himal, Nepal

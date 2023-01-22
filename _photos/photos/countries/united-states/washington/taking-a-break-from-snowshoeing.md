@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/washington/taking-a-break-from-snowshoeing
 title: Taking A Break From Snowshoeing
 location: Washington, United States

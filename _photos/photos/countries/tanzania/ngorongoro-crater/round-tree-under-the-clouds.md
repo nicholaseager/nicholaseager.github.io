@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/tanzania/ngorongoro-crater/round-tree-under-the-clouds
 title: Round Tree Under The Clouds
 location: Ngorongoro Crater, Tanzania

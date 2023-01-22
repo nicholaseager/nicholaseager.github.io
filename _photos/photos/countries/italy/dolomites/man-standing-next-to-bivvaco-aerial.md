@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/italy/dolomites/man-standing-next-to-bivvaco-aerial
 title: Man Standing Next To Bivvaco Aerial
 location: Dolomites, Italy

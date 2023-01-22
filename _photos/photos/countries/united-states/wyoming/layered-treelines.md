@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/wyoming/layered-treelines
 title: Layered Treelines
 location: Wyoming, United States

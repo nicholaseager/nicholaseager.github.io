@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/manaslu-circuit/tall-mountains-in-clouds
 title: Tall Mountains In Clouds
 location: Manaslu Circuit, Nepal

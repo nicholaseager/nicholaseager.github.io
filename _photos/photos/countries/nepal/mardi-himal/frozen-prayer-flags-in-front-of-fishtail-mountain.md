@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain
 title: Frozen Prayer Flags In Front Of Fishtail Mountain
 location: Mardi Himal, Nepal

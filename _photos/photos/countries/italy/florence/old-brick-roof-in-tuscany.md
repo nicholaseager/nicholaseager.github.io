@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/italy/florence/old-brick-roof-in-tuscany
 title: Old Brick Roof In Tuscany
 location: Florence, Italy

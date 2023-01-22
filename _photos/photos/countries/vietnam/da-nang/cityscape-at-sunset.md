@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/vietnam/da-nang/cityscape-at-sunset
 title: Cityscape At Sunset
 location: Da Nang, Vietnam

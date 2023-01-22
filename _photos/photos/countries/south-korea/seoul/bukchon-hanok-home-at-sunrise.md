@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/south-korea/seoul/bukchon-hanok-home-at-sunrise
 title: Bukchon Hanok Home At Sunrise
 location: Seoul, South Korea

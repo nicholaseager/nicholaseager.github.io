@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/wyoming/rocky-trail-golden-hour
 title: Rocky Trail Golden Hour
 location: Wyoming, United States

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset
 title: Acacia Silhouettes At Sunset
 location: Serengeti, Tanzania

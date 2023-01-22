@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/france/chamonix/green-mountain-range-in-clouds
 title: Green Mountain Range In Clouds
 location: Chamonix, France

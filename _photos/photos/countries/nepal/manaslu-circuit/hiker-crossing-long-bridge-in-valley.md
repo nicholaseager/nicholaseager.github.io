@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/manaslu-circuit/hiker-crossing-long-bridge-in-valley
 title: Hiker Crossing Long Bridge In Valley
 location: Manaslu Circuit, Nepal

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/washington/snow-camp-in-a-forest
 title: Snow Camp In A Forest
 location: Washington, United States

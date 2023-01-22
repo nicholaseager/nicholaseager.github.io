@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/tanzania/serengeti/jeep-offroad
 title: Jeep Offroad
 location: Serengeti, Tanzania

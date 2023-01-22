@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/kathmandu/lightbulb-in-tangled-wires
 title: Lightbulb In Tangled Wires
 location: Kathmandu, Nepal

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/vietnam/da-nang/two-coconuts-on-beach
 title: Two Coconuts On Beach
 location: Da Nang, Vietnam

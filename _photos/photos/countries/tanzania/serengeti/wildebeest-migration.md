@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/tanzania/serengeti/wildebeest-migration
 title: Wildebeest Migration
 location: Serengeti, Tanzania

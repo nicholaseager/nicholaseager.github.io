@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset
 title: Manaslu Mountain At Sunset
 location: Manaslu Circuit, Nepal

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/vietnam/cat-ba/fishing-boats-at-sunset
 title: Fishing Boats At Sunset
 location: Cat Ba, Vietnam

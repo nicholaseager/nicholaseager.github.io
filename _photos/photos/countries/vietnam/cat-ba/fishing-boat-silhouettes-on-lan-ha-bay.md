@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/vietnam/cat-ba/fishing-boat-silhouettes-on-lan-ha-bay
 title: Fishing Boat Silhouettes On Lan Ha Bay
 location: Cat Ba, Vietnam

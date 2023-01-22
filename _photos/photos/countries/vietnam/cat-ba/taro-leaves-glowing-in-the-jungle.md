@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/vietnam/cat-ba/taro-leaves-glowing-in-the-jungle
 title: Taro Leaves Glowing In The Jungle
 location: Cat Ba, Vietnam

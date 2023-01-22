@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/tanzania/ngorongoro-crater/jeep-driving-away
 title: Jeep Driving Away
 location: Ngorongoro Crater, Tanzania

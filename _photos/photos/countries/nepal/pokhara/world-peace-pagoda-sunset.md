@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/pokhara/world-peace-pagoda-sunset
 title: World Peace Pagoda Sunset
 location: Pokhara, Nepal

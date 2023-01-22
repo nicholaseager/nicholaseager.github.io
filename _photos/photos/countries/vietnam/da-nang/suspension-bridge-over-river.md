@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/vietnam/da-nang/suspension-bridge-over-river
 title: Suspension Bridge Over River
 location: Da Nang, Vietnam

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/missouri/one-sunflower-and-one-bee
 title: One Sunflower And One Bee
 location: Missouri, United States

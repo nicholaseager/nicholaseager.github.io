@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/south-korea/seoul/cityscape-at-night
 title: Cityscape At Night
 location: Seoul, South Korea

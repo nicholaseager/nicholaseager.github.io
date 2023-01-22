@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/tanzania/serengeti/lion-stalking-wildebeest-laying-in-a-tree
 title: Lion Stalking Wildebeest Laying In A Tree
 location: Serengeti, Tanzania

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/manaslu-circuit/moonrise-over-himalayas
 title: Moonrise Over Himalayas
 location: Manaslu Circuit, Nepal

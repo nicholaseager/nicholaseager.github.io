@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/italy/dolomites/women-yellow-jacket-by-mountain-reflection-lake
 title: Women Yellow Jacket By Mountain Reflection Lake
 location: Dolomites, Italy

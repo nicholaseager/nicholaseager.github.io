@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/manaslu-circuit/mountain-ridge-at-sunrise
 title: Mountain Ridge At Sunrise
 location: Manaslu Circuit, Nepal

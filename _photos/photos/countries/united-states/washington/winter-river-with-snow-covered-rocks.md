@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/washington/winter-river-with-snow-covered-rocks
 title: Winter River With Snow Covered Rocks
 location: Washington, United States

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/france/chamonix/pointy-golden-mountain-in-clouds
 title: Pointy Golden Mountain In Clouds
 location: Chamonix, France

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/missouri/rabbit-hiding-in-the-grass
 title: Rabbit Hiding In The Grass
 location: Missouri, United States

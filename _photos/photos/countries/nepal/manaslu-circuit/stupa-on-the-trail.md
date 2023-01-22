@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/manaslu-circuit/stupa-on-the-trail
 title: Stupa On The Trail
 location: Manaslu Circuit, Nepal

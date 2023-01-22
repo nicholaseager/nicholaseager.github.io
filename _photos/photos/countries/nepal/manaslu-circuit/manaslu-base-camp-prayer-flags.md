@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/manaslu-circuit/manaslu-base-camp-prayer-flags
 title: Manaslu Base Camp Prayer Flags
 location: Manaslu Circuit, Nepal

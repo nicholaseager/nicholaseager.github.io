@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/missouri/single-white-clover-up-close
 title: Single White Clover Up Close
 location: Missouri, United States

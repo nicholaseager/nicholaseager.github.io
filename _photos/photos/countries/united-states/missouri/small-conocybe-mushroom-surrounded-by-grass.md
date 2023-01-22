@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/missouri/small-conocybe-mushroom-surrounded-by-grass
 title: Small Conocybe Mushroom Surrounded By Grass
 location: Missouri, United States

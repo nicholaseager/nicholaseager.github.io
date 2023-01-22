@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/tanzania/tarangire/vervet-monkey-sitting-in-grass
 title: Vervet Monkey Sitting In Grass
 location: Tarangire, Tanzania

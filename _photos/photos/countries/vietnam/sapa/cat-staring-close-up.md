@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/vietnam/sapa/cat-staring-close-up
 title: Cat Staring Close Up
 location: Sapa, Vietnam

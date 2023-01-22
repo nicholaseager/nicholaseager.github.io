@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/vietnam/da-nang/two-tiny-mushrooms-next-to-metal-cup
 title: Two Tiny Mushrooms Next To Metal Cup
 location: Da Nang, Vietnam

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/united-states/alaska/two-snow-shoes-stuck-in-a-snowy-hill
 title: Two Snow Shoes Stuck In A Snowy Hill
 location: Alaska, United States

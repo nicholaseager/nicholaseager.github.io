@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/mardi-himal/fishtail-mountain-behind-snow-covered-shelter
 title: Fishtail Mountain Behind Snow Covered Shelter
 location: Mardi Himal, Nepal

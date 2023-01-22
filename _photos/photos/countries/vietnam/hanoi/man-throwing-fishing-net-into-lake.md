@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/vietnam/hanoi/man-throwing-fishing-net-into-lake
 title: Man Throwing Fishing Net Into Lake
 location: Hanoi, Vietnam

@@ -1,5 +1,6 @@
 ---
 layout: photo
+sitemap: false
 image: photos/countries/nepal/volunteering/sunset-behind-barbed-wire
 title: Sunset Behind Barbed Wire
 location: Volunteering, Nepal
