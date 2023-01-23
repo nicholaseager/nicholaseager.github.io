@@ -18,10 +18,10 @@ I offer the following types of licenses for my content:
 The content on my website can be used for commercial or editorial purposes. The specific usage rights will be determined by the type of license purchased. All content is intended for final use and may not be used as a comp, mock-up, or sample.
 
 ## Pricing
-My licensing fees are based on the intended usage, duration, and geographic distribution of the content. A price list is available upon request, please contact me <a href="{{ "/contact" | relative_url }}">here</a>.
+My licensing fees are based on the intended usage, duration, and geographic distribution of the content. A price list is available upon request, please <a href="{{ "/contact" | relative_url }}">contact me</a>.
 
 ## Purchase Process
-To purchase a license, please fill out the contact form <a href="{{ "/contact" | relative_url }}">here</a> and provide us with details about your intended usage. Once I have reviewed your application, I will send you a quote and an invoice for payment.
+To purchase a license, please fill out the <a href="{{ "/contact" | relative_url }}">contact form</a> and provide me with details about your intended usage. Once I have reviewed your application, I will send you a quote and an invoice for payment.
 
 ## Restrictions
 The licensed content may not be used in a defamatory, pornographic, or illegal manner. The content may not be used to promote a political agenda.
@@ -33,7 +33,7 @@ Certain content may require model and/or property releases. I will inform you if
 All content on my website is copyrighted and protected by law. Unauthorized use of my content is strictly prohibited.
 
 ## Contact Information
-If you have any questions or need assistance with the licensing process, please contact me <a href="{{ "/contact" | relative_url }}">here</a>.
+If you have any questions or need assistance with the licensing process, please <a href="{{ "/contact" | relative_url }}">contact me</a>.
 
 By purchasing a license, you agree to the terms and conditions outlined on this page.
 
