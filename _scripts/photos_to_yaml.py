@@ -72,10 +72,6 @@ for row_index, row in enumerate(datareader):
 		if youtube_id != '':
 			yaml_text += 'youtubeid: ' + youtube_id + '\n'
 
-		# SEO
-
-		yaml_text += 'jsonld: print\n'
-
 		# Finish
 
 		yaml_text += "---\n"

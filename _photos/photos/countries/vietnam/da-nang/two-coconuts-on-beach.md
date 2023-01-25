@@ -6,5 +6,4 @@ title: Two Coconuts On Beach
 location: Da Nang, Vietnam
 description: Two Coconuts On Beach (Da Nang, Vietnam)
 tags: ["vietnam"]
-jsonld: print
 ---

@@ -6,5 +6,4 @@ title: Pinecone Laying In The Grass
 location: Missouri, United States
 description: Pinecone Laying In The Grass (Missouri, United States)
 tags: ["united-states", "minimalism"]
-jsonld: print
 ---

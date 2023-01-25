@@ -7,5 +7,4 @@ location: Manaslu Circuit, Nepal
 description: Manaslu Base Camp Prayer Flags (Manaslu Circuit, Nepal)
 tags: ["nepal", "landscapes", "adventure", "mountains"]
 youtubeid: I2I4EySGYEU
-jsonld: print
 ---

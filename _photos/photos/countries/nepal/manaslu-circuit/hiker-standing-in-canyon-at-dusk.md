@@ -7,5 +7,4 @@ location: Manaslu Circuit, Nepal
 description: Hiker Standing In Canyon At Dusk (Manaslu Circuit, Nepal)
 tags: ["nepal", "adventure"]
 youtubeid: I2I4EySGYEU
-jsonld: print
 ---

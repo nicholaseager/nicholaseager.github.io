@@ -7,5 +7,4 @@ location: Serengeti, Tanzania
 description: Acacia Tree At Sunset (Serengeti, Tanzania)
 tags: ["tanzania"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

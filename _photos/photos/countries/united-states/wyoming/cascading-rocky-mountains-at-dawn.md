@@ -8,5 +8,4 @@ description: Cascading Rocky Mountains At Dawn (Wyoming, United States)
 tags: ["united-states", "landscapes", "showcase"]
 darkroomid: 881338
 youtubeid: N79BreeqxRw
-jsonld: print
 ---

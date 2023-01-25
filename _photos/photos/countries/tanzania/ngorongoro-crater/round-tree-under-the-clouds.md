@@ -7,5 +7,4 @@ location: Ngorongoro Crater, Tanzania
 description: Round Tree Under The Clouds (Ngorongoro Crater, Tanzania)
 tags: ["tanzania", "landscapes"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

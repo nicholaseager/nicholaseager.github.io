@@ -7,5 +7,4 @@ location: Serengeti, Tanzania
 description: Lion Stalking Wildebeest Laying In A Tree (Serengeti, Tanzania)
 tags: ["tanzania", "animals"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

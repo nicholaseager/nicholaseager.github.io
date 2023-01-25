@@ -7,5 +7,4 @@ location: Serengeti, Tanzania
 description: Wildebeest Migration (Serengeti, Tanzania)
 tags: ["tanzania", "animals"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

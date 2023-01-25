@@ -8,5 +8,4 @@ description: Himalayan puppies are simply too cute! It's impossible not to adore
 tags: ["nepal", "animals"]
 darkroomid: 881315
 youtubeid: I2I4EySGYEU
-jsonld: print
 ---

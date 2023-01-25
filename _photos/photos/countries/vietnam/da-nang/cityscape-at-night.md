@@ -6,5 +6,4 @@ title: Cityscape At Night
 location: Da Nang, Vietnam
 description: Cityscape At Night (Da Nang, Vietnam)
 tags: ["vietnam", "city"]
-jsonld: print
 ---

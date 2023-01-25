@@ -7,5 +7,4 @@ location: Cat Ba, Vietnam
 description: Taro Leaves Glowing In The Jungle (Cat Ba, Vietnam)
 tags: ["vietnam"]
 youtubeid: 5Gu7jRlsllg
-jsonld: print
 ---

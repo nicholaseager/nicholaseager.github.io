@@ -7,5 +7,4 @@ location: Da Nang, Vietnam
 description: Single Purple Shell On Beach (Da Nang, Vietnam)
 tags: ["vietnam", "minimalism", "showcase"]
 darkroomid: 881341
-jsonld: print
 ---

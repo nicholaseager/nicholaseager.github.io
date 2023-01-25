@@ -6,5 +6,4 @@ title: Two Tiny Mushrooms Next To Metal Cup
 location: Da Nang, Vietnam
 description: Two Tiny Mushrooms Next To Metal Cup (Da Nang, Vietnam)
 tags: ["vietnam"]
-jsonld: print
 ---

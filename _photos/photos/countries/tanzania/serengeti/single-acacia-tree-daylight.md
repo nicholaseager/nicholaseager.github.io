@@ -7,5 +7,4 @@ location: Serengeti, Tanzania
 description: Single Acacia Tree Daylight (Serengeti, Tanzania)
 tags: ["tanzania", "landscapes"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

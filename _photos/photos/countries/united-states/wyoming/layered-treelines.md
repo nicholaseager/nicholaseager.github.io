@@ -8,5 +8,4 @@ description: Layered Treelines (Wyoming, United States)
 tags: ["united-states", "landscapes", "showcase"]
 darkroomid: 881335
 youtubeid: N79BreeqxRw
-jsonld: print
 ---

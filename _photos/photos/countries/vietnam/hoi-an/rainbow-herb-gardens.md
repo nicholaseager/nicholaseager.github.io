@@ -7,5 +7,4 @@ location: Hoi An, Vietnam
 description: Rainbow Herb Gardens (Hoi An, Vietnam)
 tags: ["vietnam"]
 youtubeid: q24U-_cM9IY
-jsonld: print
 ---

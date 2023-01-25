@@ -7,5 +7,4 @@ location: Cat Ba, Vietnam
 description: Lan Ha Bay Sunset On The Water (Cat Ba, Vietnam)
 tags: ["vietnam"]
 youtubeid: mhlmfKdAVzE
-jsonld: print
 ---

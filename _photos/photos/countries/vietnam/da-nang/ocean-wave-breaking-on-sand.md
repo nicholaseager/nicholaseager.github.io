@@ -6,5 +6,4 @@ title: Ocean Wave Breaking On Sand
 location: Da Nang, Vietnam
 description: Ocean Wave Breaking On Sand (Da Nang, Vietnam)
 tags: ["vietnam"]
-jsonld: print
 ---

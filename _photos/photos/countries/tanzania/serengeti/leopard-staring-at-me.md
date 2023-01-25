@@ -7,5 +7,4 @@ location: Serengeti, Tanzania
 description: Leopard Staring At Me (Serengeti, Tanzania)
 tags: ["tanzania", "animals"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

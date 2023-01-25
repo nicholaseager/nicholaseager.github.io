@@ -7,5 +7,4 @@ location: Serengeti, Tanzania
 description: Lion Resting In A Bush (Serengeti, Tanzania)
 tags: ["tanzania", "animals"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

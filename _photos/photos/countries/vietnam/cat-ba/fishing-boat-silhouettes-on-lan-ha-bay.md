@@ -7,5 +7,4 @@ location: Cat Ba, Vietnam
 description: Fishing Boat Silhouettes On Lan Ha Bay (Cat Ba, Vietnam)
 tags: ["vietnam"]
 youtubeid: mhlmfKdAVzE
-jsonld: print
 ---

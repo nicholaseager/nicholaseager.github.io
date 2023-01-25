@@ -7,5 +7,4 @@ location: Ngorongoro Crater, Tanzania
 description: Jeep Driving Away (Ngorongoro Crater, Tanzania)
 tags: ["tanzania", "adventure"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

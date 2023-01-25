@@ -7,5 +7,4 @@ location: Manaslu Circuit, Nepal
 description: Tall Mountains In Clouds (Manaslu Circuit, Nepal)
 tags: ["nepal", "landscapes", "mountains"]
 youtubeid: I2I4EySGYEU
-jsonld: print
 ---

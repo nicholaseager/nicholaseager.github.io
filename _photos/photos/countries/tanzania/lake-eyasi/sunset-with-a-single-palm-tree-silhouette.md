@@ -7,5 +7,4 @@ location: Lake Eyasi, Tanzania
 description: Sunset With A Single Palm Tree Silhouette (Lake Eyasi, Tanzania)
 tags: ["tanzania", "landscapes"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

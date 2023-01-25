@@ -7,5 +7,4 @@ location: Alaska, United States
 description: Yellow Fire Hydrant Covered In Snow (Alaska, United States)
 tags: ["united-states", "snow"]
 youtubeid: 2kh0VEQqUI0
-jsonld: print
 ---

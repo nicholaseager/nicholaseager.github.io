@@ -7,5 +7,4 @@ location: Manaslu Circuit, Nepal
 description: Backpack Laying In Snow (Manaslu Circuit, Nepal)
 tags: ["nepal", "adventure", "mountains"]
 youtubeid: I2I4EySGYEU
-jsonld: print
 ---

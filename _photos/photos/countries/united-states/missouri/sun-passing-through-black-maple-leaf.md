@@ -6,5 +6,4 @@ title: Sun Passing Through Black Maple Leaf
 location: Missouri, United States
 description: Sun Passing Through Black Maple Leaf (Missouri, United States)
 tags: ["united-states", "nature"]
-jsonld: print
 ---

@@ -7,5 +7,4 @@ location: Serengeti, Tanzania
 description: Three Acacia Trees (Serengeti, Tanzania)
 tags: ["tanzania"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

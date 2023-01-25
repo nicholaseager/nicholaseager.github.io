@@ -10,9 +10,8 @@
   "license": "{{ site.url }}/terms-and-conditions",
   "acquireLicensePage": "{{ site.url }}/how-to-use-my-art",
   "creator": {
-    "@type": "Person",
-    "name": "Nicholas Eager"
-   },
+    "@id": "{{ site.url }}/#organization"
+  },
   "copyrightNotice": "Nicholas Eager Photography, LLC"
 }{%- unless forloop.last -%},{%- endunless -%}
 {% endfor %}

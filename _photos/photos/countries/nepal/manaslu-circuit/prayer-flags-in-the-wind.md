@@ -8,5 +8,4 @@ description: Prayer flags are a symbol of the grace and tenacity of the human sp
 tags: ["nepal", "adventure", "showcase"]
 darkroomid: 881319
 youtubeid: I2I4EySGYEU
-jsonld: print
 ---

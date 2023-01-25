@@ -8,5 +8,4 @@ description: Some of the most breathtaking views of mountains in the world can b
 tags: ["nepal", "landscapes", "showcase", "mountains"]
 darkroomid: 881313
 youtubeid: I2I4EySGYEU
-jsonld: print
 ---

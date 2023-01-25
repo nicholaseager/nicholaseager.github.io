@@ -7,5 +7,4 @@ location: Cat Ba, Vietnam
 description: Fishing Boats At Sunset (Cat Ba, Vietnam)
 tags: ["vietnam"]
 youtubeid: mhlmfKdAVzE
-jsonld: print
 ---

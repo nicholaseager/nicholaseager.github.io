@@ -6,5 +6,4 @@ title: Riomaggiore At Night
 location: Cinque Terre, Italy
 description: Riomaggiore At Night (Cinque Terre, Italy)
 tags: ["italy", "city"]
-jsonld: print
 ---

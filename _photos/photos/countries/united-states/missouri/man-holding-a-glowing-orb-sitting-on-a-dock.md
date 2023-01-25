@@ -6,5 +6,4 @@ title: Man Holding A Glowing Orb Sitting On A Dock
 location: Missouri, United States
 description: Man Holding A Glowing Orb Sitting On A Dock (Missouri, United States)
 tags: ["united-states", "astrophotography"]
-jsonld: print
 ---

@@ -7,5 +7,4 @@ location: Tarangire, Tanzania
 description: Jeeps Parked Off The Road (Tarangire, Tanzania)
 tags: ["tanzania", "adventure"]
 youtubeid: ODLfcfoppas
-jsonld: print
 ---

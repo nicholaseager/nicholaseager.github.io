@@ -7,5 +7,4 @@ location: Manaslu Circuit, Nepal
 description: Stupa On The Trail (Manaslu Circuit, Nepal)
 tags: ["nepal"]
 youtubeid: I2I4EySGYEU
-jsonld: print
 ---

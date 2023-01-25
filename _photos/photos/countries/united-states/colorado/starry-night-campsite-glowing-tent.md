@@ -7,5 +7,4 @@ location: Colorado, United States
 description: Starry Night Campsite Glowing Tent (Colorado, United States)
 tags: ["united-states", "astrophotography", "showcase"]
 youtubeid: Cq1Ey6_fAQg
-jsonld: print
 ---

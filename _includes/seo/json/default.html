@@ -1,0 +1,40 @@
+{%- capture image -%}
+https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ include.page.image }}.jpg
+{%- endcapture -%}
+{%- assign image = image | strip_newlines -%}
+
+{%- capture json -%}
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "{{ site.url }}{{ include.page.url }}#article",
+            "isPartOf": {
+                "@id": "{{ site.url }}{{ include.page.url }}"
+            },
+            "author": {
+                "name": "Nicholas",
+                "@id": "{{ site.url }}/about#author"
+            },
+            "headline": {{ include.page.title | jsonify }},
+            "datePublished": {{ include.page.date | jsonify }},
+            "dateModified": {{ include.page.last_modified_at | default: include.page.date | jsonify }},
+            "mainEntityOfPage": {
+                "@id": "{{ site.url }}{{ include.page.url }}"
+            },
+            "publisher": {
+                "@id": "{{ site.url }}/#organization"
+            },
+            "image": {
+                "@id": "{{ site.url }}{{ include.page.url }}#primaryimage"
+            },
+            "thumbnailUrl": "{{image}}",
+            "keywords": {{ include.page.tags | join: ',' | jsonify }},
+            "inLanguage": "en-US"
+        }
+    ]
+}
+{%- endcapture -%}
+{%- assign json = json | strip_newlines | normalize_whitespace -%}
+<script type="application/ld+json">{{json}}</script>

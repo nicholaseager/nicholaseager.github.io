@@ -7,5 +7,4 @@ location: Chamonix, France
 description: Green Mountain Range In Clouds (Chamonix, France)
 tags: ["france", "landscapes", "showcase", "mountains"]
 darkroomid: 881317
-jsonld: print
 ---

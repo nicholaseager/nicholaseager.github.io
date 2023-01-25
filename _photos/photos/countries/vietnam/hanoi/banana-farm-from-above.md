@@ -7,5 +7,4 @@ location: Hanoi, Vietnam
 description: If you didn't know, bananas are everywhere in Vietnam. Some people even call Vietnam the Banana Republic. This photo was taken just outside of Hanoi.
 tags: ["vietnam", "landscapes", "showcase"]
 darkroomid: 881330
-jsonld: print
 ---

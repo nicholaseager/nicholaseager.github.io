@@ -8,5 +8,4 @@ description: The silhouettes of acacia trees are bathed in the golden glory of t
 tags: ["tanzania", "landscapes", "showcase"]
 darkroomid: 881323
 youtubeid: ODLfcfoppas
-jsonld: print
 ---
