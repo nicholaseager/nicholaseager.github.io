@@ -19,11 +19,12 @@
               https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ path }}.jpg 1280w,
             "
             sizes="100vw"
-            data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg"
+            data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg"
             class="swiper-lazy"
             alt="{{ alt }}"
         />
       </div>
       {% endfor %}
     </div>
+    {% include seo/json/photos.html photos=photos width=480 limit=include.limit %}
   </div>
