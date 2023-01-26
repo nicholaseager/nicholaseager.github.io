@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/alaska/yellow-fire-hydrant-covered-in-snow
 title: Yellow Fire Hydrant Covered In Snow

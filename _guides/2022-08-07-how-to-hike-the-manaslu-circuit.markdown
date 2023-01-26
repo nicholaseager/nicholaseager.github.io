@@ -1,5 +1,6 @@
 ---
 layout: guide
+jsonld: article
 header: transparent
 title: How to Hike the Manaslu Circuit
 date: 2022-08-07

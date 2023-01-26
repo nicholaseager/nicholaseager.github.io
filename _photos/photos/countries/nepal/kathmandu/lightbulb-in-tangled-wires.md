@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/kathmandu/lightbulb-in-tangled-wires
 title: Lightbulb In Tangled Wires

@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/missouri/bird-sitting-on-fountain-staring-at-me
 title: Bird Sitting On Fountain Staring At Me

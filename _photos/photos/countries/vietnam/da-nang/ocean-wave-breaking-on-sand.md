@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/vietnam/da-nang/ocean-wave-breaking-on-sand
 title: Ocean Wave Breaking On Sand

@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/mardi-himal/snow-covered-shelter-on-mountain
 title: Snow Covered Shelter On Mountain

@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/italy/florence/hot-air-balloon-in-clouds
 title: Hot Air Balloon In Clouds

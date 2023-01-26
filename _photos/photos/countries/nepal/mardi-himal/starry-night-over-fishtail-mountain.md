@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/mardi-himal/starry-night-over-fishtail-mountain
 title: Starry Night Over Fishtail Mountain

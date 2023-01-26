@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/alaska/blue-pickup-truck-covered-in-snow
 title: Blue Pickup Truck Covered In Snow

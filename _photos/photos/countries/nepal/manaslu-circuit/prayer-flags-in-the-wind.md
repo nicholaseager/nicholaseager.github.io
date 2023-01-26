@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind
 title: Prayer Flags In The Wind

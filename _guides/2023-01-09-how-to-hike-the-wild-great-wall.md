@@ -1,5 +1,6 @@
 ---
 layout: guide
+jsonld: article
 header: transparent
 
 title: How to Hike the Wild Great Wall of China

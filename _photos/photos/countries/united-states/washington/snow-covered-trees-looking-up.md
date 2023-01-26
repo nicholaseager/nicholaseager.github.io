@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/washington/snow-covered-trees-looking-up
 title: Snow Covered Trees Looking Up

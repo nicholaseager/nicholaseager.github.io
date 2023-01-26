@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/vietnam/da-nang/two-tiny-mushrooms-next-to-metal-cup
 title: Two Tiny Mushrooms Next To Metal Cup

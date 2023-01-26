@@ -1,5 +1,6 @@
 ---
 layout: guide
+jsonld: article
 header: transparent
 
 title: How to Spend 9 Days on a Safari in Tanzania

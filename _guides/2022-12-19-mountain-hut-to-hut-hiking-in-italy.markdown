@@ -1,5 +1,6 @@
 ---
 layout: guide
+jsonld: article
 header: transparent
 title: A Guide to Mountain Hut to Hut Hiking in Italy
 date: 2022-12-19

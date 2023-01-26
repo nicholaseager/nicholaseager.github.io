@@ -1,5 +1,6 @@
 ---
 layout: guide
+jsonld: article
 header: transparent
 title: How to Hike Inside the Grand Canyon in One Day
 date: 2023-01-08

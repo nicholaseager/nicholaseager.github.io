@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/missouri/rabbit-hiding-in-the-grass
 title: Rabbit Hiding In The Grass

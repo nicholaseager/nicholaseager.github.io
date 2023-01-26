@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/tanzania/serengeti/sunset-with-a-single-tree
 title: Sunset With A Single Tree

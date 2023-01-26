@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/colorado/sunset-on-the-colorado-trail
 title: Sunset On The Colorado Trail

@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/tanzania/lake-eyasi/sunset-with-a-single-palm-tree-silhouette
 title: Sunset With A Single Palm Tree Silhouette

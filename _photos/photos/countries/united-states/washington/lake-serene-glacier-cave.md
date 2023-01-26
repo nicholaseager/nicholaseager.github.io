@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/washington/lake-serene-glacier-cave
 title: Lake Serene Glacier Cave

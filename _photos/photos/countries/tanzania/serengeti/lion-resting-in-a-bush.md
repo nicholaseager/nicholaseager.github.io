@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/tanzania/serengeti/lion-resting-in-a-bush
 title: Lion Resting In A Bush

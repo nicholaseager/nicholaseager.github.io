@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/tanzania/ngorongoro-crater/jeep-in-the-distance
 title: Jeep In The Distance

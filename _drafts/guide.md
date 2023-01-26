@@ -1,5 +1,6 @@
 ---
 layout: guide
+jsonld: article
 header: transparent
 
 title: How to Write a Travel Hiking Guide

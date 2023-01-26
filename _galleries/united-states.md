@@ -1,5 +1,6 @@
 ---
 layout: print-gallery
+jsonld: article
 header: transparent
 title: United States
 tags: ["united-states"]

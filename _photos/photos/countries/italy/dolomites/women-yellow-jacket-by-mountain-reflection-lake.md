@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/italy/dolomites/women-yellow-jacket-by-mountain-reflection-lake
 title: Women Yellow Jacket By Mountain Reflection Lake

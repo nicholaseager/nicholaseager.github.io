@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/arizona/grand-canyon-national-park-rim-view
 title: Grand Canyon National Park Rim View

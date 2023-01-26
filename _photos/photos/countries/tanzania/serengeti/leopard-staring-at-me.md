@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/tanzania/serengeti/leopard-staring-at-me
 title: Leopard Staring At Me

@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/tanzania/tarangire/masai-giraffe-looking-at-camera
 title: Masai Giraffe Looking At Camera

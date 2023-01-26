@@ -29,6 +29,7 @@ for row_index, row in enumerate(datareader):
 		yaml_text = ""
 		yaml_text += "---\n"
 		yaml_text += "layout: photo\n"
+		yaml_text += "jsonld: article\n"
 		yaml_text += "sitemap: false\n"
 
 		# Path

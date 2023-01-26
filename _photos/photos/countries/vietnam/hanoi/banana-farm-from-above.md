@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/vietnam/hanoi/banana-farm-from-above
 title: Banana Farm From Above

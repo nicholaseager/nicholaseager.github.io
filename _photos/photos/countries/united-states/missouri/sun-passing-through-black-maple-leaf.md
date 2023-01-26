@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/missouri/sun-passing-through-black-maple-leaf
 title: Sun Passing Through Black Maple Leaf

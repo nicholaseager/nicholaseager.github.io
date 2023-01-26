@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/colorado/starry-night-campsite-glowing-tent
 title: Starry Night Campsite Glowing Tent

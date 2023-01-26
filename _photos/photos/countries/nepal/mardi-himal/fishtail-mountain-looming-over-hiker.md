@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/mardi-himal/fishtail-mountain-looming-over-hiker
 title: Fishtail Mountain Looming Over Hiker

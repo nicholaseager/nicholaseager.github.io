@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/vietnam/da-nang/rice-field-behind-barbed-wire
 title: Rice Field Behind Barbed Wire

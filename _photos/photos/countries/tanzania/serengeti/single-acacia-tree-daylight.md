@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/tanzania/serengeti/single-acacia-tree-daylight
 title: Single Acacia Tree Daylight

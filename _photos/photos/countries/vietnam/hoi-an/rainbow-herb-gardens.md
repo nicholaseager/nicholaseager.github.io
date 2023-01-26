@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/vietnam/hoi-an/rainbow-herb-gardens
 title: Rainbow Herb Gardens

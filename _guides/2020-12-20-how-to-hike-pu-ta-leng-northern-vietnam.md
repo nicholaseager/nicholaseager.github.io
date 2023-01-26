@@ -1,5 +1,6 @@
 ---
 layout: guide
+jsonld: article
 header: transparent
 title: How to Hike Pu Ta Leng in Northern Vietnam
 date: 2022-08-07

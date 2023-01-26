@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/manaslu-circuit/woman-carrying-basket-of-wood
 title: Woman Carrying Basket Of Wood

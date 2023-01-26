@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/volunteering/sunset-behind-barbed-wire
 title: Sunset Behind Barbed Wire

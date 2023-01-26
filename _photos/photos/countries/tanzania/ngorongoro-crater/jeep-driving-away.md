@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/tanzania/ngorongoro-crater/jeep-driving-away
 title: Jeep Driving Away

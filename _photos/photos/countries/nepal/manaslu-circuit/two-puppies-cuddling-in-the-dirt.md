@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/manaslu-circuit/two-puppies-cuddling-in-the-dirt
 title: Two Puppies Cuddling In The Dirt

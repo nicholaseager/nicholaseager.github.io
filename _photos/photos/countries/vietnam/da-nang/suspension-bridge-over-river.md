@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/vietnam/da-nang/suspension-bridge-over-river
 title: Suspension Bridge Over River

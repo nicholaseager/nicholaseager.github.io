@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/manaslu-circuit/yak-wearing-bell
 title: Yak Wearing Bell

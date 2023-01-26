@@ -1,5 +1,6 @@
 ---
 layout: guide
+jsonld: article
 header: transparent
 
 title: How to Visit Cat Ba Island and Lan Ha Bay, Vietnam

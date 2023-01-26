@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/vietnam/da-nang/woman-collecting-plants
 title: Woman Collecting Plants

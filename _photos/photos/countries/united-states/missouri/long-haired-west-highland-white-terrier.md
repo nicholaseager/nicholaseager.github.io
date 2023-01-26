@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/missouri/long-haired-west-highland-white-terrier
 title: Long Haired West Highland White Terrier

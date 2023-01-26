@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/washington/snow-camp-in-a-forest
 title: Snow Camp In A Forest

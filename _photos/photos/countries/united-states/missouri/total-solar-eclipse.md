@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/missouri/total-solar-eclipse
 title: Total Solar Eclipse

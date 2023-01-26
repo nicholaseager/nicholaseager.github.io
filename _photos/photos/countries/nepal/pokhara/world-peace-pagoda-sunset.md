@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/pokhara/world-peace-pagoda-sunset
 title: World Peace Pagoda Sunset

@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/utah/moon-red-rock-arch
 title: Moon Red Rock Arch

@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/france/chamonix/green-mountain-range-in-clouds
 title: Green Mountain Range In Clouds

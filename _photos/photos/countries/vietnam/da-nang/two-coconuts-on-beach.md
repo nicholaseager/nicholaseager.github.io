@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/vietnam/da-nang/two-coconuts-on-beach
 title: Two Coconuts On Beach

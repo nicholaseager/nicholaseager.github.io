@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/vietnam/cat-ba/taro-leaves-glowing-in-the-jungle
 title: Taro Leaves Glowing In The Jungle

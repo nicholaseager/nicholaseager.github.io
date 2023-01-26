@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/italy/florence/crescent-moon-at-sunset
 title: Crescent Moon At Sunset

@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/tanzania/serengeti/three-acacia-trees
 title: Three Acacia Trees

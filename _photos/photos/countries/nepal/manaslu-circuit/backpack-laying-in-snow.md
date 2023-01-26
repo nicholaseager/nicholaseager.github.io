@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/manaslu-circuit/backpack-laying-in-snow
 title: Backpack Laying In Snow

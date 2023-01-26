@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/south-korea/seoul/cityscape-at-night
 title: Cityscape At Night

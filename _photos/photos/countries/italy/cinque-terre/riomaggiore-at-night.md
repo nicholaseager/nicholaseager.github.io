@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/italy/cinque-terre/riomaggiore-at-night
 title: Riomaggiore At Night

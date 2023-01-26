@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/pokhara/fishtail-mountain-sunset
 title: Fishtail Mountain Sunset

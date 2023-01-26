@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/mardi-himal/german-shepherd-silhouette-in-clouds
 title: German Shepherd Silhouette In Clouds

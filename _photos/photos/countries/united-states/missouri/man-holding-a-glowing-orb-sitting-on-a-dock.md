@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/missouri/man-holding-a-glowing-orb-sitting-on-a-dock
 title: Man Holding A Glowing Orb Sitting On A Dock

@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/missouri/starry-night-loggers-lake
 title: Starry Night Loggers Lake

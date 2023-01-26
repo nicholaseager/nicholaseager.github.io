@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/united-states/utah/monument-valley-highway-aerial
 title: Monument Valley Highway Aerial

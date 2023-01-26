@@ -1,5 +1,6 @@
 ---
 layout: photo
+jsonld: article
 sitemap: false
 image: photos/countries/nepal/manaslu-circuit/hiker-standing-in-canyon-at-dusk
 title: Hiker Standing In Canyon At Dusk
