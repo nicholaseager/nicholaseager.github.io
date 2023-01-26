@@ -1,0 +1,82 @@
+<!-- Breadcrumbs -->
+{%- comment -%}
+<!-- Assumes there is only one page deep -->
+{%- endcomment -%}
+{%- assign middle_page = nil -%}
+{%- for page in site.pages -%}
+    {%- if include.page.url contains page.url and include.page.url != page.url -%}
+        {%- assign middle_page = page -%}
+        {%- break -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- capture json -%}
+{
+    "@type": "BreadcrumbList",
+    "@id": "{{ site.url }}{{ include.page.url }}#breadcrumb",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        }
+        {% if middle_page %},
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ middle_page.title }}",
+            "item": "{{ site.url }}{{ middle_page.url }}"
+        }
+        {% endif %}
+        {% if include.page.url != "/" %},
+        {
+            "@type": "ListItem",
+            "position": {% if middle_page %}3{% else %}2{% endif %},
+            "name": "{{ include.page.title }}",
+            "item": "{{ site.url }}{{ include.page.url }}"
+        }
+        {% endif %}
+    ]
+}
+{%- endcapture -%}
+{%- assign json = json | strip_newlines | normalize_whitespace -%}
+<script type="application/ld+json">{{json}}</script>
+
+{%- capture json -%}
+{
+    "@context": "https:\/\/schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "{{ site.url }}",
+                "name": "Home"
+            }
+        }
+        {% if middle_page %},
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@id": "{{ site.url }}{{ middle_page.url }}",
+                "name": "{{ middle_page.title }}"
+            }
+        }
+        {% endif %}
+        {% if include.page.url != "/" %},
+        {
+            "@type": "ListItem",
+            "position": {% if middle_page %}3{% else %}2{% endif %},
+            "item": {
+                "@id": "{{ site.url }}{{ include.page.url }}",
+                "name": "{{ include.page.title }}"
+            }
+        }
+        {% endif %}
+    ]
+}
+{%- endcapture -%}
+{%- assign json = json | strip_newlines | normalize_whitespace -%}
+<script type="application/ld+json">{{json}}</script>
