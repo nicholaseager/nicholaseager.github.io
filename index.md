@@ -1,6 +1,5 @@
 ---
 layout: home
-jsonld: home
 title: Adventure Film
 description: Nicholas Eager Adventure Film and Photography
 image: photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain
