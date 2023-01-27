@@ -38,7 +38,12 @@ https://ik.imagekit.io/qn1gkawvy/tr:w-640/profile.jpg
     <meta property="og:url" content="{{ site.url }}{{ include.page.url }}" />
     <meta property="og:site_name" content="nicholaseager" />
     <meta property="og:type" content="article" />
+    <meta property="article:publisher" content="{{ site.data.settings.social_settings.instagram_url }}" />
+    <meta property="article:author" content="{{ site.data.settings.social_settings.instagram_url }}" />
+    {% if include.page.date %}
     <meta property="article:published_time" content="{{ include.page.date | date_to_xmlschema }}" />
+    {% endif %}
+    <meta property="article:modified_time" content="{{ include.page.last_modified_at | default: include.page.date | date_to_xmlschema }}" />
     <meta property="twitter:image" content="{{ image }}" />
     <meta property="twitter:title" content="{{ title }}" />
     <meta name="twitter:card" content="summary_large_image" />
