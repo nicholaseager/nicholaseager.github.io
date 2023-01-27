@@ -1,0 +1,38 @@
+{%- capture json -%}
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {% for photo in include.photos limit:include.limit %}
+        {% assign path = photo | strip %}
+        {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "{{ path }}",
+            "url": "https://ik.imagekit.io/qn1gkawvy/tr:w-{{include.width}}/{{ path }}.jpg",
+            "contentUrl": "https://ik.imagekit.io/qn1gkawvy/tr:w-{{include.width}}/{{ path }}.jpg",
+            "creditText": "{{ site.organization.name }}",
+            "license": "{{ site.url }}/terms-and-conditions",
+            "acquireLicensePage": "{{ site.url }}/how-to-use-my-art",
+            "creator": {
+                "@id": "{{ site.url }}/#organization"
+            },
+            "copyrightNotice": "{{ site.organization.copyright }}"
+        },
+        {% endfor %}
+        {
+            "@context": "http://schema.org",
+            "@type": "ImageGallery",
+            "image": [
+            {% for photo in include.photos limit:include.limit %}
+            {% assign path = photo | strip %}
+            {
+                "@id": "{{ path }}"
+            }{%- unless forloop.last -%},{%- endunless -%}
+            {% endfor %}
+            ]
+        }
+    ]
+}
+{%- endcapture -%}
+{%- assign json = json | strip_newlines | normalize_whitespace -%}
+<script type="application/ld+json">{{json}}</script>
