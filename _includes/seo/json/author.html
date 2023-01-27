@@ -1,0 +1,15 @@
+{
+    "@type": "Person",
+    "@id": "{{ site.url }}/about#author",
+    "name": "{{ site.author.name }}",
+    "image": {
+        "@type": "ImageObject",
+        "inLanguage": "en-US",
+        "@id": "{{ site.url }}/#/schema/logo/image/",
+        "url": "{{ site.author.image }}",
+        "contentUrl": "{{ site.author.image }}",
+        "caption": "{{ site.author.name }}"
+    },
+    "sameAs": {{ site.social.links | jsonify }},
+    "url": "{{ site.url }}/about"
+}

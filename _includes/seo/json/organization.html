@@ -1,0 +1,18 @@
+{
+    "@type": "Organization",
+    "@id": "{{ site.url }}/#organization",
+    "name": "{{ site.organization.name }}",
+    "url": "{{ site.url }}/",
+    "logo": {
+        "@type": "ImageObject",
+        "inLanguage": "en-US",
+        "@id": "{{ site.url }}/#/schema/logo/image/",
+        "url": "{{ site.author.image }}",
+        "contentUrl": "{{ site.author.image }}",
+        "caption": "{{ site.organization.name }}"
+    },
+    "image": {
+        "@id": "{{ site.url }}/#/schema/logo/image/"
+    },
+    "sameAs": {{ site.social.links | jsonify }}
+}

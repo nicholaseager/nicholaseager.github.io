@@ -3,7 +3,6 @@
 https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ include.page.image }}.jpg
 {%- endcapture -%}
 {%- assign image = image | strip_newlines -%}
-
 {%- capture json -%}
 {
     "@context": "https://schema.org",
@@ -33,7 +32,9 @@ https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ include.page.image }}.jpg
             "thumbnailUrl": "{{image}}",
             "keywords": {{ include.page.tags | join: ',' | jsonify }},
             "inLanguage": "en-US"
-        }
+        },
+        {% include seo/json/web-page.html %},
+        {% include seo/json/author.html %}
     ]
 }
 {%- endcapture -%}

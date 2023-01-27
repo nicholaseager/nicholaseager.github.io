@@ -1,0 +1,23 @@
+{%- capture image -%}
+{%- if include.page.image -%}
+https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ include.page.image }}.jpg
+{%- else -%}
+https://ik.imagekit.io/qn1gkawvy/tr:w-640/profile.jpg
+{%- endif -%}
+{%- endcapture -%}
+{%- assign image = image | strip_newlines -%}
+{
+    "@type": "ImageObject",
+    "inLanguage": "en-US",
+    "@id": "{{ site.url }}{{ include.page.url }}#primaryimage",
+    "url": "{{ image }}",
+    "contentUrl": "{{ image }}",
+    "caption": {{ include.page.title | jsonify }},
+    "creditText": "{{ site.organization.name }}",
+    "license": "{{ site.url }}/terms-and-conditions",
+    "acquireLicensePage": "{{ site.url }}/how-to-use-my-art",
+    "creator": {
+        "@id": "{{ site.url }}/#organization"
+    },
+    "copyrightNotice": "{{ site.organization.copyright }}"
+}

@@ -1,0 +1,42 @@
+{%- capture image -%}
+{%- if include.page.image -%}
+https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ include.page.image }}.jpg
+{%- else -%}
+https://ik.imagekit.io/qn1gkawvy/tr:w-640/profile.jpg
+{%- endif -%}
+{%- endcapture -%}
+{%- assign image = image | strip_newlines -%}
+{
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ include.page.url }}",
+    "url": "{{ site.url }}{{ include.page.url }}",
+    "name": {{ include.page.title | jsonify }},
+    "isPartOf": {
+        "@id": "{{ site.url }}/#website"
+    },
+    "primaryImageOfPage": {
+        "@id": "{{ site.url }}{{ include.page.url }}#primaryimage"
+    },
+    "image": {
+        "@id": "{{ site.url }}{{ include.page.url }}#primaryimage"
+    },
+    "thumbnailUrl": "{{image}}",
+    "breadcrumb": {
+        "@id": "{{ site.url }}{{ include.page.url }}#breadcrumb"
+    },
+    "datePublished": {{ include.page.date | jsonify }},
+    "dateModified": {{ include.page.last_modified_at | default: include.page.date | jsonify }},
+    "description": {{ include.page.description | strip_newlines | strip | jsonify }},
+    "inLanguage": "en-US",
+    "potentialAction": [
+        {
+            "@type": "ReadAction",
+            "target": [
+                "{{ site.url }}{{ include.page.url }}"
+            ]
+        }
+    ]
+},
+{% include seo/json/primary-image.html page=include.page %},
+{% include seo/json/breadcrumb.html page=include.page %},
+{% include seo/json/web-site.html page=include.page %}

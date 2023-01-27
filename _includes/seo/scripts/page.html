@@ -1,0 +1,12 @@
+<!-- WebPage -->
+{%- assign image = image | strip_newlines -%}
+{%- capture json -%}
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {% include seo/json/web-page.html %}
+    ]
+}
+{%- endcapture -%}
+{%- assign json = json | strip_newlines | normalize_whitespace -%}
+<script type="application/ld+json">{{json}}</script>

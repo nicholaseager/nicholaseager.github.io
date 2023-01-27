@@ -54,6 +54,11 @@ social:
     - https://www.youtube.com/c/NicholasEager
     - https://www.facebook.com/nicholas.eager.photo
 
+organization:
+  name: Nicholas Eager Photography
+  image: https://ik.imagekit.io/qn1gkawvy/tr:w-480/profile.jpg
+  copyright: Nicholas Eager Photography, LLC
+
 markdown: kramdown
 
 kramdown:
