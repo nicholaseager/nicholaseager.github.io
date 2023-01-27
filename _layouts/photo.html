@@ -12,8 +12,8 @@ layout: default
 				<div class="order-heading">
 					<h2>{{ page.title }}</h2>
 					<p><i>{{ page.location }}</i></p>
-					<p class="order-author">By <a href="{{ "/about" | relative_url }}">Nicholas Eager</a></p>
-					<p class="order-author"><b>© {{ 'now' | date: "%Y" }}</b> Nicholas Eager Photography</p>
+					<p class="order-author">By <a href="{{ "/about" | relative_url }}">{{ site.author.name }}</a></p>
+					<p class="order-author"><b>© {{ 'now' | date: "%Y" }}</b> {{ site.organization.name }}</p>
 				</div>
 
 				<p>{{ page.description }}</p>
