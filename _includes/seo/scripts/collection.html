@@ -1,10 +1,10 @@
-<!-- Normal Page -->
+<!-- Collection Page -->
 {%- assign image = image | strip_newlines -%}
 {%- capture json -%}
 {
     "@context": "https://schema.org",
     "@graph": [
-        {% include seo/json/web-page.html %}
+        {% include seo/json/collection-page.html %}
     ]
 }
 {%- endcapture -%}
