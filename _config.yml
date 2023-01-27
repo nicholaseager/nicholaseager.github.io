@@ -41,7 +41,7 @@ defaults:
 
 author:
   name: Nicholas Eager
-  image: https://ik.imagekit.io/qn1gkawvy/tr:w-480/profile.jpg
+  image: https://ik.imagekit.io/qn1gkawvy/tr:w-1280/profile.jpg
   url: https://nicholaseager.com/about
   description: Nicholas Eager is an international adventure filmmaker and photographer.
 twitter:
@@ -56,7 +56,7 @@ social:
 
 organization:
   name: Nicholas Eager Photography
-  image: https://ik.imagekit.io/qn1gkawvy/tr:w-480/profile.jpg
+  image: https://ik.imagekit.io/qn1gkawvy/tr:w-1280/profile.jpg
   copyright: Nicholas Eager Photography, LLC
 
 markdown: kramdown
