@@ -1,0 +1,1 @@
+The `json` folder contains template files that should be used when composing a script. The `scripts` folder contains complete JSON files wrapped in the appropriate script tag. These should be used in HTML.
