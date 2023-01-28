@@ -15,6 +15,12 @@ introduction: Introduction
 youtube: Rp4V6waPRZo
 googlemap: 1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc
 alltrails: grand-canyon-hike-5735c3a
+links:
+    - title: 'Photo Gallery'
+      url: '/galleries/tanzania'
+    - title: 'Gear List'
+      url: '/gear'
+
 redirect_from:
     - /g/my-guide
 ---

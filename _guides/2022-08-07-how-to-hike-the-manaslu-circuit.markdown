@@ -11,6 +11,11 @@ tags: ["nepal", "manaslu-circuit", "hiking"]
 image: photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset
 youtube: I2I4EySGYEU
 googlemap: 1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc
+links:
+    - title: 'Photo Gallery'
+      url: '/galleries/nepal'
+    - title: 'Gear List'
+      url: '/gear'
 redirect_from:
     - /g/manaslu
 ---

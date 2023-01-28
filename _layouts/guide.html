@@ -30,6 +30,17 @@ layout: default
 			</div>
 		</div>
 	</div>
+	{% if page.links %}
+	<div class="guide-quick-links">
+		<span>
+			Quick Links:
+			{% for link in page.links %}
+			<a href="{{ link.url | relative_url }}">{{link.title}}</a>
+			{%- unless forloop.last -%},{%- endunless -%}
+			{% endfor %}
+		</span>
+	</div>
+	{% endif %}
 </section>
 
 <section class="single table-of-contents-container">

@@ -13,6 +13,12 @@ tags: ["tanzania", "africa", "safari"]
 
 youtube: ODLfcfoppas
 googlemap: 1l2AxUlEC2nBGLPmONXLUjAxtUDSCUh4
+links:
+    - title: 'Photo Gallery'
+      url: '/galleries/tanzania'
+    - title: 'Gear List'
+      url: '/gear'
+
 redirect_from:
     - /g/tanzania
 ---
