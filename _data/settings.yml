@@ -163,6 +163,3 @@ font_settings:
 
 advanced_settings:
   ajax_loading: false
-  custom_styles: ""
-  header_js: ""
-  footer_js: ""

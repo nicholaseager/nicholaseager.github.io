@@ -47,11 +47,6 @@
 	<!-- Icons -->
 	<script defer src="https://kit.fontawesome.com/860383e77f.js" crossorigin="anonymous"></script>
 
-	{% if site.data.settings.advanced_settings.custom_styles %}
-	<!-- Custom Styles -->
-	<style>{{ site.data.settings.advanced_settings.custom_styles }}</style>
-	{% endif %}
-
 	{% if jekyll.environment == "production" %}
 	<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV277DE08"></script>
@@ -63,12 +58,6 @@
       gtag('config', 'G-MGV277DE08');
     </script>
 	{% endif %}
-
-	{% if site.data.settings.advanced_settings.header_js %}
-	<!-- Extra Header JS Code -->
-	{{ site.data.settings.advanced_settings.header_js }}
-	{% endif %}
-	
 </head>
 
 
@@ -93,9 +82,7 @@
 
 	</div>
 
-
 	{% include footer.html %}
-
 
 	<!-- Javascript Assets -->
 	<script
@@ -105,13 +92,6 @@
 
 	<script src="{{ '/js/plugins-min.js' | relative_url }}"></script>
 	<script src="{{ '/js/board-min.js' | relative_url }}"></script>
-
-	{% if site.data.settings.advanced_settings.footer_js %}
-	<!-- Extra Footer JS Code -->
-	{{ site.data.settings.advanced_settings.footer_js }}
-	{% endif %}
-
-
 </body>
 
 </html>
