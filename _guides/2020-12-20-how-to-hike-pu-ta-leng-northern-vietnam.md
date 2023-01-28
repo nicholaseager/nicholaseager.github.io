@@ -36,7 +36,7 @@ You might enjoy cooler months or the warmer months. It's worth considering the w
 
 ### Staying at Our Guide's Home
 
-{% include swiper.html
+{% include post-swiper.html
     photos="
         photos/countries/vietnam/pu-ta-leng/four-people-in-trekking-guides-home
         photos/countries/vietnam/pu-ta-leng/duck-standing-on-top-of-fence

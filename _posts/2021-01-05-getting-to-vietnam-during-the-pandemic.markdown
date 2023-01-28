@@ -67,7 +67,7 @@ After falling asleep peacefully on the last night of quarantine, I awoke abruptl
 
 After a very long night, I made it to my second, and final, quarantine hotel. This time I was on the seventh floor, so I couldn't see Van except by telescope (a.k.a my 200mm lens). But Felix and Leo seemed to enjoy their new view. Calling Van on my phone and watching each other from a distance helped pass the time until I could escape.
 
-{% include swiper.html
+{% include post-swiper.html
     photos="
         photos/countries/vietnam/ho-chi-minh-city/quarantine/leoandfelix2
         photos/countries/vietnam/ho-chi-minh-city/man-climbing-repairing-cell-tower

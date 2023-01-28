@@ -50,7 +50,7 @@ Since I was starting in Levanto and wanted to make it to La Spezia, I woke up at
 
 ## How to Navigate While Trail Running
 
-{% include swiper.html
+{% include post-swiper.html
     photos="
         photos/countries/italy/cinque-terre/wooden-post-sign-manarola-riomaggiore
         photos/countries/italy/cinque-terre/trail-marker-537

@@ -23,7 +23,7 @@ Of course there are a variety of things you could do here. But here are some of 
 
 ### Kayaking the Bay
 
-{% include swiper.html
+{% include post-swiper.html
     photos="
         photos/countries/vietnam/cat-ba/kayaks-sunset-in-lan-ha-bay
         photos/countries/vietnam/cat-ba/eating-lunch-in-lan-ha-bay

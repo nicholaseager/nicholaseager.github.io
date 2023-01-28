@@ -25,7 +25,7 @@ Introduction
 
 ### Highlight 1
 
-{% include swiper.html
+{% include post-swiper.html
     photos="
         photos/countries/nepal/manaslu-circuit/hiker-climbing-a-hill-next-to-a-snow-covered-mountain
         photos/countries/nepal/manaslu-circuit/hiker-crossing-long-bridge-in-valley

@@ -22,8 +22,7 @@ Tanzania is home to several beautiful national parks, including the Serengeti, N
 
 ### Serengeti
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/tanzania/serengeti/wildebeest-migration
         photos/countries/tanzania/serengeti/three-kopjes
@@ -58,8 +57,7 @@ This vast national park is home to a variety of wildlife, including the big five
 
 ### Ngorongoro Crater
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/tanzania/ngorongoro-crater/warthogs-and-wildebeest
         photos/countries/tanzania/ngorongoro-crater/two-safari-jeeps
@@ -89,8 +87,7 @@ There are many different kinds of animals living in Tanzania's Ngorongoro Crater
 
 ### Tarangire
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/tanzania/tarangire/zebra
         photos/countries/tanzania/tarangire/two-elephants-drinking-from-a-lake
@@ -111,8 +108,7 @@ Large elephant herds, baobab trees, and a variety of birdlife can all be found i
 
 ### Lake Manyara
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/tanzania/lake-manyara/safari-jeep-driving-through-jungle
         photos/countries/tanzania/lake-manyara/baboon-sleeping
@@ -124,8 +120,7 @@ Flamingos are common in Lake Manyara National Park and are frequently spotted th
 
 ### Lake Eyasi
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/tanzania/lake-eyasi/sunset-with-a-single-palm-tree-silhouette
         photos/countries/tanzania/lake-eyasi/hadzabe-tribe-digging-for-roots

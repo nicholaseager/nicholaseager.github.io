@@ -50,8 +50,7 @@ Once you arrive in Xizhazi, you can hire a local guide to take you to the Great 
 
 ### Beijing to Xizhazi
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/china/jiankou/bus-station-timetable
         photos/countries/china/jiankou/h25-bus
@@ -66,8 +65,7 @@ You can see the bus stations in the map above. If you leave from Beijing early, 
 
 ### Round trip to Explore the Wild Wall
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/china/jiankou/window-in-the-wild-great-wall
         photos/countries/china/jiankou/person-climbing-the-wild-great-wall
@@ -80,8 +78,7 @@ You can see the bus stations in the map above. If you leave from Beijing early, 
 
 There are many beautiful and ancient sections of the wild wall, such as the Beijing Knot, the The Eagle Flies Facing Upward, and the Sky Stairs. Explore around to your heart's content and then head back to Xizhazi for a huge dinner and a good night's rest.
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/china/jiankou/group-dinner-table
         photos/countries/china/jiankou/group-of-people-eating-dinner-cheers
@@ -92,8 +89,7 @@ At our guest house, there was an enormous table, with an equally as large lazy-s
 
 ### Hike from Xizhazi to Mutianyu
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/china/jiankou/looking-over-the-wild-great-wall
         photos/countries/china/jiankou/two-people-walking-on-the-great-wall

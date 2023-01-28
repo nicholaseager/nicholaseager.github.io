@@ -24,7 +24,7 @@ Hiking in Italy is very popular. That being said, at certain times and places th
 Not all mountain huts in Italy are created equal. Depending on your personal preferences and hiking style, you may want to stay at a certain type.
 
 ### Rifugi
-{% include swiper.html
+{% include post-swiper.html
     photos="
         photos/countries/italy/dolomites/locatelli-hut-tre-cime-sheep
         photos/countries/italy/dolomites/locatelli-hut-tre-cime
@@ -34,8 +34,7 @@ Not all mountain huts in Italy are created equal. Depending on your personal pre
 
 Rifugi are fully-equipped, fully-staffed, and ready to cater to your every need with kitchens that prepare delicious traditional food, wine, beer, and of course espresso. Some of my favorite rifugios even made their own beer or wine! You can find a very comfy bed to sleep in at night. Rifugios are typically easy to reach with a short hike, cable car, or even by car. This of course makes them popular, and they fill up far in advance.
 
-{% include swiper.html
-    class="swiperDynamic"
+{% include post-swiper.html
     photos="
         photos/countries/italy/dolomites/apple-strudel
         photos/countries/italy/dolomites/cafe-macchiato
