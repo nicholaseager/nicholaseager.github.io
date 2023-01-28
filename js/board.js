@@ -412,7 +412,7 @@
 				var $this = $(this);
 				var id = $this.attr('id');
 				if (id && id.startsWith("lazyframe")) {
-					if (isScrolledIntoView($this, 200)) {
+					if (isScrolledIntoView($this, 50)) {
 						$this.removeAttr("srcdoc");
 						$this.attr('src', $this.attr('data-src'));
 						$this.attr('id', id.replace('lazyframe', ''));
