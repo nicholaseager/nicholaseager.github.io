@@ -6,6 +6,7 @@ title: How to Hike the Manaslu Circuit
 date: 2022-08-07
 modified_date: 2023-01-12
 description: 21 Days on the Manaslu Circuit with our favorite highlights, and more.
+tags: ["nepal", "manaslu-circuit", "hiking"]
 image: photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset
 youtube: I2I4EySGYEU
 googlemap: 1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc

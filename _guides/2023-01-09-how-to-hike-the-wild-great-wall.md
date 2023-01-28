@@ -8,6 +8,7 @@ date: 2019-02-11
 modified_date: 2023-01-09
 description: Straying off the beaten path and exploring the ruins of an ancient wall.
 image: photos/countries/china/jiankou/wild-great-wall-at-sunrise
+tags: ["china", "wild-great-wall", "hiking"]
 
 googlemap: 11oQ9G8H2Vn0fv65wToQxsS6tew9eU6c
 redirect_from:

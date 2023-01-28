@@ -7,6 +7,7 @@ date: 2023-01-08
 modified_date: 2023-01-12
 description: Everything you need to know about hiking down into the Grand Canyon and back up again
 image: photos/countries/united-states/arizona/grand-canyon-national-park-rim-view
+tags: ["united-states", "grand-canyon", "hiking"]
 youtube: Rp4V6waPRZo
 alltrails: grand-canyon-hike-5735c3a
 redirect_from:

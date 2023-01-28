@@ -3,6 +3,11 @@
 https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.page.image }}.jpg
 {%- endcapture -%}
 {%- assign image = image | strip_newlines -%}
+
+{%- capture tags -%}
+{%- for tag in include.page.tags -%}{{ tag | split: "-" | join: " " }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}
+{%- endcapture -%}
+
 {%- capture json -%}
 {
     "@context": "https://schema.org",
@@ -30,7 +35,7 @@ https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.page.image }}.jpg
                 "@id": "{{ site.url }}{{ include.page.url }}#primaryimage"
             },
             "thumbnailUrl": "{{image}}",
-            "keywords": {{ include.page.tags | join: ',' | jsonify }},
+            "keywords": {{ tags | jsonify }},
             "inLanguage": "en-US"
         },
         {% include seo/json/web-page.html %},
