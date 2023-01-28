@@ -4,7 +4,7 @@ jsonld: article
 header: transparent
 title: How to Hike the Manaslu Circuit
 date: 2022-08-07
-modified_date: 2023-01-12
+modified_date: 2023-01-28
 description: 21 Days on the Manaslu Circuit with our favorite highlights, and more.
 introduction: Trekking in <a href="/galleries/nepal">Nepal</a> is undoubtedly a lifetime experience you won't soon forget. Any route you choose is full of its own surprises and wonders. While some of the more popular treks are full of breathtaking views and convenient services, the lesser-known ones are sparsely populated, more authentic, and still come with some amazing views. We chose to trek in Manaslu during the shoulder season (December) because we wanted to avoid tourists and see a more authentic Nepal and Tibet. If you feel the same and want to know more, keep reading :)
 tags: ["nepal", "manaslu-circuit", "hiking"]
@@ -15,7 +15,68 @@ redirect_from:
     - /g/manaslu
 ---
 
-## Highlights
+## Basics
+
+**Permits:** To trek in the Manaslu area, you will need a special permit, which can be acquired in Kathmandu. This license, known as the Restricted Area Permit, must be obtained via a recognized trekking organization.
+
+**Physical Fitness:** The Manaslu Circuit trek is arduous and demands a high level of physical fitness. You should feel at ease spending several hours per day hiking and be ready for rocky, uneven terrain.
+
+**Equipment:** A top-notch backpack, cozy hiking boots, warm clothing, and a sleeping bag are all things you should have with you on the trek. A first aid kit and a water filter or purification tablets are also smart additions. Check out the <a href="{{ "/gear" | relative_url }}">gear</a> I bring with me on most of my trips.
+
+**Guides and porters:** For the Manaslu Circuit Trek, hiring a guide is required. Guides can also assist you in navigating the trail and are a great source of information. Your gear can be carried by porters, which will improve your trek.
+
+**Accommodation:** During the trek, you will be staying in teahouses. Teahouses are simple lodges that provide basic accommodation and meals.
+
+**Food and water:** Basic meals are served at teahouses along the trail, but it's a good idea to pack some snacks and a water bottle. To ensure you have safe drinking water, you'll also need to bring a water filter or purification tablets.
+
+**Insurance:** It's crucial to have travel and health insurance that covers remote high-altitude trekking.
+
+**Altitude sickness:** You will be at high altitudes during the Manaslu Circuit trek, and altitude sickness is a real possibility. Recognize the signs and be ready to descend if you feel sick.
+
+**Communication:** It is a good idea to bring a satellite phone or a GPS device because there isn't much mobile network coverage along the trail.
+
+**Local Currency:** The official currency of Nepal is the rupee. Although you can also pay with US dollars, it's preferable to have rupees in small denominations for the purchase. Bring enough cash in rupees with you for the [cost of the trek](#cost).
+
+## Best Time To Go
+
+Depending on your personal preferences and the kind of trekking experience you're looking for, there is no one best time to hike the Manaslu Circuit. The two main trekking seasons in Nepal are, however, generally the spring (March to May) and the fall (September to November) seasons.
+
+**Spring:** The best time to hike the Manaslu Circuit to see the area in bloom is in the spring, from March to May. The rhododendrons, Nepal's national flower, are in full bloom, and the weather is mild. Additionally, there are fewer people on the trails, which makes for a more tranquil trekking experience.
+
+**Autumn:** The most well-liked trekking season in Nepal is the autumn (September to November), and for good reason. The ideal conditions for trekking are provided by the clear, dry weather. Great views of the mountains are also made possible by the clear skies. But be aware that the trails might be very busy at this time.
+
+**Winter:** It is not advised to trek the Manaslu Circuit during the winter (December–February) because the trails can be icy and snow-covered, which makes them dangerous. In addition, it is extremely cold outside, and there is a lot of snow up higher, making trekking more difficult. However, going in the shoulder season or off season has its benefits. We went in December and couldn't have been happier because we had clear skies and few people but you might still encounter deep snow in Larka Pass. 
+
+**Summer:** The Manaslu Circuit should not be hiked during Nepal's monsoon season, which lasts from June–August. Since the trails are frequently muddy and slippery, it can be challenging and unpleasant to hike when it rains heavily. The trails may also become impassable in some areas due to landslides and flooding brought on by the heavy rain.
+
+## Itinerary
+
+The trek typically takes around 14-21 days to complete, depending on the route and your pace. Below is an example 14 day itinerary. If you have extra time, consider adding some of the [side trips](#best-side-trips) listed below, stopping by more villages along the way, or taking extra rest days.
+
+| Day | Itinerary | Distance | Elevation |
+| --- | --------- | -------- | --------- |
+| 1 | Drive from Kathmandu to Soti Khola | 160 km / 99 miles | (700 m / 2297 ft) |
+| 2 | Trek from Soti Khola to Machha Khola | 17 km / 10.5 miles | (930 m / 3051 ft) |
+| 3 | Trek from Machha Khola to Jagat | 14 km / 8.7 miles | (1340 m / 4396 ft) |
+| 4 | Trek from Jagat to Deng | 18 km / 11.2 miles | (1804 m / 5916 ft) |
+| 5 | Trek from Deng to Namrung | 15 km / 9.3 miles | (2630 m / 8629 ft) |
+| 6 | Trek from Namrung to Lho | 12 km / 7.5 miles | (3400 m / 11,155 ft) |
+| 7 | Trek from Lho to Samagaun | 8 km / 5 miles | (3520 m / 11548 ft) |
+| 8 | Rest day in Samagaun | - | - |
+| 9 | Trek from Samagaun to Samdo | 12 km / 7.5 miles | (3860 m / 12,660 ft) |
+| 10 | Trek from Samdo to Dharamsala | 12 km / 7.5 miles | (4460 m / 14,634 ft) |
+| 11 | Trek from Dharamsala to Bimtang via Larkya La Pass | 20 km / 12.4 miles | (5160 m / 16,929 ft) |
+| 12 | Trek from Bimtang to Tilche | 8 km / 5 miles | (2300 m / 7545 ft) |
+| 13 | Trek from Tilche to Dharapani | 12 km / 7.5 miles | (1860 m / 6100 ft) |
+| 14 | Drive from Dharapani to Kathmandu | 190 km / 118 miles | - |
+
+##### How to get to Soti Khola
+The Manaslu Circuit trek's starting point is Soti Khola, which is accessible via both a road and a trail. The most popular method of transportation to Soti Khola is by taking a bus or jeep from Kathmandu to the closest roadhead, Arughat. It takes 6-7 hours to walk from Arughat to Soti Khola. As an alternative, you can drive straight from Kathmandu to Soti Khola. The trip could take up to 10 hours due to the poor condition of the road. The most popular method of transportation to get to Soti Khola is a combination of bus and jeep ride.
+
+##### Summary
+Your Manaslu Circuit itinerary can be as flexible as you want. There are tons of [side trips](#best-side-trips) you can choose from, or you can choose to rest somewhere for an extra few days if your schedule allows. Due to deep (1m+) snow in Larka pass, we decided to turn back at the end instead of continuing to Bhimtang and finishing in Syange. Even so it was such an amazing experience and I hope yours will be too!
+
+## Best Side Trips
 
 Every part of our 21 days was breathtaking, and there are infinite possibilities to add side trips to your itinerary, but here is what stands out most for us.
 
@@ -71,40 +132,6 @@ From Samagaon you can also hike up to Manaslu Base Camp. It offers stellar views
 
 Like I said, the Manaslu region is breathtaking no matter where you look. I would include all of my side trips and photos but I want you to finish reading sometime soon so you can plan yourself!
 
-## How To Get There
-
-You will need to find transportation to <a href="https://goo.gl/maps/P6yo7uXeNqEh1GqR8" target="blank">Sotikhola</a>. You have a few options:
-- take a bus from Kathmandu or Pokhara to Gorkha, and then another bus to Sotikhola
-- take a private Jeep directly to Sotikhola
-- hire a tour company to book things for you
-
-## When Should You Go?
-
-March to May and October to November are the most popular for trekking the Manaslu Circuit. However, going in the shoulder season or off season has its benefits. We went in December and couldn't have been happier because we had clear skies and few people but you might still encounter deep snow in Larka Pass.
-
-## Itinerary
-
-The trek typically takes around 14-21 days to complete, depending on the route and your pace.
-
-| Day   | Description                                            | (Dist / Elev)          |
-|:-----:|--------------------------------------------------------|-----------------------:|
-| 0     | Transportation to Sotikhola                            | -                      |
-| 1     | Sotikhola to Machhakhola                               | (14km / 440m)          |
-| 2     | Machhakhola to Jagat                                   | (17km / 760m)          |
-| 3     | Jagat to Deng                                          | (20km / 1000m)         |
-| 4     | Deng to Sereng Gumba Monastery                         | (18km / 1900m)         |
-| 5-8   | Rest at Sereng Gumba Monastery                         | -                      |
-| 9     | Sereng Gumba Monastery to Prok                         | (13km / 1400m)         |
-| 10    | Prok to Lhi                                            | (13km / 800m)          |
-| 11    | Lhi to Shyala                                          | (9km / 640m)           |
-| 12    | Shylya to Samagaon                                     | (4km / 69m)            |
-| 13-14 | Rest at Samagaon, Birendra Lake, and Manaslu Base Camp | (10km / 1300m)         |
-| 15    | Samagaon to Samdo                                      | (8km / 350m)           |
-| 16    | Samdo to Larka Pass Viewpoint to Samdo                 | (22km / 2000m)         |
-| 17-21 | Return from Samdo to Sotikhola                         | (102km / 4200m)        |
-
-Your Manaslu Circuit itinerary can be as flexible as you want. There are tons of side trips you can choose from, or you can choose to rest somewhere for an extra few days if your schedule allows. Due to deep (1m+) snow in Larka pass, we decided to turn back at the end instead of continuing to Bhimtang and finishing in Syange. Even so it was such an amazing experience and I hope yours will be too!
-
 ## Cost
 
 The cost of trekking the Manaslu Circuit largely depends on your preferred trekking style and what you eat :) You can make this as cheap or expensive as you want, but there are a few required costs.
@@ -125,12 +152,12 @@ By staying in simple housing and eating Dal Bhat everyday, we were able to keep 
 
 | Item                | Cost |
 |---------------------|------|
-| 21 Days of Trekking | $462 |
-| Permit              | $180 |
-| Transportation      | $70  |
-| Total               | $712 |
+| 14-21 Days of Trekking | $308 - $462 |
+| Permit | $180 |
+| Transportation | $70  |
+| Total | $558 - $712 |
 
-The above costs are of course without a guide or porter, the costs of which vary based on your needs. We spent maybe $500 for a freelance guide and $180 for a porter.
+The above costs are of course without a guide, porter, or insurance, the costs of which vary based on your needs. We spent around $500 for a freelance guide for 21 days.
 
 ## What Should You Bring?
 

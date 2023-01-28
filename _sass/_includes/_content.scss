@@ -232,6 +232,7 @@
 			padding: 10px;
 			font-size: $p-small;
 			font-weight: $p-weight;
+			line-height: 1.5;
 
 			@include mq(tabletp) {
 				padding: 15px;
