@@ -6,6 +6,7 @@ title: How to Hike the Manaslu Circuit
 date: 2022-08-07
 modified_date: 2023-01-12
 description: 21 Days on the Manaslu Circuit with our favorite highlights, and more.
+introduction: Trekking in <a href="/galleries/nepal">Nepal</a> is undoubtedly a lifetime experience you won't soon forget. Any route you choose is full of its own surprises and wonders. While some of the more popular treks are full of breathtaking views and convenient services, the lesser-known ones are sparsely populated, more authentic, and still come with some amazing views. We chose to trek in Manaslu during the shoulder season (December) because we wanted to avoid tourists and see a more authentic Nepal and Tibet. If you feel the same and want to know more, keep reading :)
 tags: ["nepal", "manaslu-circuit", "hiking"]
 image: photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset
 youtube: I2I4EySGYEU
@@ -14,9 +15,7 @@ redirect_from:
     - /g/manaslu
 ---
 
-Trekking in Nepal is undoubtedly a lifetime experience you won't soon forget. Any route you choose is full of its own surprises and wonders. While some of the more popular treks are full of breathtaking views and convenient services, the lesser-known ones are sparsely populated, more authentic, and still come with some amazing views. We chose to trek in Manaslu during the shoulder season (December) because we wanted to avoid tourists and see a more authentic Nepal and Tibet. If you feel the same and want to know more, keep reading :)
-
-## Our Favorite Highlights
+## Highlights
 
 Every part of our 21 days was breathtaking, and there are infinite possibilities to add side trips to your itinerary, but here is what stands out most for us.
 
@@ -83,7 +82,9 @@ You will need to find transportation to <a href="https://goo.gl/maps/P6yo7uXeNqE
 
 March to May and October to November are the most popular for trekking the Manaslu Circuit. However, going in the shoulder season or off season has its benefits. We went in December and couldn't have been happier because we had clear skies and few people but you might still encounter deep snow in Larka Pass.
 
-## 21 Day Itinerary
+## Itinerary
+
+The trek typically takes around 14-21 days to complete, depending on the route and your pace.
 
 | Day   | Description                                            | (Dist / Elev)          |
 |:-----:|--------------------------------------------------------|-----------------------:|

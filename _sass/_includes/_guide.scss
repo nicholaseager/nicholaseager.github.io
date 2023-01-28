@@ -1,0 +1,89 @@
+.guide-intro-background {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $background-alt-color;
+
+    @include mq(tabletp) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.guide-intro-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 500px;
+
+    @include mq(tabletp) {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 90%;
+    }
+}
+
+.guide-quick-links {
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include mq(tabletl) {
+        margin-bottom: 40px;
+    }
+}
+
+.guide-intro {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(tabletl) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.guide-intro-content {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+
+    @include mq(tabletl) {
+        margin-right: 40px;
+        margin-bottom: 0px;
+        width: 50%;
+    }
+
+    @include mq(laptop) {
+        margin-right: 80px;
+    }
+}
+
+.guide-intro-video-container {
+	width: 100%;
+    padding-bottom: 20px;
+
+    @include mq(tabletl) {
+        width: 50%;
+        padding-bottom: 0px;
+    }
+}
+
+.guide-intro-video {
+    position: relative;
+	width: 100%;
+	aspect-ratio: 640/360;
+
+    iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.guide-intro-caption {
+    text-align: center;
+    padding: 5px;
+}

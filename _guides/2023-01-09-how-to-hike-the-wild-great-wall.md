@@ -7,6 +7,7 @@ title: How to Hike the Wild Great Wall of China
 date: 2019-02-11
 modified_date: 2023-01-09
 description: Straying off the beaten path and exploring the ruins of an ancient wall.
+introduction: Backpacking through China was an unforgettable experience. Compared to traveling in the United States, Europe, or even Hong Kong, China is an entirely separate world. The natural side of China is breathtaking. From East to West, China has so much to offer. The Great Wall is no exception. If you do it right, you can make it an adventure of your own. Just like any touristy area in another country, hostels have tours available. But these don’t necessarily show the true, local side of a country. They would put you in a chartered van with other foreigners, give you lunch, take you to a place where everyone else goes, and basically do everything for you. And this isn’t bad for everyone; I’m sure some people would rather enjoy the experience. But it’s not for me. I wanted to plan everything on my own. By doing so, I believe I have more of an adventure, meet locals, and try to survive on my own in a totally new world.
 image: photos/countries/china/jiankou/wild-great-wall-at-sunrise
 tags: ["china", "wild-great-wall", "hiking"]
 
@@ -14,10 +15,6 @@ googlemap: 11oQ9G8H2Vn0fv65wToQxsS6tew9eU6c
 redirect_from:
     - /g/great-wall
 ---
-
-## Introduction
-
-Backpacking through China was an unforgettable experience. Compared to traveling in the United States, Europe, or even Hong Kong, China is an entirely separate world. The natural side of China is breathtaking. From East to West, China has so much to offer. The Great Wall is no exception. If you do it right, you can make it an adventure of your own. Just like any touristy area in another country, hostels have tours available. But these don’t necessarily show the true, local side of a country. They would put you in a chartered van with other foreigners, give you lunch, take you to a place where everyone else goes, and basically do everything for you. And this isn’t bad for everyone; I’m sure some people would rather enjoy the experience. But it’s not for me. I wanted to plan everything on my own. By doing so, I believe I have more of an adventure, meet locals, and try to survive on my own in a totally new world.
 
 ### What is the Wild Great Wall?
 

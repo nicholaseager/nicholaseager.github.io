@@ -6,19 +6,33 @@ layout: default
 	{% include banner.html image=page.image title=page.title %}
 </section>
 
-<section id="content" class="single table-of-contents-container">
-	<h1>{{ page.description }}</h1>
+<section id="content">
+	<div class="guide-intro-background">
+		<div class="guide-intro-container">
+			<div class="guide-intro">
+				<div class="guide-intro-content">
+					<h1>{{ page.title }}</h1>
+					<p><i>Last updated: {{ page.modified_date | default: page.date | date_to_long_string }}</i></p>
+					{% if page.introduction %}
+					<p>{{ page.introduction }}</p>
+					{% endif %}
+				</div>
+	
+				<div class="guide-intro-video-container">
+					<div class="guide-intro-video">
+						{% if page.youtube %}
+						{% include youtube.html id=page.youtube %}
+						{% else %}
+						{% include image.html src=page.image %}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-	{% if page.introduction %}
-	<p>{{ page.introduction }}</p>
-	{% endif %}
-
-	{% if page.youtube %}
-	{% include youtube.html id=page.youtube %}
-	{% endif %}
-
-	<hr>
-
+<section class="single table-of-contents-container">
 	<div id="table-of-contents">
 		<h2 id="table-of-contents">Table of Contents</h2>
 		<ol>

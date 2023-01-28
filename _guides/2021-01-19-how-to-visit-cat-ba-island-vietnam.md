@@ -7,6 +7,7 @@ title: How to Visit Cat Ba Island and Lan Ha Bay, Vietnam
 date: 2021-01-19
 modified_date: 2023-01-28
 description: Kayking the bay, hiking through the jungle, and sleeping on a floating house
+introduction: Cat Ba Island is a true gem in Vietnam, known for its natural beauty, quiet tranquility, and adventure. The island offers a variety of activities, such as hiking through lush jungle and national parks, rock-climbing on the islets, kayaking in the crystal clear waters of Lan Ha Bay, and staying on a floating house to witness the beautiful sunsets. The island is home to diverse landscapes and wildlife, from towering limestone cliffs to hidden caves and lagoons. Personally I think Lan Ha Bay is better than Halong Bay because it's less crowded and more secluded. If you want a more authentic and peaceful experience, keep reading :)
 tags: ["vietnam", "cat-ba-island"]
 image: photos/countries/vietnam/cat-ba/lan-ha-bay-sunset-on-the-water
 
@@ -15,12 +16,6 @@ googlemap: 1YJ8_vtF8zNt3VZMqpZAdAha_uPkV63s
 redirect_from:
     - /g/cat-ba
 ---
-
-## Introduction
-
-Cat Ba Island is a true gem in Vietnam, known for its natural beauty, quiet tranquility, and adventure. The island offers a variety of activities, such as hiking through lush jungle and national parks, rock-climbing on the islets, kayaking in the crystal clear waters of Lan Ha Bay, and staying on a floating house to witness the beautiful sunsets. The island is home to diverse landscapes and wildlife, from towering limestone cliffs to hidden caves and lagoons.
-
-Personally I think Lan Ha Bay is better than Halong Bay because it's less crowded and more secluded. If you want a more authentic and peaceful experience, keep reading :)
 
 ## Favorite Highlights
 

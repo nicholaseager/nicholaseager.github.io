@@ -6,6 +6,7 @@ title: How to Hike Inside the Grand Canyon in One Day
 date: 2023-01-08
 modified_date: 2023-01-12
 description: Everything you need to know about hiking down into the Grand Canyon and back up again
+introduction: Hiking the Grand Canyon rim to river and back to rim is a physically demanding feat that requires a high level of fitness and preparation. Here is a guide containing everything you need to know to to help you plan your hike.
 image: photos/countries/united-states/arizona/grand-canyon-national-park-rim-view
 tags: ["united-states", "grand-canyon", "hiking"]
 youtube: Rp4V6waPRZo
@@ -13,8 +14,6 @@ alltrails: grand-canyon-hike-5735c3a
 redirect_from:
     - /g/grand-canyon
 ---
-
-Hiking the Grand Canyon rim to river and back to rim is a physically demanding feat that requires a high level of fitness and preparation. Here is a guide containing everything you need to know to to help you plan your hike.
 
 ## Suggested Routes
 

@@ -6,16 +6,13 @@ title: A Guide to Mountain Hut to Hut Hiking in Italy
 date: 2022-12-19
 modified_date: 2023-01-12
 description: Everything you need to know about hiking and mountain huts in Italy
+introduction: What is hiking like in Italy? How do I book a mountain hut? What types of mountain huts are there? How much does it cost? Is wild camping in a tent allowed? What is an alta via or via ferrata? Let's start things off by talking about some of the basics.
 tags: ["italy", "hut-to-hut", "hiking"]
 image: photos/countries/italy/dolomites/locatelli-hut-tre-cime-sheep
 youtube: djldGrhYFdo
 redirect_from:
     - /g/mountain-huts
 ---
-
-What is hiking like in Italy? How do I book a mountain hut? What types of mountain huts are there? How much does it cost? Is wild camping in a tent allowed? What is an alta via or via ferrata?
-
-Let's start things off by talking about some of the basics.
 
 ## What is hiking like in Italy?
 {% include image.html src="photos/countries/italy/dolomites/man-sitting-on-a-cliff" %}

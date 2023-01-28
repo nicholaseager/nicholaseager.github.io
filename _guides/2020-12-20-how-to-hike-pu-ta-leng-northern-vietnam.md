@@ -6,6 +6,7 @@ title: How to Hike Pu Ta Leng in Northern Vietnam
 date: 2022-08-07
 modified_date: 2023-01-12
 description: A mountain on the edge of Vietnam and China
+introduction: Hiking in northern Vietnam can be a thrilling and adventurous experience. The region is home to a diverse landscape, including rolling hills, towering mountains, and dense forests. The trails offer breathtaking views of the surrounding countryside, as well as the opportunity to see a wide range of plant and animal life. Join us as we hike through cloudy jungles, spend a few nights in a local village, go to a highland market, play with all sorts of animals, summit Pu Ta Leng peak twice, and cook our own delicious dinner in a shelter.
 tags: ["vietnam", "pu-ta-leng", "hiking"]
 image: photos/countries/vietnam/pu-ta-leng/two-people-climbing-through-bamboo-tunnel
 youtube: fGP0u9nVVD8
@@ -13,8 +14,6 @@ googlemap: 1n5X4E7mhyiZVvwEpGhEOL0bRg9V375U
 redirect_from:
     - /g/pu-ta-leng
 ---
-
-Hiking in northern Vietnam can be a thrilling and adventurous experience. The region is home to a diverse landscape, including rolling hills, towering mountains, and dense forests. The trails offer breathtaking views of the surrounding countryside, as well as the opportunity to see a wide range of plant and animal life. Join us as we hike through cloudy jungles, spend a few nights in a local village, go to a highland market, play with all sorts of animals, summit Pu Ta Leng peak twice, and cook our own delicious dinner in a shelter.
 
 ## Best Time to Go
 
