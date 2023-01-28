@@ -5,9 +5,10 @@ header: transparent
 
 title: How to Spend 9 Days on a Safari in Tanzania
 date: 2023-01-09
-modified_date: 2023-01-12
+modified_date: 2023-01-28
 description: Everything you need to know about going on a Safari in Tanzania
 image: photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset
+introduction: A safari in Tanzania should be at the top of your bucket list if you're looking for a once-in-a-lifetime experience. Imagine spending your days exploring the vast savannahs, spotting a variety of wild animals, from majestic lions and leopards to graceful giraffes and zebras, and waking up to the sounds of lions roaring and elephants trumpeting. With miles of golden grasslands and soaring mountains, the surroundings are breathtaking, and the sunsets are nothing short of magical. The Maasai people have lived in harmony with the wildlife for centuries, which makes the local culture fascinating. Don't pass up this once-in-a-lifetime chance to experience the wild and learn a different way of life.
 tags: ["tanzania", "africa", "safari"]
 
 youtube: ODLfcfoppas
