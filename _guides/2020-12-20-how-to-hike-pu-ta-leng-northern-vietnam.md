@@ -4,6 +4,7 @@ jsonld: article
 header: transparent
 title: How to Hike Pu Ta Leng in Northern Vietnam
 date: 2022-08-07
+modified_date: 2023-01-12
 description: A mountain on the edge of Vietnam and China
 image: photos/countries/vietnam/pu-ta-leng/two-people-climbing-through-bamboo-tunnel
 youtube: fGP0u9nVVD8

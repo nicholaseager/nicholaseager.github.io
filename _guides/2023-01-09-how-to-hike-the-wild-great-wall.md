@@ -4,7 +4,8 @@ jsonld: article
 header: transparent
 
 title: How to Hike the Wild Great Wall of China
-date: 2023-01-09
+date: 2019-02-11
+modified_date: 2023-01-09
 description: Straying off the beaten path and exploring the ruins of an ancient wall.
 image: photos/countries/china/jiankou/wild-great-wall-at-sunrise
 

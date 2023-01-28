@@ -5,4 +5,3 @@ gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-redirect-from'
 gem 'webrick'
-gem "jekyll-last-modified-at"

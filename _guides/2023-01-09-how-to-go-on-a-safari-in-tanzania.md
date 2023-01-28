@@ -5,6 +5,7 @@ header: transparent
 
 title: How to Spend 9 Days on a Safari in Tanzania
 date: 2023-01-09
+modified_date: 2023-01-12
 description: Everything you need to know about going on a Safari in Tanzania
 image: photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset
 
