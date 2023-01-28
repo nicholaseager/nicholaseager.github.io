@@ -5,7 +5,7 @@ header: transparent
 title: How to Hike the Manaslu Circuit
 date: 2022-08-07
 modified_date: 2023-01-28
-description: 21 Days on the Manaslu Circuit with our favorite highlights, and more.
+description: Everything you need to know to plan your own Manaslu Circuit hike.
 introduction: Trekking in <a href="/galleries/nepal">Nepal</a> is undoubtedly a lifetime experience you won't soon forget. Any route you choose is full of its own surprises and wonders. While some of the more popular treks are full of breathtaking views and convenient services, the lesser-known ones are sparsely populated, more authentic, and still come with some amazing views. We chose to trek in Manaslu during the shoulder season (December) because we wanted to avoid tourists and see a more authentic Nepal and Tibet. If you feel the same and want to know more, keep reading :)
 tags: ["nepal", "manaslu-circuit", "hiking"]
 image: photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset
