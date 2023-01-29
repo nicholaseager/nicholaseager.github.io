@@ -2,8 +2,10 @@
 layout: default
 ---
 
+{%- assign guide = site.data.guides[page.guide] -%}
+
 <section class="section__banner">
-	{% include banner.html image=page.image title=page.title %}
+	{% include banner.html image=guide.image title=guide.title %}
 </section>
 
 <section id="content">
@@ -11,30 +13,30 @@ layout: default
 		<div class="guide-intro-container">
 			<div class="guide-intro">
 				<div class="guide-intro-content">
-					<h1>{{ page.title }}</h1>
-					<p><i>Last updated: {{ page.modified_date | default: page.date | date_to_long_string }}</i></p>
-					{% if page.introduction %}
-					<p>{{ page.introduction }}</p>
+					<h1>{{ guide.title }}</h1>
+					<p><i>Last updated: {{ guide.modified_date | default: guide.date | date_to_long_string }}</i></p>
+					{% if guide.introduction %}
+					<p>{{ guide.introduction }}</p>
 					{% endif %}
 				</div>
 	
 				<div class="guide-intro-video-container">
 					<div class="guide-intro-video">
-						{% if page.youtube %}
-						{% include youtube.html id=page.youtube %}
+						{% if guide.youtube %}
+						{% include youtube.html id=guide.youtube %}
 						{% else %}
-						{% include image.html src=page.image %}
+						{% include image.html src=guide.image %}
 						{% endif %}
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	{% if page.links %}
+	{% if guide.links %}
 	<div class="guide-quick-links">
 		<span>
 			Quick Links:
-			{% for link in page.links %}
+			{% for link in guide.links %}
 			<a href="{{ link.url | relative_url }}">{{link.title}}</a>
 			{%- unless forloop.last -%},{%- endunless -%}
 			{% endfor %}
@@ -54,30 +56,213 @@ layout: default
 	<hr>
 
 	<div class="table-of-contents-content">
+		<!-- Basics -->
+		{% if guide.basics %}
+		<h2>Basics</h2>
+		{% if guide.basics.introduction %}
+		<p>{{ guide.basics.introduction }}</p>
+		{% endif %}
+		{% for item in guide.basics.items %}
+		<p><b>{{item.title}}:</b> {{item.description}}</p>
+		{% endfor %}
+		{% if guide.basics.conclusion %}
+		<p>{{ guide.basics.conclusion }}</p>
+		{% endif %}
+		{% endif %}
+		<!-- End Basics -->
 
-		{% if page.alltrails %}
+		<!-- Seasons -->
+		{% if guide.seasons %}
+		<h2>Best Time To Go</h2>
+		{% if guide.seasons.introduction %}
+		<p>{{ guide.seasons.introduction }}</p>
+		{% endif %}
+		{% for item in guide.seasons.items %}
+		<p><b>{{item.title}}:</b> {{item.description}}</p>
+		{% endfor %}
+		{% if guide.seasons.conclusion %}
+		<p>{{ guide.seasons.conclusion }}</p>
+		{% endif %}
+		{% endif %}
+		<!-- End Seasons -->
+
+		<!-- Route Overview -->
+		{% if guide.routemapid %}
 		<h2>Map with Route Overview</h2>
-		{% include alltrails.html id=page.alltrails %}
-		<hr>
+		{% include alltrails.html id=guide.routemapid %}
 		{% endif %}
+		<!-- End Route Overview -->
 
-		{{ page.content }}
-
-		<hr>
-
-		{% if page.googlemap %}
+		<!-- Points of Interest -->
+		{% if guide.pointsmapid %}
 		<h2>Map with Points of Interest</h2>
-		{% include my-map.html id=page.googlemap %}
+		{% include my-map.html id=guide.pointsmapid %}
+		{% endif %}
+		<!-- End Points of Interest -->
+
+		<!-- Itinerary -->
+		{% if guide.itinerary %}
+		<h2>Daily Itinerary</h2>
+		{% if guide.itinerary.introduction %}
+		<p>{{ guide.itinerary.introduction }}</p>
+		{% endif %}
+		
+		<table>
+			<thead>
+			  <tr>
+				<th>Day</th>
+				<th>Itinerary</th>
+				{% if guide.itinerary.columns.distance %}
+				<th>{{guide.itinerary.columns.distance}}</th>
+				{% endif %}
+				{% if guide.itinerary.columns.elevation %}
+				<th>{{guide.itinerary.columns.elevation}}</th>
+				{% endif %}
+			  </tr>
+			</thead>
+			<tbody>
+				{% for day in guide.itinerary.days %}
+				<tr>
+					<td>{{forloop.index}}</td>
+					<td>{{day.title}}</td>
+					{% if day.distance %}
+					<td>{{day.distance}}</td>
+					{% endif %}
+					{% if day.elevation %}
+					<td>{{day.elevation}}</td>
+					{% endif %}
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+		{% for day in guide.itinerary.days %}
+		{% if day.description %}
+		<h4>{{day.title}}</h4>
+		<p>{{day.description}}</p>
+		{% endif %}
+		{% endfor %}
+
+		{% if guide.itinerary.conclusion %}
+		<p>{{ guide.itinerary.conclusion }}</p>
+		{% endif %}
+		{% endif %}
+		<!-- End Itinerary -->
+
+		<!-- Highlights -->
+		{% if guide.highlights %}
+		<h2>Best Highlights</h2>
+		{% if guide.highlights.introduction %}
+		<p>{{ guide.highlights.introduction }}</p>
 		{% endif %}
 
-		<h2>Gear Required</h2>
-		<p>When you're out exploring, it's super important to have the right gear. The right stuff can keep you comfortable, safe, and happy on your trip, and it can also help you take care of the planet. Make sure to pack the right clothes and gear for your trip. A little bit of planning and preparation can go a long way towards making your adventure a success.</p>
+		{% for item in guide.highlights.items %}
+		<h3>{{item.title}}</h3>
+		{% if item.images %}
+		{% assign photos = item.images | join: '<br />' %}
+		{{images}}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
+		<p>{{item.description}}</p>
+		{% endfor %}
+
+		{% if guide.highlights.conclusion %}
+		<p>{{ guide.highlights.conclusion }}</p>
+		{% endif %}
+		{% endif %}
+		<!-- End Highlights -->
+
+		<!-- Cost -->
+		{% if guide.cost %}
+		<h2>How Much Does it Cost?</h2>
+		{% if guide.cost.introduction %}
+		<p>{{ guide.cost.introduction }}</p>
+		{% endif %}
+		
+		<table>
+			<thead>
+			  <tr>
+				<th>Item</th>
+				<th>Cost</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{% for item in guide.cost.items %}
+				<tr>
+					<td>{{item.title}}</td>
+					<td>{{item.cost}}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+		{% for item in guide.cost.items %}
+		{% if item.description %}
+		<h4>{{item.title}}</h4>
+		<p>{{item.description}}</p>
+		{% endif %}
+		{% endfor %}
+
+		{% if guide.cost.conclusion %}
+		<p>{{ guide.cost.conclusion }}</p>
+		{% endif %}
+		{% endif %}
+		<!-- End Cost -->
+
+		<!-- Gear -->
+		{% if guide.gear %}
+		<h2>What Should You Bring?</h2>
+		{% if guide.gear.introduction %}
+		<p>{{ guide.gear.introduction }}</p>
+		{% endif %}
+		
 		<p>Check out the <a href="{{ "/gear" | relative_url }}">gear</a> I bring with me on most of my trips.</p>
+		
+		<table>
+			<thead>
+			  <tr>
+				<th>Item</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{% for item in guide.gear.items %}
+				<tr>
+					<td>{{item.title}}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+		{% for item in guide.gear.items %}
+		{% if item.description %}
+		<h4>{{item.title}}</h4>
+		<p>{{item.description}}</p>
+		{% endif %}
+		{% endfor %}
+
+		{% if guide.gear.conclusion %}
+		<p>{{ guide.gear.conclusion }}</p>
+		{% endif %}
+		<p>When you're out exploring, it's super important to have the right gear. The right stuff can keep you comfortable, safe, and happy on your trip, and it can also help you take care of the planet. Make sure to pack the right clothes and gear for your trip. A little bit of planning and preparation can go a long way towards making your adventure a success.</p>
+		{% endif %}
+		<!-- End Gear -->
+
+		<!-- Extra Sections -->
+		{% if guide.extra_sections %}
+		{% for section in guide.extra_sections %}
+		<h2>{{section.title}}</h2>
+		<p>{{section.description}}</p>
+		{% endfor %}
+		{% endif %}
+		<!-- End Extra Sections -->
 
 		<h2>Conclusion</h2>
+		{% if guide.conclusion %}
+		<p>{{ guide.conclusion }}</p>
+		{% endif %}
 		<p>Please <a href="{{ "/contact" | relative_url }}">contact</a> me if you want to ask questions; I am happy to help.</p>
-		{% if page.youtube %}
-		<p>You can also check out <a href="https://www.youtube.com/watch?v={{ page.youtube }}" target="_blank">a video</a> that I made about the entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)</p>
+		{% if guide.youtube %}
+		<p>You can also check out <a href="https://www.youtube.com/watch?v={{ guide.youtube }}" target="_blank">a video</a> that I made about the entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)</p>
 		{% endif %}
 	</div>
 </section>
