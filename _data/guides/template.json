@@ -8,8 +8,6 @@
         "guide"
     ],
     "youtube": "Rp4V6waPRZo",
-    "pointsmapid": "1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc",
-    "routemapid": "grand-canyon-hike-5735c3a",
     "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur venenatis sem et semper. Aliquam porttitor accumsan nibh ac imperdiet. Ut sem sem, fringilla eu elementum in, faucibus quis mauris. Aenean quis ex elit. Ut aliquam dui viverra, imperdiet ex eu, ultrices tellus. Vestibulum malesuada faucibus tincidunt. Integer pellentesque consequat mauris id scelerisque. Donec eu magna nec quam convallis varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sollicitudin cursus arcu, cursus vestibulum nisl ultricies non. Donec et suscipit magna.",
     "conclusion": "Integer a rhoncus nisl. Pellentesque arcu lorem, pulvinar a commodo in, pharetra ac orci. Suspendisse cursus eu orci in commodo. Aenean semper tempor rhoncus. Praesent eget finibus ipsum. Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis. Phasellus imperdiet ipsum quam, sit amet scelerisque felis tempus ac. Vivamus auctor semper quam quis dictum. Phasellus imperdiet sagittis volutpat.",
     "links": [
@@ -22,6 +20,16 @@
             "url": "/gear"
         }
     ],
+    "maps": {
+        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+        "points_of_interest": {
+            "id": "1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc"
+        },
+        "route_overview": {
+            "id": "grand-canyon-hike-5735c3a"
+        }
+    },
     "basics": {
         "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
         "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",

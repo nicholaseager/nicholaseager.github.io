@@ -86,19 +86,28 @@ layout: default
 		{% endif %}
 		<!-- End Seasons -->
 
-		<!-- Route Overview -->
-		{% if guide.routemapid %}
-		<h2>Map with Route Overview</h2>
-		{% include alltrails.html id=guide.routemapid %}
+		<!-- Maps -->
+		{% if guide.maps %}
+		<h2>Maps</h2>
+		{% if guide.maps.introduction %}
+		<p>{{ guide.maps.introduction }}</p>
 		{% endif %}
-		<!-- End Route Overview -->
+		
+		{% if guide.maps.route_overview %}
+		<h3>Route Overview</h3>
+		{% include alltrails.html id=guide.maps.route_overview.id %}
+		{% endif %}
 
-		<!-- Points of Interest -->
-		{% if guide.pointsmapid %}
-		<h2>Map with Points of Interest</h2>
-		{% include my-map.html id=guide.pointsmapid %}
+		{% if guide.maps.points_of_interest %}
+		<h3>Points of Interest</h3>
+		{% include my-map.html id=guide.maps.points_of_interest.id %}
 		{% endif %}
-		<!-- End Points of Interest -->
+
+		{% if guide.maps.conclusion %}
+		<p>{{ guide.maps.conclusion }}</p>
+		{% endif %}
+		{% endif %}
+		<!-- End Maps -->
 
 		<!-- Itinerary -->
 		{% if guide.itinerary %}
@@ -215,7 +224,7 @@ layout: default
 		{% if guide.gear.introduction %}
 		<p>{{ guide.gear.introduction }}</p>
 		{% endif %}
-		
+
 		<p>Check out the <a href="{{ "/gear" | relative_url }}">gear</a> I bring with me on most of my trips.</p>
 		
 		<table>
