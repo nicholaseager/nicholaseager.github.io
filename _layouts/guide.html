@@ -133,7 +133,11 @@ layout: default
 				{% for day in guide.itinerary.days %}
 				<tr>
 					<td>{{forloop.index}}</td>
-					<td>{{day.title}}</td>
+					<td>
+						{% if day.description %}<a id="itinref:{{forloop.index}}" href="#itin:{{forloop.index}}">{% endif %}
+						{{day.title}}
+						{% if day.description %}</a>{% endif %}
+					</td>
 					{% if day.distance %}
 					<td>{{day.distance}}</td>
 					{% endif %}
@@ -146,13 +150,18 @@ layout: default
 		</table>
 
 		{% for day in guide.itinerary.days %}
+		{% if forloop.first %}<h3>Notes</h3>{% endif %}
 		{% if day.description %}
-		<h4>{{day.title}}</h4>
-		<p>{{day.description}}</p>
+		<h5 id="itin:{{forloop.index}}">{{day.title}}</h5>
+		<p>
+			{{day.description}}
+			<a href="#itinref:1" class="reversefootnote" role="doc-backlink">&#8617;</a>
+		</p>
 		{% endif %}
 		{% endfor %}
 
 		{% if guide.itinerary.conclusion %}
+		<h3>Conclusion</h3>
 		<p>{{ guide.itinerary.conclusion }}</p>
 		{% endif %}
 		{% endif %}
