@@ -183,7 +183,20 @@
         },
         {
             "title": "Extra Section 2",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur venenatis sem et semper. Aliquam porttitor accumsan nibh ac imperdiet. Ut sem sem, fringilla eu elementum in, faucibus quis mauris. Aenean quis ex elit. Ut aliquam dui viverra, imperdiet ex eu, ultrices tellus."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur venenatis sem et semper. Aliquam porttitor accumsan nibh ac imperdiet. Ut sem sem, fringilla eu elementum in, faucibus quis mauris. Aenean quis ex elit. Ut aliquam dui viverra, imperdiet ex eu, ultrices tellus.",
+            "images": [
+                "photos/countries/nepal/manaslu-circuit/sereng-monastery",
+                "photos/countries/nepal/manaslu-circuit/tall-mountains-in-clouds",
+                "photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind",
+                "photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery",
+                "photos/countries/nepal/manaslu-circuit/moonrise-over-himalayas"
+            ],
+            "sections": [
+                {
+                    "title": "Extra Sub-Section 1",
+                    "description": "In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis. Phasellus imperdiet ipsum quam, sit amet scelerisque felis tempus ac."
+                }
+            ]
         }
     ]
 }
