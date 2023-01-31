@@ -1,5 +1,10 @@
 {% assign photos = include.photos | strip | newline_to_br | strip_newlines | split: "<br />" %}
 
+{% if photos.size == 1 %}
+{% assign src=photos[0] %}
+<p>{% include image.html src=src %}</p>
+{% else %}
+
 <div class="swiper-collection-container">
     <div class="swiper swiper-collection swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
         <div class="swiper-wrapper">
@@ -30,3 +35,5 @@
     <div class="swiper-button-prev swiper-button-prev-outside"></div>
     <div class="swiper-button-next swiper-button-next-outside"></div>
 </div>
+
+{% endif %}
