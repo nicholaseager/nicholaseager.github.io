@@ -77,10 +77,11 @@
         "items": [
             {
                 "title": "60L backpack",
-                "description": "I brought a larger backpack to fit all of my photography equipment. You could easily get away with taking a 40L bag on this trip."
+                "description": "You could easily get away with taking a 40L bag on this trip. I brought a larger backpack to fit all of my photography equipment."
             },
             {
-                "title": "3L water bladder"
+                "title": "3L water bladder",
+                "description": "I drink a lot of water. After you pass Deng you should find drinkable water in the rivers. However, it is always best to treat that water."
             },
             {
                 "title": "First Aid",
