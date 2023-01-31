@@ -111,7 +111,7 @@ layout: default
 
 		<!-- Itinerary -->
 		{% if guide.itinerary %}
-		<h2>Daily Itinerary</h2>
+		<h2>Itinerary</h2>
 		{% if guide.itinerary.introduction %}
 		<p>{{ guide.itinerary.introduction }}</p>
 		{% endif %}
@@ -119,8 +119,10 @@ layout: default
 		<table>
 			<thead>
 			  <tr>
-				<th>Day</th>
-				<th>Itinerary</th>
+				{% assign phase = guide.itinerary.columns.phase | default:"Phase" %}
+				<th>{{phase}}</th>
+				{% assign itinerary = guide.itinerary.columns.itinerary | default:"Itinerary" %}
+				<th>{{itinerary}}</th>
 				{% if guide.itinerary.columns.distance %}
 				<th>{{guide.itinerary.columns.distance}}</th>
 				{% endif %}
@@ -130,31 +132,46 @@ layout: default
 			  </tr>
 			</thead>
 			<tbody>
-				{% for day in guide.itinerary.days %}
+				{% for phase in guide.itinerary.phases %}
 				<tr>
 					<td>{{forloop.index}}</td>
 					<td>
-						{% if day.description %}<a id="itinref:{{forloop.index}}" href="#itin:{{forloop.index}}">{% endif %}
-						{{day.title}}
-						{% if day.description %}</a>{% endif %}
+						{% if phase.description %}<a id="itinref:{{forloop.index}}" href="#itin:{{forloop.index}}">{% endif %}
+						{{phase.title}}
+						{% if phase.description %}</a>{% endif %}
 					</td>
-					{% if day.distance %}
-					<td>{{day.distance}}</td>
+					{% if guide.itinerary.columns.distance %}
+					<td>
+						{%- if phase.distance -%}
+						{{phase.distance}} km / {{phase.distance | times: 0.62137 | to_integer}} miles
+						{%- else -%}
+						-
+						{%- endif -%}
+					</td>
 					{% endif %}
-					{% if day.elevation %}
-					<td>{{day.elevation}}</td>
+					{% if guide.itinerary.columns.elevation %}
+					<td>
+						{%- if phase.elevation -%}
+						{{phase.elevation}} m / {{phase.elevation | times: 3.28084 | to_integer}} ft
+						{%- else -%}
+						-
+						{%- endif -%}
+					</td>
 					{% endif %}
 				</tr>
 				{% endfor %}
 			</tbody>
 		</table>
 
-		{% for day in guide.itinerary.days %}
-		{% if forloop.first %}<h3>Notes</h3>{% endif %}
-		{% if day.description %}
-		<h5 id="itin:{{forloop.index}}">{{day.title}}</h5>
+		{% for phase in guide.itinerary.phases %}
+		{% if phase.description %}
+		<h5 id="itin:{{forloop.index}}">{{phase.title}}</h5>
+		{% if phase.images %}
+		{% assign photos = phase.images | join: '<br />' %}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
 		<p>
-			{{day.description}}
+			{{phase.description}}
 			<a href="#itinref:1" class="reversefootnote" role="doc-backlink">&#8617;</a>
 		</p>
 		{% endif %}
@@ -178,7 +195,6 @@ layout: default
 		<h3>{{item.title}}</h3>
 		{% if item.images %}
 		{% assign photos = item.images | join: '<br />' %}
-		{{images}}
 		{% include post-swiper.html photos=photos %}
 		{% endif %}
 		<p>{{item.description}}</p>
@@ -245,18 +261,16 @@ layout: default
 			<tbody>
 				{% for item in guide.gear.items %}
 				<tr>
-					<td>{{item.title}}</td>
+					<td>
+						<b>{{item.title}}</b>
+						{% if item.description %}
+						<br>{{item.description}}
+						{% endif %}
+					</td>
 				</tr>
 				{% endfor %}
 			</tbody>
 		</table>
-
-		{% for item in guide.gear.items %}
-		{% if item.description %}
-		<h4>{{item.title}}</h4>
-		<p>{{item.description}}</p>
-		{% endif %}
-		{% endfor %}
 
 		{% if guide.gear.conclusion %}
 		<p>{{ guide.gear.conclusion }}</p>
