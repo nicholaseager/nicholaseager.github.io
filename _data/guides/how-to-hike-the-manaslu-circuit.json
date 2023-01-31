@@ -76,66 +76,70 @@
         "conclusion": "If you decide to hire a tour company, your list will most likely be shorter. You should discuss with them about what is necessary.",
         "items": [
             {
-                "title": "60L backpack"
+                "title": "60L backpack",
+                "description": "I brought a larger backpack to fit all of my photography equipment. You could easily get away with taking a 40L bag on this trip."
             },
             {
                 "title": "3L water bladder"
             },
             {
-                "title": "first aid",
+                "title": "First Aid",
                 "description": "I'd really recommend first aid (mainly just antibacterial, antiseptic, and bandaids) because you never know when you might find someone who needs it. We treated a lumber worker's serious finger wound close to Sereng Gumba, and my own little cuts here and there."
             },
             {
-                "title": "water purification"
+                "title": "Water Purification"
             },
             {
-                "title": "water proof boots"
+                "title": "Waterproof Boots"
             },
             {
-                "title": "two sets of hiking clothes"
+                "title": "Two sets of hiking clothes"
             },
             {
-                "title": "one set of swimming/running clothes"
+                "title": "One set of swimming/running clothes",
+                "description": "You never know... We found an amazing <a href='https://youtu.be/I2I4EySGYEU?t=217' target='_blank'>hot spring</a> on our journey."
             },
             {
-                "title": "a sleeping bag",
+                "title": "A sleeping bag",
                 "description": "Because you will be eating and sleeping in tea houses, you do not need to bring sleeping or cooking gear. Even in winter, you do not need a sleeping bag because the tea house owners are happy to give you an extra blanket. However, if you get cold easily, you can bring one anyway. I did not use the sleeping bag except once because the tea house owners were always kind enough to give us extra blankets. But we went in winter when there weren't that many other folks."
             },
             {
-                "title": "a sun hat"
+                "title": "A sun hat"
             },
             {
-                "title": "two down jackets (-10°C each)"
+                "title": "Two down jackets (-10°C each)",
+                "description": "Because you'll be starting from the warmer valley and hiking up into the colder pass, it is nice to layer."
             },
             {
-                "title": "thermal underwear"
+                "title": "Thermal Underwear"
             },
             {
-                "title": "three pairs of merino wool socks"
+                "title": "Three pairs of merino wool socks"
             },
             {
-                "title": "flip flops for tea house exploring"
+                "title": "Flip flops",
+                "description": "for tea house exploring :)"
             },
             {
-                "title": "toiletries"
+                "title": "Toiletries"
             },
             {
-                "title": "extra cash"
+                "title": "Extra cash"
             },
             {
-                "title": "wind proof gloves"
+                "title": "Wind proof gloves"
             },
             {
-                "title": "a headlamp"
+                "title": "Headlamp"
             },
             {
-                "title": "a journal"
+                "title": "Journal"
             },
             {
-                "title": "tons of snacks"
+                "title": "Tons of snacks"
             },
             {
-                "title": "something to give the children along your route",
+                "title": "Something to give the children along your route",
                 "description": "I think it helps the children if you give them something useful or interesting. For example, you could bring school supplies like notebooks and pens, which are uncommon in more remote areas. Nothing beats the smile on a child's face when they use the pen to draw in their new notebook. You could also bring simple medical supplies like bandaids, antiseptic, and antibacterial cream. You never know who might need it. Try not to bring chocolate, candy, or money because this tends to make kids approach and ask every trekker for them instead of going to school."
             }
         ]
