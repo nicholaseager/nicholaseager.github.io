@@ -4,13 +4,13 @@ import os
 directory = "_data/guides"
 
 for filename in os.listdir(directory):
-    if filename.endswith(".json"):
+    if filename.endswith(".json") and filename != 'template.json':
         file_path = os.path.join(directory, filename)
         with open(file_path) as json_file:
             parsed_data = json.load(json_file)
             
             guidename = filename.replace('.json', '')
-            guidefilename = '_guides/' + guidename + '.md'
+            guidefilename = '_guides/' + parsed_data['date'] + '-' + guidename + '.md'
             os.makedirs(os.path.dirname(guidefilename), exist_ok=True)
             new_yaml = open(guidefilename, 'w')
 
