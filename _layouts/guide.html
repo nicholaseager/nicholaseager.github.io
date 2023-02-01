@@ -78,6 +78,18 @@ layout: default
 		{% endif %}
 		<!-- End Extra Sections -->
 
+		<!-- Overview -->
+		{% if guide.overview %}
+		<h2>Overview</h2>
+		{% if guide.overview.summary %}
+		<p>{{ guide.overview.summary }}</p>
+		{% endif %}
+		{% for item in guide.overview.items %}
+		<p><b>{{item.title}}:</b> {{item.description}}</p>
+		{% endfor %}
+		{% endif %}
+		<!-- End Overview -->
+
 		<!-- Basics -->
 		{% if guide.basics %}
 		<h2>Basics</h2>
