@@ -18,14 +18,29 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
+    flex-direction: column;
+
+    @include mq(tabletp) {
+        flex-direction: row;
+	}
+}
+
+.toc-list.open {
+    .toc-item {
+        display: block;
+        pointer-events: all;
+    }
 }
 
 .toc-item {
     flex: 1;
     display: none;
+    pointer-events: none;
 
     @include mq(tabletp) {
         display: block;
+        pointer-events: all;
 	}
 }
 
@@ -48,7 +63,6 @@
 
 	@include mq(tabletp) {
         display: block;
-		padding: 10px;
 		font-size: $menu-medium;
 
 		&:hover {
