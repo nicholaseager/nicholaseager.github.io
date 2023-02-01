@@ -47,9 +47,12 @@ layout: default
 
 <section class="single table-of-contents-container">
 	<div id="table-of-contents" class="toc-sticky">
-		<ol class="toc-list">
-			<!-- Generated in JS -->
-		</ol>
+		<div class="toc-sticky-container">
+			<i class="toc-icon fa-solid fa-bars fa-2x"></i>
+			<ol class="toc-list">
+				<!-- Generated in JS -->
+			</ol>
+		</div>
 	</div>
 
 	<div class="table-of-contents-content">
@@ -324,6 +327,7 @@ layout: default
 		{% endif %}
 		<!-- End Extra Sections -->
 
+		<h3>Conclusion</h3>
 		{% if guide.conclusion %}
 		<p>{{ guide.conclusion }}</p>
 		{% endif %}

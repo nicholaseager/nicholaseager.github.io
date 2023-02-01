@@ -74,3 +74,24 @@
 		font-size: $menu-large;
 	}
 }
+
+.toc-sticky-container {
+    display: flex;
+    align-items: center;
+
+    .toc-list {
+        flex: 100%;
+    }
+}
+
+.toc-icon {
+    padding: 0 5px;
+
+    &:hover {
+        color: $accent-color;
+    }
+
+    @include mq(tabletp) {
+        display: none;
+	}
+}
