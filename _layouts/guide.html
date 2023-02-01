@@ -244,14 +244,11 @@ layout: default
 		<!-- End Cost -->
 
 		<!-- Gear -->
-		{% if guide.gear %}
 		<h2>What Should You Bring?</h2>
+		{% if guide.gear %}
 		{% if guide.gear.introduction %}
 		<p>{{ guide.gear.introduction }}</p>
 		{% endif %}
-
-		<p>Check out the <a href="{{ "/gear" | relative_url }}">gear</a> I bring with me on most of my trips.</p>
-		
 		<table>
 			<tbody>
 				{% for item in guide.gear.items %}
@@ -266,12 +263,12 @@ layout: default
 				{% endfor %}
 			</tbody>
 		</table>
-
 		{% if guide.gear.conclusion %}
 		<p>{{ guide.gear.conclusion }}</p>
 		{% endif %}
-		<p>When you're out exploring, it's super important to have the right gear. The right stuff can keep you comfortable, safe, and happy on your trip, and it can also help you take care of the planet. Make sure to pack the right clothes and gear for your trip. A little bit of planning and preparation can go a long way towards making your adventure a success.</p>
 		{% endif %}
+		<p>When you're out exploring, it's super important to have the right gear. The right stuff can keep you comfortable, safe, and happy on your trip, and it can also help you take care of the planet. Make sure to pack the right clothes and gear for your trip. A little bit of planning and preparation can go a long way towards making your adventure a success.</p>
+		<p>Check out the <a href="{{ "/gear" | relative_url }}">gear</a> I bring with me on most of my trips.</p>
 		<!-- End Gear -->
 
 		<!-- Extra Sections -->
