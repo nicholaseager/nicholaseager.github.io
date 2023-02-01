@@ -56,6 +56,28 @@ layout: default
 	<hr>
 
 	<div class="table-of-contents-content">
+		<!-- Extra Sections -->
+		{% assign sections = guide.extra_sections | where_exp: "section", "section.position == 'top'" %}
+		{% if sections.size > 0 %}
+		{% for section in sections %}
+		<h2>{{section.title}}</h2>
+		{% if section.images %}
+		{% assign photos = section.images | join: '<br />' %}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
+		<p>{{section.description}}</p>
+		{% for subsection in section.sections %}
+		<h3>{{subsection.title}}</h3>
+		{% if subsection.images %}
+		{% assign photos = subsection.images | join: '<br />' %}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
+		<p>{{subsection.description}}</p>
+		{% endfor %}
+		{% endfor %}
+		{% endif %}
+		<!-- End Extra Sections -->
+
 		<!-- Basics -->
 		{% if guide.basics %}
 		<h2>Basics</h2>
@@ -272,8 +294,9 @@ layout: default
 		<!-- End Gear -->
 
 		<!-- Extra Sections -->
-		{% if guide.extra_sections %}
-		{% for section in guide.extra_sections %}
+		{% assign sections = guide.extra_sections | where_exp: "section", "section.position != 'top'" %}
+		{% if sections.size > 0 %}
+		{% for section in sections %}
 		<h2>{{section.title}}</h2>
 		{% if section.images %}
 		{% assign photos = section.images | join: '<br />' %}
