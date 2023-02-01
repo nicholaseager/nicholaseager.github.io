@@ -184,66 +184,79 @@
             },
             {
                 "title": "Trek from Soti Khola to Machha Khola",
+                "description": "The first day of the trek takes you along the Buri Gandaki River, passing through charming rural villages and lush tropical forests. You'll have the chance to see stunning waterfalls and maybe even catch a glimpse of some of the local wildlife, including monkeys and birds.",
                 "distance": 17,
                 "elevation": 930
             },
             {
                 "title": "Trek from Machha Khola to Jagat",
+                "description": "The second day takes you up into the higher elevations of the trek, offering views of the stunning mountain landscape. As you ascend, you'll pass through traditional villages, where you can learn about the local culture and way of life.",
                 "distance": 14,
                 "elevation": 1340
             },
             {
                 "title": "Trek from Jagat to Deng",
+                "description": "On the third day, you'll continue your ascent and cross several suspension bridges as you make your way to Deng. You'll pass through dense forests and cross streams, taking in the lush greenery of the surrounding landscape.",
                 "distance": 18,
                 "elevation": 1804
             },
             {
                 "title": "Trek from Deng to Namrung",
+                "description": "On the fourth day, you'll continue to climb higher into the mountains, reaching the charming village of Namrung. Here, you'll have the opportunity to explore the local culture and maybe even taste some of the traditional cuisine.",
                 "distance": 15,
                 "elevation": 2630
             },
             {
                 "title": "Trek from Namrung to Lho",
+                "description": "On the fifth day, you'll head towards the village of Lho, taking in the breathtaking views of the mountains as you go. You'll pass through traditional settlements, cross streams, and trek through lush rhododendron forests.",
                 "distance": 12,
                 "elevation": 3400
             },
             {
                 "title": "Trek from Lho to Samagaun",
+                "description": "On the sixth day, the trail takes you from Lho to Samagaun, a large village with a distinct Tibetan influence. The trek follows the Buri Gandaki river and offers scenic views of the surrounding peaks, including the Manaslu range.",
                 "distance": 8,
                 "elevation": 3520
             },
             {
                 "title": "Rest day in Samagaun",
+                "description": "Today is a well-deserved rest day in Samagaun. You can take the opportunity to explore the village, visit the nearby monasteries, and soak in the breathtaking mountain views. Personally I liked the trek pst Birendra Lake and up to Manaslu Base Camp. Check out the <a href='#best-highlights'>highlights</a> for more.",
                 "distance": 0,
                 "elevation": 3520
             },
             {
                 "title": "Trek from Samagaun to Samdo",
+                "description": "The eighth day of the trek takes you from Samagaun to Samdo, a small village near the Tibetan border. The trail passes through beautiful landscapes and offers stunning views of the surrounding peaks, including the Manaslu range.",
                 "distance": 12,
                 "elevation": 3860
             },
             {
                 "title": "Trek from Samdo to Dharamsala",
+                "description": "On the ninth day, the trail takes you from Samdo to Dharamsala, also known as Larkya Bazaar. The trail continues to follow the Buri Gandaki river and offers panoramic views of the surrounding peaks, including the Himlung Himal and Cheo Himal ranges.",
                 "distance": 12,
                 "elevation": 4460
             },
             {
                 "title": "Trek from Dharamsala to Bimtang via Larkya La Pass",
+                "description": "On the tenth day you'll tackle the challenging Larkya La Pass, reaching a height of over 5,100 meters (16,700 ft). The pass offers stunning views of the surrounding mountains, including the majestic Himalayas.",
                 "distance": 20,
                 "elevation": 5160
             },
             {
                 "title": "Trek from Bimtang to Tilche",
+                "description": "The eleventh day of the trek takes you from Bimtang to Tilche, passing through lush forests and scenic meadows. You will also cross several streams and enjoy stunning views of the surrounding peaks.",
                 "distance": 8,
                 "elevation": 2300
             },
             {
                 "title": "Trek from Tilche to Dharapani",
+                "description": "The final day of the trek takes you from Tilche to Dharapani, where your journey will come to an end. You'll pass through traditional villages and cross streams, taking in the final views of the mountains before reaching your destination.",
                 "distance": 12,
                 "elevation": 1860
             },
             {
                 "title": "Drive from Dharapani to Kathmandu",
+                "description": "From Dharapani, one can take a jeep or a bus to get back to Kathmandu. The drive usually takes about 7 to 8 hours, depending on road conditions. Another option is to fly from Bhairahawa to Kathmandu, which is a one-hour flight.",
                 "distance": 190,
                 "elevation": 1400
             }
