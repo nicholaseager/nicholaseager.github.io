@@ -470,7 +470,7 @@
 						}
 					  }
 
-					const contentTop = content.offset().top;
+					const contentTop = content.offset().top - 150;
 					if ($(window).scrollTop() > contentTop) {
 						sticky.addClass("stick");
 					} else {
