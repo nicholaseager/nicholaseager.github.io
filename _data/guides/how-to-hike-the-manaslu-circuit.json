@@ -28,7 +28,7 @@
         }
     },
     "overview": {
-        "summary": "The Manaslu Circuit Trek in Nepal is not just a journey through breathtaking landscapes, but also an opportunity to immerse yourself in the rich culture of the country. During the trek, you will encounter quaint villages and get a chance to interact with the friendly locals, learning about their way of life and customs. One of the highlights of this trek is the visit to the ancient <a href='#best-highlights'>Sereng Monastery</a>, where you can delve into the spiritual heritage of the region and get a glimpse of the daily rituals and practices of the local community. The Manaslu Circuit Trek is a truly unique and enriching experience that combines stunning natural beauty with a rich cultural tapestry, making it a must-do for anyone seeking an authentic and memorable adventure in Nepal."
+        "summary": "The Manaslu Circuit Trek in Nepal is not just a journey through breathtaking landscapes, but also an opportunity to immerse yourself in the rich culture of the country. During the trek, you will encounter quaint villages and get a chance to interact with the friendly locals, learning about their way of life and customs. One of the highlights of this trek is the visit to the ancient <a href='#highlights'>Sereng Monastery</a>, where you can delve into the spiritual heritage of the region and get a glimpse of the daily rituals and practices of the local community. The Manaslu Circuit Trek is a truly unique and enriching experience that combines stunning natural beauty with a rich cultural tapestry, making it a must-do for anyone seeking an authentic and memorable adventure in Nepal."
     },
     "basics": {
         "items": [
@@ -70,7 +70,7 @@
             },
             {
                 "title": "Local Currency",
-                "description": "The official currency of Nepal is the rupee. Although you can also pay with US dollars, it's preferable to have rupees in small denominations for the purchase. Bring enough cash in rupees with you for the <a href='#how-much-does-it-cost'>cost of the trek</a>."
+                "description": "The official currency of Nepal is the rupee. Although you can also pay with US dollars, it's preferable to have rupees in small denominations for the purchase. Bring enough cash in rupees with you for the <a href='#cost'>cost of the trek</a>."
             }
         ]
     },
@@ -129,7 +129,7 @@
             },
             {
                 "title": "Extra cash",
-                "description": "Bring enough in rupees with you for the <a href='#how-much-does-it-cost'>cost of the trek</a>."
+                "description": "Bring enough in rupees with you for the <a href='#cost'>cost of the trek</a>."
             },
             {
                 "title": "Wind proof gloves"
@@ -171,8 +171,8 @@
         ]
     },
     "itinerary": {
-        "introduction": "The trek typically takes around 14-21 days to complete, depending on the route and your pace. Below is an example 14 day itinerary. If you have extra time, consider adding some of the <a href='#best-highlights'>side trips</a>, stopping by more villages along the way, or taking extra rest days.",
-        "conclusion": "Your Manaslu Circuit itinerary can be as flexible as you want. There are tons of <a href='#best-highlights'>side trips</a> you can choose from, or you can choose to rest somewhere for an extra few days if your schedule allows.",
+        "introduction": "The trek typically takes around 14-21 days to complete, depending on the route and your pace. Below is an example 14 day itinerary. If you have extra time, consider adding some of the <a href='#highlights'>side trips</a>, stopping by more villages along the way, or taking extra rest days.",
+        "conclusion": "Your Manaslu Circuit itinerary can be as flexible as you want. There are tons of <a href='#highlights'>side trips</a> you can choose from, or you can choose to rest somewhere for an extra few days if your schedule allows.",
         "columns": {
             "phase": "Day",
             "distance": "Distance",
@@ -223,7 +223,7 @@
             },
             {
                 "title": "Rest day in Samagaun",
-                "description": "Today is a well-deserved rest day in Samagaun. You can take the opportunity to explore the village, visit the nearby monasteries, and soak in the breathtaking mountain views. Personally I liked the trek pst Birendra Lake and up to Manaslu Base Camp. Check out the <a href='#best-highlights'>highlights</a> for more.",
+                "description": "Today is a well-deserved rest day in Samagaun. You can take the opportunity to explore the village, visit the nearby monasteries, and soak in the breathtaking mountain views. Personally I liked the trek pst Birendra Lake and up to Manaslu Base Camp. Check out the <a href='#highlights'>highlights</a> for more.",
                 "distance": 0,
                 "elevation": 3520
             },
