@@ -67,7 +67,7 @@
             },
             {
                 "title": "Local Currency",
-                "description": "The official currency of Nepal is the rupee. Although you can also pay with US dollars, it's preferable to have rupees in small denominations for the purchase. Bring enough cash in rupees with you for the cost of the trek."
+                "description": "The official currency of Nepal is the rupee. Although you can also pay with US dollars, it's preferable to have rupees in small denominations for the purchase. Bring enough cash in rupees with you for the <a href='#how-much-does-it-cost'>cost of the trek</a>."
             }
         ]
     },
@@ -125,7 +125,8 @@
                 "title": "Toiletries"
             },
             {
-                "title": "Extra cash"
+                "title": "Extra cash",
+                "description": "Bring enough in rupees with you for the <a href='#how-much-does-it-cost'>cost of the trek</a>."
             },
             {
                 "title": "Wind proof gloves"
