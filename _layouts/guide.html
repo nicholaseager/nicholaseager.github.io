@@ -46,38 +46,13 @@ layout: default
 </section>
 
 <section class="single table-of-contents-container">
-	<div id="table-of-contents">
-		<h2 id="table-of-contents">Table of Contents</h2>
-		<ol>
+	<div id="table-of-contents" class="toc-sticky">
+		<ol class="toc-list">
 			<!-- Generated in JS -->
 		</ol>
 	</div>
 
-	<hr>
-
 	<div class="table-of-contents-content">
-		<!-- Extra Sections -->
-		{% assign sections = guide.extra_sections | where_exp: "section", "section.position == 'top'" %}
-		{% if sections.size > 0 %}
-		{% for section in sections %}
-		<h2>{{section.title}}</h2>
-		{% if section.images %}
-		{% assign photos = section.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{section.description}}</p>
-		{% for subsection in section.sections %}
-		<h3>{{subsection.title}}</h3>
-		{% if subsection.images %}
-		{% assign photos = subsection.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{subsection.description}}</p>
-		{% endfor %}
-		{% endfor %}
-		{% endif %}
-		<!-- End Extra Sections -->
-
 		<!-- Overview -->
 		{% if guide.overview %}
 		<h2>Overview</h2>
@@ -89,6 +64,28 @@ layout: default
 		{% endfor %}
 		{% endif %}
 		<!-- End Overview -->
+
+		<!-- Extra Sections -->
+		{% assign sections = guide.extra_sections | where_exp: "section", "section.position == 'top'" %}
+		{% if sections.size > 0 %}
+		{% for section in sections %}
+		<h3>{{section.title}}</h3>
+		{% if section.images %}
+		{% assign photos = section.images | join: '<br />' %}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
+		<p>{{section.description}}</p>
+		{% for subsection in section.sections %}
+		<h4>{{subsection.title}}</h4>
+		{% if subsection.images %}
+		{% assign photos = subsection.images | join: '<br />' %}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
+		<p>{{subsection.description}}</p>
+		{% endfor %}
+		{% endfor %}
+		{% endif %}
+		<!-- End Extra Sections -->
 
 		<!-- Basics -->
 		{% if guide.basics %}
@@ -107,7 +104,7 @@ layout: default
 
 		<!-- Weather -->
 		{% if guide.weather %}
-		<h2>Best Time To Go</h2>
+		<h2>Weather</h2>
 		{% if guide.weather.introduction %}
 		<p>{{ guide.weather.introduction }}</p>
 		{% endif %}
@@ -220,7 +217,7 @@ layout: default
 
 		<!-- Highlights -->
 		{% if guide.highlights %}
-		<h2>Best Highlights</h2>
+		<h2>Highlights</h2>
 		{% if guide.highlights.introduction %}
 		<p>{{ guide.highlights.introduction }}</p>
 		{% endif %}
@@ -242,7 +239,7 @@ layout: default
 
 		<!-- Cost -->
 		{% if guide.cost %}
-		<h2>How Much Does it Cost?</h2>
+		<h2>Cost</h2>
 		{% if guide.cost.introduction %}
 		<p>{{ guide.cost.introduction }}</p>
 		{% endif %}
@@ -278,7 +275,7 @@ layout: default
 		<!-- End Cost -->
 
 		<!-- Gear -->
-		<h2>What Should You Bring?</h2>
+		<h2>Gear</h2>
 		{% if guide.gear %}
 		{% if guide.gear.introduction %}
 		<p>{{ guide.gear.introduction }}</p>
@@ -309,14 +306,14 @@ layout: default
 		{% assign sections = guide.extra_sections | where_exp: "section", "section.position != 'top'" %}
 		{% if sections.size > 0 %}
 		{% for section in sections %}
-		<h2>{{section.title}}</h2>
+		<h3>{{section.title}}</h3>
 		{% if section.images %}
 		{% assign photos = section.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}
 		{% endif %}
 		<p>{{section.description}}</p>
 		{% for subsection in section.sections %}
-		<h3>{{subsection.title}}</h3>
+		<h4>{{subsection.title}}</h4>
 		{% if subsection.images %}
 		{% assign photos = subsection.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}
@@ -327,7 +324,6 @@ layout: default
 		{% endif %}
 		<!-- End Extra Sections -->
 
-		<h2>Conclusion</h2>
 		{% if guide.conclusion %}
 		<p>{{ guide.conclusion }}</p>
 		{% endif %}
@@ -337,3 +333,45 @@ layout: default
 		{% endif %}
 	</div>
 </section>
+
+<!-- <script>
+	const header = document.querySelector(".toc-sticky");
+	const sections = document.querySelectorAll(".table-of-contents-content h2");
+	const tocList = header.querySelector("ol");
+	const tocLinks = tocList.querySelectorAll(".toc-link");
+
+	function highlightLink() {
+		console.log(JSON.stringify(tocLinks));
+
+		const scrollPos = window.pageYOffset + 80;
+
+		let activeSection = sections[0];
+
+		for (const section of sections) {
+			if (section.offsetTop <= scrollPos) {
+				activeSection = section;
+			}
+		}
+
+		for (const link of tocLinks) {
+			link.classList.remove("highlighted");
+
+			if (link.getAttribute("href") === `#${activeSection.id}`) {
+				link.classList.add("highlighted");
+			}
+		}
+	}
+
+	window.onscroll = function () {
+		const content = document.querySelector(".sticky-appear");
+		const contentTop = content.offsetTop;
+
+		if (window.pageYOffset > contentTop) {
+			header.classList.add("stick");
+		} else {
+			header.classList.remove("stick");
+		}
+
+		highlightLink();
+	};
+</script> -->

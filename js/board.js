@@ -108,7 +108,7 @@
 	$(document).on('click', '.scrollto', function (event){
 		var id = $(this).attr("href");
 		if (id) {
-			var offset = 30;
+			var offset = 100;
 			var target = $(id).offset().top - offset;
 			$('html, body').animate({ scrollTop: target }, 500);
 			event.preventDefault();
@@ -429,7 +429,7 @@
 		$('.table-of-contents-container').each( function() {
 			var $this = $(this);
 			var $toc_content = $this.find('.table-of-contents-content');
-			var $toc = $this.find('#table-of-contents').find('ol');
+			var $toc = $this.find('#table-of-contents').find('.toc-list');
 
 			$toc_content.children("h2").map(function () {
 				var header = $(this);
@@ -438,8 +438,49 @@
 
 				header.attr("id", id);
 
-				$toc.append('<li><a class="scrollto" href="#' + id + '">' + text + '</a></li>');
+				$toc.append('<li data-id="' + id + '" class="toc-item"><a class="scrollto toc-link" href="#' + id + '">' + text + '</a></li>');
 			});
+
+			// Sticky
+			var sticky = $this.find('.toc-sticky');
+			if (sticky) {
+				const content = $('.table-of-contents-container');
+				const sections = $(".table-of-contents-content h2");
+				const tocItems = $(".toc-item");
+
+				function updateSticky() {
+					function setCurrentItem() {
+						const scrollPos = $(window).scrollTop() + 150;
+					  
+						let activeSection = undefined;
+						sections.each(function() {
+						  if ($(this).offset().top <= scrollPos) {
+							activeSection = $(this);
+						  }
+						});
+					  
+						if (activeSection) {
+							tocItems.removeClass("highlighted");
+					  
+							tocItems.each(function() {
+								if ($(this).attr("data-id") === activeSection.attr("id")) {
+									$(this).addClass("highlighted");
+								}
+							});
+						}
+					  }
+
+					const contentTop = content.offset().top;
+					if ($(window).scrollTop() > contentTop) {
+						sticky.addClass("stick");
+					} else {
+						sticky.removeClass("stick");
+					}
+
+					setCurrentItem();
+				}
+				$(window).bind('scroll', updateSticky);
+			}
 		});
 	}
 

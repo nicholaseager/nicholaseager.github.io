@@ -1,0 +1,62 @@
+.toc-sticky {
+    display: none;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.toc-sticky.stick {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.toc-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toc-item {
+    flex: 1;
+    display: none;
+
+    @include mq(tabletp) {
+        display: block;
+	}
+}
+
+.toc-item.highlighted {
+    display: block;
+
+    a {
+        color: $text-dark-color;
+
+        @include mq(tabletp) {
+            color: $accent-color;
+        }
+    }
+}
+
+.toc-link {
+    font-size: $menu-small;
+	font-weight: $menu-weight;
+    text-align: center;
+
+	@include mq(tabletp) {
+        display: block;
+		padding: 10px;
+		font-size: $menu-medium;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+
+	@include mq(laptop) {
+		font-size: $menu-large;
+	}
+}
