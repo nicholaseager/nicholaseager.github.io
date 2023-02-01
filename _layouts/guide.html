@@ -47,6 +47,7 @@ layout: default
 
 <section class="single table-of-contents-container">
 	<div id="table-of-contents" class="toc-sticky">
+		<i class="toc-icon fa-solid fa-bars"></i>
 		<ol class="toc-list">
 			<!-- Generated in JS -->
 		</ol>
@@ -333,45 +334,3 @@ layout: default
 		{% endif %}
 	</div>
 </section>
-
-<!-- <script>
-	const header = document.querySelector(".toc-sticky");
-	const sections = document.querySelectorAll(".table-of-contents-content h2");
-	const tocList = header.querySelector("ol");
-	const tocLinks = tocList.querySelectorAll(".toc-link");
-
-	function highlightLink() {
-		console.log(JSON.stringify(tocLinks));
-
-		const scrollPos = window.pageYOffset + 80;
-
-		let activeSection = sections[0];
-
-		for (const section of sections) {
-			if (section.offsetTop <= scrollPos) {
-				activeSection = section;
-			}
-		}
-
-		for (const link of tocLinks) {
-			link.classList.remove("highlighted");
-
-			if (link.getAttribute("href") === `#${activeSection.id}`) {
-				link.classList.add("highlighted");
-			}
-		}
-	}
-
-	window.onscroll = function () {
-		const content = document.querySelector(".sticky-appear");
-		const contentTop = content.offsetTop;
-
-		if (window.pageYOffset > contentTop) {
-			header.classList.add("stick");
-		} else {
-			header.classList.remove("stick");
-		}
-
-		highlightLink();
-	};
-</script> -->
