@@ -1,7 +1,6 @@
 .toc-sticky {
     display: none;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: $text-dark-color;
     width: 100%;
     position: relative;
 }
@@ -15,6 +14,8 @@
 
 .toc-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -36,6 +37,7 @@
 .toc-item {
     flex: 1;
     display: none;
+    padding: 20px;
     pointer-events: none;
 
     @include mq(tabletp) {
@@ -47,19 +49,20 @@
 .toc-item.highlighted {
     display: block;
 
-    a {
-        color: $text-dark-color;
+    @include mq(tabletp) {
+        background-color: $background-color;
 
-        @include mq(tabletp) {
-            color: $accent-color;
+        a {
+            color: $text-dark-color;
         }
-    }
+	}
 }
 
 .toc-link {
     font-size: $menu-small;
 	font-weight: $menu-weight;
     text-align: center;
+    color: white;
 
 	@include mq(tabletp) {
         display: block;
@@ -75,21 +78,14 @@
 	}
 }
 
-.toc-sticky-container {
-    display: flex;
-    align-items: center;
-
-    .toc-list {
-        flex: 100%;
-    }
-}
-
 .toc-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto 0;
+    color: white;
     padding: 0 5px;
-
-    &:hover {
-        color: $accent-color;
-    }
 
     @include mq(tabletp) {
         display: none;
