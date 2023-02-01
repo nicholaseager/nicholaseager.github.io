@@ -13,6 +13,7 @@
     "youtube": "Rp4V6waPRZo",
     "introduction": "Hiking the Grand Canyon rim to river and back to rim is a physically demanding feat that requires a high level of fitness and preparation. Here is a guide containing everything you need to know to to help you plan your hike.",
     "maps": {
+        "introduction": "When I did this hike, we started from Bright Angel Trailhead, hiked down to Plateau Point, further down to Phantom Ranch, and then back up to South Kaibab Trailhead. We completed the entire route (over 26 miles) in one day. This is extremely physically demanding, so you need a good understanding of your physical ability before attempting (check out my video above 🙂) However, you do have the option to spend the night at the bottom of the canyon which could make the journey easier and provide an excellent sunrise from the bottom.",
         "route_overview": {
             "id": "grand-canyon-hike-5735c3a"
         }
@@ -116,11 +117,5 @@
                 "elevation": 2124
             }
         ]
-    },
-    "extra_sections": [
-        {
-            "title": "Suggested Routes",
-            "description": "When I did this hike, we started from Bright Angel Trailhead, hiked down to Plateau Point, further down to Phantom Ranch, and then back up to South Kaibab Trailhead. We completed the entire route (over 26 miles) in one day. This is extremely physically demanding, so you need a good understanding of your physical ability before attempting (check out my video above 🙂) However, you do have the option to spend the night at the bottom of the canyon which could make the journey easier and provide an excellent sunrise from the bottom."
-        }
-    ]
+    }
 }

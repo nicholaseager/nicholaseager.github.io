@@ -23,17 +23,15 @@
             "url": "/gear"
         }
     ],
+    "overview": {
+        "summary": "Hiking in Italy is very popular. That being said, at certain times and places there are a lot of people, and there is loads of infrastructure (i.e. paved roads, cable cars) placed around hiking. Depending on your hiking style, this may be a good thing or a bad thing. In you're more of a wild hiker, no worries. It is still possible to get out to areas with less people and development. If you do a little bit of work beforehand, you will have a great trip.",
+        "images": [
+            "photos/countries/italy/dolomites/man-sitting-on-a-cliff"
+        ]
+    },
     "extra_sections": [
         {
-            "title": "What is hiking like in Italy?",
-            "position": "top",
-            "description": "Hiking in Italy is very popular. That being said, at certain times and places there are a lot of people, and there is loads of infrastructure (i.e. paved roads, cable cars) placed around hiking. Depending on your hiking style, this may be a good thing or a bad thing. In you're more of a wild hiker, no worries. It is still possible to get out to areas with less people and development. If you do a little bit of work beforehand, you will have a great trip.",
-            "images": [
-                "photos/countries/italy/dolomites/man-sitting-on-a-cliff"
-            ]
-        },
-        {
-            "title": "What kinds of mountain huts are there in Italy?",
+            "title": "Types",
             "position": "top",
             "description": "Not all mountain huts in Italy are created equal. Depending on your personal preferences and hiking style, you may want to stay at a certain type.",
             "sections": [
@@ -63,17 +61,17 @@
             ]
         },
         {
-            "title": "How do you book a mountain hut in Italy?",
+            "title": "Booking",
             "position": "top",
             "description": "Unfortunately, as of writing this post there is no centralized booking system for mountain huts in Italy. Usually there is a different website to visit or phone number to call for every hut. If you know a trail you'd like to hike, finding a <a href='https://www.cicerone.co.uk/'>Cicerone Guidebook</a>, or a quick google search for huts along the trail or in the area usually comes up with some options. If you know the name or location of a hut you'd like to visit, you can usually find the hut on Google Maps. However, if you want to discover something new, it is a bit more difficult. For Rifugio owned by CAI, you can find a list on the <a href='http://www.cai.it/'>CAI website</a> For less official sources but easier to follow, there are some curated social media accounts you can follow like <a href='https://instagram.com/il_bivacco_alpino'>Il Bivacco Alpino</a>."
         },
         {
-            "title": "How much does it cost to stay at a mountain hut in Italy?",
+            "title": "Cost",
             "position": "top",
             "description": "Well, that depends on which hut, the type of hut, the area, and what you choose to eat. Rifugi usually offer half-board and bed-only options. Half-board means you book your bed along with a three-course dinner and breakfast. Personally, I like to book the bed and meal separately. Rifugi have very different costs for half-board, usually ranging from $50 to $150 per person per night. A single bed can cost as little as $30. Bivacco tend to be free, but of course they are smaller with limited beds, and there are no services or meals.\nIf you'd like discounts on mountain huts, consider joining an alpine club such as <a href='https://www.cai.it/'>CAI</a> or <a href='https://www.sat.tn.it/'>SAT</a>. For about $45, you can get discounts of up to 50% sometimes. To register, you usually need to find a physical office in the city you're staying."
         },
         {
-            "title": "What facilities are available at mountain huts?",
+            "title": "Facilities",
             "position": "top",
             "description": "When it comes to food, water, and facilities, of course this depends on the location and type of hut. At a bivacco, you will always need to bring your own food, usually find water on your own, and make a toilet on your own. Delicious food is always available at rifugi, even if some require an advanced booking. At some rifugio, water is scarce or not potable. You have the option to buy water, but it comes in plastic and can cost quite a bit. I always prefer to use the tap or a natural source and treat, if available. Rifugios often have toilet facilities as well.",
             "images": [
@@ -81,7 +79,7 @@
             ]
         },
         {
-            "title": "Alta Via and Via Ferrata",
+            "title": "Routes",
             "position": "top",
             "description": "In Italy there are tons of different types of hiking and climbing you can do. While some trails just require your own two feet, others require technical skill or equipment.",
             "sections": [
@@ -102,7 +100,7 @@
             ]
         },
         {
-            "title": "Is wild camping allowed in Italy?",
+            "title": "Camping",
             "position": "top",
             "description": "In short, not really. But if you setup camp around sunset, pack up at sunrise, be respectful of nature, and follow leave-no-trace principles, it is generally tolerated. In more popular areas, sometimes rangers come around and give people fines. But if you're hiking a long Alta Via and are keeping a distance from huts or popular areas, you will be fine. Sometimes we have seen people even camping right next to very popular huts with no issue.",
             "images": [

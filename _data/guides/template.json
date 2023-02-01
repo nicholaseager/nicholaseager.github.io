@@ -49,6 +49,24 @@
             }
         ]
     },
+    "useful_info": {
+        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+        "items": [
+            {
+                "title": "Useful Info 1",
+                "description": "Curabitur purus dui, volutpat nec quam ac, sollicitudin dictum nibh. Nunc luctus lorem risus, ac ultricies quam tempor a. Proin odio dui, tincidunt ut feugiat ac, vehicula et velit. Cras vehicula eget massa et viverra."
+            },
+            {
+                "title": "Useful Info 2",
+                "description": "Fusce id nisi nec justo fermentum dictum tincidunt euismod nibh. Nulla auctor sem ac massa ultricies, et pharetra metus posuere."
+            },
+            {
+                "title": "Useful Info 3",
+                "description": "Cras vehicula eget massa et viverra. Aliquam erat volutpat. Etiam lobortis sed turpis et tristique. Duis imperdiet quam vel suscipit rhoncus."
+            }
+        ]
+    },
     "gear": {
         "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
         "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",

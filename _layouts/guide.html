@@ -57,6 +57,10 @@ layout: default
 		<!-- Overview -->
 		{% if guide.overview %}
 		<h2>Overview</h2>
+		{% if guide.overview.images %}
+		{% assign photos = guide.overview.images | join: '<br />' %}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
 		{% if guide.overview.summary %}
 		<p>{{ guide.overview.summary }}</p>
 		{% endif %}
@@ -70,14 +74,14 @@ layout: default
 		{% assign sections = guide.extra_sections | where_exp: "section", "section.position == 'top'" %}
 		{% if sections.size > 0 %}
 		{% for section in sections %}
-		<h3>{{section.title}}</h3>
+		<h2>{{section.title}}</h2>
 		{% if section.images %}
 		{% assign photos = section.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}
 		{% endif %}
 		<p>{{section.description}}</p>
 		{% for subsection in section.sections %}
-		<h4>{{subsection.title}}</h4>
+		<h3>{{subsection.title}}</h3>
 		{% if subsection.images %}
 		{% assign photos = subsection.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}
@@ -303,18 +307,38 @@ layout: default
 		<p>Check out the <a href="{{ "/gear" | relative_url }}">gear</a> I bring with me on most of my trips.</p>
 		<!-- End Gear -->
 
+		<!-- Basics -->
+		{% if guide.useful_info %}
+		<h2>Info</h2>
+		{% if guide.useful_info.introduction %}
+		<p>{{ guide.useful_info.introduction }}</p>
+		{% endif %}
+		{% for item in guide.useful_info.items %}
+		<h3>{{item.title}}</h3>
+		{% if item.images %}
+		{% assign photos = item.images | join: '<br />' %}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
+		<p>{{item.description}}</p>
+		{% endfor %}
+		{% if guide.useful_info.conclusion %}
+		<p>{{ guide.useful_info.conclusion }}</p>
+		{% endif %}
+		{% endif %}
+		<!-- End Basics -->
+
 		<!-- Extra Sections -->
 		{% assign sections = guide.extra_sections | where_exp: "section", "section.position != 'top'" %}
 		{% if sections.size > 0 %}
 		{% for section in sections %}
-		<h3>{{section.title}}</h3>
+		<h2>{{section.title}}</h2>
 		{% if section.images %}
 		{% assign photos = section.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}
 		{% endif %}
 		<p>{{section.description}}</p>
 		{% for subsection in section.sections %}
-		<h4>{{subsection.title}}</h4>
+		<h3>{{subsection.title}}</h3>
 		{% if subsection.images %}
 		{% assign photos = subsection.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}

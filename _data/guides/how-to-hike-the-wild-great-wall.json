@@ -17,6 +17,9 @@
             "url": "/gear"
         }
     ],
+    "overview": {
+        "summary": "The Great Wall is long. There are parts that are well-preserved and maintained as tourist attractions, but there are also sections that are in disrepair and are not maintained by the government. These sections of the Great Wall are often referred to as the 'wild' or 'unmaintained' sections. There are many wild sections of the Great Wall, such as Jiankou, Huanghuacheng, Gubeikou, Jinshanling, and Simatai. This guide will take you to a section close to Jiankou, but the same principles can be applied to other sections."
+    },
     "maps": {
         "points_of_interest": {
             "id": "11oQ9G8H2Vn0fv65wToQxsS6tew9eU6c"
@@ -80,20 +83,16 @@
             }
         ]
     },
-    "extra_sections": [
-        {
-            "title": "What is the Wild Great Wall?",
-            "position": "top",
-            "description": "The Great Wall is long. There are parts that are well-preserved and maintained as tourist attractions, but there are also sections that are in disrepair and are not maintained by the government. These sections of the Great Wall are often referred to as the 'wild' or 'unmaintained' sections. There are many wild sections of the Great Wall, such as Jiankou, Huanghuacheng, Gubeikou, Jinshanling, and Simatai. This guide will take you to a section close to Jiankou, but the same principles can be applied to other sections."
-        },
-        {
-            "title": "Finding a Guide",
-            "position": "bottom",
-            "description": "Once you arrive in Xizhazi, you can hire a local guide to take you to the Great Wall and help you navigate the unmaintained section. Going without a guide is more adventurous. But guides will know the best routes to take and can provide helpful information about the history and culture of the area. Although I went without one, I met a group along the way and I was so happy I did."
-        },
-        {
-            "title": "Safety",
-            "description": "The wild sections can be more challenging to hike due to the rough terrain and lack of facilities. It is important to be well-prepared and to take necessary precautions when hiking on the unmaintained section of the Great Wall, such as wearing proper clothing and shoes, carrying enough food and water, and being aware of your surroundings."
-        }
-    ]
+    "useful_info": {
+        "items": [
+            {
+                "title": "Finding a Guide",
+                "description": "Once you arrive in Xizhazi, you can hire a local guide to take you to the Great Wall and help you navigate the unmaintained section. Going without a guide is more adventurous. But guides will know the best routes to take and can provide helpful information about the history and culture of the area. Although I went without one, I met a group along the way and I was so happy I did."
+            },
+            {
+                "title": "Safety",
+                "description": "The wild sections can be more challenging to hike due to the rough terrain and lack of facilities. It is important to be well-prepared and to take necessary precautions when hiking on the unmaintained section of the Great Wall, such as wearing proper clothing and shoes, carrying enough food and water, and being aware of your surroundings."
+            }
+        ]
+    }
 }

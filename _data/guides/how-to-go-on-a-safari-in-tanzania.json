@@ -274,18 +274,15 @@
                     "photos/countries/tanzania/lake-eyasi/fish-caught",
                     "photos/countries/tanzania/lake-eyasi/beer-at-sunset"
                 ]
-            },
-            {
-                "title": "",
-                "description": "",
-                "images": []
             }
         ]
     },
-    "extra_sections": [
-        {
-            "title": "Getting Around",
-            "description": "Going with an organized tour definitely has its perks. But if you're more independent, you can definitely rent a car and go on safari by yourself. However, it is a good idea to research your options and to compare prices and reviews before making a decision. Research car rental companies, check the rental requirements, choose a car that is suitable for the conditions (i.e. a 4x4 for off-roading and rough terrain), and reserve the car in advance if you plan on going during peak season. Definitely do your own due-diligence and research so that you can be safe, and find something for your own needs and budget."
-        }
-    ]
+    "useful_info": {
+        "items": [
+            {
+                "title": "Getting Around",
+                "description": "Going with an organized tour definitely has its perks. But if you're more independent, you can definitely rent a car and go on safari by yourself. However, it is a good idea to research your options and to compare prices and reviews before making a decision. Research car rental companies, check the rental requirements, choose a car that is suitable for the conditions (i.e. a 4x4 for off-roading and rough terrain), and reserve the car in advance if you plan on going during peak season. Definitely do your own due-diligence and research so that you can be safe, and find something for your own needs and budget."
+            }
+        ]
+    }
 }
