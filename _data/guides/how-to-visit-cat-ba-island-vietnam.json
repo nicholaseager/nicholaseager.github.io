@@ -26,10 +26,10 @@
             "id": "1YJ8_vtF8zNt3VZMqpZAdAha_uPkV63s"
         }
     },
-    "seasons": {
+    "weather": {
         "introduction": "I've been to Cat Ba and the surrounding area a few times. From my experience, the best time to visit Cat Ba Island and Lan Ha Bay in Vietnam is during the fall season, particularly in September and October. The weather is perfect for outdoor activities, with comfortable temperatures and clear skies. The sea is also calm, making it perfect for kayaking, boat tours and swimming. During this time of the year, the island and the bay are less crowded, and you can enjoy the natural beauty and serenity of the place without the crowds. Plus, you'll see the island and the bay in its full glory with lush green vegetation and the colors of the fall.",
         "conclusion": "If you prefer to avoid the peak season and crowds, I suggest visiting between February and April. The weather is still pleasant and you can enjoy most of the outdoor activities. On the other hand, if you're not a fan of rain and the heat, I would recommend avoiding the monsoon season which runs from May to August. The heavy rain and strong winds can make some activities difficult or even impossible. Of course the best time to visit will depend on your priorities and preferences, but I hope this gives you a good idea.",
-        "items": [
+        "seasons": [
             {
                 "title": "Dry Season (November to April)",
                 "description": "Dry, sunny and cool, with clear skies and calm waters ideal for water-based activities such as kayaking, swimming, and snorkeling."

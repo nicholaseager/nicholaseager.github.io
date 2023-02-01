@@ -146,9 +146,9 @@
             }
         ]
     },
-    "seasons": {
+    "weather": {
         "introduction": "Depending on your personal preferences and the kind of trekking experience you're looking for, there is no one best time to hike the Manaslu Circuit. The two main trekking seasons in Nepal are, however, generally the spring (March to May) and the fall (September to November) seasons.",
-        "items": [
+        "seasons": [
             {
                 "title": "Spring",
                 "description": "The best time to hike the Manaslu Circuit to see the area in bloom is in the spring, from March to May. The rhododendrons, Nepal's national flower, are in full bloom, and the weather is mild. Additionally, there are fewer people on the trails, which makes for a more tranquil trekking experience."

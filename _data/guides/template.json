@@ -69,10 +69,10 @@
             }
         ]
     },
-    "seasons": {
+    "weather": {
         "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
         "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "items": [
+        "seasons": [
             {
                 "title": "Spring",
                 "description": "Curabitur purus dui, volutpat nec quam ac, sollicitudin dictum nibh. Nunc luctus lorem risus, ac ultricies quam tempor a. Proin odio dui, tincidunt ut feugiat ac, vehicula et velit. Cras vehicula eget massa et viverra."

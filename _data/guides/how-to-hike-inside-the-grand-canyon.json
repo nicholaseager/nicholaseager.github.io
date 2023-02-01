@@ -49,9 +49,9 @@
             }
         ]
     },
-    "seasons": {
+    "weather": {
         "introduction": "The best season to hike to the bottom of the Grand Canyon depends on personal preference and physical ability. However, many people consider spring (March to May) to be the best time to hike due to milder temperatures and less crowded trails.",
-        "items": [
+        "seasons": [
             {
                 "title": "Spring (March to May)",
                 "description": "Mild temperatures, less crowded, potential for wildflowers."

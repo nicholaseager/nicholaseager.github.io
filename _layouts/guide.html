@@ -71,20 +71,20 @@ layout: default
 		{% endif %}
 		<!-- End Basics -->
 
-		<!-- Seasons -->
-		{% if guide.seasons %}
+		<!-- Weather -->
+		{% if guide.weather %}
 		<h2>Best Time To Go</h2>
-		{% if guide.seasons.introduction %}
-		<p>{{ guide.seasons.introduction }}</p>
+		{% if guide.weather.introduction %}
+		<p>{{ guide.weather.introduction }}</p>
 		{% endif %}
-		{% for item in guide.seasons.items %}
-		<p><b>{{item.title}}:</b> {{item.description}}</p>
+		{% for season in guide.weather.seasons %}
+		<p><b>{{season.title}}:</b> {{season.description}}</p>
 		{% endfor %}
-		{% if guide.seasons.conclusion %}
-		<p>{{ guide.seasons.conclusion }}</p>
+		{% if guide.weather.conclusion %}
+		<p>{{ guide.weather.conclusion }}</p>
 		{% endif %}
 		{% endif %}
-		<!-- End Seasons -->
+		<!-- End Weather -->
 
 		<!-- Maps -->
 		{% if guide.maps %}

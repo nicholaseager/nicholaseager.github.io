@@ -111,10 +111,10 @@
             }
         ]
     },
-    "seasons": {
+    "weather": {
         "introduction": "The best time to visit Tanzania depends on your interests and what you hope to see and do while you are there. Depending on the season, Tanzania's weather can change dramatically.",
         "conclusion": "The annual wildebeest migration, which occurs between June and October, is what makes the Serengeti famous. Huge herds of zebras and wildebeest are also roaming the park at this time in search of new grass. It is best to go during the dry season if you want to see this spectacle. Although the wildebeest migration is the Serengeti's most well-known spectacle, there is a wide variety of other wildlife to observe all year long. A variety of animals, including large predators like lions and leopards as well as herbivores like buffalo and giraffe, can be seen at Ngorongoro Crater.",
-        "items": [
+        "seasons": [
             {
                 "title": "Dry Season",
                 "description": "From June to October, there is a dry season marked by little to no rain and clear skies. The vegetation is scarce at this time of year, which makes it easier to see wildlife, making it the best time to go on a safari in Tanzania."
