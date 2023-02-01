@@ -3,6 +3,12 @@
     background-color: $text-dark-color;
     width: 100%;
     position: relative;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .toc-sticky.stick {
@@ -10,6 +16,21 @@
     position: fixed;
     top: 0;
     z-index: 1000;
+}
+
+.toc-sticky.open {
+    .toc-list {
+        .toc-item {
+            display: block;
+            pointer-events: all;
+        }
+    }
+
+    .toc-icon {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+    }
 }
 
 .toc-list {
@@ -27,22 +48,16 @@
 	}
 }
 
-.toc-list.open {
-    .toc-item {
-        display: block;
-        pointer-events: all;
-    }
-}
-
 .toc-item {
     flex: 1;
     display: none;
-    padding: 20px;
+    padding: 10px;
     pointer-events: none;
 
     @include mq(tabletp) {
         display: block;
         pointer-events: all;
+        padding: 20px;
 	}
 }
 
@@ -80,12 +95,9 @@
 
 .toc-icon {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 10px;
-    margin: auto 0;
+    right: 20px;
+    top: 22px;
     color: white;
-    padding: 0 5px;
 
     @include mq(tabletp) {
         display: none;

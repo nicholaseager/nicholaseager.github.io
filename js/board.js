@@ -482,8 +482,7 @@
 				$(window).bind('scroll', updateSticky);
 
 				sticky.click(function() {
-					const tocList = $(".toc-list");
-					tocList.toggleClass("open");
+					sticky.toggleClass("open");
 				});
 			}
 		});
