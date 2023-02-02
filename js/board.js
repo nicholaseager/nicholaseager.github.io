@@ -599,6 +599,47 @@
 
 	});
 	
-	
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Comment Form
+
+	// Override the submit event
+	$(document).on('submit', '#comment-form', function (e) {
+
+		// Clear previous classes
+		$('.eager-form__item--error').removeClass('eager-form__item--error');
+
+		// Get form elements
+		var emailField = $('.eager-form__input[name="email"]');
+		var nameField = $('.eager-form__input[name="name"]');
+		var messageField = $('.eager-form__textarea[name="message"]');
+		var gotchaField = $('.eager-form__gotcha');
+
+		// Validate email
+		if ( emailField.val() === '' ) {
+			emailField.closest('.eager-form__item').addClass('eager-form__item--error');
+		}
+
+		// Validate name
+		if ( nameField.val() === '' ) {
+			nameField.closest('.eager-form__item').addClass('eager-form__item--error');
+		}
+
+		// Validate message
+		if ( messageField.val() === '' ) {
+			messageField.closest('.eager-form__item').addClass('eager-form__item--error');
+		}
+
+		// If all fields are filled, except gotcha
+		if ( emailField.val() !== '' && nameField.val() !== '' && messageField.val() !== '' && gotchaField.val().length === 0 ) {
+
+			// Submit the form!
+		}
+
+		else {
+
+			// Stop submission
+			e.preventDefault();
+		}
+
+	});
 	
 }(jQuery));

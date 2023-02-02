@@ -353,9 +353,14 @@ layout: default
 		{% if guide.conclusion %}
 		<p>{{ guide.conclusion }}</p>
 		{% endif %}
-		<p>Please <a href="{{ "/contact" | relative_url }}">contact</a> me if you want to ask questions; I am happy to help.</p>
 		{% if guide.youtube %}
-		<p>You can also check out <a href="https://www.youtube.com/watch?v={{ guide.youtube }}" target="_blank">a video</a> that I made about the entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)</p>
+		<p>Check out <a href="https://www.youtube.com/watch?v={{ guide.youtube }}" target="_blank">a video</a> that I made about the entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)</p>
 		{% endif %}
+
+		<hr>
+		
+		<p>My site does not support public comments. Please use the form below to send a comment directly to me if you want to ask questions; I am happy to help.</p>
+		{% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
+		{% include comment-form.html url=url %}
 	</div>
 </section>
