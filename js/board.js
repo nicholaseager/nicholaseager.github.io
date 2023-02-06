@@ -343,8 +343,6 @@
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Swipers
 
 		$('.order-swiper').each(function() {
-			console.log("HAHA");
-
 			const orderSwiperThumbs = new Swiper(".order-swiper-thumbs", {
 				spaceBetween: 10,
 				slidesPerView: 4,
