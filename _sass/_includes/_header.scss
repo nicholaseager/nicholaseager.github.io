@@ -20,7 +20,7 @@
 	}
 }
 
-.header-home {
+.header.home {
 	position: absolute;
 	z-index: 1000;
 }
@@ -56,19 +56,23 @@
 	}
 }
 
-.header__title-home {
-	color: white;
-
-	&:hover {
-		color: $accent-color;
+.header.home {
+	.header__title {
+		color: white;
+	
+		&:hover {
+			color: $accent-color;
+		}
 	}
 }
 
-.header__title-page {
-	color: $text-dark-color;
-
-	&:hover {
-		color: $accent-color;
+.header.page {
+	.header__title {
+		color: $text-dark-color;
+	
+		&:hover {
+			color: $accent-color;
+		}
 	}
 }
 
@@ -99,12 +103,16 @@
 	}
 }
 
-.menu__toggle-home {
-	color: white;
+.header.home {
+	.menu__toggle {
+		color: white;
+	}
 }
 
-.menu__toggle-page {
-	color: $text-dark-color;
+.header.page {
+	.menu__toggle {
+		color: $text-dark-color;
+	}
 }
 
 .menu__toggle__icon {
@@ -133,15 +141,19 @@
 	}
 }
 
-.menu__toggle__icon-home {
-	span, span:before, span:after {
-		background: white;
+.header.home {
+	.menu__toggle__icon {
+		span, span:before, span:after {
+			background: white;
+		}
 	}
 }
 
-.menu__toggle__icon-page {
-	span, span:before, span:after {
-		background: $text-dark-color;
+.header.page {
+	.menu__toggle__icon {
+		span, span:before, span:after {
+			background: $text-dark-color;
+		}
 	}
 }
 
@@ -241,42 +253,46 @@
 	}
 }
 
-.menu__list__item__link-home {
-	color: $overlay-text-color;
-
-	&:hover {
-		color: $overlay-accent-color;
-	}
-
-	@include mq(tabletp) {
-		color: white;
-
+.header.home {
+	.menu__list__item__link {
+		color: $overlay-text-color;
+	
 		&:hover {
-			color: $accent-color;
+			color: $overlay-accent-color;
+		}
+	
+		@include mq(tabletp) {
+			color: white;
+	
+			&:hover {
+				color: $accent-color;
+			}
 		}
 	}
 }
 
-.menu__list__item__link-page {
-	color: $overlay-text-color;
-
-	&:hover {
-		color: $overlay-accent-color;
-	}
-
-	@include mq(tabletp) {
-		color: $text-dark-color;
-
-		&:hover {
-			color: $accent-color;
-		}
-	}
+.header.page {
+	.menu__list__item__link {
+		color: $overlay-text-color;
 	
-	&.active-link {
-		color: $overlay-accent-color;
-
+		&:hover {
+			color: $overlay-accent-color;
+		}
+	
 		@include mq(tabletp) {
-			color: $accent-color;
+			color: $text-dark-color;
+	
+			&:hover {
+				color: $accent-color;
+			}
+		}
+		
+		&.active-link {
+			color: $overlay-accent-color;
+	
+			@include mq(tabletp) {
+				color: $accent-color;
+			}
 		}
 	}
 }
