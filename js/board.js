@@ -73,39 +73,41 @@
 
 		// If we clicked mailto/tel
 		else if (thisTarget.indexOf('mailto:') >= 0 || thisTarget.indexOf('tel:') >= 0) {
-
 			// Use the given link
 			window.location = thisTarget;
 		}
 
 		// If link is handled by some JS action – e.g. galleries
 		else if ( $(this).is('.image-gallery-link') ) {
-			
 			// Let JS handle it
 		}
 
 		// If link has overriden on click
 		else if ( $(this).attr('onclick') ) {
-			
 			// Let JS handle it
 		}
 
 		// If link is external
 		else if ( thisTarget.indexOf('http') >= 0 ) {
-
 			// Go to the external link
 			window.open(thisTarget, '_blank');
-
 		}
 
 		// If link is internal
 		else {
 
-			// Change navTarget
-			navTarget = thisTarget;
-			
-			// Switch the URL via History
-			History.pushState(null, docTitle, thisTarget);
+			// If we are using ajax loading, push history state.
+			// Otherwise just use the link.
+			if ( $('body').hasClass('ajax-loading') ) {
+				// Change navTarget
+				navTarget = thisTarget;
+				
+				// Switch the URL via History
+				History.pushState(null, docTitle, thisTarget);
+			} else {
+				// Use the given link
+				window.location = thisTarget;
+			}
 		}
 
 	});
