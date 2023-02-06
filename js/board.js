@@ -50,7 +50,7 @@
 
 		// Switch active link states
 		$('.active-link').removeClass('active-link');
-		
+
 		var navTarget = $('body').attr('data-page-url');
 		$('a[href="' + navTarget + '"]').addClass('active-link');
 
@@ -312,8 +312,14 @@
 				var id = $this.attr('id');
 				if (id && id.startsWith("lazyframe")) {
 					if (isScrolledIntoView($this, 50)) {
+						// Remove srcdoc containing background and load button
 						$this.removeAttr("srcdoc");
-						$this.attr('src', $this.attr('data-src'));
+
+						// Replace the iframe source with the intended source
+						// This method avoids an issue with the window history duplicates
+						(this.contentWindow || this.documentWindow).location.replace($this.attr('data-src'));
+
+						// Remove the lazy id so this doesn't happen again
 						$this.attr('id', id.replace('lazyframe', ''));
 					}
 				}
