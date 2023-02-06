@@ -1,7 +1,7 @@
 (function ($) {
 	'use strict';
 
-		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Navigation
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Navigation
 
 	// Global vars
 	var navTarget = $('body').attr('data-page-url');
@@ -14,23 +14,19 @@
 
 		// Loading state
 		$('body').addClass('loading');
+		$('.header').removeClass('light');
+		$('.header').addClass('dark');
 
 		// Load the page
 		$('.page-loader').load( state.hash + ' .page__content', function() {
+			// Scroll to top
+			$('html, body').animate({ scrollTop: 0 }, 'slow');
+
 			// Find transition time
 			var transitionTime = 400;
 
 			// After current content fades out
 			setTimeout( function() {
-				// Scroll to top
-				$('html, body').animate({ scrollTop: 0 }, 0);
-
-				// Update header
-				var style = $('.page__content').attr('data-header-color');
-				$('.header').removeClass('color-home');
-				$('.header').removeClass('color-page');
-				$('.header').addClass(style);
-
 				// Remove old content
 				$('.page .page__content').remove();
 
@@ -72,7 +68,7 @@
 		}
 
 		// If we clicked mailto/tel
-		if (thisTarget.indexOf('#') >= 0 || thisTarget.indexOf('mailto:') >= 0 || thisTarget.indexOf('tel:') >= 0) {
+		else if (thisTarget.indexOf('mailto:') >= 0 || thisTarget.indexOf('tel:') >= 0) {
 
 			// Use the given link
 			window.location = thisTarget;
@@ -130,6 +126,12 @@
 
 			// Show the content
 			$('body').removeClass('loading');
+
+			// Update header after loading animation delay
+			setTimeout(function() {
+				var style = $('.page__content').attr('data-header-style');
+				$('.header').attr('class', 'header ' + style);
+			}, 150);
 
 			// Hide the menu
 			$('body').removeClass('menu--open');

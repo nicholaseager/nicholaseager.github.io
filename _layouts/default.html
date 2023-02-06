@@ -62,11 +62,11 @@
 
 <body class="loading" data-site-url="{{ site.url }}" data-page-url="{{ page.url | replace: 'index.html', '' }}">
 	{% if page.url == "/" or page.header == "transparent" %}
-	{% assign color-style = "color-home" %}
+	{% assign header-style = "light transparent" %}
 	{% else %}
-	{% assign color-style = "color-page" %}
+	{% assign header-style = "dark" %}
 	{% endif %}
-	{% include header.html style=color-style %}
+	{% include header.html style=header-style %}
 
 	<div class="loader">
 		{% include loader.html %}
@@ -79,7 +79,7 @@
 		<div
 			class="page__content"
 			data-page-title="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}"
-			data-header-color="{{color-style}}"
+			data-header-style="{{header-style}}"
 			>
 
 			{{ content }}
