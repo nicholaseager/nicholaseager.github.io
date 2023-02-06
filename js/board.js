@@ -167,79 +167,6 @@
 			mainVideo.append("<source type='video/mp4' src='" + desktopSrc + "' />");
 		}
 
-		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Swipers
-
-		const singleSlideSwiper = new Swiper('.swiperSingle', {
-			// Optional parameters
-			direction: 'horizontal',
-			loop: true,
-			autoHeight: true,
-			preloadImages: false,
-		
-			autoplay: {
-				delay: 5000,
-			},
-		
-			lazy: {
-				loadPrevNext: true,
-			},
-		});
-		
-		const dynamicSlideSwiper = new Swiper('.swiperDynamic', {
-			// Optional parameters
-			direction: 'horizontal',
-			loop: true,
-			preloadImages: false,
-		
-			autoplay: {
-				delay: 5000,
-			},
-		
-			lazy: {
-				loadPrevNext: true,
-			},
-			breakpoints: {
-				480: {
-					slidesPerView: 1,
-					spaceBetween: 0
-				},
-				960: {
-					slidesPerView: 2,
-					spaceBetween: 20
-				},
-				1440: {
-					slidesPerView: 3,
-					spaceBetween: 30
-				}
-			}
-		});
-
-		const orderSwiperThumbs = new Swiper(".order-swiper-thumbs", {
-			spaceBetween: 10,
-			slidesPerView: 4,
-			freeMode: true,
-			watchSlidesProgress: true,
-		});
-
-		const orderSwiper = new Swiper('.order-swiper', {
-			// Optional parameters
-			direction: 'horizontal',
-			loop: true,
-			autoHeight: true,
-		
-			autoplay: {
-				delay: 5000,
-			},
-
-			lazy: {
-				loadPrevNext: true,
-			},
-
-			thumbs: {
-				swiper: orderSwiperThumbs,
-			},
-		});
-
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Galleries
 
 		var galleryID = 0;
@@ -411,6 +338,56 @@
 			updateElements("all")
 		});
 
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Swipers
+
+		$('.order-swiper').each(function() {
+			console.log("HAHA");
+
+			const orderSwiperThumbs = new Swiper(".order-swiper-thumbs", {
+				spaceBetween: 10,
+				slidesPerView: 4,
+				freeMode: true,
+				watchSlidesProgress: true,
+			});
+		
+			const orderSwiper = new Swiper('.order-swiper', {
+				// Optional parameters
+				direction: 'horizontal',
+				loop: true,
+				autoHeight: true,
+			
+				autoplay: {
+					delay: 5000,
+				},
+		
+				lazy: {
+					loadPrevNext: true,
+				},
+		
+				thumbs: {
+					swiper: orderSwiperThumbs,
+				},
+			});
+		});
+
+		$('.swiperSingle').each(function() {
+			const singleSlideSwiper = new Swiper('.swiperSingle', {
+				// Optional parameters
+				direction: 'horizontal',
+				loop: true,
+				autoHeight: true,
+				preloadImages: false,
+			
+				autoplay: {
+					delay: 5000,
+				},
+			
+				lazy: {
+					loadPrevNext: true,
+				},
+			});
+		});
+
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Images
 
 		$('.single p > img').each( function() {
@@ -533,7 +510,6 @@
 
 	// Run functions on load
 	pageFunctions();
-
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
 
