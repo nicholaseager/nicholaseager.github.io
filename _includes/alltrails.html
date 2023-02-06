@@ -1,4 +1,3 @@
-<p>Below is a map of the entire route. To better view the map, <a href="https://www.alltrails.com/explore/recording/{{ include.id }}" target="_blank">see it in full-screen</a>.</p>
 {%- capture link -%}https://www.alltrails.com/widget/recording/{{ include.id }}?scrollZoom=false&elevationDiagram=false&u=m{%- endcapture -%}
 {% include lazy-frame.html
     link=link
@@ -8,3 +7,4 @@
     background-color="rgb(190,208,170)"
     loadbutton-src="https://ik.imagekit.io/qn1gkawvy/web/compass-regular.svg"
 %}
+<p>To better view the map, <a href="https://www.alltrails.com/explore/recording/{{ include.id }}" target="_blank">see it in full-screen</a>.</p>

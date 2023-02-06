@@ -13,8 +13,24 @@ layout: default
 
 </section>
 
-<section class="single">
+<section class="single {% if page.toc %}table-of-contents-container{% endif %}">
 
+	{% if page.toc %}
+	<div id="table-of-contents">
+		<h2 id="table-of-contents">Table of Contents</h2>
+		<ol class="toc-list">
+			<!-- Generated in JS -->
+		</ol>
+	</div>
+
+	<hr>
+
+	<div class="table-of-contents-content">
+		{{ page.content }}
+	</div>
+
+	{% else %}
 	{{ page.content }}
+	{% endif %}
 
 </section>

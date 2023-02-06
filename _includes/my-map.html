@@ -14,7 +14,6 @@
     }
 </style>
 <div class="map-wrapper">
-    <p>Below is a map with points of interest. To better view the map, <a href="https://www.google.com/maps/d/viewer?mid={{ include.id }}" target="_blank">see it in full-screen</a>.</p>
     {%- capture link -%}https://www.google.com/maps/d/u/0/embed?mid={{ include.id }}{%- endcapture -%}
     {% include lazy-frame.html
         link=link
@@ -24,5 +23,6 @@
         background-color="rgb(146,180,243)"
         loadbutton-src="https://ik.imagekit.io/qn1gkawvy/web/map-location-dot-solid.svg"
     %}
+    <p>To better view the map, <a href="https://www.google.com/maps/d/viewer?mid={{ include.id }}" target="_blank">see it in full-screen</a>.</p>
     <div class="map-overlay" onclick="style.pointerEvents='none'"></div>
 </div>
