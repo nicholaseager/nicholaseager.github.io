@@ -1,5 +1,6 @@
 ---
 layout: page
+jsonld: article
 title: Navigating on the Trail
 description: Having solid navigational skills is super important when you're out on a backcountry trail where there's no cell service. You don't want to get lost and have a bad time, so it's crucial to be able to navigate effectively.
 date: 2023-02-06
