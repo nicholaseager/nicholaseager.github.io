@@ -27,9 +27,3 @@ Later on, Nicholas moved to Vietnam to marry the love of his life and continue h
 ## Ready To Work Together?
 
 <a href="{{ "/contact" | relative_url }}" class="button button--large">Get In Touch</a>
-
-<br><br>
-
-<center>
-{% include kofi.html %}
-</center>
