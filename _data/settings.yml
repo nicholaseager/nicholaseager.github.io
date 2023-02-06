@@ -160,6 +160,3 @@ font_settings:
   buttons:
     weight: 500
     letter_spacing: 0
-
-advanced_settings:
-  ajax_loading: false
