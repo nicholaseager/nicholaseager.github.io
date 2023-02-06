@@ -172,7 +172,7 @@ layout: default
 				<tr>
 					<td>{{forloop.index}}</td>
 					<td>
-						{% if phase.description %}<a id="itinref:{{forloop.index}}" href="#itin:{{forloop.index}}">{% endif %}
+						{% if phase.description %}<a id="itinerary-phase-ref-{{forloop.index}}" href="#itinerary-phase-{{forloop.index}}">{% endif %}
 						{{phase.title}}
 						{% if phase.description %}</a>{% endif %}
 					</td>
@@ -201,14 +201,14 @@ layout: default
 
 		{% for phase in guide.itinerary.phases %}
 		{% if phase.description %}
-		<h5 id="itin:{{forloop.index}}">{{phase.title}}</h5>
+		<h5 id="itinerary-phase-{{forloop.index}}">{{phase.title}}</h5>
 		{% if phase.images %}
 		{% assign photos = phase.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}
 		{% endif %}
 		<p>
 			{{phase.description}}
-			<a href="#itinref:1" class="reversefootnote" role="doc-backlink">&#8617;</a>
+			<a href="#itinerary-phase-ref-{{forloop.index}}" class="reversefootnote" role="doc-backlink">&#8617;</a>
 		</p>
 		{% endif %}
 		{% endfor %}

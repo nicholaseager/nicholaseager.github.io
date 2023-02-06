@@ -105,8 +105,11 @@
 		
 	}
 
-	$(document).on('click', '.scrollto', function (event){
+	$(document).on('click', 'a[href^="#"]', function (event) {
 		var id = $(this).attr("href");
+		// id = id.replace('#', '');
+		
+		console.log("ID: " + id);
 		if (id) {
 			var offset = 100;
 			var target = $(id).offset().top - offset;
