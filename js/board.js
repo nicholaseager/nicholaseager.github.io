@@ -362,6 +362,43 @@
 			});
 		});
 
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Gear Lists
+
+		$('.gear-wrap').each( function() {
+			var gallery = $(this).find('.gear-gallery');
+			var buttons = $(this).find('.gear-buttons');
+
+			function updateElements(tag) {
+				if (tag == "all") tag = "";
+
+				gallery.children('.gear-gallery-image').each(function () {
+					$(this).removeClass('show');
+					if ($(this).attr('class').indexOf(tag) > -1) {
+						$(this).addClass('show');
+					}
+				});
+			}
+
+			buttons.find('.button').click(function(event) {
+				// Update tag
+				var tag = $(this).attr('data-tag');
+				$("#gear-gallery").fadeOut("fast", function () {
+					updateElements(tag);
+					$("#gear-gallery").fadeIn("slow");
+				});
+				
+				// Update active
+				var current = buttons.find('.active');
+				current.removeClass('active');
+				$(this).addClass('active');
+
+				event.preventDefault();
+			});
+
+			// Show all items by default
+			updateElements("all")
+		});
+
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Images
 
 		$('.single p > img').each( function() {
