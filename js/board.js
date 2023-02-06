@@ -80,6 +80,12 @@
 			// Let JS handle it
 		}
 
+		// If link has overriden on click
+		else if ( $(this).attr('onclick') ) {
+			
+			// Let JS handle it
+		}
+
 		// If link is external
 		else if ( thisTarget.indexOf('http') >= 0 ) {
 
