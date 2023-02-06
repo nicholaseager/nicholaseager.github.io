@@ -20,7 +20,7 @@
 	}
 }
 
-.header.home {
+.header.color-home {
 	position: absolute;
 	z-index: 1000;
 }
@@ -56,7 +56,7 @@
 	}
 }
 
-.header.home {
+.header.color-home {
 	.header__title {
 		color: white;
 	
@@ -66,7 +66,7 @@
 	}
 }
 
-.header.page {
+.header.color-page {
 	.header__title {
 		color: $text-dark-color;
 	
@@ -103,13 +103,13 @@
 	}
 }
 
-.header.home {
+.header.color-home {
 	.menu__toggle {
 		color: white;
 	}
 }
 
-.header.page {
+.header.color-page {
 	.menu__toggle {
 		color: $text-dark-color;
 	}
@@ -141,7 +141,7 @@
 	}
 }
 
-.header.home {
+.header.color-home {
 	.menu__toggle__icon {
 		span, span:before, span:after {
 			background: white;
@@ -149,7 +149,7 @@
 	}
 }
 
-.header.page {
+.header.color-page {
 	.menu__toggle__icon {
 		span, span:before, span:after {
 			background: $text-dark-color;
@@ -253,7 +253,7 @@
 	}
 }
 
-.header.home {
+.header.color-home {
 	.menu__list__item__link {
 		color: $overlay-text-color;
 	
@@ -271,7 +271,7 @@
 	}
 }
 
-.header.page {
+.header.color-page {
 	.menu__list__item__link {
 		color: $overlay-text-color;
 	

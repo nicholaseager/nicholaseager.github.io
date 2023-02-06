@@ -1,16 +1,107 @@
 (function ($) {
 	'use strict';
 
-	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Link Scrolling
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Navigation
 
-	$(document).on('click', 'a[href^="#"]', function (event) {
-		var id = $(this).attr("href");
-		if (id) {
+	// Global vars
+	var navTarget = $('body').attr('data-page-url');
+	var docTitle = document.title;
+	var History = window.History;
+
+	// State change event
+	History.Adapter.bind(window,'statechange',function(){
+		var state = History.getState();
+
+		// Loading state
+		$('body').addClass('loading');
+
+		// Load the page
+		$('.page-loader').load( state.hash + ' .page__content', function() {
+			// Find transition time
+			var transitionTime = 400;
+
+			// After current content fades out
+			setTimeout( function() {
+				// Scroll to top
+				$('html, body').animate({ scrollTop: 0 }, 0);
+
+				// Update header
+				var style = $('.page__content').attr('data-header-color');
+				$('.header').removeClass('color-home');
+				$('.header').removeClass('color-page');
+				$('.header').addClass(style);
+
+				// Remove old content
+				$('.page .page__content').remove();
+
+				// Append new content
+				$('.page-loader .page__content').appendTo('.page');
+
+				// Set page URL
+				$('body').attr('data-page-url', window.location.pathname);
+
+				// Update navTarget
+				navTarget = $('body').attr('data-page-url');
+
+				// Set page title
+				docTitle = $('.page__content').attr('data-page-title');
+				document.title = docTitle;
+
+				// Run page functions
+				pageFunctions();
+
+			}, transitionTime);
+
+		});
+
+	});
+
+	$(document).on('click', 'a', function (event){
+		// Don't follow link
+		event.preventDefault();
+
+		// Get the link target
+		var thisTarget = $(this).attr('href');
+
+		// If we clicked an anchor
+		if (thisTarget.indexOf('#') >= 0) {
+			// Scroll to link
 			var offset = 100;
-			var target = $(id).offset().top - offset;
+			var target = $(thisTarget).offset().top - offset;
 			$('html, body').animate({ scrollTop: target }, 500);
-			event.preventDefault();
 		}
+
+		// If we clicked mailto/tel
+		if (thisTarget.indexOf('#') >= 0 || thisTarget.indexOf('mailto:') >= 0 || thisTarget.indexOf('tel:') >= 0) {
+
+			// Use the given link
+			window.location = thisTarget;
+		}
+
+		// If link is handled by some JS action – e.g. galleries
+		else if ( $(this).is('.image-gallery-link') ) {
+			
+			// Let JS handle it
+		}
+
+		// If link is external
+		else if ( thisTarget.indexOf('http') >= 0 ) {
+
+			// Go to the external link
+			window.open(thisTarget, '_blank');
+
+		}
+
+		// If link is internal
+		else {
+
+			// Change navTarget
+			navTarget = thisTarget;
+			
+			// Switch the URL via History
+			History.pushState(null, docTitle, thisTarget);
+		}
+
 	});
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Helpers
@@ -50,8 +141,6 @@
 
 		// Switch active link states
 		$('.active-link').removeClass('active-link');
-
-		var navTarget = $('body').attr('data-page-url');
 		$('a[href="' + navTarget + '"]').addClass('active-link');
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Main Video Source Switching

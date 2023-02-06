@@ -1,10 +1,4 @@
-{% if page.url == "/" or page.header == "transparent" %}
-{% assign color-style = "home" %}
-{% else %}
-{% assign color-style = "page" %}
-{% endif %}
-
-<header class="header {{ color-style }}">
+<header class="header {{ include.style | default: 'color-home' }}">
 
 	<div class="wrap">
 
