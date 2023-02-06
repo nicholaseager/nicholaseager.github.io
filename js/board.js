@@ -59,8 +59,12 @@
 		// Get the link target
 		var thisTarget = $(this).attr('href');
 
+		if ( !thisTarget ) {
+			// Let JS handle it
+		}
+
 		// If we clicked an anchor
-		if (thisTarget.indexOf('#') >= 0) {
+		else if (thisTarget.indexOf('#') >= 0) {
 			// Scroll to link
 			var offset = 100;
 			var target = $(thisTarget).offset().top - offset;
