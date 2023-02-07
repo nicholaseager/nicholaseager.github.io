@@ -373,6 +373,18 @@ layout: default
 			%}
 		</div>
 
+		<h3>You Might Also Like</h3>
+		{%- assign similar_guides = site.data.metadata['similar_guides'] -%}
+		{%- assign similar_guides = similar_guides[page.guide] -%}
+		{%- assign similar_guides = similar_guides | sort: "simularity" | reverse -%}
+		
+		{%- assign guides = "" | split: ',' -%}
+		{%- for similar_guide in similar_guides -%}
+			{%- assign guide = site.guides | where: "guide", similar_guide.name | first -%}
+			{%- assign guides = guides | push: guide -%}
+		{%- endfor -%}
+		{% include latest-collection.html items=guides %}
+
 		<hr>
 		
 		<p>My site does not support public comments. Please use the form below to send a comment directly to me if you want to ask questions; I am happy to help.</p>
