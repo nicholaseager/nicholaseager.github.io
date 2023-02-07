@@ -50,12 +50,20 @@ layout: default
 	<p>Interested? I offer a few different types of licenses for my photos and footage. Read more about <a href="{{ "/how-to-use-my-art" | relative_url }}">how to use my art</a>.</p>
 	<h2>You Might Also Like</h2>
 	<p>Want a different photo? <a href="{{ "/photos" | relative_url }}">Browse more photos</a> or look below to find what you're looking for.</p>
+	{%- assign similar_photos = site.data.metadata['similar_photos'] -%}
+	{%- assign similar_photos = similar_photos[page.image] -%}
+	{%- assign similar_photos = similar_photos | sort: "simularity" | reverse -%}
+
+	{%- capture photos -%}
+	{%- for similar_photo in similar_photos -%}
+		{{ similar_photo.name }},
+	{%- endfor -%}
+	{% endcapture %}
+	{% assign photos = photos | split: ','%}
 	{% include gallery.html
 		orderable=true
+		photo_array=photos
 		limit=6
-		tags=page.tags
-		ignore_tags="showcase"
-		ignore_photos=page.image
 	%}
 
 	<p>If you have any comments, questions, or other inquiries, please <a href="{{ "/contact" | relative_url }}">contact me</a> separately.</p>
