@@ -31,14 +31,3 @@ sitemap: false
         Collaboration
     </a>
 </div>
-
----
-
-#### Latest YouTube
-{% include latest-youtube.html %}
-
----
-
-#### Latest Travel Guides
-{% assign guides = site.guides | reverse %}
-{% include latest-collection.html items=guides %}
