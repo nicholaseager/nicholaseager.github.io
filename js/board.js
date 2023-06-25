@@ -427,19 +427,15 @@
 				var id = $this.attr('id');
 				if (id && id.startsWith("lazyframe")) {
 					if (isScrolledIntoView($this, 50)) {
+						// Remove srcdoc containing background and load button
+						$this.removeAttr("srcdoc");
+
+						// Replace the iframe source with the intended source
 						// This method avoids an issue with the window history duplicates
-						var window = (this.contentWindow || this.documentWindow);
+						(this.contentWindow || this.documentWindow).location.replace($this.attr('data-src'));
 
-						if (window) {
-							// Remove srcdoc containing background and load button
-							$this.removeAttr("srcdoc");
-
-							// Replace the iframe source with the intended source
-							window.location.replace($this.attr('data-src'));
-
-							// Remove the lazy id so this doesn't happen again
-							$this.attr('id', id.replace('lazyframe', ''));
-						}
+						// Remove the lazy id so this doesn't happen again
+						$this.attr('id', id.replace('lazyframe', ''));
 					}
 				}
 			});
