@@ -444,7 +444,7 @@
 		setTimeout(() => {
 			loadFrames();
 			$(window).bind('scroll', loadFrames);
-		}, 500);
+		}, 5000);
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Auto TOC
 
