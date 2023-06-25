@@ -441,8 +441,10 @@
 			});
 		}
 
-		loadFrames();
-		$(window).bind('scroll', loadFrames);
+		setTimeout(() => {
+			loadFrames();
+			$(window).bind('scroll', loadFrames);
+		}, 500);
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Auto TOC
 
