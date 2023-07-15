@@ -17,16 +17,26 @@ sitemap: false
 ></iframe>
 {% endfor %}
 
+#### Behind the Scenes
+
+<iframe
+    src="https://www.instagram.com/nicholas.eager/embed"
+    width="540" height="600"
+    allowtransparency="true"
+    allowfullscreen="true"
+    frameborder="0"
+    data-instgrm-payload-id="instagram-media-payload-0"
+    scrolling="no"
+    loading="lazy"
+    style="background: white; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; padding: 0px;">
+</iframe>
+
 #### Latest Travel Guides
 {% assign guides = site.guides | reverse %}
 {% include latest-collection.html items=guides %}
 
 <center><h4>Other Links</h4></center>
 <div class="links-container">
-    <a href="https://www.instagram.com/nicholas.eager/" class="link">
-        <i class="fab fa-instagram" aria-hidden="true"></i>
-        Instagram
-    </a>
     <a href="{{ "/gear" | relative_url }}" class="link">
         <i class="fas fa-camera" aria-hidden="true"></i>
         Gear
