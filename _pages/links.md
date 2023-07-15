@@ -27,7 +27,6 @@ sitemap: false
     frameborder="0"
     data-instgrm-payload-id="instagram-media-payload-0"
     scrolling="no"
-    loading="lazy"
     style="background: white; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; padding: 0px;">
 </iframe>
 
