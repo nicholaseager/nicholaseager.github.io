@@ -76,6 +76,21 @@ layout: default
 		{% endif %}
 		<!-- End Overview -->
 
+		<!-- Basics -->
+		{% if guide.basics %}
+		<h2>Basics</h2>
+		{% if guide.basics.introduction %}
+		<p>{{ guide.basics.introduction }}</p>
+		{% endif %}
+		{% for item in guide.basics.items %}
+		<p><b>{{item.title}}:</b> {{item.description}}</p>
+		{% endfor %}
+		{% if guide.basics.conclusion %}
+		<p>{{ guide.basics.conclusion }}</p>
+		{% endif %}
+		{% endif %}
+		<!-- End Basics -->
+
 		<!-- Extra Sections -->
 		{% assign sections = guide.extra_sections | where_exp: "section", "section.position == 'top'" %}
 		{% if sections.size > 0 %}
@@ -97,21 +112,6 @@ layout: default
 		{% endfor %}
 		{% endif %}
 		<!-- End Extra Sections -->
-
-		<!-- Basics -->
-		{% if guide.basics %}
-		<h2>Basics</h2>
-		{% if guide.basics.introduction %}
-		<p>{{ guide.basics.introduction }}</p>
-		{% endif %}
-		{% for item in guide.basics.items %}
-		<p><b>{{item.title}}:</b> {{item.description}}</p>
-		{% endfor %}
-		{% if guide.basics.conclusion %}
-		<p>{{ guide.basics.conclusion }}</p>
-		{% endif %}
-		{% endif %}
-		<!-- End Basics -->
 
 		<!-- Weather -->
 		{% if guide.weather %}

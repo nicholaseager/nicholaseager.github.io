@@ -99,7 +99,8 @@
     "extra_sections": [
         {
             "title": "Options",
-            "description": "Now, let's explore the different itinerary options for the Three Passes Trek. You have two major decisions to make: where to start and which way to go.",
+            "position": "top",
+            "description": "Now, let's explore the different itinerary options for the Three Passes Trek. As you might be able to see from the <a href='#maps'>map</a>, you have two major decisions to make: where to start and which way to go.",
             "sections": [
                 {
                     "title": "Where to start?",
