@@ -3,7 +3,7 @@
     "date": "2023-08-09",
     "modified_date": "2023-08-09",
     "description": "Everything you need to know to plan your own Three Passes Trek.",
-    "image": "photos/countries/nepal/three-passes-trek/gokyo-lake-mount-everest",
+    "image": "photos/countries/nepal/three-passes-trek/mount-everest-from-kala-patthar",
     "tags": [
         "nepal",
         "three-passes-trek",
@@ -30,7 +30,9 @@
     "overview": {
         "summary": "Along this challenging and rewarding adventure in the Everest region, you'll encounter three high mountain passes – Renjo La, Cho La, and Kongma La, each offering breathtaking views of the Himalayas. You'll witness the incredible Gokyo Lake, with it's crystal-clear waters and friendly yaks. And of course you'll visit the base camps of iconic peaks like Everest, Ama Dablam, and Cho Oyu, giving you a glimpse into how climbers prepare for their expeditions. You'll also have the opportunity to summit smaller peaks like Sundar Ri, Gokyo Ri, and Chukung Ri, offering challenging side-trips with solitary views. In this guide, I'll cover a couple different <a href='#options'>itinerary options</a> to make this journey your own.",
         "images": [
-            "photos/countries/nepal/three-passes-trek/gokyo-lake-mount-everest-prayer-flags"
+            "photos/countries/nepal/three-passes-trek/gokyo-lake-mount-everest-prayer-flags",
+            "photos/countries/nepal/three-passes-trek/hiker-walking-towards-ama-dablam",
+            "photos/countries/nepal/three-passes-trek/stupa-and-snowy-mountains"
         ]
     },
     "basics": {
@@ -128,6 +130,9 @@
             "title": "Options",
             "position": "top",
             "description": "Now, let's explore the different itinerary options for the Three Passes Trek. As you might be able to see from the <a href='#maps'>map</a>, you have two major decisions to make: where to start and which way to go.",
+            "images": [
+                "photos/countries/nepal/three-passes-trek/overview-map"
+            ],
             "sections": [
                 {
                     "title": "Where to start?",
