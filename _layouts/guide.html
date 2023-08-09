@@ -91,28 +91,6 @@ layout: default
 		{% endif %}
 		<!-- End Basics -->
 
-		<!-- Extra Sections -->
-		{% assign sections = guide.extra_sections | where_exp: "section", "section.position == 'top'" %}
-		{% if sections.size > 0 %}
-		{% for section in sections %}
-		<h2>{{section.title}}</h2>
-		{% if section.images %}
-		{% assign photos = section.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{section.description}}</p>
-		{% for subsection in section.sections %}
-		<h3>{{subsection.title}}</h3>
-		{% if subsection.images %}
-		{% assign photos = subsection.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{subsection.description}}</p>
-		{% endfor %}
-		{% endfor %}
-		{% endif %}
-		<!-- End Extra Sections -->
-
 		<!-- Weather -->
 		{% if guide.weather %}
 		<h2>Weather</h2>
@@ -152,6 +130,28 @@ layout: default
 		{% endif %}
 		{% endif %}
 		<!-- End Maps -->
+
+		<!-- Extra Sections -->
+		{% assign sections = guide.extra_sections %}
+		{% if sections.size > 0 %}
+		{% for section in sections %}
+		<h2>{{section.title}}</h2>
+		{% if section.images %}
+		{% assign photos = section.images | join: '<br />' %}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
+		<p>{{section.description}}</p>
+		{% for subsection in section.sections %}
+		<h3>{{subsection.title}}</h3>
+		{% if subsection.images %}
+		{% assign photos = subsection.images | join: '<br />' %}
+		{% include post-swiper.html photos=photos %}
+		{% endif %}
+		<p>{{subsection.description}}</p>
+		{% endfor %}
+		{% endfor %}
+		{% endif %}
+		<!-- End Extra Sections -->
 
 		<!-- Itinerary -->
 		{% if guide.itinerary %}
@@ -334,28 +334,6 @@ layout: default
 		{% endif %}
 		{% endif %}
 		<!-- End Basics -->
-
-		<!-- Extra Sections -->
-		{% assign sections = guide.extra_sections | where_exp: "section", "section.position != 'top'" %}
-		{% if sections.size > 0 %}
-		{% for section in sections %}
-		<h2>{{section.title}}</h2>
-		{% if section.images %}
-		{% assign photos = section.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{section.description}}</p>
-		{% for subsection in section.sections %}
-		<h3>{{subsection.title}}</h3>
-		{% if subsection.images %}
-		{% assign photos = subsection.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{subsection.description}}</p>
-		{% endfor %}
-		{% endfor %}
-		{% endif %}
-		<!-- End Extra Sections -->
 
 		<h3>Conclusion</h3>
 		{% if guide.conclusion %}

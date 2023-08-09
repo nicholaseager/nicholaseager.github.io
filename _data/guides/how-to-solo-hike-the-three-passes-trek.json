@@ -128,11 +128,7 @@
     "extra_sections": [
         {
             "title": "Options",
-            "position": "top",
             "description": "Now, let's explore the different itinerary options for the Three Passes Trek. As you might be able to see from the <a href='#maps'>map</a>, you have two major decisions to make: where to start and which way to go.",
-            "images": [
-                "photos/countries/nepal/three-passes-trek/overview-map"
-            ],
             "sections": [
                 {
                     "title": "Where to start?",
