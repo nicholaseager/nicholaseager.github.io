@@ -66,7 +66,31 @@
                 "description": "Although most villages have potable water available, it's prudent to have water purification equipment on hand, just in case."
             },
             {
-                "title": "No Camping Gear",
+                "title": "Water bottle",
+                "description": "Personally, I think a 1L water bottle is enough. Water on this route is available at all villages."
+            },
+            {
+                "title": "Sun gear",
+                "description": "When the sun is bright in the mountains, you will feel it even if it's cold. Bring a sun hat and good sunglasses to prevent snow blindness."
+            },
+            {
+                "title": "Snacks",
+                "description": "It's nice to make some trail mix or something to bring along in case you get hungry between meals. You can find ingredients in Kathmandu's Asan Market."
+            },
+            {
+                "title": "Flip Flops",
+                "description": "It's nice to change into different shoes at the end of the day. Personally I prefer flip flops and socks for tea house exploring :)"
+            },
+            {
+                "title": "Power Bank",
+                "description": "Charging devices can get expensive up in the mountain. Bring as big of a power bank as you're willing to carry."
+            },
+            {
+                "title": "Camera",
+                "description": "Of course it is nice to remember your trip! Check out all of my <a href='/gear'>photography gear</a>."
+            },
+            {
+                "title": "Camping gear",
                 "description": "Most villages on this route offer food and accommodations, rendering camping gear such as tents, sleeping bags, mattresses, and cooking equipment non-essential, unless your exploration takes you to remote areas."
             },
             {
