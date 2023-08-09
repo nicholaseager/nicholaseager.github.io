@@ -28,7 +28,10 @@
         }
     },
     "overview": {
-        "summary": "Along this challenging and rewarding adventure in the Everest region, you'll encounter three high mountain passes – Renjo La, Cho La, and Kongma La, each offering breathtaking views of the Himalayas. You'll witness the incredible Gokyo Lake, with it's crystal-clear waters and friendly yaks. And of course you'll visit the base camps of iconic peaks like Everest, Ama Dablam, and Cho Oyu, giving you a glimpse into how climbers prepare for their expeditions. You'll also have the opportunity to summit smaller peaks like Sundar Ri, Gokyo Ri, and Chukung Ri, offering challenging side-trips with solitary views. In this guide, I'll cover a couple different <a href='#options'>itinerary options</a> to make this journey your own."
+        "summary": "Along this challenging and rewarding adventure in the Everest region, you'll encounter three high mountain passes – Renjo La, Cho La, and Kongma La, each offering breathtaking views of the Himalayas. You'll witness the incredible Gokyo Lake, with it's crystal-clear waters and friendly yaks. And of course you'll visit the base camps of iconic peaks like Everest, Ama Dablam, and Cho Oyu, giving you a glimpse into how climbers prepare for their expeditions. You'll also have the opportunity to summit smaller peaks like Sundar Ri, Gokyo Ri, and Chukung Ri, offering challenging side-trips with solitary views. In this guide, I'll cover a couple different <a href='#options'>itinerary options</a> to make this journey your own.",
+        "images": [
+            "photos/countries/nepal/three-passes-trek/gokyo-lake-mount-everest-prayer-flags"
+        ]
     },
     "basics": {
         "items": [
@@ -128,11 +131,17 @@
             "sections": [
                 {
                     "title": "Where to start?",
-                    "description": "Lukla is the typical starting point of many treks in the Khumbu region. However, you have a couple of options to reach here. You can either take a jeep to a village lower in the Solukhumbu valley and walk to Lukla, or you can fly directly to Lukla from Kathmandu. Flying is faster and more convenient, but flights are weather-dependent, can be subject to delays and cancellations, and are more expensive. If you have a few extra days and wish for a more authentic experience, consider starting your trek from lower in the Solukhumbu Valley. This path allows you to explore lesser-visited villages, witness the majestic summit of Pikey Peak, and save some money by avoiding the flight to Lukla. I chose this option to immerse myself in the local culture and discover hidden gems. The typical starting points are Jiri, Salleri, Dhap, or Phaplu. Most hotels in Thamel, Kathmandu, can help you organize your journey to the starting point."
+                    "description": "Lukla is the typical starting point of many treks in the Khumbu region. However, you have a couple of options to reach here. You can either take a jeep to a village lower in the Solukhumbu valley and walk to Lukla, or you can fly directly to Lukla from Kathmandu. Flying is faster and more convenient, but flights are weather-dependent, can be subject to delays and cancellations, and are more expensive. If you have a few extra days and wish for a more authentic experience, consider starting your trek from lower in the Solukhumbu Valley. This path allows you to explore lesser-visited villages, witness the majestic summit of Pikey Peak, and save some money by avoiding the flight to Lukla. I chose this option to immerse myself in the local culture and discover hidden gems. The typical starting points are Jiri, Salleri, Dhap, or Phaplu. Most hotels in Thamel, Kathmandu, can help you organize your journey to the starting point.",
+                    "images": [
+                        "photos/countries/nepal/three-passes-trek/plane-landing-at-lukla"
+                    ]
                 },
                 {
                     "title": "Which way to go?",
-                    "description": "Next, you'll have to decide whether to go clockwise or counter-clockwise on your journey. After reaching Namche Bazaar, the path splits. Going clockwise will offer you quieter trails and tea houses, and if Everest Base Camp is your main destination, you'll save it for last, building up the excitement. Additionally, the views of Everest, Ama Dablam, and Gokyo Lake as you descend from the passes are truly awe-inspiring. On the other hand, going counter-clockwise provides a gentler elevation gain and a slightly more defined acclimatization schedule. Personally, I opted to go clockwise for fewer crowds and better vistas, and I was not disappointed."
+                    "description": "Next, you'll have to decide whether to go clockwise or counter-clockwise on your journey. After reaching Namche Bazaar, the path splits. Going clockwise will offer you quieter trails and tea houses, and if Everest Base Camp is your main destination, you'll save it for last, building up the excitement. Additionally, the views of Everest, Ama Dablam, and Gokyo Lake as you descend from the passes are truly awe-inspiring. On the other hand, going counter-clockwise provides a gentler elevation gain and a slightly more defined acclimatization schedule. Personally, I opted to go clockwise for fewer crowds and better vistas, and I was not disappointed.",
+                    "images": [
+                        "photos/countries/nepal/three-passes-trek/hiker-above-gokyo-lake-and-everest"
+                    ]
                 },
                 {
                     "title": "Does it Matter?",
@@ -271,7 +280,7 @@
                 "elevation": 2845
             },
             {
-                "title": "Lukla to kathmandu",
+                "title": "Lukla to Kathmandu",
                 "description": "After reaching Lukla, you have the option to walk down to a village lower in the valley, like Tham Dada, Kharikhola, or Salleri, and take a jeep back to Kathmandu. However, I personally recommend taking a flight back for a more comfortable journey. The local jeeps can be long and bumpy, and you've already had an adventure of a lifetime. Nonetheless, if you're looking to explore more lesser-visited villages, this could be the perfect opportunity to do so.",
                 "distance": 160,
                 "elevation": 1400
