@@ -2,7 +2,7 @@
 layout: guide
 jsonld: article
 header: transparent
-title: How to Hike to Mount Everest for Under $500
+title: How to Solo Hike the Three Passes Trek for Under $500
 date: 2023-08-09
 modified_date: 2023-08-09
 description: Everything you need to know to plan your own Three Passes Trek.
