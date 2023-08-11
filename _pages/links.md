@@ -23,6 +23,10 @@ sitemap: false
 
 <center><h4>Other Links</h4></center>
 <div class="links-container">
+    <a href="https://www.patreon.com/NicholasEager" class="link">
+        <i class="fab fa-patreon" aria-hidden="true"></i>
+        Patreon
+    </a>
     <a href="https://www.instagram.com/nicholas.eager/" class="link">
         <i class="fab fa-instagram" aria-hidden="true"></i>
         Instagram
