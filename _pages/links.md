@@ -6,16 +6,7 @@ sitemap: false
 {% include image.html src="profile-square_7r8XDOfQj" class="profile-image" %}
 
 #### Latest YouTube
-{%- assign films = site.data.films | reverse -%}
-{% for film in films limit:1 %}
-<iframe width="16" height="9"
-    src="https://www.youtube-nocookie.com/embed/{{ film.id }}?autoplay=1&modestbranding=1&iv_load_policy=3&theme=light&playsinline=1&mute=1"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    scrolling="no"
-></iframe>
-{% endfor %}
+{% include latest-youtube.html %}
 
 #### Latest Travel Guides
 {% assign guides = site.guides | reverse %}
