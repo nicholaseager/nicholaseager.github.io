@@ -249,32 +249,30 @@
 			});
 		});
 
-		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Collections
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Single Line Swipers
 
-		var collectionID = 0;
-
-		// If there's a gallery
-		$('.swiper-collection-container').each( function() {
-			// Get collection element
+		var singleSwiperID = 0;
+		$('.single-line-swiper-container').each( function() {
+			// Get swiper element
 			var $this = $(this);
 
 			// We need to manually hook up the swiper navigation/pagination elements
 			// because they are outside of the swiper contianer.
-			var swiperID = 'swiper-' + collectionID.toString();
+			var swiperID = 'swiper-' + singleSwiperID.toString();
 			$this.find('.swiper').attr('data-id', swiperID);
 			$this.find('.swiper-pagination-outside').attr('data-id', swiperID);
 			$this.find('.swiper-button-next-outside').attr('data-id', swiperID);
 			$this.find('.swiper-button-prev-outside').attr('data-id', swiperID);
-			collectionID += 1;
+			singleSwiperID += 1;
 
-			const collectionSwiper = new Swiper('.swiper-collection[data-id="' + swiperID + '"]', {
+			const singleLineSwiper = new Swiper('.single-line-swiper[data-id="' + swiperID + '"]', {
 				// Optional parameters
 				direction: 'horizontal',
+				slidesPerView: 1,
+				spaceBetween: 10,
+				autoHeight: true,
+				centerInsufficientSlides: true,
 				loop: false,
-			
-				lazy: {
-					loadPrevNext: true,
-				},
 	
 				pagination: {
 					el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
@@ -289,15 +287,15 @@
 				breakpoints: {
 					480: {
 						slidesPerView: 1,
-						spaceBetween: 0
+						spaceBetween: 10
 					},
 					960: {
 						slidesPerView: 2,
-						spaceBetween: 5
+						spaceBetween: 10
 					},
 					1440: {
 						slidesPerView: 3,
-						spaceBetween: 10
+						spaceBetween: 15
 					}
 				}
 			});
@@ -370,8 +368,8 @@
 			});
 		});
 
-		$('.swiperSingle').each(function() {
-			const singleSlideSwiper = new Swiper('.swiperSingle', {
+		$('.single-swiper').each(function() {
+			const singleSlideSwiper = new Swiper('.single-swiper', {
 				// Optional parameters
 				direction: 'horizontal',
 				loop: true,

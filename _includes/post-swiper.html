@@ -3,5 +3,27 @@
 {% assign src=photos[0] %}
 <p>{% include image.html src=src %}</p>
 {% else %}
-{% include gallery.html photos=include.photos %}
+<div class="single-line-swiper-container">
+    <div class="swiper single-line-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            {%- for photo in photos limit:include.limit -%}
+            {%- assign path = photo | strip -%}
+            {%- assign parts = path | split: "/" -%}
+            {%- assign alt = parts.last | replace: "-", " " -%}
+            <div class="swiper-slide">
+                <img srcset="
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ path }}.jpg 320w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg 480w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg 640w
+                    " sizes="100vw" src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg" alt="{{ alt }}" />
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-outside"></div>
+    <div class="swiper-button-prev swiper-button-prev-outside"></div>
+    <div class="swiper-button-next swiper-button-next-outside"></div>
+    {% include seo/scripts/gallery.html photos=photos width=480 %}
+</div>
 {% endif %}
