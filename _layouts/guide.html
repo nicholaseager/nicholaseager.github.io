@@ -160,6 +160,7 @@ layout: default
 		<p>{{ guide.itinerary.introduction }}</p>
 		{% endif %}
 		
+		<h3>Brief Itinerary</h3>
 		<table>
 			<thead>
 			  <tr>
@@ -208,6 +209,9 @@ layout: default
 		</table>
 
 		{% for phase in guide.itinerary.phases %}
+		{% if forloop.first %}
+		<h3>Detailed Itinerary</h3>
+		{% endif %}
 		{% if phase.description %}
 		<h5 id="itinerary-phase-{{forloop.index}}">{{phase.title}}</h5>
 		{% if phase.images %}
