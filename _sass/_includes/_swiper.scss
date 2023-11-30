@@ -36,7 +36,6 @@ span.swiper-pagination-bullet {
 	// To keep navigation elements outside
 	padding-left: 30px;
 	padding-right: 30px;
-	padding-bottom: 30px;
 
 	max-width: 100%;
 	margin: 20px auto;
@@ -48,7 +47,6 @@ span.swiper-pagination-bullet {
 		// To keep navigation elements outside
 		padding-left: 40px;
 		padding-right: 40px;
-		padding-bottom: 40px;
 	}
 
 	@include mq(laptop) {
@@ -89,6 +87,16 @@ div.swiper-button-next-outside {
 }
 
 div.swiper-pagination-outside {
+	position: relative;
+
+	// To keep pagination outside
+	padding-top: 20px;
+
+	@include mq(tabletp) {
+		// To keep pagination outside
+		padding-top: 30px;
+	}
+
 	// for bullets outside
 	span.swiper-pagination-bullet {
 		background-color: $accent-color;
