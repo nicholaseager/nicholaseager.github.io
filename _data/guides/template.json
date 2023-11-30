@@ -21,15 +21,10 @@
             "url": "/gear"
         }
     ],
-    "maps": {
+    "map": {
         "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
         "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "points_of_interest": {
-            "id": "1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc"
-        },
-        "route_overview": {
-            "id": "grand-canyon-hike-5735c3a"
-        }
+        "id": "1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc"
     },
     "basics": {
         "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",

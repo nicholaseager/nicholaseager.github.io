@@ -22,10 +22,8 @@
             "url": "/gear"
         }
     ],
-    "maps": {
-        "points_of_interest": {
-            "id": "1l2AxUlEC2nBGLPmONXLUjAxtUDSCUh4"
-        }
+    "map": {
+        "id": "1l2AxUlEC2nBGLPmONXLUjAxtUDSCUh4"
     },
     "basics": {
         "introduction": "Here is some practical information that is necessary for a safari adventure in Tanzania:",

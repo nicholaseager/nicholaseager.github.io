@@ -15,17 +15,11 @@ There are other map apps such as AllTrails, Gaia GPS, and Outdoor Active. These 
 
 ## Downloading My Maps
 
-If you decide to follow along with one of my routes, you can do so easily no matter which app you choose. You just need to download a file (.kml/.gpx) from one of the maps embeded on my website (i.e. my [Manaslu Circuit Trek](/guides/how-to-hike-the-manaslu-circuit) in Nepal or my [Grand Canyon Hike](/guides/how-to-hike-inside-the-grand-canyon) in the US). Once you have the file downloaded, you can send it to yourself via email (or AirDrop for iOS devices) and open the file with maps.me or your device.
-
-There are a couple of types of maps I use on my website. Each has a different way of downloading the file. But don't worry it is easy!
-
-### AllTrails Map
-Below is an example of an AllTrails map that I might embed on my website. Usually when I want to show an entire route that I tracked, I will use AllTrails. You can download the file by following [these instructions](https://support.alltrails.com/hc/en-us/articles/360018930772-How-do-I-export-a-file-from-AllTrails-). But basically you just need to open the map in full-screen by clicking on 'Nicholas Eager's Activity' on your computer, and downloading the file from the AllTrails' website.
-{% include alltrails.html id="grand-canyon-hike-5735c3a" %}
+If you decide to follow along with one of my routes, you can do so easily no matter which app you choose. You just need to download a file (.kml/.gpx) from one of the maps embeded on my website (i.e. my [Three Passes Hike](/guides/guides/how-to-solo-hike-the-three-passes-trek) in Nepal or my [Grand Canyon Hike](/guides/how-to-hike-inside-the-grand-canyon) in the US). Once you have the file downloaded, you can send it to yourself via email (or AirDrop for iOS devices) and open the file with maps.me or your device.
 
 ### Google Map
-Below is an example of a Google map that I might embed on my website. Usually when I want to show a few points of interest, I will use Google. You can download the file by opening the map in full-screen (click on the 'View Larger Map' icon on the top right), and clicking the menu icon in the top left corner and select "Export to KML."
-{% include my-map.html id="1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc" %}
+Below is an example of a map that I might embed on my website. You can download the KML file by opening the map in full-screen (click on the 'View Larger Map' icon on the top right), and clicking the menu icon in the top left corner and select "Export to KML."
+{% include my-map.html id="1oAOx1pOeMl1QyJJ2_LfTm9elaSQ6urc" %}
 
 ### Sending the Map to Your Device
 

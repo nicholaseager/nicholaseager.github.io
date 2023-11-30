@@ -107,22 +107,15 @@ layout: default
 		<!-- End Weather -->
 
 		<!-- Maps -->
-		{% if guide.maps %}
-		<h2>Maps</h2>
-		{% if guide.maps.introduction %}
-		<p>{{ guide.maps.introduction }}</p>
-		{% endif %}
-		
-		{% if guide.maps.route_overview %}
-		<h3>Route Overview</h3>
-		<p>Below is a map of the entire route overview. Learn how to download the map for your own offline use by reading <a href="{{ "/navigating-on-the-trail" | relative_url }}" target="_blank">how I navigate on the trail</a>.</p>
-		{% include alltrails.html id=guide.maps.route_overview.id %}
+		{% if guide.map %}
+		<h2>Map</h2>
+		{% if guide.map.introduction %}
+		<p>{{ guide.map.introduction }}</p>
 		{% endif %}
 
-		{% if guide.maps.points_of_interest %}
-		<h3>Points of Interest</h3>
-		<p>Below is a map of the points of interest. Learn how to download the map for your own offline use by reading <a href="{{ "/navigating-on-the-trail" | relative_url }}" target="_blank">how I navigate on the trail</a>.</p>
-		{% include my-map.html id=guide.maps.points_of_interest.id %}
+		{% if guide.map.id %}
+		{% include my-map.html id=guide.map.id %}
+		<p>To better view the map, <a href="https://www.google.com/maps/d/viewer?mid={{ guide.map.id }}" target="_blank">see it in full-screen</a>. Learn how to download the map for your own offline use by reading <a href="{{ "/navigating-on-the-trail" | relative_url }}" target="_blank">how I navigate on the trail</a>.</p>
 		{% endif %}
 
 		{% if guide.maps.conclusion %}
