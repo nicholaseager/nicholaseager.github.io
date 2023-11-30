@@ -209,11 +209,12 @@ layout: default
 		</table>
 
 		{% for phase in guide.itinerary.phases %}
+		{% if phase.description %}
 		{% if forloop.first %}
 		<h3>Detailed Itinerary</h3>
 		{% endif %}
-		{% if phase.description %}
-		<h5 id="itinerary-phase-{{forloop.index}}">{{phase.title}}</h5>
+		{% assign unit = guide.itinerary.columns.phase | default:"Phase" %}
+		<h5 id="itinerary-phase-{{forloop.index}}">{{unit}} {{forloop.index}}: {{phase.title}}</h5>
 		{% if phase.images %}
 		{% assign photos = phase.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}
