@@ -38,11 +38,12 @@ span.swiper-pagination-bullet {
 	padding-right: 30px;
 
 	max-width: 100%;
-	margin: 20px auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 
 	@include mq(tabletp) {
 		max-width: 75%;
-		margin: 30px auto;
 
 		// To keep navigation elements outside
 		padding-left: 40px;
@@ -51,7 +52,6 @@ span.swiper-pagination-bullet {
 
 	@include mq(laptop) {
 		max-width: 60%;
-		margin: 40px auto;
 	}
 }
 
