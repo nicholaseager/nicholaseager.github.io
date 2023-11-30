@@ -164,127 +164,212 @@
                 "title": "Kathmandu to Lukla",
                 "description": "Depending on how you came to Lukla, you might have had an epic but short 25 minute flight from Kathmandu or spent a few off the beaten path days walking in from the valley. Either way, you’re in the right place to begin the next part of your journey.",
                 "distance": 160,
-                "elevation": 2845
+                "elevation": 2845,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/plane-landing-at-lukla",
+                    "photos/countries/nepal/three-passes-trek/porters-hiking-in-the-valley"
+                ]
             },
             {
                 "title": "Lukla to Namche Bazaar",
                 "description": "From Lukla, we head towards Namche Bazaar while walking alongside the Dudh Koshi river. I recommend walking through or stopping by the smaller but serene villages on the west side of the river for more authentic and lesser-visited areas. Once you arrive in Namche Bazaar, you may choose to spend two nights and take a full rest day. This bustling Sherpa town offers delicious food, a chance to resupply, and some tourist attractions. However, I recommend saving your rest day for after the trek when you can truly indulge in hot showers and scrumptious food. I'll cover this in more detail at the end of our itinerary.",
                 "distance": 19,
-                "elevation": 3435
+                "elevation": 3435,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-mani-wall",
+                    "photos/countries/nepal/three-passes-trek/hiker-above-namche-bazaar",
+                    "photos/countries/nepal/three-passes-trek/cows-crossing-suspension-bridge"
+                ]
             },
             {
                 "title": "Namche Bazaar to Thame",
                 "description": "From Namche Bazaar, we trek through a breathtaking valley towards Thame. Along the way, take in all of the beauty this valley has to offer. I suggest taking a brief detour to Lawudo Monastery, a place where few wander, yet the additional hike will assist in acclimatization, while the views offer truly rewarding moments of serenity.",
                 "distance": 10,
-                "elevation": 3774
+                "elevation": 3774,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiking-above-thame"
+                ]
             },
             {
                 "title": "Rest Day in Thame",
                 "description": "Thame is a charming village surrounded by majestic mountains. Take a well-deserved rest day here and consider an acclimatization hike to Sundar Peak for even more mesmerizing views. Don't miss the chance to visit Thame Monastery and spend some time wandering around the village to observe the yaks and horses, essential companions of the Khumbu region.",
                 "distance": 0,
-                "elevation": 3774
+                "elevation": 3774,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiking-above-thame",
+                    "photos/countries/nepal/three-passes-trek/hiker-sitting-alone",
+                    "photos/countries/nepal/three-passes-trek/hiker-resting-at-sundar-peak"
+                ]
             },
             {
                 "title": "Thame to Lungden",
                 "description": "From Thame, we walk up a gentile incline until we reach a small village called Lungden. The gradual slope invites you to embrace the tranquil beauty of the Himalayas and immerse yourself in the rich culture of the passing villages. Nestled peacefully amidst the mountains, Lungden is a charming village graced with only a handful of tea houses. I encourage you to take a moment to rest, preparing yourself for the forthcoming journey.",
                 "distance": 10,
-                "elevation": 4346
+                "elevation": 4346,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/stupa-and-snowy-mountains",
+                    "photos/countries/nepal/three-passes-trek/hiker-thame-to-lungden",
+                    "photos/countries/nepal/three-passes-trek/hiker-in-lungden-mountain-village"
+                ]
             },
             {
                 "title": "Lungden to Gokyo (via Renjo Pass)",
                 "description": "From Lungden, our next path leads us on an invigorating trek up Renjo Pass to the mesmerizing Gokyo Lake. This is a long and demanding day. Remember to start early to make the most of it. Keep your eyes open for breathtaking views of Mount Everest and the stunning Gokyo Lake as you reach the top of Renjo Pass.",
                 "distance": 12,
-                "elevation": 4739
+                "elevation": 4739,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/gokyo-lake-mount-everest-prayer-flags",
+                    "photos/countries/nepal/three-passes-trek/hiker-above-gokyo-lake-and-everest"
+                ]
             },
             {
                 "title": "Rest Day at Gokyo",
                 "description": "Gokyo Lake is a tranquil gem nestled amidst the Himalayas. Consider taking an acclimatization hike to Gokyo Ri or even the Cho Oyu base camp for more awe-inspiring views. Take your time to walk around the mesmerizing blue waters, and let the serenity of the place rejuvenate your spirit.",
                 "distance": 0,
-                "elevation": 4739
+                "elevation": 4739,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/gokyo-lake",
+                    "photos/countries/nepal/three-passes-trek/yaks-at-gokyo-lake",
+                    "photos/countries/nepal/three-passes-trek/hiker-crossing-suspension-bridge"
+                ]
             },
             {
                 "title": "Gokyo to Dragnag",
                 "description": "From Gokyo Lake, we proceed to Dragnag over a constantly changing glacial path. This is a relatively short walk, but it can be a bit unstable due to glacial till. Exercise caution and embrace the adventure.",
                 "distance": 4,
-                "elevation": 4699
+                "elevation": 4699,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-crossing-glacier"
+                ]
             },
             {
                 "title": "Dragnag to Dzongla (via Cho Pass)",
                 "description": "Next, we trek from Dragnag to Dzongla, passing through Cho Pass. It's another long day, but the experience is worth every step. The views might not be as jaw-dropping as Renjo Pass, but they are beautiful in their own right. As you walk down a bit, be prepared to be greeted by the magnificent Ama Dablam. Nestled in tranquility, Dzongla is yet another picturesque village, comprised of only a few tea houses but offering breathtaking views. For a truly memorable experience, I suggest staying at the Himalayan Lodge, perched atop a gentle hill, providing even more awe-inspiring vistas of the majestic Ama Dablam.",
                 "distance": 10,
-                "elevation": 4823
+                "elevation": 4823,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-on-cho-pass",
+                    "photos/countries/nepal/three-passes-trek/hiker-ama-dablam-at-sunrise"
+                ]
             },
             {
                 "title": "Dzongla to Lobuche (Pyramid Research Center)",
                 "description": "From Dzongla, we now head towards Lobuche. The trail meanders gently, guiding us through a soothing rhythm of descents and ascents. As you traverse this path adorned by the majestic presence of Ama Dablam and other Himalayan giants, you will be enveloped in a profound sense of wonder. These moments of tranquil exploration have etched themselves as cherished memories in my heart. When you reach Lobuche, I recommend staying at the Pyramid Italian Research Center. It's just a short walk north of Lobuche, but the beds there are comfier (ensuring a well-deserved rest for your journey tomorrow) and you'll have the surrounding views mainly to yourself.",
                 "distance": 9,
-                "elevation": 4953
+                "elevation": 4953,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-walking-towards-ama-dablam",
+                    "photos/countries/nepal/three-passes-trek/hiker-lobuche-pyramid-research-center"
+                ]
             },
             {
                 "title": "Lobuche to Gorek Shep / Kala Patthar / EBC",
                 "description": "As we head towards Everest Base Camp and Kala Patthar, we make a quick stop at Gorek Shep. If you decide to spend the night here, you have the opportunity to secure a room at a local tea house and unload some of your gear. This thoughtful step will lighten your load as you continue your adventure towards Kala Patthar and Everest Base Camp. I recommend starting your day by summiting Kala Patthar, as the morning vistas are known to be especially captivating. While the trail is brief, the altitude presents its own challenges, making the journey both invigorating and demanding. From the pinnacle, a breathtaking panorama of Mount Everest and Everest Base Camp unfolds, offering a spectacle of nature's grandeur. If you're feeling strong, you can embark on a visit to Everest Base Camp on the very same day, following a nourishing lunch in Gorek Shep. Take time to observe climbers, sherpas, and porters as they prepare for their challenging expeditions.",
                 "distance": 20,
-                "elevation": 5567
+                "elevation": 5567,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/everest-base-camp-from-kala-patthar",
+                    "photos/countries/nepal/three-passes-trek/mount-everest-from-kala-patthar",
+                    "photos/countries/nepal/three-passes-trek/hiker-summiting-kala-patthar",
+                    "photos/countries/nepal/three-passes-trek/everest-base-camp-khumbu-icefall"
+                ]
             },
             {
                 "title": "Gorek Shep to Lobuche",
                 "description": "If you decided to spend the night at Gorek Shep, I recommend only hiking back to Lobuche to give youself extra time to cross Kongma Pass. Personally, I decided to hike back to Lobuche on the previous day for a more peaceful and cozy night's rest. Tea houses in Gorek Shep can get crowded, and the night might be cold and uncomfortable.",
                 "distance": 5,
-                "elevation": 4953
+                "elevation": 4953,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/way-to-everest-base-camp"
+                ]
             },
             {
                 "title": "Lobuche to Chukhung (via Kongma Pass)",
                 "description": "From Lobuche, we cross an expansive glacier and ascend the formidable Kongma Pass as we head to Chukhung. This is another long and demanding journey, so starting early is crucial to complete this section comfortably. Navigating the glacier crossing can be a bit difficult at times because the path changes every year. However, there are frequent trail markers along the way. At the zenith of Kongma Pass, a spectacle of unparalleled grandeur unfolds. Behold a realm where frozen lakes shimmer like jewels, and colossal mountains stand as sentinels of the heavens. This is a vista that ignites the spirit and commands reverence, a testament to the indomitable spirit of nature and humanity intertwined.",
                 "distance": 11,
-                "elevation": 4730
+                "elevation": 4730,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-summiting-kongma-pass",
+                    "photos/countries/nepal/three-passes-trek/hiker-sitting-on-kongma-pass",
+                    "photos/countries/nepal/three-passes-trek/hiker-on-kongma-pass-looking-at-frozen-lake",
+                    "photos/countries/nepal/three-passes-trek/hiker-with-ama-dablam-descending-kongma-pass",
+                    "photos/countries/nepal/three-passes-trek/hiker-in-foggy-kongma-pass"
+                ]
             },
             {
                 "title": "Rest Day at Chukhung",
                 "description": "Chukhung is a quaint village surrounded by towering peaks. You have the option to rest. If you're up for it, summit Chukhung Ri for even more spectacular views.",
                 "distance": 0,
-                "elevation": 4730
+                "elevation": 4730,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-ama-dablam-in-chukhung"
+                ]
             },
             {
                 "title": "Chukhung to Pangboche",
                 "description": "On the way back to Namche Bazaar, if you'd like to visit Ama Dablam, you can stop in Pangboche.",
                 "distance": 12,
-                "elevation": 3895
+                "elevation": 3895,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-above-farmland",
+                    "photos/countries/nepal/three-passes-trek/hiker-behind-colorful-prayer-flags"
+                ]
             },
             {
                 "title": "Rest Day at Pangboche for Ama Dablam Base Camp",
                 "description": "While resting in Pangboche, consider making an optional visit to Ama Dablam Base Camp. Although I did not personally venture here, it's a chance to witness more of the Himalayan beauty.",
                 "distance": 9,
-                "elevation": 4580
+                "elevation": 4580,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/ama-dablam-at-sunrise"
+                ]
             },
             {
                 "title": "Pangboche to Phortse",
                 "description": "I recommend a stop at Phortse instead of a more popular village. It's a chance to experience the warmth of the local and more authentic community.",
                 "distance": 7,
-                "elevation": 3800
+                "elevation": 3800,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-in-valley"
+                ]
             },
             {
                 "title": "Phortse to Namche Bazaar",
                 "description": "Enjoy this beautiful valley trek as you get ever closer to your rest day in Namche Bazaar",
                 "distance": 10,
-                "elevation": 3435
+                "elevation": 3435,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-towards-namche-bazaar"
+                ]
             },
             {
                 "title": "Rest Day at Namche Bazaar",
                 "description": "Welcome back to Namche Bazaar! Take your time to rest and enjoy the comforts of this vibrant town. If your budget allows, I recommend treating yourself to the comfort of Khumbu Lodge, which is known for its good showers and beds with electric blankets. For a satisfying meal, I recommend heading over to Eat Smart Restaurant. If you're looking for a great day hike, take a round-trip to Sir Edmund Hillary Viewpoint and Khunde for breathtaking views of Namche and the surrounding landscape. You might even find yourself accompanied by the gentle yaks or Himalayan Tahr that roam freely in these areas.",
                 "distance": 0,
-                "elevation": 3435
+                "elevation": 3435,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/backpacker-walking-in-namche-bazaar",
+                    "photos/countries/nepal/three-passes-trek/himalayan-tahr-on-cliff",
+                    "photos/countries/nepal/three-passes-trek/namche-bazaar-from-above"
+                ]
             },
             {
                 "title": "Namche Bazaar to Lukla",
                 "description": "As we near the end of this incredible journey, our path retraces towards Lukla. Make sure to catch the planes landing and taking off, a fascinating sight that begins around 7 in the morning. These aerial voyages carry fellow adventurers, their recollections akin to your own, creating a tapestry of shared experiences among the skyward-bound.",
                 "distance": 19,
-                "elevation": 2845
+                "elevation": 2845,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/hiker-crossing-suspension-bridge"
+                ]
             },
             {
                 "title": "Lukla to Kathmandu",
                 "description": "After reaching Lukla, you have the option to walk down to a village lower in the valley, like Tham Dada, Kharikhola, or Salleri, and take a jeep back to Kathmandu. However, I personally recommend taking a flight back for a more comfortable journey. The local jeeps can be long and bumpy, and you've already had an adventure of a lifetime. Nonetheless, if you're looking to explore more lesser-visited villages, this could be the perfect opportunity to do so.",
                 "distance": 160,
-                "elevation": 1400
+                "elevation": 1400,
+                "images": [
+                    "photos/countries/nepal/three-passes-trek/porters-hiking-in-the-valley"
+                ]
             }
         ]
     },
