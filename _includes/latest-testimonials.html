@@ -1,7 +1,7 @@
-
-<div class="swiper single-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-    <div class="swiper-wrapper">
-        <!-- Slides -->
+<div class="single-line-swiper-container">
+    <div class="swiper single-line-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
         {% for testimonial in site.data.testimonials %}
         <div class="swiper-slide">
             <div class="testimonial">
@@ -13,5 +13,9 @@
             </div>
         </div>
         {% endfor %}
+        </div>
     </div>
+    <div class="swiper-pagination swiper-pagination-outside"></div>
+    <div class="swiper-button-prev swiper-button-prev-outside"></div>
+    <div class="swiper-button-next swiper-button-next-outside"></div>
 </div>

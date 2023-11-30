@@ -1,8 +1,4 @@
 {% assign photos = include.photos | strip | newline_to_br | strip_newlines | split: "<br />" %}
-{% if photos.size == 1 %}
-{% assign src=photos[0] %}
-<p>{% include image.html src=src %}</p>
-{% else %}
 <div class="single-line-swiper-container">
     <div class="swiper single-line-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
         <div class="swiper-wrapper">
@@ -15,7 +11,9 @@
                 <img srcset="
                     https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ path }}.jpg 320w,
                     https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg 480w,
-                    https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg 640w
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg 640w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ path }}.jpg 960w,
+                    https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ path }}.jpg 1280w,
                     " sizes="100vw" src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg" alt="{{ alt }}" />
             </div>
             {%- endfor -%}
@@ -26,4 +24,3 @@
     <div class="swiper-button-next swiper-button-next-outside"></div>
     {% include seo/scripts/gallery.html photos=photos width=480 %}
 </div>
-{% endif %}

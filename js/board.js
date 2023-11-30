@@ -265,10 +265,27 @@
 			$this.find('.swiper-button-prev-outside').attr('data-id', swiperID);
 			singleSwiperID += 1;
 
+			const setBreakpoints = $this.hasClass('show-multiple-slides');
+
+			const breakpoints = {
+				480: {
+					slidesPerView: 1,
+					spaceBetween: 10
+				},
+				960: {
+					slidesPerView: 2,
+					spaceBetween: 10
+				},
+				1440: {
+					slidesPerView: 3,
+					spaceBetween: 15
+				}
+			};
+
 			const singleLineSwiper = new Swiper('.single-line-swiper[data-id="' + swiperID + '"]', {
 				// Optional parameters
 				direction: 'horizontal',
-				slidesPerView: 1,
+				slidesPerView: 'auto',
 				spaceBetween: 10,
 				autoHeight: true,
 				centerInsufficientSlides: true,
@@ -283,21 +300,8 @@
 					nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
 					prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]'
 				},
-	
-				breakpoints: {
-					480: {
-						slidesPerView: 1,
-						spaceBetween: 10
-					},
-					960: {
-						slidesPerView: 2,
-						spaceBetween: 10
-					},
-					1440: {
-						slidesPerView: 3,
-						spaceBetween: 15
-					}
-				}
+
+				breakpoints: setBreakpoints ? breakpoints : {}
 			});
 		});
 
@@ -364,24 +368,6 @@
 		
 				thumbs: {
 					swiper: orderSwiperThumbs,
-				},
-			});
-		});
-
-		$('.single-swiper').each(function() {
-			const singleSlideSwiper = new Swiper('.single-swiper', {
-				// Optional parameters
-				direction: 'horizontal',
-				loop: true,
-				autoHeight: true,
-				preloadImages: false,
-			
-				autoplay: {
-					delay: 5000,
-				},
-			
-				lazy: {
-					loadPrevNext: true,
 				},
 			});
 		});

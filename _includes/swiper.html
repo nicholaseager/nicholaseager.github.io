@@ -1,5 +1,5 @@
 {% assign photos = include.photos | strip | newline_to_br | strip_newlines | split: "<br />" %}
-{% assign class = include.class | default: "single-swiper" %}
+{% assign class = include.class | default: "single-line-swiper" %}
 
 <div class="swiper {{ class }} swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
     <div class="swiper-wrapper">
