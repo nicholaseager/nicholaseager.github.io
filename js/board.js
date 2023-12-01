@@ -396,6 +396,23 @@
 		});
 
 
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Maps
+
+		$('.google-map').each( function() {
+			$(this).find('.map-notice-button').click(function(){
+				$(".map-notice-button").toggle();
+				$(".modal").fadeIn();
+			});
+
+			$(this).find('.map-modal-confirm-button').click(function(){
+				$(".map-overlay").fadeOut();
+			});
+
+			$(this).find('.map-modal-decline-button').click(function(){
+				$(".map-overlay").fadeOut();
+			});
+		});
+
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Tables
 
