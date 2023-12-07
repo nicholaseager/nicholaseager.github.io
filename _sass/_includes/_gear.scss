@@ -41,8 +41,6 @@
 }
 
 .gear-gallery-image {
-    display: none;
-
     a {
         display: block;
 
@@ -53,6 +51,10 @@
             padding: 5px;
         }
     }
+}
+
+.gear-gallery-image.hide {
+    display: none;
 }
 
 .gear-gallery-image.show {

@@ -310,6 +310,7 @@
 		$('.gear-wrap').each( function() {
 			var gallery = $(this).find('.gear-gallery');
 			var buttons = $(this).find('.gear-buttons');
+			const defaultCategory = gallery.attr('data-default-category') ?? "all";
 
 			function updateElements(tag) {
 				if (tag == "all") tag = "";
@@ -338,8 +339,13 @@
 				event.preventDefault();
 			});
 
-			// Show all items by default
-			updateElements("all")
+			// Show default items
+			updateElements(defaultCategory);
+
+			// Update active
+			var current = buttons.find('.active');
+			current.removeClass('active');
+			buttons.find('button[data-tag="' + defaultCategory + '"]').addClass('active');
 		});
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Swipers
