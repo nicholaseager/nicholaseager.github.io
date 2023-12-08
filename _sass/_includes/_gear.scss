@@ -42,13 +42,17 @@
 
 .gear-gallery-image {
     a {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
 
         img {
             width: 200px;
             height: 200px;
             object-fit: contain;
             padding: 5px;
+            padding-bottom: 10px;
         }
     }
 }
