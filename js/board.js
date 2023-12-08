@@ -292,49 +292,6 @@
 			buttons.find('button[data-tag="' + defaultCategory + '"]').addClass('active');
 		});
 
-		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Gear Lists
-
-		$('.gear-wrap').each( function() {
-			var gallery = $(this).find('.gear-gallery');
-			var buttons = $(this).find('.gear-buttons');
-			const defaultCategory = gallery.attr('data-default-category') ?? "all";
-
-			function updateElements(tag) {
-				if (tag == "all") tag = "";
-
-				gallery.children('.gear-gallery-image').each(function () {
-					$(this).removeClass('show');
-					if ($(this).attr('class').indexOf(tag) > -1) {
-						$(this).addClass('show');
-					}
-				});
-			}
-
-			buttons.find('.button').click(function(event) {
-				// Update tag
-				var tag = $(this).attr('data-tag');
-				$("#gear-gallery").fadeOut("fast", function () {
-					updateElements(tag);
-					$("#gear-gallery").fadeIn("slow");
-				});
-				
-				// Update active
-				var current = buttons.find('.active');
-				current.removeClass('active');
-				$(this).addClass('active');
-
-				event.preventDefault();
-			});
-
-			// Show default items
-			updateElements(defaultCategory);
-
-			// Update active
-			var current = buttons.find('.active');
-			current.removeClass('active');
-			buttons.find('button[data-tag="' + defaultCategory + '"]').addClass('active');
-		});
-
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Single Swipers
 
 		var singleSwiperID = 0;
