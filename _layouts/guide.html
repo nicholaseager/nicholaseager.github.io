@@ -286,8 +286,8 @@ layout: default
 		<!-- End Cost -->
 
 		<!-- Gear -->
-		<h2>Gear</h2>
 		{% if guide.gear %}
+		<h2>Gear</h2>
 		{% if guide.gear.introduction %}
 		<p>{{ guide.gear.introduction }}</p>
 		{% endif %}
@@ -308,9 +308,14 @@ layout: default
 		{% if guide.gear.conclusion %}
 		<p>{{ guide.gear.conclusion }}</p>
 		{% endif %}
+		<h3>My Recommended Hiking Gear</h3>
+		<p>When you're out exploring, it's super important to have the right gear. The right stuff can keep you comfortable, safe, and happy on your trip. My list contains affiliate links, which means I may earn a commission for purchases made through these links at no cost to you. Your support helps sustain the creation of more content.</p>
+		{% include gear.html show-categories=false default-category="hiking" %}
+		<p>
+			Interested in all of my gear recommendations? Click the button below to see what I recommend for filming, travel, and fun :)
+			<br><a href="{{ "/gear" | relative_url }}" class="button button--small">Explore All Gear</a>
+		</p>
 		{% endif %}
-		<p>When you're out exploring, it's super important to have the right gear. The right stuff can keep you comfortable, safe, and happy on your trip, and it can also help you take care of the planet. Make sure to pack the right clothes and gear for your trip. A little bit of planning and preparation can go a long way towards making your adventure a success.</p>
-		<p>Check out the <a href="{{ "/gear" | relative_url }}">gear</a> I bring with me on most of my trips.</p>
 		<!-- End Gear -->
 
 		<!-- Basics -->
