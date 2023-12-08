@@ -226,9 +226,9 @@
 
 				$image_gallery.find('.image-gallery-link').click(function(event) {
 					var id = $(this).attr('data-index');
-					var index = parseInt(id);
+					var index = parseInt(id) - 1;
 					gallerySwiper.slideTo(index, 0);
-					onIndexChange(index - 1);
+					onIndexChange(index);
 					
 					// Get container
 					var $swiper = $this.find('.image-gallery-swiper-container');
