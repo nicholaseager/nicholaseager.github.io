@@ -1,6 +1,6 @@
 {% assign photos = include.photos | strip | newline_to_br | strip_newlines | split: "<br />" %}
-<div class="single-line-swiper-container">
-    <div class="swiper single-line-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+<div class="outside-swiper-wrap">
+    <div class="swiper single-swiper">
         <div class="swiper-wrapper">
             <!-- Slides -->
             {%- for photo in photos limit:include.limit -%}

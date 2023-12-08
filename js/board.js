@@ -178,7 +178,7 @@
 			// Get gallery element
 			var $this = $(this);
 
-			var swiperID = 'swiper-' + galleryID.toString();
+			var swiperID = 'gallery-swiper-' + galleryID.toString();
 			$this.find('.swiper').attr('data-id', swiperID);
 			galleryID += 1;
 
@@ -249,60 +249,47 @@
 			});
 		});
 
-		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Single Line Swipers
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Gear Lists
 
-		var singleSwiperID = 0;
-		$('.single-line-swiper-container').each( function() {
-			// Get swiper element
-			var $this = $(this);
+		$('.gear-wrap').each( function() {
+			var gallery = $(this).find('.gear-gallery');
+			var buttons = $(this).find('.gear-buttons');
+			const defaultCategory = gallery.attr('data-default-category') ?? "all";
 
-			// We need to manually hook up the swiper navigation/pagination elements
-			// because they are outside of the swiper contianer.
-			var swiperID = 'swiper-' + singleSwiperID.toString();
-			$this.find('.swiper').attr('data-id', swiperID);
-			$this.find('.swiper-pagination-outside').attr('data-id', swiperID);
-			$this.find('.swiper-button-next-outside').attr('data-id', swiperID);
-			$this.find('.swiper-button-prev-outside').attr('data-id', swiperID);
-			singleSwiperID += 1;
+			function updateElements(tag) {
+				if (tag == "all") tag = "";
 
-			const setBreakpoints = $this.hasClass('show-multiple-slides');
+				gallery.children('.gear-gallery-image').each(function () {
+					$(this).removeClass('show');
+					if ($(this).attr('class').indexOf(tag) > -1) {
+						$(this).addClass('show');
+					}
+				});
+			}
 
-			const breakpoints = {
-				480: {
-					slidesPerView: 1,
-					spaceBetween: 10
-				},
-				960: {
-					slidesPerView: 2,
-					spaceBetween: 10
-				},
-				1440: {
-					slidesPerView: 3,
-					spaceBetween: 15
-				}
-			};
+			buttons.find('.button').click(function(event) {
+				// Update tag
+				var tag = $(this).attr('data-tag');
+				$("#gear-gallery").fadeOut("fast", function () {
+					updateElements(tag);
+					$("#gear-gallery").fadeIn("slow");
+				});
+				
+				// Update active
+				var current = buttons.find('.active');
+				current.removeClass('active');
+				$(this).addClass('active');
 
-			const singleLineSwiper = new Swiper('.single-line-swiper[data-id="' + swiperID + '"]', {
-				// Optional parameters
-				direction: 'horizontal',
-				slidesPerView: 'auto',
-				spaceBetween: 10,
-				autoHeight: true,
-				centerInsufficientSlides: true,
-				loop: false,
-	
-				pagination: {
-					el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
-					type: 'bullets',
-				},
-			
-				navigation: {
-					nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
-					prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]'
-				},
-
-				breakpoints: setBreakpoints ? breakpoints : {}
+				event.preventDefault();
 			});
+
+			// Show default items
+			updateElements(defaultCategory);
+
+			// Update active
+			var current = buttons.find('.active');
+			current.removeClass('active');
+			buttons.find('button[data-tag="' + defaultCategory + '"]').addClass('active');
 		});
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Gear Lists
@@ -348,7 +335,89 @@
 			buttons.find('button[data-tag="' + defaultCategory + '"]').addClass('active');
 		});
 
-		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Swipers
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Single Swipers
+
+		var singleSwiperID = 0;
+		$('.single-swiper').each( function() {
+			// Get swiper element
+			var $swiper = $(this);
+
+			var swiperID = 'single-swiper-' + singleSwiperID.toString();
+			$swiper.attr('data-id', swiperID);
+			$swiper.siblings('.swiper-pagination-outside').attr('data-id', swiperID);
+			$swiper.siblings('.swiper-button-next-outside').attr('data-id', swiperID);
+			$swiper.siblings('.swiper-button-prev-outside').attr('data-id', swiperID);
+			singleSwiperID += 1;
+
+			const singleSwiper = new Swiper('.single-swiper[data-id="' + swiperID + '"]', {
+				direction: 'horizontal',
+				slidesPerView: 1,
+				spaceBetween: 10,
+				autoHeight: true,
+				loop: false,
+	
+				pagination: {
+					el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
+					type: 'bullets',
+				},
+			
+				navigation: {
+					nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
+					prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]'
+				}
+			});
+		});
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Collection Swipers
+
+		var collectionSwiperID = 0;
+		$('.collection-swiper').each( function() {
+			// Get swiper element
+			var $swiper = $(this);
+
+			var swiperID = 'collection-swiper-' + collectionSwiperID.toString();
+			$swiper.attr('data-id', swiperID);
+			$swiper.siblings('.swiper-pagination-outside').attr('data-id', swiperID);
+			$swiper.siblings('.swiper-button-next-outside').attr('data-id', swiperID);
+			$swiper.siblings('.swiper-button-prev-outside').attr('data-id', swiperID);
+			collectionSwiperID += 1;
+
+			const collectionSwiper = new Swiper('.collection-swiper[data-id="' + swiperID + '"]', {
+				direction: 'horizontal',
+				slidesPerView: 'auto',
+				spaceBetween: 10,
+				autoHeight: true,
+				centerInsufficientSlides: true,
+				loop: false,
+	
+				pagination: {
+					el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
+					type: 'bullets',
+				},
+			
+				navigation: {
+					nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
+					prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]'
+				},
+
+				breakpoints: {
+					480: {
+						slidesPerView: 1,
+						spaceBetween: 10
+					},
+					960: {
+						slidesPerView: 2,
+						spaceBetween: 10
+					},
+					1440: {
+						slidesPerView: 3,
+						spaceBetween: 15
+					}
+				}
+			});
+		});
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Order Swipers
 
 		$('.order-swiper').each(function() {
 			const orderSwiperThumbs = new Swiper(".order-swiper-thumbs", {
