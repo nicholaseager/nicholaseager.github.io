@@ -6,3 +6,5 @@ description: All of the gear I genuinely like and use, and recommend to try out 
 ---
 
 {% include gear.html show-categories=true default-category="all" %}
+
+This list contains affiliate links, which means I may earn a commission for purchases made through these links at no cost to you. Your support helps sustain the creation of more content.
