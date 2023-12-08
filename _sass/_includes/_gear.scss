@@ -40,30 +40,38 @@
     }
 }
 
-.gear-gallery-image {
-    a {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
+.gear-item {
+    background-color: $background-alt-color;
+	border-radius: 15px;
+	overflow: hidden;
 
-        font-size: 20;
-        font-weight: 300;
+    padding: 15px;
 
-        img {
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
-            padding: 5px;
-            padding-bottom: 10px;
-        }
-    }
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.gear-gallery-image.hide {
+.gear-item img {
+    padding: 20px;
+    background-color: $background-color;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.gear-item .title {
+    padding: 10px 0px;
+
+    font-size: 12;
+	font-weight: 500;
+}
+
+.gear-item.hide {
     display: none;
 }
 
-.gear-gallery-image.show {
+.gear-item.show {
     display: block;
 }

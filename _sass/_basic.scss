@@ -266,6 +266,16 @@ img {
 	}
 }
 
+.button--small {
+	padding: 6px;
+	font-size: 12px;
+
+	@include mq(tabletp) {
+		padding: 9px;
+		font-size: 14px;
+	}
+}
+
 .button--light {
 	background: transparent;
 	border-color: $text-dark-color;
@@ -276,6 +286,10 @@ img {
 		border-color: $accent-color;
 		color: $background-color;
 	}
+}
+
+.button--rounded {
+	border-radius: 15px;
 }
 
 .button--overlay {

@@ -5,11 +5,10 @@
     <div class="swiper grid-swiper">
         <div class="swiper-wrapper">
             {% for gear in gears %}
-            <div class="swiper-slide gear-gallery-image {{ gear.tags }}">
-                <a href="{{ gear.url }}">
-                    <img src="{{ gear.img }}" alt="{{ gear.title }}" />
-                    {{ gear.title }}
-                </a>
+            <div class="swiper-slide gear-item">
+                <img src="{{ gear.img }}" alt="{{ gear.title }}" />
+                <div class="title">{{ gear.title }}</div>
+                <a href="{{ gear.url }}" class="button button--small button--rounded">View</a>
             </div>
             {% endfor %}
         </div>

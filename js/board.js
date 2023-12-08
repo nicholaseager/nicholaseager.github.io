@@ -259,7 +259,7 @@
 			function updateElements(tag) {
 				if (tag == "all") tag = "";
 
-				gallery.children('.gear-gallery-image').each(function () {
+				gallery.children('.gear-item').each(function () {
 					$(this).removeClass('show');
 					if ($(this).attr('class').indexOf(tag) > -1) {
 						$(this).addClass('show');
@@ -390,6 +390,7 @@
 
 			const gridSwiper = new Swiper('.grid-swiper[data-id="' + swiperID + '"]', {
 				slidesPerView: 3,
+				slidesPerGroup: 3,
 				grid: {
 					rows: 2,
 					fill: "row"
@@ -406,7 +407,8 @@
 				breakpoints: {
 					960: {
 						slidesPerView: 3,
-						spaceBetween: 20,
+						slidesPerGroup: 3,
+						spaceBetween: 10,
 						grid: {
 							rows: 2,
 							fill: "row"
@@ -414,7 +416,8 @@
 					},
 					1440: {
 						slidesPerView: 4,
-						spaceBetween: 30,
+						slidesPerGroup: 4,
+						spaceBetween: 20,
 						grid: {
 							rows: 2,
 							fill: "row"

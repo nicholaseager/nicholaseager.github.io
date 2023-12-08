@@ -10,11 +10,10 @@
     <div class="gear-gallery-wrap">
         <div id="gear-gallery" data-default-category="{{ include.default-category | default: 'all' }}" class="gear-gallery">
             {% for gear in site.data.gear %}
-            <div class="gear-gallery-image hide {{ gear.tags }}">
-                <a href="{{ gear.url }}">
-                    <img src="{{ gear.img }}" alt="{{ gear.title }}" />
-                    {{ gear.title }}
-                </a>
+            <div class="gear-item hide {{ gear.tags }}">
+                <img src="{{ gear.img }}" alt="{{ gear.title }}" />
+                <div class="title">{{ gear.title }}</div>
+                <a href="{{ gear.url }}" class="button button--small button--rounded">View</a>
             </div>
             {% endfor %}
         </div>
