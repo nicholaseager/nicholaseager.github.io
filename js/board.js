@@ -417,6 +417,56 @@
 			});
 		});
 
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Grid Swipers
+
+		var gridSwiperID = 0;
+		$('.grid-swiper').each( function() {
+			// Get swiper element
+			var $swiper = $(this);
+
+			var swiperID = 'grid-swiper-' + singleSwiperID.toString();
+			$swiper.attr('data-id', swiperID);
+			$swiper.siblings('.swiper-pagination-outside').attr('data-id', swiperID);
+			$swiper.siblings('.swiper-button-next-outside').attr('data-id', swiperID);
+			$swiper.siblings('.swiper-button-prev-outside').attr('data-id', swiperID);
+			gridSwiperID += 1;
+
+			const gridSwiper = new Swiper('.grid-swiper[data-id="' + swiperID + '"]', {
+				slidesPerView: 3,
+				grid: {
+					rows: 2,
+					fill: "row"
+				},
+				spaceBetween: 10,
+				pagination: {
+					el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
+					type: 'bullets',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
+					prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]'
+				},
+				breakpoints: {
+					960: {
+						slidesPerView: 3,
+						spaceBetween: 20,
+						grid: {
+							rows: 2,
+							fill: "row"
+						},
+					},
+					1440: {
+						slidesPerView: 4,
+						spaceBetween: 30,
+						grid: {
+							rows: 2,
+							fill: "row"
+						},
+					}
+				}
+			});	
+		});
+
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Order Swipers
 
 		$('.order-swiper').each(function() {
