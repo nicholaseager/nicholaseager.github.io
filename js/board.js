@@ -414,7 +414,7 @@
 							fill: "row"
 						},
 					},
-					820: {
+					960: {
 						slidesPerView: 3,
 						slidesPerGroup: 3,
 						spaceBetween: 10,
