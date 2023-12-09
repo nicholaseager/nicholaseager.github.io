@@ -45,27 +45,67 @@
 	border-radius: 15px;
 	overflow: hidden;
 
-    padding: 15px;
-
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
+    padding: 10px;
+
+    @include mq(tabletp) {
+        padding: 15px;
+	}
 }
 
 .gear-item img {
-    padding: 20px;
     background-color: $background-color;
     aspect-ratio: 1;
     border-radius: 15px;
     overflow: hidden;
     object-fit: contain;
+
+    padding: 5px;
+
+    @include mq(tabletp) {
+        padding: 10px;
+	}
+
+	@include mq(laptop) {
+		padding: 20px;
+	}
 }
 
 .gear-item .title {
+    padding-top: 10px;
+
+    font-size: 14px;
+	font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0;
+
+	@include mq(tabletp) {
+        font-size: 16px;
+	}
+
+	@include mq(laptop) {
+		font-size: 18px;
+	}
+}
+
+.gear-item .description {
     padding: 10px 0px;
 
-    font-size: 12;
-	font-weight: 500;
+    font-size: 10px;
+	font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0;
+
+	@include mq(tabletp) {
+        font-size: 11px;
+	}
+
+	@include mq(laptop) {
+		font-size: 13px;
+	}
 }
 
 .gear-item.hide {

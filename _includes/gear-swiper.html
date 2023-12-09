@@ -8,7 +8,8 @@
             <div class="swiper-slide gear-item">
                 <img src="{{ gear.img }}" alt="{{ gear.title }}" />
                 <div class="title">{{ gear.title }}</div>
-                <a href="{{ gear.url }}" class="button button--small button--rounded">View</a>
+                <div class="description">{{ gear.description }}</div>
+                <a href="{{ gear.url }}" class="button button--small button--rounded button--expanded">View</a>
             </div>
             {% endfor %}
         </div>

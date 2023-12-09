@@ -292,6 +292,10 @@ img {
 	border-radius: 15px;
 }
 
+.button--expanded {
+	width: 100%;
+}
+
 .button--overlay {
 	background: transparent;
 	border-color: $overlay-text-color;

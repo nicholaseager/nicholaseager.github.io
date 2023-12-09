@@ -389,10 +389,10 @@
 			gridSwiperID += 1;
 
 			const gridSwiper = new Swiper('.grid-swiper[data-id="' + swiperID + '"]', {
-				slidesPerView: 3,
-				slidesPerGroup: 3,
+				slidesPerView: 2,
+				slidesPerGroup: 2,
 				grid: {
-					rows: 2,
+					rows: 1,
 					fill: "row"
 				},
 				spaceBetween: 10,
@@ -405,7 +405,16 @@
 					prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]'
 				},
 				breakpoints: {
-					960: {
+					480: {
+						slidesPerView: 2,
+						slidesPerGroup: 2,
+						spaceBetween: 10,
+						grid: {
+							rows: 2,
+							fill: "row"
+						},
+					},
+					820: {
 						slidesPerView: 3,
 						slidesPerGroup: 3,
 						spaceBetween: 10,
