@@ -41,7 +41,7 @@
             },
             {
                 "title": "Navigation",
-                "description": "For proper navigation, you should always carry a paper map and compass and know how to use them in an emergency. You can pick up any number of paper maps in Thamel, Kathmandu when you arrive. Additionally, I typically use a gps app on my phone like maps.me or AllTrails. Check out the <a href='#maps'>maps</a> for my entire route."
+                "description": "For proper navigation, you should always carry a paper map and compass and know how to use them in an emergency. You can pick up any number of paper maps in Thamel, Kathmandu when you arrive. Additionally, I typically use a gps app on my phone like maps.me or AllTrails. Check out the <a href='#map'>map</a> for my entire route."
             },
             {
                 "title": "Accommodation",
@@ -125,8 +125,9 @@
     },
     "extra_sections": [
         {
-            "title": "Options",
-            "description": "Now, let's explore the different itinerary options for the Three Passes Trek. As you might be able to see from the <a href='#maps'>map</a>, you have two major decisions to make: where to start and which way to go.",
+            "title": "Itinerary Options",
+            "id": "options",
+            "description": "Now, let's explore the different itinerary options for the Three Passes Trek. As you might be able to see from the <a href='#map'>map</a>, you have two major decisions to make: where to start and which way to go.",
             "sections": [
                 {
                     "title": "Where to start?",

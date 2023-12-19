@@ -62,7 +62,7 @@ layout: default
 	<div class="table-of-contents-content">
 		<!-- Overview -->
 		{% if guide.overview %}
-		<h2>Overview</h2>
+		<h2 toc-id="overview">Overview</h2>
 		{% if guide.overview.images %}
 		{% assign photos = guide.overview.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}
@@ -78,7 +78,7 @@ layout: default
 
 		<!-- Basics -->
 		{% if guide.basics %}
-		<h2>Basics</h2>
+		<h2 toc-id="basics">Basic Information</h2>
 		{% if guide.basics.introduction %}
 		<p>{{ guide.basics.introduction }}</p>
 		{% endif %}
@@ -93,7 +93,7 @@ layout: default
 
 		<!-- Weather -->
 		{% if guide.weather %}
-		<h2>Weather</h2>
+		<h2 toc-id="weather">Best Time to Go</h2>
 		{% if guide.weather.introduction %}
 		<p>{{ guide.weather.introduction }}</p>
 		{% endif %}
@@ -108,7 +108,7 @@ layout: default
 
 		<!-- Maps -->
 		{% if guide.map %}
-		<h2>Map</h2>
+		<h2 toc-id="map">Map</h2>
 		{% if guide.map.introduction %}
 		<p>{{ guide.map.introduction }}</p>
 		{% endif %}
@@ -128,7 +128,7 @@ layout: default
 		{% assign sections = guide.extra_sections %}
 		{% if sections.size > 0 %}
 		{% for section in sections %}
-		<h2>{{section.title}}</h2>
+		<h2 toc-id="{{section.id | default: section.title | downcase}}">{{section.title}}</h2>
 		{% if section.images %}
 		{% assign photos = section.images | join: '<br />' %}
 		{% include post-swiper.html photos=photos %}
@@ -148,7 +148,7 @@ layout: default
 
 		<!-- Itinerary -->
 		{% if guide.itinerary %}
-		<h2>Itinerary</h2>
+		<h2 toc-id="itinerary">Itinerary</h2>
 		{% if guide.itinerary.introduction %}
 		<p>{{ guide.itinerary.introduction }}</p>
 		{% endif %}
@@ -226,7 +226,7 @@ layout: default
 
 		<!-- Highlights -->
 		{% if guide.highlights %}
-		<h2>Highlights</h2>
+		<h2 toc-id="highlights">My Favorite Highlights</h2>
 		{% if guide.highlights.introduction %}
 		<p>{{ guide.highlights.introduction }}</p>
 		{% endif %}
@@ -248,7 +248,7 @@ layout: default
 
 		<!-- Cost -->
 		{% if guide.cost %}
-		<h2>Cost</h2>
+		<h2 toc-id="cost">Cost</h2>
 		{% if guide.cost.introduction %}
 		<p>{{ guide.cost.introduction }}</p>
 		{% endif %}
@@ -285,7 +285,7 @@ layout: default
 
 		<!-- Gear -->
 		{% if guide.gear %}
-		<h2>Gear</h2>
+		<h2 toc-id="gear">My Recommended Gear</h2>
 		{% if guide.gear.introduction %}
 		<p>{{ guide.gear.introduction }}</p>
 		{% endif %}
@@ -320,7 +320,7 @@ layout: default
 
 		<!-- Basics -->
 		{% if guide.useful_info %}
-		<h2>Info</h2>
+		<h2 toc-id="info">Useful Info</h2>
 		{% if guide.useful_info.introduction %}
 		<p>{{ guide.useful_info.introduction }}</p>
 		{% endif %}

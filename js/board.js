@@ -548,12 +548,12 @@
 
 			$toc_content.children("h2").map(function () {
 				var header = $(this);
-				var text = header.text();
-				var id = text.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z- ]/g, "");
+				var id = header.attr('toc-id');
+				var title = id[0].toUpperCase() + id.slice(1);
 
 				header.attr("id", id);
 
-				$toc.append('<li data-id="' + id + '" class="toc-item"><a class="scrollto toc-link" href="#' + id + '">' + text + '</a></li>');
+				$toc.append('<li data-id="' + id + '" class="toc-item"><a class="scrollto toc-link" href="#' + id + '">' + title + '</a></li>');
 			});
 
 			// Sticky
