@@ -601,6 +601,16 @@
 				});
 			}
 		});
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Guide Conversion
+
+		// Hide all imperial
+		$('.guide-stat.imperial').toggle();
+
+		$('.guide-stat').on('click', function() {
+			// When any stat is clicked, toggle all of them
+			$('.guide-stat').toggle();
+		});
 	}
 
 	// Run functions on load

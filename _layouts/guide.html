@@ -174,14 +174,16 @@ layout: default
 					</td>
 					<td>
 						{%- if phase.distance -%}
-						{{phase.distance}} km / {{phase.distance | times: 0.62137 | to_integer}} miles
+						<div class="guide-stat metric">{{phase.distance}} km</div>
+						<div class="guide-stat imperial">{{phase.distance | times: 0.62137 | to_integer}} miles</div>
 						{%- else -%}
 						-
 						{%- endif -%}
 					</td>
 					<td>
 						{%- if phase.elevation -%}
-						{{phase.elevation}} m / {{phase.elevation | times: 3.28084 | to_integer}} ft
+						<div class="guide-stat metric">{{phase.elevation}} m</div>
+						<div class="guide-stat imperial">{{phase.elevation | times: 3.28084 | to_integer}} ft</div>
 						{%- else -%}
 						-
 						{%- endif -%}
@@ -200,7 +202,10 @@ layout: default
 		<h5 id="itinerary-phase-{{forloop.index}}">
 			{{unit}} {{forloop.index}}: {{phase.title}}
 			{% if phase.distance or phase.elevation %}
-			<span class="guide-itinerary-stats"> ({{phase.distance}} km / {{phase.elevation}} m)</span>
+			<span class="guide-itinerary-stats">
+				<div class="guide-stat metric">({{phase.distance}} km / {{phase.elevation}} m)</div>
+				<div class="guide-stat imperial">({{phase.distance | times: 0.62137 | to_integer}} miles / {{phase.elevation | times: 3.28084 | to_integer}} ft)</div>
+			</span>
 			{% endif %}
 		</h5>
 		{% if phase.images %}
