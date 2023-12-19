@@ -27,7 +27,7 @@
         "introduction": "The weather in China can vary significantly depending on the region and the time of year. Generally, the best time to hike the Great Wall is in the fall (September to November) or spring (March to May), when the weather is cooler and more comfortable for outdoor activities. The summer months (June to August) can be very hot and humid, while the winter months (December to February) can be cold and dry, with temperatures often dropping below freezing at night.\nThe Great Wall is a popular tourist destination, and some sections can get very crowded, especially during peak season. If you want to avoid crowds, you may want to consider visiting during the off-season or midweek."
     },
     "itinerary": {
-        "columns": {
+        "units": {
             "distance": "Distance"
         },
         "phases": [

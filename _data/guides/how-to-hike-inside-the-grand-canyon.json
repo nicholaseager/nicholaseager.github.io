@@ -73,7 +73,7 @@
         ]
     },
     "itinerary": {
-        "columns": {
+        "units": {
             "distance": "Distance",
             "elevation": "Elevation"
         },

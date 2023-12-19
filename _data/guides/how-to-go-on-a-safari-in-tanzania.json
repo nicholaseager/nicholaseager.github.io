@@ -125,7 +125,7 @@
     },
     "itinerary": {
         "introduction": "The following was our itinerary for the group tour. However, if you're doing this on your own, you can easily add extra days here and there if you like a park.",
-        "columns": {
+        "units": {
             "phase": "Day"
         },
         "phases": [

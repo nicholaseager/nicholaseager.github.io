@@ -157,9 +157,9 @@ layout: default
 		<table>
 			<thead>
 			  <tr>
-				<th>{{guide.itinerary.columns.phase | default:"Phase"}}</th>
-				<th>{{guide.itinerary.columns.itinerary | default:"Itinerary"}}</th>
-				<th>{{guide.itinerary.columns.distance | default:"Distance"}} / {{guide.itinerary.columns.elevation | default:"Elevation"}}</th>
+				<th>{{guide.itinerary.units.phase | default:"Phase"}}</th>
+				<th>{{guide.itinerary.units.itinerary | default:"Itinerary"}}</th>
+				<th>{{guide.itinerary.units.distance | default:"Distance"}} / {{guide.itinerary.units.elevation | default:"Elevation"}}</th>
 			  </tr>
 			</thead>
 			<tbody>
@@ -196,7 +196,7 @@ layout: default
 		{% if forloop.first %}
 		<h3>Detailed Itinerary</h3>
 		{% endif %}
-		{% assign unit = guide.itinerary.columns.phase | default:"Phase" %}
+		{% assign unit = guide.itinerary.units.phase | default:"Phase" %}
 		<h5 id="itinerary-phase-{{forloop.index}}">
 			{{unit}} {{forloop.index}}: {{phase.title}}
 			{% if phase.distance or phase.elevation %}
