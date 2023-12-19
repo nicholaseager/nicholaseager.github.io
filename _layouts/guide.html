@@ -291,6 +291,7 @@ layout: default
 		{% if guide.gear.introduction %}
 		<p>{{ guide.gear.introduction }}</p>
 		{% endif %}
+		{% if guide.gear.items %}
 		<table>
 			<tbody>
 				{% for item in guide.gear.items %}
@@ -305,6 +306,7 @@ layout: default
 				{% endfor %}
 			</tbody>
 		</table>
+		{% endif %}
 		{% if guide.gear.conclusion %}
 		<p>{{ guide.gear.conclusion }}</p>
 		{% endif %}
