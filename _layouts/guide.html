@@ -159,8 +159,7 @@ layout: default
 			  <tr>
 				<th>{{guide.itinerary.columns.phase | default:"Phase"}}</th>
 				<th>{{guide.itinerary.columns.itinerary | default:"Itinerary"}}</th>
-				<th>{{guide.itinerary.columns.distance | default:"Distance"}}</th>
-				<th>{{guide.itinerary.columns.elevation | default:"Elevation"}}</th>
+				<th>{{guide.itinerary.columns.distance | default:"Distance"}} / {{guide.itinerary.columns.elevation | default:"Elevation"}}</th>
 			  </tr>
 			</thead>
 			<tbody>
@@ -173,20 +172,19 @@ layout: default
 						{% if phase.description %}</a>{% endif %}
 					</td>
 					<td>
-						{%- if phase.distance -%}
+						{% if phase.distance %}
 						<div class="guide-stat metric">{{phase.distance}} km</div>
 						<div class="guide-stat imperial">{{phase.distance | times: 0.62137 | to_integer}} miles</div>
-						{%- else -%}
+						{% else %}
 						-
-						{%- endif -%}
-					</td>
-					<td>
-						{%- if phase.elevation -%}
+						{% endif %}
+						 / 
+						{% if phase.elevation %}
 						<div class="guide-stat metric">{{phase.elevation}} m</div>
 						<div class="guide-stat imperial">{{phase.elevation | times: 3.28084 | to_integer}} ft</div>
-						{%- else -%}
+						{% else %}
 						-
-						{%- endif -%}
+						{% endif %}
 					</td>
 				</tr>
 				{% endfor %}
