@@ -157,16 +157,10 @@ layout: default
 		<table>
 			<thead>
 			  <tr>
-				{% assign phase = guide.itinerary.columns.phase | default:"Phase" %}
-				<th>{{phase}}</th>
-				{% assign itinerary = guide.itinerary.columns.itinerary | default:"Itinerary" %}
-				<th>{{itinerary}}</th>
-				{% if guide.itinerary.columns.distance %}
-				<th>{{guide.itinerary.columns.distance}}</th>
-				{% endif %}
-				{% if guide.itinerary.columns.elevation %}
-				<th>{{guide.itinerary.columns.elevation}}</th>
-				{% endif %}
+				<th>{{guide.itinerary.columns.phase | default:"Phase"}}</th>
+				<th>{{guide.itinerary.columns.itinerary | default:"Itinerary"}}</th>
+				<th>{{guide.itinerary.columns.distance | default:"Distance"}}</th>
+				<th>{{guide.itinerary.columns.elevation | default:"Elevation"}}</th>
 			  </tr>
 			</thead>
 			<tbody>
@@ -178,7 +172,6 @@ layout: default
 						{{phase.title}}
 						{% if phase.description %}</a>{% endif %}
 					</td>
-					{% if guide.itinerary.columns.distance %}
 					<td>
 						{%- if phase.distance -%}
 						{{phase.distance}} km / {{phase.distance | times: 0.62137 | to_integer}} miles
@@ -186,8 +179,6 @@ layout: default
 						-
 						{%- endif -%}
 					</td>
-					{% endif %}
-					{% if guide.itinerary.columns.elevation %}
 					<td>
 						{%- if phase.elevation -%}
 						{{phase.elevation}} m / {{phase.elevation | times: 3.28084 | to_integer}} ft
@@ -195,7 +186,6 @@ layout: default
 						-
 						{%- endif -%}
 					</td>
-					{% endif %}
 				</tr>
 				{% endfor %}
 			</tbody>
