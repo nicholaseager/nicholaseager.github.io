@@ -115,7 +115,7 @@ layout: default
 
 		{% if guide.map.id %}
 		{% include my-map.html id=guide.map.id %}
-		<p>To better view the map, <a href="https://www.google.com/maps/d/viewer?mid={{ guide.map.id }}" target="_blank">see it in full-screen</a>. Learn how to download the map for your own offline use by reading <a href="{{ "/navigating-on-the-trail" | relative_url }}" target="_blank">how I navigate on the trail</a>.</p>
+		<p><small>To better view the map, <a href="https://www.google.com/maps/d/viewer?mid={{ guide.map.id }}" target="_blank">see it in full-screen</a>. Learn how to download the map for your own offline use by reading <a href="{{ "/navigating-on-the-trail" | relative_url }}" target="_blank">how I navigate on the trail</a>.</small></p>
 		{% endif %}
 
 		{% if guide.maps.conclusion %}
