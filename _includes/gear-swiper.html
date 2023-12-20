@@ -1,5 +1,5 @@
-{% assign category = include.category | default: 'all' %}
-{% assign gears = site.data.gear | where_exp:"gear", "gear.tags contains category or gear.trips contains category" %}
+{% assign trip = include.trip %}
+{% assign gears = site.data.gear | where_exp:"gear", "gear.trips contains trip" %}
 
 <div class="outside-swiper-wrap">
     <div class="swiper grid-swiper">
