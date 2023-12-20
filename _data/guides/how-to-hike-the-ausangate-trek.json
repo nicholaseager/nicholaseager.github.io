@@ -1,7 +1,7 @@
 {
     "title": "How to Hike the Ausangate Trek Without a Guide",
     "date": "2023-12-06",
-    "modified_date": "2023-12-06",
+    "modified_date": "2023-12-20",
     "description": "A complete guide for the Ausangate trek featuring itinerary, gear essentials, cost breakdown, and an illustrative map for an immersive Andean adventure.",
     "image": "photos/countries/peru/ausangate-trek/two-hikers-in-front-of-ausangate-mountain",
     "tags": [
@@ -50,26 +50,8 @@
         ]
     },
     "gear": {
-        "introduction": "Preparing for the Ausangate trek involves meticulous planning, especially when it comes to the gear you carry along the journey. The challenging terrain and varying weather conditions demand a well-thought-out selection of equipment and clothing to ensure a safe, comfortable, and enjoyable experience. Here's a comprehensive guide outlining the essential gear and equipment you'll need to pack for this extraordinary trek through Peru's stunning landscapes.",
-        "conclusion": "It's essential to acknowledge that the gear list provided serves as a starting point and that each adventurer's requirements may differ. Personalizing your gear selection to match your hiking style, comfort levels, and specific needs is paramount. Remember, safety remains the responsibility of each individual trekker. Taking the time to assess and equip yourself adequately not only enhances your experience but also ensures a safer and more enjoyable journey along the challenging trails of the Ausangate trek. Prioritize your safety and comfort while embracing the stunning natural beauty of this remarkable trek.",
-        "items": [
-            {
-              "title": "Camping Gear",
-              "description": "Ensure your comfort and survival in the wild with essential camping equipment. A sturdy <b>backpack</b> is your trusted companion, carrying all necessary gear, safeguarded by a weather-resistant <b>backpack cover</b>. As night falls, seek shelter in a reliable <b>lightweight tent</b>, protected by a durable <b>footprint</b> to shield against rough terrain. Stay snug and warm with a quality <b>sleeping bag</b> and insulating <b>sleeping pad</b>, compressed for easy carriage using a <b>sleeping bag compression bag</b>. Hydration is key; carry a <b>reusable water bottle</b> and equipment for <b>water purification</b>. A portable <b>camping stove</b> and <b>cookware</b> ensure hot meals, powered by <b>propane</b>. Aid stability with <b>trekking poles</b>, while a <b>headlamp</b> guides your path, and a versatile <b>Swiss Army Knife</b> covers multiple needs. Prepare for inclement weather with a <b>poncho</b> and keep belongings dry in <b>waterproof bags</b>."
-            },
-            {
-              "title": "Clothing Essentials",
-              "description": "Outfit yourself with suitable attire for varied climates and terrains. Equip your trek with a <b>thin, long-sleeve trekking shirt</b>, complemented by <b>thermal underwear</b> for added warmth. Pack extra <b>quick-dry shirts and hiking pants</b>, accommodating changing conditions. Layer up with a reliable <b>down jacket</b> and a protective <b>rain jacket</b>. Keep extremities warm with a <b>wool hat, mittens,</b> and a versatile <b>buff</b>. Your feet deserve care; carry multiple pairs of <b>hiking socks and underwear</b>, accompanied by sturdy <b>hiking boots</b> and comfortable <b>sandals</b> for rest. Shield your eyes and head with a <b>sunhat and sunglasses</b>."
-            },
-            {
-              "title": "Medical and Emergency Supplies",
-              "description": "Prioritize your well-being with a selection of essential medical supplies. Safeguard against sun damage with <b>sunscreen</b>, and maintain hygiene with <b>antiseptic, antibacterial cream,</b> <b>bandages</b>, and <b>moleskins</b> for minor injuries. In case of emergencies, carry an <b>emergency blanket</b> for warmth and protection."
-            },
-            {
-              "title": "Miscellaneous Items",
-              "description": "Stay prepared and organized with miscellaneous essentials. Pack <b>lighters and matches</b> for fire starting and bring <b>toilet paper</b> stored in waterproof containers. Use <b>plastic bags of varying sizes</b> for waste disposal and organization, and bring compact-sized <b>personal toiletries</b> for hygiene upkeep. Don't forget a <b>quick-dry towel</b> for convenience, your <b>passport, cash,</b> and a <b>laundry bag</b> to keep dirty clothes separated."
-            }
-          ]
+        "introduction": "The Ausangate trek in Peru demands thorough preparation. Pack a sturdy backpack and weatherproof cover, a lightweight tent with footprint, warm sleeping bag and insulated pad, water bottle and purification gear, portable stove and cookware with propane. Choose clothing for varied climates and terrains: quick-dry shirts and pants, thermal underwear, down jacket, rain jacket, wool hat, mittens, buff, hiking socks and underwear, hiking boots, and sandals. Prioritize well-being with sunscreen, antiseptic cream, bandages, and an emergency blanket. Pack lighters and matches, toilet paper in waterproof bags, plastic bags for waste and organization, compact toiletries, quick-dry towel, passport, cash, and a laundry bag. Enjoy the trek, fully equipped!",
+        "trip": "ausangate"
     },    
     "weather": {
         "introduction": "Embarking on the Ausangate Trek means navigating through diverse weather conditions dictated by the Andean seasons. From the crisp freshness of Spring to the snowy landscapes of Winter, each season brings a unique charm to this high-altitude adventure.",

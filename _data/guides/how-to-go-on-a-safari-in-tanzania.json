@@ -1,7 +1,7 @@
 {
     "title": "How to Spend 9 Days on a Safari in Tanzania",
     "date": "2023-01-09",
-    "modified_date": "2023-01-28",
+    "modified_date": "2023-12-20",
     "description": "Everything you need to know about going on a Safari in Tanzania",
     "image": "photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset",
     "tags": [
@@ -63,51 +63,8 @@
         ]
     },
     "gear": {
-        "items": [
-            {
-                "title": "Sun protection",
-                "description": "hat, sunglasses, sunscreen, and lip balm"
-            },
-            {
-                "title": "Insect repellent"
-            },
-            {
-                "title": "Binoculars"
-            },
-            {
-                "title": "Camera",
-                "description": "with extra battery and memory cards"
-            },
-            {
-                "title": "Clothing",
-                "description": "light, breathable clothing for hot days, warm layers for early mornings and evenings, and waterproof gear for wet season"
-            },
-            {
-                "title": "Footwear",
-                "description": "comfortable walking shoes or hiking boots"
-            },
-            {
-                "title": "First aid kit",
-                "description": "including any personal medications"
-            },
-            {
-                "title": "Water bottle",
-                "description": "refillable and with a water purification system"
-            },
-            {
-                "title": "Power bank or portable charger"
-            },
-            {
-                "title": "Cash",
-                "description": "both Tanzanian Shillings and US dollars are recommended"
-            },
-            {
-                "title": "Passport and visa"
-            },
-            {
-                "title": "Travel insurance documents"
-            }
-        ]
+        "introduction": "For a Tanzanian safari, prioritize sun protection with a wide-brimmed hat, sunglasses, sunscreen, and lip balm, alongside essential insect repellent. Bring binoculars for wildlife observation, a camera with extra batteries, and memory cards. Pack light, breathable clothing, warm layers, and waterproof gear. Wear comfortable walking shoes or hiking boots. Carry a first aid kit with personal medications, a refillable water bottle with a purification system, and a power bank. Bring cash in Tanzanian Shillings and US dollars, along with passport, visa, and travel insurance documents for a well-prepared and enjoyable safari experience.",
+        "trip": "tanzania"
     },
     "weather": {
         "introduction": "The best time to visit Tanzania depends on your interests and what you hope to see and do while you are there. Depending on the season, Tanzania's weather can change dramatically.",

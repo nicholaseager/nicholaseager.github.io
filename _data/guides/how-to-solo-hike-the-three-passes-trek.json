@@ -1,7 +1,7 @@
 {
     "title": "How to Solo Hike the Three Passes Trek for Under $500",
     "date": "2023-08-09",
-    "modified_date": "2023-11-30",
+    "modified_date": "2023-12-20",
     "description": "Everything you need to know to plan your own Three Passes Trek.",
     "image": "photos/countries/nepal/three-passes-trek/mount-everest-from-kala-patthar",
     "tags": [
@@ -58,49 +58,8 @@
         ]
     },
     "gear": {
-        "introduction": "The items you should bring along are deeply personal yet undeniably crucial. While I'll cover the basics, remember that this list isn't all-encompassing.",
-        "items": [
-            {
-                "title": "Layered clothing",
-                "description": "Given the unpredictable weather throughout the seasons, it's wise to pack clothing in layers that can adapt to various temperatures and conditions."
-            },
-            {
-                "title": "Water purification",
-                "description": "Although most villages have potable water available, it's prudent to have water purification equipment on hand, just in case."
-            },
-            {
-                "title": "Water bottle",
-                "description": "Personally, I think a 1L water bottle is enough. Water on this route is available at all villages."
-            },
-            {
-                "title": "Sun gear",
-                "description": "When the sun is bright in the mountains, you will feel it even if it's cold. Bring a sun hat and good sunglasses to prevent snow blindness."
-            },
-            {
-                "title": "Snacks",
-                "description": "It's nice to make some trail mix or something to bring along in case you get hungry between meals. You can find ingredients in Kathmandu's Asan Market."
-            },
-            {
-                "title": "Flip Flops",
-                "description": "It's nice to change into different shoes at the end of the day. Personally I prefer flip flops and socks for tea house exploring :)"
-            },
-            {
-                "title": "Power Bank",
-                "description": "Charging devices can get expensive up in the mountain. Bring as big of a power bank as you're willing to carry."
-            },
-            {
-                "title": "Camera",
-                "description": "Of course it is nice to remember your trip! Check out all of my <a href='/gear'>photography gear</a>."
-            },
-            {
-                "title": "Camping gear",
-                "description": "Most villages on this route offer food and accommodations, rendering camping gear such as tents, sleeping bags, mattresses, and cooking equipment non-essential, unless your exploration takes you to remote areas."
-            },
-            {
-                "title": "Cash",
-                "description": "Carrying enough cash for your entire trip is essential. Check out my summary of the <a href='#cost'>cost of the trek</a>."
-            }
-        ]
+        "introduction": "Prepare for the incredible Three Passes Trek in Nepal with the right gear essentials. Layered clothing is a must for unpredictable weather, ensuring adaptability to varying conditions. While villages provide water, pack water purification gear for peace of mind. Carry a 1-liter water bottle, a sun hat, and quality sunglasses to combat the intense mountain sun. Don't forget trail mix for energy between meals, easily sourced from Kathmandu's Asan Market. Slip into comfy flip flops or socks after trekking, and keep devices charged with a substantial power bank due to limited charging spots. Capture memories with a reliable camera and skip camping gear unless exploring remote areas. Lastly, ensure you have enough cash to cover expenses for the entire trek. With these essentials, get ready for an unforgettable adventure amidst Nepal's stunning landscapes on the Three Passes Trek.",
+        "trip": "three-passes"
     },
     "weather": {
         "introduction": "Having visited Nepal across various seasons, I've realized that there isn't best time to visit, as each season has its advantages and drawbacks. Select the time that matches your preferred weather, scenery, and crowd conditions. Personally, I find late Spring and early Winter appealing due to favorable weather and fewer crowds.",

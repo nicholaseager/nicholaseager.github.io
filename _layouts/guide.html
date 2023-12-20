@@ -285,33 +285,16 @@ layout: default
 
 		<!-- Gear -->
 		{% if guide.gear %}
-		<h2 toc-id="gear">My Recommended Gear</h2>
+		<h2 toc-id="gear">Recommended Gear</h2>
 		{% if guide.gear.introduction %}
 		<p>{{ guide.gear.introduction }}</p>
 		{% endif %}
-		{% if guide.gear.items %}
-		<table>
-			<tbody>
-				{% for item in guide.gear.items %}
-				<tr>
-					<td>
-						<b>{{item.title}}</b>
-						{% if item.description %}
-						<br>{{item.description}}
-						{% endif %}
-					</td>
-				</tr>
-				{% endfor %}
-			</tbody>
-		</table>
-		{% endif %}
+		{% include gear-swiper.html category=guide.gear.trip %}
 		{% if guide.gear.conclusion %}
 		<p>{{ guide.gear.conclusion }}</p>
 		{% endif %}
-		<h3>My Recommended Hiking Gear</h3>
-		<p>When you're out exploring, it's super important to have the right gear. The right stuff can keep you comfortable, safe, and happy on your trip.</p>
-		{% include gear-swiper.html category="hiking" %}
 		<p>
+			The provided gear list is a suggestion, tailor it to your needs. Prioritize safety by packing and preparing well for a happy, adventurous hike.
 			Interested in all of my gear recommendations? Click the button below to see what I recommend for filming, travel, and fun :)
 			<br><a href="{{ "/gear" | relative_url }}" class="button button--small">Explore All Gear</a>
 		</p>
