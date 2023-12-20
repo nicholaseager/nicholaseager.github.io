@@ -1,0 +1,13 @@
+---
+layout: guide
+jsonld: article
+header: transparent
+title: How to Hike the Lares Trek Without A Guide
+date: 2023-12-20
+modified_date: 2023-12-20
+description: Cultural immersion, panoramic vistas, and alpaca encounters await—an all-encompassing guide to Peru's high-altitude wonders.
+image: photos/countries/peru/lares-trek/weaving-loom
+tags: ["peru", "lares-valley-trek", "sacred-valley", "hiking"]
+guide: how-to-hike-the-lares-trek
+redirect_from: /g/lares-trek
+---
