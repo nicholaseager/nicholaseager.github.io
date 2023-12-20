@@ -1,0 +1,13 @@
+---
+layout: guide
+jsonld: article
+header: transparent
+title: How to Walk from Cusco to Huchuy Qosqo in One Day
+date: 2023-12-18
+modified_date: 2023-12-18
+description: An extensive guide to a diverse trek to Huchuy Qosqo, offering insights into multiple routes, key highlights, and essential tips for an enriching Andean adventure.
+image: photos/countries/peru/huchuy-qosqo-hike/hiker-walking-on-rice-terraces
+tags: ["peru", "huchuy-qosqo-trek", "sacred-valley-trek", "hiking"]
+guide: how-to-hike-the-huchuy-qosqo-trek
+redirect_from: /g/huchuy-qosqo
+---
