@@ -26,6 +26,12 @@
     },
     "overview": {
         "summary": "Embark on a soul-stirring adventure through the heart of the Andes with the Lares Valley trek in Peru—a journey meticulously crafted for the intrepid explorer seeking a perfect blend of awe-inspiring landscapes, cultural immersion, and the thrill of high-altitude hiking. Over four days, you'll traverse the rugged beauty of the Lares Valley, winding your way through quaint villages, ascending majestic mountain passes, and camping beneath star-studded skies. From the pastoral scenes of alpacas and llamas grazing in Huaran to the vibrant markets and narrow streets of Huacahuasi, each day unfolds a new chapter in this captivating narrative. Immerse yourself in the essence of the Andes, where every step is a testament to the rich tapestry of nature and culture that defines this region. Join me as we hike through valleys, conquer mountain passes, and forge lasting memories in the breathtaking landscapes of the Lares Valley.",
+        "items": [
+            {
+                "title": "TIP",
+                "description": "Looking to extend your hike? Consider starting from Cusco and hiking to the <a href='/g/huchuy-qosqo' target='blank'>Huchuy Qosqo</a> archeological site."
+            }
+        ],
         "images": [
             "photos/countries/peru/lares-trek/nicholas-eager-looking-at-colorful-textiles",
             "photos/countries/peru/lares-trek/hiker-overlooking-glacier",
