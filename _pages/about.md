@@ -18,7 +18,7 @@ Nicholas is a international adventure film-maker and photographer. He spends a l
 
 ---
 
-Nicholas started his journey in the world at Saint Louis, MO, USA. Being in a flat, landlocked, and corn-filled part of the world did have its benefits: the urge to see the world was unrelenting. During university, he decided to study abroad in Hong Kong, which nurtured his love for understanding cultures on the other side of the world, exploring the path less-traveled, and of course photography and filmmaking.
+Nicholas started his journey in the world in the middle of nowhere, USA. Being in a flat, landlocked, and corn-filled part of the world did have its benefits: the urge to see the world was unrelenting. During university, he decided to study abroad in Hong Kong, which nurtured his love for understanding cultures on the other side of the world, exploring the path less-traveled, and of course photography and filmmaking.
 
 After spending a few years to focus on his career, he quit his full-time job to spend a year traveling the world. He volunteered in Nepal building a school for five months, worked on a permaculture farm in Indonesia, traveled to Japan, Iceland, China, Vietnam, and New Zealand. These initial travels further cemented his love for travel, landscape photography and story-telling.
 
