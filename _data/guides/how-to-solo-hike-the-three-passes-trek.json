@@ -1,7 +1,7 @@
 {
     "title": "How to Solo Hike the Three Passes Trek for Under $500",
-    "date": "2023-08-09",
-    "modified_date": "2023-12-20",
+    "date": "2024-04-05",
+    "modified_date": "2023-04-05",
     "description": "Everything you need to know to plan your own Three Passes Trek.",
     "image": "photos/countries/nepal/three-passes-trek/mount-everest-from-kala-patthar",
     "tags": [
@@ -90,7 +90,7 @@
             "sections": [
                 {
                     "title": "Where to start?",
-                    "description": "Lukla is the typical starting point of many treks in the Khumbu region. However, you have a couple of options to reach here. You can either take a jeep to a village lower in the Solukhumbu valley and walk to Lukla, or you can fly directly to Lukla from Kathmandu. Flying is faster and more convenient, but flights are weather-dependent, can be subject to delays and cancellations, and are more expensive. If you have a few extra days and wish for a more authentic experience, consider starting your trek from lower in the Solukhumbu Valley. This path allows you to explore lesser-visited villages, witness the majestic summit of Pikey Peak, and save some money by avoiding the flight to Lukla. I chose this option to immerse myself in the local culture and discover hidden gems. The typical starting points are Jiri, Salleri, Dhap, or Phaplu. Most hotels in Thamel, Kathmandu, can help you organize your journey to the starting point.",
+                    "description": "Lukla is the typical starting point of many treks in the Khumbu region. However, you have a couple of options to reach here. You can either take a jeep to a village lower in the Solukhumbu valley and walk to Lukla, or you can fly directly to Lukla from Kathmandu. Flying is faster and more convenient, but flights are weather-dependent, can be subject to delays and cancellations, and are more expensive. If you have a few extra days and wish for a more authentic experience, consider starting your trek from lower in the Solukhumbu Valley. This path allows you to explore lesser-visited villages, witness the majestic summit of Pikey Peak, and save some money by avoiding the flight to Lukla. I chose this option to immerse myself in the local culture and discover hidden gems. The typical starting points are Jiri, Salleri, Dhap, or Phaplu. Most hotels in Thamel, Kathmandu, can help you organize your journey to the starting point. Check out my <a href='/g/pikey-peak-trek' target='blank'>Pikey Peak Trek</a> for more information.",
                     "images": [
                         "photos/countries/nepal/three-passes-trek/plane-landing-at-lukla"
                     ]
@@ -110,7 +110,7 @@
         }
     ],
     "itinerary": {
-        "introduction": "The trek typically takes around 19-21 days to complete, depending on the route and your pace. You have a couple <a href='#options'>options</a> to make this itinerary your own. Personally, I decided to start from lower in the valley instead of flying to Lukla and walk the loop clockwise for better views and fewer crowds.",
+        "introduction": "The trek typically takes around 19-21 days to complete, depending on the route and your pace. You have a couple <a href='#options'>options</a> to make this itinerary your own. Personally, I decided to start from <a href='/g/pikey-peak-trek' target='blank'>lower in the valley</a> instead of flying to Lukla and walk the loop clockwise for better views and fewer crowds.",
         "conclusion": "Your Three Passes itinerary can be as flexible as you want. There are tons of <a href='#highlights'>side trips</a> you can choose from, or you can choose to rest somewhere for an extra few days if your schedule allows.",
         "units": {
             "phase": "Day",
@@ -120,7 +120,7 @@
         "phases": [
             {
                 "title": "Kathmandu to Lukla",
-                "description": "Depending on how you came to Lukla, you might have had an epic but short 25 minute flight from Kathmandu or spent a few off the beaten path days walking in from the valley. Either way, you’re in the right place to begin the next part of your journey.",
+                "description": "Depending on how you came to Lukla, you might have had an epic but short 25 minute flight from Kathmandu or spent a few off the beaten path days <a href='/g/pikey-peak-trek' target='blank'>walking in from the valley</a>. Either way, you’re in the right place to begin the next part of your journey.",
                 "distance": 160,
                 "elevation": 2845,
                 "images": [
