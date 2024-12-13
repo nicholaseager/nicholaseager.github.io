@@ -17,15 +17,15 @@ layout: default
 					<h1>{{ guide.title }}</h1>
 					<p><i>Last updated: {{ guide.modified_date | default: guide.date | date_to_long_string }}</i></p>
 					{% include social-share.html
-						url=url
-						title=guide.title
-						image=guide.image
+					url=url
+					title=guide.title
+					image=guide.image
 					%}
 					{% if guide.introduction %}
 					<p>{{ guide.introduction }}</p>
 					{% endif %}
 				</div>
-	
+
 				<div class="guide-intro-video-container">
 					<div class="guide-intro-video">
 						{% if guide.youtube %}
@@ -115,7 +115,10 @@ layout: default
 
 		{% if guide.map.id %}
 		{% include my-map.html id=guide.map.id %}
-		<p><small>To better view the map, <a href="https://www.google.com/maps/d/viewer?mid={{ guide.map.id }}" target="_blank">see it in full-screen</a>. Learn how to download the map for your own offline use by reading <a href="{{ "/navigating-on-the-trail" | relative_url }}" target="_blank">how I navigate on the trail</a>.</small></p>
+		<p><small>To better view the map, <a href="https://www.google.com/maps/d/viewer?mid={{ guide.map.id }}"
+					target="_blank">see it in full-screen</a>. Learn how to download the map for your own offline use by
+				reading <a href="{{ " /navigating-on-the-trail" | relative_url }}" target="_blank">how I navigate on the
+					trail</a>.</small></p>
 		{% endif %}
 
 		{% if guide.maps.conclusion %}
@@ -152,24 +155,26 @@ layout: default
 		{% if guide.itinerary.introduction %}
 		<p>{{ guide.itinerary.introduction }}</p>
 		{% endif %}
-		
+
 		<h3>Brief Itinerary</h3>
 		<table>
 			<thead>
-			  <tr>
-				<th>{{guide.itinerary.units.phase | default:"Phase"}}</th>
-				<th>{{guide.itinerary.units.itinerary | default:"Itinerary"}}</th>
-				<th>{{guide.itinerary.units.distance | default:"Distance"}} / {{guide.itinerary.units.elevation | default:"Elevation"}}</th>
-			  </tr>
+				<tr>
+					<th>{{guide.itinerary.units.phase | default:"Phase"}}</th>
+					<th>{{guide.itinerary.units.itinerary | default:"Itinerary"}}</th>
+					<th>{{guide.itinerary.units.distance | default:"Distance"}} / {{guide.itinerary.units.elevation |
+						default:"Elevation"}}</th>
+				</tr>
 			</thead>
 			<tbody>
 				{% for phase in guide.itinerary.phases %}
 				<tr>
 					<td>{{forloop.index}}</td>
 					<td>
-						{% if phase.description %}<a id="itinerary-phase-ref-{{forloop.index}}" href="#itinerary-phase-{{forloop.index}}">{% endif %}
-						{{phase.title}}
-						{% if phase.description %}</a>{% endif %}
+						{% if phase.description %}<a id="itinerary-phase-ref-{{forloop.index}}"
+							href="#itinerary-phase-{{forloop.index}}">{% endif %}
+							{{phase.title}}
+							{% if phase.description %}</a>{% endif %}
 					</td>
 					<td>
 						{% if phase.distance %}
@@ -178,7 +183,7 @@ layout: default
 						{% else %}
 						-
 						{% endif %}
-						 / 
+						/
 						{% if phase.elevation %}
 						<div class="guide-stat metric">{{phase.elevation}} m</div>
 						<div class="guide-stat imperial">{{phase.elevation | times: 3.28084 | to_integer}} ft</div>
@@ -202,7 +207,8 @@ layout: default
 			{% if phase.distance or phase.elevation %}
 			<span class="guide-itinerary-stats">
 				<div class="guide-stat metric">({{phase.distance}} km / {{phase.elevation}} m)</div>
-				<div class="guide-stat imperial">({{phase.distance | times: 0.62137 | to_integer}} miles / {{phase.elevation | times: 3.28084 | to_integer}} ft)</div>
+				<div class="guide-stat imperial">({{phase.distance | times: 0.62137 | to_integer}} miles /
+					{{phase.elevation | times: 3.28084 | to_integer}} ft)</div>
 			</span>
 			{% endif %}
 		</h5>
@@ -252,13 +258,13 @@ layout: default
 		{% if guide.cost.introduction %}
 		<p>{{ guide.cost.introduction }}</p>
 		{% endif %}
-		
+
 		<table>
 			<thead>
-			  <tr>
-				<th>Item</th>
-				<th>Cost</th>
-			  </tr>
+				<tr>
+					<th>Item</th>
+					<th>Cost</th>
+				</tr>
 			</thead>
 			<tbody>
 				{% for item in guide.cost.items %}
@@ -294,9 +300,11 @@ layout: default
 		<p>{{ guide.gear.conclusion }}</p>
 		{% endif %}
 		<p>
-			The provided gear list is a suggestion, tailor it to your needs. Prioritize safety by packing and preparing well for a happy, adventurous hike.
-			Interested in all of my gear recommendations? Click the button below to see what I recommend for filming, travel, and fun :)
-			<br><a href="{{ "/gear" | relative_url }}" class="button button--small">Explore All Gear</a>
+			The provided gear list is a suggestion, tailor it to your needs. Prioritize safety by packing and preparing
+			well for a happy, adventurous hike.
+			Interested in all of my gear recommendations? Click the button below to see what I recommend for filming,
+			travel, and fun :)
+			<br><a href="{{ " /gear" | relative_url }}" class="button button--small">Explore All Gear</a>
 		</p>
 		{% endif %}
 		<!-- End Gear -->
@@ -326,14 +334,16 @@ layout: default
 		<p>{{ guide.conclusion }}</p>
 		{% endif %}
 		{% if guide.youtube %}
-		<p>Check out <a href="https://www.youtube.com/watch?v={{ guide.youtube }}" target="_blank">a video</a> that I made about the entire trip! I tried my best to capture all of the little beautiful moments by letting them speak for themselves. So there are no explanations or speaking in this video, just moments :)</p>
+		<p>Check out <a href="https://www.youtube.com/watch?v={{ guide.youtube }}" target="_blank">a video</a> that I
+			made about the entire trip! I tried my best to capture all of the little beautiful moments by letting them
+			speak for themselves. So there are no explanations or speaking in this video, just moments :)</p>
 		{% endif %}
 
 		<div class="social-share center">
 			{% include social-share.html
-				url=url
-				title=guide.title
-				image=guide.image
+			url=url
+			title=guide.title
+			image=guide.image
 			%}
 		</div>
 
@@ -341,26 +351,32 @@ layout: default
 		{%- assign similar_guides = site.data.metadata['similar_guides'] -%}
 		{%- assign similar_guides = similar_guides[page.guide] -%}
 		{%- assign similar_guides = similar_guides | sort: "simularity" | reverse -%}
-		
+
 		{%- assign guides = "" | split: ',' -%}
 		{%- for similar_guide in similar_guides -%}
-			{%- assign guide = site.guides | where: "guide", similar_guide.name | first -%}
-			{%- assign guides = guides | push: guide -%}
+		{%- assign guide = site.guides | where: "guide", similar_guide.name | first -%}
+		{%- assign guides = guides | push: guide -%}
 		{%- endfor -%}
 		{% include latest-collection.html items=guides %}
 
 		<hr>
-		
-		<p>My site does not support public comments. Please use the form below to send a comment directly to me if you want to ask questions; I am happy to help.</p>
+
+		<p>My site does not support public comments. Please use the form below to send a comment directly to me if you
+			want to ask questions; I am happy to help.</p>
 		{% include comment-form.html url=url %}
 
 		<p>
 			<small>
 				<span style="text-decoration: underline;"><em><strong>Safety Disclosure</strong></em></span>
-				<em>This travel guide is intended for educational purposes only. Readers are urged to conduct their due diligence, verify current conditions, and research the most recent information independently. Conditions along trails and relevant details may change, necessitating the confirmation of accurate and updated information from reliable sources or local authorities before undertaking any travel or outdoor activities.</em>
+				<em>This travel guide is intended for educational purposes only. Readers are urged to conduct their due
+					diligence, verify current conditions, and research the most recent information independently.
+					Conditions along trails and relevant details may change, necessitating the confirmation of accurate
+					and updated information from reliable sources or local authorities before undertaking any travel or
+					outdoor activities.</em>
 				<br><br>
 				<span style="text-decoration: underline;"><em><strong>Affiliate Disclosure</strong></em></span>
-				<em>This travel guide contains affiliate links, which means I may earn a commission for purchases made through these links at no cost to you. Your support helps sustain the creation of more content.</em>
+				<em>This travel guide contains affiliate links, which means I may earn a commission for purchases made
+					through these links at no cost to you. Your support helps sustain the creation of more content.</em>
 			</small>
 		</p>
 	</div>
