@@ -76,6 +76,22 @@ layout: default
 		{% endif %}
 		<!-- End Overview -->
 
+		<!-- Partnership -->
+		{% if guide.partnership %}
+		<div class="guide-partnership">
+			<h4>{{ guide.partnership.title }}</h4>
+			<p>{{ guide.partnership.description }}</p>
+			{% if guide.partnership.logo %}
+			<div class="logo">
+				<a href="{{ guide.partnership.link }}">
+					<img src="https://ik.imagekit.io/qn1gkawvy/{{ guide.partnership.logo }}.svg">
+				</a>
+			</div>
+			{% endif %}
+		</div>
+		{% endif %}
+		<!-- End Partnership -->
+
 		<!-- Basics -->
 		{% if guide.basics %}
 		<h2 toc-id="basics">Basic Information</h2>
