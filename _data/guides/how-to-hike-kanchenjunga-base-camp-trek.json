@@ -102,8 +102,7 @@
                 "title": "Tea Country Bound - Fly to Bhadrapur, Drive to Fikkal",
                 "description": "Begin your day with an exhilarating 45-minute flight to Bhadrapur, where the Himalayas reveal themselves to left-side window seat passengers. The subsequent 4-hour jeep ride takes you through the verdant hills to Fikkal, a region renowned for its sprawling tea estates that mirror the famous gardens of nearby Darjeeling. The rolling hills covered in neat rows of tea bushes offer a serene introduction to eastern Nepal.",
                 "distance": 350,
-                "elevation": 1678,
-                "images": []
+                "elevation": 1678
             },
             {
                 "title": "Mountain Roads - Drive to Taplejung",
@@ -118,8 +117,7 @@
                 "title": "Sacred Heights - Visit Pathibhara Devi Temple (Optional)",
                 "description": "For those seeking both spiritual enlightenment and acclimatization, this detour to Pathibhara Devi Temple at 3,800m is invaluable. The journey involves a two-hour bumpy jeep ride followed by a 10km round-trip hike. This sacred Hindu shrine not only offers religious significance but also serves as an excellent acclimatization opportunity with stunning mountain views.",
                 "distance": 10,
-                "elevation": 3800,
-                "images": []
+                "elevation": 3800
             },
             {
                 "title": "River Valley Entry - Drive to Sekathum, Hike to Lamatar",
@@ -189,15 +187,13 @@
                 "title": "Jannu's Glory - Hike to Jannu Viewpoint (Optional)",
                 "description": "This 11km round-trip serves as an ideal acclimatization day, offering breathtaking views of Jannu's imposing face. The moderate difficulty makes it accessible while still providing essential altitude adaptation.",
                 "distance": 11,
-                "elevation": 4565,
-                "images": []
+                "elevation": 4565
             },
             {
                 "title": "Hidden Gem - Hike to Nupchu Lake (Optional)",
                 "description": "A demanding 14km round-trip following unmarked yak trails and loose scree leads to the pristine Nupchu Lake. This less-traveled route offers solitude and stunning views of both the lake and Jannu, though it requires careful navigation and strong hiking skills.",
                 "distance": 14,
-                "elevation": 4856,
-                "images": []
+                "elevation": 4856
             },
             {
                 "title": "Glacier Gateway - Hike to Lhonak",
@@ -327,22 +323,19 @@
                 "title": "Return Journey Begins - Drive to Taplejung",
                 "description": "A four-hour bumpy jeep ride marks your return to civilization as you retrace your path to Taplejung. The transition from trail to road offers time to reflect on your high-altitude adventures while readjusting to motorized transport.",
                 "distance": 0,
-                "elevation": 1442,
-                "images": []
+                "elevation": 1442
             },
             {
                 "title": "Lowland Return - Drive to Birtamod or Bhadrapur",
                 "description": "Today's seven-hour journey on winding but paved roads takes you back to the terai (lowlands). The dramatic descent from mountains to plains provides a visual summary of Nepal's diverse geography.",
                 "distance": 178,
-                "elevation": 98,
-                "images": []
+                "elevation": 98
             },
             {
                 "title": "Journey's End - Fly to Kathmandu",
                 "description": "Your final mountain experience comes from the right-side window seat, offering (weather permitting) a farewell glimpse of the peaks you've come to know intimately over the past weeks. The flight to Kathmandu marks the end of your Kanchenjunga circuit, leaving you with memories of one of the Himalayas' most remarkable treks.",
                 "distance": 300,
-                "elevation": 1355,
-                "images": []
+                "elevation": 1355
             }
         ]
     },
