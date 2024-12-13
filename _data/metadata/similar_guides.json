@@ -17,6 +17,10 @@
             "simularity": 1
         },
         {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
+            "simularity": 2
+        },
+        {
             "name": "how-to-solo-hike-the-three-passes-trek",
             "simularity": 2
         },
@@ -63,6 +67,10 @@
             "simularity": 1
         },
         {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
+            "simularity": 2
+        },
+        {
             "name": "how-to-solo-hike-the-three-passes-trek",
             "simularity": 2
         },
@@ -106,6 +114,10 @@
         },
         {
             "name": "how-to-hike-the-lares-trek",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
             "simularity": 1
         },
         {
@@ -155,6 +167,10 @@
             "simularity": 1
         },
         {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
+            "simularity": 1
+        },
+        {
             "name": "how-to-solo-hike-the-three-passes-trek",
             "simularity": 1
         },
@@ -201,6 +217,10 @@
             "simularity": 1
         },
         {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
+            "simularity": 1
+        },
+        {
             "name": "how-to-solo-hike-the-three-passes-trek",
             "simularity": 1
         },
@@ -229,6 +249,56 @@
             "simularity": 1
         }
     ],
+    "how-to-hike-kanchenjunga-base-camp-trek": [
+        {
+            "name": "how-to-hike-the-manaslu-circuit",
+            "simularity": 2
+        },
+        {
+            "name": "how-to-solo-hike-the-pikey-peak-trek",
+            "simularity": 2
+        },
+        {
+            "name": "how-to-hike-the-wild-great-wall",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-coyote-gulch",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-the-lares-trek",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-solo-hike-the-three-passes-trek",
+            "simularity": 2
+        },
+        {
+            "name": "mountain-hut-to-hut-hiking-in-italy",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-visit-cat-ba-island-vietnam",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-inside-the-grand-canyon",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-the-ausangate-trek",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-the-huchuy-qosqo-trek",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-pu-ta-leng-northern-vietnam",
+            "simularity": 1
+        }
+    ],
     "how-to-solo-hike-the-three-passes-trek": [
         {
             "name": "how-to-hike-the-manaslu-circuit",
@@ -249,6 +319,10 @@
         {
             "name": "how-to-hike-the-lares-trek",
             "simularity": 1
+        },
+        {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
+            "simularity": 2
         },
         {
             "name": "mountain-hut-to-hut-hiking-in-italy",
@@ -294,6 +368,10 @@
         },
         {
             "name": "how-to-hike-the-lares-trek",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
             "simularity": 1
         },
         {
@@ -343,6 +421,10 @@
             "simularity": 1
         },
         {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
+            "simularity": 1
+        },
+        {
             "name": "how-to-solo-hike-the-three-passes-trek",
             "simularity": 1
         },
@@ -386,6 +468,10 @@
         },
         {
             "name": "how-to-hike-the-lares-trek",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
             "simularity": 1
         },
         {
@@ -436,6 +522,10 @@
             "simularity": 2
         },
         {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
+            "simularity": 1
+        },
+        {
             "name": "how-to-solo-hike-the-three-passes-trek",
             "simularity": 1
         },
@@ -482,6 +572,10 @@
             "simularity": 3
         },
         {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
+            "simularity": 1
+        },
+        {
             "name": "how-to-solo-hike-the-three-passes-trek",
             "simularity": 1
         },
@@ -525,6 +619,10 @@
         },
         {
             "name": "how-to-hike-the-lares-trek",
+            "simularity": 1
+        },
+        {
+            "name": "how-to-hike-kanchenjunga-base-camp-trek",
             "simularity": 1
         },
         {
