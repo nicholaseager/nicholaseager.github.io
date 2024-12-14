@@ -15,7 +15,7 @@ There are other map apps such as AllTrails, Gaia GPS, and Outdoor Active. These 
 
 ## Downloading My Maps
 
-If you decide to follow along with one of my routes, you can do so easily no matter which app you choose. You just need to download a file (.kml/.gpx) from one of the maps embeded on my website (i.e. my [Three Passes Hike](/guides/guides/how-to-solo-hike-the-three-passes-trek) in Nepal or my [Grand Canyon Hike](/guides/how-to-hike-inside-the-grand-canyon) in the US). Once you have the file downloaded, you can send it to yourself via email (or AirDrop for iOS devices) and open the file with maps.me or your device.
+If you decide to follow along with one of my routes, you can do so easily no matter which app you choose. You just need to download a file (.kml/.gpx) from one of the maps embeded on my website (i.e. my [Three Passes Hike](/guides/how-to-solo-hike-the-three-passes-trek) in Nepal or my [Grand Canyon Hike](/guides/how-to-hike-inside-the-grand-canyon) in the US). Once you have the file downloaded, you can send it to yourself via email (or AirDrop for iOS devices) and open the file with maps.me or your device.
 
 ### Google Map
 Below is an example of a map that I might embed on my website. You can download the KML file by opening the map in full-screen (click on the 'View Larger Map' icon on the top right), and clicking the menu icon in the top left corner and select "Export to KML."
