@@ -8,16 +8,23 @@
     </div>
     {% endif %}
     <div class="gear-gallery-wrap">
-        <div id="gear-gallery" data-default-category="{{ include.default-category | default: 'all' }}" class="gear-gallery">
+        <div id="gear-gallery" data-default-category="{{ include.default-category | default: 'all' }}"
+            class="gear-gallery">
             {% for gear in site.data.gear %}
             <div class="gear-item hide {{ gear.tags }}">
-                <img src="{{ gear.img }}" alt="{{ gear.title }}" />
-                <div class="title">{{ gear.title }}</div>
-                <div class="description">{{ gear.description }}</div>
-                <a href="{{ gear.url }}" class="button button--small button--rounded button--expanded">
-                    View
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                <div class="gear-content">
+                    <div class="gear-image">
+                        <img src="{{ gear.img }}" alt="{{ gear.title }}" />
+                    </div>
+                    <div class="gear-info">
+                        <div class="title">{{ gear.title }}</div>
+                        <div class="description">{{ gear.description }}</div>
+                        <a href="{{ gear.url }}" class="button button--small button--rounded button--expanded">
+                            View
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             {% endfor %}
         </div>

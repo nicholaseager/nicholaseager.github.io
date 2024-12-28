@@ -6,12 +6,19 @@
         <div class="swiper-wrapper">
             {% for gear in gears %}
             <div class="swiper-slide gear-item">
-                <img src="{{ gear.img }}" alt="{{ gear.title }}" />
-                <div class="title">{{ gear.title }}</div>
-                <a href="{{ gear.url }}" class="button button--small button--rounded button--expanded">
-                    View
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                <div class="gear-content">
+                    <div class="gear-image">
+                        <img src="{{ gear.img }}" alt="{{ gear.title }}" />
+                    </div>
+                    <div class="gear-info">
+                        <div class="title">{{ gear.title }}</div>
+                        <div class="description">{{ gear.description }}</div>
+                        <a href="{{ gear.url }}" class="button button--small button--rounded button--expanded">
+                            View
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             {% endfor %}
         </div>
