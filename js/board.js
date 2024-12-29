@@ -9,7 +9,7 @@
 	var History = window.History;
 
 	// State change event
-	History.Adapter.bind(window,'statechange',function(){
+	History.Adapter.bind(window, 'statechange', function () {
 		var state = History.getState();
 
 		// Loading state
@@ -18,7 +18,7 @@
 		$('.header').addClass('dark');
 
 		// Load the page
-		$('.page-loader').load( state.hash + ' .page__content', function() {
+		$('.page-loader').load(state.hash + ' .page__content', function () {
 			// Scroll to top
 			$('html, body').animate({ scrollTop: 0 }, 'slow');
 
@@ -26,7 +26,7 @@
 			var transitionTime = 400;
 
 			// After current content fades out
-			setTimeout( function() {
+			setTimeout(function () {
 				// Remove old content
 				$('.page .page__content').remove();
 
@@ -52,14 +52,14 @@
 
 	});
 
-	$(document).on('click', 'a', function (event){
+	$(document).on('click', 'a', function (event) {
 		// Don't follow link
 		event.preventDefault();
 
 		// Get the link target
 		var thisTarget = $(this).attr('href');
 
-		if ( !thisTarget ) {
+		if (!thisTarget) {
 			// Let JS handle it
 		}
 
@@ -78,17 +78,17 @@
 		}
 
 		// If link is handled by some JS action – e.g. galleries
-		else if ( $(this).is('.image-gallery-link') ) {
+		else if ($(this).is('.image-gallery-link')) {
 			// Let JS handle it
 		}
 
 		// If link has overriden on click
-		else if ( $(this).attr('onclick') ) {
+		else if ($(this).attr('onclick')) {
 			// Let JS handle it
 		}
 
 		// If link is external
-		else if ( thisTarget.indexOf('http') >= 0 ) {
+		else if (thisTarget.indexOf('http') >= 0) {
 			// Go to the external link
 			window.open(thisTarget, '_blank');
 		}
@@ -98,10 +98,10 @@
 
 			// If we are using ajax loading, push history state.
 			// Otherwise just use the link.
-			if ( $('body').hasClass('ajax-loading') ) {
+			if ($('body').hasClass('ajax-loading')) {
 				// Change navTarget
 				navTarget = thisTarget;
-				
+
 				// Switch the URL via History
 				History.pushState(null, docTitle, thisTarget);
 			} else {
@@ -114,7 +114,7 @@
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Helpers
 
-	function isScrolledIntoView(elem, offset=0) {
+	function isScrolledIntoView(elem, offset = 0) {
 		var docViewTop = $(window).scrollTop();
 		var docViewBottom = docViewTop + $(window).height();
 
@@ -122,8 +122,8 @@
 		var elemBottom = elemTop + $(elem).height() + offset;
 
 		return ((elemTop <= docViewBottom) && (elemBottom >= docViewBottom)) ||
-				((elemBottom >= docViewTop) && (elemTop <= docViewTop)) ||
-				((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+			((elemBottom >= docViewTop) && (elemTop <= docViewTop)) ||
+			((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 	}
 
 
@@ -134,13 +134,13 @@
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Show content
 
 		// Wait until first image has loaded
-		$('.page__content').find('img:first').imagesLoaded( function() {
+		$('.page__content').find('img:first').imagesLoaded(function () {
 
 			// Show the content
 			$('body').removeClass('loading');
 
 			// Update header after loading animation delay
-			setTimeout(function() {
+			setTimeout(function () {
 				var style = $('.page__content').attr('data-header-style');
 				$('.header').attr('class', 'header ' + style);
 			}, 150);
@@ -162,7 +162,7 @@
 		var mainVideo = $('video#homeVideo');
 		var mobileSrc = "https://ik.imagekit.io/qn1gkawvy/home-intro-low.mp4";
 		var desktopSrc = "https://ik.imagekit.io/qn1gkawvy/home-intro.mp4";
-		
+
 		if ($(window).width() < 980) {
 			mainVideo.append("<source type='video/mp4' src='" + mobileSrc + "' />");
 		} else {
@@ -174,7 +174,7 @@
 		var galleryID = 0;
 
 		// If there's a gallery
-		$('.gallery').each( function() {
+		$('.gallery').each(function () {
 			// Get gallery element
 			var $this = $(this);
 
@@ -189,21 +189,21 @@
 			const gallerySwiper = new Swiper('.image-gallery-swiper[data-id="' + swiperID + '"]', {
 				direction: 'horizontal',
 				loop: true,
-			
+
 				lazy: {
 					loadPrevNext: true,
 				},
-			
+
 				pagination: {
 					el: '.swiper-pagination',
 					type: 'bullets',
 				},
-			
+
 				keyboard: {
 					enabled: true,
 					onlyInViewport: false,
 				},
-			
+
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
@@ -211,7 +211,7 @@
 			});
 
 			// Wait for images to load
-			$image_gallery.imagesLoaded( function() {
+			$image_gallery.imagesLoaded(function () {
 				// Update order button on slide change
 				const onIndexChange = function (index) {
 					var $slide = $this.find('.swiper-slide[data-swiper-slide-index="' + index + '"]');
@@ -224,12 +224,12 @@
 					onIndexChange(gallerySwiper.realIndex);
 				});
 
-				$image_gallery.find('.image-gallery-link').click(function(event) {
+				$image_gallery.find('.image-gallery-link').click(function (event) {
 					var id = $(this).attr('data-index');
 					var index = parseInt(id) - 1;
 					gallerySwiper.slideTo(index, 0);
 					onIndexChange(index);
-					
+
 					// Get container
 					var $swiper = $this.find('.image-gallery-swiper-container');
 					$swiper.removeClass('image-gallery-swiper-hidden');
@@ -240,7 +240,7 @@
 
 			// Close button
 			var $close = $this.find('.swiper-close-button');
-			$close.click(function(event) {
+			$close.click(function (event) {
 				// Get container
 				var $swiper = $this.find('.image-gallery-swiper-container');
 				$swiper.addClass('image-gallery-swiper-hidden');
@@ -251,7 +251,7 @@
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Gear Lists
 
-		$('.gear-wrap').each( function() {
+		$('.gear-wrap').each(function () {
 			var gallery = $(this).find('.gear-gallery');
 			var buttons = $(this).find('.gear-buttons');
 			const defaultCategory = gallery.attr('data-default-category') ?? "all";
@@ -267,14 +267,14 @@
 				});
 			}
 
-			buttons.find('.button').click(function(event) {
+			buttons.find('.button').click(function (event) {
 				// Update tag
 				var tag = $(this).attr('data-tag');
 				$("#gear-gallery").fadeOut("fast", function () {
 					updateElements(tag);
 					$("#gear-gallery").fadeIn("slow");
 				});
-				
+
 				// Update active
 				var current = buttons.find('.active');
 				current.removeClass('active');
@@ -295,7 +295,7 @@
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Single Swipers
 
 		var singleSwiperID = 0;
-		$('.single-swiper').each( function() {
+		$('.single-swiper').each(function () {
 			// Get swiper element
 			var $swiper = $(this);
 
@@ -312,12 +312,12 @@
 				spaceBetween: 10,
 				autoHeight: true,
 				loop: false,
-	
+
 				pagination: {
 					el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
 					type: 'bullets',
 				},
-			
+
 				navigation: {
 					nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
 					prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]'
@@ -328,7 +328,7 @@
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Collection Swipers
 
 		var collectionSwiperID = 0;
-		$('.collection-swiper').each( function() {
+		$('.collection-swiper').each(function () {
 			// Get swiper element
 			var $swiper = $(this);
 
@@ -346,12 +346,12 @@
 				autoHeight: true,
 				centerInsufficientSlides: true,
 				loop: false,
-	
+
 				pagination: {
 					el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
 					type: 'bullets',
 				},
-			
+
 				navigation: {
 					nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
 					prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]'
@@ -377,7 +377,7 @@
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Grid Swipers
 
 		var gridSwiperID = 0;
-		$('.grid-swiper').each( function() {
+		$('.grid-swiper').each(function () {
 			// Get swiper element
 			var $swiper = $(this);
 
@@ -433,33 +433,33 @@
 						},
 					}
 				}
-			});	
+			});
 		});
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Order Swipers
 
-		$('.order-swiper').each(function() {
+		$('.order-swiper').each(function () {
 			const orderSwiperThumbs = new Swiper(".order-swiper-thumbs", {
 				spaceBetween: 10,
 				slidesPerView: 4,
 				freeMode: true,
 				watchSlidesProgress: true,
 			});
-		
+
 			const orderSwiper = new Swiper('.order-swiper', {
 				// Optional parameters
 				direction: 'horizontal',
 				loop: true,
 				autoHeight: true,
-			
+
 				autoplay: {
 					delay: 5000,
 				},
-		
+
 				lazy: {
 					loadPrevNext: true,
 				},
-		
+
 				thumbs: {
 					swiper: orderSwiperThumbs,
 				},
@@ -468,7 +468,7 @@
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Images
 
-		$('.single p > img').each( function() {
+		$('.single p > img').each(function () {
 			var thisP = $(this).parent('p');
 			$(this).insertAfter(thisP);
 			$(this).wrapAll('<div class="image-wrap"></div>');
@@ -480,10 +480,10 @@
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Videos
 
 		// For each iframe
-		$('.single iframe').each( function() {
+		$('.single iframe').each(function () {
 			var width = $(this).attr('width');
 			var height = $(this).attr('height');
-			var ratio = (height/width)*100;
+			var ratio = (height / width) * 100;
 
 			// Wrap in video container
 			$(this).wrapAll('<div class="video-wrap"><div class="video" style="padding-bottom:' + ratio + '%;"></div></div>');
@@ -492,17 +492,17 @@
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Maps
 
-		$('.google-map').each( function() {
-			$(this).find('.map-notice-button').click(function(){
+		$('.google-map').each(function () {
+			$(this).find('.map-notice-button').click(function () {
 				$(".map-notice-button").toggle();
 				$(".modal").fadeIn();
 			});
 
-			$(this).find('.map-modal-confirm-button').click(function(){
+			$(this).find('.map-modal-confirm-button').click(function () {
 				$(".map-overlay").fadeOut();
 			});
 
-			$(this).find('.map-modal-decline-button').click(function(){
+			$(this).find('.map-modal-decline-button').click(function () {
 				$(".map-overlay").fadeOut();
 			});
 		});
@@ -541,7 +541,7 @@
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Auto TOC
 
-		$('.table-of-contents-container').each( function() {
+		$('.table-of-contents-container').each(function () {
 			var $this = $(this);
 			var $toc_content = $this.find('.table-of-contents-content');
 			var $toc = $this.find('#table-of-contents').find('.toc-list');
@@ -566,24 +566,24 @@
 				function updateSticky() {
 					function setCurrentItem() {
 						const scrollPos = $(window).scrollTop() + 150;
-					  
+
 						let activeSection = undefined;
-						sections.each(function() {
-						  if ($(this).offset().top <= scrollPos) {
-							activeSection = $(this);
-						  }
+						sections.each(function () {
+							if ($(this).offset().top <= scrollPos) {
+								activeSection = $(this);
+							}
 						});
-					  
+
 						if (activeSection) {
 							tocItems.removeClass("highlighted");
-					  
-							tocItems.each(function() {
+
+							tocItems.each(function () {
 								if ($(this).attr("data-id") === activeSection.attr("id")) {
 									$(this).addClass("highlighted");
 								}
 							});
 						}
-					  }
+					}
 
 					const contentTop = content.offset().top - 150;
 					if ($(window).scrollTop() > contentTop) {
@@ -596,7 +596,7 @@
 				}
 				$(window).bind('scroll', updateSticky);
 
-				sticky.click(function() {
+				sticky.click(function () {
 					sticky.toggleClass("open");
 				});
 			}
@@ -607,7 +607,7 @@
 		// Hide all imperial
 		$('.guide-stat.imperial').toggle();
 
-		$('.guide-stat').on('click', function() {
+		$('.guide-stat').on('click', function () {
 			// When any stat is clicked, toggle all of them
 			$('.guide-stat').toggle();
 		});
@@ -618,10 +618,10 @@
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
 
-	$(document).on('click', '.js-menu-toggle', function (){
+	$(document).on('click', '.js-menu-toggle', function () {
 
 		// If already open
-		if ( $('body').hasClass('menu--open') ) {
+		if ($('body').hasClass('menu--open')) {
 			$('body').removeClass('menu--open');
 		}
 
@@ -631,10 +631,10 @@
 		}
 	});
 
-	$(document).on('click', '.menu__list__item__link', function (){
+	$(document).on('click', '.menu__list__item__link', function () {
 
 		// If menu is open when you click a link on mobile
-		if ( $('.menu').hasClass('menu--open') ) {
+		if ($('.menu').hasClass('menu--open')) {
 			$('.menu').removeClass('menu--open');
 		}
 	});
@@ -656,22 +656,22 @@
 		var gotchaField = $('.eager-form__gotcha');
 
 		// Validate email
-		if ( emailField.val() === '' ) {
+		if (emailField.val() === '') {
 			emailField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// Validate name
-		if ( nameField.val() === '' ) {
+		if (nameField.val() === '') {
 			nameField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// Validate message
-		if ( messageField.val() === '' ) {
+		if (messageField.val() === '') {
 			messageField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// If all fields are filled, except gotcha
-		if ( emailField.val() !== '' && nameField.val() !== '' && messageField.val() !== '' && gotchaField.val().length === 0 ) {
+		if (emailField.val() !== '' && nameField.val() !== '' && messageField.val() !== '' && gotchaField.val().length === 0) {
 
 			// Submit the form!
 		}
@@ -698,19 +698,19 @@
 		var gotchaField = $('.eager-form__gotcha');
 
 		// Validate email
-		if ( emailField.val() === '' ) {
+		if (emailField.val() === '') {
 			emailField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// Validate name
-		if ( nameField.val() === '' ) {
+		if (nameField.val() === '') {
 			nameField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// If all fields are filled, except gotcha
-		if ( 	emailField.val() !== '' &&
-				nameField.val() !== '' &&
-				gotchaField.val().length === 0 ) {
+		if (emailField.val() !== '' &&
+			nameField.val() !== '' &&
+			gotchaField.val().length === 0) {
 
 			// Submit the form!
 		}
@@ -722,7 +722,7 @@
 		}
 
 	});
-	
+
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Comment Form
 
 	// Override the submit event
@@ -738,22 +738,22 @@
 		var gotchaField = $('.eager-form__gotcha');
 
 		// Validate email
-		if ( emailField.val() === '' ) {
+		if (emailField.val() === '') {
 			emailField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// Validate name
-		if ( nameField.val() === '' ) {
+		if (nameField.val() === '') {
 			nameField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// Validate message
-		if ( messageField.val() === '' ) {
+		if (messageField.val() === '') {
 			messageField.closest('.eager-form__item').addClass('eager-form__item--error');
 		}
 
 		// If all fields are filled, except gotcha
-		if ( emailField.val() !== '' && nameField.val() !== '' && messageField.val() !== '' && gotchaField.val().length === 0 ) {
+		if (emailField.val() !== '' && nameField.val() !== '' && messageField.val() !== '' && gotchaField.val().length === 0) {
 
 			// Submit the form!
 		}
@@ -765,5 +765,5 @@
 		}
 
 	});
-	
+
 }(jQuery));
