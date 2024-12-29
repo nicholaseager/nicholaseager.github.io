@@ -7,7 +7,8 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Basics
 
-html, body {
+html,
+body {
 	height: 100%;
 }
 
@@ -24,7 +25,12 @@ body {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Typography
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: $title-font;
 	color: $text-dark-color;
 
@@ -33,7 +39,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-h1, .h1 {
+h1,
+.h1 {
 	font-size: $h1-small;
 	font-weight: $h1-weight;
 	line-height: $h1-lineheight;
@@ -48,7 +55,8 @@ h1, .h1 {
 	}
 }
 
-h2, .h2 {
+h2,
+.h2 {
 	margin-top: 30px;
 	font-size: $h2-small;
 	font-weight: $h2-weight;
@@ -65,7 +73,8 @@ h2, .h2 {
 	}
 }
 
-h3, .h3 {
+h3,
+.h3 {
 	margin-top: 30px;
 	font-size: $h3-small;
 	font-weight: $h3-weight;
@@ -82,7 +91,8 @@ h3, .h3 {
 	}
 }
 
-h4, .h4 {
+h4,
+.h4 {
 	margin-top: 25px;
 	font-size: $h4-small;
 	font-weight: $h4-weight;
@@ -98,7 +108,8 @@ h4, .h4 {
 	}
 }
 
-h5, .h5 {
+h5,
+.h5 {
 	margin-top: 15px;
 	font-size: $h5-small;
 	font-weight: $h5-weight;
@@ -114,7 +125,8 @@ h5, .h5 {
 	}
 }
 
-h6, .h6 {
+h6,
+.h6 {
 	margin-top: 15px;
 	font-size: $h6-small;
 	font-weight: $h6-weight;
@@ -130,7 +142,9 @@ h6, .h6 {
 	}
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
 	margin-top: 15px;
 	font-size: $p-small;
 	font-weight: $p-weight;
@@ -154,7 +168,8 @@ p, ul, ol {
 	}
 }
 
-ul, ol {
+ul,
+ol {
 	list-style-position: inside;
 }
 
@@ -227,8 +242,8 @@ img {
 	}
 
 	&:hover {
-		background: adjust-hue($accent-color,15%);
-		border-color: adjust-hue($accent-color,15%);
+		background: adjust-hue($accent-color, 15%);
+		border-color: adjust-hue($accent-color, 15%);
 		color: $background-color;
 	}
 
@@ -252,8 +267,8 @@ img {
 }
 
 .button.active {
-	background: adjust-hue($accent-color,15%);
-	border-color: adjust-hue($accent-color,15%);
+	background: adjust-hue($accent-color, 15%);
+	border-color: adjust-hue($accent-color, 15%);
 }
 
 .button--large {
@@ -323,8 +338,15 @@ hr {
 	background: $background-alt-color;
 }
 
-::selection 	 { background: $accent-color; color: $background-color; }
-::-moz-selection { background: $accent-color; color: $background-color; }
+::selection {
+	background: $accent-color;
+	color: $background-color;
+}
+
+::-moz-selection {
+	background: $accent-color;
+	color: $background-color;
+}
 
 
 
@@ -335,7 +357,7 @@ hr {
 }
 
 .page {
-	@include transition(all 0.6s cubic-bezier(.87,-.41,.19,1.44));
+	@include transition(all 0.6s cubic-bezier(.87, -.41, .19, 1.44));
 }
 
 body.loading {
@@ -350,7 +372,7 @@ body.loading {
 		opacity: 0;
 		visibility: hidden;
 		@include transition(all 0.4s ease-in-out, transform 0s ease-in-out 0.4s);
-		@include translate(0,20px);
+		@include translate(0, 20px);
 	}
 
 	.footer {
@@ -437,7 +459,7 @@ section {
 		left: 50%;
 		width: 20px;
 		height: 20px;
-		@include translate(-50%,-50%);
+		@include translate(-50%, -50%);
 		fill: #fff;
 
 		@include mq(tabletp) {
@@ -449,7 +471,7 @@ section {
 	&:hover {
 
 		.buy-cta__text {
-			@include translate(0,0);
+			@include translate(0, 0);
 			opacity: 1;
 		}
 	}
@@ -467,13 +489,13 @@ section {
 	white-space: nowrap;
 
 	@include transition(all 0.15s ease-in-out);
-	@include translate(0,20px);
+	@include translate(0, 20px);
 	opacity: 0;
 
 	@include mq(tabletp) {
 		right: 60px;
 		padding: 22px 14px 23px 25px;
 		font-size: 15px;
-		@include translate(0,30px);
+		@include translate(0, 30px);
 	}
 }
