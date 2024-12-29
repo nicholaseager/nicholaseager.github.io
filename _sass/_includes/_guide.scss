@@ -123,9 +123,11 @@
     }
 }
 
-// To enable accurate TOC jumping, maintain 3/2 aspect ratio sizing - defined in post-swiper.html
+// To enable accurate TOC jumping, maintain 3/2 aspect ratio sizing
 .post-swiper .swiper-slide img {
     width: 100%;
     height: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
     background-color: $background-alt-color;
 }
