@@ -1,7 +1,7 @@
 {
     "title": "How to Solo Hike the Three Passes Trek for Under $500",
     "date": "2023-08-09",
-    "modified_date": "2024-04-05",
+    "modified_date": "2024-12-30",
     "description": "Everything you need to know to plan your own Three Passes Trek.",
     "image": "photos/countries/nepal/three-passes-trek/mount-everest-from-kala-patthar",
     "tags": [
@@ -329,6 +329,12 @@
                 ]
             }
         ]
+    },
+    "partnership": {
+        "title": "My Recommended Trekking Agency",
+        "description": "While I did my Three Passes trek solo, I collaborated with <b>Himalayan Masters</b> for my <a href='/g/kanchenjunga' target='blank'>Kanchenjunga</a> and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at <a href='mailto:info@himalayan-masters.com'>info@himalayan-masters.com</a> and use the code <b>EAGER</b> to enjoy a 5% discount on your trip.",
+        "logo": "web/himalayan-masters-logo",
+        "link": "https://himalayan-masters.com/"
     },
     "highlights": {
         "introduction": "Every part of my 21 days was breathtaking, and there are infinite possibilities to add side trips to your itinerary, but here is what stands out most for me.",
