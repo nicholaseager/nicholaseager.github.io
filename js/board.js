@@ -95,19 +95,11 @@
 
 		// If link is internal
 		else {
+			// Change navTarget
+			navTarget = thisTarget;
 
-			// If we are using ajax loading, push history state.
-			// Otherwise just use the link.
-			if ($('body').hasClass('ajax-loading')) {
-				// Change navTarget
-				navTarget = thisTarget;
-
-				// Switch the URL via History
-				History.pushState(null, docTitle, thisTarget);
-			} else {
-				// Use the given link
-				window.location = thisTarget;
-			}
+			// Switch the URL via History
+			History.pushState(null, docTitle, thisTarget);
 		}
 
 	});
