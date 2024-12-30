@@ -185,7 +185,7 @@ layout: default
 			<tbody>
 				{% for phase in guide.itinerary.phases %}
 				<tr>
-					<td>{{forloop.index}}</td>
+					<td>{{phase.phase | default: forloop.index}}</td>
 					<td>
 						{% if phase.description %}<a id="itinerary-phase-ref-{{forloop.index}}"
 							href="#itinerary-phase-{{forloop.index}}">{% endif %}
@@ -218,8 +218,9 @@ layout: default
 		<h3>Detailed Itinerary</h3>
 		{% endif %}
 		{% assign unit = guide.itinerary.units.phase | default:"Phase" %}
+		{% assign value = phase.phase | default: forloop.index %}
 		<h5 id="itinerary-phase-{{forloop.index}}">
-			{{unit}} {{forloop.index}}: {{phase.title}}
+			{{unit}} {{value}}: {{phase.title}}
 			{% if phase.distance or phase.elevation %}
 			<span class="guide-itinerary-stats">
 				<div class="guide-stat metric">({{phase.distance}} km / {{phase.elevation}} m)</div>
