@@ -1,0 +1,19 @@
+# Minified files
+**/js/*-min.js
+**/*-min.js
+**/*.min.js
+
+# Plugin files
+js/plugins/**/*.js
+
+# Data files
+_data/**
+
+# Auto-generated content
+_photos/**
+_galleries/**
+_guides/**
+
+# Jekyll generated files
+_site/**
+.jekyll-cache/**
