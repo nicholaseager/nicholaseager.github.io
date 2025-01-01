@@ -11,3 +11,8 @@ tags: ["tanzania", "africa", "safari"]
 guide: how-to-go-on-a-safari-in-tanzania
 redirect_from: /g/tanzania
 ---
+
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the json (_data/guides/how-to-go-on-a-safari-in-tanzania.json)
+        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
+            

@@ -11,3 +11,8 @@ tags: ["peru", "huchuy-qosqo-trek", "sacred-valley", "hiking"]
 guide: how-to-hike-the-huchuy-qosqo-trek
 redirect_from: /g/huchuy-qosqo
 ---
+
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the json (_data/guides/how-to-hike-the-huchuy-qosqo-trek.json)
+        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
+            

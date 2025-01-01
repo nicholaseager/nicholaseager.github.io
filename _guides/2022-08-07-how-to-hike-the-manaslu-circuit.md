@@ -11,3 +11,8 @@ tags: ["nepal", "manaslu-circuit", "hiking"]
 guide: how-to-hike-the-manaslu-circuit
 redirect_from: /g/manaslu
 ---
+
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the json (_data/guides/how-to-hike-the-manaslu-circuit.json)
+        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
+            

@@ -31,8 +31,15 @@ for filename in os.listdir(directory):
             yaml_text += 'guide: ' + guidename + '\n'
             yaml_text += 'redirect_from: /g/' + parsed_data['short_name'] + '\n'
 
-            # Finish
+            # Finish front matter
             yaml_text += "---\n"
+
+            # Add comment for clarity
+            yaml_text += f"""
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the json (_data/guides/{guidename}.json)
+        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
+            """
 
             # Write our YAML string to the new text file and close it.
             new_yaml.write(yaml_text)

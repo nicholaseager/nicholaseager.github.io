@@ -11,3 +11,8 @@ tags: ["nepal", "three-passes-trek", "hiking"]
 guide: how-to-solo-hike-the-three-passes-trek
 redirect_from: /g/three-passes-trek
 ---
+
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the json (_data/guides/how-to-solo-hike-the-three-passes-trek.json)
+        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
+            

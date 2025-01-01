@@ -11,3 +11,8 @@ tags: ["nepal", "pikey-peak-trek", "hiking"]
 guide: how-to-solo-hike-the-pikey-peak-trek
 redirect_from: /g/pikey-peak-trek
 ---
+
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the json (_data/guides/how-to-solo-hike-the-pikey-peak-trek.json)
+        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
+            

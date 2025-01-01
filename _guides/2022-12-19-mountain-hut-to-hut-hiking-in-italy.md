@@ -11,3 +11,8 @@ tags: ["italy", "hut-to-hut", "hiking", "dolomites"]
 guide: mountain-hut-to-hut-hiking-in-italy
 redirect_from: /g/mountain-huts
 ---
+
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the json (_data/guides/mountain-hut-to-hut-hiking-in-italy.json)
+        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
+            

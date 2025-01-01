@@ -73,9 +73,18 @@ for row_index, row in enumerate(datareader):
 		if youtube_id != '':
 			yaml_text += 'youtubeid: ' + youtube_id + '\n'
 
-		# Finish
+		# Finish front matter
 
 		yaml_text += "---\n"
+
+		# Add comment for clarity
+
+		yaml_text += f"""
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the Google Sheet:
+		https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/edit?usp=sharing
+        and regenerate the site (see `_scripts/photos_to_yaml.py`). -->
+        """
 
 		# Write our YAML string to the new text file and close it.
 		new_yaml.write(yaml_text)

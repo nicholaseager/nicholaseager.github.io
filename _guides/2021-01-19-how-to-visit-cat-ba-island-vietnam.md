@@ -11,3 +11,8 @@ tags: ["vietnam", "cat-ba-island", "hiking"]
 guide: how-to-visit-cat-ba-island-vietnam
 redirect_from: /g/cat-ba
 ---
+
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the json (_data/guides/how-to-visit-cat-ba-island-vietnam.json)
+        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
+            

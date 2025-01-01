@@ -47,8 +47,16 @@ for row_index, row in enumerate(datareader):
 		path = row[3];
 		yaml_text += 'image: ' + path + '\n'
 
-		# Finish
+		# Finish front matter
 		yaml_text += "---\n"
+
+		# Add comment for clarity
+		yaml_text += f"""
+<!--    This YAML front matter is auto-generated.
+        Do not edit it directly, but instead edit the Google Sheet:
+		https://docs.google.com/spreadsheets/d/180-UYA8NahsW9S2zW0tsEhek75cd4Q2MDrFnTFeT9Dg/edit?usp=sharing
+        and regenerate the site (see `_scripts/galleries_to_yaml.py`). -->
+        """
 
 		# Write our YAML string to the new text file and close it.
 		new_yaml.write(yaml_text)
