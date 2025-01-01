@@ -1,153 +1,153 @@
 .image-gallery-wrap {
-    position: relative;
-	max-width: 100%;
-	margin: 0px auto;
+  position: relative;
+  max-width: 100%;
+  margin: 0px auto;
 
-    @include mq(phonel) {
-		max-width: 90%;
-		margin: 20px auto;
-	}
+  @include mq(phonel) {
+    max-width: 90%;
+    margin: 20px auto;
+  }
 
-	@include mq(tabletp) {
-		max-width: 83%;
-		margin: 30px auto;
-	}
+  @include mq(tabletp) {
+    max-width: 83%;
+    margin: 30px auto;
+  }
 
-	@include mq(laptop) {
-		max-width: 75%;
-		margin: 40px auto;
-	}
+  @include mq(laptop) {
+    max-width: 75%;
+    margin: 40px auto;
+  }
 }
 
 .image-gallery {
-    /* Prevent vertical gaps */
-    line-height: 0;
+  /* Prevent vertical gaps */
+  line-height: 0;
 
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
 
-    -webkit-column-gap: 0px;
-    -moz-column-gap: 0px;
-    column-gap: 0px;
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  column-gap: 0px;
 
-    -webkit-row-gap: 10px;
-    -moz-row-gap: 10px;
-    row-gap: 10px;
+  -webkit-row-gap: 10px;
+  -moz-row-gap: 10px;
+  row-gap: 10px;
 
-    padding: 5px;
+  padding: 5px;
 
-    @include mq(phonel) {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
+  @include mq(phonel) {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  @include mq(tabletp) {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+
+  a {
+    display: block;
+
+    img {
+      /* Just in case there are inline attributes */
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100%;
+      max-height: 100%;
+
+      padding: 5px;
     }
-
-    @include mq(tabletp) {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
-
-    a {
-        display: block;
-
-        img {
-            /* Just in case there are inline attributes */
-            width: 100% !important;
-            height: auto !important;
-            max-width: 100%;
-            max-height: 100%;
-    
-            padding: 5px;
-        }
-    }
+  }
 }
 
 .gallery {
-    position: relative;
+  position: relative;
 }
 
 .image-gallery-swiper-container {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
 }
 
 .image-gallery-swiper-backgound {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-    animation: FadeIn 0.3s ease-out forwards;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  animation: FadeIn 0.3s ease-out forwards;
 
-    @keyframes FadeIn {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
+  @keyframes FadeIn {
+    0% {
+      opacity: 0;
     }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 .image-gallery-swiper {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    animation: FadeInUpDelayed 0.5s ease-out forwards;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: FadeInUpDelayed 0.5s ease-out forwards;
 
-    .swiper-slide {
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-    }    
-
-    @keyframes FadeInUpDelayed {
-        0% {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-
-        50% {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-
-        100% {
-            opacity: 1;
-        }
+  .swiper-slide {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
+  }
+
+  @keyframes FadeInUpDelayed {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    50% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 .swiper-close-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 
-    color: white;
-    z-index: 1001;
+  color: white;
+  z-index: 1001;
 }
 
 .image-gallery-swiper-hidden {
-    display: none;
+  display: none;
 }
 
 .order-prints {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 
-    z-index: 1001;
+  z-index: 1001;
 }

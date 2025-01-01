@@ -1,65 +1,65 @@
 .about-me-wrap {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 500px;
 
-    @include mq(tabletp) {
-        padding-left: 0;
-        padding-right: 0;
-        max-width: 60%;
-    }
+  @include mq(tabletp) {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 60%;
+  }
 
-    @include mq(tabletl) {
-        max-width: 55%;
-    }
+  @include mq(tabletl) {
+    max-width: 55%;
+  }
 
-    @include mq(laptop) {
-        max-width: 50%;
-    }
+  @include mq(laptop) {
+    max-width: 50%;
+  }
 
-    @include mq(desktop) {
-        max-width: 45%;
-    }
+  @include mq(desktop) {
+    max-width: 45%;
+  }
 }
 
 .about-me-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    @include mq(tabletp) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+  @include mq(tabletp) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .about-me-image {
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-bottom: 10px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 
-    @include mq(tabletp) {
-        margin-right: 20px;
-        margin-bottom: 0px;
-    }
+  @include mq(tabletp) {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
 
-    @include mq(tabletl) {
-        margin-right: 30px;
-    }
+  @include mq(tabletl) {
+    margin-right: 30px;
+  }
 
-    @include mq(laptop) {
-        margin-right: 40px;
-    }
+  @include mq(laptop) {
+    margin-right: 40px;
+  }
 }
 
 .about-me-content {
-    width: 100%;
+  width: 100%;
 
-    @include mq(tabletp) {
-        width: 60%;
-    }
+  @include mq(tabletp) {
+    width: 60%;
+  }
 }

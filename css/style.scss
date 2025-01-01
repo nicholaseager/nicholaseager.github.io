@@ -3,9 +3,9 @@
 
 // - - - - - - - - - - Foundations
 
-@import "_reset";
-@import "_mixins";
-@import "_plugins";
+@import '_reset';
+@import '_mixins';
+@import '_plugins';
 
 // - - - - - - - - - - Variables
 
@@ -14,21 +14,21 @@ $background-color: #ffffff;
 $background-alt-color: #f4f5f6;
 $border-color: #dddddd;
 
-$text-dark-color: #2A2F36;
-$text-medium-color: #6C7A89;
-$text-light-color: #ABB7B7;
+$text-dark-color: #2a2f36;
+$text-medium-color: #6c7a89;
+$text-light-color: #abb7b7;
 
 $accent-color: #4ecdc4;
 
 $overlay-background-color: #4ecdc4;
 $overlay-text-color: #ffffff;
-$overlay-accent-color: #2A2F36;
+$overlay-accent-color: #2a2f36;
 
-$error-color: #D64541;
+$error-color: #d64541;
 
 // Fonts
-$body-font: "Poppins", sans-serif;
-$title-font: "Poppins", sans-serif;
+$body-font: 'Poppins', sans-serif;
+$title-font: 'Poppins', sans-serif;
 
 $regular-weight: 300;
 $bold-weight: 500;
@@ -114,26 +114,26 @@ $grid-spacing: 20px;
 
 // - - - - - - - - - - Global styles
 
-@import "_basic";
+@import '_basic';
 
-@import "_includes/_header";
-@import "_includes/_footer";
+@import '_includes/_header';
+@import '_includes/_footer';
 
-@import "_includes/_content";
-@import "_includes/_socials";
-@import "_includes/_swiper";
-@import "_includes/_image-gallery";
-@import "_includes/_syntax";
-@import "_includes/_banner";
-@import "_includes/_links";
-@import "_includes/_gear";
-@import "_includes/_collection";
-@import "_includes/_testimonials";
-@import "_includes/_about";
-@import "_includes/_form";
-@import "_includes/_order";
-@import "_includes/_loader";
-@import "_includes/_guide";
-@import "_includes/_toc";
-@import "_includes/_social-share";
-@import "_includes/_map";
+@import '_includes/_content';
+@import '_includes/_socials';
+@import '_includes/_swiper';
+@import '_includes/_image-gallery';
+@import '_includes/_syntax';
+@import '_includes/_banner';
+@import '_includes/_links';
+@import '_includes/_gear';
+@import '_includes/_collection';
+@import '_includes/_testimonials';
+@import '_includes/_about';
+@import '_includes/_form';
+@import '_includes/_order';
+@import '_includes/_loader';
+@import '_includes/_guide';
+@import '_includes/_toc';
+@import '_includes/_social-share';
+@import '_includes/_map';

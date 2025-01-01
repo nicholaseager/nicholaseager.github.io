@@ -1,267 +1,268 @@
 .order-wrap {
-    max-width: 90%;
-    margin: 20px auto;
+  max-width: 90%;
+  margin: 20px auto;
 
-    @include mq(tabletp) {
-        max-width: 80%;
-        margin: 30px auto;
-    }
+  @include mq(tabletp) {
+    max-width: 80%;
+    margin: 30px auto;
+  }
 
-    @include mq(laptop) {
-        max-width: 70%;
-        margin: 40px auto;
-    }
+  @include mq(laptop) {
+    max-width: 70%;
+    margin: 40px auto;
+  }
 }
 
 .order-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    @include mq(tabletp) {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-    }
+  @include mq(tabletp) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 .order-images {
-    max-width: 100%;
-    margin-bottom: 10px;
+  max-width: 100%;
+  margin-bottom: 10px;
 
-    @include mq(tabletp) {
-        max-width: 50%;
-        margin-right: 20px;
-        margin-bottom: 0px;
-    }
+  @include mq(tabletp) {
+    max-width: 50%;
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
 
-    @include mq(tabletl) {
-        margin-right: 30px;
-    }
+  @include mq(tabletl) {
+    margin-right: 30px;
+  }
 
-    @include mq(laptop) {
-        margin-right: 40px;
-    }
+  @include mq(laptop) {
+    margin-right: 40px;
+  }
 }
 
 .order-content {
-    width: 100%;
+  width: 100%;
 
-    @include mq(tabletp) {
-        width: 60%;
-    }
+  @include mq(tabletp) {
+    width: 60%;
+  }
 }
 
 .order-author {
-    font-size: 14px;
-	color: $text-light-color;
+  font-size: 14px;
+  color: $text-light-color;
 }
 
 .order-heading {
-	p {
-        margin: 0 5px;
-    }
+  p {
+    margin: 0 5px;
+  }
 }
 
 .order-youtube {
-    background: $background-alt-color;
-    border-color: $background-alt-color;
-    color: $text-dark-color;
-    padding: 5px 10px;
+  background: $background-alt-color;
+  border-color: $background-alt-color;
+  color: $text-dark-color;
+  padding: 5px 10px;
 
-    &:hover {
-		background: $text-dark-color;
-        border-color: $text-dark-color;
-        color: $background-alt-color;
-	}
+  &:hover {
+    background: $text-dark-color;
+    border-color: $text-dark-color;
+    color: $background-alt-color;
+  }
 }
 
 .order-swiper-thumbs {
-    display: none;
+  display: none;
 
-    @include mq(tabletp) {
-        display: block;
-    }
+  @include mq(tabletp) {
+    display: block;
+  }
 
-    .swiper-slide {
-        max-height: 200px;
-    }
+  .swiper-slide {
+    max-height: 200px;
+  }
 
-    .swiper-slide-thumb-active {
-        .display-photo {
-            border: 2px solid black;
-        }
+  .swiper-slide-thumb-active {
+    .display-photo {
+      border: 2px solid black;
     }
+  }
 }
 
 .order-swiper {
-    background: $background-alt-color;
-    margin-bottom: 20px;
+  background: $background-alt-color;
+  margin-bottom: 20px;
 }
 
-.order-swiper, .order-swiper-thumbs {
-    .swiper-slide {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: auto;
+.order-swiper,
+.order-swiper-thumbs {
+  .swiper-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 
-        .display-photo {
-            position: relative;
-            width: 100%;
-            background-size: contain;
-        }
-
-        .display-photo-container {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            img {
-                max-height: 100%;
-                max-width: 100%;
-
-                border: 2px solid white;
-                filter: drop-shadow(0px 0px 2px rgba(black, 0.25));
-
-                @include mq(tabletp) {
-                    border: 3px solid white;
-                    filter: drop-shadow(0px 0px 3px rgba(black, 0.25));
-                }
-            
-                @include mq(laptop) {
-                    border: 4px solid white;
-                    filter: drop-shadow(0px 0px 4px rgba(black, 0.25));
-                }
-            
-                @include mq(desktop) {
-                    border: 5px solid white;
-                    filter: drop-shadow(0px 0px 5px rgba(black, 0.25));
-                }
-            }
-        }
-
-        .solid-white {
-            aspect-ratio: 1.0;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/solid-white.jpg');
-
-            .display-photo-container {
-                top: 20px;
-                bottom: 20px;
-                left: 20px;
-                right: 20px;
-            }
-        }
-
-        .solid-concrete {
-            aspect-ratio: 1.0;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/solid-concrete.jpg');
-
-            .display-photo-container {
-                top: 20px;
-                bottom: 20px;
-                left: 20px;
-                right: 20px;
-            }
-        }
-
-        .blue-wall-wooden-chairs {
-            aspect-ratio: 1.0;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/blue-wall-wooden-chairs.jpg');
-
-            .display-photo-container {
-                width: 70%;
-                height: 30%;
-                top: 10%;
-                left: 50%;
-                right: 50%;
-                transform: translate(-50%, 0%);
-            }
-        }
-
-        .white-wall-wooden-floor-dog {
-            aspect-ratio: 0.72733333;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-wooden-floor-dog.jpg');
-
-            .display-photo-container {
-                width: 40%;
-                height: 50%;
-                top: 5%;
-                left: 10%;
-            }
-        }
-
-        .brick-wall-bicycle {
-            aspect-ratio: 0.886;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/brick-wall-bicycle.jpg');
-
-            .display-photo-container {
-                width: 80%;
-                height: 40%;
-                top: 5%;
-                left: 10%;
-            }
-        }
-
-        .brown-wall-wooden-furntiure {
-            aspect-ratio: 1.00874243;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/brown-wall-wooden-furntiure.jpg');
-
-            .display-photo-container {
-                width: 40%;
-                height: 30%;
-                top: 20%;
-                right: 20%;
-            }
-        }
-
-        .white-wall-tropical-plants-natural-light {
-            aspect-ratio: 1;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-tropical-plants-natural-light.jpg');
-
-            .display-photo-container {
-                width: 40%;
-                height: 30%;
-                top: 20%;
-                right: 10%;
-            }
-        }
-
-        .white-wall-wooden-cabinet {
-            aspect-ratio: 1;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-wooden-cabinet.jpg');
-
-            .display-photo-container {
-                width: 40%;
-                height: 40%;
-                top: 10%;
-                right: 23%;
-            }
-        }
-
-        .white-wall-gray-couch-dog {
-            aspect-ratio: 1.5;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-gray-couch-dog.jpg');
-
-            .display-photo-container {
-                width: 30%;
-                height: 40%;
-                top: 10%;
-                right: 25%;
-            }
-        }
-
-        .dark-grey-wall-wooden-dresser {
-            aspect-ratio: 1.08303249;
-            background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/dark-grey-wall-wooden-dresser.jpg');
-
-            .display-photo-container {
-                width: 50%;
-                height: 50%;
-                top: 10%;
-                right: 15%;
-            }
-        }
+    .display-photo {
+      position: relative;
+      width: 100%;
+      background-size: contain;
     }
+
+    .display-photo-container {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+
+        border: 2px solid white;
+        filter: drop-shadow(0px 0px 2px rgba(black, 0.25));
+
+        @include mq(tabletp) {
+          border: 3px solid white;
+          filter: drop-shadow(0px 0px 3px rgba(black, 0.25));
+        }
+
+        @include mq(laptop) {
+          border: 4px solid white;
+          filter: drop-shadow(0px 0px 4px rgba(black, 0.25));
+        }
+
+        @include mq(desktop) {
+          border: 5px solid white;
+          filter: drop-shadow(0px 0px 5px rgba(black, 0.25));
+        }
+      }
+    }
+
+    .solid-white {
+      aspect-ratio: 1;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/solid-white.jpg');
+
+      .display-photo-container {
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+      }
+    }
+
+    .solid-concrete {
+      aspect-ratio: 1;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/solid-concrete.jpg');
+
+      .display-photo-container {
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+      }
+    }
+
+    .blue-wall-wooden-chairs {
+      aspect-ratio: 1;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/blue-wall-wooden-chairs.jpg');
+
+      .display-photo-container {
+        width: 70%;
+        height: 30%;
+        top: 10%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 0%);
+      }
+    }
+
+    .white-wall-wooden-floor-dog {
+      aspect-ratio: 0.72733333;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-wooden-floor-dog.jpg');
+
+      .display-photo-container {
+        width: 40%;
+        height: 50%;
+        top: 5%;
+        left: 10%;
+      }
+    }
+
+    .brick-wall-bicycle {
+      aspect-ratio: 0.886;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/brick-wall-bicycle.jpg');
+
+      .display-photo-container {
+        width: 80%;
+        height: 40%;
+        top: 5%;
+        left: 10%;
+      }
+    }
+
+    .brown-wall-wooden-furntiure {
+      aspect-ratio: 1.00874243;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/brown-wall-wooden-furntiure.jpg');
+
+      .display-photo-container {
+        width: 40%;
+        height: 30%;
+        top: 20%;
+        right: 20%;
+      }
+    }
+
+    .white-wall-tropical-plants-natural-light {
+      aspect-ratio: 1;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-tropical-plants-natural-light.jpg');
+
+      .display-photo-container {
+        width: 40%;
+        height: 30%;
+        top: 20%;
+        right: 10%;
+      }
+    }
+
+    .white-wall-wooden-cabinet {
+      aspect-ratio: 1;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-wooden-cabinet.jpg');
+
+      .display-photo-container {
+        width: 40%;
+        height: 40%;
+        top: 10%;
+        right: 23%;
+      }
+    }
+
+    .white-wall-gray-couch-dog {
+      aspect-ratio: 1.5;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/white-wall-gray-couch-dog.jpg');
+
+      .display-photo-container {
+        width: 30%;
+        height: 40%;
+        top: 10%;
+        right: 25%;
+      }
+    }
+
+    .dark-grey-wall-wooden-dresser {
+      aspect-ratio: 1.08303249;
+      background-image: url('https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/dark-grey-wall-wooden-dresser.jpg');
+
+      .display-photo-container {
+        width: 50%;
+        height: 50%;
+        top: 10%;
+        right: 15%;
+      }
+    }
+  }
 }

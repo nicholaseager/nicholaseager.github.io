@@ -1,60 +1,60 @@
 .testimonial {
-	font-style: italic;
-	color: $text-dark-color;
-	padding: 20px 20px 20px 25px;
-    border-radius: 25px;
-	line-height: 1.6;
-	position: relative;
-	background: rgba($background-alt-color, 0.9);
+  font-style: italic;
+  color: $text-dark-color;
+  padding: 20px 20px 20px 25px;
+  border-radius: 25px;
+  line-height: 1.6;
+  position: relative;
+  background: rgba($background-alt-color, 0.9);
 
-    font-size: 18px;
-    max-width: 100%;
-    margin: 5px auto;
+  font-size: 18px;
+  max-width: 100%;
+  margin: 5px auto;
 
+  @include mq(tabletp) {
+    padding: 20px 20px 20px 75px;
+    font-size: 22px;
+    margin: 30px auto;
+  }
+
+  @include mq(laptop) {
+    font-size: 25px;
+    margin: 40px auto;
+  }
+
+  a {
     @include mq(tabletp) {
-        padding: 20px 20px 20px 75px;
-        font-size: 22px;
-        margin: 30px auto;
+      position: absolute;
+      right: 40px;
+      bottom: 20px;
     }
 
-    @include mq(laptop) {
-        font-size: 25px;
-        margin: 40px auto;
-    }
-
-    a {
-        @include mq(tabletp) {
-            position: absolute;
-            right: 40px;
-            bottom: 20px;
-        }
-
-        font-size: 14px;
-		border-bottom: 2px solid $accent-color;
-	}
+    font-size: 14px;
+    border-bottom: 2px solid $accent-color;
+  }
 }
 
 .testimonial::before {
-    content: '';
-    
-    @include mq(tabletp) {
-        content: "\201C";
-        color: #78C0A8;
-        font-size: 4em;
-        position: absolute;
-        left: 10px;
-        top: -10px;
-    }
+  content: '';
+
+  @include mq(tabletp) {
+    content: '\201C';
+    color: #78c0a8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+  }
 }
 
 .testimonial::after {
-	content: '';
+  content: '';
 }
 
 .testimonial span {
-	display: block;
-	color: $text-dark-color;
-	font-style: normal;
-	margin-top: 5px;
-    font-weight: $bold-weight;
+  display: block;
+  color: $text-dark-color;
+  font-style: normal;
+  margin-top: 5px;
+  font-weight: $bold-weight;
 }

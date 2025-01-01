@@ -4,318 +4,319 @@
 
 // - - - - - - - - - - - - - - - - - -
 
-
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header
 
 .header {
-	padding: 20px 0;
+  padding: 20px 0;
 
-	.wrap {
-		max-width: 100%;
+  .wrap {
+    max-width: 100%;
 
-		@include mq(tabletp) {
-			padding: 0 20px;
-		}
-	}
+    @include mq(tabletp) {
+      padding: 0 20px;
+    }
+  }
 }
 
 .header.transparent {
-	position: absolute;
-	z-index: 1000;
+  position: absolute;
+  z-index: 1000;
 }
 
 .header__logo {
-	display: block;
-	width: $logo-width;
-	max-width: 80%;
+  display: block;
+  width: $logo-width;
+  max-width: 80%;
 
-	@include mq(tabletp) {
-		float: left;
-		max-width: 50%;
-	}
+  @include mq(tabletp) {
+    float: left;
+    max-width: 50%;
+  }
 }
 
 .header__logo__img {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .header__title {
-	font-size: $sitetitle-small;
-	font-weight: $sitetitle-weight;
-	letter-spacing: $sitetitle-spacing;
-	line-height: 1;
+  font-size: $sitetitle-small;
+  font-weight: $sitetitle-weight;
+  letter-spacing: $sitetitle-spacing;
+  line-height: 1;
 
-	@include mq(tabletp) {
-		font-size: $sitetitle-medium;
-	}
+  @include mq(tabletp) {
+    font-size: $sitetitle-medium;
+  }
 
-	@include mq(laptop) {
-		font-size: $sitetitle-large;
-	}
+  @include mq(laptop) {
+    font-size: $sitetitle-large;
+  }
 }
 
 .header.light {
-	.header__title {
-		color: white;
-	
-		&:hover {
-			color: $accent-color;
-		}
-	}
+  .header__title {
+    color: white;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
 }
 
 .header.dark {
-	.header__title {
-		color: $text-dark-color;
-	
-		&:hover {
-			color: $accent-color;
-		}
-	}
+  .header__title {
+    color: $text-dark-color;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
 
 .menu {
-	
-	@include mq(tabletp) {
-		position: absolute;
-		top: 50%;
-		right: 22px;
-		@include translate(0,-50%);
-	}
+  @include mq(tabletp) {
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    @include translate(0, -50%);
+  }
 }
 
 .menu__toggle {
-	position: absolute;
-	z-index: 1002;
-	top: 50%;
-	right: 20px;
-	@include translate(0,-50%);
-	cursor: pointer;
-	font-size: 15px;
-	line-height: 20px;
-	
-	@include mq(tabletp) {
-		display: none;
-	}
+  position: absolute;
+  z-index: 1002;
+  top: 50%;
+  right: 20px;
+  @include translate(0, -50%);
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 20px;
+
+  @include mq(tabletp) {
+    display: none;
+  }
 }
 
 .header.light {
-	.menu__toggle {
-		color: white;
-	}
+  .menu__toggle {
+    color: white;
+  }
 }
 
 .header.dark {
-	.menu__toggle {
-		color: $text-dark-color;
-	}
+  .menu__toggle {
+    color: $text-dark-color;
+  }
 }
 
 .menu__toggle__icon {
-	float: right;
-	position: relative;
-	width: 24px;
-	height: 20px;
-	margin-left: 8px;
+  float: right;
+  position: relative;
+  width: 24px;
+  height: 20px;
+  margin-left: 8px;
 
-	span, span:before, span:after {
-		content: '';
-		position: absolute;
-		top: 8px;
-		left: 0;
-		width: 100%;
-		height: 3px;
-		@include transition(all 0.1s);
-	}
+  span,
+  span:before,
+  span:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    @include transition(all 0.1s);
+  }
 
-	span:before {
-		top: -8px;
-	}
+  span:before {
+    top: -8px;
+  }
 
-	span:after {
-		top: 8px;
-	}
+  span:after {
+    top: 8px;
+  }
 }
 
 .header.light {
-	.menu__toggle__icon {
-		span, span:before, span:after {
-			background: white;
-		}
-	}
+  .menu__toggle__icon {
+    span,
+    span:before,
+    span:after {
+      background: white;
+    }
+  }
 }
 
 .header.dark {
-	.menu__toggle__icon {
-		span, span:before, span:after {
-			background: $text-dark-color;
-		}
-	}
+  .menu__toggle__icon {
+    span,
+    span:before,
+    span:after {
+      background: $text-dark-color;
+    }
+  }
 }
 
 .menu--open .menu__toggle__icon {
+  span:before,
+  span:after {
+    background: $overlay-text-color !important;
+  }
 
-	span:before, span:after {
-		background: $overlay-text-color !important;
-	}
-		
-	span {
-		background-color: transparent !important;
-	}
-	
-	span:before,
-	span:after {
-		top: 0;
-	}
-	
-	span:before {
-		@include rotate(45);
-	}
+  span {
+    background-color: transparent !important;
+  }
 
-	span:after {
-		@include rotate(-45);
-	}
+  span:before,
+  span:after {
+    top: 0;
+  }
+
+  span:before {
+    @include rotate(45);
+  }
+
+  span:after {
+    @include rotate(-45);
+  }
 }
 
 .menu__wrap {
-	position: fixed;
-	z-index: 1000;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba($overlay-background-color,0.95);
-	overflow: auto;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba($overlay-background-color, 0.95);
+  overflow: auto;
 
-	visibility: hidden;
-	opacity: 0;
-	@include transition(all 0.2s ease-in-out);
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all 0.2s ease-in-out);
 
-	@include mq(tabletp) {
-		position: relative;
-		background: transparent;
-		visibility: visible;
-		overflow: visible;
-		opacity: 1;
-		@include transition(none);
-	}
+  @include mq(tabletp) {
+    position: relative;
+    background: transparent;
+    visibility: visible;
+    overflow: visible;
+    opacity: 1;
+    @include transition(none);
+  }
 }
 
 .menu--open .menu__wrap {
-	visibility: visible;
-	opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .menu__list {
-	list-style: none;
-	margin: 0 auto;
-	padding: 20px $grid-spacing;
+  list-style: none;
+  margin: 0 auto;
+  padding: 20px $grid-spacing;
 
-	@include mq(tabletp) {
-		max-width: none;
-		margin: 0;
-		padding: 0;
-	}
+  @include mq(tabletp) {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .menu__list__item {
+  @include mq(tabletp) {
+    display: inline-block;
+    margin-left: 20px;
 
-	@include mq(tabletp) {
-		display: inline-block;
-		margin-left: 20px;
-
-		&:first-child {
-			margin-left: 0;
-		}
-	}
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 
 .menu__list__item__link {
-	font-size: $menu-small;
-	font-weight: $menu-weight;
-	padding: 10px 0;
+  font-size: $menu-small;
+  font-weight: $menu-weight;
+  padding: 10px 0;
 
-	@include mq(tabletp) {
-		padding: 0 0 3px;
-		font-size: $menu-medium;
+  @include mq(tabletp) {
+    padding: 0 0 3px;
+    font-size: $menu-medium;
 
-		&:hover {
-			color: $accent-color;
-		}
-	}
+    &:hover {
+      color: $accent-color;
+    }
+  }
 
-	@include mq(laptop) {
-		font-size: $menu-large;
-	}
+  @include mq(laptop) {
+    font-size: $menu-large;
+  }
 }
 
 .header.light {
-	.menu__list__item__link {
-		color: $overlay-text-color;
-	
-		&:hover {
-			color: $overlay-accent-color;
-		}
-	
-		@include mq(tabletp) {
-			color: white;
-	
-			&:hover {
-				color: $accent-color;
-			}
-		}
-	}
+  .menu__list__item__link {
+    color: $overlay-text-color;
+
+    &:hover {
+      color: $overlay-accent-color;
+    }
+
+    @include mq(tabletp) {
+      color: white;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
 }
 
 .header.dark {
-	.menu__list__item__link {
-		color: $overlay-text-color;
-	
-		&:hover {
-			color: $overlay-accent-color;
-		}
-	
-		@include mq(tabletp) {
-			color: $text-dark-color;
-	
-			&:hover {
-				color: $accent-color;
-			}
-		}
-		
-		&.active-link {
-			color: $overlay-accent-color;
-	
-			@include mq(tabletp) {
-				color: $accent-color;
-			}
-		}
-	}
+  .menu__list__item__link {
+    color: $overlay-text-color;
+
+    &:hover {
+      color: $overlay-accent-color;
+    }
+
+    @include mq(tabletp) {
+      color: $text-dark-color;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+
+    &.active-link {
+      color: $overlay-accent-color;
+
+      @include mq(tabletp) {
+        color: $accent-color;
+      }
+    }
+  }
 }
 
 .menu__button {
-	margin-top: 15px;
-	padding: 15px 20px 16px;
-	font-size: 13px;
+  margin-top: 15px;
+  padding: 15px 20px 16px;
+  font-size: 13px;
 
-	@include mq(tabletp) {
-		margin-top: 0;
-		padding: 11px 20px 12px;
-		font-size: 15px;
-	}
+  @include mq(tabletp) {
+    margin-top: 0;
+    padding: 11px 20px 12px;
+    font-size: 15px;
+  }
 }
 
 .buttons--circular {
+  .menu__button {
+    border-radius: 24px;
 
-	.menu__button {
-		border-radius: 24px;
-
-		@include mq(tabletl) {
-			border-radius: 21px;
-		}
-	}
+    @include mq(tabletl) {
+      border-radius: 21px;
+    }
+  }
 }

@@ -1,105 +1,109 @@
 .toc-sticky {
-    display: none;
-    background-color: $text-dark-color;
-    width: 100%;
-    position: relative;
-    animation: fadeIn 0.5s;
+  display: none;
+  background-color: $text-dark-color;
+  width: 100%;
+  position: relative;
+  animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .toc-sticky.stick {
-    display: block;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .toc-sticky.open {
-    .toc-list {
-        .toc-item {
-            display: block;
-            pointer-events: all;
-        }
+  .toc-list {
+    .toc-item {
+      display: block;
+      pointer-events: all;
     }
+  }
 
-    .toc-icon {
-        transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-    }
+  .toc-icon {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
 }
 
 .toc-sticky .toc-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    @include mq(tabletp) {
-        flex-direction: row;
-	}
+  @include mq(tabletp) {
+    flex-direction: row;
+  }
 }
 
 .toc-sticky .toc-item {
-    flex: 1;
-    display: none;
-    padding: 10px;
-    pointer-events: none;
+  flex: 1;
+  display: none;
+  padding: 10px;
+  pointer-events: none;
 
-    @include mq(tabletp) {
-        display: block;
-        pointer-events: all;
-        padding: 20px;
-	}
+  @include mq(tabletp) {
+    display: block;
+    pointer-events: all;
+    padding: 20px;
+  }
 }
 
 .toc-sticky .toc-item.highlighted {
-    display: block;
+  display: block;
 
-    @include mq(tabletp) {
-        background-color: $background-color;
+  @include mq(tabletp) {
+    background-color: $background-color;
 
-        a {
-            color: $text-dark-color;
-        }
-	}
+    a {
+      color: $text-dark-color;
+    }
+  }
 }
 
 .toc-sticky .toc-link {
-    font-size: $menu-small;
-	font-weight: $menu-weight;
-    text-align: center;
-    color: white;
+  font-size: $menu-small;
+  font-weight: $menu-weight;
+  text-align: center;
+  color: white;
 
-	@include mq(tabletp) {
-        display: block;
-		font-size: $menu-medium;
+  @include mq(tabletp) {
+    display: block;
+    font-size: $menu-medium;
 
-		&:hover {
-			color: $accent-color;
-		}
-	}
+    &:hover {
+      color: $accent-color;
+    }
+  }
 
-	@include mq(laptop) {
-		font-size: $menu-large;
-	}
+  @include mq(laptop) {
+    font-size: $menu-large;
+  }
 }
 
 .toc-sticky .toc-icon {
-    position: absolute;
-    right: 20px;
-    top: 22px;
-    color: white;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  color: white;
 
-    @include mq(tabletp) {
-        display: none;
-	}
+  @include mq(tabletp) {
+    display: none;
+  }
 }

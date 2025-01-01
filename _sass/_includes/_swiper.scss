@@ -5,83 +5,83 @@
 // for arrows
 div.swiper-button-prev,
 div.swiper-button-next {
-    color: white;
+  color: white;
 }
 
 // for bullets
 span.swiper-pagination-bullet {
-    background-color: white;
+  background-color: white;
 }
 
 .outside-swiper-wrap {
-	position: relative;
+  position: relative;
 
-	// To keep navigation elements outside
-	padding-left: 30px;
-	padding-right: 30px;
+  // To keep navigation elements outside
+  padding-left: 30px;
+  padding-right: 30px;
 
-	max-width: 100%;
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
-	@include mq(tabletp) {
-		max-width: 75%;
+  @include mq(tabletp) {
+    max-width: 75%;
 
-		// To keep navigation elements outside
-		padding-left: 40px;
-		padding-right: 40px;
-	}
+    // To keep navigation elements outside
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-	@include mq(laptop) {
-		max-width: 60%;
-	}
+  @include mq(laptop) {
+    max-width: 60%;
+  }
 }
 
 // for arrows outside
 div.swiper-button-prev-outside {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	bottom: 0px;
-	margin: auto 0;
-    color: $accent-color;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  margin: auto 0;
+  color: $accent-color;
 
-	transform: scale(0.5);
+  transform: scale(0.5);
 
-	@include mq(tabletp) {
-		transform: scale(1.0);
-	}
+  @include mq(tabletp) {
+    transform: scale(1);
+  }
 }
 
 div.swiper-button-next-outside {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	margin: auto 0;
-    color: $accent-color;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto 0;
+  color: $accent-color;
 
-	transform: scale(0.5);
+  transform: scale(0.5);
 
-	@include mq(tabletp) {
-		transform: scale(1.0);
-	}
+  @include mq(tabletp) {
+    transform: scale(1);
+  }
 }
 
 div.swiper-pagination-outside {
-	position: relative;
+  position: relative;
 
-	// To keep pagination outside
-	padding-top: 20px;
+  // To keep pagination outside
+  padding-top: 20px;
 
-	@include mq(tabletp) {
-		// To keep pagination outside
-		padding-top: 30px;
-	}
+  @include mq(tabletp) {
+    // To keep pagination outside
+    padding-top: 30px;
+  }
 
-	// for bullets outside
-	span.swiper-pagination-bullet {
-		background-color: $accent-color;
-	}
+  // for bullets outside
+  span.swiper-pagination-bullet {
+    background-color: $accent-color;
+  }
 }
