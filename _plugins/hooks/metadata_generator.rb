@@ -37,7 +37,7 @@ def generate_metadata
   end
 
   # Save the similar guides data to a JSON file
-  File.write('_data/metadata/similar_guides.json', JSON.pretty_generate(similar_guides))
+  File.write('_data/metadata/similar_guides.json', JSON.generate(similar_guides))
 
   # Load photo data from CSV file
   photos = []
@@ -63,5 +63,5 @@ def generate_metadata
   end
 
   # Save the similar photos data to a JSON file
-  File.write('_data/metadata/similar_photos.json', JSON.pretty_generate(similar_photos))
+  File.write('_data/metadata/similar_photos.json', JSON.generate(similar_photos))
 end
