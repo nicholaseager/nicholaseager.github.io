@@ -20,9 +20,9 @@ Jekyll::Hooks.register :site, :after_init do |site|
     puts '📸 generating photos ...'
     FileUtils.mkdir_p('_photos')
     generate_photos
-    puts '📸 done.'
+    puts '✅ done.'
   rescue => e
-    puts "\nError generating photos: #{e.message}"
+    puts "\n🛑 Error generating photos: #{e.message}"
   end
 end
 

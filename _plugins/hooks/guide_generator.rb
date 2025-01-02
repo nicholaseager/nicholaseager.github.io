@@ -14,9 +14,9 @@ Jekyll::Hooks.register :site, :after_init do |site|
     puts '📸 generating guides ...'
     FileUtils.mkdir_p('_guides')
     generate_guides
-    puts '📸 done.'
+    puts '✅ done.'
   rescue => e
-    puts "\nError generating guides: #{e.message}"
+    puts "\n🛑 Error generating guides: #{e.message}"
   end
 end
 

@@ -17,9 +17,9 @@ Jekyll::Hooks.register :site, :after_init do |site|
     puts '📸 generating metadata ...'
     FileUtils.mkdir_p('_data/metadata')
     generate_metadata
-    puts '📸 done.'
+    puts '✅ done.'
   rescue => e
-    puts "\nError generating metadata: #{e.message}"
+    puts "\n🛑 Error generating metadata: #{e.message}"
   end
 end
 
