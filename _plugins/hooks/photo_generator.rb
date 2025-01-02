@@ -1,3 +1,17 @@
+# This Jekyll plugin generates individual markdown pages for photos based on a CSV data source.
+# It runs after site initialization and:
+# - Creates a _photos directory if it doesn't exist
+# - Reads photo data from _data/photos.csv
+# - Generates a markdown file for each photo with YAML front matter containing:
+#   - Layout and metadata settings
+#   - Image path and title derived from filename
+#   - Location extracted from directory structure
+#   - Description (provided or auto-generated)
+#   - Tags (space-separated in CSV, converted to array)
+#   - Optional Darkroom and YouTube IDs
+#
+# The generated files are used by Jekyll to create individual photo pages on the site.
+
 require 'csv'
 require 'fileutils'
 

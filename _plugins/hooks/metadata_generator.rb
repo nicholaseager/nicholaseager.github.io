@@ -1,3 +1,13 @@
+# This plugin generates metadata files for similar content recommendations
+# It runs after Jekyll site initialization and:
+# 1. Creates similarity scores between guides based on shared tags
+# 2. Creates similarity scores between photos based on shared tags
+# 3. Saves the results as JSON files in _data/metadata/ for use in templates
+#
+# Output files:
+# - _data/metadata/similar_guides.json: Guide similarities based on tag overlap
+# - _data/metadata/similar_photos.json: Photo similarities based on tag overlap
+
 require 'json'
 require 'csv'
 require 'fileutils'

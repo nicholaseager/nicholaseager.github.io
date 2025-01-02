@@ -1,3 +1,11 @@
+# This Jekyll plugin generates guide pages from JSON files stored in _data/guides/.
+# On site initialization, it:
+# 1. Creates a _guides directory if it doesn't exist
+# 2. Reads each JSON file in _data/guides/ (except template.json)
+# 3. Generates a corresponding markdown file in _guides/ with YAML front matter
+# 4. The generated markdown files use the guide layout and include metadata from the JSON
+# This allows guide content to be managed in JSON while generating proper Jekyll pages.
+
 require 'json'
 require 'fileutils'
 

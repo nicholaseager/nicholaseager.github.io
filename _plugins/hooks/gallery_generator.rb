@@ -1,3 +1,16 @@
+# This Jekyll plugin automatically generates gallery pages from a CSV file.
+# It reads data from _data/galleries.csv and creates corresponding markdown files
+# in the _galleries directory, with YAML front matter populated from the CSV data.
+#
+# The CSV should have columns for:
+# - Gallery name (converted to filename)
+# - Tags (space-separated)
+# - Description
+# - Featured image path
+#
+# The plugin runs after Jekyll initialization and will recreate all gallery pages
+# each time the site is built.
+
 require 'csv'
 require 'fileutils'
 
