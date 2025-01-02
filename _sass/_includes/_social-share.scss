@@ -3,6 +3,8 @@
   margin-bottom: 10px;
   display: flex;
   gap: 5px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .social-share.center {
@@ -11,7 +13,8 @@
 }
 
 .social-share-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 9px 10px 10px;
   font-size: 11px;
   line-height: 1;
@@ -21,6 +24,7 @@
   letter-spacing: 1;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 5px;
 
   @include mq(tabletp) {
     padding: 9px 15px 10px;
