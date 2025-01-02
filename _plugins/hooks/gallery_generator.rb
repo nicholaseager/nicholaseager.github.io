@@ -15,8 +15,14 @@ require 'csv'
 require 'fileutils'
 
 Jekyll::Hooks.register :site, :after_init do |site|
-  FileUtils.mkdir_p('_galleries')
-  generate_galleries
+  begin
+    puts '📸 generating galleries ...'
+    FileUtils.mkdir_p('_galleries')
+    generate_galleries
+    puts '📸 done.'
+  rescue => e
+    puts "\n🛑 Error generating galleries: #{e.message}"
+  end
 end
 
 # Generates gallery pages from galleries.csv

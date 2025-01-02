@@ -13,8 +13,14 @@ require 'csv'
 require 'fileutils'
 
 Jekyll::Hooks.register :site, :after_init do |site|
-  FileUtils.mkdir_p('_data/metadata')
-  generate_metadata
+  begin
+    puts '📸 generating metadata ...'
+    FileUtils.mkdir_p('_data/metadata')
+    generate_metadata
+    puts '📸 done.'
+  rescue => e
+    puts "\nError generating metadata: #{e.message}"
+  end
 end
 
 # Generates metadata files for similar guides and photos

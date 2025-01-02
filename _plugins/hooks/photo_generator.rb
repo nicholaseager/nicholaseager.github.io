@@ -16,8 +16,14 @@ require 'csv'
 require 'fileutils'
 
 Jekyll::Hooks.register :site, :after_init do |site|
-  FileUtils.mkdir_p('_photos')
-  generate_photos
+  begin
+    puts '📸 generating photos ...'
+    FileUtils.mkdir_p('_photos')
+    generate_photos
+    puts '📸 done.'
+  rescue => e
+    puts "\nError generating photos: #{e.message}"
+  end
 end
 
 # Generates individual photo pages from photos.csv

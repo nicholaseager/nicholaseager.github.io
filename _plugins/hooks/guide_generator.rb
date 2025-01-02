@@ -10,8 +10,14 @@ require 'json'
 require 'fileutils'
 
 Jekyll::Hooks.register :site, :after_init do |site|
-  FileUtils.mkdir_p('_guides')
-  generate_guides
+  begin
+    puts '📸 generating guides ...'
+    FileUtils.mkdir_p('_guides')
+    generate_guides
+    puts '📸 done.'
+  rescue => e
+    puts "\nError generating guides: #{e.message}"
+  end
 end
 
 # Generates guide pages from JSON files in _data/guides/
