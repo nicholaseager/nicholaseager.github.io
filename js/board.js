@@ -69,10 +69,7 @@
     }
 
     // If we clicked mailto/tel
-    else if (
-      thisTarget.indexOf('mailto:') >= 0 ||
-      thisTarget.indexOf('tel:') >= 0
-    ) {
+    else if (thisTarget.indexOf('mailto:') >= 0 || thisTarget.indexOf('tel:') >= 0) {
       // Use the given link
       window.location = thisTarget;
     }
@@ -176,40 +173,35 @@
       var $image_gallery = $this.find('.image-gallery');
 
       // Create a unique swiper for each gallery
-      const gallerySwiper = new Swiper(
-        '.image-gallery-swiper[data-id="' + swiperID + '"]',
-        {
-          direction: 'horizontal',
-          loop: true,
+      const gallerySwiper = new Swiper('.image-gallery-swiper[data-id="' + swiperID + '"]', {
+        direction: 'horizontal',
+        loop: true,
 
-          lazy: {
-            loadPrevNext: true,
-          },
+        lazy: {
+          loadPrevNext: true,
+        },
 
-          pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-          },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
 
-          keyboard: {
-            enabled: true,
-            onlyInViewport: false,
-          },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },
 
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        }
-      );
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
 
       // Wait for images to load
       $image_gallery.imagesLoaded(function () {
         // Update order button on slide change
         const onIndexChange = function (index) {
-          var $slide = $this.find(
-            '.swiper-slide[data-swiper-slide-index="' + index + '"]'
-          );
+          var $slide = $this.find('.swiper-slide[data-swiper-slide-index="' + index + '"]');
           var src = $slide.attr('data-src');
           var printButton = $this.find('.order-prints');
           var link = printButton.attr('data-prefix') + src;
@@ -284,9 +276,7 @@
       // Update active
       var current = buttons.find('.active');
       current.removeClass('active');
-      buttons
-        .find('button[data-tag="' + defaultCategory + '"]')
-        .addClass('active');
+      buttons.find('button[data-tag="' + defaultCategory + '"]').addClass('active');
     });
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Single Swipers
@@ -303,26 +293,23 @@
       $swiper.siblings('.swiper-button-prev-outside').attr('data-id', swiperID);
       singleSwiperID += 1;
 
-      const singleSwiper = new Swiper(
-        '.single-swiper[data-id="' + swiperID + '"]',
-        {
-          direction: 'horizontal',
-          slidesPerView: 1,
-          spaceBetween: 10,
-          autoHeight: true,
-          loop: false,
+      const singleSwiper = new Swiper('.single-swiper[data-id="' + swiperID + '"]', {
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoHeight: true,
+        loop: false,
 
-          pagination: {
-            el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
-            type: 'bullets',
-          },
+        pagination: {
+          el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
+          type: 'bullets',
+        },
 
-          navigation: {
-            nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
-            prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]',
-          },
-        }
-      );
+        navigation: {
+          nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
+          prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]',
+        },
+      });
     });
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Collection Swipers
@@ -339,42 +326,39 @@
       $swiper.siblings('.swiper-button-prev-outside').attr('data-id', swiperID);
       collectionSwiperID += 1;
 
-      const collectionSwiper = new Swiper(
-        '.collection-swiper[data-id="' + swiperID + '"]',
-        {
-          direction: 'horizontal',
-          slidesPerView: 'auto',
-          spaceBetween: 10,
-          autoHeight: true,
-          centerInsufficientSlides: true,
-          loop: false,
+      const collectionSwiper = new Swiper('.collection-swiper[data-id="' + swiperID + '"]', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        autoHeight: true,
+        centerInsufficientSlides: true,
+        loop: false,
 
-          pagination: {
-            el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
-            type: 'bullets',
-          },
+        pagination: {
+          el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
+          type: 'bullets',
+        },
 
-          navigation: {
-            nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
-            prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]',
-          },
+        navigation: {
+          nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
+          prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]',
+        },
 
-          breakpoints: {
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            960: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            1440: {
-              slidesPerView: 3,
-              spaceBetween: 15,
-            },
+        breakpoints: {
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
           },
-        }
-      );
+          960: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1440: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        },
+      });
     });
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Grid Swipers
@@ -391,55 +375,52 @@
       $swiper.siblings('.swiper-button-prev-outside').attr('data-id', swiperID);
       gridSwiperID += 1;
 
-      const gridSwiper = new Swiper(
-        '.grid-swiper[data-id="' + swiperID + '"]',
-        {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          grid: {
-            rows: 1,
-            fill: 'row',
-          },
-          spaceBetween: 10,
-          pagination: {
-            el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
-            type: 'bullets',
-          },
-          navigation: {
-            nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
-            prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]',
-          },
-          breakpoints: {
-            480: {
-              slidesPerView: 2,
-              slidesPerGroup: 2,
-              spaceBetween: 10,
-              grid: {
-                rows: 2,
-                fill: 'row',
-              },
-            },
-            960: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-              spaceBetween: 10,
-              grid: {
-                rows: 2,
-                fill: 'row',
-              },
-            },
-            1440: {
-              slidesPerView: 4,
-              slidesPerGroup: 4,
-              spaceBetween: 20,
-              grid: {
-                rows: 2,
-                fill: 'row',
-              },
+      const gridSwiper = new Swiper('.grid-swiper[data-id="' + swiperID + '"]', {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        grid: {
+          rows: 1,
+          fill: 'row',
+        },
+        spaceBetween: 10,
+        pagination: {
+          el: '.swiper-pagination-outside[data-id="' + swiperID + '"]',
+          type: 'bullets',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next-outside[data-id="' + swiperID + '"]',
+          prevEl: '.swiper-button-prev-outside[data-id="' + swiperID + '"]',
+        },
+        breakpoints: {
+          480: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 10,
+            grid: {
+              rows: 2,
+              fill: 'row',
             },
           },
-        }
-      );
+          960: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 10,
+            grid: {
+              rows: 2,
+              fill: 'row',
+            },
+          },
+          1440: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            spaceBetween: 20,
+            grid: {
+              rows: 2,
+              fill: 'row',
+            },
+          },
+        },
+      });
     });
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Order Swipers
@@ -490,11 +471,7 @@
       var ratio = (height / width) * 100;
 
       // Wrap in video container
-      $(this).wrapAll(
-        '<div class="video-wrap"><div class="video" style="padding-bottom:' +
-          ratio +
-          '%;"></div></div>'
-      );
+      $(this).wrapAll('<div class="video-wrap"><div class="video" style="padding-bottom:' + ratio + '%;"></div></div>');
     });
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Maps
@@ -539,9 +516,7 @@
 
             // Replace the iframe source with the intended source
             // This method avoids an issue with the window history duplicates
-            (this.contentWindow || this.documentWindow).location.replace(
-              $this.attr('data-src')
-            );
+            (this.contentWindow || this.documentWindow).location.replace($this.attr('data-src'));
 
             // Remove the lazy id so this doesn't happen again
             $this.attr('id', id.replace('lazyframe', ''));
@@ -674,23 +649,17 @@
 
     // Validate email
     if (emailField.val() === '') {
-      emailField
-        .closest('.eager-form__item')
-        .addClass('eager-form__item--error');
+      emailField.closest('.eager-form__item').addClass('eager-form__item--error');
     }
 
     // Validate name
     if (nameField.val() === '') {
-      nameField
-        .closest('.eager-form__item')
-        .addClass('eager-form__item--error');
+      nameField.closest('.eager-form__item').addClass('eager-form__item--error');
     }
 
     // Validate message
     if (messageField.val() === '') {
-      messageField
-        .closest('.eager-form__item')
-        .addClass('eager-form__item--error');
+      messageField.closest('.eager-form__item').addClass('eager-form__item--error');
     }
 
     // If all fields are filled, except gotcha
@@ -721,24 +690,16 @@
 
     // Validate email
     if (emailField.val() === '') {
-      emailField
-        .closest('.eager-form__item')
-        .addClass('eager-form__item--error');
+      emailField.closest('.eager-form__item').addClass('eager-form__item--error');
     }
 
     // Validate name
     if (nameField.val() === '') {
-      nameField
-        .closest('.eager-form__item')
-        .addClass('eager-form__item--error');
+      nameField.closest('.eager-form__item').addClass('eager-form__item--error');
     }
 
     // If all fields are filled, except gotcha
-    if (
-      emailField.val() !== '' &&
-      nameField.val() !== '' &&
-      gotchaField.val().length === 0
-    ) {
+    if (emailField.val() !== '' && nameField.val() !== '' && gotchaField.val().length === 0) {
       // Submit the form!
     } else {
       // Stop submission
@@ -761,23 +722,17 @@
 
     // Validate email
     if (emailField.val() === '') {
-      emailField
-        .closest('.eager-form__item')
-        .addClass('eager-form__item--error');
+      emailField.closest('.eager-form__item').addClass('eager-form__item--error');
     }
 
     // Validate name
     if (nameField.val() === '') {
-      nameField
-        .closest('.eager-form__item')
-        .addClass('eager-form__item--error');
+      nameField.closest('.eager-form__item').addClass('eager-form__item--error');
     }
 
     // Validate message
     if (messageField.val() === '') {
-      messageField
-        .closest('.eager-form__item')
-        .addClass('eager-form__item--error');
+      messageField.closest('.eager-form__item').addClass('eager-form__item--error');
     }
 
     // If all fields are filled, except gotcha
