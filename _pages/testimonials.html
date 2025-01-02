@@ -5,11 +5,14 @@ sitemap: false
 ---
 
 {% for testimonial in site.data.testimonials %}
-<blockquote class="testimonial">
+  <blockquote class="testimonial">
     {{ testimonial.quote }}
-    <span>{{ testimonial.author }}</span>
+    <span>
+      {{ testimonial.author }}
+    </span>
     {% if testimonial.url %}
-    <a href="{{ testimonial.url }}" target="_blank">Source</a>
+      <a href="{{ testimonial.url }}" target="_blank">Source
+      </a>
     {% endif %}
-</blockquote>
+  </blockquote>
 {% endfor %}

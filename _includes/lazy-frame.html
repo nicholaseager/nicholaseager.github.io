@@ -55,7 +55,8 @@
 {%- assign srcdoc = srcdoc | strip_newlines | normalize_whitespace -%}
 
 <iframe
-  width="{{include.width | default=640}}" height="{{include.height | default=320}}"
+  width="{{include.width | default=640}}"
+  height="{{include.height | default=320}}"
   id="lazyframe {{ include.id }}"
   srcdoc="{{srcdoc}}"
   frameborder="0"
@@ -63,5 +64,4 @@
   data-src="{{include.link}}"
   allowfullscreen
   scrolling="no"
-  style="background-color: {{include.background-color | default=#000}}" 
-></iframe>
+  style="background-color: {{include.background-color | default=#000}}"></iframe>

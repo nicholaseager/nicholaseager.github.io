@@ -4,397 +4,541 @@ layout: default
 
 {%- assign guide = site.data.guides[page.guide] -%}
 {% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
-
 <section class="section__banner">
-	{% include banner.html image=guide.image title=guide.title %}
+  {% include banner.html image=guide.image title=guide.title %}
 </section>
 
 <section id="content">
-	<div class="guide-intro-background">
-		<div class="guide-intro-container">
-			<div class="guide-intro">
-				<div class="guide-intro-content">
-					<h1>{{ guide.title }}</h1>
-					<p><i>Last updated: {{ guide.modified_date | default: guide.date | date_to_long_string }}</i></p>
-					{% include social-share.html
-					url=url
-					title=guide.title
-					image=guide.image
-					%}
-					{% if guide.introduction %}
-					<p>{{ guide.introduction }}</p>
-					{% endif %}
-				</div>
+  <div class="guide-intro-background">
+    <div class="guide-intro-container">
+      <div class="guide-intro">
+        <div class="guide-intro-content">
+          <h1>
+            {{ guide.title }}
+          </h1>
+          <p>
+            <i>Last updated: {{ guide.modified_date | default: guide.date | date_to_long_string }}
+            </i>
+          </p>
+          {% include social-share.html 	url=url 	title=guide.title 	image=guide.image %}
+          {% if guide.introduction %}
+            <p>
+              {{ guide.introduction }}
+            </p>
+          {% endif %}
+        </div>
 
-				<div class="guide-intro-video-container">
-					<div class="guide-intro-video">
-						{% if guide.youtube %}
-						{% include youtube.html id=guide.youtube %}
-						{% else %}
-						{% include image.html src=guide.image %}
-						{% endif %}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	{% if guide.links %}
-	<div class="guide-quick-links">
-		<span>
-			Quick Links:
-			{% for link in guide.links %}
-			<a href="{{ link.url | relative_url }}">{{link.title}}</a>
-			{%- unless forloop.last -%},{%- endunless -%}
-			{% endfor %}
-		</span>
-	</div>
-	{% endif %}
+        <div class="guide-intro-video-container">
+          <div class="guide-intro-video">
+            {% if guide.youtube %}
+              {% include youtube.html id=guide.youtube %}
+            {% else %}
+              {% include image.html src=guide.image %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if guide.links %}
+    <div class="guide-quick-links">
+      <span>
+        Quick Links:
+        {% for link in guide.links %}
+          <a href="{{ link.url | relative_url }}">
+            {{ link.title }}
+          </a>
+          {%- unless forloop.last -%},
+          {%- endunless -%}
+        {% endfor %}
+      </span>
+    </div>
+  {% endif %}
 </section>
 
 <section class="single table-of-contents-container">
-	<div id="table-of-contents" class="toc-sticky">
-		<ol class="toc-list">
-			<!-- Generated in JS -->
-		</ol>
-		<i class="toc-icon fa-solid fa-chevron-down fa-xl"></i>
-	</div>
+  <div id="table-of-contents" class="toc-sticky">
+    <ol class="toc-list">
+      <!-- Generated in JS -->
+    </ol>
+    <i class="toc-icon fa-solid fa-chevron-down fa-xl"></i>
+  </div>
 
-	<div class="table-of-contents-content">
-		<!-- Overview -->
-		{% if guide.overview %}
-		<h2 toc-id="overview">Overview</h2>
-		{% if guide.overview.images %}
-		{% assign photos = guide.overview.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		{% if guide.overview.summary %}
-		<p>{{ guide.overview.summary }}</p>
-		{% endif %}
-		{% for item in guide.overview.items %}
-		<p><b>{{item.title}}:</b> {{item.description}}</p>
-		{% endfor %}
-		{% endif %}
-		<!-- End Overview -->
+  <div class="table-of-contents-content">
+    <!-- Overview -->
+    {% if guide.overview %}
+      <h2 toc-id="overview">Overview
+      </h2>
+      {% if guide.overview.images %}
+        {% assign photos = guide.overview.images | join: "<br />" %}
+        {% include post-swiper.html photos=photos %}
+      {% endif %}
+      {% if guide.overview.summary %}
+        <p>
+          {{ guide.overview.summary }}
+        </p>
+      {% endif %}
+      {% for item in guide.overview.items %}
+        <p>
+          <b>
+            {{ item.title }}:
+          </b>
+          {{ item.description }}
+        </p>
+      {% endfor %}
+    {% endif %}
+    <!-- End Overview -->
 
-		<!-- Partnership -->
-		{% if guide.partnership %}
-		<div class="guide-partnership">
-			<h4>{{ guide.partnership.title }}</h4>
-			<p>{{ guide.partnership.description }}</p>
-			{% if guide.partnership.logo %}
-			<div class="logo">
-				<a href="{{ guide.partnership.link }}">
-					<img src="https://ik.imagekit.io/qn1gkawvy/{{ guide.partnership.logo }}.svg">
-				</a>
-			</div>
-			{% endif %}
-		</div>
-		{% endif %}
-		<!-- End Partnership -->
+    <!-- Partnership -->
+    {% if guide.partnership %}
+      <div class="guide-partnership">
+        <h4>
+          {{ guide.partnership.title }}
+        </h4>
+        <p>
+          {{ guide.partnership.description }}
+        </p>
+        {% if guide.partnership.logo %}
+          <div class="logo">
+            <a href="{{ guide.partnership.link }}">
+              <img src="https://ik.imagekit.io/qn1gkawvy/{{ guide.partnership.logo }}.svg">
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+    <!-- End Partnership -->
 
-		<!-- Basics -->
-		{% if guide.basics %}
-		<h2 toc-id="basics">Basic Information</h2>
-		{% if guide.basics.introduction %}
-		<p>{{ guide.basics.introduction }}</p>
-		{% endif %}
-		{% for item in guide.basics.items %}
-		<p><b>{{item.title}}:</b> {{item.description}}</p>
-		{% endfor %}
-		{% if guide.basics.conclusion %}
-		<p>{{ guide.basics.conclusion }}</p>
-		{% endif %}
-		{% endif %}
-		<!-- End Basics -->
+    <!-- Basics -->
+    {% if guide.basics %}
+      <h2 toc-id="basics">Basic Information
+      </h2>
+      {% if guide.basics.introduction %}
+        <p>
+          {{ guide.basics.introduction }}
+        </p>
+      {% endif %}
+      {% for item in guide.basics.items %}
+        <p>
+          <b>
+            {{ item.title }}:
+          </b>
+          {{ item.description }}
+        </p>
+      {% endfor %}
+      {% if guide.basics.conclusion %}
+        <p>
+          {{ guide.basics.conclusion }}
+        </p>
+      {% endif %}
+    {% endif %}
+    <!-- End Basics -->
 
-		<!-- Weather -->
-		{% if guide.weather %}
-		<h2 toc-id="weather">Best Time to Go</h2>
-		{% if guide.weather.introduction %}
-		<p>{{ guide.weather.introduction }}</p>
-		{% endif %}
-		{% for season in guide.weather.seasons %}
-		<p><b>{{season.title}}:</b> {{season.description}}</p>
-		{% endfor %}
-		{% if guide.weather.conclusion %}
-		<p>{{ guide.weather.conclusion }}</p>
-		{% endif %}
-		{% endif %}
-		<!-- End Weather -->
+    <!-- Weather -->
+    {% if guide.weather %}
+      <h2 toc-id="weather">Best Time to Go
+      </h2>
+      {% if guide.weather.introduction %}
+        <p>
+          {{ guide.weather.introduction }}
+        </p>
+      {% endif %}
+      {% for season in guide.weather.seasons %}
+        <p>
+          <b>
+            {{ season.title }}:
+          </b>
+          {{ season.description }}
+        </p>
+      {% endfor %}
+      {% if guide.weather.conclusion %}
+        <p>
+          {{ guide.weather.conclusion }}
+        </p>
+      {% endif %}
+    {% endif %}
+    <!-- End Weather -->
 
-		<!-- Maps -->
-		{% if guide.map %}
-		<h2 toc-id="map">Map</h2>
-		{% if guide.map.introduction %}
-		<p>{{ guide.map.introduction }}</p>
-		{% endif %}
+    <!-- Maps -->
+    {% if guide.map %}
+      <h2 toc-id="map">Map
+      </h2>
+      {% if guide.map.introduction %}
+        <p>
+          {{ guide.map.introduction }}
+        </p>
+      {% endif %}
 
-		{% if guide.map.id %}
-		{% include my-map.html id=guide.map.id %}
-		<p><small>To better view the map, <a href="https://www.google.com/maps/d/viewer?mid={{ guide.map.id }}"
-					target="_blank">see it in full-screen</a>. Learn how to download the map for your own offline use by
-				reading <a href="/navigating-on-the-trail" target="_blank">how I navigate on the
-					trail</a>.</small></p>
-		{% endif %}
+      {% if guide.map.id %}
+        {% include my-map.html id=guide.map.id %}
+        <p>
+          <small>To better view the map,
+            <a href="https://www.google.com/maps/d/viewer?mid={{ guide.map.id }}" target="_blank">
+              see it in full-screen
+            </a>
+            . Learn how to download the map for your own offline use by reading
+            <a href="/navigating-on-the-trail" target="_blank">
+              how I navigate on the trail
+            </a>
+            .
+          </small>
+        </p>
+      {% endif %}
 
-		{% if guide.maps.conclusion %}
-		<p>{{ guide.maps.conclusion }}</p>
-		{% endif %}
-		{% endif %}
-		<!-- End Maps -->
+      {% if guide.maps.conclusion %}
+        <p>
+          {{ guide.maps.conclusion }}
+        </p>
+      {% endif %}
+  {% endif %}
+    <!-- End Maps -->
 
-		<!-- Extra Sections -->
-		{% assign sections = guide.extra_sections %}
-		{% if sections.size > 0 %}
-		{% for section in sections %}
-		<h2 toc-id="{{section.id | default: section.title | downcase}}">{{section.title}}</h2>
-		{% if section.images %}
-		{% assign photos = section.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{section.description}}</p>
-		{% for subsection in section.sections %}
-		<h3>{{subsection.title}}</h3>
-		{% if subsection.images %}
-		{% assign photos = subsection.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{subsection.description}}</p>
-		{% endfor %}
-		{% endfor %}
-		{% endif %}
-		<!-- End Extra Sections -->
+    <!-- Extra Sections -->
+    {% assign sections = guide.extra_sections %}
+    {% if sections.size > 0 %}
+      {% for section in sections %}
+        <h2 toc-id="{{section.id | default: section.title | downcase}}">
+          {{ section.title }}
+        </h2>
+        {% if section.images %}
+          {% assign photos = section.images | join: "<br />" %}
+          {% include post-swiper.html photos=photos %}
+        {% endif %}
+        <p>
+          {{ section.description }}
+        </p>
+        {% for subsection in section.sections %}
+          <h3>
+            {{ subsection.title }}
+          </h3>
+          {% if subsection.images %}
+            {% assign photos = subsection.images | join: "<br />" %}
+            {% include post-swiper.html photos=photos %}
+          {% endif %}
+          <p>
+            {{ subsection.description }}
+          </p>
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+    <!-- End Extra Sections -->
 
-		<!-- Itinerary -->
-		{% if guide.itinerary %}
-		<h2 toc-id="itinerary">Itinerary</h2>
-		{% if guide.itinerary.introduction %}
-		<p>{{ guide.itinerary.introduction }}</p>
-		{% endif %}
+    <!-- Itinerary -->
+    {% if guide.itinerary %}
+      <h2 toc-id="itinerary">Itinerary
+      </h2>
+      {% if guide.itinerary.introduction %}
+        <p>
+          {{ guide.itinerary.introduction }}
+        </p>
+      {% endif %}
 
-		<h3>Brief Itinerary</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>{{guide.itinerary.units.phase | default:"Phase"}}</th>
-					<th>{{guide.itinerary.units.itinerary | default:"Itinerary"}}</th>
-					<th>{{guide.itinerary.units.distance | default:"Distance"}} / {{guide.itinerary.units.elevation |
-						default:"Elevation"}}</th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for phase in guide.itinerary.phases %}
-				<tr>
-					<td>{{phase.phase | default: forloop.index}}</td>
-					<td>
-						{% if phase.description %}<a id="itinerary-phase-ref-{{forloop.index}}"
-							href="#itinerary-phase-{{forloop.index}}">{% endif %}
-							{{phase.title}}
-							{% if phase.description %}</a>{% endif %}
-					</td>
-					<td>
-						{% if phase.distance %}
-						<div class="guide-stat metric">{{phase.distance}} km</div>
-						<div class="guide-stat imperial">{{phase.distance | times: 0.62137 | to_integer}} miles</div>
-						{% else %}
-						-
-						{% endif %}
-						/
-						{% if phase.elevation %}
-						<div class="guide-stat metric">{{phase.elevation}} m</div>
-						<div class="guide-stat imperial">{{phase.elevation | times: 3.28084 | to_integer}} ft</div>
-						{% else %}
-						-
-						{% endif %}
-					</td>
-				</tr>
-				{% endfor %}
-			</tbody>
-		</table>
+      <h3>Brief Itinerary
+      </h3>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              {{ guide.itinerary.units.phase | default: "Phase" }}
+            </th>
+            <th>
+              {{ guide.itinerary.units.itinerary | default: "Itinerary" }}
+            </th>
+            <th>
+              {{ guide.itinerary.units.distance | default: "Distance" }} / {{ guide.itinerary.units.elevation | 	default: "Elevation" }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for phase in guide.itinerary.phases %}
+            <tr>
+              <td>
+                {{ phase.phase | default: forloop.index }}
+              </td>
+              <td>
+                {% if phase.description %}
+                  <a id="itinerary-phase-ref-{{forloop.index}}" href="#itinerary-phase-{{forloop.index}}">
+                {% endif %}
+                {{ phase.title }}
+                {% if phase.description %}</a>
+                {% endif %}
+              </td>
+              <td>
+                {% if phase.distance %}
+                  <div class="guide-stat metric">
+                    {{ phase.distance }} km
+                  </div>
+                  <div class="guide-stat imperial">
+                    {{ phase.distance | times: 0.62137 | to_integer }} miles
+                  </div>
+                {% else %}
+                  -
+                {% endif %}
+                /
+                {% if phase.elevation %}
+                  <div class="guide-stat metric">
+                    {{ phase.elevation }} m
+                  </div>
+                  <div class="guide-stat imperial">
+                    {{ phase.elevation | times: 3.28084 | to_integer }} ft
+                  </div>
+                {% else %}
+                  -
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
 
-		{% for phase in guide.itinerary.phases %}
-		{% if phase.description %}
-		{% if forloop.first %}
-		<h3>Detailed Itinerary</h3>
-		{% endif %}
-		{% assign unit = guide.itinerary.units.phase | default:"Phase" %}
-		{% assign value = phase.phase | default: forloop.index %}
-		<h5 id="itinerary-phase-{{forloop.index}}">
-			{{unit}} {{value}}: {{phase.title}}
-			{% if phase.distance or phase.elevation %}
-			<span class="guide-itinerary-stats">
-				<div class="guide-stat metric">({{phase.distance}} km / {{phase.elevation}} m)</div>
-				<div class="guide-stat imperial">({{phase.distance | times: 0.62137 | to_integer}} miles /
-					{{phase.elevation | times: 3.28084 | to_integer}} ft)</div>
-			</span>
-			{% endif %}
-		</h5>
-		{% if phase.images %}
-		{% assign photos = phase.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>
-			{{phase.description}}
-			<a href="#itinerary-phase-ref-{{forloop.index}}" class="reversefootnote" role="doc-backlink">&#8617;</a>
-		</p>
-		{% endif %}
-		{% endfor %}
+      {% for phase in guide.itinerary.phases %}
+        {% if phase.description %}
+          {% if forloop.first %}
+            <h3>Detailed Itinerary
+            </h3>
+          {% endif %}
+          {% assign unit = guide.itinerary.units.phase | default: "Phase" %}
+          {% assign value = phase.phase | default: forloop.index %}
+          <h5 id="itinerary-phase-{{forloop.index}}">
+            {{ unit }} {{ value }}: {{ phase.title }}
+            {% if phase.distance or phase.elevation %}
+              <span class="guide-itinerary-stats">
+                <div class="guide-stat metric">({{ phase.distance }} km / {{ phase.elevation }} m)
+                </div>
+                <div class="guide-stat imperial">({{ phase.distance | times: 0.62137 | to_integer }} miles /
+                  {{ phase.elevation | times: 3.28084 | to_integer }} ft)
+                </div>
+              </span>
+            {% endif %}
+          </h5>
+          {% if phase.images %}
+            {% assign photos = phase.images | join: "<br />" %}
+            {% include post-swiper.html photos=photos %}
+          {% endif %}
+          <p>
+            {{ phase.description }}
+            <a
+              href="#itinerary-phase-ref-{{forloop.index}}"
+              class="reversefootnote"
+              role="doc-backlink">&#8617;
+            </a>
+          </p>
+        {% endif %}
+      {% endfor %}
 
-		{% if guide.itinerary.conclusion %}
-		<h3>Conclusion</h3>
-		<p>{{ guide.itinerary.conclusion }}</p>
-		{% endif %}
-		{% endif %}
-		<!-- End Itinerary -->
+      {% if guide.itinerary.conclusion %}
+        <h3>Conclusion
+        </h3>
+        <p>
+          {{ guide.itinerary.conclusion }}
+        </p>
+      {% endif %}
+    {% endif %}
+    <!-- End Itinerary -->
 
-		<!-- Highlights -->
-		{% if guide.highlights %}
-		<h2 toc-id="highlights">My Favorite Highlights</h2>
-		{% if guide.highlights.introduction %}
-		<p>{{ guide.highlights.introduction }}</p>
-		{% endif %}
+    <!-- Highlights -->
+    {% if guide.highlights %}
+      <h2 toc-id="highlights">My Favorite Highlights
+      </h2>
+      {% if guide.highlights.introduction %}
+        <p>
+          {{ guide.highlights.introduction }}
+        </p>
+      {% endif %}
 
-		{% for item in guide.highlights.items %}
-		<h3>{{item.title}}</h3>
-		{% if item.images %}
-		{% assign photos = item.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{item.description}}</p>
-		{% endfor %}
+      {% for item in guide.highlights.items %}
+        <h3>
+          {{ item.title }}
+        </h3>
+        {% if item.images %}
+          {% assign photos = item.images | join: "<br />" %}
+          {% include post-swiper.html photos=photos %}
+        {% endif %}
+        <p>
+          {{ item.description }}
+        </p>
+      {% endfor %}
 
-		{% if guide.highlights.conclusion %}
-		<p>{{ guide.highlights.conclusion }}</p>
-		{% endif %}
-		{% endif %}
-		<!-- End Highlights -->
+      {% if guide.highlights.conclusion %}
+        <p>
+          {{ guide.highlights.conclusion }}
+        </p>
+      {% endif %}
+    {% endif %}
+    <!-- End Highlights -->
 
-		<!-- Cost -->
-		{% if guide.cost %}
-		<h2 toc-id="cost">Cost</h2>
-		{% if guide.cost.introduction %}
-		<p>{{ guide.cost.introduction }}</p>
-		{% endif %}
+    <!-- Cost -->
+    {% if guide.cost %}
+      <h2 toc-id="cost">Cost
+      </h2>
+      {% if guide.cost.introduction %}
+        <p>
+          {{ guide.cost.introduction }}
+        </p>
+      {% endif %}
 
-		<table>
-			<thead>
-				<tr>
-					<th>Item</th>
-					<th>Cost</th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for item in guide.cost.items %}
-				<tr>
-					<td>{{item.title}}</td>
-					<td>{{item.cost}}</td>
-				</tr>
-				{% endfor %}
-			</tbody>
-		</table>
+      <table>
+        <thead>
+          <tr>
+            <th>Item
+            </th>
+            <th>Cost
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in guide.cost.items %}
+            <tr>
+              <td>
+                {{ item.title }}
+              </td>
+              <td>
+                {{ item.cost }}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
 
-		{% for item in guide.cost.items %}
-		{% if item.description %}
-		<h4>{{item.title}}</h4>
-		<p>{{item.description}}</p>
-		{% endif %}
-		{% endfor %}
+      {% for item in guide.cost.items %}
+        {% if item.description %}
+          <h4>
+            {{ item.title }}
+          </h4>
+          <p>
+            {{ item.description }}
+          </p>
+        {% endif %}
+      {% endfor %}
 
-		{% if guide.cost.conclusion %}
-		<p>{{ guide.cost.conclusion }}</p>
-		{% endif %}
-		{% endif %}
-		<!-- End Cost -->
+      {% if guide.cost.conclusion %}
+        <p>
+          {{ guide.cost.conclusion }}
+        </p>
+      {% endif %}
+    {% endif %}
+    <!-- End Cost -->
 
-		<!-- Gear -->
-		{% if guide.gear %}
-		<h2 toc-id="gear">Recommended Gear</h2>
-		{% if guide.gear.introduction %}
-		<p>{{ guide.gear.introduction }}</p>
-		{% endif %}
-		{% include gear-swiper.html trip=guide.gear.trip %}
-		{% if guide.gear.conclusion %}
-		<p>{{ guide.gear.conclusion }}</p>
-		{% endif %}
-		<p>
-			The provided gear list is a suggestion, tailor it to your needs. Prioritize safety by packing and preparing
-			well for a happy, adventurous hike.
-			Interested in all of my gear recommendations? Click the button below to see what I recommend for filming,
-			travel, and fun :)
-			<br><a href="/gear" class="button button--small">Explore All Gear</a>
-		</p>
-		{% endif %}
-		<!-- End Gear -->
+    <!-- Gear -->
+    {% if guide.gear %}
+      <h2 toc-id="gear">Recommended Gear
+      </h2>
+      {% if guide.gear.introduction %}
+        <p>
+          {{ guide.gear.introduction }}
+        </p>
+      {% endif %}
+      {% include gear-swiper.html trip=guide.gear.trip %}
+      {% if guide.gear.conclusion %}
+        <p>
+          {{ guide.gear.conclusion }}
+        </p>
+      {% endif %}
+      <p>
+        The provided gear list is a suggestion, tailor it to your needs. Prioritize safety by packing and preparing well for a
+        happy, adventurous hike. Interested in all of my gear recommendations? Click the button below to see what I recommend
+        for filming, travel, and fun :)
+        <br>
+        <a href="/gear" class="button button--small">Explore All Gear
+        </a>
+      </p>
+    {% endif %}
+    <!-- End Gear -->
 
-		<!-- Basics -->
-		{% if guide.useful_info %}
-		<h2 toc-id="info">Useful Info</h2>
-		{% if guide.useful_info.introduction %}
-		<p>{{ guide.useful_info.introduction }}</p>
-		{% endif %}
-		{% for item in guide.useful_info.items %}
-		<h3>{{item.title}}</h3>
-		{% if item.images %}
-		{% assign photos = item.images | join: '<br />' %}
-		{% include post-swiper.html photos=photos %}
-		{% endif %}
-		<p>{{item.description}}</p>
-		{% endfor %}
-		{% if guide.useful_info.conclusion %}
-		<p>{{ guide.useful_info.conclusion }}</p>
-		{% endif %}
-		{% endif %}
-		<!-- End Basics -->
+    <!-- Basics -->
+    {% if guide.useful_info %}
+      <h2 toc-id="info">Useful Info
+      </h2>
+      {% if guide.useful_info.introduction %}
+        <p>
+          {{ guide.useful_info.introduction }}
+        </p>
+      {% endif %}
+      {% for item in guide.useful_info.items %}
+        <h3>
+          {{ item.title }}
+        </h3>
+        {% if item.images %}
+          {% assign photos = item.images | join: "<br />" %}
+          {% include post-swiper.html photos=photos %}
+        {% endif %}
+        <p>
+          {{ item.description }}
+        </p>
+      {% endfor %}
+      {% if guide.useful_info.conclusion %}
+        <p>
+          {{ guide.useful_info.conclusion }}
+        </p>
+      {% endif %}
+    {% endif %}
+    <!-- End Basics -->
 
-		<h3>Conclusion</h3>
-		{% if guide.conclusion %}
-		<p>{{ guide.conclusion }}</p>
-		{% endif %}
-		{% if guide.youtube %}
-		<p>Check out <a href="https://www.youtube.com/watch?v={{ guide.youtube }}" target="_blank">a video</a> that I
-			made about the entire trip! I tried my best to capture all of the little beautiful moments by letting them
-			speak for themselves. So there are no explanations or speaking in this video, just moments :)</p>
-		{% endif %}
+    <h3>Conclusion
+    </h3>
+    {% if guide.conclusion %}
+      <p>
+        {{ guide.conclusion }}
+      </p>
+    {% endif %}
+    {% if guide.youtube %}
+      <p>Check out
+        <a href="https://www.youtube.com/watch?v={{ guide.youtube }}" target="_blank">a video
+        </a>
+        that I made about the entire trip! I tried my best to capture all of the little beautiful moments by letting them speak
+        for themselves. So there are no explanations or speaking in this video, just moments :)
+      </p>
+    {% endif %}
 
-		<div class="social-share center">
-			{% include social-share.html
-			url=url
-			title=guide.title
-			image=guide.image
-			%}
-		</div>
+    <div class="social-share center">
+      {% include social-share.html 	url=url 	title=guide.title 	image=guide.image %}
+    </div>
 
-		<h3>You Might Also Like</h3>
-		{%- assign similar_guides = site.data.metadata['similar_guides'] -%}
-		{%- assign similar_guides = similar_guides[page.guide] -%}
-		{%- assign similar_guides = similar_guides | sort: "simularity" | reverse -%}
+    <h3>You Might Also Like
+    </h3>
+    {%- assign similar_guides = site.data.metadata["similar_guides"] -%}
+    {%- assign similar_guides = similar_guides[page.guide] -%}
+    {%- assign similar_guides = similar_guides | sort: "simularity" | reverse -%}
 
-		{%- assign guides = "" | split: ',' -%}
-		{%- for similar_guide in similar_guides -%}
-		{%- assign guide = site.guides | where: "guide", similar_guide.name | first -%}
-		{%- assign guides = guides | push: guide -%}
-		{%- endfor -%}
-		{% include latest-collection.html items=guides %}
+    {%- assign guides = "" | split: "," -%}
+    {%- for similar_guide in similar_guides -%}
+      {%- assign guide = site.guides | where: "guide", similar_guide.name | first -%}
+      {%- assign guides = guides | push: guide -%}
+    {%- endfor -%}
+    {% include latest-collection.html items=guides %}
 
-		<hr>
+    <hr>
 
-		<p>My site does not support public comments. Please use the form below to send a comment directly to me if you
-			want to ask questions; I am happy to help.</p>
-		{% include comment-form.html url=url %}
+    <p>My site does not support public comments. Please use the form below to send a comment directly to me if you want to
+      ask questions; I am happy to help.
+    </p>
+    {% include comment-form.html url=url %}
 
-		<p>
-			<small>
-				<span style="text-decoration: underline;"><em><strong>Safety Disclosure</strong></em></span>
-				<em>This travel guide is intended for educational purposes only. Readers are urged to conduct their due
-					diligence, verify current conditions, and research the most recent information independently.
-					Conditions along trails and relevant details may change, necessitating the confirmation of accurate
-					and updated information from reliable sources or local authorities before undertaking any travel or
-					outdoor activities.</em>
-				<br><br>
-				<span style="text-decoration: underline;"><em><strong>Affiliate Disclosure</strong></em></span>
-				<em>This travel guide contains affiliate links, which means I may earn a commission for purchases made
-					through these links at no cost to you. Your support helps sustain the creation of more content.</em>
-			</small>
-		</p>
-	</div>
+    <p>
+      <small>
+        <span style="text-decoration: underline;">
+          <em>
+            <strong>Safety Disclosure
+            </strong>
+          </em>
+        </span>
+        <em>This travel guide is intended for educational purposes only. Readers are urged to conduct their due diligence,
+          verify current conditions, and research the most recent information independently. Conditions along trails and relevant
+          details may change, necessitating the confirmation of accurate and updated information from reliable sources or local
+          authorities before undertaking any travel or outdoor activities.
+        </em>
+        <br>
+        <br>
+        <span style="text-decoration: underline;">
+          <em>
+            <strong>Affiliate Disclosure
+            </strong>
+          </em>
+        </span>
+        <em>This travel guide contains affiliate links, which means I may earn a commission for purchases made through these
+          links at no cost to you. Your support helps sustain the creation of more content.
+        </em>
+      </small>
+    </p>
+  </div>
 </section>

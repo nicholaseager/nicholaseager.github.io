@@ -3,36 +3,43 @@ layout: default
 ---
 
 <section class="section__banner">
-	<div class="banner">
-		<div class="banner__background">
-			<video disablePictureInPicture playsinline autoplay muted loop
-					controlsList="nodownload"
-					poster="https://ik.imagekit.io/qn1gkawvy/tr:w-640/home-intro-placeholder.jpg"
-					id="homeVideo">
-				<!-- Source set in JS -->
-			</video>
-		</div>
-		<div class="banner__container">
-			<div class="banner__background__shading"></div>
-			<div class="banner__container__content">
-				<h2 class="title">Adventure Film and Photos</h2>
-				<p class="description">by Nicholas Eager</p>
-				<a href="#content">
-					{% include banner-arrow.html %}
-				</a>
-			</div>
-		</div>
-	</div>
+  <div class="banner">
+    <div class="banner__background">
+      <video
+        disablePictureInPicture
+        playsinline
+        autoplay
+        muted
+        loop
+        controlsList="nodownload"
+        poster="https://ik.imagekit.io/qn1gkawvy/tr:w-640/home-intro-placeholder.jpg"
+        id="homeVideo">
+        <!-- Source set in JS -->
+      </video>
+    </div>
+    <div class="banner__container">
+      <div class="banner__background__shading"></div>
+      <div class="banner__container__content">
+        <h2 class="title">Adventure Film and Photos
+        </h2>
+        <p class="description">by Nicholas Eager
+        </p>
+        <a href="#content">
+          {% include banner-arrow.html %}
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="content">
-	{% include about.html %}
+  {% include about.html %}
 </section>
 
 <section class="single">
 
-	<hr>
+  <hr>
 
-	{{ content }}
+  {{ content }}
 
 </section>

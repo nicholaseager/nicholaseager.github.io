@@ -1,26 +1,30 @@
 <div class="collection-wrap">
-	<div class="collection">
-	{% for post in include.items limit:include.limit %}
-	  <article class="collection-item">
+  <div class="collection">
+    {% for post in include.items limit: include.limit %}
+      <article class="collection-item">
 
-			<a href="{{ post.url | relative_url }}">
+        <a href="{{ post.url | relative_url }}">
 
-				<div class="collection-item-image">
-					{% assign post_image = post.image | relative_url %}
-					{% include gallery-image.html src=post_image alt=post.title %}
-				</div>
+          <div class="collection-item-image">
+            {% assign post_image = post.image | relative_url %}
+            {% include gallery-image.html src=post_image alt=post.title %}
+          </div>
 
-				<div class="collection-item-content">
-					<div>
-						<div class="collection-item-title">{{ post.title }}</div>
-						<div class="collection-item-subtitle">{{ post.description }}</div>
-					</div>
-				</div>
+          <div class="collection-item-content">
+            <div>
+              <div class="collection-item-title">
+                {{ post.title }}
+              </div>
+              <div class="collection-item-subtitle">
+                {{ post.description }}
+              </div>
+            </div>
+          </div>
 
-			</a>
+        </a>
 
-		</article>
-	  {% endfor %}
-	  {%- include seo/scripts/navigation.html items=include.items limit=include.limit -%}
+      </article>
+    {% endfor %}
+    {%- include seo/scripts/navigation.html items=include.items limit=include.limit -%}
   </div>
 </div>

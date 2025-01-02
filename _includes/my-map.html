@@ -1,27 +1,29 @@
 <div class="google-map">
-    {%- capture link -%}https://www.google.com/maps/d/u/0/embed?mid={{ include.id }}{%- endcapture -%}
-    {% include lazy-frame.html
-        link=link
-        id=include.id
-        width="640"
-        height="480"
-        background-color="rgb(146,180,243)"
-        loadbutton-src="https://ik.imagekit.io/qn1gkawvy/web/map-location-dot-solid.svg"
-    %}
-    <div class="map-overlay">
-        <div class="map-notice">
-            <a class="button map-notice-button">Click to use the map</a>
-            <div class="modal">
-                <div class="modal-content">
-                    {% include image.html src="profile-square_7r8XDOfQj" class="modal-content-image" %}
-                    <div class="modal-content-title">Support Nicholas</div>
-                    <div class="modal-content-description">Creating travel guides requires time and resources, and nobody pays me for it. If you find my guides helpful, please consider making a donation.</div>
-                    <div class="modal-content-buttons">
-                        <a class="button map-modal-confirm-button" href="https://ko-fi.com/V7V8AM70Z" target="_blank">Donate Now</a>
-                        <a class="map-modal-decline-button">No, thanks</a>
-                    </div>
-                </div>
-            </div>
+  {%- capture link -%}https://www.google.com/maps/d/u/0/embed?mid={{ include.id }}{%- endcapture -%}
+  {% include lazy-frame.html link=link id=include.id width="640" height="480" background-color="rgb(146,180,243)" loadbutton-src="https://ik.imagekit.io/qn1gkawvy/web/map-location-dot-solid.svg" %}
+  <div class="map-overlay">
+    <div class="map-notice">
+      <a class="button map-notice-button">Click to use the map
+      </a>
+      <div class="modal">
+        <div class="modal-content">
+          {% include image.html src="profile-square_7r8XDOfQj" class="modal-content-image" %}
+          <div class="modal-content-title">Support Nicholas
+          </div>
+          <div class="modal-content-description">Creating travel guides requires time and resources, and nobody pays me for it. If
+            you find my guides helpful, please consider making a donation.
+          </div>
+          <div class="modal-content-buttons">
+            <a
+              class="button map-modal-confirm-button"
+              href="https://ko-fi.com/V7V8AM70Z"
+              target="_blank">Donate Now
+            </a>
+            <a class="map-modal-decline-button">No, thanks
+            </a>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

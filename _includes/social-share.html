@@ -1,42 +1,59 @@
-{% assign url=include.url %}
-{% assign title=include.title %}
+{% assign url = include.url %}
+{% assign title = include.title %}
 {% capture image %}https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{include.image}}.jpg{% endcapture %}
-
 <div class="social-share">
-    <!-- Facebook -->
-    <a class="social-share-button facebook"
-        href="https://www.facebook.com/sharer/sharer.php?u={{ url }}"
-        onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
-        <span><i class="fab fa-facebook" aria-hidden="true"></i>Share</span>
-    </a>
+  <!-- Facebook -->
+  <a
+    class="social-share-button facebook"
+    href="https://www.facebook.com/sharer/sharer.php?u={{ url }}"
+    onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
+    <span>
+      <i class="fab fa-facebook" aria-hidden="true"></i>
+      Share
+    </span>
+  </a>
 
-    <!-- Twitter -->
-    <a class="social-share-button twitter"
-        href="https://twitter.com/intent/tweet?text={{ title }}&url={{ url }}"
-        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-        title="Share on Twitter">
-        <span><i class="fab fa-twitter" aria-hidden="true"></i>Tweet</span>
-    </a>
+  <!-- Twitter -->
+  <a
+    class="social-share-button twitter"
+    href="https://twitter.com/intent/tweet?text={{ title }}&url={{ url }}"
+    onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+    title="Share on Twitter">
+    <span>
+      <i class="fab fa-twitter" aria-hidden="true"></i>
+      Tweet
+    </span>
+  </a>
 
-    <!-- Reddit -->
-    <a class="social-share-button reddit"
-        href="https://www.reddit.com/submit?url={{ url }}"
-        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-        title="Share on Reddit">
-        <span><i class="fab fa-reddit" aria-hidden="true"></i>Post</span>
-    </a>
+  <!-- Reddit -->
+  <a
+    class="social-share-button reddit"
+    href="https://www.reddit.com/submit?url={{ url }}"
+    onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+    title="Share on Reddit">
+    <span>
+      <i class="fab fa-reddit" aria-hidden="true"></i>
+      Post
+    </span>
+  </a>
 
-    <!-- Pinterest -->
-    <a class="social-share-button pinterest"
-        href="https://pinterest.com/pin/create/button/?url={{ url }}&media={{ image }}"
-        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-        title="Share on Pinterest">
-        <span><i class="fab fa-pinterest" aria-hidden="true"></i>Pin</span>
-    </a>
+  <!-- Pinterest -->
+  <a
+    class="social-share-button pinterest"
+    href="https://pinterest.com/pin/create/button/?url={{ url }}&media={{ image }}"
+    onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+    title="Share on Pinterest">
+    <span>
+      <i class="fab fa-pinterest" aria-hidden="true"></i>
+      Pin
+    </span>
+  </a>
 
-    <!-- Email -->
-    <a class="social-share-button email"
-        href="mailto:?subject=&amp;body=Check out this article {{ url }}">
-        <span><i class="fa fa-envelope" aria-hidden="true"></i>Email</span>
-    </a>
+  <!-- Email -->
+  <a class="social-share-button email" href="mailto:?subject=&amp;body=Check out this article {{ url }}">
+    <span>
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      Email
+    </span>
+  </a>
 </div>

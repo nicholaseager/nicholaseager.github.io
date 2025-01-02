@@ -3,68 +3,101 @@ layout: default
 ---
 
 <section>
-	<div class="order-wrap">
-		<div class="order-container">
-			<div class="order-images">
-				{% include photo-display.html path=page.image %}
-			</div>
-			<div class="order-content">
-				<div class="order-heading">
-					<h2>{{ page.title }}</h2>
-					<p><i>{{ page.location }}</i></p>
-					<p class="order-author">By <a href="{{ "/about" | relative_url }}">{{ site.author.name }}</a></p>
-					<p class="order-author"><b>© {{ 'now' | date: "%Y" }}</b> {{ site.organization.name }}</p>
-				</div>
+  <div class="order-wrap">
+    <div class="order-container">
+      <div class="order-images">
+        {% include photo-display.html path=page.image %}
+      </div>
+      <div class="order-content">
+        <div class="order-heading">
+          <h2>
+            {{ page.title }}
+          </h2>
+          <p>
+            <i>
+              {{ page.location }}
+            </i>
+          </p>
+          <p class="order-author">By
+            <a href="{{ "/about" | relative_url }}">
+              {{ site.author.name }}
+            </a>
+          </p>
+          <p class="order-author">
+            <b>© {{ "now" | date: "%Y" }}
+            </b>
+            {{ site.organization.name }}
+          </p>
+        </div>
 
-				<p>{{ page.description }}</p>
-					
-				{% if page.youtubeid %}
-				<p>
-					<a href="https://www.youtube.com/watch?v={{page.youtubeid}}" target="_blank" class="button button--small order-youtube">
-						Watch the video behind the photo
-						<i class="fab fa-youtube" aria-hidden="true"></i>
-					</a>
-				</p>
-				{% endif %}
+        <p>
+          {{ page.description }}
+        </p>
 
-				{% if page.darkroomid %}
-				<div class="eager-form-small">
-					<p>Order a print to share the story in your own home.</p>
-					<p>
-						<a href="https://nicholaseagerphoto.darkroom.com/products/{{ page.darkroomid }}" target="_blank" class="button button--large">
-							Order Print
-							<i class="fas fa-arrow-up-right-from-square"></i>
-						</a>
-					</p>
-				</div>
-				{% else %}
-				{% include order-form.html path=page.image %}
-				{% endif %}
-			</div>
-		</div>
-	</div>
+        {% if page.youtubeid %}
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v={{page.youtubeid}}"
+              target="_blank"
+              class="button button--small order-youtube">
+              Watch the video behind the photo
+              <i class="fab fa-youtube" aria-hidden="true"></i>
+            </a>
+          </p>
+        {% endif %}
+
+        {% if page.darkroomid %}
+          <div class="eager-form-small">
+            <p>Order a print to share the story in your own home.
+            </p>
+            <p>
+              <a
+                href="https://nicholaseagerphoto.darkroom.com/products/{{ page.darkroomid }}"
+                target="_blank"
+                class="button button--large">
+                Order Print
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </p>
+          </div>
+        {% else %}
+          {% include order-form.html path=page.image %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="single">
-	<h2>Licensing</h2>
-	<p>Interested? I offer a few different types of licenses for my photos and footage. Read more about <a href="{{ "/how-to-use-my-art" | relative_url }}">how to use my art</a>.</p>
-	<h2>You Might Also Like</h2>
-	<p>Want a different photo? <a href="{{ "/photos" | relative_url }}">Browse more photos</a> or look below to find what you're looking for.</p>
-	{%- assign similar_photos = site.data.metadata['similar_photos'] -%}
-	{%- assign similar_photos = similar_photos[page.image] -%}
-	{%- assign similar_photos = similar_photos | sort: "simularity" | reverse -%}
+  <h2>Licensing
+  </h2>
+  <p>Interested? I offer a few different types of licenses for my photos and footage. Read more about
+    <a href="{{ "/how-to-use-my-art" | relative_url }}">how to use my art
+    </a>
+    .
+  </p>
+  <h2>You Might Also Like
+  </h2>
+  <p>Want a different photo?
+    <a href="{{ "/photos" | relative_url }}">Browse more photos
+    </a>
+    or look below to find what you're looking for.
+  </p>
+  {%- assign similar_photos = site.data.metadata["similar_photos"] -%}
+  {%- assign similar_photos = similar_photos[page.image] -%}
+  {%- assign similar_photos = similar_photos | sort: "simularity" | reverse -%}
 
-	{%- capture photos -%}
+  {%- capture photos -%}
 	{%- for similar_photo in similar_photos -%}
 		{{ similar_photo.name }},
 	{%- endfor -%}
 	{% endcapture %}
-	{% assign photos = photos | split: ','%}
-	{% include gallery.html
-		orderable=true
-		photo_array=photos
-		limit=6
-	%}
+  {% assign photos = photos | split: "," %}
+  {% include gallery.html 	orderable=true 	photo_array=photos 	limit=6 %}
 
-	<p>If you have any comments, questions, or other inquiries, please <a href="{{ "/contact" | relative_url }}">contact me</a> separately.</p>
+  <p>If you have any comments, questions, or other inquiries, please
+    <a href="{{ "/contact" | relative_url }}">contact me
+    </a>
+    separately.
+  </p>
 </section>

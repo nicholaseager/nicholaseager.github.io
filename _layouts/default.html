@@ -2,87 +2,96 @@
 
 <html class="no-js" lang="en">
 
-<head>
+  <head>
 
+      <!-- {{ site.data.settings.basic_settings.site_title }} -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      <!-- Page Info -->
+    <link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image | relative_url }}">
 
-	{{ site.data.settings.basic_settings.site_title }}
+    {% include seo/seo.html page=page %}
 
-	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Font Embed Code -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap"
+        rel="stylesheet"
+        type="text/css" />
+    </noscript>
 
+    <!-- Styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Icons -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/860383e77f.js"
+      crossorigin="anonymous"></script>
 
-	<!-- Page Info -->
-	<link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image | relative_url }}">
+    {% if jekyll.environment == "production" %}
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV277DE08"></script>
+      <script>
+        		window.dataLayer = window.dataLayer || [];
+        		function gtag() { dataLayer.push(arguments); }
+        		gtag('js', new Date());
 
-	{% include seo/seo.html page=page %}
+        		gtag('config', 'G-MGV277DE08');
+      </script>
+    {% endif %}
+  </head>
 
-	<!-- Font Embed Code -->
-	<link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap" as="style"
-		onload="this.onload=null;this.rel='stylesheet'" />
-	<noscript>
-		<link href="https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap" rel="stylesheet"
-			type="text/css" />
-	</noscript>
+  <body
+    class="loading"
+    data-site-url="{{ site.url }}"
+    data-page-url="{{ page.url | replace: 'index.html', '' }}">
+    {% if page.url == "/" or page.header == "transparent" %}
+      {% assign header-style = "light transparent" %}
+    {% else %}
+      {% assign header-style = "dark" %}
+    {% endif %}
+    {% include header.html style=header-style %}
 
-	<!-- Styles -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <div class="loader">
+      {% include loader.html %}
+    </div>
 
-	<!-- Icons -->
-	<script defer src="https://kit.fontawesome.com/860383e77f.js" crossorigin="anonymous"></script>
+    <div class="page-loader"></div>
 
-	{% if jekyll.environment == "production" %}
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV277DE08"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+    <div class="page">
 
-		gtag('config', 'G-MGV277DE08');
-	</script>
-	{% endif %}
-</head>
-
-<body class="loading" data-site-url="{{ site.url }}" data-page-url="{{ page.url | replace: 'index.html', '' }}">
-	{% if page.url == "/" or page.header == "transparent" %}
-	{% assign header-style = "light transparent" %}
-	{% else %}
-	{% assign header-style = "dark" %}
-	{% endif %}
-	{% include header.html style=header-style %}
-
-	<div class="loader">
-		{% include loader.html %}
-	</div>
-
-	<div class="page-loader"></div>
-
-	<div class="page">
-
-		<div class="page__content" data-page-title="{% if page.url == " /" %}{{
+      <div
+        class="page__content"
+        data-page-title="{% if page.url == " /" %}{{
 			site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{
-			site.data.settings.basic_settings.site_title }}{% endif %}" data-header-style="{{header-style}}">
+			site.data.settings.basic_settings.site_title }}{% endif %}"
+        data-header-style="{{header-style}}">
 
-			{{ content }}
+        {{ content }}
 
-		</div>
+      </div>
 
-	</div>
+    </div>
 
-	{% include footer.html %}
+    {% include footer.html %}
 
-	<!-- Javascript Assets -->
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js"
-		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Javascript Assets -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
 
-	<script src="{{ '/js/plugins-min.js' | relative_url }}"></script>
-	<script src="{{ '/js/board-min.js' | relative_url }}"></script>
-</body>
+    <script src="{{ '/js/plugins-min.js' | relative_url }}"></script>
+    <script src="{{ '/js/board-min.js' | relative_url }}"></script>
+  </body>
 
 </html>

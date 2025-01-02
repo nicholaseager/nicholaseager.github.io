@@ -1,29 +1,33 @@
 {% assign trip = include.trip %}
-{% assign gears = site.data.gear | where_exp:"gear", "gear.trips contains trip" %}
+{% assign gears = site.data.gear | where_exp: "gear", "gear.trips contains trip" %}
 
 <div class="outside-swiper-wrap">
-    <div class="swiper grid-swiper">
-        <div class="swiper-wrapper">
-            {% for gear in gears %}
-            <div class="swiper-slide gear-item">
-                <div class="gear-content">
-                    <div class="gear-image">
-                        <img src="{{ gear.img }}" alt="{{ gear.title }}" />
-                    </div>
-                    <div class="gear-info">
-                        <div class="title">{{ gear.title }}</div>
-                        <div class="description">{{ gear.description }}</div>
-                        <a href="{{ gear.url }}" class="button button--small button--rounded button--expanded">
-                            View
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
+  <div class="swiper grid-swiper">
+    <div class="swiper-wrapper">
+      {% for gear in gears %}
+        <div class="swiper-slide gear-item">
+          <div class="gear-content">
+            <div class="gear-image">
+              <img src="{{ gear.img }}" alt="{{ gear.title }}" />
             </div>
-            {% endfor %}
+            <div class="gear-info">
+              <div class="title">
+                {{ gear.title }}
+              </div>
+              <div class="description">
+                {{ gear.description }}
+              </div>
+              <a href="{{ gear.url }}" class="button button--small button--rounded button--expanded">
+                View
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      {% endfor %}
     </div>
-    <div class="swiper-pagination swiper-pagination-outside"></div>
-    <div class="swiper-button-prev swiper-button-prev-outside"></div>
-    <div class="swiper-button-next swiper-button-next-outside"></div>
+  </div>
+  <div class="swiper-pagination swiper-pagination-outside"></div>
+  <div class="swiper-button-prev swiper-button-prev-outside"></div>
+  <div class="swiper-button-next swiper-button-next-outside"></div>
 </div>

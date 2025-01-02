@@ -1,4 +1,4 @@
 {%- assign films = site.data.films | reverse -%}
-{%- for film in films limit:1 -%}
-{% include youtube.html id=film.id %}
+{%- for film in films limit: 1 -%}
+  {% include youtube.html id=film.id %}
 {%- endfor -%}

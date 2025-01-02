@@ -1,10 +1,3 @@
 {%- capture link -%}https://www.youtube-nocookie.com/embed/{{ include.id }}?autoplay=1&modestbranding=1&iv_load_policy=3&theme=light&playsinline=1&mute=1{%- endcapture -%}
 {%- capture placeholder -%}https://img.youtube.com/vi/{{ include.id }}/hqdefault.jpg{%- endcapture -%}
-{% include lazy-frame.html
-  link=link
-  id=include.id
-  width="640"
-  height="360"
-  placeholder=placeholder
-  loadbutton-src="https://ik.imagekit.io/qn1gkawvy/web/youtube-logo.svg"
-%}
+{% include lazy-frame.html link=link id=include.id width="640" height="360" placeholder=placeholder loadbutton-src="https://ik.imagekit.io/qn1gkawvy/web/youtube-logo.svg" %}

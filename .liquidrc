@@ -1,0 +1,14 @@
+{
+  "engine": "jekyll",
+  "format": {
+    "ignore": [],
+    "preset": "recommended",
+    "wrap": 120,
+    "indentSize": 2,
+    "liquid": {
+      "indentAttribute": true,
+      "lineBreakSeparator": "before",
+      "quoteConvert": "double"
+    }
+  }
+}

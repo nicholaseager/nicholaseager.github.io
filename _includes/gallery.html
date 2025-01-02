@@ -1,87 +1,99 @@
 {%- if include.tags -%}
 
-{%- assign photos = "" | split: ',' -%}
-{%- for print in site.data.photos -%}
+  {%- assign photos = "" | split: "," -%}
+  {%- for print in site.data.photos -%}
     {%- assign tags = print.tags | split: " " -%}
     {%- assign should_include = "yes" -%}
     {%- for tag in include.tags -%}
-        {%- unless tags contains tag -%}
-            {%- assign should_include = "no" -%}
-        {%- endunless -%}
+      {%- unless tags contains tag -%}
+        {%- assign should_include = "no" -%}
+      {%- endunless -%}
     {%- endfor -%}
     {%- if should_include == "yes" -%}
-    {%- assign photos = photos | push: print.path -%}
+      {%- assign photos = photos | push: print.path -%}
     {%- endif -%}
-{%- endfor -%}
+  {%- endfor -%}
 
 {%- elsif include.photos -%}
 
-{%- assign photos = include.photos | strip | newline_to_br | strip_newlines | split: "<br />" -%}
+  {%- assign photos = include.photos
+    | strip
+    | newline_to_br
+    | strip_newlines
+    | split: "<br />" -%}
 
 {%- elsif include.photo_array -%}
 
-{%- assign photos = include.photo_array -%}
+  {%- assign photos = include.photo_array -%}
 
 {%- endif -%}
 
 <div class="gallery">
-    <div class="image-gallery-wrap">
-        <div class="image-gallery">
-            {%- for photo in photos limit:include.limit -%}
-            {%- assign path = photo | strip -%}
-            {%- assign parts = path | split: "/" -%}
-            {%- assign alt = parts.last | replace: "-", " " -%}
-            <a data-index="{{forloop.index}}" class="image-gallery-link" href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ path }}.jpg">
-                <img srcset="
+  <div class="image-gallery-wrap">
+    <div class="image-gallery">
+      {%- for photo in photos limit: include.limit -%}
+        {%- assign path = photo | strip -%}
+        {%- assign parts = path | split: "/" -%}
+        {%- assign alt = parts.last | replace: "-", " " -%}
+        <a
+          data-index="{{forloop.index}}"
+          class="image-gallery-link"
+          href="https://ik.imagekit.io/qn1gkawvy/tr:w-1500/{{ path }}.jpg">
+          <img
+            srcset="
                     https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ path }}.jpg 320w,
                     https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg 480w,
                     https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg 640w
-                    " sizes="100vw" src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg" alt="{{ alt }}" />
-            </a>
-            {%- endfor -%}
-        </div>
+                    "
+            sizes="100vw"
+            src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg"
+            alt="{{ alt }}" />
+        </a>
+      {%- endfor -%}
     </div>
-    <div class="image-gallery-swiper-container image-gallery-swiper-hidden">
-        <div class="image-gallery-swiper-backgound"></div>
-        <div
-            class="swiper image-gallery-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                {%- for photo in photos limit:include.limit -%}
-                {%- assign path = photo | strip -%}
-                {%- assign parts = path | split: "/" -%}
-                {%- assign alt = parts.last | replace: "-", " " -%}
-                <div class="swiper-slide" data-src="{{ path }}">
-                    <img
-                        srcset="
+  </div>
+  <div class="image-gallery-swiper-container image-gallery-swiper-hidden">
+    <div class="image-gallery-swiper-backgound"></div>
+    <div class="swiper image-gallery-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {%- for photo in photos limit: include.limit -%}
+          {%- assign path = photo | strip -%}
+          {%- assign parts = path | split: "/" -%}
+          {%- assign alt = parts.last | replace: "-", " " -%}
+          <div class="swiper-slide" data-src="{{ path }}">
+            <img
+              srcset="
                         https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ path }}.jpg 320w,
                         https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg 480w,
                         https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg 640w,
                         https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ path }}.jpg 960w,
                         https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ path }}.jpg 1280w,
                         "
-                        sizes="100vw"
-                        src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg"
-                        alt="{{ alt }}"
-                        loading="lazy"
-                    />
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                </div>
-                {%- endfor -%}
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <a class="swiper-close-button">
-            <i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i>
-        </a>
-        {%- if include.orderable -%}
-        <a href="{{ "/" | relative_url }}" data-prefix="{{ "/" | relative_url }}" class="button button--gallery order-prints">
-            Order Print
-            <i class="fas fa-shopping-cart"></i>
-        </a>
-        {%- endif -%}
+              sizes="100vw"
+              src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg"
+              alt="{{ alt }}"
+              loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    {% include seo/scripts/gallery.html photos=photos width=1280 limit=include.limit %}
+    <a class="swiper-close-button">
+      <i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i>
+    </a>
+    {%- if include.orderable -%}
+      <a
+        href="{{ "/" | relative_url }}"
+        data-prefix="{{ "/" | relative_url }}"
+        class="button button--gallery order-prints">
+        Order Print
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    {%- endif -%}
+  </div>
+  {% include seo/scripts/gallery.html photos=photos width=1280 limit=include.limit %}
 </div>

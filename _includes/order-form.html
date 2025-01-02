@@ -1,37 +1,69 @@
 <div class="eager-form-small">
-    <form method="post" action="https://formspree.io/f/mqkoakkg" id="order-form">
-        <label class="eager-form__title">Request a Print</label>
-        <p>No Commitment 🎉 I'll be in touch shortly after you fill out the form below.</p>
+  <form
+    method="post"
+    action="https://formspree.io/f/mqkoakkg"
+    id="order-form">
+    <label class="eager-form__title">Request a Print
+    </label>
+    <p>No Commitment 🎉 I'll be in touch shortly after you fill out the form below.
+    </p>
 
-        <div class="eager-form__item">
-            <label class="eager-form__label">Name *</label>
-            <input type="text" name="name" placeholder="Your name..." class="eager-form__input">
-        </div>
+    <div class="eager-form__item">
+      <label class="eager-form__label">Name *
+      </label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your name..."
+        class="eager-form__input">
+    </div>
 
-        <div class="eager-form__item">
-            <label class="eager-form__label">Email Address *</label>
-            <input type="text" name="email" placeholder="Your email address..." class="eager-form__input">
-        </div>
+    <div class="eager-form__item">
+      <label class="eager-form__label">Email Address *
+      </label>
+      <input
+        type="text"
+        name="email"
+        placeholder="Your email address..."
+        class="eager-form__input">
+    </div>
 
-        <div class="eager-form__item">
-            <label class="eager-form__label">Comments or Questions?</label>
-            <textarea name="message" placeholder="Your comments..." class="eager-form__textarea"></textarea>
-        </div>
+    <div class="eager-form__item">
+      <label class="eager-form__label">Comments or Questions?
+      </label>
+      <textarea
+        name="message"
+        placeholder="Your comments..."
+        class="eager-form__textarea"></textarea>
+    </div>
 
-        <input
-            type="hidden"
-            name="image"
-            value="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.path }}.jpg"
-        />
+    <input
+      type="hidden"
+      name="image"
+      value="https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ include.path }}.jpg" />
 
-        <input type="hidden" name="_next" value="/thanks" />
-        <input type="hidden" name="_subject" value="Order Prints" />
-        <input type="text" name="_gotcha" style="display: none;" class="eager-form__gotcha" val="">
+    <input
+      type="hidden"
+      name="_next"
+      value="/thanks" />
+    <input
+      type="hidden"
+      name="_subject"
+      value="Order Prints" />
+    <input
+      type="text"
+      name="_gotcha"
+      style="display: none;"
+      class="eager-form__gotcha"
+      val="">
 
-        <div class="eager-form__item">
-            <input type="submit" value="Request" class="button button--large">
-        </div>
+    <div class="eager-form__item">
+      <input
+        type="submit"
+        value="Request"
+        class="button button--large">
+    </div>
 
-    </form>
+  </form>
 
 </div>

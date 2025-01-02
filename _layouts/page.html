@@ -4,33 +4,38 @@ layout: default
 
 <section class="intro">
 
-	<div class="wrap">
+  <div class="wrap">
 
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.description }}</p>
+    <h1>
+      {{ page.title }}
+    </h1>
+    <p>
+      {{ page.description }}
+    </p>
 
-	</div>
+  </div>
 
 </section>
 
 <section class="single {% if page.toc %}table-of-contents-container{% endif %}">
 
-	{% if page.toc %}
-	<div id="table-of-contents">
-		<h2 id="table-of-contents">Table of Contents</h2>
-		<ol class="toc-list">
-			<!-- Generated in JS -->
-		</ol>
-	</div>
+  {% if page.toc %}
+    <div id="table-of-contents">
+      <h2 id="table-of-contents">Table of Contents
+      </h2>
+      <ol class="toc-list">
+        <!-- Generated in JS -->
+      </ol>
+    </div>
 
-	<hr>
+    <hr>
 
-	<div class="table-of-contents-content">
-		{{ page.content }}
-	</div>
+    <div class="table-of-contents-content">
+      {{ page.content }}
+    </div>
 
-	{% else %}
-	{{ page.content }}
-	{% endif %}
+  {% else %}
+    {{ page.content }}
+  {% endif %}
 
 </section>

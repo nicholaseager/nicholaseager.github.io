@@ -1,14 +1,16 @@
 <div class="banner">
-    <div class="banner__background">
-        {% include image.html src=include.image %}
+  <div class="banner__background">
+    {% include image.html src=include.image %}
+  </div>
+  <div class="banner__container">
+    <div class="banner__background__shading"></div>
+    <div class="banner__container__content">
+      <h2 class="title">
+        {{ include.title }}
+      </h2>
+      <a href="#content">
+        {% include banner-arrow.html %}
+      </a>
     </div>
-    <div class="banner__container">
-        <div class="banner__background__shading"></div>
-        <div class="banner__container__content">
-            <h2 class="title">{{ include.title }}</h2>
-            <a href="#content">
-                {% include banner-arrow.html %}
-            </a>
-        </div>
-    </div>
+  </div>
 </div>

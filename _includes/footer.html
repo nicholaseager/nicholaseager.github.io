@@ -1,28 +1,35 @@
 <footer class="footer">
 
-	<div class="wrap">
+  <div class="wrap">
 
-		<div class="footer__content">
+    <div class="footer__content">
 
-			<p class="footer__text">{{ site.data.settings.footer_settings.footer_tagline }}</p>
+      <p class="footer__text">
+        {{ site.data.settings.footer_settings.footer_tagline }}
+      </p>
 
-			<div class="footer__copyright">
-				<span>All Media © 2015-{{ 'now' | date: "%Y" }} {{ site.data.settings.basic_settings.site_title }}. All rights reserved.</span>
-			</div>
+      <div class="footer__copyright">
+        <span>All Media © 2015-{{ "now" | date: "%Y" }} {{ site.data.settings.basic_settings.site_title }}. All rights reserved.
+        </span>
+      </div>
 
-			<div class="links">
-				<span>
-					{%- for item in site.data.settings.menu_settings.footer_items -%}
-					<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-					{% unless forloop.last %} • {% endunless %}
-					{%- endfor -%}
-				</span>
-			</div>
+      <div class="links">
+        <span>
+          {%- for item in site.data.settings.menu_settings.footer_items -%}
+            <a href="{{ item.url | relative_url }}">
+              {{ item.title }}
+            </a>
+            {% unless forloop.last %}
+              •
+            {% endunless %}
+          {%- endfor -%}
+        </span>
+      </div>
 
-			{% include socials.html %}
+      {% include socials.html %}
 
-		</div>
+    </div>
 
-	</div>
+  </div>
 
 </footer>

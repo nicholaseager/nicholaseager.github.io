@@ -3,28 +3,36 @@ layout: default
 ---
 
 <section class="section__banner">
-	{% include banner.html image=page.image title=page.title %}
+  {% include banner.html image=page.image title=page.title %}
 </section>
 
 <section id="content" class="single">
-	<blockquote>{{ page.description }}</blockquote>
-    {% if page.tags %}
-	<h2>Gallery</h2>
-	{% include gallery.html
-		orderable=true
-		tags=page.tags
-	%}
-	{% endif %}
+  <blockquote>
+    {{ page.description }}
+  </blockquote>
+  {% if page.tags %}
+    <h2>Gallery
+    </h2>
+    {% include gallery.html 	orderable=true 	tags=page.tags %}
+  {% endif %}
 
-	{%- assign films = site.data.films | where_exp:"film", "page.tags contains film.tags" | reverse -%}
-	{% for film in films limit:1 %}
-		<h2>Latest Film in {{page.title}}</h2>
-		{% include youtube.html
-			id=film.id
-		%}
-		<p>Want to come along? <a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g?sub_confirmation=1" target="_blank">Subscribe to my channel</a> on YouTube.</p>
-		<p><a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g" class="button button--small">Explore All Film</a></p>
-	{% endfor %}
+  {%- assign films = site.data.films
+    | where_exp: "film", "page.tags contains film.tags"
+    | reverse -%}
+  {% for film in films limit: 1 %}
+    <h2>Latest Film in {{ page.title }}
+    </h2>
+    {% include youtube.html 	id=film.id %}
+    <p>Want to come along?
+      <a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g?sub_confirmation=1" target="_blank">Subscribe to my channel
+      </a>
+      on YouTube.
+    </p>
+    <p>
+      <a href="https://www.youtube.com/channel/UCv-z2Q0Ucx8lxq8mvYRK28g" class="button button--small">Explore All Film
+      </a>
+    </p>
+  {% endfor %}
 
-	{{ page.content }}
+  {{ page.content }}
 </section>

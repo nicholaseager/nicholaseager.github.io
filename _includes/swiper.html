@@ -1,30 +1,33 @@
-{% assign photos = include.photos | strip | newline_to_br | strip_newlines | split: "<br />" %}
+{% assign photos = include.photos
+  | strip
+  | newline_to_br
+  | strip_newlines
+  | split: "<br />" %}
 {% assign class = include.class | default: "single-line-swiper" %}
 
 <div class="swiper {{ class }} swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      {% for photo in photos %}
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    {% for photo in photos %}
       {% assign path = photo | strip %}
       {% assign parts = path | split: "/" %}
       {% assign alt = parts.last | replace: "-", " " %}
       <div class="swiper-slide">
         <img
-            style="aspect-ratio: 3/2;width: 100%;object-fit: cover;background-color: lightgrey;"
-            data-srcset="
+          style="aspect-ratio: 3/2;width: 100%;object-fit: cover;background-color: lightgrey;"
+          data-srcset="
               https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ path }}.jpg 320w,
               https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg 480w,
               https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg 640w,
               https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ path }}.jpg 960w,
               https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ path }}.jpg 1280w,
             "
-            sizes="100vw"
-            data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg"
-            class="swiper-lazy"
-            alt="{{ alt }}"
-        />
+          sizes="100vw"
+          data-src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg"
+          class="swiper-lazy"
+          alt="{{ alt }}" />
       </div>
-      {% endfor %}
-    </div>
-    {% include seo/scripts/gallery.html photos=photos width=1280 limit=include.limit %}
+    {% endfor %}
   </div>
+  {% include seo/scripts/gallery.html photos=photos width=1280 limit=include.limit %}
+</div>

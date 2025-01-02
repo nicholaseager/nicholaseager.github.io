@@ -3,10 +3,12 @@ layout: default
 ---
 
 <section class="section__banner">
-	{% include banner.html image=page.image title=page.title %}
+  {% include banner.html image=page.image title=page.title %}
 </section>
 
 <section id="content" class="single">
-	<blockquote>{{ page.description }}</blockquote>
-	{{ page.content }}
+  <blockquote>
+    {{ page.description }}
+  </blockquote>
+  {{ page.content }}
 </section>

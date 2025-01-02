@@ -1,34 +1,38 @@
 <div class="outside-swiper-wrap">
-    <div class="swiper collection-swiper">
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            {% for post in include.items limit:include.limit %}
-            <div class="swiper-slide">
-                <article class="collection-item">
-    
-                    <a href="{{ post.url | relative_url }}">
-    
-                        <div class="collection-item-image">
-                            {% assign post_image = post.image | relative_url %}
-                            {% include gallery-image.html src=post_image alt=post.title %}
-                        </div>
-    
-                        <div class="collection-item-content">
-                            <div>
-                                <div class="collection-item-title">{{ post.title }}</div>
-                                <div class="collection-item-subtitle">{{ post.description }}</div>
-                            </div>
-                        </div>
-    
-                    </a>
-    
-                </article>
-            </div>
-            {% endfor %}
+  <div class="swiper collection-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {% for post in include.items limit: include.limit %}
+        <div class="swiper-slide">
+          <article class="collection-item">
+
+            <a href="{{ post.url | relative_url }}">
+
+              <div class="collection-item-image">
+                {% assign post_image = post.image | relative_url %}
+                {% include gallery-image.html src=post_image alt=post.title %}
+              </div>
+
+              <div class="collection-item-content">
+                <div>
+                  <div class="collection-item-title">
+                    {{ post.title }}
+                  </div>
+                  <div class="collection-item-subtitle">
+                    {{ post.description }}
+                  </div>
+                </div>
+              </div>
+
+            </a>
+
+          </article>
         </div>
+      {% endfor %}
     </div>
-    <div class="swiper-pagination swiper-pagination-outside"></div>
-    <div class="swiper-button-prev swiper-button-prev-outside"></div>
-    <div class="swiper-button-next swiper-button-next-outside"></div>
+  </div>
+  <div class="swiper-pagination swiper-pagination-outside"></div>
+  <div class="swiper-button-prev swiper-button-prev-outside"></div>
+  <div class="swiper-button-next swiper-button-next-outside"></div>
 </div>
 {%- include seo/scripts/navigation.html items=include.items limit=include.limit -%}

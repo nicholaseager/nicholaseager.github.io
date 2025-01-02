@@ -1,29 +1,37 @@
-{% assign photos = include.photos | strip | newline_to_br | strip_newlines | split: "<br />" %}
+{% assign photos = include.photos
+  | strip
+  | newline_to_br
+  | strip_newlines
+  | split: "<br />" %}
 <div class="outside-swiper-wrap">
-    <div class="swiper single-swiper post-swiper">
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            {%- for photo in photos limit:include.limit -%}
-            {%- assign path = photo | strip -%}
-            {%- assign parts = path | split: "/" -%}
-            {%- assign alt = parts.last | replace: "-", " " -%}
-            <div class="swiper-slide">
-                <!-- To enable accurate TOC jumping, set the aspect ratio before loading -->
-                <img srcset="
+  <div class="swiper single-swiper post-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {%- for photo in photos limit: include.limit -%}
+        {%- assign path = photo | strip -%}
+        {%- assign parts = path | split: "/" -%}
+        {%- assign alt = parts.last | replace: "-", " " -%}
+          <div class="swiper-slide">
+            <!-- To enable accurate TOC jumping, set the aspect ratio before loading -->
+          <img
+            srcset="
                                     https://ik.imagekit.io/qn1gkawvy/tr:w-320/{{ path }}.jpg 320w,
                                     https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg 480w,
                                     https://ik.imagekit.io/qn1gkawvy/tr:w-640/{{ path }}.jpg 640w,
                                     https://ik.imagekit.io/qn1gkawvy/tr:w-960/{{ path }}.jpg 960w,
                                     https://ik.imagekit.io/qn1gkawvy/tr:w-1280/{{ path }}.jpg 1280w,
-                                    " sizes="100vw" src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg"
-                    alt="{{ alt }}" loading="lazy" />
-                <div class="swiper-lazy-preloader"></div>
-            </div>
-            {%- endfor -%}
+                                    "
+            sizes="100vw"
+            src="https://ik.imagekit.io/qn1gkawvy/tr:w-480/{{ path }}.jpg"
+            alt="{{ alt }}"
+            loading="lazy" />
+          <div class="swiper-lazy-preloader"></div>
         </div>
+      {%- endfor -%}
     </div>
-    <div class="swiper-pagination swiper-pagination-outside"></div>
-    <div class="swiper-button-prev swiper-button-prev-outside"></div>
-    <div class="swiper-button-next swiper-button-next-outside"></div>
-    {% include seo/scripts/gallery.html photos=photos width=480 %}
+  </div>
+  <div class="swiper-pagination swiper-pagination-outside"></div>
+  <div class="swiper-button-prev swiper-button-prev-outside"></div>
+  <div class="swiper-button-next swiper-button-next-outside"></div>
+  {% include seo/scripts/gallery.html photos=photos width=480 %}
 </div>

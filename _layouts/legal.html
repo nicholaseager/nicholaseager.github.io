@@ -4,26 +4,32 @@ layout: default
 
 <section class="intro">
 
-	<div class="wrap">
+  <div class="wrap">
 
-		<h1>{{ page.title }}</h1>
-		<p><i>Last updated {{ page.date | date_to_long_string }}</i></p>
+    <h1>
+      {{ page.title }}
+    </h1>
+    <p>
+      <i>Last updated {{ page.date | date_to_long_string }}
+      </i>
+    </p>
 
-	</div>
+  </div>
 
 </section>
 
 <section id="content" class="single table-of-contents-container">
-	<div id="table-of-contents">
-		<h2 id="table-of-contents">Table of Contents</h2>
-		<ol class="toc-list">
-			<!-- Generated in JS -->
-		</ol>
-	</div>
+  <div id="table-of-contents">
+    <h2 id="table-of-contents">Table of Contents
+    </h2>
+    <ol class="toc-list">
+      <!-- Generated in JS -->
+    </ol>
+  </div>
 
-	<hr>
+  <hr>
 
-	<div class="table-of-contents-content">
-		{{ page.content }}
-	</div>
+  <div class="table-of-contents-content">
+    {{ page.content }}
+  </div>
 </section>
