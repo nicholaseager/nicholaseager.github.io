@@ -36,7 +36,7 @@ Go from June to August if you want great weather. Go in September or October if 
 
 ## How to Get to The Trail
 
-You can take a train from Milan or Genoa, depending on where you are coming from. Milan has a well-connected international airport. But you would have to take one train from the airport into the city center, and then another train to Cinque Terre. If you fly into Genoa, you can take the train towards La Spezia, and then get off at any of the five villages. Because we were already in Milan Center, we booked a direct train to Levanto with <a href="https://www.trenitalia.com/en.html" target="_blank">Trenitalia</a>. 
+You can take a train from Milan or Genoa, depending on where you are coming from. Milan has a well-connected international airport. But you would have to take one train from the airport into the city center, and then another train to Cinque Terre. If you fly into Genoa, you can take the train towards La Spezia, and then get off at any of the five villages. Because we were already in Milan Center, we booked a direct train to Levanto with <a href="https://www.trenitalia.com/en.html" target="_blank">Trenitalia</a>.
 
 ## Where You Should Stay
 
@@ -46,7 +46,7 @@ If you want to beat the crowds, you’ll have to get up early. We decided to spe
 
 ## How to Plan Your Run Through Cinque Terre
 
-Since I was starting in Levanto and wanted to make it to La Spezia, I woke up at 4am. Crowds of people start to get out on the popular trails (Monterosso to Vernazza to Cornigilia) around 9am. Pro tip: these popular trails have toll booths where you need to pay a fee. However, they aren’t occupied before 9am. So basically, make it to Cornigilia before 9am to beat the crowds and the fees. 
+Since I was starting in Levanto and wanted to make it to La Spezia, I woke up at 4am. Crowds of people start to get out on the popular trails (Monterosso to Vernazza to Cornigilia) around 9am. Pro tip: these popular trails have toll booths where you need to pay a fee. However, they aren’t occupied before 9am. So basically, make it to Cornigilia before 9am to beat the crowds and the fees.
 
 ## How to Navigate While Trail Running
 
@@ -59,7 +59,7 @@ Since I was starting in Levanto and wanted to make it to La Spezia, I woke up at
     "
 %}
 
-The trails are really well-marked. You have signs to the next city at most intersections. The trails are also blazed with symbols and numbers. In the case that you get lost, you can use <a href="https://maps.me/" target="_blank">maps.me</a> to find your way. 
+The trails are really well-marked. You have signs to the next city at most intersections. The trails are also blazed with symbols and numbers. In the case that you get lost, you can use <a href="https://maps.me/" target="_blank">maps.me</a> to find your way.
 
 ## Finding Water and Bringing Food
 
@@ -67,13 +67,13 @@ The trails are really well-marked. You have signs to the next city at most inter
 
 Water and food are the most important considerations when you're trail running. Water is easy to come by if you don’t mind drinking tap water. All of the cities have water fountains in the center. I filled up at Vernazza, Corniglia, and Riomaggiore. For food, there are supermarkets and bakeries in all the cities. But I’d recommend bringing some with you if you can. Depending on how early to leave, the supermarkets and bakeries might not be open. I brought a banana, some bread, and a few energy gels (carbohydrates and sugars).
 
-## Cost 
+## Cost
 
-* Camping for one night - €21
-* Train from Milan to Levanto - €26
-* Train from La Spezia to Levanto - €5
-* Food during the run - €12
-* Witnessing the beauty of Cinque Terre without crowds - Priceless
+- Camping for one night - €21
+- Train from Milan to Levanto - €26
+- Train from La Spezia to Levanto - €5
+- Food during the run - €12
+- Witnessing the beauty of Cinque Terre without crowds - Priceless
 
 As you can see, the costs of trail running in Cinque Terre are quite minimal. Of course, these are only the basics. We bought pizza, gelato, and beer after the run. Optional, but recommended of course :)
 

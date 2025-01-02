@@ -18,7 +18,7 @@ Starting off with by motorcycle in Yogyakarta, I drove a few hours North to wher
 
 ## Pacitan
 
-In between all of the strenuous hiking and climbing, were the more relaxing and peaceful times where you could just sit back on a bike and watch the scenery roll by. Driving through Java in Indonesia was full of mountainous areas, beach areas, and small villages.  After Merbabu, I made my way towards Pacitan, a small beach and fishing town. I explored the nearby beaches and harbors, and then camped on the beach.
+In between all of the strenuous hiking and climbing, were the more relaxing and peaceful times where you could just sit back on a bike and watch the scenery roll by. Driving through Java in Indonesia was full of mountainous areas, beach areas, and small villages. After Merbabu, I made my way towards Pacitan, a small beach and fishing town. I explored the nearby beaches and harbors, and then camped on the beach.
 
 ## Semeru
 

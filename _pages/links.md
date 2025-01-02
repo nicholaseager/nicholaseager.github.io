@@ -6,9 +6,11 @@ sitemap: false
 {% include image.html src="profile-square_7r8XDOfQj" class="profile-image" %}
 
 #### Latest YouTube
+
 {% include latest-youtube.html %}
 
 #### Latest Travel Guides
+
 {% assign guides = site.guides | reverse %}
 {% include latest-collection.html items=guides %}
 

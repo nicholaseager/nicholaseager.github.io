@@ -18,6 +18,6 @@ Buses would also stop frequently to let passengers off at a village, or to take 
 
 In addition to being overly scary while riding, buses and their schedules were entirely unpredictable. It seemed as if a bus left when the driver felt like leaving. The local bus that took us to Kathmandu for our break (pictured above), left at 07:30. But this could mean 07:00, 07:30, 08:00, or even 09:00.
 
-When getting ready to leave for a break back in Kathmandu, the bus left early, leaving us stranded. After much deliberation,  a fellow volunteer and I ended up walking the 33 km back to Kathmandu, which turned into one of my favorite experiences there.
+When getting ready to leave for a break back in Kathmandu, the bus left early, leaving us stranded. After much deliberation, a fellow volunteer and I ended up walking the 33 km back to Kathmandu, which turned into one of my favorite experiences there.
 
 Despite all of the chaos surrounding Nepal buses, they were a crucial aspect of my adventures in Nepal. If I got another chance to ride a Nepali bus, I would jump on it immediately.

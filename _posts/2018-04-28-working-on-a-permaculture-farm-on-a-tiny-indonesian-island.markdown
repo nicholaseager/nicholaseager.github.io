@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Working on a Permaculture Farm on A Tiny Indonesian Island"
-date:   2018-04-28
+title: 'Working on a Permaculture Farm on A Tiny Indonesian Island'
+date: 2018-04-28
 categories: travel indonesia
 description: Understanding the methods behind permaculture, learning about all sorts of tropical plants, and helping take down the monoculture industry.
 image: photos/countries/indonesia/bintan/bamboo-house-on-a-farm

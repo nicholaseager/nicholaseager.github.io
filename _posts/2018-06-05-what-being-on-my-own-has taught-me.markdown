@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "What Being On My Own Has Taught Me"
-date:   2018-06-05
+title: 'What Being On My Own Has Taught Me'
+date: 2018-06-05
 categories: travel
 description: Pondering how my experiences volunteering, traveling, and adventuring around the world changed me as a person.
 image: photos/countries/nepal/volunteering/two-people-looking-at-the-mountains-sunset

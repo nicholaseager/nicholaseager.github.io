@@ -26,7 +26,7 @@ Upon landing in Ho Chi Minh City and going through immigration, I was asked only
 
 ## Quarantine
 
- As a foreigner, I was required to stay at a "government approved" hotel instead of the quarantine complex Vietnamese citizens used. The hotels seemed to be "approved" based on their relationship with the government or how much they bribed. As a foreigner, we pay nearly $1500 for two weeks of quarantine, while the complex is free. Staying at the quarantine hotel was pretty normal, for the first two days. I had a daily routine of eating, studying Vietnamese, working on editing a video, and working out. After the second day, there was a power surge that fried my laptop. I didn't bring any books or anything else to do for the next 12 days. So I had to be a bit creative to not lose my mind.
+As a foreigner, I was required to stay at a "government approved" hotel instead of the quarantine complex Vietnamese citizens used. The hotels seemed to be "approved" based on their relationship with the government or how much they bribed. As a foreigner, we pay nearly $1500 for two weeks of quarantine, while the complex is free. Staying at the quarantine hotel was pretty normal, for the first two days. I had a daily routine of eating, studying Vietnamese, working on editing a video, and working out. After the second day, there was a power surge that fried my laptop. I didn't bring any books or anything else to do for the next 12 days. So I had to be a bit creative to not lose my mind.
 
 {% include gallery.html
     photos="
