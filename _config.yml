@@ -1,7 +1,7 @@
 site: Nicholas Eager
 
 url: https://nicholaseager.com
-baseurl: 
+baseurl:
 
 collections:
   pages:
@@ -21,23 +21,20 @@ collections:
     permalink: /galleries/:slug
 
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
+      path: ''
     values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
+      layout: 'default'
+  - scope:
+      path: ''
+      type: 'pages'
     values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
+      layout: 'page'
+  - scope:
+      path: ''
+      type: 'posts'
     values:
-      layout: "post"
+      layout: 'post'
 
 author:
   name: Nicholas Eager
@@ -64,7 +61,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  
+
 sass:
   style: compressed
 
@@ -74,7 +71,7 @@ plugins:
   - jekyll-redirect-from
 
 paginate: 10
-paginate_path: "/blog/page:num/"
+paginate_path: '/blog/page:num/'
 
 grid_alignments:
   - top
