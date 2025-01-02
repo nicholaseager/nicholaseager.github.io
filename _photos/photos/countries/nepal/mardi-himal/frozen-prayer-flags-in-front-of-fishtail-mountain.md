@@ -8,9 +8,9 @@ location: Mardi Himal, Nepal
 description: Tibetan prayer flags are a beautiful sight, fluttering in the breeze and filling the air with the energy of positive intentions and blessings. This photo was captured on a short hike at the base of the Annapurna mountain range.
 tags: ["nepal", "landscapes", "adventure", "mountains", "showcase"]
 darkroomid: 881328
+
 ---
 
 <!--    This YAML front matter is auto-generated.
         Do not edit it directly, but instead edit the CSV (_data/photos.csv)
-        and regenerate the site (see `_scripts/photos_to_yaml.py`). -->
-        
+        and regenerate the site. -->

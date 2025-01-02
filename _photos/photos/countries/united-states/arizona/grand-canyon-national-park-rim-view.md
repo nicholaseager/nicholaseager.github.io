@@ -7,10 +7,10 @@ title: Grand Canyon National Park Rim View
 location: Arizona, United States
 description: Grand Canyon National Park Rim View (Arizona, United States)
 tags: ["united-states", "landscapes"]
+
 youtubeid: Rp4V6waPRZo
 ---
 
 <!--    This YAML front matter is auto-generated.
         Do not edit it directly, but instead edit the CSV (_data/photos.csv)
-        and regenerate the site (see `_scripts/photos_to_yaml.py`). -->
-        
+        and regenerate the site. -->

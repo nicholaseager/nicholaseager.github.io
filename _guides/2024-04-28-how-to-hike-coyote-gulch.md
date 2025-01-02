@@ -7,12 +7,11 @@ date: 2024-04-28
 modified_date: 2024-05-11
 description: A comprehensive hiking guide for Coyote Gulch in the heart of Utah
 image: photos/countries/united-states/utah/coyote-gulch/hiker-standing-red-sandstone-cliff-blue-sky
-tags: ["united-states", "utah", "canyon", "desert", "hiking"]
+tags: ["united-states","utah","canyon","desert","hiking"]
 guide: how-to-hike-coyote-gulch
 redirect_from: /g/coyote-gulch
 ---
 
 <!--    This YAML front matter is auto-generated.
         Do not edit it directly, but instead edit the json (_data/guides/how-to-hike-coyote-gulch.json)
-        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
-            
+        and regenerate the site. -->

@@ -7,12 +7,11 @@ date: 2022-12-19
 modified_date: 2023-01-12
 description: Everything you need to know about hiking and mountain huts in Italy
 image: photos/countries/italy/dolomites/locatelli-hut-tre-cime-sheep
-tags: ["italy", "hut-to-hut", "hiking", "dolomites"]
+tags: ["italy","hut-to-hut","hiking","dolomites"]
 guide: mountain-hut-to-hut-hiking-in-italy
 redirect_from: /g/mountain-huts
 ---
 
 <!--    This YAML front matter is auto-generated.
         Do not edit it directly, but instead edit the json (_data/guides/mountain-hut-to-hut-hiking-in-italy.json)
-        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
-            
+        and regenerate the site. -->

@@ -7,12 +7,11 @@ date: 2023-01-09
 modified_date: 2023-12-20
 description: Everything you need to know about going on a Safari in Tanzania
 image: photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset
-tags: ["tanzania", "africa", "safari"]
+tags: ["tanzania","africa","safari"]
 guide: how-to-go-on-a-safari-in-tanzania
 redirect_from: /g/tanzania
 ---
 
 <!--    This YAML front matter is auto-generated.
         Do not edit it directly, but instead edit the json (_data/guides/how-to-go-on-a-safari-in-tanzania.json)
-        and regenerate the site (see `_scripts/guides_to_yaml.py`). -->
-            
+        and regenerate the site. -->

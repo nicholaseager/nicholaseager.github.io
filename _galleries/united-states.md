@@ -10,5 +10,4 @@ image: photos/countries/united-states/wyoming/cascading-rocky-mountains-at-dawn
 
 <!--    This YAML front matter is auto-generated.
         Do not edit it directly, but instead edit the CSV (_data/galleries.csv)
-        and regenerate the site (see `_scripts/photos_to_yaml.py`). -->
-        
+        and regenerate the site. -->
