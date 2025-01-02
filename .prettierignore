@@ -6,13 +6,17 @@
 # Plugin files
 js/plugins/**/*.js
 
-# Data files
-_data/**
-
 # Auto-generated content
 _photos/**
 _galleries/**
 _guides/**
+_data/metadata/**
+
+_data/films.csv
+_data/galleries.csv
+_data/gear.csv
+_data/photos.csv
+_data/testimonials.csv
 
 # Jekyll generated files
 _site/**

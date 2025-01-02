@@ -1,217 +1,215 @@
 {
-    "title": "How to Write a Travel Hiking Guide",
-    "date": "2022-08-07",
-    "modified_date": "2023-01-12",
-    "description": "Everything you need to know about writing a travel hiking guide",
-    "image": "photos/countries/nepal/mardi-himal/annapurna-mountain-range-at-sunrise",
-    "tags": [
-        "guide"
-    ],
-    "short_name": "my-guide",
-    "youtube": "Rp4V6waPRZo",
-    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur venenatis sem et semper. Aliquam porttitor accumsan nibh ac imperdiet. Ut sem sem, fringilla eu elementum in, faucibus quis mauris. Aenean quis ex elit. Ut aliquam dui viverra, imperdiet ex eu, ultrices tellus. Vestibulum malesuada faucibus tincidunt. Integer pellentesque consequat mauris id scelerisque. Donec eu magna nec quam convallis varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sollicitudin cursus arcu, cursus vestibulum nisl ultricies non. Donec et suscipit magna.",
-    "conclusion": "Integer a rhoncus nisl. Pellentesque arcu lorem, pulvinar a commodo in, pharetra ac orci. Suspendisse cursus eu orci in commodo. Aenean semper tempor rhoncus. Praesent eget finibus ipsum. Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis. Phasellus imperdiet ipsum quam, sit amet scelerisque felis tempus ac. Vivamus auctor semper quam quis dictum. Phasellus imperdiet sagittis volutpat.",
-    "links": [
-        {
-            "title": "Photo Gallery",
-            "url": "/galleries/tanzania"
-        },
-        {
-            "title": "Gear List",
-            "url": "/gear"
-        }
-    ],
-    "map": {
-        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
-        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "id": "1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc"
+  "title": "How to Write a Travel Hiking Guide",
+  "date": "2022-08-07",
+  "modified_date": "2023-01-12",
+  "description": "Everything you need to know about writing a travel hiking guide",
+  "image": "photos/countries/nepal/mardi-himal/annapurna-mountain-range-at-sunrise",
+  "tags": ["guide"],
+  "short_name": "my-guide",
+  "youtube": "Rp4V6waPRZo",
+  "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur venenatis sem et semper. Aliquam porttitor accumsan nibh ac imperdiet. Ut sem sem, fringilla eu elementum in, faucibus quis mauris. Aenean quis ex elit. Ut aliquam dui viverra, imperdiet ex eu, ultrices tellus. Vestibulum malesuada faucibus tincidunt. Integer pellentesque consequat mauris id scelerisque. Donec eu magna nec quam convallis varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sollicitudin cursus arcu, cursus vestibulum nisl ultricies non. Donec et suscipit magna.",
+  "conclusion": "Integer a rhoncus nisl. Pellentesque arcu lorem, pulvinar a commodo in, pharetra ac orci. Suspendisse cursus eu orci in commodo. Aenean semper tempor rhoncus. Praesent eget finibus ipsum. Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis. Phasellus imperdiet ipsum quam, sit amet scelerisque felis tempus ac. Vivamus auctor semper quam quis dictum. Phasellus imperdiet sagittis volutpat.",
+  "links": [
+    {
+      "title": "Photo Gallery",
+      "url": "/galleries/tanzania"
     },
-    "basics": {
-        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
-        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "items": [
-            {
-                "title": "Basic 1",
-                "description": "Curabitur purus dui, volutpat nec quam ac, sollicitudin dictum nibh. Nunc luctus lorem risus, ac ultricies quam tempor a. Proin odio dui, tincidunt ut feugiat ac, vehicula et velit. Cras vehicula eget massa et viverra."
-            },
-            {
-                "title": "Basic 2",
-                "description": "Fusce id nisi nec justo fermentum dictum tincidunt euismod nibh. Nulla auctor sem ac massa ultricies, et pharetra metus posuere."
-            },
-            {
-                "title": "Basic 3",
-                "description": "Cras vehicula eget massa et viverra. Aliquam erat volutpat. Etiam lobortis sed turpis et tristique. Duis imperdiet quam vel suscipit rhoncus."
-            }
-        ]
-    },
-    "useful_info": {
-        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
-        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "items": [
-            {
-                "title": "Useful Info 1",
-                "description": "Curabitur purus dui, volutpat nec quam ac, sollicitudin dictum nibh. Nunc luctus lorem risus, ac ultricies quam tempor a. Proin odio dui, tincidunt ut feugiat ac, vehicula et velit. Cras vehicula eget massa et viverra."
-            },
-            {
-                "title": "Useful Info 2",
-                "description": "Fusce id nisi nec justo fermentum dictum tincidunt euismod nibh. Nulla auctor sem ac massa ultricies, et pharetra metus posuere."
-            },
-            {
-                "title": "Useful Info 3",
-                "description": "Cras vehicula eget massa et viverra. Aliquam erat volutpat. Etiam lobortis sed turpis et tristique. Duis imperdiet quam vel suscipit rhoncus."
-            }
-        ]
-    },
-    "gear": {
-        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
-        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "items": [
-            {
-                "title": "Proin dignissim augue diam",
-                "description": "Praesent eget finibus ipsum. Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis."
-            },
-            {
-                "title": "Donec dapibus pretium felis"
-            },
-            {
-                "title": "Sed leo eros, mattis in lorem in",
-                "description": "Sed viverra eu sapien malesuada mattis. Aenean ac pretium ex. Sed congue magna congue dolor pretium, ut rutrum nunc suscipit. Morbi consectetur sem ullamcorper odio feugiat, ac egestas ante pellentesque."
-            },
-            {
-                "title": "Sit amet bibendum dui imperdiet"
-            }
-        ]
-    },
-    "weather": {
-        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
-        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "seasons": [
-            {
-                "title": "Spring",
-                "description": "Curabitur purus dui, volutpat nec quam ac, sollicitudin dictum nibh. Nunc luctus lorem risus, ac ultricies quam tempor a. Proin odio dui, tincidunt ut feugiat ac, vehicula et velit. Cras vehicula eget massa et viverra."
-            },
-            {
-                "title": "Autumn",
-                "description": "Fusce id nisi nec justo fermentum dictum tincidunt euismod nibh. Nulla auctor sem ac massa ultricies, et pharetra metus posuere."
-            },
-            {
-                "title": "Winter",
-                "description": "Cras vehicula eget massa et viverra. Aliquam erat volutpat. Etiam lobortis sed turpis et tristique. Duis imperdiet quam vel suscipit rhoncus."
-            },
-            {
-                "title": "Summer",
-                "description": "Fusce id nisi nec justo fermentum dictum tincidunt euismod nibh. Nulla auctor sem ac massa ultricies, et pharetra metus posuere."
-            }
-        ]
-    },
-    "itinerary": {
-        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
-        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "units": {
-            "distance": "Distance",
-            "elevation": "Elevation"
-        },
-        "phases": [
-            {
-                "title": "Proin dignissim augue diam",
-                "description": "Praesent eget finibus ipsum. Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis.",
-                "distance": 160,
-                "elevation": 700
-            },
-            {
-                "title": "Donec dapibus pretium felis",
-                "distance": 160,
-                "elevation": 700
-            },
-            {
-                "title": "Sed leo eros, mattis in lorem in",
-                "description": "Sed viverra eu sapien malesuada mattis. Aenean ac pretium ex. Sed congue magna congue dolor pretium, ut rutrum nunc suscipit. Morbi consectetur sem ullamcorper odio feugiat, ac egestas ante pellentesque.",
-                "distance": 160,
-                "elevation": 700
-            },
-            {
-                "title": "Sit amet bibendum dui imperdiet",
-                "distance": 160,
-                "elevation": 700
-            }
-        ]
-    },
-    "highlights": {
-        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
-        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "items": [
-            {
-                "title": "Integer a rhoncus nisl",
-                "description": "Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis.",
-                "images": [
-                    "photos/countries/nepal/manaslu-circuit/sereng-monastery",
-                    "photos/countries/nepal/manaslu-circuit/tall-mountains-in-clouds",
-                    "photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind",
-                    "photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery",
-                    "photos/countries/nepal/manaslu-circuit/moonrise-over-himalayas"
-                ]
-            },
-            {
-                "title": "Pellentesque arcu lorem",
-                "description": "Mauris magna diam, eleifend et pharetra ut, rutrum et ante. Sed a enim urna. Proin ultrices, purus quis lobortis finibus, urna quam porta massa, vel euismod est elit vitae lectus. Donec rhoncus elit tempus purus dictum, ac blandit magna porta. In massa ligula, bibendum eget diam eget, fringilla posuere dui.",
-                "images": [
-                    "photos/countries/nepal/manaslu-circuit/three-people-drinking-tea-on-a-frozen-lake",
-                    "photos/countries/nepal/manaslu-circuit/two-puppies-cuddling-in-the-dirt",
-                    "photos/countries/nepal/manaslu-circuit/mountain-ridge-at-sunrise",
-                    "photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset",
-                    "photos/countries/nepal/manaslu-circuit/samagaon-village-stupa",
-                    "photos/countries/nepal/manaslu-circuit/samagaon-village-houses"
-                ]
-            }
-        ]
-    },
-    "cost": {
-        "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
-        "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
-        "items": [
-            {
-                "title": "Proin dignissim augue diam",
-                "description": "Praesent eget finibus ipsum. Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis.",
-                "cost": "$5"
-            },
-            {
-                "title": "Donec dapibus pretium felis",
-                "cost": "$5"
-            },
-            {
-                "title": "Sed leo eros, mattis in lorem in",
-                "description": "Sed viverra eu sapien malesuada mattis. Aenean ac pretium ex. Sed congue magna congue dolor pretium, ut rutrum nunc suscipit. Morbi consectetur sem ullamcorper odio feugiat, ac egestas ante pellentesque.",
-                "cost": "$5"
-            },
-            {
-                "title": "Sit amet bibendum dui imperdiet",
-                "cost": "$5"
-            }
-        ]
-    },
-    "extra_sections": [
-        {
-            "title": "Extra Section 1",
-            "id": "es 1",
-            "description": "In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis. Phasellus imperdiet ipsum quam, sit amet scelerisque felis tempus ac."
-        },
-        {
-            "title": "Extra Section 2",
-            "id": "es 2",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur venenatis sem et semper. Aliquam porttitor accumsan nibh ac imperdiet. Ut sem sem, fringilla eu elementum in, faucibus quis mauris. Aenean quis ex elit. Ut aliquam dui viverra, imperdiet ex eu, ultrices tellus.",
-            "images": [
-                "photos/countries/nepal/manaslu-circuit/sereng-monastery",
-                "photos/countries/nepal/manaslu-circuit/tall-mountains-in-clouds",
-                "photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind",
-                "photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery",
-                "photos/countries/nepal/manaslu-circuit/moonrise-over-himalayas"
-            ],
-            "sections": [
-                {
-                    "title": "Extra Sub-Section 1",
-                    "description": "In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis. Phasellus imperdiet ipsum quam, sit amet scelerisque felis tempus ac."
-                }
-            ]
-        }
+    {
+      "title": "Gear List",
+      "url": "/gear"
+    }
+  ],
+  "map": {
+    "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+    "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+    "id": "1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc"
+  },
+  "basics": {
+    "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+    "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+    "items": [
+      {
+        "title": "Basic 1",
+        "description": "Curabitur purus dui, volutpat nec quam ac, sollicitudin dictum nibh. Nunc luctus lorem risus, ac ultricies quam tempor a. Proin odio dui, tincidunt ut feugiat ac, vehicula et velit. Cras vehicula eget massa et viverra."
+      },
+      {
+        "title": "Basic 2",
+        "description": "Fusce id nisi nec justo fermentum dictum tincidunt euismod nibh. Nulla auctor sem ac massa ultricies, et pharetra metus posuere."
+      },
+      {
+        "title": "Basic 3",
+        "description": "Cras vehicula eget massa et viverra. Aliquam erat volutpat. Etiam lobortis sed turpis et tristique. Duis imperdiet quam vel suscipit rhoncus."
+      }
     ]
+  },
+  "useful_info": {
+    "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+    "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+    "items": [
+      {
+        "title": "Useful Info 1",
+        "description": "Curabitur purus dui, volutpat nec quam ac, sollicitudin dictum nibh. Nunc luctus lorem risus, ac ultricies quam tempor a. Proin odio dui, tincidunt ut feugiat ac, vehicula et velit. Cras vehicula eget massa et viverra."
+      },
+      {
+        "title": "Useful Info 2",
+        "description": "Fusce id nisi nec justo fermentum dictum tincidunt euismod nibh. Nulla auctor sem ac massa ultricies, et pharetra metus posuere."
+      },
+      {
+        "title": "Useful Info 3",
+        "description": "Cras vehicula eget massa et viverra. Aliquam erat volutpat. Etiam lobortis sed turpis et tristique. Duis imperdiet quam vel suscipit rhoncus."
+      }
+    ]
+  },
+  "gear": {
+    "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+    "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+    "items": [
+      {
+        "title": "Proin dignissim augue diam",
+        "description": "Praesent eget finibus ipsum. Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis."
+      },
+      {
+        "title": "Donec dapibus pretium felis"
+      },
+      {
+        "title": "Sed leo eros, mattis in lorem in",
+        "description": "Sed viverra eu sapien malesuada mattis. Aenean ac pretium ex. Sed congue magna congue dolor pretium, ut rutrum nunc suscipit. Morbi consectetur sem ullamcorper odio feugiat, ac egestas ante pellentesque."
+      },
+      {
+        "title": "Sit amet bibendum dui imperdiet"
+      }
+    ]
+  },
+  "weather": {
+    "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+    "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+    "seasons": [
+      {
+        "title": "Spring",
+        "description": "Curabitur purus dui, volutpat nec quam ac, sollicitudin dictum nibh. Nunc luctus lorem risus, ac ultricies quam tempor a. Proin odio dui, tincidunt ut feugiat ac, vehicula et velit. Cras vehicula eget massa et viverra."
+      },
+      {
+        "title": "Autumn",
+        "description": "Fusce id nisi nec justo fermentum dictum tincidunt euismod nibh. Nulla auctor sem ac massa ultricies, et pharetra metus posuere."
+      },
+      {
+        "title": "Winter",
+        "description": "Cras vehicula eget massa et viverra. Aliquam erat volutpat. Etiam lobortis sed turpis et tristique. Duis imperdiet quam vel suscipit rhoncus."
+      },
+      {
+        "title": "Summer",
+        "description": "Fusce id nisi nec justo fermentum dictum tincidunt euismod nibh. Nulla auctor sem ac massa ultricies, et pharetra metus posuere."
+      }
+    ]
+  },
+  "itinerary": {
+    "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+    "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+    "units": {
+      "distance": "Distance",
+      "elevation": "Elevation"
+    },
+    "phases": [
+      {
+        "title": "Proin dignissim augue diam",
+        "description": "Praesent eget finibus ipsum. Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis.",
+        "distance": 160,
+        "elevation": 700
+      },
+      {
+        "title": "Donec dapibus pretium felis",
+        "distance": 160,
+        "elevation": 700
+      },
+      {
+        "title": "Sed leo eros, mattis in lorem in",
+        "description": "Sed viverra eu sapien malesuada mattis. Aenean ac pretium ex. Sed congue magna congue dolor pretium, ut rutrum nunc suscipit. Morbi consectetur sem ullamcorper odio feugiat, ac egestas ante pellentesque.",
+        "distance": 160,
+        "elevation": 700
+      },
+      {
+        "title": "Sit amet bibendum dui imperdiet",
+        "distance": 160,
+        "elevation": 700
+      }
+    ]
+  },
+  "highlights": {
+    "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+    "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+    "items": [
+      {
+        "title": "Integer a rhoncus nisl",
+        "description": "Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis.",
+        "images": [
+          "photos/countries/nepal/manaslu-circuit/sereng-monastery",
+          "photos/countries/nepal/manaslu-circuit/tall-mountains-in-clouds",
+          "photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind",
+          "photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery",
+          "photos/countries/nepal/manaslu-circuit/moonrise-over-himalayas"
+        ]
+      },
+      {
+        "title": "Pellentesque arcu lorem",
+        "description": "Mauris magna diam, eleifend et pharetra ut, rutrum et ante. Sed a enim urna. Proin ultrices, purus quis lobortis finibus, urna quam porta massa, vel euismod est elit vitae lectus. Donec rhoncus elit tempus purus dictum, ac blandit magna porta. In massa ligula, bibendum eget diam eget, fringilla posuere dui.",
+        "images": [
+          "photos/countries/nepal/manaslu-circuit/three-people-drinking-tea-on-a-frozen-lake",
+          "photos/countries/nepal/manaslu-circuit/two-puppies-cuddling-in-the-dirt",
+          "photos/countries/nepal/manaslu-circuit/mountain-ridge-at-sunrise",
+          "photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset",
+          "photos/countries/nepal/manaslu-circuit/samagaon-village-stupa",
+          "photos/countries/nepal/manaslu-circuit/samagaon-village-houses"
+        ]
+      }
+    ]
+  },
+  "cost": {
+    "introduction": "Sed mollis ultrices tellus sed bibendum. Curabitur tristique feugiat tortor, sit amet bibendum dui imperdiet a. Aliquam et massa sagittis, fringilla ex eu, suscipit nibh.",
+    "conclusion": "Quisque vitae lectus eget tellus bibendum ornare et sit amet sapien. Pellentesque sit amet erat leo. Aliquam rhoncus, odio eu tempor feugiat, elit turpis luctus tortor, ut eleifend nulla nunc a sapien.",
+    "items": [
+      {
+        "title": "Proin dignissim augue diam",
+        "description": "Praesent eget finibus ipsum. Ut a sapien a lacus tristique commodo. Fusce vitae enim eget augue convallis cursus vitae ut nibh. In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis.",
+        "cost": "$5"
+      },
+      {
+        "title": "Donec dapibus pretium felis",
+        "cost": "$5"
+      },
+      {
+        "title": "Sed leo eros, mattis in lorem in",
+        "description": "Sed viverra eu sapien malesuada mattis. Aenean ac pretium ex. Sed congue magna congue dolor pretium, ut rutrum nunc suscipit. Morbi consectetur sem ullamcorper odio feugiat, ac egestas ante pellentesque.",
+        "cost": "$5"
+      },
+      {
+        "title": "Sit amet bibendum dui imperdiet",
+        "cost": "$5"
+      }
+    ]
+  },
+  "extra_sections": [
+    {
+      "title": "Extra Section 1",
+      "id": "es 1",
+      "description": "In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis. Phasellus imperdiet ipsum quam, sit amet scelerisque felis tempus ac."
+    },
+    {
+      "title": "Extra Section 2",
+      "id": "es 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur venenatis sem et semper. Aliquam porttitor accumsan nibh ac imperdiet. Ut sem sem, fringilla eu elementum in, faucibus quis mauris. Aenean quis ex elit. Ut aliquam dui viverra, imperdiet ex eu, ultrices tellus.",
+      "images": [
+        "photos/countries/nepal/manaslu-circuit/sereng-monastery",
+        "photos/countries/nepal/manaslu-circuit/tall-mountains-in-clouds",
+        "photos/countries/nepal/manaslu-circuit/prayer-flags-in-the-wind",
+        "photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery",
+        "photos/countries/nepal/manaslu-circuit/moonrise-over-himalayas"
+      ],
+      "sections": [
+        {
+          "title": "Extra Sub-Section 1",
+          "description": "In hac habitasse platea dictumst. Sed sollicitudin nunc eget enim tempus, sit amet lacinia odio tempus. Praesent ornare feugiat diam eget rhoncus. Vestibulum semper nibh in fermentum convallis. Phasellus imperdiet ipsum quam, sit amet scelerisque felis tempus ac."
+        }
+      ]
+    }
+  ]
 }
