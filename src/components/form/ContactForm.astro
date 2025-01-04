@@ -1,0 +1,30 @@
+---
+import TextInput from "./TextInput.astro";
+import Form from "./Form.astro";
+---
+
+<Form
+  action="https://formspree.io/f/mvolakjj"
+  emailSubject="Contact form submission"
+  confirmationUrl="/thanks"
+  submitButtonText="Send Message"
+>
+  <TextInput
+    label="Email Address *"
+    type="email"
+    name="email"
+    placeholder="Your email address..."
+  />
+  <TextInput
+    label="Name *"
+    type="text"
+    name="name"
+    placeholder="Your name..."
+  />
+  <TextInput
+    label="Message *"
+    name="message"
+    placeholder="Your message..."
+    multiline={true}
+  />
+</Form>

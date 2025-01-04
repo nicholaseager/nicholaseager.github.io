@@ -1,10 +1,22 @@
 ---
+import MediaContainer from "../components/containers/MediaContainer.astro";
 import PageContent from "../components/containers/PageContainer.astro";
+import TextContainer from "../components/containers/TextContainer.astro";
+import ContactForm from "../components/form/ContactForm.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <PageContent>
-    <h1>Contact</h1>
+    <TextContainer>
+      <h1>Contact</h1>
+      <p>
+        For business inquiries, such as a collaboration or licensing, please
+        contact me by using the form below.
+      </p>
+    </TextContainer>
+    <MediaContainer>
+      <ContactForm />
+    </MediaContainer>
   </PageContent>
 </Layout>
