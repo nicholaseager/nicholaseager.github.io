@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import Card from "../../components/Card.astro";
+import PageContainer from "../../components/containers/PageContainer.astro";
+import Grid from "../../components/Grid.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const guides = (await getCollection("guides")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
+---
+
+<Layout>
+  <PageContainer>
+    <h1>Guides</h1>
+    <Grid>
+      {
+        guides.map((item) => (
+          <Card
+            href={`/guides/${item.id}/`}
+            imageUrl={`${CDN_BASE_URL}/${item.data.image}.jpg`}
+            title={item.data.title}
+            description={item.data.description}
+          />
+        ))
+      }
+    </Grid>
+  </PageContainer>
+</Layout>

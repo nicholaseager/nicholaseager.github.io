@@ -1,0 +1,239 @@
+{
+  "title": "How to Spend 9 Days on a Safari in Tanzania",
+  "date": "2023-01-09",
+  "modified_date": "2023-12-20",
+  "description": "Everything you need to know about going on a Safari in Tanzania",
+  "image": "photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset",
+  "tags": ["tanzania", "africa", "safari"],
+  "short_name": "tanzania",
+  "youtube": "ODLfcfoppas",
+  "introduction": "A safari in <a href='/galleries/tanzania'>Tanzania</a> should be at the top of your bucket list if you're looking for a once-in-a-lifetime experience. Imagine spending your days exploring the vast savannahs, spotting a variety of wild animals, from majestic lions and leopards to graceful giraffes and zebras, and waking up to the sounds of lions roaring and elephants trumpeting. With miles of golden grasslands and soaring mountains, the surroundings are breathtaking, and the sunsets are nothing short of magical. The Maasai people have lived in harmony with the wildlife for centuries, which makes the local culture fascinating. Don't pass up this once-in-a-lifetime chance to experience the wild and learn a different way of life.",
+  "links": [
+    {
+      "title": "Photo Gallery",
+      "url": "/galleries/tanzania"
+    },
+    {
+      "title": "Gear List",
+      "url": "/gear"
+    }
+  ],
+  "map": {
+    "id": "1l2AxUlEC2nBGLPmONXLUjAxtUDSCUh4"
+  },
+  "basics": {
+    "introduction": "Here is some practical information that is necessary for a safari adventure in Tanzania:",
+    "items": [
+      {
+        "title": "Visa",
+        "description": "To enter Tanzania, most nationalities need a visa, which can be obtained either in advance or on arrival."
+      },
+      {
+        "title": "Health",
+        "description": "To ensure you have received all required immunizations and to obtain any necessary medications, speak with a doctor or travel clinic."
+      },
+      {
+        "title": "Insurance",
+        "description": "To cover any unexpected medical costs and other expenses while visiting Tanzania, travel insurance is a necessity."
+      },
+      {
+        "title": "Money",
+        "description": "Carrying both local money (Tanzanian Shilling) and US dollars is advised because some locations might only accept one of the two. Major cities have ATMs, but remote locations might not have access to them."
+      },
+      {
+        "title": "Clothing",
+        "description": "For warm days, wear lightweight, breathable clothing; for chilly mornings and evenings when temperatures can drop, wear a warm layer."
+      },
+      {
+        "title": "Gear",
+        "description": "A comfortable and successful safari requires a hat, sunglasses, sunscreen, insect repellent, and binoculars. Check out the <a href='/gear'>gear</a> I bring with me on most of my trips."
+      },
+      {
+        "title": "Booking",
+        "description": "To guarantee availability and lock in the best prices, booking a safari in advance is advised, especially during the busiest travel period. If you're going on your own, more info below."
+      },
+      {
+        "title": "Respect wildlife laws and regulations",
+        "description": "To ensure the safety of both you and the wildlife, abide by the rules and regulations established by the park administration."
+      }
+    ]
+  },
+  "gear": {
+    "introduction": "For a Tanzanian safari, prioritize sun protection with a wide-brimmed hat, sunglasses, sunscreen, and lip balm, alongside essential insect repellent. Bring binoculars for wildlife observation, a camera with extra batteries, and memory cards. Pack light, breathable clothing, warm layers, and waterproof gear. Wear comfortable walking shoes or hiking boots. Carry a first aid kit with personal medications, a refillable water bottle with a purification system, and a power bank. Bring cash in Tanzanian Shillings and US dollars, along with passport, visa, and travel insurance documents for a well-prepared and enjoyable safari experience.",
+    "trip": "tanzania"
+  },
+  "weather": {
+    "introduction": "The best time to visit Tanzania depends on your interests and what you hope to see and do while you are there. Depending on the season, Tanzania's weather can change dramatically.",
+    "conclusion": "The annual wildebeest migration, which occurs between June and October, is what makes the Serengeti famous. Huge herds of zebras and wildebeest are also roaming the park at this time in search of new grass. It is best to go during the dry season if you want to see this spectacle. Although the wildebeest migration is the Serengeti's most well-known spectacle, there is a wide variety of other wildlife to observe all year long. A variety of animals, including large predators like lions and leopards as well as herbivores like buffalo and giraffe, can be seen at Ngorongoro Crater.",
+    "seasons": [
+      {
+        "title": "Dry Season",
+        "description": "From June to October, there is a dry season marked by little to no rain and clear skies. The vegetation is scarce at this time of year, which makes it easier to see wildlife, making it the best time to go on a safari in Tanzania."
+      },
+      {
+        "title": "Wet Season",
+        "description": "The wet season, which lasts from November to May, is distinguished by torrential downpours, thunderstorms, and sporadic flooding. Even though going on a safari during this time of year may be less convenient, it is still possible to see wildlife, and the lush green surroundings can be quite lovely."
+      }
+    ]
+  },
+  "itinerary": {
+    "introduction": "The following was our itinerary for the group tour. However, if you're doing this on your own, you can easily add extra days here and there if you like a park.",
+    "units": {
+      "phase": "Day"
+    },
+    "phases": [
+      {
+        "title": "Arusha",
+        "description": "Spend a night in Arusha to rest up for the Safari ahead. You can also visit a cultural center or go on a hike among the neighboring countryside."
+      },
+      {
+        "title": "Tarangire National Park",
+        "description": "Explore the stunning park and sleep in tents at Twiga Campsite."
+      },
+      {
+        "title": "Lake Manyara & Mto Wa Mbu",
+        "description": "Explore Lake Manyara. You can also go on a bicycle ride in the surroundings of Mto Wa Mbu."
+      },
+      {
+        "title": "Serengeti",
+        "description": "Go on a safari in the Serengeti and sleep in tents at Nguchiro Public Campsite."
+      },
+      {
+        "title": "Serengeti",
+        "description": "Go on a safari in the Serengeti and sleep in tents at Nguchiro Public Campsite."
+      },
+      {
+        "title": "Ngorongoro",
+        "description": "Drive to Ngorongoro, see the sights, and sleep in tents at Simba Campsite A."
+      },
+      {
+        "title": "Ngorongoro",
+        "description": "Safari in the Ngorongoro Crater, then drive to Lake Eyasi Ng'ula Sunset Safari Camp."
+      },
+      {
+        "title": "Lake Eyasi & Arusha",
+        "description": "Visit the lake, and the Hadzabe indigenous tribal village. Then transfer back to Arusha."
+      },
+      {
+        "title": "Depart"
+      }
+    ]
+  },
+  "highlights": {
+    "introduction": "Tanzania is home to several beautiful national parks, including the Serengeti, Ngorongoro Crater, Tarangire, Lake Manyara, and Lake Eyasi. Keep reading to discover each of these places, and how to visit them on your own.",
+    "items": [
+      {
+        "title": "Serengeti",
+        "description": "This vast national park is home to a variety of wildlife, including the big five (lions, leopards, rhinos, elephants, and buffaloes). There are rocky hills, grassy plains, and acacia woodlands in the diverse landscape. Along with having numerous rivers and lakes, the park is also home to a variety of birds and other animals.",
+        "images": [
+          "photos/countries/tanzania/serengeti/wildebeest-migration",
+          "photos/countries/tanzania/serengeti/three-kopjes",
+          "photos/countries/tanzania/serengeti/single-acacia-tree-daylight",
+          "photos/countries/tanzania/serengeti/sunset-with-a-single-tree",
+          "photos/countries/tanzania/serengeti/three-acacia-trees",
+          "photos/countries/tanzania/serengeti/safari-jeep-waiting",
+          "photos/countries/tanzania/serengeti/lonely-acacia-tree-silhouette",
+          "photos/countries/tanzania/serengeti/love-birds",
+          "photos/countries/tanzania/serengeti/ostrich-and-two-zebras",
+          "photos/countries/tanzania/serengeti/lion-resting-in-tree-from-a-distance",
+          "photos/countries/tanzania/serengeti/lion-resting-in-tree",
+          "photos/countries/tanzania/serengeti/lion-stalking-wildebeest-laying-in-a-tree",
+          "photos/countries/tanzania/serengeti/lion-yawning",
+          "photos/countries/tanzania/serengeti/leopard-walking-on-a-road",
+          "photos/countries/tanzania/serengeti/lion-resting-in-a-bush-from-a-distance",
+          "photos/countries/tanzania/serengeti/lion-resting-in-a-bush",
+          "photos/countries/tanzania/serengeti/lion-resting-in-the-grass-from-a-distance",
+          "photos/countries/tanzania/serengeti/hot-air-ballon-on-the-plains",
+          "photos/countries/tanzania/serengeti/jeep-offroad",
+          "photos/countries/tanzania/serengeti/leopard-staring-at-me",
+          "photos/countries/tanzania/serengeti/leopard-walking-away",
+          "photos/countries/tanzania/serengeti/acacia-tree-close",
+          "photos/countries/tanzania/serengeti/acacia-tree",
+          "photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset",
+          "photos/countries/tanzania/serengeti/acacia-tree-at-sunset",
+          "photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset-dark"
+        ]
+      },
+      {
+        "title": "Ngorongoro Crater",
+        "description": "There are many different kinds of animals living in Tanzania's Ngorongoro Crater, including large predators like lions and leopards as well as herbivores like buffalo and giraffe. There are numerous smaller lakes and streams inside the crater, which is surrounded by thick grasslands and forests. The crater's rim offers stunning views, making it a well-liked location for tourists to view sunsets.",
+        "images": [
+          "photos/countries/tanzania/ngorongoro-crater/warthogs-and-wildebeest",
+          "photos/countries/tanzania/ngorongoro-crater/two-safari-jeeps",
+          "photos/countries/tanzania/ngorongoro-crater/various-birds-standing-by-a-lake",
+          "photos/countries/tanzania/ngorongoro-crater/round-tree-under-the-clouds",
+          "photos/countries/tanzania/ngorongoro-crater/safari-jeep-in-the-distance",
+          "photos/countries/tanzania/ngorongoro-crater/safari-jeep",
+          "photos/countries/tanzania/ngorongoro-crater/serval-cat-looking-at-me",
+          "photos/countries/tanzania/ngorongoro-crater/two-hippos-playing-in-the-water",
+          "photos/countries/tanzania/ngorongoro-crater/jeep-driving-away",
+          "photos/countries/tanzania/ngorongoro-crater/jeep-in-the-distance",
+          "photos/countries/tanzania/ngorongoro-crater/large-tree-in-fog",
+          "photos/countries/tanzania/ngorongoro-crater/massa-homes",
+          "photos/countries/tanzania/ngorongoro-crater/massa-people-under-tree",
+          "photos/countries/tanzania/ngorongoro-crater/muddy-buffalo-staring-at-me",
+          "photos/countries/tanzania/ngorongoro-crater/open-tent-in-fog",
+          "photos/countries/tanzania/ngorongoro-crater/hyena-carrying-wildebeest-head",
+          "photos/countries/tanzania/ngorongoro-crater/family-of-lions-drinking-water",
+          "photos/countries/tanzania/ngorongoro-crater/flamingo-walking-by-a-lake",
+          "photos/countries/tanzania/ngorongoro-crater/grey-crowned-crane-dancing",
+          "photos/countries/tanzania/ngorongoro-crater/herd-of-buffalos-from-above",
+          "photos/countries/tanzania/ngorongoro-crater/elephant-crossing-the-road-in-front-of-a-safari-jeep"
+        ]
+      },
+      {
+        "title": "Tarangire",
+        "description": "Large elephant herds, baobab trees, and a variety of birdlife can all be found in Tarangire National Park. The park is a great place to go on game drives and nature walks given that it is home to a diverse range of wildlife, including lions, leopards, zebras, and giraffes.",
+        "images": [
+          "photos/countries/tanzania/tarangire/zebra",
+          "photos/countries/tanzania/tarangire/two-elephants-drinking-from-a-lake",
+          "photos/countries/tanzania/tarangire/vervet-blue-balled-monkey-with-long-tail",
+          "photos/countries/tanzania/tarangire/vervet-monkey-sitting-in-grass",
+          "photos/countries/tanzania/tarangire/masai-giraffe-looking-at-camera",
+          "photos/countries/tanzania/tarangire/mother-and-son-baboon",
+          "photos/countries/tanzania/tarangire/safari-jeep-driving-through-dust",
+          "photos/countries/tanzania/tarangire/safari-jeep",
+          "photos/countries/tanzania/tarangire/tent-at-twiga-campsite",
+          "photos/countries/tanzania/tarangire/baobab-tree-in-a-field",
+          "photos/countries/tanzania/tarangire/herd-of-elephants-roaming",
+          "photos/countries/tanzania/tarangire/jeeps-parked-off-the-road"
+        ]
+      },
+      {
+        "title": "Lake Manyara",
+        "description": "Flamingos are common in Lake Manyara National Park and are frequently spotted there along the lake's shores. Along with a wide range of other animals, the park is home to elephants, giraffes, and baboons. It is a great location for game drives and for visiting the hot springs inside the park.",
+        "images": [
+          "photos/countries/tanzania/lake-manyara/safari-jeep-driving-through-jungle",
+          "photos/countries/tanzania/lake-manyara/baboon-sleeping",
+          "photos/countries/tanzania/lake-manyara/baboon-rolling-over"
+        ]
+      },
+      {
+        "title": "Lake Eyasi",
+        "description": "A grassy savanna and an acacia forest surround the shallow soda lake known as Lake Eyasi. Numerous bird species can be found around the lake, making it a well-liked location for birdwatching. The Hadzabe and Datoga tribes, who have inhabited the region for centuries, also call the lake home. These communities can be visited, and you can find out more about their way of life.",
+        "images": [
+          "photos/countries/tanzania/lake-eyasi/sunset-with-a-single-palm-tree-silhouette",
+          "photos/countries/tanzania/lake-eyasi/hadzabe-tribe-digging-for-roots",
+          "photos/countries/tanzania/lake-eyasi/hadzabe-tribe-home",
+          "photos/countries/tanzania/lake-eyasi/hadzabe-tribe-member-with-bow",
+          "photos/countries/tanzania/lake-eyasi/fisherman-pulling-fishing-rope",
+          "photos/countries/tanzania/lake-eyasi/hadzabe-tribe-child-with-bow",
+          "photos/countries/tanzania/lake-eyasi/hadzabe-tribe-children-walking",
+          "photos/countries/tanzania/lake-eyasi/fisherman-boat-during-sunset",
+          "photos/countries/tanzania/lake-eyasi/fisherman-catching-fish",
+          "photos/countries/tanzania/lake-eyasi/fisherman-home",
+          "photos/countries/tanzania/lake-eyasi/fish-caught",
+          "photos/countries/tanzania/lake-eyasi/beer-at-sunset"
+        ]
+      }
+    ]
+  },
+  "useful_info": {
+    "items": [
+      {
+        "title": "Getting Around",
+        "description": "Going with an organized tour definitely has its perks. But if you're more independent, you can definitely rent a car and go on safari by yourself. However, it is a good idea to research your options and to compare prices and reviews before making a decision. Research car rental companies, check the rental requirements, choose a car that is suitable for the conditions (i.e. a 4x4 for off-roading and rough terrain), and reserve the car in advance if you plan on going during peak season. Definitely do your own due-diligence and research so that you can be safe, and find something for your own needs and budget."
+      }
+    ]
+  }
+}

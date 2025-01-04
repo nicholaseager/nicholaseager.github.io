@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Layout from "./Layout.astro";
+import Banner from "../components/Banner.astro";
+import Intro from "../components/guide/Intro.astro";
+import PageContainer from "../components/containers/PageContainer.astro";
+import TextContainer from "../components/containers/TextContainer.astro";
+
+type Props = CollectionEntry<"guides">["data"];
+
+const { title, youtube, introduction, image, modified_date } = Astro.props;
+
+const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
+---
+
+<Layout navStyle="transparent">
+  <Banner title={title} type="image" media={`${CDN_BASE_URL}/${image}.jpg`} />
+
+  <div class="my-8">
+    <Intro
+      title={title}
+      lastUpdated={modified_date}
+      description={introduction}
+      videoId={youtube ?? ""}
+    />
+  </div>
+
+  <PageContainer>
+    <TextContainer>
+      <h1>{title}</h1>
+    </TextContainer>
+  </PageContainer>
+</Layout>
