@@ -1,4 +1,5 @@
 ---
+import FormattedDate from "../FormattedDate.astro";
 import SocialShare from "../social-share/SocialShare.astro";
 import YouTubeVideo from "../YouTubeVideo.astro";
 
@@ -22,7 +23,7 @@ const { title, lastUpdated, description, videoId } = Astro.props;
       </h1>
 
       <p class="text-sm text-gray-600 italic">
-        Last updated: {lastUpdated}
+        Last updated: <FormattedDate date={lastUpdated} />
       </p>
 
       <div class="flex flex-wrap gap-2">
