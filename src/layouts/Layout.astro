@@ -1,3 +1,13 @@
+---
+import NavBar from "../components/NavBar";
+
+interface Props {
+  navStyle?: "opaque" | "transparent";
+}
+
+const { navStyle = "opaque" } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,6 +18,11 @@
     <title>Nicholas Eager</title>
   </head>
   <body>
-    <slot />
+    <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <main>
+        <slot />
+      </main>
+    </div>
   </body>
 </html>

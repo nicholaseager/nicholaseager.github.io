@@ -1,13 +1,11 @@
 ---
 import Banner from "../components/Banner.astro";
-import NavBar from "../components/NavBar.tsx";
 import Layout from "../layouts/Layout.astro";
 
 const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
 ---
 
-<Layout>
-  <NavBar client:load pathname={Astro.url.pathname} style="transparent" />
+<Layout navStyle="transparent">
   <Banner
     title="Adventure Film and Photos"
     subtitle="by Nicholas Eager"

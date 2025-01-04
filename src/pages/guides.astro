@@ -1,9 +1,21 @@
 ---
-import NavBar from "../components/NavBar.tsx";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <NavBar client:load pathname={Astro.url.pathname} style="opaque" />
-  <h1>Guides</h1>
+  <h1>Travel Guides</h1>
+  <section id="guides">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    >
+      <div class="bg-blue-500 p-4">Item 1</div>
+      <div class="bg-green-500 p-4">Item 2</div>
+      <div class="bg-red-500 p-4">Item 3</div>
+      <div class="bg-yellow-500 p-4">Item 4</div>
+      <div class="bg-purple-500 p-4">Item 5</div>
+      <div class="bg-pink-500 p-4">Item 6</div>
+      <div class="bg-indigo-500 p-4">Item 7</div>
+      <div class="bg-teal-500 p-4">Item 8</div>
+    </div>
+  </section>
 </Layout>
