@@ -1,0 +1,44 @@
+---
+import SocialShare from "../social-share/SocialShare.astro";
+import YouTubeVideo from "../YouTubeVideo.astro";
+
+// Intro.astro
+interface Props {
+  title: string;
+  lastUpdated: Date;
+  description: string;
+  videoId: string;
+}
+
+const { title, lastUpdated, description, videoId } = Astro.props;
+---
+
+<header class="bg-background-alt mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+    <!-- Left Column: Text Content -->
+    <div class="space-y-6">
+      <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
+        {title}
+      </h1>
+
+      <p class="text-sm text-gray-600 italic">
+        Last updated: {lastUpdated}
+      </p>
+
+      <div class="flex flex-wrap gap-2">
+        <SocialShare url="Astro.request.url" title={title} />
+      </div>
+
+      <p class="text-lg text-gray-700 leading-relaxed">
+        {description}
+      </p>
+    </div>
+
+    <!-- Right Column: Video -->
+    <div class="mt-8 lg:mt-0">
+      <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+        <YouTubeVideo videoId={videoId} />
+      </div>
+    </div>
+  </div>
+</header>
