@@ -1,0 +1,9 @@
+---
+import NavBar from "../components/NavBar.tsx";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <NavBar client:load pathname={Astro.url.pathname} style="opaque" />
+  <h1>Photos</h1>
+</Layout>
