@@ -12,7 +12,7 @@ const { imageUrl, title, description, href } = Astro.props as CardProps;
 
 <a
   href={href || "#"}
-  class="rounded-lg shadow-lg overflow-hidden bg-white transform transition-transform duration-200 hover:scale-105 hover:shadow-xl cursor-pointer block"
+  class="max-w-sm rounded-lg shadow-lg overflow-hidden bg-white transform transition-transform duration-200 hover:scale-105 hover:shadow-xl cursor-pointer block"
 >
   <img src={imageUrl} alt={title} class="w-full h-48 object-cover" />
   <div class="p-4">
