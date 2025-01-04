@@ -1,0 +1,32 @@
+---
+const { title, subtitle, media, type } = Astro.props;
+---
+
+<section
+  class={`relative w-full ${type === "video" ? "overflow-hidden" : ""}`}
+  style="height: 100vh"
+>
+  {
+    type === "image" && (
+      <img src={media} alt="Banner Image" class="object-cover w-full h-full" />
+    )
+  }
+  {
+    type === "video" && (
+      <video
+        autoplay
+        loop
+        muted
+        class="absolute top-0 w-full h-full object-cover"
+      >
+        <source src={media} type="video/mp4" />
+      </video>
+    )
+  }
+  <div
+    class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-center px-4"
+  >
+    <h1 class="text-4xl font-bold">{title}</h1>
+    <p class="text-xl mt-2">{subtitle}</p>
+  </div>
+</section>
