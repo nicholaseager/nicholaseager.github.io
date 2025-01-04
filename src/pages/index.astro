@@ -1,7 +1,6 @@
 ---
 import Banner from "../components/Banner.astro";
 import NavBar from "../components/NavBar.tsx";
-import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 
 const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
@@ -15,5 +14,5 @@ const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
     type="video"
     media={`${CDN_BASE_URL}/home-intro.mp4`}
   />
-  <Welcome />
+  <h1>Home</h1>
 </Layout>
