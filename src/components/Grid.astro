@@ -1,0 +1,23 @@
+---
+interface Props {
+  cols?: {
+    default?: number;
+    sm?: number;
+    md?: number;
+    lg?: number;
+  };
+  gap?: number;
+}
+
+const { cols = { default: 1, sm: 2, md: 3, lg: 4 }, gap = 4 } = Astro.props;
+---
+
+<div
+  class={`grid grid-cols-${cols.default} 
+    ${cols.sm ? `sm:grid-cols-${cols.sm}` : ""} 
+    ${cols.md ? `md:grid-cols-${cols.md}` : ""} 
+    ${cols.lg ? `lg:grid-cols-${cols.lg}` : ""} 
+    gap-${gap}`}
+>
+  <slot />
+</div>
