@@ -1,0 +1,572 @@
+[
+  {
+    "title": "Main Camera Body",
+    "description": "This is the heart of my setup. It delivers gorgeous high-res shots that make every scene look like it belongs in a movie.",
+    "url": "https://amzn.to/45PpqqP",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/fujifilm-xt4.jpg",
+    "tags": ["filming"],
+    "trips": ["tanzania"]
+  },
+  {
+    "title": "Main Lens",
+    "description": "My go-to lens for most shots\u2014super versatile and perfect for capturing everything from wide landscapes to close-ups.",
+    "url": "https://amzn.to/3wGvq57",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/fuji-xf18-55mm.jpg",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Telephoto Lens",
+    "description": "When you need to zoom in on those far-off details, this lens is a game-changer for storytelling.",
+    "url": "https://amzn.to/3MVlYQj",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/fuji-xf55-200mm.jpg?updatedAt=1719848046742",
+    "tags": ["filming"],
+    "trips": ["tanzania"]
+  },
+  {
+    "title": "Microphone",
+    "description": "This little guy ensures my audio is crisp and clear\u2014makes such a difference in how professional your videos feel.",
+    "url": "https://amzn.to/3xrAsBH",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/rode-videomic-pro.jpg?updatedAt=1719848050086",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Drone",
+    "description": "Hands down the best way to add epic aerial views to your footage. It makes any landscape look incredible.",
+    "url": "https://amzn.to/4cpYzns",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/dji-air-3.jpg?updatedAt=1719848049817",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Action Camera",
+    "description": "Perfect for those up-close, adventurous shots that bring viewers right into the action with you.",
+    "url": "https://amzn.to/3R8sqYl",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/gopro.jpg?updatedAt=1719848047994",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Main Tripod",
+    "description": "A reliable tripod is essential\u2014it keeps my shots steady no matter where I\u2019m filming.",
+    "url": "https://amzn.to/3wFNood",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/peak-design-tripod.jpg?updatedAt=1719848050885",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Mini Tripod",
+    "description": "Compact but sturdy. This little tripod has saved me so many times when I\u2019m shooting on the go.",
+    "url": "https://amzn.to/3lGatkx",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/joby-gorillapod-3k.jpg?updatedAt=1719848048625",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Camera Clip",
+    "description": "This is such a lifesaver\u2014keeps my camera secure but within reach for those spontaneous moments.",
+    "url": "https://amzn.to/3RwUG7h",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/peak-design-capture-camera-clip-v3.jpg?updatedAt=1719848049670",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Laptop",
+    "description": "I couldn\u2019t get through editing without this. It handles everything from video cuts to color grading like a champ.",
+    "url": "https://amzn.to/3Ng5FAl",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/apple-2023-macbook-pro-laptop-m2-max.jpg?updatedAt=1719848043460",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Phone",
+    "description": "Super handy for grabbing extra angles or some casual behind-the-scenes shots.",
+    "url": "https://amzn.to/3QrQGnp",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/apple-iphone-13.jpg?updatedAt=1719848047238",
+    "tags": ["travel", "filming"],
+    "trips": []
+  },
+  {
+    "title": "Memory Cards",
+    "description": "You can never have enough of these\u2014trust me, they\u2019re your safety net for all your footage.",
+    "url": "https://amzn.to/4brCaVH",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/sandisk-128gb-extreme-pro-sdxc-uhs-i-memory-card.jpg?updatedAt=1719848051712",
+    "tags": ["filming"],
+    "trips": ["tanzania"]
+  },
+  {
+    "title": "Editing Hard Drive",
+    "description": "This is where all the magic happens\u2014lots of space and fast enough to keep up with my editing sessions.",
+    "url": "https://amzn.to/3TU3vKM",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/samsung-t7-shield-4tb.jpg?updatedAt=1719848050878",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Long Term Backup HDD",
+    "description": "My go-to for storing old footage safely. It\u2019s a must for protecting your work!",
+    "url": "https://amzn.to/3L8e1sw",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/lacie-rugged-5tb.jpg?updatedAt=1719848678040",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "Luxury Tent",
+    "description": "When I want a cozy camping experience, this tent makes the wilderness feel a little more like home.",
+    "url": "https://alnk.to/2FBn9w5",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/rei-half-dome-2-plus.jpg?updatedAt=1719848050078",
+    "tags": ["hiking"],
+    "trips": ["ausangate", "lares"]
+  },
+  {
+    "title": "Ultralight Tent",
+    "description": "Lightweight but still super comfy\u2014it\u2019s perfect for when you\u2019re covering a lot of ground.",
+    "url": "https://www.kaviso.com/products/durston-gear-x-mid-2-ultralight-backpacking-tent",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/durston-gear-x-mid-2-ultralight-backpacking-tent.jpg?updatedAt=1719848045641",
+    "tags": ["hiking"],
+    "trips": ["coyote-gulch"]
+  },
+  {
+    "title": "Backpack",
+    "description": "The ultimate organizer for all my gear. Everything has its place, and it\u2019s easy to grab what I need.",
+    "url": "https://amzn.to/3T97hQl",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/osprey-aether-65.jpg?updatedAt=1719848049695",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Water Bottle",
+    "description": "Staying hydrated is key, especially when I\u2019m out filming all day.",
+    "url": "https://amzn.to/3ILbSDh",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/nalgene.jpg?updatedAt=1719848049357",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Daypack",
+    "description": "A smaller pack that\u2019s perfect for carrying just the essentials on shorter adventures.",
+    "url": "https://amzn.to/487osWu",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/sea-to-summit-ultra-sil-ultralight-day-pack-20-liter.jpg?updatedAt=1719848051918",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "huchuy-qosqo"
+    ]
+  },
+  {
+    "title": "Stove",
+    "description": "Nothing beats a hot meal after a long day of filming. This little stove is a lifesaver.",
+    "url": "https://amzn.to/3uXfbly",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/msr-pocketrocket-deluxe-stove.jpg?updatedAt=1719848048736",
+    "tags": ["hiking"],
+    "trips": ["ausangate", "lares", "coyote-gulch"]
+  },
+  {
+    "title": "Pot",
+    "description": "Compact and perfect for whipping up meals in the wild\u2014just what you need for a good dinner on the trail.",
+    "url": "https://amzn.to/47GiVGK",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/toaks-titanium-750ml-pot.jpg?updatedAt=1719848053406",
+    "tags": ["hiking"],
+    "trips": ["hiking", "coyote-gulch"]
+  },
+  {
+    "title": "Spoon",
+    "description": "Lightweight and durable\u2014sometimes it\u2019s the little things that make a trip easier.",
+    "url": "https://amzn.to/3TeNAGF",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/toaks-titanium-long-handle-spoon.jpg?updatedAt=1719848052971",
+    "tags": ["hiking"],
+    "trips": ["ausangate", "lares", "coyote-gulch"]
+  },
+  {
+    "title": "Headlamp",
+    "description": "This is a must for low-light filming or setting up camp in the dark.",
+    "url": "https://amzn.to/3GgIEZG",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/black-diamond-spot-350-led-headlamp.jpg?updatedAt=1719848043939",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Water Filter",
+    "description": "Access to clean water anywhere\u2014it\u2019s a lifesaver on those remote shoots.",
+    "url": "https://amzn.to/46NCg7L",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/sawyer-products-sp129-squeeze.jpg?updatedAt=1719848051653",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "First Aid Kit",
+    "description": "Better safe than sorry\u2014this gives me peace of mind during every trip.",
+    "url": "https://amzn.to/3uJUGsx",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/adventure-ultralight-watertight-medical-kit.jpg?updatedAt=1719848044072",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Dry Bag",
+    "description": "Keeps my gear dry even when the weather turns ugly.",
+    "url": "https://amzn.to/3GtqHYJ",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/sea-to-summit-lightweight-dry-sack.jpg?updatedAt=1719848051391",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "huchuy-qosqo",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Rain Jacket",
+    "description": "Essential for staying dry while shooting in the rain\u2014it\u2019s a game-changer.",
+    "url": "https://cortazu.com/pages/nicholas-eager-youtube",
+    "img": "https://cortazu.com/cdn/shop/files/PACKSHOT_FRONT_AW-HARDSHELL_MENS_YELLOW_CORTAZU.png?v=1718976791&width=1200",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Sleeping Mattress",
+    "description": "Nothing beats waking up rested after a night out\u2014this mattress makes a huge difference.",
+    "url": "https://amzn.to/3vEw55T",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/sea-to-summit-ultralight-insulated-backpacking-sleeping-pad.jpg?updatedAt=1719848051535",
+    "tags": ["hiking"],
+    "trips": ["ausangate", "lares", "coyote-gulch"]
+  },
+  {
+    "title": "Sleeping Bag",
+    "description": "Keeps me warm and comfy no matter the conditions.",
+    "url": "https://alnk.to/aANRaCl",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/sea-to-summit-spark-30f-down-sleeping-bag.jpg?updatedAt=1719849418793",
+    "tags": ["hiking"],
+    "trips": ["ausangate", "lares", "coyote-gulch"]
+  },
+  {
+    "title": "Hiking Pants",
+    "description": "Durable and comfy\u2014these pants are perfect for long days on the trail.",
+    "url": "https://amzn.to/3t8A24Z",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/atg-by-wrangler-men's-synthetic-utility-pant.jpg?updatedAt=1719848043196",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Down Jacket",
+    "description": "So warm and packs down small. It\u2019s my go-to for cold weather shoots.",
+    "url": "https://alnk.to/1XWJ6El",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/patagonia-down-sweater-mens.jpg?updatedAt=1719849540381",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Thermal Top",
+    "description": "Keeps me cozy in the chill without adding bulk\u2014great for layering.",
+    "url": "https://amzn.to/3TlAbfY",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/smartwool-men's-classic-thermal-merino-wool-base-layer.jpg?updatedAt=1719848051810",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Beanie",
+    "description": "My favorite way to keep warm\u2014and it looks pretty good too.",
+    "url": "https://amzn.to/46OS6iu",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/carhartt-men's-knit-beanie.jpg?updatedAt=1719848045338",
+    "tags": ["hiking"],
+    "trips": ["three-passes", "kanchenjunga", "manaslu", "ausangate", "lares"]
+  },
+  {
+    "title": "Shoes",
+    "description": "Good shoes are non-negotiable for long filming days\u2014they keep me going.",
+    "url": "https://amzn.to/3ReDmDC",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/altra-men's-olympus-5-trail-running-shoe.jpg?updatedAt=1719848044535",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "huchuy-qosqo",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Hiking Boots",
+    "description": "Solid, supportive boots for rugged trails. They\u2019ve never let me down.",
+    "url": "https://amzn.to/489b3NZ",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/garmont-unisex-adult-mountain-boots.jpg?updatedAt=1719848047114",
+    "tags": ["hiking"],
+    "trips": ["ausangate", "lares", "tanzania", "grand-canyon"]
+  },
+  {
+    "title": "Sport Sandals",
+    "description": "Great for stream crossings or just giving my feet a break back at camp.",
+    "url": "https://amzn.to/4cM2dYv",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/xero-shoes-z-trek-ii.jpg?updatedAt=1719848052745",
+    "tags": ["hiking"],
+    "trips": ["coyote-gulch"]
+  },
+  {
+    "title": "Sun Shirt",
+    "description": "So much easier than reapplying sunscreen all day\u2014it\u2019s a lifesaver in sunny spots.",
+    "url": "https://amzn.to/3NBpOkR",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/33,000ft-men's-long-sleeve-sun-protection-shirt.jpg?updatedAt=1719848043944",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "huchuy-qosqo",
+      "grand-canyon"
+    ]
+  },
+  {
+    "title": "Hat",
+    "description": "A must-have for sun protection\u2014it keeps me cool and focused.",
+    "url": "https://alnk.to/8tOLNyN",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/forclaz-trek-900-waterproof-backpacking-hat.jpg?updatedAt=1719850914963",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Socks",
+    "description": "Good socks are underrated\u2014they keep my feet happy all day.",
+    "url": "https://amzn.to/3Hok5dy",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/darn-tough-merino-wool-boot-sock-full-cushion.jpg?updatedAt=1719848049783",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "Flip Flops",
+    "description": "After a long hike, slipping into these feels amazing.",
+    "url": "https://amzn.to/3tmyk07",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/havaianas-men's.jpg?updatedAt=1719848048549",
+    "tags": ["hiking"],
+    "trips": ["three-passes", "kanchenjunga", "manaslu", "ausangate", "lares"]
+  },
+  {
+    "title": "Light Gloves",
+    "description": "These keep my hands warm without making it hard to use my gear.",
+    "url": "https://amzn.to/419gl9P",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/under-armour-men's-storm-liner.jpg?updatedAt=1719848052504",
+    "tags": ["hiking"],
+    "trips": ["three-passes", "kanchenjunga", "manaslu", "ausangate", "lares"]
+  },
+  {
+    "title": "Sunglasses",
+    "description": "Protecting your eyes is key\u2014these are a must for filming in bright conditions.",
+    "url": "https://amzn.to/4cH5wQX",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/goodr-og-sunglasses.jpg?updatedAt=1719848048016",
+    "tags": ["hiking"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania",
+      "huchuy-qosqo",
+      "grand-canyon",
+      "coyote-gulch"
+    ]
+  },
+  {
+    "title": "GPS Watch",
+    "description": "Super handy for navigation and keeping track of my filming spots.",
+    "url": "https://amzn.to/4aWjzl6",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/garmin-fenix-7-pro-solar.jpg?updatedAt=1719848047470",
+    "tags": ["hiking"],
+    "trips": ["three-passes", "kanchenjunga", "manaslu", "ausangate", "lares"]
+  },
+  {
+    "title": "Powerbank",
+    "description": "Nothing worse than running out of battery mid-shoot. This keeps me powered up.",
+    "url": "https://amzn.to/3MJPWr0",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/anker-powercore-20100mah.jpg?updatedAt=1719848043247",
+    "tags": ["travel"],
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "manaslu",
+      "ausangate",
+      "lares",
+      "tanzania"
+    ]
+  },
+  {
+    "title": "Travel Backpack",
+    "description": "Stylish and practical\u2014perfect for carrying everything I need on longer trips.",
+    "url": "https://amzn.to/3GoZOV4",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/wandrd-prvke-31l.jpg?updatedAt=1719850129335",
+    "tags": ["travel"],
+    "trips": []
+  },
+  {
+    "title": "Collapsible Travel Pack",
+    "description": "So handy when I need a lightweight bag for quick trips.",
+    "url": "https://amzn.to/3VRiIJW",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/venture-pal-40l.jpg?updatedAt=1719848052727",
+    "tags": ["travel"],
+    "trips": []
+  },
+  {
+    "title": "Bank Card Protector",
+    "description": "Keeps my essentials safe and easy to access.",
+    "url": "https://amzn.to/3jV3NkV",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/buffway-slim-minimalist-front-pocket-rfid-blocking-leather-wallet.jpg?updatedAt=1719848043536",
+    "tags": ["travel"],
+    "trips": []
+  },
+  {
+    "title": "Cash Wallet",
+    "description": "Compact and perfect for staying organized while traveling.",
+    "url": "https://amzn.to/3IpSIm4",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/chums-surfshorts-wallet.jpg?updatedAt=1719848044952",
+    "tags": ["travel"],
+    "trips": []
+  },
+  {
+    "title": "Toiletry Bag",
+    "description": "Keeps everything tidy and ready to go\u2014makes packing so much easier.",
+    "url": "https://amzn.to/3XbBAVf",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/gox-small-travel-toiletry-bag.jpg?updatedAt=1719848049810",
+    "tags": ["travel"],
+    "trips": []
+  },
+  {
+    "title": "Music Library",
+    "description": "This has everything I need to find the perfect vibe for my videos.",
+    "url": "https://share.epidemicsound.com/nj6mw9",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/epidemicsound-logo.png?updatedAt=1735350700674",
+    "tags": ["filming"],
+    "trips": []
+  },
+  {
+    "title": "AllTrails",
+    "description": "My secret weapon for scouting out the best spots to film\u2014it\u2019s a game-changer.",
+    "url": "https://www.alltrails.com/invite/MIZ5XU",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/alltrails.jpg?updatedAt=1719848043869",
+    "tags": ["hiking"],
+    "trips": []
+  },
+  {
+    "title": "Final Cut Pro",
+    "description": "The software I swear by\u2014it\u2019s how I bring all my footage together into a finished story.",
+    "url": "https://apps.apple.com/us/app/final-cut-pro/id424389933",
+    "img": "https://ik.imagekit.io/qn1gkawvy/gear/final-cut-pro.jpg?updatedAt=1719848045465",
+    "tags": ["filming"],
+    "trips": []
+  }
+]
