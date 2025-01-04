@@ -19,11 +19,6 @@ const { navStyle = "opaque" } = Astro.props;
   </head>
   <body>
     <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
-    <slot name="header" />
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <main>
-        <slot />
-      </main>
-    </div>
+    <slot />
   </body>
 </html>

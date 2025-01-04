@@ -1,5 +1,6 @@
 ---
 import Banner from "../components/Banner.astro";
+import PageContent from "../components/PageContent.astro";
 import Layout from "../layouts/Layout.astro";
 
 const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
@@ -7,11 +8,12 @@ const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
 
 <Layout navStyle="transparent">
   <Banner
-    slot="header"
     title="Adventure Film and Photos"
     subtitle="by Nicholas Eager"
     type="video"
     media={`${CDN_BASE_URL}/home-intro.mp4`}
   />
-  <h1>Home</h1>
+  <PageContent>
+    <h1>Home</h1>
+  </PageContent>
 </Layout>
