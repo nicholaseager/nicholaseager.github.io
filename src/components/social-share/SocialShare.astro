@@ -1,0 +1,27 @@
+---
+import Email from "./Email.astro";
+import Facebook from "./Facebook.astro";
+import LinkedIn from "./LinkedIn.astro";
+import Reddit from "./Reddit.astro";
+import Twitter from "./Twitter.astro";
+import WhatsApp from "./WhatsApp.astro";
+
+// SocialShare.astro
+interface Props {
+  url: string;
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { url, title, description = "", image = "" } = Astro.props;
+---
+
+<div class="flex flex-wrap gap-2">
+  <Facebook url={url} />
+  <Twitter url={url} title={title} description={description} />
+  <Reddit url={url} title={title} />
+  <LinkedIn url={url} />
+  <WhatsApp url={url} text="Check out this article!" />
+  <Email url={url} title={title} />
+</div>
