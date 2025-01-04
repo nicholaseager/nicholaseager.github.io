@@ -1,0 +1,18 @@
+---
+interface Props {
+  mapId: string;
+}
+
+const { mapId } = Astro.props;
+---
+
+<div class="relative w-full">
+  <div class="relative pb-[66.67%]">
+    <iframe
+      class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+      src={`https://www.google.com/maps/d/u/0/embed?mid=${mapId}`}
+      title="Google Map"
+    >
+    </iframe>
+  </div>
+</div>
