@@ -23,6 +23,28 @@ export default {
           accent: "#2a2f36",
         },
         error: "#d64541",
+        social: {
+          facebook: {
+            DEFAULT: "#1877F2",
+            hover: "#166fe5",
+          },
+          reddit: {
+            DEFAULT: "#FF4500",
+            hover: "#e63e00",
+          },
+          twitter: {
+            DEFAULT: "#1DA1F2",
+            hover: "#1a91da",
+          },
+          whatsapp: {
+            DEFAULT: "#25D366",
+            hover: "#22c55e",
+          },
+          linkedin: {
+            DEFAULT: "#0A66C2",
+            hover: "#095196",
+          },
+        },
       },
       fontFamily: {
         sans: ["Poppins", "system-ui", "sans-serif"],

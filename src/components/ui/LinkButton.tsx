@@ -6,9 +6,7 @@ type ButtonSize = "sm" | "md" | "lg";
 interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: ButtonVariant;
   size?: ButtonSize;
-  bgColor?: string; // For custom background
-  hoverBgColor?: string; // For custom hover
-  textColor?: string; // For custom text color
+  className?: string; // For custom variant
   children: React.ReactNode;
 }
 
@@ -17,15 +15,12 @@ function Button({
   size = "md",
   children,
   className = "",
-  bgColor,
-  hoverBgColor,
-  textColor,
   ...props
 }: ButtonProps) {
   const variants: Record<ButtonVariant, string> = {
     primary: "bg-accent hover:brightness-90 text-white",
     secondary: "bg-gray-200 hover:bg-gray-300 text-gray-900",
-    custom: `bg-${bgColor} hover:bg-${hoverBgColor} text-${textColor}`,
+    custom: className,
   };
 
   const sizes: Record<ButtonSize, string> = {
@@ -36,7 +31,7 @@ function Button({
 
   return (
     <a
-      className={`${variants[variant]} ${sizes[size]} inline-flex items-center rounded-md transition-colors ${className}`}
+      className={`${variants[variant]} ${sizes[size]} inline-flex items-center rounded-md transition-colors`}
       {...props}
     >
       {children}
