@@ -11,6 +11,7 @@ import ImagesSwiper from "../components/guide/ImagesSwiper.tsx";
 import MediaContainer from "../components/containers/MediaContainer.astro";
 import GoogleMap from "../components/GoogleMap.astro";
 import GearSwiper from "../components/gear/GearSwiper.tsx";
+import SimilarGuides from "../components/guide/SimilarGuides.astro";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -28,6 +29,7 @@ const {
   itinerary,
   highlights,
   gear,
+  tags,
 } = Astro.props;
 ---
 
@@ -186,5 +188,14 @@ const {
         </>
       )
     }
+
+    <div>
+      <TextContainer>
+        <h3>You Might Also Like</h3>
+      </TextContainer>
+      <MediaContainer>
+        <SimilarGuides tags={tags}/>
+      </MediaContainer>
+    </div>
   </PageContainer>
 </Layout>

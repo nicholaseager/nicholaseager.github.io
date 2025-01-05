@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import GuideCard from "../../components/guide/GuideCard.tsx";
+import GuideSwiper from "./GuideSwiper.tsx";
+
+// SimilarGuides.astro
+interface Props {
+  tags: string[];
+}
+
+const guides = await getCollection("guides");
+const { tags } = Astro.props;
+
+// Calculate similarity score based on number of matching tags
+const guidesWithSimilarity = guides
+  .map((guide) => {
+    const matchingTags = guide.data.tags.filter((tag: string) =>
+      tags.includes(tag)
+    ).length;
+    return {
+      ...guide.data,
+      id: guide.id,
+      similarity: matchingTags,
+    };
+  })
+  // Filter out guides with no matching tags
+  .filter((guide) => guide.similarity > 0)
+  // Sort by similarity score (highest first), then by date if scores are equal
+  .sort(
+    (a, b) => b.similarity - a.similarity || b.date.valueOf() - a.date.valueOf()
+  )
+  // Remove first guide since it will be the current guide
+  .slice(1);
+---
+
+<GuideSwiper client:visible guides={guidesWithSimilarity} />
