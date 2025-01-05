@@ -1,6 +1,6 @@
 ---
-import Image from "../components/image-kit/Image.astro";
-import Video from "../components/image-kit/Video.astro";
+import ReactImage from "./image-kit/Image.tsx";
+import Video from "./image-kit/Video.tsx";
 const { title, subtitle, media, type } = Astro.props;
 ---
 
@@ -10,12 +10,15 @@ const { title, subtitle, media, type } = Astro.props;
 >
   {
     type === "image" && (
-      <Image path={media} class="object-cover w-full h-full" />
+      <ReactImage path={media} className="object-cover w-full h-full" />
     )
   }
   {
     type === "video" && (
-      <Video path={media} class="absolute top-0 w-full h-full object-cover" />
+      <Video
+        path={media}
+        className="absolute top-0 w-full h-full object-cover"
+      />
     )
   }
   <div
