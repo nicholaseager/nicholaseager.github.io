@@ -1,5 +1,6 @@
 ---
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer.astro";
 
 interface Props {
   navStyle?: "opaque" | "transparent";
@@ -21,4 +22,5 @@ const { navStyle = "opaque" } = Astro.props;
     <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
     <slot />
   </body>
+  <Footer />
 </html>

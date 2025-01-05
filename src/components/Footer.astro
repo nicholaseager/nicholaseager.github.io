@@ -1,0 +1,71 @@
+---
+import Text from "../components/ui/Text";
+import IconButton from "../components/ui/IconButton";
+import YouTubeIcon from "/src/assets/icons/YouTube.svg";
+import InstagramIcon from "/src/assets/icons/Instagram.svg";
+import FacebookIcon from "/src/assets/icons/Facebook.svg";
+---
+
+<footer class="mt-5">
+  <div class="max-w-full px-4 sm:px-5">
+    <div class="border-t-2 border-background-alt pt-5 pb-6">
+      <div
+        class="flex flex-col md:flex-row items-start md:items-center justify-around"
+      >
+        <!-- Copyright -->
+        <div>
+          <p class="text-slate-600">Nicholas Eager Photography</p>
+
+          <div class="mt-2 text-slate-400 text-sm">
+            <span>
+              All Media © 2015-{new Date().getFullYear()}
+              Nicholas Eager. All rights reserved.
+            </span>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="mt-2 text-light text-sm">
+          <span class="text-slate-400">
+            <span>
+              <a href="" class="hover:text-slate-500 font-regular"> Privacy </a>
+              •
+              <a href="" class="hover:text-slate-500 font-regular"> Terms </a>
+              •
+              <a href="" class="hover:text-slate-500 font-regular">
+                Licensing
+              </a>
+            </span>
+          </span>
+        </div>
+
+        <!-- Socials -->
+        <div
+          class="mt-5 h-7 sm:h-10 space-x-2 flex justify-center items-center"
+        >
+          <IconButton
+            variant="primary"
+            href="https://www.youtube.com/NicholasEager"
+            target="_blank"
+          >
+            <YouTubeIcon fill="currentColor" width="24" height="24" />
+          </IconButton>
+          <IconButton
+            variant="primary"
+            href="https://www.instagram.com/nicholas.eager/"
+            target="_blank"
+          >
+            <InstagramIcon fill="currentColor" width="24" height="24" />
+          </IconButton>
+          <IconButton
+            variant="primary"
+            href="https://www.facebook.com/nicholas.eager.photo"
+            target="_blank"
+          >
+            <FacebookIcon fill="currentColor" width="24" height="24" />
+          </IconButton>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
