@@ -9,12 +9,10 @@ import TextContainer from "../components/containers/TextContainer.astro";
 type Props = CollectionEntry<"guides">["data"];
 
 const { title, youtube, introduction, image, modified_date } = Astro.props;
-
-const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
 ---
 
 <Layout navStyle="transparent">
-  <Banner title={title} type="image" media={`${CDN_BASE_URL}/${image}.jpg`} />
+  <Banner title={title} type="image" media={image} />
 
   <div class="my-8">
     <Intro

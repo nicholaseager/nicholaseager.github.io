@@ -8,8 +8,6 @@ import Layout from "../../layouts/Layout.astro";
 const guides = (await getCollection("guides")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
-
-const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
 ---
 
 <Layout>
@@ -20,7 +18,7 @@ const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
         guides.map((item) => (
           <Card
             href={`/guides/${item.id}/`}
-            imageUrl={`${CDN_BASE_URL}/${item.data.image}.jpg`}
+            imagePath={item.data.image}
             title={item.data.title}
             description={item.data.description}
           />

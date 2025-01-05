@@ -1,0 +1,14 @@
+---
+interface Props {
+  path: string;
+  class?: string;
+}
+
+const { path, class: className } = Astro.props;
+
+const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
+---
+
+<video autoplay loop muted class={`w-full ${className || ""}`}>
+  <source src={CDN_BASE_URL + path} type="video/mp4" />
+</video>

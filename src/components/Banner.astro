@@ -1,4 +1,6 @@
 ---
+import Image from "../components/image-kit/Image.astro";
+import Video from "../components/image-kit/Video.astro";
 const { title, subtitle, media, type } = Astro.props;
 ---
 
@@ -8,19 +10,12 @@ const { title, subtitle, media, type } = Astro.props;
 >
   {
     type === "image" && (
-      <img src={media} alt="Banner Image" class="object-cover w-full h-full" />
+      <Image path={media} class="object-cover w-full h-full" />
     )
   }
   {
     type === "video" && (
-      <video
-        autoplay
-        loop
-        muted
-        class="absolute top-0 w-full h-full object-cover"
-      >
-        <source src={media} type="video/mp4" />
-      </video>
+      <Video path={media} class="absolute top-0 w-full h-full object-cover" />
     )
   }
   <div

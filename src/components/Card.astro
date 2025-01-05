@@ -1,20 +1,22 @@
 ---
+import Image from "./image-kit/Image.astro";
+
 // Import props to allow this component to be reusable
 interface CardProps {
-  imageUrl: string;
+  imagePath: string;
   title: string;
   description: string;
   href?: string;
 }
 
-const { imageUrl, title, description, href } = Astro.props as CardProps;
+const { imagePath, title, description, href } = Astro.props as CardProps;
 ---
 
 <a
   href={href || "#"}
   class="max-w-sm rounded-lg shadow-lg overflow-hidden bg-white transform transition-transform duration-200 hover:scale-105 hover:shadow-xl cursor-pointer block"
 >
-  <img src={imageUrl} alt={title} class="w-full h-48 object-cover" />
+  <Image path={imagePath} class="w-full h-48 object-cover" />
   <div class="p-4">
     <h2 class="text-lg font-semibold text-gray-800">{title}</h2>
     <p class="mt-2 text-sm text-gray-600">{description}</p>
