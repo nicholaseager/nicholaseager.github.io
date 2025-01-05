@@ -1,10 +1,8 @@
 ---
-import GearCard from "../components/GearCard.astro";
-import Grid from "../components/Grid.astro";
+import GearCard from "../components/gear/GearCard.tsx";
 import PageContent from "../components/containers/PageContainer.astro";
 import Layout from "../layouts/Layout.astro";
-
-import gear from "../data/gear.json";
+import GearGrid from "../components/gear/GearGrid.tsx";
 import TextContainer from "../components/containers/TextContainer.astro";
 ---
 
@@ -13,19 +11,6 @@ import TextContainer from "../components/containers/TextContainer.astro";
     <TextContainer>
       <h1>Gear</h1>
     </TextContainer>
-    <div class="max-w-7xl mx-auto px-8">
-      <Grid>
-        {
-          gear.map((item) => (
-            <GearCard
-              imageUrl={item.img}
-              viewLink={item.url}
-              title={item.title}
-              description={item.description}
-            />
-          ))
-        }
-      </Grid>
-    </div>
+    <GearGrid />
   </PageContent>
 </Layout>

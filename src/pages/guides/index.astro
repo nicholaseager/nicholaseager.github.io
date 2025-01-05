@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import GuideCard from "../../components/GuideCard.astro";
 import PageContainer from "../../components/containers/PageContainer.astro";
-import Grid from "../../components/Grid.astro";
+import Grid from "../../components/ui/Grid.tsx";
 import Layout from "../../layouts/Layout.astro";
 
 const guides = (await getCollection("guides")).sort(
