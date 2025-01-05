@@ -5,10 +5,25 @@ import Banner from "../components/Banner.astro";
 import Intro from "../components/guide/Intro.astro";
 import PageContainer from "../components/containers/PageContainer.astro";
 import TextContainer from "../components/containers/TextContainer.astro";
+import EagerSwiper from "../components/EagerSwiper.jsx";
+import MediaContainer from "../components/containers/MediaContainer.astro";
+import GoogleMap from "../components/GoogleMap.astro";
 
 type Props = CollectionEntry<"guides">["data"];
 
-const { title, youtube, introduction, image, modified_date } = Astro.props;
+const {
+  title,
+  youtube,
+  introduction,
+  conclusion,
+  image,
+  modified_date,
+  overview,
+  weather,
+  basics,
+  map,
+  highlights,
+} = Astro.props;
 ---
 
 <Layout navStyle="transparent">
@@ -24,8 +39,108 @@ const { title, youtube, introduction, image, modified_date } = Astro.props;
   </div>
 
   <PageContainer>
-    <TextContainer>
-      <h1>{title}</h1>
-    </TextContainer>
+    <!-- Overview -->
+    {
+      overview && (
+        <>
+          <TextContainer>
+            <h2>Overview</h2>
+          </TextContainer>
+          <MediaContainer>
+            <EagerSwiper client:visible imagePaths={overview.images ?? []} />
+          </MediaContainer>
+          <TextContainer>
+            <p>{overview.summary}</p>
+          </TextContainer>
+        </>
+      )
+    }
+
+    <!-- Basics -->
+    {
+      basics && (
+        <>
+          <TextContainer>
+            <h2>Basic Information</h2>
+          </TextContainer>
+          {basics.items.map((item) => (
+            <TextContainer>
+              <p>
+                <b>{item.title}: </b>
+                {item.description}
+              </p>
+            </TextContainer>
+          ))}
+        </>
+      )
+    }
+
+    <!-- Weather -->
+    {
+      weather && (
+        <>
+          <TextContainer>
+            <h2>Weather</h2>
+            {weather.introduction && <p>{weather.introduction}</p>}
+          </TextContainer>
+          {weather.seasons.map((item) => (
+            <TextContainer>
+              <p>
+                <b>{item.title}: </b>
+                {item.description}
+              </p>
+            </TextContainer>
+          ))}
+        </>
+      )
+    }
+
+    <!-- Map -->
+    {
+      map && (
+        <>
+          <TextContainer>
+            <h2>Map</h2>
+            {map.introduction && <p>{map.introduction}</p>}
+          </TextContainer>
+          <MediaContainer>
+            <GoogleMap mapId={map.id} />
+          </MediaContainer>
+        </>
+      )
+    }
+
+    <!-- Highlights -->
+    {
+      highlights && (
+        <>
+          <TextContainer>
+            <h2>Highlights</h2>
+            {highlights.introduction && <p>{highlights.introduction}</p>}
+          </TextContainer>
+          {highlights.items.map((item) => (
+            <TextContainer>
+              <h3>{item.title}</h3>
+              {item.images && (
+                <EagerSwiper client:visible imagePaths={item.images} />
+              )}
+              <p>{item.description}</p>
+            </TextContainer>
+          ))}
+        </>
+      )
+    }
+
+    <!-- Conclusion -->
+    {
+      conclusion && (
+        <>
+          <TextContainer>
+            <h2>Conclusion</h2>
+            <p>{conclusion}</p>
+          </TextContainer>
+        </>
+      )
+    }
   </PageContainer>
 </Layout>
