@@ -3,7 +3,7 @@ interface VideoProps {
   className?: string;
 }
 
-const CDN_BASE_URL = import.meta.env.CDN_BASE_URL;
+const CDN_BASE_URL = import.meta.env.PUBLIC_CDN_BASE_URL;
 
 const Video = ({ path, className }: VideoProps) => {
   const parts = path.split("/");
