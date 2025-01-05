@@ -85,7 +85,7 @@ const {
             <h2>Weather</h2>
             {weather.introduction && <p>{weather.introduction}</p>}
           </TextContainer>
-          {weather.seasons.map((item) => (
+          {weather.seasons?.map((item) => (
             <TextContainer>
               <p>
                 <b>{item.title}: </b>

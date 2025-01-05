@@ -53,12 +53,14 @@ const guides = defineCollection({
     weather: z
       .object({
         introduction: z.string().optional(),
-        seasons: z.array(
-          z.object({
-            title: z.string(),
-            description: z.string(),
-          })
-        ),
+        seasons: z
+          .array(
+            z.object({
+              title: z.string(),
+              description: z.string(),
+            })
+          )
+          .optional(),
       })
       .optional(),
     itinerary: z
