@@ -1,4 +1,6 @@
 ---
+import LinkButton from "../ui/LinkButton.tsx";
+
 interface Props {
   url: string;
   title: string;
@@ -10,10 +12,14 @@ const { url, title, description = "" } = Astro.props;
 let URL = `mailto:?subject=${title}&body=${description}%0A${url}`;
 ---
 
-<a
+<LinkButton
+  variant="custom"
+  bgColor="gray-600"
+  hoverBgColor="gray-700"
+  textColor="white"
+  size="sm"
   href={URL}
   rel="noopener noreferrer"
-  class="inline-flex items-center px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition-colors duration-200"
 >
   <svg
     class="w-5 h-5 mr-2"
@@ -30,4 +36,4 @@ let URL = `mailto:?subject=${title}&body=${description}%0A${url}`;
     ></path>
   </svg>
   Email
-</a>
+</LinkButton>

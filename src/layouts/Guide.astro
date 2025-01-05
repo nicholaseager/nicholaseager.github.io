@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import Layout from "./Layout.astro";
 import Banner from "../components/Banner.astro";
+import LinkButton from "../components/ui/LinkButton.tsx";
 import Intro from "../components/guide/Intro.astro";
 import Itinerary from "../components/guide/Itinerary.tsx";
 import PageContainer from "../components/containers/PageContainer.astro";
@@ -168,12 +169,7 @@ const {
           <TextContainer>
             <p>The provided gear list is a suggestion, tailor it to your needs. Prioritize safety by packing and preparing well for a happy, adventurous hike. Interested in all of my gear recommendations? Click the button below to see what I recommend for filming, travel, and fun :)</p>
             <br>
-            <a
-              href="/gear"
-              class="px-8 py-3 text-base md:text-lg font-semibold text-white bg-accent rounded hover:bg-accent/80 transition-colors duration-150 ease-in-out"
-            >
-              Explore All Gear
-            </a>
+            <LinkButton href="/gear">Explore All Gear</LinkButton>
           </TextContainer>
         </>
       )

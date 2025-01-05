@@ -1,4 +1,6 @@
 ---
+import LinkButton from "../ui/LinkButton.tsx";
+
 interface Props {
   url: string;
 }
@@ -8,11 +10,15 @@ const { url } = Astro.props;
 let URL = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
 ---
 
-<a
+<LinkButton
+  variant="custom"
+  bgColor="[#0A66C2]"
+  hoverBgColor="[#095196]"
+  textColor="white"
+  size="sm"
   href={URL}
   target="_blank"
   rel="noopener noreferrer"
-  class="inline-flex items-center px-4 py-2 bg-[#0A66C2] text-white rounded-md hover:bg-[#095196] transition-colors duration-200"
 >
   <svg
     class="w-5 h-5 mr-2"
@@ -25,4 +31,4 @@ let URL = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     ></path>
   </svg>
   Share
-</a>
+</LinkButton>

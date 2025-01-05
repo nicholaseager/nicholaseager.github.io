@@ -1,4 +1,6 @@
 ---
+import LinkButton from "../ui/LinkButton.tsx";
+
 interface Props {
   url: string;
   text: string;
@@ -12,12 +14,16 @@ if (text) URL += `${text} `;
 URL += `${url}`;
 ---
 
-<a
+<LinkButton
+  variant="custom"
+  bgColor="[#25D366]"
+  hoverBgColor="[#22c55e]"
+  textColor="white"
+  size="sm"
   target="_blank"
   href={encodeURI(URL)}
   rel="noopener noreferrer"
   data-action="share/whatsapp/share"
-  class="inline-flex items-center px-4 py-2 bg-[#25D366] text-white rounded-md hover:bg-[#22c55e] transition-colors duration-200"
 >
   <svg
     class="w-5 h-5 mr-2"
@@ -30,4 +36,4 @@ URL += `${url}`;
     ></path>
   </svg>
   Share
-</a>
+</LinkButton>

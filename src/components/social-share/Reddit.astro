@@ -1,4 +1,6 @@
 ---
+import LinkButton from "../ui/LinkButton.tsx";
+
 interface Props {
   url: string;
   title: string;
@@ -10,11 +12,15 @@ const encoded_url = encodeURIComponent(url);
 let URL = `https://www.reddit.com/submit?url=${encoded_url}&title=${title}`;
 ---
 
-<a
+<LinkButton
+  variant="custom"
+  bgColor="[#FF4500]"
+  hoverBgColor="[#e63e00]"
+  textColor="white"
+  size="sm"
   href={URL}
   target="_blank"
   rel="noopener noreferrer"
-  class="inline-flex items-center px-4 py-2 bg-[#FF4500] text-white rounded-md hover:bg-[#e63e00] transition-colors duration-200"
 >
   <svg
     class="w-5 h-5 mr-2"
@@ -27,4 +33,4 @@ let URL = `https://www.reddit.com/submit?url=${encoded_url}&title=${title}`;
     ></path>
   </svg>
   Post
-</a>
+</LinkButton>
