@@ -1,0 +1,66 @@
+---
+import Image from '../image-kit/Image';
+
+interface ItineraryPhase {
+  title: string;
+  description?: string;
+  images?: string[];
+  elevation?: number;
+  distance?: number;
+}
+
+interface Props {
+  itinerary: ItineraryPhase[];
+}
+
+const { itinerary } = Astro.props;
+---
+
+<div class="overflow-x-auto shadow-md rounded-lg">
+  <table class="w-full text-sm text-left">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+      <tr>
+        <th scope="col" class="px-6 py-3">Day</th>
+        <th scope="col" class="px-6 py-3">Itinerary</th>
+        <th scope="col" class="px-6 py-3">Elevation</th>
+        <th scope="col" class="px-6 py-3">Distance</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        itinerary.map((phase, index) => (
+          <tr class="bg-white border-b hover:bg-gray-50">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+            >
+              Day {index}
+            </th>
+            <td class="px-6 py-4">{phase.title}</td>
+            <td class="px-6 py-4">{phase.elevation}</td>
+            <td class="px-6 py-4">{phase.distance}</td>
+          </tr>
+          <tr
+              class="bg-gray-50"
+              id={`description-${index}`}
+              data-description-for={`row-${index}`}
+            >
+              <td colspan="4" class="px-6 py-4">
+                <div class="text-gray-700">
+                  <h4 class="font-semibold mb-2">{phase.title}</h4>
+                  <p>{phase.description}</p>
+                  {phase.images && (
+                    <div class="mt-4 flex gap-4">
+                      {phase.images.map((img) => (
+                        <Image path={img} className='w-24 h-24 object-cover rounded'/>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </td>
+            </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
