@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import Layout from "./Layout.astro";
 import Banner from "../components/Banner.astro";
 import Intro from "../components/guide/Intro.astro";
-import Itinerary from "../components/guide/Itinerary.astro";
+import Itinerary from "../components/guide/Itinerary.tsx";
 import PageContainer from "../components/containers/PageContainer.astro";
 import TextContainer from "../components/containers/TextContainer.astro";
 import EagerSwiper from "../components/EagerSwiper.jsx";
@@ -121,7 +121,7 @@ const {
             {itinerary.introduction && <p>{itinerary.introduction}</p>}
           </TextContainer>
           <MediaContainer>
-            <Itinerary itinerary={itinerary.phases} />
+            <Itinerary client:visible itinerary={itinerary.phases} />
           </MediaContainer>
         </>
       )
