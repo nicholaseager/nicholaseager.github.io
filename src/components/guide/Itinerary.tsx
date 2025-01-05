@@ -31,7 +31,7 @@ const ItineraryTable: React.FC<Props> = ({ itinerary }) => {
   return (
     <div className="overflow-x-auto shadow-md rounded-lg max-w-full">
       <table className="table-fixed w-full text-sm text-left">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50">
+        <thead className="text-xs text-slate-700 uppercase bg-gray-50">
           <tr>
             <th scope="col" className="px-2 sm:px-6 py-3 w-[20%]">
               <span className="block truncate">Day</span>
@@ -53,7 +53,7 @@ const ItineraryTable: React.FC<Props> = ({ itinerary }) => {
               >
                 <th
                   scope="row"
-                  className="px-2 sm:px-6 py-4 font-medium text-gray-900 w-[10%]"
+                  className="px-2 sm:px-6 py-4 font-medium text-slate-900 w-[10%]"
                 >
                   <div className="flex items-center gap-2">
                     <svg
@@ -89,7 +89,7 @@ const ItineraryTable: React.FC<Props> = ({ itinerary }) => {
               {expandedRows.has(index) && (
                 <tr className="bg-gray-50">
                   <td colSpan={4} className="px-2 sm:px-6 py-4">
-                    <div className="text-gray-700">
+                    <div className="text-slate-700">
                       <p className="text-sm break-words">{phase.description}</p>
                       {phase.images && (
                         <div className="mt-4 flex flex-wrap gap-2 sm:gap-4">

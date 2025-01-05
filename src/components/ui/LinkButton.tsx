@@ -19,7 +19,7 @@ function Button({
 }: ButtonProps) {
   const variants: Record<ButtonVariant, string> = {
     primary: "bg-accent hover:brightness-90 text-white",
-    secondary: "bg-gray-200 hover:bg-gray-300 text-gray-900",
+    secondary: "bg-gray-200 hover:bg-gray-300 text-slate-900",
     custom: className,
   };
 

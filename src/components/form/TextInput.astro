@@ -3,7 +3,7 @@ const { type, name, label, placeholder, multiline = false } = Astro.props;
 ---
 
 <div>
-  <label class="block text-sm md:text-base lg:text-lg font-bold text-gray-600">
+  <label class="block text-sm md:text-base lg:text-lg font-bold text-slate-600">
     {label}
   </label>
   {
@@ -11,14 +11,14 @@ const { type, name, label, placeholder, multiline = false } = Astro.props;
       <textarea
         name={name}
         placeholder={placeholder}
-        class="w-full mt-2 border-2 border-gray-200 rounded px-3 py-2.5 md:px-4 md:py-3.5 bg-white text-sm md:text-base lg:text-lg text-gray-900 transition-colors duration-150 ease-in-out focus:outline-none focus:border-accent min-h-[200px] resize-none"
+        class="w-full mt-2 border-2 border-gray-200 rounded px-3 py-2.5 md:px-4 md:py-3.5 bg-white text-sm md:text-base lg:text-lg text-slate-900 transition-colors duration-150 ease-in-out focus:outline-none focus:border-accent min-h-[200px] resize-none"
       />
     ) : (
       <input
         type={type}
         name={name}
         placeholder={placeholder}
-        class="w-full mt-2 border-2 border-gray-200 rounded px-3 py-2.5 md:px-4 md:py-3.5 bg-white text-sm md:text-base lg:text-lg text-gray-900 transition-colors duration-150 ease-in-out focus:outline-none focus:border-accent"
+        class="w-full mt-2 border-2 border-gray-200 rounded px-3 py-2.5 md:px-4 md:py-3.5 bg-white text-sm md:text-base lg:text-lg text-slate-900 transition-colors duration-150 ease-in-out focus:outline-none focus:border-accent"
       />
     )
   }

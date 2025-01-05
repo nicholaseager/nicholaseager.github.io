@@ -20,8 +20,8 @@ const GuideCard: React.FC<CardProps> = ({
       <a href={href || "#"}>
         <Image path={imagePath} className="w-full h-48 object-cover" />
         <div className="p-4">
-          <h2 className="text-lg font-semibold text-gray-800">{title}</h2>
-          <p className="mt-2 text-sm text-gray-600">{description}</p>
+          <h2 className="text-slate-700 text-lg font-semibold">{title}</h2>
+          <p className="text-slate-600 mt-2 text-sm">{description}</p>
         </div>
       </a>
     </Card>
