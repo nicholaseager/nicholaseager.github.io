@@ -6,7 +6,7 @@ import Intro from "../components/guide/Intro.astro";
 import Itinerary from "../components/guide/Itinerary.tsx";
 import PageContainer from "../components/containers/PageContainer.astro";
 import TextContainer from "../components/containers/TextContainer.astro";
-import EagerSwiper from "../components/EagerSwiper.jsx";
+import ImagesSwiper from "../components/guide/ImagesSwiper.jsx";
 import MediaContainer from "../components/containers/MediaContainer.astro";
 import GoogleMap from "../components/GoogleMap.astro";
 
@@ -49,7 +49,7 @@ const {
             <h2>Overview</h2>
           </TextContainer>
           <MediaContainer>
-            <EagerSwiper client:visible imagePaths={overview.images ?? []} />
+            <ImagesSwiper client:visible imagePaths={overview.images ?? []} />
           </MediaContainer>
           <TextContainer>
             <p>{overview.summary}</p>
@@ -139,7 +139,7 @@ const {
             <TextContainer>
               <h3>{item.title}</h3>
               {item.images && (
-                <EagerSwiper client:visible imagePaths={item.images} />
+                <ImagesSwiper client:visible imagePaths={item.images} />
               )}
               <p>{item.description}</p>
             </TextContainer>
