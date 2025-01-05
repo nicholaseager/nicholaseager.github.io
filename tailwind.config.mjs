@@ -3,6 +3,76 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: {
+              fontSize: ["25px", null, "35px", "45px"],
+              fontWeight: "500",
+              letterSpacing: "-0.02em",
+              lineHeight: "1.2",
+              color: "rgb(51 65 85)", // text-slate-700
+            },
+            h2: {
+              fontSize: ["22px", null, "30px", "35px"],
+              fontWeight: "500",
+              letterSpacing: "-0.02em",
+              lineHeight: "1.2",
+              color: "rgb(51 65 85)",
+            },
+            h3: {
+              fontSize: ["22px", null, "25px", "30px"],
+              fontWeight: "500",
+              letterSpacing: "-0.02em",
+              lineHeight: "1.3",
+              color: "rgb(51 65 85)",
+            },
+            h4: {
+              fontSize: ["17px", null, "22px", "22px"],
+              fontWeight: "500",
+              letterSpacing: "0",
+              lineHeight: "1.6",
+              color: "rgb(51 65 85)",
+            },
+            h5: {
+              fontSize: ["17px", null, "20px", "20px"],
+              fontWeight: "500",
+              letterSpacing: "0",
+              lineHeight: "1.6",
+              color: "rgb(51 65 85)",
+            },
+            h6: {
+              fontSize: ["17px", null, "20px", "20px"],
+              fontWeight: "500",
+              letterSpacing: "0",
+              lineHeight: "1.6",
+              color: "rgb(51 65 85)",
+            },
+            p: {
+              fontSize: ["15px", null, "17px", "19px"],
+              fontWeight: "300",
+              letterSpacing: "0",
+              lineHeight: "1.6",
+              color: "rgb(71 85 105)", // text-slate-600
+            },
+            blockquote: {
+              fontSize: ["25px", null, "35px", "45px"],
+              fontWeight: "300",
+              letterSpacing: "-0.02em",
+              lineHeight: "1.6",
+              color: "rgb(71 85 105)",
+            },
+            "figcaption, caption": {
+              fontSize: ["13px", null, "15px", "17px"],
+              fontWeight: "300",
+              letterSpacing: "0",
+              lineHeight: "1.6",
+              fontStyle: "italic",
+              color: "rgb(71 85 105)",
+            },
+          },
+        },
+      },
       colors: {
         background: {
           DEFAULT: "#ffffff",
@@ -52,5 +122,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
