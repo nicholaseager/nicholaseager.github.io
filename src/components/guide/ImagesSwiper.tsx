@@ -2,9 +2,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 
-import Image from "../image-kit/Image.tsx";
+import Image from "../image-kit/Image";
 
-const ImagesSwiper = ({ imagePaths }) => {
+interface ImagesSwiperProps {
+  imagePaths: string[];
+}
+
+const ImagesSwiper: React.FC<ImagesSwiperProps> = ({ imagePaths }) => {
   return (
     <Swiper slidesPerView={1} spaceBetween={20} grabCursor={true}>
       {imagePaths.map((path, index) => (
