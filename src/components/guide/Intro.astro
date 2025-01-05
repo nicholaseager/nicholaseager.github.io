@@ -27,7 +27,7 @@ const { title, lastUpdated, description, videoId } = Astro.props;
       </p>
 
       <div class="flex flex-wrap gap-2">
-        <SocialShare url="Astro.request.url" title={title} />
+        <SocialShare url={Astro.request.url} title={title} />
       </div>
 
       <p class="text-lg text-gray-700 leading-relaxed">
