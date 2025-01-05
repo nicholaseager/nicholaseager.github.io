@@ -1,0 +1,24 @@
+---
+import Card from "../components/ui/Card.tsx";
+import Image from "./image-kit/Image.jsx";
+
+// Import props to allow this component to be reusable
+interface CardProps {
+  imagePath: string;
+  title: string;
+  description: string;
+  href?: string;
+}
+
+const { imagePath, title, description, href } = Astro.props as CardProps;
+---
+
+<Card>
+  <a href={href || "#"}>
+    <Image path={imagePath} className="w-full h-48 object-cover" />
+    <div class="p-4">
+      <h2 class="text-lg font-semibold text-gray-800">{title}</h2>
+      <p class="mt-2 text-sm text-gray-600">{description}</p>
+    </div>
+  </a>
+</Card>

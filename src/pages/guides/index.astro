@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import Card from "../../components/Card.astro";
+import GuideCard from "../../components/GuideCard.astro";
 import PageContainer from "../../components/containers/PageContainer.astro";
 import Grid from "../../components/Grid.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -16,7 +16,7 @@ const guides = (await getCollection("guides")).sort(
     <Grid>
       {
         guides.map((item) => (
-          <Card
+          <GuideCard
             href={`/guides/${item.id}/`}
             imagePath={item.data.image}
             title={item.data.title}
