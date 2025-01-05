@@ -12,6 +12,7 @@ import MediaContainer from "../components/containers/MediaContainer.astro";
 import GoogleMap from "../components/GoogleMap.astro";
 import GearSwiper from "../components/gear/GearSwiper.tsx";
 import SimilarGuides from "../components/guide/SimilarGuides.astro";
+import CommentForm from "../components/form/CommentForm.astro";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -196,5 +197,12 @@ const {
         <SimilarGuides tags={tags}/>
       </MediaContainer>
     </div>
+
+    <TextContainer>
+      <p>My site does not support public comments. Please use the form below to send a comment directly to me if you want to ask questions; I am happy to help.</p>
+    </TextContainer>
+    <MediaContainer>
+      <CommentForm/>
+    </MediaContainer>
   </PageContainer>
 </Layout>

@@ -1,0 +1,32 @@
+---
+import TextInput from "./TextInput.astro";
+import Form from "./Form.astro";
+---
+
+<Form
+  action="https://formspree.io/f/xlekgaoj"
+  emailSubject="Comment form submission"
+  confirmationUrl="/thanks"
+  submitButtonText="Send Comment"
+>
+  <TextInput
+    label="Email Address *"
+    type="email"
+    name="email"
+    placeholder="Your email address..."
+  />
+  <TextInput
+    label="Name *"
+    type="text"
+    name="name"
+    placeholder="Your name..."
+  />
+  <TextInput
+    label="Comment *"
+    name="message"
+    placeholder="Your comment..."
+    multiline={true}
+  />
+
+  <input type="hidden" name="_page" value={Astro.request.url} />
+</Form>
