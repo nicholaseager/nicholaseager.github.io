@@ -5,8 +5,7 @@ import OrderForm from "../components/form/OrderForm.astro";
 import Text from "../components/ui/Text";
 import ColumnLayout from "../components/ui/ColumnLayout.astro";
 import type { CollectionEntry } from "astro:content";
-import MediaContainer from "../components/layout/MediaContainer.astro";
-import TextContainer from "../components/layout/TextContainer.astro";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import LinkButton from "../components/ui/LinkButton";
 import YouTubeIcon from "/src/assets/icons/YouTube.svg";
 import ExternalLink from "/src/assets/icons/ExternalLink.svg";
@@ -108,7 +107,7 @@ const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
   </section>
 
   <section class="prose prose-slate max-w-none">
-    <TextContainer>
+    <ResponsiveWidth size="md">
       <h2>Licensing</h2>
       <p>
         Interested? I offer a few different types of licenses for my photos and
@@ -134,12 +133,12 @@ const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
         >
         or look below to find what you're looking for.
       </p>
-    </TextContainer>
+    </ResponsiveWidth>
   </section>
 
   <section>
-    <MediaContainer>
+    <ResponsiveWidth size="lg">
       <PhotoGrid client:visible photos={similarPhotoPaths} />
-    </MediaContainer>
+    </ResponsiveWidth>
   </section>
 </Page>

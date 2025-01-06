@@ -1,6 +1,5 @@
 ---
-import MediaContainer from "../components/layout/MediaContainer.astro";
-import TextContainer from "../components/layout/TextContainer.astro";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import Image from "../components/image-kit/Image";
 import Text from "../components/ui/Text";
 import Page from "../layouts/Page.astro";
@@ -17,7 +16,7 @@ import Page from "../layouts/Page.astro";
     />
   </div>
 
-  <TextContainer>
+  <ResponsiveWidth size="md">
     <Text variant="h2">Explore. Capture. Share.</Text>
     <Text variant="body"
       >Whether it's chasing the golden hour off the coast, pitching a tent above
@@ -26,16 +25,16 @@ import Page from "../layouts/Page.astro";
       strong determination, is an attestation to his passion to capture the
       world around him and share it with others.</Text
     >
-  </TextContainer>
+  </ResponsiveWidth>
 
-  <MediaContainer>
+  <ResponsiveWidth size="lg">
     <Text variant="blockquote"
       >“Capturing the most beautiful moments, and going on epic adventures, is
       meaningless if you can't share that beauty with others.” - Nicholas Eager</Text
     >
-  </MediaContainer>
+  </ResponsiveWidth>
 
-  <TextContainer>
+  <ResponsiveWidth size="md">
     <Text variant="h2">Who is Nicholas?</Text>
     <Text variant="body"
       >Nicholas is a international adventure film-maker and photographer. He
@@ -71,5 +70,5 @@ import Page from "../layouts/Page.astro";
       living in Vietnam, where he spends his time focusing on freelance software
       development and photography.</Text
     >
-  </TextContainer>
+  </ResponsiveWidth>
 </Page>

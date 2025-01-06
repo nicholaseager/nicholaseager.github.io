@@ -1,13 +1,13 @@
 ---
 import Text from "../components/ui/Text";
 import LinkButton from "../components/ui/LinkButton";
-import TextContainer from "../components/layout/TextContainer.astro";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import Page from "../layouts/Page.astro";
 import YouTubeVideo from "../components/YouTubeVideo.astro";
 import { getCollection } from "astro:content";
 import { getLatestFilm, getLatestGuides } from "../utils/latest";
 import GuideSwiper from "../components/guide/GuideSwiper";
-import MediaContainer from "../components/layout/MediaContainer.astro";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import Image from "../components/image-kit/Image";
 
 const guides = await getCollection("guides");
@@ -25,21 +25,21 @@ const latestFilm = await getLatestFilm(films);
     />
   </div>
 
-  <TextContainer>
+  <ResponsiveWidth size="md">
     <Text variant="h1">Latest YouTube</Text>
-  </TextContainer>
-  <MediaContainer>
+  </ResponsiveWidth>
+  <ResponsiveWidth size="lg">
     <YouTubeVideo videoId={latestFilm.id} />
-  </MediaContainer>
+  </ResponsiveWidth>
 
-  <TextContainer>
+  <ResponsiveWidth size="md">
     <Text variant="h1">Latest Travel Guides</Text>
-  </TextContainer>
-  <MediaContainer>
+  </ResponsiveWidth>
+  <ResponsiveWidth size="lg">
     <GuideSwiper client:visible guides={latestGuides} />
-  </MediaContainer>
+  </ResponsiveWidth>
 
-  <TextContainer>
+  <ResponsiveWidth size="md">
     <Text variant="h2">Other Links</Text>
     <div class="flex flex-col gap-4 w-fit">
       <LinkButton variant="secondary" href="/gear">
@@ -48,5 +48,5 @@ const latestFilm = await getLatestFilm(films);
       <LinkButton variant="secondary" href="/photos"> Prints </LinkButton>
       <LinkButton variant="secondary" href="/contact"> Collab </LinkButton>
     </div>
-  </TextContainer>
+  </ResponsiveWidth>
 </Page>

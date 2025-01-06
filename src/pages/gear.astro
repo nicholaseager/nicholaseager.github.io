@@ -1,6 +1,6 @@
 ---
 import GearGrid from "../components/gear/GearGrid.tsx";
-import TextContainer from "../components/layout/TextContainer.astro";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import Text from "../components/ui/Text.tsx";
 import Page from "../layouts/Page.astro";
 ---
@@ -10,11 +10,11 @@ import Page from "../layouts/Page.astro";
   description="All of the gear I genuinely like and use, and recommend to try out for yourself. I will constantly update this list when I find and include new gear."
 >
   <GearGrid client:load />
-  <TextContainer>
+  <ResponsiveWidth size="md">
     <Text variant="caption"
       >This list contains affiliate links, which means I may earn a commission
       for purchases made through these links at no cost to you. Your support
       helps sustain the creation of more content.</Text
     >
-  </TextContainer>
+  </ResponsiveWidth>
 </Page>
