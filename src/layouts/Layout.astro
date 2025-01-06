@@ -1,6 +1,7 @@
 ---
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer.astro";
+import KofiWidget from "../components/KoFiWidget.astro";
 
 interface Props {
   navStyle?: "opaque" | "transparent";
@@ -22,5 +23,8 @@ const { navStyle = "opaque" } = Astro.props;
     <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
     <slot />
   </body>
+  <KofiWidget />
   <Footer />
+  <!-- Spacing for kofi widget -->
+  <div class="h-16"></div>
 </html>
