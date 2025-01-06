@@ -1,55 +1,61 @@
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
 
 import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
 import Image from "../image-kit/Image";
-import Card from "../ui/Card";
 
 interface ImagesSwiperProps {
   imagePaths: string[];
 }
 
 const ImagesSwiper: React.FC<ImagesSwiperProps> = ({ imagePaths }) => {
-  const getBreakpoints = () => {
-    const totalSlides = imagePaths.length;
-
-    if (totalSlides < 3) {
-      return {
-        320: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: Math.min(totalSlides, 2),
-        },
-        1024: {
-          slidesPerView: totalSlides,
-        },
-      };
-    }
-
-    return {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    };
-  };
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
-    <Swiper breakpoints={getBreakpoints()} spaceBetween={20} grabCursor={true}>
-      {imagePaths.map((path, index) => (
-        <SwiperSlide key={index}>
-          <div className="rounded-lg shadow-lg overflow-hidden">
-            <Image path={path} />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="space-y-3">
+      <Swiper
+        spaceBetween={10}
+        thumbs={imagePaths.length > 1 ? { swiper: thumbsSwiper } : undefined}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="w-full"
+      >
+        {imagePaths.map((path, index) => (
+          <SwiperSlide key={index}>
+            <div className="rounded-lg shadow-lg overflow-hidden aspect-[16/9]">
+              <Image path={path} className="w-full h-full object-cover" />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {imagePaths.length > 1 && (
+        <Swiper
+          onSwiper={setThumbsSwiper}
+          spaceBetween={10}
+          slidesPerView={4}
+          freeMode={true}
+          watchSlidesProgress={true}
+          modules={[FreeMode, Navigation, Thumbs]}
+        >
+          {imagePaths.map((path, index) => (
+            <SwiperSlide key={index}>
+              <div className="rounded-lg overflow-hidden aspect-[32/9] cursor-pointer">
+                <Image
+                  path={path}
+                  className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity [.swiper-slide-thumb-active_&]:opacity-100"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
+    </div>
   );
 };
 
