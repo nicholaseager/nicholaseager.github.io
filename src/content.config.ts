@@ -149,4 +149,12 @@ const photos = defineCollection({
   }),
 });
 
-export const collections = { guides, photos };
+const films = defineCollection({
+  loader: file("./src/data/films.json"),
+  schema: z.object({
+    id: z.string(),
+    tags: z.string(),
+  }),
+});
+
+export const collections = { guides, photos, films };
