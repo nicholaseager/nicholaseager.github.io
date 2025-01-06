@@ -31,7 +31,7 @@ function Button({
 
   return (
     <button
-      className={`${variants[variant]} ${sizes[size]} inline-flex items-center rounded-md transition-colors`}
+      className={`${variants[variant]} ${sizes[size]} inline-flex items-center rounded-md transition-colors not-prose`}
       {...props}
     >
       {children}

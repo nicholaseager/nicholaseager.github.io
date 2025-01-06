@@ -32,7 +32,7 @@ function IconButton({
 
   return (
     <a
-      className={`${variants[variant]} ${sizes[size]} inline-flex items-center justify-center rounded-full transition-colors`}
+      className={`${variants[variant]} ${sizes[size]} inline-flex items-center justify-center rounded-full transition-colors not-prose`}
       {...props}
     >
       {children}
