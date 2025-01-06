@@ -1,0 +1,43 @@
+---
+import TextInput from "./TextInput.astro";
+import Form from "./Form.astro";
+import Text from "../ui/Text";
+---
+
+<Form
+  action="https://formspree.io/f/mqkoakkg"
+  emailSubject="Order form submission"
+  confirmationUrl="/thanks"
+  submitButtonText="Send Request"
+  size="sm"
+>
+  <Text variant="h6">Request a Print</Text>
+  <Text variant="caption"
+    >No Commitment 🎉 I'll be in touch shortly after you fill out the form
+    below.</Text
+  >
+
+  <TextInput
+    label="Name *"
+    type="text"
+    name="name"
+    placeholder="Your name..."
+    size="sm"
+  />
+  <TextInput
+    label="Email Address *"
+    type="email"
+    name="email"
+    placeholder="Your email address..."
+    size="sm"
+  />
+  <TextInput
+    label="Comments or Questions?"
+    name="message"
+    placeholder="Your comments..."
+    multiline={true}
+    size="sm"
+  />
+
+  <input type="hidden" name="_image" value={Astro.request.url} />
+</Form>
