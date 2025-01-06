@@ -3,7 +3,7 @@ import Page from "../layouts/Page.astro";
 import RoomDisplaySwiper from "../components/photos/RoomDisplaySwiper";
 import OrderForm from "../components/form/OrderForm.astro";
 import Text from "../components/ui/Text";
-import ColumnLayout from "../components/ui/ColumnLayout.astro";
+import ResponsiveColumnLayout from "../components/layout/ResponsiveColumnLayout.astro";
 import type { CollectionEntry } from "astro:content";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import LinkButton from "../components/ui/LinkButton";
@@ -52,7 +52,7 @@ const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
 
 <Page title={title} description={`${description} - By ${authorName}`}>
   <section>
-    <ColumnLayout>
+    <ResponsiveColumnLayout>
       <RoomDisplaySwiper client:load artworkPath={path} />
       <div class="w-full space-y-2">
         {
@@ -85,7 +85,7 @@ const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
           &nbsp;{organizationName}
         </Text>
       </div>
-    </ColumnLayout>
+    </ResponsiveColumnLayout>
   </section>
 
   <section class="flex align-middle justify-center">
