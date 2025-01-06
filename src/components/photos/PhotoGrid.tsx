@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../ui/Card";
 import Image from "../image-kit/Image";
-import FullScreenGallery from "./PhotoGallery";
+import FullScreenGallery from "./FullScreenGallery";
 
 interface PhotoGridProps {
   photos: string[];
