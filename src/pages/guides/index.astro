@@ -1,29 +1,28 @@
 ---
 import { getCollection } from "astro:content";
 import GuideCard from "../../components/guide/GuideCard.tsx";
-import PageContainer from "../../components/containers/PageContainer.astro";
 import Grid from "../../components/ui/Grid.tsx";
-import Layout from "../../layouts/Layout.astro";
+import Page from "../../layouts/Page.astro";
 
 const guides = (await getCollection("guides")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 ---
 
-<Layout>
-  <PageContainer>
-    <h1>Guides</h1>
-    <Grid>
-      {
-        guides.map((item) => (
-          <GuideCard
-            href={`/guides/${item.id}/`}
-            imagePath={item.data.image}
-            title={item.data.title}
-            description={item.data.description}
-          />
-        ))
-      }
-    </Grid>
-  </PageContainer>
-</Layout>
+<Page
+  title="Travel Guides"
+  description="A collection of how-to guides to help you on your next journey"
+>
+  <Grid>
+    {
+      guides.map((item) => (
+        <GuideCard
+          href={`/guides/${item.id}/`}
+          imagePath={item.data.image}
+          title={item.data.title}
+          description={item.data.description}
+        />
+      ))
+    }
+  </Grid>
+</Page>

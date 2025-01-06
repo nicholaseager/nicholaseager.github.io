@@ -1,17 +1,22 @@
 ---
+import PageContainer from "../components/containers/PageContainer.astro";
+import TextContainer from "../components/containers/TextContainer.astro";
 import Text from "../components/ui/Text";
 import Layout from "../layouts/Layout.astro";
 
-const { frontmatter } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <Layout>
   <main>
-    <div class="mx-auto my-8 md:my-16 p-6 sm:p-8 max-w-6xl space-y-8">
-      <Text variant="h1">{frontmatter.title}</Text>
-      <article class="prose prose-slate max-w-none">
-        <slot />
-      </article>
-    </div>
+    <PageContainer>
+      <section class="mb-8 text-center">
+        <TextContainer>
+          <Text variant="h1">{title}</Text>
+          <Text variant="body">{description}</Text>
+        </TextContainer>
+      </section>
+      <slot />
+    </PageContainer>
   </main>
 </Layout>

@@ -1,28 +1,20 @@
 ---
-import PageContainer from "../components/containers/PageContainer.astro";
-import Layout from "../layouts/Layout.astro";
 import GearGrid from "../components/gear/GearGrid.tsx";
 import TextContainer from "../components/containers/TextContainer.astro";
 import Text from "../components/ui/Text.tsx";
+import Page from "../layouts/Page.astro";
 ---
 
-<Layout>
-  <PageContainer>
-    <TextContainer>
-      <Text variant="h1">Gear</Text>
-      <Text variant="body"
-        >All of the gear I genuinely like and use, and recommend to try out for
-        yourself. I will constantly update this list when I find and include new
-        gear.</Text
-      >
-    </TextContainer>
-    <GearGrid client:load />
-    <TextContainer>
-      <Text variant="caption"
-        >This list contains affiliate links, which means I may earn a commission
-        for purchases made through these links at no cost to you. Your support
-        helps sustain the creation of more content.</Text
-      >
-    </TextContainer>
-  </PageContainer>
-</Layout>
+<Page
+  title="Gear"
+  description="All of the gear I genuinely like and use, and recommend to try out for yourself. I will constantly update this list when I find and include new gear."
+>
+  <GearGrid client:load />
+  <TextContainer>
+    <Text variant="caption"
+      >This list contains affiliate links, which means I may earn a commission
+      for purchases made through these links at no cost to you. Your support
+      helps sustain the creation of more content.</Text
+    >
+  </TextContainer>
+</Page>
