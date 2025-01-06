@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MobileTableOfContents from "./MobileTableOfContents";
 import DesktopTableOfContents from "./DesktopTableOfContents";
 import { type TableOfContentsItem } from "./item";
@@ -9,6 +9,39 @@ interface TableOfContentsProps {
 
 const TableOfContents: React.FC<TableOfContentsProps> = ({ items }) => {
   const [activeId, setActiveId] = useState(items[0]?.id);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-80px 0px -80% 0px",
+        threshold: 0,
+      }
+    );
+
+    // Observe all section headings
+    items.forEach((item) => {
+      const element = document.getElementById(item.id);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      items.forEach((item) => {
+        const element = document.getElementById(item.id);
+        if (element) {
+          observer.unobserve(element);
+        }
+      });
+    };
+  }, [items]);
 
   const handleItemClick = (id: string) => {
     setActiveId(id);
