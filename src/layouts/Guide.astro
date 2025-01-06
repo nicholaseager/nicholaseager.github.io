@@ -9,7 +9,6 @@ import Itinerary from "../components/guide/Itinerary.tsx";
 import PageContainer from "../components/layout/PageContainer.astro";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import ImagesSwiper from "../components/guide/ThumbsSwiper.tsx";
-import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import GoogleMap from "../components/GoogleMap.astro";
 import GearSwiper from "../components/gear/GearSwiper.tsx";
 import CommentForm from "../components/form/CommentForm.astro";
@@ -77,13 +76,13 @@ const tableOfContents: TableOfContentsItem[] = [
         <>
           <ResponsiveWidth size="md">
             <Text variant="h2" id="overview">Overview</Text>
-          </TextContainer>
+          </ResponsiveWidth>
           <ResponsiveWidth size="lg">
             <ImagesSwiper client:visible imagePaths={overview.images ?? []} />
-          </MediaContainer>
+          </ResponsiveWidth>
           <ResponsiveWidth size="md">
             <Text variant="body">{overview.summary}</Text>
-          </TextContainer>
+          </ResponsiveWidth>
         </>
       )
     }
@@ -94,14 +93,14 @@ const tableOfContents: TableOfContentsItem[] = [
         <>
           <ResponsiveWidth size="md">
             <Text variant="h2" id="basics">Basic Information</Text>
-          </TextContainer>
+          </ResponsiveWidth>
           {basics.items.map((item) => (
             <ResponsiveWidth size="md">
               <Text variant="body">
                 <b>{item.title}: </b>
                 {item.description}
               </Text>
-            </TextContainer>
+            </ResponsiveWidth>
           ))}
         </>
       )
@@ -114,14 +113,14 @@ const tableOfContents: TableOfContentsItem[] = [
           <ResponsiveWidth size="md">
             <Text variant="h2" id="weather">Weather</Text>
             {weather.introduction && <Text variant="body">{weather.introduction}</Text>}
-          </TextContainer>
+          </ResponsiveWidth>
           {weather.seasons?.map((item) => (
             <ResponsiveWidth size="md">
               <Text variant="body">
                 <b>{item.title}: </b>
                 {item.description}
               </Text>
-            </TextContainer>
+            </ResponsiveWidth>
           ))}
         </>
       )
@@ -134,10 +133,10 @@ const tableOfContents: TableOfContentsItem[] = [
           <ResponsiveWidth size="md">
             <Text variant="h2" id="map">Map</Text>
             {map.introduction && <Text variant="body">{map.introduction}</Text>}
-          </TextContainer>
+          </ResponsiveWidth>
           <ResponsiveWidth size="lg">
             <GoogleMap mapId={map.id} />
-          </MediaContainer>
+          </ResponsiveWidth>
         </>
       )
     }
@@ -149,10 +148,10 @@ const tableOfContents: TableOfContentsItem[] = [
           <ResponsiveWidth size="md">
             <Text variant="h2" id="itinerary">Itinerary</Text>
             {itinerary.introduction && <Text variant="body">{itinerary.introduction}</Text>}
-          </TextContainer>
+          </ResponsiveWidth>
           <ResponsiveWidth size="lg">
             <Itinerary client:visible itinerary={itinerary.phases} />
-          </MediaContainer>
+          </ResponsiveWidth>
         </>
       )
     }
@@ -164,19 +163,19 @@ const tableOfContents: TableOfContentsItem[] = [
           <ResponsiveWidth size="md">
             <Text variant="h2" id="highlights">Highlights</Text>
             {highlights.introduction && <Text variant="body">{highlights.introduction}</Text>}
-          </TextContainer>
+          </ResponsiveWidth>
           {highlights.items.map((item) => (
             <ResponsiveWidth size="md">
               <Text variant="h3">{item.title}</Text>
-            </TextContainer>
+            </ResponsiveWidth>
             <ResponsiveWidth size="lg">
               {item.images && (
                 <ImagesSwiper client:visible imagePaths={item.images} />
               )}
-            </MediaContainer>
+            </ResponsiveWidth>
             <ResponsiveWidth size="md">
               <Text variant="body">{item.description}</Text>
-            </TextContainer>
+            </ResponsiveWidth>
           ))}
         </>
       )
@@ -189,14 +188,14 @@ const tableOfContents: TableOfContentsItem[] = [
           <ResponsiveWidth size="md">
             <Text variant="h2" id="gear">Gear</Text>
             {gear.introduction && <Text variant="body">{gear.introduction}</Text>}
-          </TextContainer>
+          </ResponsiveWidth>
           <ResponsiveWidth size="lg">
             <GearSwiper client:visible trip={gear.trip} />
-          </MediaContainer>
+          </ResponsiveWidth>
           <ResponsiveWidth size="md">
             <Text variant="body">The provided gear list is a suggestion, tailor it to your needs. Prioritize safety by packing and preparing well for a happy, adventurous hike. Interested in all of my gear recommendations? Click the button below to see what I recommend for filming, travel, and fun :)</Text>
             <div class="mt-4"><LinkButton href="/gear">Explore All Gear</LinkButton></div>
-          </TextContainer>
+          </ResponsiveWidth>
         </>
       )
     }
@@ -208,7 +207,7 @@ const tableOfContents: TableOfContentsItem[] = [
           <ResponsiveWidth size="md">
             <Text variant="h2">Conclusion</Text>
             <Text variant="body">{conclusion}</Text>
-          </TextContainer>
+          </ResponsiveWidth>
         </>
       )
     }
@@ -217,19 +216,19 @@ const tableOfContents: TableOfContentsItem[] = [
     <div>
       <ResponsiveWidth size="md">
         <Text variant="h3">You Might Also Like</Text>
-      </TextContainer>
+      </ResponsiveWidth>
       <ResponsiveWidth size="lg">
         <GuideSwiper client:visible guides={guidesWithSimilarity} />
-      </MediaContainer>
+      </ResponsiveWidth>
     </div>
 
     <!-- Comment -->
     <ResponsiveWidth size="md">
       <Text variant="body">My site does not support public comments. Please use the form below to send a comment directly to me if you want to ask questions; I am happy to help.</Text>
-    </TextContainer>
+    </ResponsiveWidth>
     <ResponsiveWidth size="lg">
       <CommentForm/>
-    </MediaContainer>
+    </ResponsiveWidth>
 
     <!-- Disclosure -->
     <ResponsiveWidth size="md">
@@ -255,6 +254,6 @@ const tableOfContents: TableOfContentsItem[] = [
           </span>
         </Text>
       </div>
-    </TextContainer>
+    </ResponsiveWidth>
   </PageContainer>
 </Layout>
