@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Page from "../layouts/Page.astro";
 import RoomDisplaySwiper from "../components/photos/RoomDisplaySwiper";
 import OrderForm from "../components/form/OrderForm.astro";
 import Text from "../components/ui/Text";
@@ -13,6 +13,8 @@ import ExternalLink from "/src/assets/icons/ExternalLink.svg";
 import { getSimilarPhotos } from "../utils/similarity";
 import { getCollection } from "astro:content";
 import PhotoGrid from "../components/photos/PhotoGrid";
+import Card from "../components/ui/Card";
+import Image from "../components/image-kit/Image";
 
 type Props = CollectionEntry<"photos">["data"];
 
@@ -49,73 +51,60 @@ const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
 );
 ---
 
-<Layout>
+<Page title={title} description={`${description} - By ${authorName}`}>
   <section>
-    <MediaContainer>
-      <ColumnLayout>
-        <RoomDisplaySwiper client:load artworkPath={path} />
-        <div class="w-full space-y-2">
-          <div>
-            <Text variant="h2">
-              {title}
-            </Text>
-            <Text variant="caption">
-              {location}
-            </Text>
-            <Text variant="caption">
-              By <a href="/about">{authorName}</a>
-            </Text>
-            <Text variant="caption">
-              <b>© {currentYear}</b>
-              {organizationName}
-            </Text>
-          </div>
-
-          <Text variant="caption">
-            {description}
-          </Text>
-
-          {
-            youtubeId && (
+    <ColumnLayout>
+      <RoomDisplaySwiper client:load artworkPath={path} />
+      <div class="w-full space-y-2">
+        {
+          darkroomId ? (
+            <div class="p-4 space-y-4 bg-background-alt rounded-lg">
+              <Text variant="body">
+                Order a print to share the story in your own home.
+              </Text>
               <LinkButton
-                variant="secondary"
-                size="sm"
-                href={`https://www.youtube.com/watch?v=${youtubeId}`}
+                variant="primary"
+                size="lg"
+                href={`https://nicholaseagerphoto.darkroom.com/products/${darkroomId}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="flex flex-row gap-2 align-middle items-center">
-                  <YouTubeIcon /> Watch the video behind the photo
+                <div class="flex flex-row gap-4 align-middle items-center">
+                  Order Print <ExternalLink width={18} height={18} />
                 </div>
               </LinkButton>
-            )
-          }
+            </div>
+          ) : (
+            <OrderForm />
+          )
+        }
+        <Text variant="body">
+          {title} ({location})
+        </Text>
+        <Text variant="caption">
+          © {currentYear}
+          &nbsp;{organizationName}
+        </Text>
+      </div>
+    </ColumnLayout>
+  </section>
 
-          {
-            darkroomId ? (
-              <div class="mt-4 p-4 space-y-4 bg-background-alt rounded-lg">
-                <Text variant="body">
-                  Order a print to share the story in your own home.
-                </Text>
-                <LinkButton
-                  variant="primary"
-                  size="lg"
-                  href={`https://nicholaseagerphoto.darkroom.com/products/${darkroomId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="flex flex-row gap-4 align-middle items-center">
-                    Order Print <ExternalLink width={18} height={18} />
-                  </div>
-                </LinkButton>
-              </div>
-            ) : (
-              <OrderForm />
-            )
-          }
-        </div>
-      </ColumnLayout>
-    </MediaContainer>
+  <section class="flex align-middle justify-center">
+    {
+      youtubeId && (
+        <LinkButton
+          variant="secondary"
+          size="lg"
+          href={`https://www.youtube.com/watch?v=${youtubeId}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="flex flex-row gap-2 align-middle items-center">
+            <YouTubeIcon /> Watch the video behind the photo
+          </div>
+        </LinkButton>
+      )
+    }
   </section>
 
   <section class="prose prose-slate max-w-none">
@@ -153,4 +142,4 @@ const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
       <PhotoGrid client:visible photos={similarPhotoPaths} />
     </MediaContainer>
   </section>
-</Layout>
+</Page>
