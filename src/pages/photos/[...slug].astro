@@ -1,7 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
-import TextContainer from "../../components/containers/TextContainer.astro";
+import OrderPrint from "../../layouts/OrderPrint.astro";
 
 export async function getStaticPaths() {
   const photos = await getCollection("photos");
@@ -15,8 +14,4 @@ type Props = CollectionEntry<"photos">;
 const photo = Astro.props;
 ---
 
-<Layout>
-  <TextContainer>
-    <h1>{photo.data.path}</h1>
-  </TextContainer>
-</Layout>
+<OrderPrint {...photo.data} />
