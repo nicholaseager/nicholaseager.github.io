@@ -3,10 +3,12 @@ import { useEffect, useState, type IframeHTMLAttributes } from "react";
 
 interface LazyIframeProps extends IframeHTMLAttributes<HTMLIFrameElement> {
   className?: string;
+  backgroundColor?: string;
 }
 
 export default function LazyIframe({
   className = "",
+  backgroundColor = "bg-background-alt",
   ...iframeProps
 }: LazyIframeProps) {
   const [showIframe, setShowIframe] = useState(false);
@@ -22,7 +24,9 @@ export default function LazyIframe({
   return (
     <>
       {!showIframe ? (
-        <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center rounded-lg shadow-lg">
+        <div
+          className={`absolute inset-0 ${backgroundColor} animate-pulse flex items-center justify-center rounded-lg shadow-lg`}
+        >
           <span className="text-gray-500">Loading...</span>
         </div>
       ) : (
