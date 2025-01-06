@@ -26,7 +26,7 @@ function Button({
   const sizes: Record<ButtonSize, string> = {
     sm: "px-3 py-1.5 text-sm",
     md: "px-4 py-2",
-    lg: "px-4 py-2 text-lg",
+    lg: "px-4 py-2 sm:text-lg",
   };
 
   return (
