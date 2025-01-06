@@ -3,7 +3,7 @@ import Page from "../../layouts/Page.astro";
 import PhotoGrid from "../../components/photos/PhotoGrid";
 
 import { getCollection } from "astro:content";
-import TextContainer from "../../components/containers/TextContainer.astro";
+import TextContainer from "../../components/layout/TextContainer.astro";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos

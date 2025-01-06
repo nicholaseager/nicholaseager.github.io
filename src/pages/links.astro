@@ -1,13 +1,13 @@
 ---
 import Text from "../components/ui/Text";
 import LinkButton from "../components/ui/LinkButton";
-import TextContainer from "../components/containers/TextContainer.astro";
+import TextContainer from "../components/layout/TextContainer.astro";
 import Page from "../layouts/Page.astro";
 import YouTubeVideo from "../components/YouTubeVideo.astro";
 import { getCollection } from "astro:content";
 import { getLatestFilm, getLatestGuides } from "../utils/latest";
 import GuideSwiper from "../components/guide/GuideSwiper";
-import MediaContainer from "../components/containers/MediaContainer.astro";
+import MediaContainer from "../components/layout/MediaContainer.astro";
 import Image from "../components/image-kit/Image";
 
 const guides = await getCollection("guides");
