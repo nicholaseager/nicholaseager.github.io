@@ -1,17 +1,20 @@
 ---
 import Text from "../components/ui/Text";
 import Layout from "../layouts/Layout.astro";
+import TextContainer from "../components/ui/TextContainer";
 
 const { frontmatter } = Astro.props;
 ---
 
 <Layout>
   <main>
-    <div class="mx-auto my-8 md:my-16 p-6 sm:p-8 max-w-6xl space-y-8">
+    <div class="mx-auto my-8 md:my-16 p-6 sm:p-8 max-w-6xl">
       <Text variant="h1">{frontmatter.title}</Text>
       <Text variant="body">{frontmatter.description}</Text>
       <article class="prose prose-slate max-w-none">
-        <slot />
+        <TextContainer spacing="tight">
+          <slot />
+        </TextContainer>
       </article>
     </div>
   </main>
