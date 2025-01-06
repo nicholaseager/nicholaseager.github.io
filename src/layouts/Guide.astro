@@ -15,6 +15,7 @@ import GearSwiper from "../components/gear/GearSwiper.tsx";
 import CommentForm from "../components/form/CommentForm.astro";
 import { getSimilarGuides } from "../utils/similarity";
 import GuideSwiper from "../components/guide/GuideSwiper";
+import TableOfContents from "../components/TableOfContents";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -37,6 +38,22 @@ const {
 
 const guides = await getCollection("guides");
 const guidesWithSimilarity = getSimilarGuides(guides, tags);
+
+interface TableOfContentsItem {
+  title: string;
+  id: string;
+}
+
+// Generate table of contents based on available sections
+const tableOfContents: TableOfContentsItem[] = [
+  { title: "Overview", id: "overview", enabled: !!overview },
+  { title: "Basic Information", id: "basics", enabled: !!basics },
+  { title: "Weather", id: "weather", enabled: !!weather },
+  { title: "Map", id: "map", enabled: !!map },
+  { title: "Itinerary", id: "itinerary", enabled: !!itinerary },
+  { title: "Highlights", id: "highlights", enabled: !!highlights },
+  { title: "Gear", id: "gear", enabled: !!gear },
+].filter((item) => item.enabled);
 ---
 
 <Layout navStyle="transparent">
@@ -50,13 +67,16 @@ const guidesWithSimilarity = getSimilarGuides(guides, tags);
     />
   </div>
 
+  <!-- Table of Contents -->
+  <TableOfContents client:load items={tableOfContents} />
+
   <PageContainer>
     <!-- Overview -->
     {
       overview && (
         <>
           <TextContainer>
-            <Text variant="h2">Overview</Text>
+            <Text variant="h2" id="overview">Overview</Text>
           </TextContainer>
           <MediaContainer>
             <ImagesSwiper client:visible imagePaths={overview.images ?? []} />
@@ -73,7 +93,7 @@ const guidesWithSimilarity = getSimilarGuides(guides, tags);
       basics && (
         <>
           <TextContainer>
-            <Text variant="h2">Basic Information</Text>
+            <Text variant="h2" id="basics">Basic Information</Text>
           </TextContainer>
           {basics.items.map((item) => (
             <TextContainer>
@@ -92,7 +112,7 @@ const guidesWithSimilarity = getSimilarGuides(guides, tags);
       weather && (
         <>
           <TextContainer>
-            <Text variant="h2">Weather</Text>
+            <Text variant="h2" id="weather">Weather</Text>
             {weather.introduction && <Text variant="body">{weather.introduction}</Text>}
           </TextContainer>
           {weather.seasons?.map((item) => (
@@ -112,7 +132,7 @@ const guidesWithSimilarity = getSimilarGuides(guides, tags);
       map && (
         <>
           <TextContainer>
-            <Text variant="h2">Map</Text>
+            <Text variant="h2" id="map">Map</Text>
             {map.introduction && <Text variant="body">{map.introduction}</Text>}
           </TextContainer>
           <MediaContainer>
@@ -127,7 +147,7 @@ const guidesWithSimilarity = getSimilarGuides(guides, tags);
       itinerary && (
         <>
           <TextContainer>
-            <Text variant="h2">Itinerary</Text>
+            <Text variant="h2" id="itinerary">Itinerary</Text>
             {itinerary.introduction && <Text variant="body">{itinerary.introduction}</Text>}
           </TextContainer>
           <MediaContainer>
@@ -142,7 +162,7 @@ const guidesWithSimilarity = getSimilarGuides(guides, tags);
       highlights && (
         <>
           <TextContainer>
-            <Text variant="h2">Highlights</Text>
+            <Text variant="h2" id="highlights">Highlights</Text>
             {highlights.introduction && <Text variant="body">{highlights.introduction}</Text>}
           </TextContainer>
           {highlights.items.map((item) => (
@@ -167,7 +187,7 @@ const guidesWithSimilarity = getSimilarGuides(guides, tags);
       gear && (
         <>
           <TextContainer>
-            <Text variant="h2">Gear</Text>
+            <Text variant="h2" id="gear">Gear</Text>
             {gear.introduction && <Text variant="body">{gear.introduction}</Text>}
           </TextContainer>
           <MediaContainer>
