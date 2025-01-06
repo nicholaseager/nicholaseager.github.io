@@ -6,10 +6,10 @@ interface RoomDisplayProps {
   background: string;
   aspectRatio: string;
   artworkPosition: {
-    width?: string;
-    top?: string;
-    left?: string;
-    right?: string;
+    top: string;
+    left: string;
+    right: string;
+    bottom: string;
   };
 }
 
@@ -33,15 +33,14 @@ const RoomDisplay: React.FC<RoomDisplayProps> = ({
 
         {/* Artwork Overlay */}
         <div
-          className="absolute shadow-xl"
+          className="absolute inset-0 flex items-center justify-center"
           style={{
             ...artworkPosition,
-            position: "absolute",
           }}
         >
           <Image
             path={artworkPath}
-            className="w-full h-auto border-4 sm:border-8 border-white"
+            className="shadow-xl border-4 sm:border-8 border-white object-contain w-auto h-auto max-w-full max-h-full"
           />
         </div>
       </div>

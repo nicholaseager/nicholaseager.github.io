@@ -15,9 +15,10 @@ const roomDisplays = [
     background: "solid-white",
     aspectRatio: "1",
     artworkPosition: {
-      width: "80%",
       top: "10%",
+      bottom: "10%",
       left: "10%",
+      right: "10%",
     },
   },
   {
@@ -25,9 +26,10 @@ const roomDisplays = [
     background: "solid-concrete",
     aspectRatio: "1",
     artworkPosition: {
-      width: "80%",
       top: "10%",
+      bottom: "10%",
       left: "10%",
+      right: "10%",
     },
   },
   {
@@ -35,9 +37,10 @@ const roomDisplays = [
     background: "blue-wall-wooden-chairs",
     aspectRatio: "1",
     artworkPosition: {
-      width: "60%",
       top: "5%",
+      bottom: "55%",
       left: "20%",
+      right: "20%",
     },
   },
   {
@@ -45,9 +48,10 @@ const roomDisplays = [
     background: "white-wall-wooden-floor-dog",
     aspectRatio: "0.72733333",
     artworkPosition: {
-      width: "50%",
       top: "10%",
+      bottom: "50%",
       left: "10%",
+      right: "40%",
     },
   },
   {
@@ -55,9 +59,10 @@ const roomDisplays = [
     background: "brick-wall-bicycle",
     aspectRatio: "0.886",
     artworkPosition: {
-      width: "60%",
       top: "5%",
+      bottom: "55%",
       left: "20%",
+      right: "20%",
     },
   },
   {
@@ -65,8 +70,9 @@ const roomDisplays = [
     background: "brown-wall-wooden-furntiure",
     aspectRatio: "1.00874243",
     artworkPosition: {
-      width: "40%",
-      top: "20%",
+      top: "10%",
+      bottom: "50%",
+      left: "40%",
       right: "20%",
     },
   },
@@ -75,8 +81,9 @@ const roomDisplays = [
     background: "white-wall-tropical-plants-natural-light",
     aspectRatio: "1",
     artworkPosition: {
-      width: "40%",
-      top: "20%",
+      top: "10%",
+      bottom: "50%",
+      left: "50%",
       right: "10%",
     },
   },
@@ -85,8 +92,9 @@ const roomDisplays = [
     background: "white-wall-wooden-cabinet",
     aspectRatio: "1",
     artworkPosition: {
-      width: "40%",
       top: "10%",
+      bottom: "50%",
+      left: "37%",
       right: "23%",
     },
   },
@@ -95,8 +103,9 @@ const roomDisplays = [
     background: "white-wall-gray-couch-dog",
     aspectRatio: "1.5",
     artworkPosition: {
-      width: "30%",
       top: "10%",
+      bottom: "60%",
+      left: "45%",
       right: "25%",
     },
   },
@@ -105,8 +114,9 @@ const roomDisplays = [
     background: "dark-grey-wall-wooden-dresser",
     aspectRatio: "1.08303249",
     artworkPosition: {
-      width: "50%",
       top: "10%",
+      bottom: "40%",
+      left: "35%",
       right: "15%",
     },
   },
