@@ -1,0 +1,44 @@
+---
+import Text from "../components/ui/Text";
+import LinkButton from "../components/ui/LinkButton";
+import TextContainer from "../components/containers/TextContainer.astro";
+import Page from "../layouts/Page.astro";
+import YouTubeVideo from "../components/YouTubeVideo.astro";
+import { getCollection } from "astro:content";
+import { getLatestFilm, getLatestGuides } from "../utils/latest";
+import GuideSwiper from "../components/guide/GuideSwiper";
+import MediaContainer from "../components/containers/MediaContainer.astro";
+
+const guides = await getCollection("guides");
+const latestGuides = await getLatestGuides(guides, 10);
+
+const films = await getCollection("films");
+const latestFilm = await getLatestFilm(films);
+---
+
+<Page>
+  <TextContainer>
+    <Text variant="h1">Latest YouTube</Text>
+  </TextContainer>
+  <MediaContainer>
+    <YouTubeVideo videoId={latestFilm.id} />
+  </MediaContainer>
+
+  <TextContainer>
+    <Text variant="h1">Latest Travel Guides</Text>
+  </TextContainer>
+  <MediaContainer>
+    <GuideSwiper client:visible guides={latestGuides} />
+  </MediaContainer>
+
+  <TextContainer>
+    <Text variant="h2">Other Links</Text>
+    <div class="flex flex-col gap-4 w-fit">
+      <LinkButton variant="secondary" href="/gear">
+        Gear I Use for Hiking and Filming
+      </LinkButton>
+      <LinkButton variant="secondary" href="/photos"> Prints </LinkButton>
+      <LinkButton variant="secondary" href="/contact"> Collab </LinkButton>
+    </div>
+  </TextContainer>
+</Page>
