@@ -1,16 +1,25 @@
 ---
+import Button from "../ui/Button";
 const {
   action,
   confirmationUrl,
   emailSubject,
   submitButtonText = "Submit",
+  size = "md",
 } = Astro.props;
+
+type Size = "sm" | "md" | "lg";
+const sizes: Record<Size, string> = {
+  sm: "p-4",
+  md: "p-5 md:p-10",
+  lg: "p-5 md:p-10 lg:p-12 xl:p-14",
+};
 ---
 
 <div
-  class="bg-background-alt rounded-lg shadow-lg mx-auto w-full p-5 md:p-10 lg:p-12 xl:p-14"
+  class={`bg-background-alt rounded-lg shadow-lg mx-auto w-full ${sizes[size as Size]}`}
 >
-  <form method="post" action={action} class="w-full space-y-4">
+  <form method="post" action={action} class="space-y-4">
     <slot />
 
     <input type="hidden" name="_next" value={confirmationUrl} />
@@ -23,11 +32,8 @@ const {
       autocomplete="off"
     />
 
-    <button
-      type="submit"
-      class="w-full px-8 py-3 text-base md:text-lg font-semibold text-white bg-accent rounded hover:bg-accent/80 transition-colors duration-150 ease-in-out"
-    >
+    <Button type="submit" variant="primary" size={size}>
       {submitButtonText}
-    </button>
+    </Button>
   </form>
 </div>

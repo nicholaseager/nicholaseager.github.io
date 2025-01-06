@@ -8,23 +8,27 @@ import Form from "./Form.astro";
   emailSubject="Contact form submission"
   confirmationUrl="/thanks"
   submitButtonText="Send Message"
+  size="lg"
 >
   <TextInput
     label="Email Address *"
     type="email"
     name="email"
     placeholder="Your email address..."
+    size="lg"
   />
   <TextInput
     label="Name *"
     type="text"
     name="name"
     placeholder="Your name..."
+    size="lg"
   />
   <TextInput
     label="Message *"
     name="message"
     placeholder="Your message..."
     multiline={true}
+    size="lg"
   />
 </Form>
