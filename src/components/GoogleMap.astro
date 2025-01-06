@@ -1,4 +1,5 @@
 ---
+import { GoogleMapModalWrapper } from "./GoogleMapModalWrapper";
 import LazyIframe from "./ui/LazyIFrame";
 
 interface Props {
@@ -8,10 +9,12 @@ interface Props {
 const { mapId } = Astro.props;
 ---
 
-<div class="relative w-full aspect-[3/2]">
-  <LazyIframe
-    client:visible
-    src={`https://www.google.com/maps/d/u/0/embed?mid=${mapId}`}
-    title="Google Map"
-  />
-</div>
+<GoogleMapModalWrapper client:visible>
+  <div class="relative w-full aspect-[3/2]">
+    <LazyIframe
+      client:visible
+      src={`https://www.google.com/maps/d/u/0/embed?mid=${mapId}`}
+      title="Google Map"
+    />
+  </div>
+</GoogleMapModalWrapper>
