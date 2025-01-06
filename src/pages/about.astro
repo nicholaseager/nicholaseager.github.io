@@ -1,8 +1,75 @@
 ---
+import MediaContainer from "../components/containers/MediaContainer.astro";
+import TextContainer from "../components/containers/TextContainer.astro";
+import Image from "../components/image-kit/Image";
+import Text from "../components/ui/Text";
 import Page from "../layouts/Page.astro";
 ---
 
 <Page
   title="About"
   description="Husband, Photographer, Film-maker, and Adventurer"
-/>
+>
+  <div class="flex justify-center">
+    <Image
+      className="w-32 sm:w-48 rounded-full aspect-square shadow-lg"
+      path="profile-square_7r8XDOfQj"
+    />
+  </div>
+
+  <TextContainer>
+    <Text variant="h2">Explore. Capture. Share.</Text>
+    <Text variant="body"
+      >Whether it's chasing the golden hour off the coast, pitching a tent above
+      the tree-line, or hunting clouds at the fringes of the day, you'll find
+      Nicholas with his camera. Nicholas' adventurous spirit, mixed with a
+      strong determination, is an attestation to his passion to capture the
+      world around him and share it with others.</Text
+    >
+  </TextContainer>
+
+  <MediaContainer>
+    <Text variant="blockquote"
+      >“Capturing the most beautiful moments, and going on epic adventures, is
+      meaningless if you can't share that beauty with others.” - Nicholas Eager</Text
+    >
+  </MediaContainer>
+
+  <TextContainer>
+    <Text variant="h2">Who is Nicholas?</Text>
+    <Text variant="body"
+      >Nicholas is a international adventure film-maker and photographer. He
+      spends a lot of his time exploring and documenting exciting and unique
+      locations, activities, and cultures. He loves to travel to remote or
+      challenging environments to capture footage and photos of adventurous
+      activities such as mountain climbing or backpacking and camping. He is
+      responsible for all aspects of the filmmaking process, including planning
+      and executing shoots, as well as editing and post-production work. He is
+      driven by a desire to share my experiences and inspire others to pursue
+      their own adventures.</Text
+    >
+    <hr />
+    <Text variant="body"
+      >Nicholas started his journey in the world in the middle of nowhere, USA.
+      Being in a flat, landlocked, and corn-filled part of the world did have
+      its benefits: the urge to see the world was unrelenting. During
+      university, he decided to study abroad in Hong Kong, which nurtured his
+      love for understanding cultures on the other side of the world, exploring
+      the path less-traveled, and of course photography and filmmaking.</Text
+    >
+    <Text variant="body"
+      >After spending a few years to focus on his career, he quit his full-time
+      job to spend a year traveling the world. He volunteered in Nepal building
+      a school for five months, worked on a permaculture farm in Indonesia,
+      traveled to Japan, Iceland, China, Vietnam, and New Zealand. These initial
+      travels further cemented his love for travel, landscape photography and
+      story-telling.</Text
+    >
+    <Text variant="body"
+      >Later on, Nicholas moved to Vietnam to marry the love of his life and
+      continue his passion for photography. Nowadays, Nicholas and his wife are
+      living in Vietnam, where he spends his time focusing on freelance software
+      development and photography.</Text
+    >
+  </TextContainer>
+</Page>
