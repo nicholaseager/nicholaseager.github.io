@@ -18,7 +18,7 @@ export const GoogleMapModalWrapper: React.FC<GoogleMapModalWrapperProps> = ({
   const handleDonate = () => {
     setIsModalOpen(false);
     setShowButtonOverlay(false);
-    window.open("/donate", "_blank");
+    window.open("/support", "_blank");
   };
 
   const handleClose = () => {
