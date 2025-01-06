@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Keyboard } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import Image from "../image-kit/Image";
+import LinkButton from "../ui/LinkButton";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -19,6 +20,7 @@ export default function FullScreenGallery({
   onClose,
 }: FullScreenGalleryProps) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(startIndex);
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -44,9 +46,22 @@ export default function FullScreenGallery({
     }
   }, [swiper, startIndex]);
 
+  const handleOrderPrint = () => {
+    const currentPhotoUrl = photos[currentIndex];
+    window.location.href = currentPhotoUrl;
+  };
+
   return (
     <div className="fixed inset-0 w-screen h-screen z-[1000]">
       <div className="absolute inset-0 bg-black" />
+
+      <LinkButton
+        variant="custom"
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-gray-200 hover:bg-gray-300 text-slate-900"
+        onClick={handleOrderPrint}
+      >
+        Order Print
+      </LinkButton>
 
       {onClose && (
         <button
@@ -75,6 +90,7 @@ export default function FullScreenGallery({
         navigation
         keyboard
         onSwiper={setSwiper}
+        onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}
         slidesPerView={1}
         speed={300}
         loop={false}
