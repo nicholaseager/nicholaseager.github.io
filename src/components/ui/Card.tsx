@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`max-w-sm rounded-lg shadow-lg overflow-hidden bg-${backgroundColor} transform transition-transform duration-200 hover:scale-105 hover:shadow-xl ${className}`}
+      className={`rounded-lg shadow-lg overflow-hidden bg-${backgroundColor} transform transition-transform duration-200 hover:scale-105 hover:shadow-xl ${className}`}
     >
       {children}
     </div>
