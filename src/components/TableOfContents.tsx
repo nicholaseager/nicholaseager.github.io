@@ -17,7 +17,21 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ items }) => {
   const handleItemClick = (id: string) => {
     setActiveId(id);
     setIsOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
+    // Get element and header height
+    const element = document.getElementById(id);
+    const headerOffset = 80;
+
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   };
 
   useEffect(() => {
