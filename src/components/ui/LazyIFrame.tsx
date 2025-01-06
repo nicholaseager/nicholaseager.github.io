@@ -1,4 +1,3 @@
-// LazyIframe.tsx
 import { useEffect, useState, type IframeHTMLAttributes } from "react";
 
 interface LazyIframeProps extends IframeHTMLAttributes<HTMLIFrameElement> {
@@ -12,6 +11,7 @@ export default function LazyIframe({
   ...iframeProps
 }: LazyIframeProps) {
   const [showIframe, setShowIframe] = useState(false);
+  const [iframeLoaded, setIframeLoaded] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -23,17 +23,19 @@ export default function LazyIframe({
 
   return (
     <>
-      {!showIframe ? (
+      {(!showIframe || !iframeLoaded) && (
         <div
           className={`absolute inset-0 ${backgroundColor} animate-pulse flex items-center justify-center rounded-lg shadow-lg`}
         >
           <span className="text-gray-500">Loading...</span>
         </div>
-      ) : (
+      )}
+      {showIframe && (
         <iframe
           {...iframeProps}
           className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
           loading="lazy"
+          onLoad={() => setIframeLoaded(true)}
         />
       )}
     </>
