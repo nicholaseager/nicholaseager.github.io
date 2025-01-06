@@ -40,7 +40,7 @@ export const GoogleMapModalWrapper: React.FC<GoogleMapModalWrapperProps> = ({
         please consider making a donation.
       </p>
       <div className="flex gap-4">
-        <Button onClick={handleDonate}>Donate Now</Button>
+        <Button onClick={handleDonate}>Support Me</Button>
         <Button variant="secondary" onClick={handleClose}>
           No, thanks
         </Button>
