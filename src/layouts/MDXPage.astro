@@ -9,6 +9,7 @@ const { frontmatter } = Astro.props;
   <main>
     <div class="mx-auto my-8 md:my-16 p-6 sm:p-8 max-w-6xl space-y-8">
       <Text variant="h1">{frontmatter.title}</Text>
+      <Text variant="body">{frontmatter.description}</Text>
       <article class="prose prose-slate max-w-none">
         <slot />
       </article>
