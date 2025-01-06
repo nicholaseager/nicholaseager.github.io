@@ -11,7 +11,6 @@ interface PrintDisplayProps {
 
 const roomDisplays = [
   {
-    id: 1,
     background: "solid-white",
     aspectRatio: "1",
     artworkPosition: {
@@ -22,7 +21,6 @@ const roomDisplays = [
     },
   },
   {
-    id: 2,
     background: "solid-concrete",
     aspectRatio: "1",
     artworkPosition: {
@@ -33,7 +31,6 @@ const roomDisplays = [
     },
   },
   {
-    id: 3,
     background: "blue-wall-wooden-chairs",
     aspectRatio: "1",
     artworkPosition: {
@@ -44,7 +41,6 @@ const roomDisplays = [
     },
   },
   {
-    id: 4,
     background: "white-wall-wooden-floor-dog",
     aspectRatio: "0.72733333",
     artworkPosition: {
@@ -55,7 +51,6 @@ const roomDisplays = [
     },
   },
   {
-    id: 5,
     background: "brick-wall-bicycle",
     aspectRatio: "0.886",
     artworkPosition: {
@@ -66,7 +61,6 @@ const roomDisplays = [
     },
   },
   {
-    id: 6,
     background: "brown-wall-wooden-furntiure",
     aspectRatio: "1.00874243",
     artworkPosition: {
@@ -77,7 +71,6 @@ const roomDisplays = [
     },
   },
   {
-    id: 7,
     background: "white-wall-tropical-plants-natural-light",
     aspectRatio: "1",
     artworkPosition: {
@@ -88,7 +81,6 @@ const roomDisplays = [
     },
   },
   {
-    id: 8,
     background: "white-wall-wooden-cabinet",
     aspectRatio: "1",
     artworkPosition: {
@@ -99,7 +91,6 @@ const roomDisplays = [
     },
   },
   {
-    id: 9,
     background: "white-wall-gray-couch-dog",
     aspectRatio: "1.5",
     artworkPosition: {
@@ -110,7 +101,6 @@ const roomDisplays = [
     },
   },
   {
-    id: 10,
     background: "dark-grey-wall-wooden-dresser",
     aspectRatio: "1.08303249",
     artworkPosition: {
@@ -125,8 +115,8 @@ const roomDisplays = [
 const PrintDisplay: React.FC<PrintDisplayProps> = ({ artworkPath }) => {
   return (
     <Swiper className="w-full">
-      {roomDisplays.map((room) => (
-        <SwiperSlide key={room.id}>
+      {roomDisplays.map((room, index) => (
+        <SwiperSlide key={index}>
           <RoomDisplay
             artworkPath={artworkPath}
             background={room.background}
