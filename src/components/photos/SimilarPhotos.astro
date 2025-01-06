@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import PhotoGrid from "./PhotoGrid";
+
+interface Props {
+  tags: string[];
+}
+
+const photos = await getCollection("photos");
+const { tags } = Astro.props;
+
+// Calculate similarity score based on number of matching tags
+const similarPhotoPaths = photos
+  .map((photo) => {
+    const matchingTags = photo.data.tags.filter((tag: string) =>
+      tags.includes(tag)
+    ).length;
+    return {
+      path: photo.data.path,
+      similarity: matchingTags,
+    };
+  })
+  // Filter out photos with no matching tags
+  .filter((photo) => photo.similarity > 0)
+  // Sort by similarity score (highest first)
+  .sort((a, b) => b.similarity - a.similarity)
+  // Remove first photo since it will be the current photo
+  .slice(1)
+  // Limit to 10 photos
+  .slice(0, 10)
+  // Extract just the paths
+  .map((photo) => photo.path);
+---
+
+<PhotoGrid client:visible photos={similarPhotoPaths} />
