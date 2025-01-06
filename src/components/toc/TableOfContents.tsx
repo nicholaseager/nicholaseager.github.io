@@ -9,6 +9,32 @@ interface TableOfContentsProps {
 
 const TableOfContents: React.FC<TableOfContentsProps> = ({ items }) => {
   const [activeId, setActiveId] = useState(items[0]?.id);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    // Create a sentinel element before the TOC
+    const sentinel = document.createElement("div");
+    const toc = document.querySelector("[data-toc]");
+    if (toc?.parentNode) {
+      toc.parentNode.insertBefore(sentinel, toc);
+    }
+
+    const stickyObserver = new IntersectionObserver(
+      ([entry]) => {
+        setIsSticky(!entry.isIntersecting);
+      },
+      {
+        threshold: 0,
+      }
+    );
+
+    stickyObserver.observe(sentinel);
+
+    return () => {
+      stickyObserver.disconnect();
+      sentinel.remove();
+    };
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -62,7 +88,12 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ items }) => {
   };
 
   return (
-    <div className="sticky top-0 z-50 py-4 bg-white/80 backdrop-blur-sm">
+    <div
+      data-toc
+      className={`sticky top-0 z-50 py-4 backdrop-blur-sm transition-colors duration-200 ${
+        isSticky ? "bg-gray-900/80" : "bg-white/80"
+      }`}
+    >
       <MobileTableOfContents
         items={items}
         activeId={activeId}
