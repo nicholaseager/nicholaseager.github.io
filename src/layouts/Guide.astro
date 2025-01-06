@@ -1,5 +1,5 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "./Layout.astro";
 import Banner from "../components/Banner.astro";
 import Text from "../components/ui/Text.tsx";
@@ -12,8 +12,9 @@ import ImagesSwiper from "../components/guide/ThumbsSwiper.tsx";
 import MediaContainer from "../components/containers/MediaContainer.astro";
 import GoogleMap from "../components/GoogleMap.astro";
 import GearSwiper from "../components/gear/GearSwiper.tsx";
-import SimilarGuides from "../components/guide/SimilarGuides.astro";
 import CommentForm from "../components/form/CommentForm.astro";
+import { getSimilarGuides } from "../utils/similarity";
+import GuideSwiper from "../components/guide/GuideSwiper";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -33,6 +34,9 @@ const {
   gear,
   tags,
 } = Astro.props;
+
+const guides = await getCollection("guides");
+const guidesWithSimilarity = getSimilarGuides(guides, tags);
 ---
 
 <Layout navStyle="transparent">
@@ -195,7 +199,7 @@ const {
         <Text variant="h3">You Might Also Like</Text>
       </TextContainer>
       <MediaContainer>
-        <SimilarGuides tags={tags}/>
+        <GuideSwiper client:visible guides={guidesWithSimilarity} />
       </MediaContainer>
     </div>
 

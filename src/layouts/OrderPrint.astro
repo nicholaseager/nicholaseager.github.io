@@ -10,7 +10,9 @@ import TextContainer from "../components/containers/TextContainer.astro";
 import LinkButton from "../components/ui/LinkButton";
 import YouTubeIcon from "/src/assets/icons/YouTube.svg";
 import ExternalLink from "/src/assets/icons/ExternalLink.svg";
-import SimilarPhotos from "../components/photos/SimilarPhotos.astro";
+import { getSimilarPhotos } from "../utils/similarity";
+import { getCollection } from "astro:content";
+import PhotoGrid from "../components/photos/PhotoGrid";
 
 type Props = CollectionEntry<"photos">["data"];
 
@@ -26,7 +28,6 @@ const authorName = "Nicholas Eager";
 const organizationName = "Nicholas Eager Photography";
 const currentYear = new Date().getFullYear();
 
-// TODO
 const pathParts = path.split("/");
 const title = pathParts[pathParts.length - 1]
   .split("-")
@@ -41,6 +42,11 @@ const location = pathParts
       .join(" ")
   )
   .join(" / ");
+
+const photos = await getCollection("photos");
+const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
+  (photo) => photo.path
+);
 ---
 
 <Layout>
@@ -144,7 +150,7 @@ const location = pathParts
 
   <section>
     <MediaContainer>
-      <SimilarPhotos tags={tags} />
+      <PhotoGrid client:visible photos={similarPhotoPaths} />
     </MediaContainer>
   </section>
 </Layout>
