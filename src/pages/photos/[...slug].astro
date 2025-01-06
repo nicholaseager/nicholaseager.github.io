@@ -1,0 +1,22 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import TextContainer from "../../components/containers/TextContainer.astro";
+
+export async function getStaticPaths() {
+  const photos = await getCollection("photos");
+  return photos.map((photo) => ({
+    params: { slug: photo.data.path.replace(/^photos\//, "") }, // Remove 'photos/' prefix
+    props: photo,
+  }));
+}
+type Props = CollectionEntry<"photos">;
+
+const photo = Astro.props;
+---
+
+<Layout>
+  <TextContainer>
+    <h1>{photo.data.path}</h1>
+  </TextContainer>
+</Layout>
