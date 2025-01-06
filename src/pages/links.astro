@@ -8,6 +8,7 @@ import { getCollection } from "astro:content";
 import { getLatestFilm, getLatestGuides } from "../utils/latest";
 import GuideSwiper from "../components/guide/GuideSwiper";
 import MediaContainer from "../components/containers/MediaContainer.astro";
+import Image from "../components/image-kit/Image";
 
 const guides = await getCollection("guides");
 const latestGuides = await getLatestGuides(guides, 10);
@@ -17,6 +18,13 @@ const latestFilm = await getLatestFilm(films);
 ---
 
 <Page>
+  <div class="flex justify-center">
+    <Image
+      className="w-32 sm:w-48 rounded-full aspect-square shadow-lg"
+      path="profile-square_7r8XDOfQj"
+    />
+  </div>
+
   <TextContainer>
     <Text variant="h1">Latest YouTube</Text>
   </TextContainer>
