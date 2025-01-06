@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../ui/Card";
 import Image from "../image-kit/Image";
+import FullScreenGallery from "./PhotoGallery";
 
 interface PhotoGridProps {
   photos: string[];
@@ -8,19 +9,42 @@ interface PhotoGridProps {
 }
 
 const PhotoGrid: React.FC<PhotoGridProps> = ({ photos, onPhotoClick }) => {
+  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(
+    null
+  );
+
+  const handlePhotoClick = (index: number) => {
+    setSelectedPhotoIndex(index);
+    onPhotoClick?.(index);
+  };
+
+  const handleCloseGallery = () => {
+    setSelectedPhotoIndex(null);
+  };
+
   return (
-    <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-      {photos.map((photo, index) => (
-        <Card key={photo}>
-          <div
-            className="break-inside-avoid cursor-pointer"
-            onClick={() => onPhotoClick?.(index)}
-          >
-            <Image path={photo} className="w-full h-auto object-cover" />
-          </div>
-        </Card>
-      ))}
-    </div>
+    <>
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+        {photos.map((photo, index) => (
+          <Card key={photo}>
+            <div
+              className="break-inside-avoid cursor-pointer"
+              onClick={() => handlePhotoClick(index)}
+            >
+              <Image path={photo} className="w-full h-auto object-cover" />
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      {selectedPhotoIndex !== null && (
+        <FullScreenGallery
+          photos={photos}
+          startIndex={selectedPhotoIndex}
+          onClose={handleCloseGallery}
+        />
+      )}
+    </>
   );
 };
 
