@@ -1,0 +1,17 @@
+---
+import Page from "../layouts/Page.astro";
+import LinkButton from "../components/ui/LinkButton";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
+import TextContainer from "../components/ui/TextContainer";
+---
+
+<Page
+  title="Page Not Found"
+  description="Sorry, but the page you were looking for doesn't exist or has been moved."
+>
+  <ResponsiveWidth size="md">
+    <div class="flex flex-col items-center gap-8 text-center">
+      <LinkButton href="/" size="lg"> Return Home </LinkButton>
+    </div>
+  </ResponsiveWidth>
+</Page>
