@@ -2,20 +2,23 @@
 import Text from "../components/ui/Text";
 import Layout from "../layouts/Layout.astro";
 import TextContainer from "../components/ui/TextContainer";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
 <Layout>
   <main>
-    <div class="mx-auto my-8 md:my-16 p-6 sm:p-8 max-w-6xl">
-      <Text variant="h1">{frontmatter.title}</Text>
-      <Text variant="body">{frontmatter.description}</Text>
-      <article class="prose prose-slate max-w-none">
-        <TextContainer spacing="tight">
-          <slot />
-        </TextContainer>
-      </article>
+    <div class="my-8 md:my-16">
+      <ResponsiveWidth>
+        <Text variant="h1">{frontmatter.title}</Text>
+        <Text variant="body">{frontmatter.description}</Text>
+        <article class="prose prose-slate max-w-none">
+          <TextContainer spacing="tight">
+            <slot />
+          </TextContainer>
+        </article>
+      </ResponsiveWidth>
     </div>
   </main>
 </Layout>

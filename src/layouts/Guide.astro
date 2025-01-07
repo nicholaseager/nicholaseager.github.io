@@ -6,7 +6,6 @@ import Text from "../components/ui/Text.tsx";
 import LinkButton from "../components/ui/LinkButton.tsx";
 import Intro from "../components/guide/Intro.astro";
 import Itinerary from "../components/guide/Itinerary.tsx";
-import PageContainer from "../components/layout/PageContainer.astro";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import ImagesSwiper from "../components/guide/ThumbsSwiper.tsx";
 import GoogleMap from "../components/GoogleMap.astro";
@@ -70,7 +69,7 @@ const tableOfContents: TableOfContentsItem[] = [
   <!-- Table of Contents -->
   <TableOfContents client:load items={tableOfContents} />
 
-  <PageContainer>
+  <div class="space-y-4 md:space-y-8 my-8 md:my-16">
     <!-- Overview -->
     {
       overview && (
@@ -273,5 +272,5 @@ const tableOfContents: TableOfContentsItem[] = [
         </Text>
       </div>
     </ResponsiveWidth>
-  </PageContainer>
+  </div>
 </Layout>

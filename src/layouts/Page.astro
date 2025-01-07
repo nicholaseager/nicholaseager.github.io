@@ -1,5 +1,4 @@
 ---
-import PageContainer from "../components/layout/PageContainer.astro";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import Text from "../components/ui/Text";
 import Layout from "../layouts/Layout.astro";
@@ -10,18 +9,18 @@ const { title, description } = Astro.props;
 
 <Layout>
   <main>
-    <section class="mb-8 text-center">
-      <ResponsiveWidth size="md">
-        <TextContainer>
-          <Text variant="h1">{title}</Text>
-          <Text variant="body">{description}</Text>
-        </TextContainer>
-      </ResponsiveWidth>
-    </section>
-    <ResponsiveWidth size="full">
-      <PageContainer>
+    <div class="my-8 md:my-16">
+      <section class="mb-8 text-center">
+        <ResponsiveWidth size="md">
+          <TextContainer>
+            <Text variant="h1">{title}</Text>
+            <Text variant="body">{description}</Text>
+          </TextContainer>
+        </ResponsiveWidth>
+      </section>
+      <ResponsiveWidth size="full">
         <slot />
-      </PageContainer>
-    </ResponsiveWidth>
+      </ResponsiveWidth>
+    </div>
   </main>
 </Layout>
