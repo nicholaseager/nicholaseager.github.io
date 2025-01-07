@@ -31,33 +31,37 @@ export default function NavBar({ pathname, style }: NavBarProps) {
     links.find((link) => link.href === pathname)?.name || "Menu";
 
   return (
-    <nav className={`${backgroundColor} p-4 ${positioning} z-50 w-full`}>
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className={`flex-shrink-0 ${textColor} text-2xl`}>
-          <a href="/">Nicholas Eager</a>
-        </div>
+    <header role="banner">
+      <nav className={`${backgroundColor} p-4 ${positioning} z-50 w-full`}>
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className={`flex-shrink-0 ${textColor} text-2xl`}>
+            <h1>
+              <a href="/">Nicholas Eager</a>
+            </h1>
+          </div>
 
-        <div className="hidden md:flex space-x-4">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={`${textColor} px-3 py-2 rounded-md text-lg font-medium ${
-                pathname === link.href ? selectedColor : hoverColor
-              }`}
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
+          <div className="hidden md:flex space-x-4">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className={`${textColor} px-3 py-2 rounded-md text-lg font-medium ${
+                  pathname === link.href ? selectedColor : hoverColor
+                }`}
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
 
-        <Dropdown
-          className="md:hidden"
-          items={dropdownItems}
-          activeItemId={pathname}
-          currentLabel={currentPage}
-        />
-      </div>
-    </nav>
+          <Dropdown
+            className="md:hidden"
+            items={dropdownItems}
+            activeItemId={pathname}
+            currentLabel={currentPage}
+          />
+        </div>
+      </nav>
+    </header>
   );
 }
