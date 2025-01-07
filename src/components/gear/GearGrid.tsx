@@ -20,7 +20,7 @@ const GearGrid: React.FC = () => {
       : gear.filter((item) => item.tags?.includes(activeFilter));
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-8">
+    <>
       <div className="flex justify-center mb-8">
         <SegmentedControl
           items={filters}
@@ -40,7 +40,7 @@ const GearGrid: React.FC = () => {
           />
         ))}
       </Grid>
-    </div>
+    </>
   );
 };
 

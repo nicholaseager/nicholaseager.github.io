@@ -10,16 +10,18 @@ const { title, description } = Astro.props;
 
 <Layout>
   <main>
-    <PageContainer>
-      <section class="mb-8 text-center">
-        <ResponsiveWidth size="md">
-          <TextContainer>
-            <Text variant="h1">{title}</Text>
-            <Text variant="body">{description}</Text>
-          </TextContainer>
-        </ResponsiveWidth>
-      </section>
-      <slot />
-    </PageContainer>
+    <section class="mb-8 text-center">
+      <ResponsiveWidth size="md">
+        <TextContainer>
+          <Text variant="h1">{title}</Text>
+          <Text variant="body">{description}</Text>
+        </TextContainer>
+      </ResponsiveWidth>
+    </section>
+    <ResponsiveWidth size="full">
+      <PageContainer>
+        <slot />
+      </PageContainer>
+    </ResponsiveWidth>
   </main>
 </Layout>
