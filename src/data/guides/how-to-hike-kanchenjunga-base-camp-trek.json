@@ -90,7 +90,9 @@
         "description": "Your Kanchenjunga journey begins in the vibrant capital of Nepal. Take this day to acclimate to the bustling energy of Kathmandu, exploring ancient temples and narrow alleyways while gathering any last-minute supplies. The city's rich cultural heritage provides the perfect prelude to your upcoming trek.",
         "distance": 0,
         "elevation": 1355,
-        "images": ["photos/countries/nepal/kathmandu/many-colorful-prayer-flags-thamel"]
+        "images": [
+          "photos/countries/nepal/kathmandu/many-colorful-prayer-flags-thamel"
+        ]
       },
       {
         "title": "Tea Country Bound - Fly to Bhadrapur, Drive to Fikkal",
@@ -103,7 +105,9 @@
         "description": "Today's 7-8 hour jeep journey winds through the foothills on mostly well-maintained but serpentine roads. Taplejung serves as your last major hub before the trek, making it crucial to withdraw cash and stock up on supplies. The town's position offers your first real taste of mountain life and serves as a gateway to the higher reaches of Kanchenjunga.",
         "distance": 178,
         "elevation": 1442,
-        "images": ["photos/countries/nepal/kanchenjunga-base-camp-trek/jeep-transport-kanchenjunga-trek"]
+        "images": [
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/jeep-transport-kanchenjunga-trek"
+        ]
       },
       {
         "title": "Sacred Heights - Visit Pathibhara Devi Temple (Optional)",
@@ -298,14 +302,18 @@
         "description": "A gentler 9km day follows the Simbuwa Khola river through rhododendron forests. Tortong's riverside teahouses provide a tranquil setting to rest and reflect on the journey thus far.",
         "distance": 9,
         "elevation": 2995,
-        "images": ["photos/countries/nepal/kanchenjunga-base-camp-trek/porters-carrying-supplies-trek"]
+        "images": [
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/porters-carrying-supplies-trek"
+        ]
       },
       {
         "title": "Village Exploration - Hike to Hellok via Yalung Village",
         "description": "This demanding 17km day features steep ridge traverses along the Simbuwa Khola. Yalung Village offers cultural insights worth exploring, and the spread-out settlement of Hellok awaits with its Dream Hotel, strategically located for tomorrow's jeep departure.",
         "distance": 17,
         "elevation": 2979,
-        "images": ["photos/countries/nepal/kanchenjunga-base-camp-trek/green-valley-kanchenjunga-trek"]
+        "images": [
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/green-valley-kanchenjunga-trek"
+        ]
       },
       {
         "title": "Return Journey Begins - Drive to Taplejung",
@@ -352,17 +360,23 @@
       {
         "title": "Drohmo Ri: A Summit I'll Never Forget",
         "description": "Standing atop Drohmo Ri at sunrise remains one of my most treasured Himalayan moments. After a grueling pre-dawn scramble by headlamp, I reached the summit just as the first rays painted Kanchenjunga in brilliant orange. The 360-degree panorama of 8000m peaks piercing through a sea of clouds left me breathless – both literally and figuratively. Despite the biting wind and extreme altitude, I stayed for nearly an hour, mesmerized by the interplay of light and shadow across the world's third-highest mountain.",
-        "images": ["photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-yellow-jacket-kanchenjunga-cloud-sea"]
+        "images": [
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-yellow-jacket-kanchenjunga-cloud-sea"
+        ]
       },
       {
         "title": "A Day in the Life of Phale",
         "description": "My unplanned rest day in Phale transformed into an intimate glimpse of Tibetan Buddhist culture. Dawn found me huddled in the monastery's dim interior, watching crimson-robed monks perform their morning puja. The mystical echo of horns and chanting filled the small space as butter lamps flickered. Later, a local family invited me to help prepare tsampa in their traditional water mill. The rhythmic sound of grinding barley and the grandmother's weathered hands showing me the proper roasting technique created a connection that transcended our language barrier. That evening, sharing butter tea and a homemade meal around their hearth, I felt less like a trekker and more like a welcomed guest.",
-        "images": ["photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-prayer-flags"]
+        "images": [
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-prayer-flags"
+        ]
       },
       {
         "title": "Sunset Above the Clouds at Sele Le",
         "description": "After a challenging day's trek, I almost skipped the evening hike above Sele Le - a decision I'm thankful I reversed. The short but steep climb brought me to a ridge where the world seemed to fall away. As the sun descended, clouds filled the valleys below like a cotton sea, with only the mighty peaks of Jannu and Kanchenjunga rising above. The alpenglow transformed the snow-capped summits into burning bronze while prayer flags snapped in the wind. It was one of those perfect moments when time seems to stand still, and you realize why you trek in the first place.",
-        "images": ["photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-trekker-cloud-sea"]
+        "images": [
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-trekker-cloud-sea"
+        ]
       }
     ]
   }
