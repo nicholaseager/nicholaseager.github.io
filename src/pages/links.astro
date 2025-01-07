@@ -7,14 +7,13 @@ import YouTubeVideo from "../components/YouTubeVideo.astro";
 import { getCollection } from "astro:content";
 import { getLatestFilm, getLatestGuides } from "../utils/latest";
 import GuideSwiper from "../components/guide/GuideSwiper";
-import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import Image from "../components/image-kit/Image";
 
 const guides = await getCollection("guides");
-const latestGuides = await getLatestGuides(guides, 10);
+const latestGuides = getLatestGuides(guides, 10);
 
 const films = await getCollection("films");
-const latestFilm = await getLatestFilm(films);
+const latestFilm = getLatestFilm(films);
 ---
 
 <Page>
