@@ -10,6 +10,9 @@ import { getCollection } from "astro:content";
 import { getLatestFilm, getLatestGuides } from "../utils/latest";
 import GuideSwiper from "../components/guide/GuideSwiper";
 import YouTubeIcon from "/src/assets/icons/YouTube.svg";
+import Image from "../components/image-kit/Image";
+import ResponsiveColumnLayout from "../components/layout/ResponsiveColumnLayout.astro";
+import TextContainer from "../components/ui/TextContainer";
 
 const guides = await getCollection("guides");
 const latestGuides = getLatestGuides(guides, 10);
@@ -28,6 +31,27 @@ const latestFilm = getLatestFilm(films);
 
   <main>
     <div class="my-8 md:my-16 space-y-8">
+      <ResponsiveWidth size="sm">
+        <div
+          class="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full items-center justify-center"
+        >
+          <Image
+            className="w-32 h-32 sm:w-48 sm:h-48 rounded-full shadow-lg"
+            path="profile-square_7r8XDOfQj"
+          />
+          <TextContainer spacing="tight">
+            <Text variant="h2">Hi, folks!</Text>
+            <Text variant="body">
+              I am an international adventure film-maker and photographer. I
+              specialize in documenting all of the tiny, special moments from
+              off the beaten path adventures around the world.
+            </Text>
+          </TextContainer>
+        </div>
+      </ResponsiveWidth>
+      <ResponsiveWidth size="lg">
+        <hr class="my-8 md:my-16" />
+      </ResponsiveWidth>
       <ResponsiveWidth size="md">
         <Text variant="h2">Latest YouTube</Text>
       </ResponsiveWidth>
