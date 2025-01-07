@@ -12,7 +12,8 @@ import GoogleMap from "../components/GoogleMap.astro";
 import GearSwiper from "../components/gear/GearSwiper.tsx";
 import CommentForm from "../components/form/CommentForm.astro";
 import { getSimilarGuides } from "../utils/similarity";
-import GuideSwiper from "../components/guide/GuideSwiper";
+import BaseSwiper from "../components/ui/BaseSwiper";
+
 import TableOfContents from "../components/toc/TableOfContents.tsx";
 
 type Props = CollectionEntry<"guides">["data"];
@@ -235,7 +236,7 @@ const tableOfContents: TableOfContentsItem[] = [
         <Text variant="h3" spacing="normal">You Might Also Like</Text>
       </ResponsiveWidth>
       <ResponsiveWidth size="lg">
-        <GuideSwiper client:visible guides={guidesWithSimilarity} />
+        <BaseSwiper client:visible items={guidesWithSimilarity} urlPrefix="guides" />
       </ResponsiveWidth>
     </div>
 

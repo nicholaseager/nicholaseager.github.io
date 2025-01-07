@@ -2,7 +2,7 @@
 import Page from "../../layouts/Page.astro";
 import PhotoGrid from "../../components/photos/PhotoGrid";
 import LinkButton from "../../components/ui/LinkButton";
-import GallerySwiper from "../../components/galleries/GallerySwiper";
+import BaseSwiper from "../../components/ui/BaseSwiper";
 
 import { getCollection } from "astro:content";
 import Text from "../../components/ui/Text";
@@ -34,7 +34,7 @@ const galleryItems = galleries.map((gallery) => ({
       <Text variant="h2">Photo Galleries</Text>
     </ResponsiveWidth>
     <ResponsiveWidth size="lg">
-      <GallerySwiper client:visible galleries={galleryItems} />
+      <BaseSwiper client:visible items={galleryItems} urlPrefix="galleries" />
       <LinkButton href="/galleries">View all galleries</LinkButton>
     </ResponsiveWidth>
   </div>
