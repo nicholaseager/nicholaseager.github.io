@@ -11,7 +11,7 @@ const Image = ({ path, className }: ImageProps) => {
 
   return (
     <img
-      className={className}
+      className={`${className} select-none`}
       srcSet={`
           ${CDN_BASE_URL}/tr:w-320/${path}.jpg 320w,
           ${CDN_BASE_URL}/tr:w-480/${path}.jpg 480w,
@@ -24,6 +24,8 @@ const Image = ({ path, className }: ImageProps) => {
       alt={alt}
       loading="lazy"
       decoding="async"
+      data-photographer="Nicholas Eager"
+      data-copyright={`© ${new Date().getFullYear()} Nicholas Eager`}
     />
   );
 };
