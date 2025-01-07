@@ -1,0 +1,75 @@
+---
+import SiteNavigation from "./structured-data/SiteNavigation.astro";
+import WebPage from "./structured-data/WebPage.astro";
+import WebSite from "./structured-data/WebSite.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+}
+
+const { title, description, image } = Astro.props;
+
+const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
+const absoluteImageUrl = new URL(
+  image + ".jpg",
+  "https://ik.imagekit.io/qn1gkawvy/tr:w-480/"
+);
+
+const siteURL = Astro.site!;
+const siteName = "Nicholas Eager";
+const orginizationName = "Nicholas Eager Photography, LLC";
+const orginizationImage =
+  "https://ik.imagekit.io/qn1gkawvy/tr:w-480/profile-square_7r8XDOfQj.jpg";
+const siteDescription =
+  "Professional outdoor photography, detailed hiking guides, and gear recommendations";
+
+const siteNavigation = [
+  { name: "Home", route: "/" },
+  { name: "Photos", route: "/photos" },
+  { name: "Guides", route: "/guides" },
+  { name: "Gear", route: "/gear" },
+  { name: "Contact", route: "/contact" },
+  { name: "About", route: "/about" },
+];
+---
+
+<!-- SEO -->
+<title>{title}</title>
+<link rel="canonical" href={currentPageCanonicalURL} />
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={absoluteImageUrl.toString()} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={absoluteImageUrl.toString()} />
+
+<!-- JSON-LD -->
+<WebSite
+  siteName={siteName}
+  siteDescription={siteDescription}
+  siteURL={siteURL}
+  organizationName={orginizationName}
+  organizationImageURL={new URL(orginizationImage)}
+/>
+<WebPage
+  title={title}
+  description={description}
+  imageURL={absoluteImageUrl}
+  url={currentPageCanonicalURL}
+  siteName={siteName}
+/>
+<SiteNavigation siteURL={siteURL} routes={siteNavigation} />
+<slot />
+<!-- End SEO -->
