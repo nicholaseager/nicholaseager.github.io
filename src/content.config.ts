@@ -137,7 +137,7 @@ interface PhotoItem {
 const photos = defineCollection({
   loader: () => {
     return (photosData as PhotoItem[]).map((photo, index) => ({
-      id: `photo-${index + 1}`,
+      id: photo.path.replace(/^photos\//, ""),
       ...photo,
     }));
   },
@@ -167,8 +167,8 @@ interface GalleryItem {
 
 const galleries = defineCollection({
   loader: () => {
-    return (galleriesData as GalleryItem[]).map((gallery, index) => ({
-      id: `gallery-${index + 1}`,
+    return (galleriesData as GalleryItem[]).map((gallery) => ({
+      id: gallery.name.toLowerCase().replace(/\s+/g, "-"),
       ...gallery,
     }));
   },

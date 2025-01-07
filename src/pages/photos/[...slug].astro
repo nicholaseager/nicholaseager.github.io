@@ -5,7 +5,7 @@ import OrderPrint from "../../layouts/OrderPrint.astro";
 export async function getStaticPaths() {
   const photos = await getCollection("photos");
   return photos.map((photo) => ({
-    params: { slug: photo.data.path.replace(/^photos\//, "") }, // Remove 'photos/' prefix
+    params: { slug: photo.id }, // Remove 'photos/' prefix
     props: photo,
   }));
 }
