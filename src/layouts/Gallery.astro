@@ -1,0 +1,36 @@
+---
+import Banner from "../components/Banner.astro";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
+import PhotoGrid from "../components/photos/PhotoGrid";
+import Text from "../components/ui/Text";
+import Layout from "../layouts/Layout.astro";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+
+type Props = CollectionEntry<"galleries">["data"];
+
+const { name, description, image, tags } = Astro.props;
+
+const photos = await getCollection("photos");
+const filteredPhotoPaths = photos
+  .filter((photo) => tags.every((tag) => photo.data.tags.includes(tag)))
+  .map((photo) => photo.data.path);
+---
+
+<Layout navStyle="transparent">
+  <Banner title={name} type="image" media={image} />
+
+  <main>
+    <div class="my-8 md:my-16 space-y-8">
+      <ResponsiveWidth size="md">
+        <Text variant="h2">{name}</Text>
+      </ResponsiveWidth>
+      <ResponsiveWidth size="md">
+        <Text variant="body">{description}</Text>
+      </ResponsiveWidth>
+      <ResponsiveWidth size="lg">
+        <PhotoGrid client:visible photos={filteredPhotoPaths} />
+      </ResponsiveWidth>
+    </div>
+  </main>
+</Layout>
