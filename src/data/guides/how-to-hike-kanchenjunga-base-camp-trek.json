@@ -343,7 +343,7 @@
   "partnership": {
     "title": "My Recommended Trekking Agency",
     "description": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at <a href='mailto:info@himalayan-masters.com'>info@himalayan-masters.com</a> and use the code <b>EAGER</b> to enjoy a 5% discount on your trip.",
-    "logo": "web/himalayan-masters-logo",
+    "logo": "/src/assets/company-logos/himalayan-masters-logo.svg",
     "link": "https://himalayan-masters.com/"
   },
   "highlights": {
