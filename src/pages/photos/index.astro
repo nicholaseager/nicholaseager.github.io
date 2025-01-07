@@ -1,9 +1,12 @@
 ---
 import Page from "../../layouts/Page.astro";
 import PhotoGrid from "../../components/photos/PhotoGrid";
+import LinkButton from "../../components/ui/LinkButton";
 import GallerySwiper from "../../components/galleries/GallerySwiper";
 
 import { getCollection } from "astro:content";
+import Text from "../../components/ui/Text";
+import ResponsiveWidth from "../../components/layout/ResponsiveWidth.astro";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
@@ -23,10 +26,16 @@ const galleryItems = galleries.map((gallery) => ({
   title="Photos"
   description="Sometimes a single photo is all you need to tell a story. Browse my most unique stories."
 >
-  <PhotoGrid client:visible photos={showcasePhotoPaths} />
-
-  <div class="mt-12">
-    <h2 class="text-2xl font-bold mb-6">Photo Galleries</h2>
-    <GallerySwiper client:visible galleries={galleryItems} />
+  <div class="space-y-8">
+    <ResponsiveWidth size="full">
+      <PhotoGrid client:visible photos={showcasePhotoPaths} />
+    </ResponsiveWidth>
+    <ResponsiveWidth>
+      <Text variant="h2">Photo Galleries</Text>
+    </ResponsiveWidth>
+    <ResponsiveWidth size="lg">
+      <GallerySwiper client:visible galleries={galleryItems} />
+      <LinkButton href="/galleries">View all galleries</LinkButton>
+    </ResponsiveWidth>
   </div>
 </Page>
