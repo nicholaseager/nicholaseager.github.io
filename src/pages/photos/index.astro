@@ -1,14 +1,22 @@
 ---
 import Page from "../../layouts/Page.astro";
 import PhotoGrid from "../../components/photos/PhotoGrid";
+import GallerySwiper from "../../components/galleries/GallerySwiper";
 
 import { getCollection } from "astro:content";
-import TextContainer from "../../components/layout/TextContainer.astro";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
   .filter((photo) => photo.data.tags.includes("showcase"))
   .map((photo) => photo.data.path);
+
+const galleries = await getCollection("galleries");
+const galleryItems = galleries.map((gallery) => ({
+  id: gallery.id,
+  name: gallery.data.name,
+  description: gallery.data.description,
+  image: gallery.data.image,
+}));
 ---
 
 <Page
@@ -16,4 +24,9 @@ const showcasePhotoPaths = photos
   description="Sometimes a single photo is all you need to tell a story. Browse my most unique stories."
 >
   <PhotoGrid client:visible photos={showcasePhotoPaths} />
+
+  <div class="mt-12">
+    <h2 class="text-2xl font-bold mb-6">Photo Galleries</h2>
+    <GallerySwiper client:visible galleries={galleryItems} />
+  </div>
 </Page>
