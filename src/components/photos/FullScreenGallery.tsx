@@ -48,7 +48,10 @@ export default function FullScreenGallery({
 
   const handleOrderPrint = () => {
     const currentPhotoUrl = photos[currentIndex];
-    window.location.href = currentPhotoUrl;
+    // Remove any leading slashes and create a clean path
+    const cleanPath = currentPhotoUrl.replace(/^\/+/, "");
+    const absoluteUrl = new URL(cleanPath, window.location.origin).toString();
+    window.location.href = absoluteUrl;
   };
 
   return (
