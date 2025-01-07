@@ -18,6 +18,7 @@ export type TextVariant =
 // because this component can render different HTML elements (h1-h6, p, blockquote)
 interface TextProps extends HTMLAttributes<HTMLElement> {
   variant?: TextVariant;
+  spacing?: "none" | "normal" | "loose" | "tight";
   className?: string;
   children: React.ReactNode;
 }
@@ -26,6 +27,7 @@ function Text({
   variant = "body", // Default to body style if no variant provided
   children,
   className = "",
+  spacing = "none",
   ...props // Spread operator to allow passing any additional HTML attributes
 }: TextProps) {
   // Map each variant to its corresponding Tailwind classes
@@ -47,6 +49,14 @@ function Text({
     custom: className, // Allow custom classes to be passed in
   };
 
+  // Add spacing variants
+  const spacingVariants: Record<NonNullable<TextProps["spacing"]>, string> = {
+    none: "",
+    normal: "mb-6 last:mb-0",
+    loose: "mb-8 last:mb-0",
+    tight: "mb-4 last:mb-0",
+  };
+
   // Dynamically determine which HTML element to render based on the variant
   // ElementType is used to type the dynamic component for proper TypeScript support
   const Component: ElementType = variant.startsWith("h")
@@ -56,7 +66,10 @@ function Text({
     : "p";
 
   return (
-    <Component className={`${variants[variant]}`} {...props}>
+    <Component
+      className={`${variants[variant]} ${spacingVariants[spacing]}`}
+      {...props}
+    >
       {children}
     </Component>
   );

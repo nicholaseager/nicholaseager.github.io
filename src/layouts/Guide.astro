@@ -75,7 +75,7 @@ const tableOfContents: TableOfContentsItem[] = [
       overview && (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2" id="overview">Overview</Text>
+            <Text variant="h2" spacing="normal" id="overview">Overview</Text>
           </ResponsiveWidth>
           <ResponsiveWidth size="lg">
             <ImagesSwiper client:visible imagePaths={overview.images ?? []} />
@@ -92,7 +92,7 @@ const tableOfContents: TableOfContentsItem[] = [
       basics && (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2" id="basics">Basic Information</Text>
+            <Text variant="h2" spacing="normal" id="basics">Basic Information</Text>
           </ResponsiveWidth>
           {basics.items.map((item) => (
             <ResponsiveWidth size="md">
@@ -111,7 +111,7 @@ const tableOfContents: TableOfContentsItem[] = [
       weather && (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2" id="weather">Weather</Text>
+            <Text variant="h2" spacing="normal" id="weather">Weather</Text>
             {weather.introduction && <Text variant="body">{weather.introduction}</Text>}
           </ResponsiveWidth>
           {weather.seasons?.map((item) => (
@@ -131,7 +131,7 @@ const tableOfContents: TableOfContentsItem[] = [
       map && (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2" id="map">Map</Text>
+            <Text variant="h2" spacing="normal" id="map">Map</Text>
             {map.introduction && <Text variant="body">{map.introduction}</Text>}
           </ResponsiveWidth>
           <ResponsiveWidth size="lg">
@@ -146,7 +146,7 @@ const tableOfContents: TableOfContentsItem[] = [
       itinerary && (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2" id="itinerary">Itinerary</Text>
+            <Text variant="h2" spacing="normal" id="itinerary">Itinerary</Text>
             {itinerary.introduction && <Text variant="body">{itinerary.introduction}</Text>}
           </ResponsiveWidth>
           <ResponsiveWidth size="lg">
@@ -161,12 +161,12 @@ const tableOfContents: TableOfContentsItem[] = [
       highlights && (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2" id="highlights">Highlights</Text>
+            <Text variant="h2" spacing="normal" id="highlights">Highlights</Text>
             {highlights.introduction && <Text variant="body">{highlights.introduction}</Text>}
           </ResponsiveWidth>
           {highlights.items.map((item) => (
             <ResponsiveWidth size="md">
-              <Text variant="h3">{item.title}</Text>
+              <Text variant="h3" spacing="normal">{item.title}</Text>
             </ResponsiveWidth>
             <ResponsiveWidth size="lg">
               {item.images && (
@@ -186,7 +186,7 @@ const tableOfContents: TableOfContentsItem[] = [
       gear && (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2" id="gear">Gear</Text>
+            <Text variant="h2" spacing="normal" id="gear">Gear</Text>
             {gear.introduction && <Text variant="body">{gear.introduction}</Text>}
           </ResponsiveWidth>
           <ResponsiveWidth size="lg">
@@ -205,7 +205,7 @@ const tableOfContents: TableOfContentsItem[] = [
       conclusion && (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2">Conclusion</Text>
+            <Text variant="h2" spacing="normal">Conclusion</Text>
             <Text variant="body">{conclusion}</Text>
           </ResponsiveWidth>
         </>
@@ -215,7 +215,7 @@ const tableOfContents: TableOfContentsItem[] = [
     <!-- Similar Guides -->
     <div>
       <ResponsiveWidth size="md">
-        <Text variant="h3">You Might Also Like</Text>
+        <Text variant="h3" spacing="normal">You Might Also Like</Text>
       </ResponsiveWidth>
       <ResponsiveWidth size="lg">
         <GuideSwiper client:visible guides={guidesWithSimilarity} />
