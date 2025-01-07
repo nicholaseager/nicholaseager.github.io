@@ -1,60 +1,60 @@
 [
   {
-    "name": "Landscapes",
+    "title": "Landscapes",
     "tags": ["landscapes"],
     "description": "Some of the most beautiful and awe-inspiring places on the planet. From lush forests to rugged mountain ranges, from crystal-clear lakes to rolling fields of grass, the beauty of the natural world is truly unmatched.",
     "image": "photos/countries/france/chamonix/green-mountain-range-in-clouds"
   },
   {
-    "name": "Adventure",
+    "title": "Adventure",
     "tags": ["adventure"],
     "description": "Seeking out the unbeaten path, exploring unknown territory, and discovering new cultures.",
     "image": "photos/countries/china/tiger-leaping-gorge/man-climbing-down-waterfall"
   },
   {
-    "name": "Mountains",
+    "title": "Mountains",
     "tags": ["mountains"],
     "description": "Mountains offer endless opportunities to capture their grandeur, beauty and scale through different lighting, weather conditions and seasons, providing a constant source of inspiration and challenge for me to creatively frame and convey the emotions they evoke.",
     "image": "photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset"
   },
   {
-    "name": "Astrophotography",
+    "title": "Astrophotography",
     "tags": ["astrophotography"],
     "description": "Bringing the infinitely mesmerizing and awe-inspiring beauty of our mysterious universe down to Earth.",
     "image": "photos/countries/nepal/manaslu-circuit/starry-night-over-sereng-monastery"
   },
   {
-    "name": "Urban",
+    "title": "Urban",
     "tags": ["city"],
     "description": "A testament to the ingenuity and creativity of humanity, cities pulsate with life and activity, even as the rest of the world sleeps.",
     "image": "photos/countries/south-korea/seoul/cityscape-at-night"
   },
   {
-    "name": "Minimalism",
+    "title": "Minimalism",
     "tags": ["minimalism"],
     "description": "Photography is not about trying to capture something. Instead it is about what we try to not capture that makes a photograph great.",
     "image": "photos/countries/vietnam/da-nang/single-purple-shell-on-beach"
   },
   {
-    "name": "Nepal",
+    "title": "Nepal",
     "tags": ["nepal"],
     "description": "A breathtakingly beautiful country with stunning mountain vistas, lush forests, rolling hills, majestic waterfalls, fascinating culture, ancient temples and monasteries, picturesque villages, and varied, colorful landscapes.",
     "image": "photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain"
   },
   {
-    "name": "Vietnam",
+    "title": "Vietnam",
     "tags": ["vietnam"],
     "description": "Stunning natural beauty, breathtaking rice terraces, lush green mountains, crystal-clear beaches, and bustling cities.",
     "image": "photos/countries/vietnam/hanoi/banana-farm-from-above"
   },
   {
-    "name": "United States",
+    "title": "United States",
     "tags": ["united-states"],
     "description": "Seemingly infinite land, diverse natural beauty, and a wide range of landscapes including mountains, forests, beaches, deserts, and more.",
     "image": "photos/countries/united-states/wyoming/cascading-rocky-mountains-at-dawn"
   },
   {
-    "name": "Tanzania",
+    "title": "Tanzania",
     "tags": ["tanzania"],
     "description": "Witness the raw beauty and majesty of nature as you explore the vast and diverse landscapes, from the rolling grasslands of the savanna to the dense forests and winding rivers, and encounter a myriad of exotic and endangered animals in their natural habitats.",
     "image": "photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset"

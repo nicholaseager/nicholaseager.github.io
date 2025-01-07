@@ -159,7 +159,7 @@ const films = defineCollection({
 });
 
 interface GalleryItem {
-  name: string;
+  title: string;
   tags: string[];
   description: string;
   image: string;
@@ -168,13 +168,13 @@ interface GalleryItem {
 const galleries = defineCollection({
   loader: () => {
     return (galleriesData as GalleryItem[]).map((gallery) => ({
-      id: gallery.name.toLowerCase().replace(/\s+/g, "-"),
+      id: gallery.title.toLowerCase().replace(/\s+/g, "-"),
       ...gallery,
     }));
   },
   schema: z.object({
     id: z.string(),
-    name: z.string(),
+    title: z.string(),
     tags: z.array(z.string()),
     description: z.string(),
     image: z.string(),

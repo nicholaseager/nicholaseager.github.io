@@ -9,7 +9,7 @@ import { getCollection } from "astro:content";
 
 type Props = CollectionEntry<"galleries">["data"];
 
-const { name, description, image, tags } = Astro.props;
+const { title, description, image, tags } = Astro.props;
 
 const photos = await getCollection("photos");
 const filteredPhotoPaths = photos
@@ -18,12 +18,12 @@ const filteredPhotoPaths = photos
 ---
 
 <Layout navStyle="transparent">
-  <Banner title={name} type="image" media={image} />
+  <Banner title={title} type="image" media={image} />
 
   <main>
     <div class="my-8 md:my-16 space-y-8">
       <ResponsiveWidth size="md">
-        <Text variant="h2">{name}</Text>
+        <Text variant="h2">{title}</Text>
       </ResponsiveWidth>
       <ResponsiveWidth size="md">
         <Text variant="body">{description}</Text>

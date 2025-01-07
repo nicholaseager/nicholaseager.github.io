@@ -16,7 +16,7 @@ const showcasePhotoPaths = photos
 const galleries = await getCollection("galleries");
 const galleryItems = galleries.map((gallery) => ({
   id: gallery.id,
-  name: gallery.data.name,
+  title: gallery.data.title,
   description: gallery.data.description,
   image: gallery.data.image,
 }));

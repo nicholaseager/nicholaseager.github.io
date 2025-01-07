@@ -18,7 +18,7 @@ const galleries = await getCollection("galleries");
         <GalleryCard
           href={`/galleries/${item.id}/`}
           imagePath={item.data.image}
-          title={item.data.name}
+          title={item.data.title}
           description={item.data.description}
         />
       ))
