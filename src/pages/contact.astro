@@ -1,11 +1,14 @@
 ---
 import ContactForm from "../components/form/ContactForm.astro";
 import Page from "../layouts/Page.astro";
+import ContactSEO from "../seo/ContactSEO.astro";
+
+const title = "Contact";
+const description =
+  "For business inquiries, such as a collaboration or licensing, please contact me by using the form below.";
 ---
 
-<Page
-  title="Contact"
-  description="For business inquiries, such as a collaboration or licensing, please contact me by using the form below."
->
+<Page title={title} description={description}>
   <ContactForm />
+  <ContactSEO name={title} description={description} />
 </Page>

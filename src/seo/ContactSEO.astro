@@ -1,0 +1,22 @@
+---
+import Script from "./Script.astro";
+import { contactPageFrom } from "./types/contact-page";
+
+interface Props {
+  name: string;
+  description: string;
+}
+
+const { name, description } = Astro.props;
+const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<Script
+  graph={[
+    contactPageFrom({
+      name: name,
+      description: description,
+      url: currentPageCanonicalURL,
+    }),
+  ]}
+/>
