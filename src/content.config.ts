@@ -78,6 +78,7 @@ const guides = defineCollection({
     itinerary: z
       .object({
         introduction: z.string().optional(),
+        duration: z.string().optional(), // ISO 8601 duration format (e.g. P9D)
         units: z
           .object({
             phase: z.string().optional(),

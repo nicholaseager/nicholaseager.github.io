@@ -109,6 +109,7 @@
       "distance": "Distance",
       "elevation": "Elevation"
     },
+    "duration": "P14D",
     "phases": [
       {
         "title": "Drive from Kathmandu to Soti Khola",

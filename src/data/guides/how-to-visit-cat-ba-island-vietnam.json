@@ -44,6 +44,7 @@
   },
   "itinerary": {
     "introduction": "There is so much to do on and around Cat Ba island that coming up with an exact itinerary to suit your personal needs would be impossible. However I would recommend spending at least a week here with a few days on the island and a few days in the bay.",
+    "duration": "P4D",
     "phases": [
       {
         "title": "Hanoi to Haiphong to Cat Ba",

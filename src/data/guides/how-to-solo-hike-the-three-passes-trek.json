@@ -120,6 +120,7 @@
       "distance": "Distance",
       "elevation": "Elevation"
     },
+    "duration": "P21D",
     "phases": [
       {
         "title": "Kathmandu to Lukla",

@@ -61,9 +61,8 @@ const jsonLd = {
       }),
     },
   }),
-  // TODO
-  totalTime: "P21D", // ISO 8601 duration format for 21 days
   ...(guide.itinerary && {
+    totalTime: guide.itinerary.duration,
     step: guide.itinerary.phases.map((phase, index) => {
       return {
         "@type": "HowToStep",

@@ -81,6 +81,7 @@
     ]
   },
   "itinerary": {
+    "duration": "P1D",
     "units": {
       "distance": "Distance",
       "elevation": "Elevation"

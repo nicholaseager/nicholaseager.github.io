@@ -85,9 +85,7 @@
   ],
   "itinerary": {
     "introduction": "Embarking on the trek to Huchuy Qosqo offers various <a href='#starting'>starting points</a> and customizable options, providing an adaptable experience tailored to individual preferences. Commencing from the bustling Main Square in Cusco, my chosen route ensures a comprehensive exploration, yet it remains flexible for those seeking shorter distances or camping stops en route.",
-    "units": {
-      "phase": "Day"
-    },
+    "duration": "P1D",
     "phases": [
       {
         "title": "Exploring Cusco to Tambomachay Village",

@@ -92,6 +92,7 @@
       "distance": "Distance",
       "elevation": "Elevation"
     },
+    "duration": "P24D",
     "phases": [
       {
         "title": "Gateway to Adventure - Arrive in Kathmandu",

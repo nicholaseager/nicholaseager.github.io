@@ -87,6 +87,7 @@
     "units": {
       "phase": "Day"
     },
+    "duration": "P9D",
     "phases": [
       {
         "title": "Arusha",

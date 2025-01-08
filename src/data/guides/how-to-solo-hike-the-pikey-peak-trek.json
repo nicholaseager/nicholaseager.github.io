@@ -124,6 +124,7 @@
       "distance": "Distance",
       "elevation": "Elevation"
     },
+    "duration": "P9D",
     "phases": [
       {
         "title": "Arriving in Dhap from Kathmandu",

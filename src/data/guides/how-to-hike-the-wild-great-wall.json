@@ -33,6 +33,7 @@
     "units": {
       "distance": "Distance"
     },
+    "duration": "P3D",
     "phases": [
       {
         "title": "Beijing to Xizhazi",
