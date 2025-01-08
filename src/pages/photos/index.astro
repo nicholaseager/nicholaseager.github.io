@@ -7,6 +7,7 @@ import BaseSwiper from "../../components/ui/BaseSwiper";
 import { getCollection } from "astro:content";
 import Text from "../../components/ui/Text";
 import ResponsiveWidth from "../../components/layout/ResponsiveWidth.astro";
+import PhotosSEO from "../../seo/PhotosSEO.astro";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
@@ -38,4 +39,6 @@ const galleryItems = galleries.map((gallery) => ({
       <LinkButton href="/galleries">View all galleries</LinkButton>
     </ResponsiveWidth>
   </div>
+
+  <PhotosSEO images={showcasePhotoPaths} />
 </Page>

@@ -1,0 +1,29 @@
+---
+import BaseSEO from "./BaseSEO.astro";
+import Script from "./Script.astro";
+import { imageGalleryFrom } from "./types/image-gallery";
+
+interface Props {
+  images: string[];
+}
+
+const { images } = Astro.props;
+const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<BaseSEO
+  title={"Photos"}
+  description={"Nicholas Eager's Photos"}
+  image={images[0]}
+/>
+
+<Script
+  graph={[
+    imageGalleryFrom({
+      name: "Photos Showcase",
+      description: "Nicholas Eager's Photos",
+      images: images,
+      url: currentPageCanonicalURL,
+    }),
+  ]}
+/>
