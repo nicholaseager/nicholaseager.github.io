@@ -20,7 +20,7 @@ export function contactPageFrom({
     publisher: organizationFrom({ url: url }),
     isPartOf: {
       "@type": "WebPage",
-      "@id": `${url}#webpage`,
+      "@id": new URL("#webpage", url).toString(),
     },
     potentialAction: {
       "@type": "InteractAction",

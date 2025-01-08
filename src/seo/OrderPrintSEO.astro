@@ -24,7 +24,7 @@ const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const buyAction: BuyAction = {
   "@type": "BuyAction",
-  "@id": `${currentPageCanonicalURL}#buy`,
+  "@id": new URL("#buy", currentPageCanonicalURL).toString(),
   target: {
     "@type": "EntryPoint",
     urlTemplate: `https://nicholaseagerphoto.darkroom.com/products/${darkroomId}`,
@@ -34,7 +34,7 @@ const buyAction: BuyAction = {
 
 const watchAction: WatchAction = {
   "@type": "WatchAction",
-  "@id": `${currentPageCanonicalURL}#watch`,
+  "@id": new URL("#watch", currentPageCanonicalURL).toString(),
   target: {
     "@type": "EntryPoint",
     urlTemplate: `https://youtube.com/watch?v=${youtubeId}`,

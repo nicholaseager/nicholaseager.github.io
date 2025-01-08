@@ -53,14 +53,14 @@ export function webPageFrom({
   const relativePath = url.pathname;
 
   return {
-    "@id": `${url}#webpage`,
+    "@id": new URL("#webpage", url).toString(),
     "@type": "WebPage",
     name: title,
     description: description,
     url: url.toString(),
     isPartOf: {
       "@type": "WebSite",
-      "@id": `${basePath}/#website`,
+      "@id": new URL("#website", url).toString(),
       name: siteName,
       url: basePath,
     },
@@ -71,7 +71,7 @@ export function webPageFrom({
     mainContentOfPage: {
       "@type": "WebPageElement",
       isPartOf: {
-        "@id": `${url}#webpage`,
+        "@id": new URL("#webpage", url).toString(),
       },
     } as WebPageElement,
     primaryImageOfPage: imageFromPath(url, image, `${url}#primaryImage`),

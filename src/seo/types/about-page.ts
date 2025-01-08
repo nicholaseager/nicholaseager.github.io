@@ -13,10 +13,10 @@ export function aboutPageFrom({
 }: AboutPageSchemaProps): AboutPage {
   return {
     "@type": "AboutPage",
-    "@id": `${url}`,
+    "@id": new URL("#about", url).toString(),
     isPartOf: {
       "@type": "WebSite",
-      "@id": `${url}#website`,
+      "@id": new URL("#website", url).toString(),
     },
     url: `${url}`,
     name,
