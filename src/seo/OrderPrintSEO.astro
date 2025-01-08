@@ -1,5 +1,5 @@
 ---
-import type { BuyAction, WatchAction } from "schema-dts";
+import type { BuyAction, ImageObject, WatchAction } from "schema-dts";
 import Script from "./Script.astro";
 import { imageFromPath } from "./types/image";
 
@@ -9,9 +9,17 @@ interface Props {
   image: string;
   darkroomId?: string | number;
   youtubeId?: string;
+  similarImages?: string[];
 }
 
-const { title, description, image, darkroomId, youtubeId } = Astro.props;
+const {
+  title,
+  description,
+  image,
+  darkroomId,
+  youtubeId,
+  similarImages = [],
+} = Astro.props;
 const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const buyAction: BuyAction = {
@@ -49,6 +57,9 @@ const watchAction: WatchAction = {
         ...(darkroomId ? [buyAction] : []),
         ...(youtubeId ? [watchAction] : []),
       ],
+      associatedMedia: similarImages.map(
+        (image): ImageObject => imageFromPath(currentPageCanonicalURL, image)
+      ),
     },
   ]}
 />
