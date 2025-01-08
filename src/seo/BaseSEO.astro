@@ -1,7 +1,10 @@
 ---
-import SiteNavigation from "./types/SiteNavigation.astro";
-import WebPage from "./types/WebPage.astro";
-import WebSite from "./types/WebSite.astro";
+import Script from "./Script.astro";
+import { websiteFrom } from "./types/website";
+import { webPageFrom } from "./types/webpage";
+import { siteNavigationFrom } from "./types/sitenavigation";
+import { authorFrom } from "./types/author";
+import { organizationFrom } from "./types/organization";
 
 interface Props {
   title: string;
@@ -19,9 +22,6 @@ const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
 const siteURL = Astro.site!;
 const siteName = "Nicholas Eager";
 const siteTitle = `${title} - Nicholas Eager`;
-const orginizationName = "Nicholas Eager Photography, LLC";
-const orginizationImage =
-  "https://ik.imagekit.io/qn1gkawvy/tr:w-1280/profile-square_7r8XDOfQj.jpg";
 const siteDescription =
   "Professional outdoor photography, detailed hiking guides, and gear recommendations";
 
@@ -54,20 +54,25 @@ const siteNavigation = [
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={imageURL.toString()} />
 
-<WebSite
-  siteName={siteName}
-  siteDescription={siteDescription}
-  siteURL={siteURL}
-  organizationName={orginizationName}
-  organizationImageURL={new URL(orginizationImage)}
+<Script
+  graph={[
+    authorFrom({ url: currentPageCanonicalURL }),
+    organizationFrom({ url: currentPageCanonicalURL }),
+    siteNavigationFrom({
+      siteURL: siteURL,
+      routes: siteNavigation,
+    }),
+    websiteFrom({
+      siteName: siteName,
+      siteDescription: siteDescription,
+      url: currentPageCanonicalURL,
+    }),
+    webPageFrom({
+      title: siteTitle,
+      description: description,
+      imageURL: imageURL,
+      url: currentPageCanonicalURL,
+      siteName: siteName,
+    }),
+  ]}
 />
-<WebPage
-  title={siteTitle}
-  description={description}
-  imageURL={imageURL}
-  url={currentPageCanonicalURL}
-  datePublished={datePublished}
-  dateModified={dateModified}
-  siteName={siteName}
-/>
-<SiteNavigation siteURL={siteURL} routes={siteNavigation} />
