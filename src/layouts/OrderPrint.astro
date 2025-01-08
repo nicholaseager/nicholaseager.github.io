@@ -12,8 +12,7 @@ import ExternalLink from "/src/assets/icons/ExternalLink.svg";
 import { getSimilarPhotos } from "../utils/similarity";
 import { getCollection } from "astro:content";
 import PhotoGrid from "../components/photos/PhotoGrid";
-import Card from "../components/ui/Card";
-import Image from "../components/image-kit/Image";
+import OrderPrintSEO from "../seo/OrderPrintSEO.astro";
 
 type Props = CollectionEntry<"photos">["data"];
 
@@ -145,4 +144,11 @@ const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
       <PhotoGrid client:visible photos={similarPhotoPaths} />
     </ResponsiveWidth>
   </section>
+  <OrderPrintSEO
+    title={title}
+    description={description}
+    image={path}
+    darkroomId={darkroomId}
+    youtubeId={youtubeId}
+  />
 </Page>

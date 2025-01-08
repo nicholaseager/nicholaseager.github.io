@@ -74,6 +74,6 @@ export function webPageFrom({
         "@id": `${url}#webpage`,
       },
     } as WebPageElement,
-    primaryImageOfPage: imageFromPath(url, image),
+    primaryImageOfPage: imageFromPath(url, image, `${url}#primaryImage`),
   };
 }

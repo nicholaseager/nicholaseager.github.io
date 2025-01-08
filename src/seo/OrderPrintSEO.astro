@@ -1,0 +1,54 @@
+---
+import type { BuyAction, WatchAction } from "schema-dts";
+import Script from "./Script.astro";
+import { imageFromPath } from "./types/image";
+
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  darkroomId?: string | number;
+  youtubeId?: string;
+}
+
+const { title, description, image, darkroomId, youtubeId } = Astro.props;
+const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const buyAction: BuyAction = {
+  "@type": "BuyAction",
+  "@id": `${currentPageCanonicalURL}#buy`,
+  target: {
+    "@type": "EntryPoint",
+    urlTemplate: `https://nicholaseagerphoto.darkroom.com/products/${darkroomId}`,
+  },
+  description: "Purchase prints of this photograph",
+};
+
+const watchAction: WatchAction = {
+  "@type": "WatchAction",
+  "@id": `${currentPageCanonicalURL}#watch`,
+  target: {
+    "@type": "EntryPoint",
+    urlTemplate: `https://youtube.com/watch?v=${youtubeId}`,
+  },
+  description: "Watch the video behind this photograph",
+};
+---
+
+<Script
+  graph={[
+    {
+      ...imageFromPath(
+        currentPageCanonicalURL,
+        image,
+        `${currentPageCanonicalURL}#primaryImage`
+      ),
+      name: title,
+      caption: description,
+      potentialAction: [
+        ...(darkroomId ? [buyAction] : []),
+        ...(youtubeId ? [watchAction] : []),
+      ],
+    },
+  ]}
+/>

@@ -13,7 +13,8 @@ interface ImageProps {
 
 export function imageFromPath(
   currentUrl: string | URL,
-  relativePath: string
+  relativePath: string,
+  id?: string
 ): ImageObject {
   const name = relativePath
     .split("/")
@@ -23,6 +24,7 @@ export function imageFromPath(
     .join(" ");
 
   return {
+    ...(id && { "@id": id }),
     "@type": "ImageObject",
     name: name,
     caption: name,
