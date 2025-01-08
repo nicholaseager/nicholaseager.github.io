@@ -50,7 +50,11 @@ const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
 );
 ---
 
-<Page title={title} description={`${description} - By ${authorName}`}>
+<Page
+  title={title}
+  description={`${description} - By ${authorName}`}
+  image={path}
+>
   <section>
     <ResponsiveColumnLayout>
       <RoomDisplaySwiper client:load artworkPath={path} />

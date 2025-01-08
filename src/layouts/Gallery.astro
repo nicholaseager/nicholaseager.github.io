@@ -17,7 +17,12 @@ const filteredPhotoPaths = photos
   .map((photo) => photo.data.path);
 ---
 
-<Layout navStyle="transparent">
+<Layout
+  title={title}
+  description={description}
+  image={image}
+  navStyle="transparent"
+>
   <Banner title={title} type="image" media={image} />
 
   <main>

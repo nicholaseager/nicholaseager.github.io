@@ -23,6 +23,7 @@ const {
   title,
   youtube,
   introduction,
+  description,
   conclusion,
   image,
   modified_date,
@@ -57,11 +58,7 @@ const tableOfContents: TableOfContentsItem[] = [
 ].filter((item) => item.enabled);
 ---
 
-<Layout navStyle="transparent">
-  <HikingGuideSEO
-    slot="seo"
-    guide={Astro.props}
-  />
+<Layout title={title} description={description} image={image} navStyle="transparent">
   <Banner title={title} type="image" media={image} />
   <div class="my-8">
     <Intro
@@ -279,4 +276,5 @@ const tableOfContents: TableOfContentsItem[] = [
       </div>
     </ResponsiveWidth>
   </div>
+  <HikingGuideSEO guide={Astro.props} />
 </Layout>

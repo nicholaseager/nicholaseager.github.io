@@ -2,12 +2,21 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer.astro";
 import KofiWidget from "../components/KoFiWidget.astro";
+import Head from "../seo/Head.astro";
 
 interface Props {
+  title: string;
+  description: string;
+  image?: string;
   navStyle?: "opaque" | "transparent";
 }
 
-const { navStyle = "opaque" } = Astro.props;
+const {
+  title,
+  description,
+  image = "profile-square_7r8XDOfQj",
+  navStyle = "opaque",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -18,14 +27,13 @@ const { navStyle = "opaque" } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <!-- SEO -->
-    <slot name="seo" />
+    <Head title={title} description={description} image={image} />
     <!-- End SEO -->
   </head>
   <body>
     <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
     <slot />
-  </body>
-  <KofiWidget />
+  </body><KofiWidget />
   <Footer />
   <!-- Spacing for kofi widget -->
   <div class="h-16"></div>

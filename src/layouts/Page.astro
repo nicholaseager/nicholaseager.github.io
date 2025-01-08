@@ -4,10 +4,11 @@ import Text from "../components/ui/Text";
 import Layout from "../layouts/Layout.astro";
 import TextContainer from "../components/ui/TextContainer";
 
-const { title, description } = Astro.props;
+const { title, description, image } = Astro.props;
 ---
 
-<Layout>
+<Layout title={title} description={description} image={image}>
+  <slot name="seo" />
   <main>
     <div class="my-8 md:my-16">
       <section class="mb-8 text-center">
