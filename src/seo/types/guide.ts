@@ -1,6 +1,6 @@
 import type { Guide } from "schema-dts";
 import { authorFrom } from "./author";
-import { imageFromPath } from "./Image";
+import { imageFromPath } from "./image";
 
 export interface GuideSchemaProps {
   name: string;

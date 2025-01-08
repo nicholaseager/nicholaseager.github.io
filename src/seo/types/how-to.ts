@@ -1,5 +1,5 @@
 import type { HowTo } from "schema-dts";
-import { imageFromPath } from "./Image";
+import { imageFromPath } from "./image";
 
 export interface HowToStep {
   title: string;

@@ -1,7 +1,7 @@
 import type { Article } from "schema-dts";
 import { authorFrom } from "./author";
 import { organizationFrom } from "./organization";
-import { imageFromPath } from "./Image";
+import { imageFromPath } from "./image";
 
 export interface ArticleSchemaProps {
   name: string;
