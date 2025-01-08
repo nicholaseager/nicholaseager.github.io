@@ -5,6 +5,13 @@
   "description": "Everything you need to know to plan your own Pikey Peak Trek.",
   "image": "photos/countries/nepal/pikey-peak/person-hiking-in-snowy-mountains",
   "tags": ["nepal", "pikey-peak-trek", "hiking"],
+  "location": {
+    "name": "Pikey Peak Trek",
+    "region": "Solukhumbu",
+    "country": "Nepal",
+    "latitude": "27.534455",
+    "longitude": "86.474218"
+  },
   "short_name": "pikey-peak-trek",
   "youtube": "9Hgb6SnJVBg",
   "introduction": "Nestled in the heart of the Himalayas, the Pikey Peak Trek is a hidden gem that beckons to those seeking an authentic and immersive trekking experience. This journey takes you through a tapestry of stunning landscapes, from lush rhododendron forests to snow-capped peaks, offering a glimpse into the rich cultural heritage of the region. As you traverse the trails, you'll encounter friendly locals and their equally amiable canine companions, their warm smiles and wagging tails a testament to the welcoming spirit of the Himalayas.",
@@ -96,12 +103,16 @@
         {
           "title": "Where to start?",
           "description": "Hikers can choose to start their journey from Dhap, Jiri, Salleri, or Phaplu, each offering its own unique charm and challenges. For those seeking a longer and more adventurous experience, the hike can be extended from Junbesi to Surke, serving as a gateway to the renowned Everest Base Camp or the challenging <a href='/guides/how-to-solo-hike-the-three-passes-trek' target='blank'>Three Passes Trek</a>.",
-          "images": ["photos/countries/nepal/pikey-peak/person-hiking-dog-on-dirt-path"]
+          "images": [
+            "photos/countries/nepal/pikey-peak/person-hiking-dog-on-dirt-path"
+          ]
         },
         {
           "title": "My Recommendation",
           "description": "Personally, I decided to start from Dhap and continue northward up to the Khumbu (Everest) region to start my <a href='/guides/how-to-solo-hike-the-three-passes-trek' target='blank'>Three Passes Trek</a>. However, if you're just doing roundtrip, I would recommend starting from Dhap, summiting Pikey Peak, and then coming back to Salleri/Phaplu or Jiri.",
-          "images": ["photos/countries/nepal/pikey-peak/stone-cairn-on-snowy-mountain"]
+          "images": [
+            "photos/countries/nepal/pikey-peak/stone-cairn-on-snowy-mountain"
+          ]
         }
       ]
     }
@@ -119,7 +130,9 @@
         "description": "As the sun begins to set over the majestic Himalayas, we arrive in the charming village of Dhap. The friendly locals and their equally welcoming dogs greet you with warm smiles, setting the tone for your upcoming adventure. Take a moment to absorb the breathtaking sunset views of the towering peaks, hinting at the incredible journey that awaits you. We settle in for the night, eager for the adventures that await us in the days to come.",
         "distance": 100,
         "elevation": 2989,
-        "images": ["photos/countries/nepal/pikey-peak/person-hiking-dog-on-dirt-path"]
+        "images": [
+          "photos/countries/nepal/pikey-peak/person-hiking-dog-on-dirt-path"
+        ]
       },
       {
         "title": "Hiking from Dhap to Bhulbule",
@@ -196,7 +209,9 @@
         "description": "The hike from Bumburi to Kharikhola is short and gentle, allowing us to take in the stunning landscapes at a relaxed pace. As we arrive in Kharikhola, we find ourselves surrounded by the bustling activity of farm life, the locals tending to their crops with a sense of purpose and dedication that is truly inspiring.",
         "distance": 4.06,
         "elevation": 2143,
-        "images": ["photos/countries/nepal/pikey-peak/rural-village-fields-trees"]
+        "images": [
+          "photos/countries/nepal/pikey-peak/rural-village-fields-trees"
+        ]
       },
       {
         "title": "Hiking from Kharikhola to Surke",

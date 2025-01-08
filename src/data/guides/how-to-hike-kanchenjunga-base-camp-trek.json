@@ -5,6 +5,14 @@
   "description": "A comprehensive hiking guide for the Kanchenjunga Base Camp Trek",
   "image": "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-yellow-jacket-kanchenjunga-cloud-sea",
   "tags": ["nepal", "kanchenjunga", "hiking"],
+  "location": {
+    "name": "Kanchenjunga Base Camp Trek",
+    "locality": "Kanchenjunga Conservation Area",
+    "region": "Kanchenjunga",
+    "country": "Nepal",
+    "latitude": "27.627631",
+    "longitude": "87.932306"
+  },
   "short_name": "kanchenjunga",
   "youtube": "xu7zh13Vzjo",
   "introduction": "Welcome to the ultimate guide to Nepal's Kanchenjunga Base Camp Trek, a remarkable journey to both the northern and southern base camps of the world's third-highest peak. This comprehensive guide draws from my personal experience, offering detailed day-by-day routes, essential planning tips, and insider knowledge of the region's hidden gems. Whether you're drawn to the pristine mountain views, authentic Tibetan culture, or the challenge of high-altitude trekking, you'll find everything needed to craft your perfect adventure. From acclimatization strategies to cultural encounters in remote villages, let this guide be your companion in exploring one of Nepal's most rewarding treks.",

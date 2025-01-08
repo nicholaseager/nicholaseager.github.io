@@ -5,6 +5,13 @@
   "description": "A mountain on the edge of Vietnam and China",
   "image": "photos/countries/vietnam/pu-ta-leng/two-people-climbing-through-bamboo-tunnel",
   "tags": ["vietnam", "pu-ta-leng", "hiking"],
+  "location": {
+    "name": "Phu Ta Leng Hiking Trail",
+    "region": "Lai Chau",
+    "country": "Vietnam",
+    "latitude": "22.433293",
+    "longitude": "103.566598"
+  },
   "short_name": "pu-ta-leng",
   "youtube": "fGP0u9nVVD8",
   "introduction": "Hiking in northern Vietnam can be a thrilling and adventurous experience. The region is home to a diverse landscape, including rolling hills, towering mountains, and dense forests. The trails offer breathtaking views of the surrounding countryside, as well as the opportunity to see a wide range of plant and animal life. Join us as we hike through cloudy jungles, spend a few nights in a local village, go to a highland market, play with all sorts of animals, summit Pu Ta Leng peak twice, and cook our own delicious dinner in a shelter.",
@@ -71,7 +78,9 @@
       {
         "title": "Going to A Highland Market",
         "description": "We grabbed some pork, veggies, and other goodies from a local highland market and cooked a delicious dinner that evening. The Dao people have a distinctive cuisine that is based on locally-sourced ingredients, such as rice, vegetables, and meats. Some dishes that may be served at a special dinner for the Dao include braised chicken with ginger, stir-fried pork with lemongrass, and spicy boiled fish.",
-        "images": ["photos/countries/vietnam/pu-ta-leng/pile-of-red-chili-peppers-at-market"]
+        "images": [
+          "photos/countries/vietnam/pu-ta-leng/pile-of-red-chili-peppers-at-market"
+        ]
       },
       {
         "title": "Climbing the Mountain",

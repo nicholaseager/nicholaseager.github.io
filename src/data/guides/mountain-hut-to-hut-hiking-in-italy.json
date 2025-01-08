@@ -5,6 +5,13 @@
   "description": "Everything you need to know about hiking and mountain huts in Italy",
   "image": "photos/countries/italy/dolomites/locatelli-hut-tre-cime-sheep",
   "tags": ["italy", "hut-to-hut", "hiking", "dolomites"],
+  "location": {
+    "name": "Dolomites",
+    "region": "Belluno",
+    "country": "Italy",
+    "latitude": "46.409471",
+    "longitude": "11.844121"
+  },
   "short_name": "mountain-huts",
   "youtube": "djldGrhYFdo",
   "introduction": "What is hiking like in Italy? How do I book a mountain hut? What types of mountain huts are there? How much does it cost? Is wild camping in a tent allowed? What is an alta via or via ferrata? Let's start things off by talking about some of the basics.",
@@ -43,7 +50,9 @@
         {
           "title": "Bivacco",
           "description": "Bivacco are small and not staffed, but quite nice nonetheless. They usually come with a few beds with thin mattresses and sometimes blankets and a wood-burning stove. Personally, I love Bivacco because they are usually off of the beaten path and very well-designed. If you're used to solo hiking and camping, this will feel like luxury to you. If you prefer to stay in hotels and don't like camping, I'd go for the rifugi.",
-          "images": ["photos/countries/italy/dolomites/man-standing-next-to-bivvaco-aerial"]
+          "images": [
+            "photos/countries/italy/dolomites/man-standing-next-to-bivvaco-aerial"
+          ]
         },
         {
           "title": "Others",
@@ -80,7 +89,9 @@
         {
           "title": "Via Ferrata",
           "description": "Via Ferrata are routes where experience and equipment is necessary. These routes are essentially vertical climbing routes with steel ropes, rungs, and ladders stuck into the side of the mountain. These routes were established during the first world war to help soldiers cross the mountain ranges easier. Via Ferrata can be a lot of fun. If you decide to try your hand at these, make sure to do your own research and rent the right equipment or go with a guide.",
-          "images": ["photos/countries/italy/dolomites/man-climbing-via-ferrata"]
+          "images": [
+            "photos/countries/italy/dolomites/man-climbing-via-ferrata"
+          ]
         }
       ]
     },

@@ -12,6 +12,16 @@ const guides = defineCollection({
     description: z.string(),
     image: z.string(),
     tags: z.array(z.string()),
+    location: z
+      .object({
+        name: z.string(),
+        locality: z.string().optional(),
+        region: z.string().optional(),
+        country: z.string(),
+        latitude: z.string(),
+        longitude: z.string(),
+      })
+      .optional(),
     short_name: z.string(),
     youtube: z.string().optional(),
     introduction: z.string(),

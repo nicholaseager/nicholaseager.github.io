@@ -5,6 +5,13 @@
   "description": "Kayaking the bay, hiking through the jungle, and sleeping on a floating house.",
   "image": "photos/countries/vietnam/cat-ba/lan-ha-bay-sunset-on-the-water",
   "tags": ["vietnam", "cat-ba-island", "hiking"],
+  "location": {
+    "name": "Cat Ba Island",
+    "region": "Lan Ha Bay",
+    "country": "Vietnam",
+    "latitude": "20.765743",
+    "longitude": "107.080595"
+  },
   "short_name": "cat-ba",
   "youtube": "mhlmfKdAVzE",
   "introduction": "Cat Ba Island is a true gem in Vietnam, known for its natural beauty, quiet tranquility, and adventure. The island offers a variety of activities, such as hiking through lush jungle and national parks, rock-climbing on the islets, kayaking in the crystal clear waters of Lan Ha Bay, and staying on a floating house to witness the beautiful sunsets. The island is home to diverse landscapes and wildlife, from towering limestone cliffs to hidden caves and lagoons. Personally I think Lan Ha Bay is better than Halong Bay because it's less crowded and more secluded. If you want a more authentic and peaceful experience, keep reading :)",
@@ -71,12 +78,16 @@
       {
         "title": "Hiking in the Jungle",
         "description": "Hiking through Cat Ba National Park is a great way to explore the island's natural beauty. A popular route is to hike to Frog Pond and Viet Hai village. The hike starts at the park entrance, and it takes around 4-5 hours, passing through lush jungle, towering limestone cliffs and dense vegetation. Along the way, you'll reach the peaceful Frog Pond, a small lake set in a lush clearing, take a break and have a snack. After that, the trail continues to climb, passing through a dense forest, and reaching the picturesque Viet Hai village. The hike is considered moderate and offers great views and the opportunity to learn about the local culture and lifestyle.",
-        "images": ["photos/countries/vietnam/cat-ba/hiking-through-taro-leaves-on-cat-ba"]
+        "images": [
+          "photos/countries/vietnam/cat-ba/hiking-through-taro-leaves-on-cat-ba"
+        ]
       },
       {
         "title": "Staying on a Floating House",
         "description": "Being surrounded by the beauty of the bay while the sun sets is truly magical. The colors of the sky change and the sound of the water creates a peaceful ambiance.\nThe floating houses are usually equipped with basic amenities, such as a bed, bathroom, and a small kitchen. They offer a unique and secluded way to experience the bay and to sleep in the middle of nature.\nThe floating houses are usually anchored in the secluded areas of the bay, so you can enjoy the peace and quiet and the tranquility of the bay.",
-        "images": ["photos/countries/vietnam/cat-ba/enjoying-the-sunset-on-the-floating-house"]
+        "images": [
+          "photos/countries/vietnam/cat-ba/enjoying-the-sunset-on-the-floating-house"
+        ]
       }
     ]
   }

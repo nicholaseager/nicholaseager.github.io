@@ -5,6 +5,14 @@
   "description": "Everything you need to know about hiking down into the Grand Canyon and back up again",
   "image": "photos/countries/united-states/arizona/grand-canyon-national-park-rim-view",
   "tags": ["united-states", "grand-canyon", "hiking"],
+  "location": {
+    "name": "Grand Canyon Hiking Trail",
+    "locality": "Grand Canyon National Park",
+    "region": "Arizona",
+    "country": "USA",
+    "latitude": "36.266406",
+    "longitude": "-112.353933"
+  },
   "short_name": "grand-canyon",
   "youtube": "Rp4V6waPRZo",
   "introduction": "Hiking the Grand Canyon rim to river and back to rim is a physically demanding feat that requires a high level of fitness and preparation. Here is a guide containing everything you need to know to to help you plan your hike.",

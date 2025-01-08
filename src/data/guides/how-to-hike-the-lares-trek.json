@@ -5,6 +5,13 @@
   "description": "Cultural immersion, panoramic vistas, and alpaca encounters await—an all-encompassing guide to Peru's high-altitude wonders.",
   "image": "photos/countries/peru/lares-trek/weaving-loom",
   "tags": ["peru", "lares-valley-trek", "sacred-valley", "hiking"],
+  "location": {
+    "name": "Lares Trek",
+    "region": "Cusco",
+    "country": "Peru",
+    "latitude": "-13.106295",
+    "longitude": "-72.045189"
+  },
   "short_name": "lares-trek",
   "youtube": "RnRsKrmCBW0",
   "introduction": "Dive into the mystical allure of Peru's Lares Trek, a four-day odyssey through the heart of the Andes. Picture yourself amid alpaca-dotted landscapes, conquering mountain passes, and immersing in the vibrant culture of Andean villages. With alternative starting points adding to the intrigue, the Lares Trek beckons with tales of rugged beauty, cultural richness, and the exhilaration of high-altitude exploration. This journey is more than a trek; it's an invitation to uncover the secrets of an enchanting corner of the world, leaving you eager to discover the full story that awaits along the Lares Trail.",

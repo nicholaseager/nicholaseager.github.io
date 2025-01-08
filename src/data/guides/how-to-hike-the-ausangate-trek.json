@@ -5,6 +5,13 @@
   "description": "A complete guide for the Ausangate trek featuring itinerary, gear essentials, cost breakdown, and an illustrative map for an immersive Andean adventure.",
   "image": "photos/countries/peru/ausangate-trek/two-hikers-in-front-of-ausangate-mountain",
   "tags": ["peru", "ausangate-trek", "hiking"],
+  "location": {
+    "name": "Ausangate Trek",
+    "locality": "Nevado Auzangate",
+    "country": "Peru",
+    "latitude": "-13.790806",
+    "longitude": "-71.232445"
+  },
   "short_name": "ausangate",
   "youtube": "ZjCj_udzlIE",
   "introduction": "Nestled amidst the breathtaking landscapes of Peru's Andes Mountains lies the Ausangate trek—an extraordinary odyssey that beckons adventurers seeking a harmonious blend of natural splendor and cultural immersion. This comprehensive guide invites you on an eight-day journey through rugged terrains, vibrant lagoons, and majestic peaks, offering insights, tips, and highlights to prepare you for an unforgettable expedition. From the vibrant hues of the Seven Lagoons to the majestic views atop Palomani Pass, join us as we delve into the rich tapestry of the Ausangate trek—a trek that promises to stir the soul and leave an indelible mark on your heart.",

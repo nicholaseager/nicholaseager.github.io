@@ -5,6 +5,14 @@
   "description": "A comprehensive hiking guide for Coyote Gulch in the heart of Utah",
   "image": "photos/countries/united-states/utah/coyote-gulch/hiker-standing-red-sandstone-cliff-blue-sky",
   "tags": ["united-states", "utah", "canyon", "desert", "hiking"],
+  "location": {
+    "name": "Coyote Gulch Hiking Trail",
+    "locality": "Glen Canyon National Recreation Area",
+    "region": "Utah",
+    "country": "USA",
+    "latitude": "37.429300",
+    "longitude": "-110.984117"
+  },
   "short_name": "coyote-gulch",
   "youtube": "eFpPaCUSleY",
   "introduction": "Embark on an unforgettable journey through the heart of Utah's stunning red rock country with a hike through Coyote Gulch. This hidden gem offers adventurers a chance to explore a canyon of unparalleled beauty, with towering arches, crystal-clear streams, and awe-inspiring vistas at every turn. Whether you're an experienced hiker seeking a challenge or a nature lover looking to immerse yourself in the raw beauty of the American Southwest, Coyote Gulch promises an experience that will leave you breathless. So, lace up your boots, pack your gear, and get ready to discover one of Utah's most spectacular hiking destinations.",
@@ -21,7 +29,9 @@
   ],
   "overview": {
     "summary": "This comprehensive hiking guide to Coyote Gulch in Utah provides all the information you need to plan an unforgettable adventure. From choosing the right trailhead and navigating the canyon's stunning features to understanding the weather patterns and packing essential gear, this guide covers it all. With personal insights and highlights from an experienced hiker, you'll be well-prepared to tackle this incredible journey through one of the American Southwest's most breathtaking landscapes. Whether you're a seasoned hiker or a first-time visitor, this guide will help you make the most of your Coyote Gulch experience and create memories that will last a lifetime.",
-    "images": ["photos/countries/united-states/utah/coyote-gulch/red-rock-arch-canyon-landscape"]
+    "images": [
+      "photos/countries/united-states/utah/coyote-gulch/red-rock-arch-canyon-landscape"
+    ]
   },
   "map": {
     "introduction": "As you can see from the map below, Coyote Gulch offers several routes to explore this stunning canyon. The most popular options include the Hurricane Wash trailhead, which provides a longer but more gradual approach, and the Crack in the Wall and Coyote Gulch trailheads, which offer more direct access but require a 4WD vehicle and some climbing experience. Once inside the canyon, you'll have the opportunity to discover the main Coyote Gulch, with its breathtaking arches and natural wonders. When it's time to leave, you can choose to hike or climb out, depending on your preferred route and skill level.",
@@ -75,21 +85,27 @@
         "description": "As you set foot on the trail from your chosen trailhead, a sense of excitement and anticipation fills the air. The first day of your journey is all about immersing yourself in the stunning landscape that surrounds you. Whether you opt for a leisurely hike or a more challenging climb, the beauty of Coyote Gulch will leave you in awe. Take your time to appreciate the towering red rock formations, the gentle babbling of the streams, and the diverse flora and fauna that call this place home.",
         "distance": 9,
         "elevation": 1390,
-        "images": ["photos/countries/united-states/utah/coyote-gulch/hiker-walking-infinite-desert"]
+        "images": [
+          "photos/countries/united-states/utah/coyote-gulch/hiker-walking-infinite-desert"
+        ]
       },
       {
         "title": "Exploring the Heart of Coyote Gulch",
         "description": "The second day of your adventure is dedicated to exploring the main section of Coyote Gulch. This is where the true magic of the canyon reveals itself. As you hike along the winding trails, you'll encounter countless streams cascading over the red rock, creating an enchanting symphony of water and stone. The towering walls of the canyon seem to stretch endlessly towards the sky, their vibrant hues shifting with the changing light. Keep your eyes peeled for the abundant wildlife that thrives in this pristine environment, from majestic birds soaring overhead to the elusive desert bighorn sheep. As you move farther towards Crack in the Wall, the trail becomes significantly more overgrown. Those up for the challenge will be rewarded with more adventure!",
         "distance": 23,
         "elevation": 1305,
-        "images": ["photos/countries/united-states/utah/coyote-gulch/red-rock-canyon-hiker-oasis"]
+        "images": [
+          "photos/countries/united-states/utah/coyote-gulch/red-rock-canyon-hiker-oasis"
+        ]
       },
       {
         "title": "Ascending from the Depths",
         "description": "On the final day of your Coyote Gulch experience, you'll have the opportunity to choose your own adventure once again. You can either hike or climb your way out of the canyon, depending on your preferred trailhead. Personally, I opted to hike in from Hurricane Wash and climb out via Jacob Hamblin's Arch. The sense of accomplishment that comes with climbing the canyon and emerging back into the world above is truly unparalleled.",
         "distance": 9,
         "elevation": 1390,
-        "images": ["photos/countries/united-states/utah/coyote-gulch/hiker-climbing-red-rock-canyon"]
+        "images": [
+          "photos/countries/united-states/utah/coyote-gulch/hiker-climbing-red-rock-canyon"
+        ]
       }
     ]
   },
@@ -99,12 +115,16 @@
       {
         "title": "A Symphony of Stone",
         "description": "As I journeyed through Coyote Gulch, I found myself constantly in awe of the magnificent arches that grace this canyon. The crowning jewel among them is undoubtedly Jacob Hamblin Arch, a colossal testament to the sculpting power of nature. Standing beneath its towering span, I felt humbled by the sheer scale and grandeur of this natural wonder. Further along the trail, I encountered the more delicate beauty of Coyote Natural Bridge, a smaller but equally captivating arch that seems to defy gravity with its slender curve. These arches serve as reminders of the timeless artistry of the desert, forever etched in the memory of those who have the privilege of witnessing them.",
-        "images": ["photos/countries/united-states/utah/coyote-gulch/red-rock-arch-canyon-landscape"]
+        "images": [
+          "photos/countries/united-states/utah/coyote-gulch/red-rock-arch-canyon-landscape"
+        ]
       },
       {
         "title": "Climbing the Canyon",
         "description": "One of the most exhilarating moments of my Coyote Gulch adventure was the opportunity to climb out of the canyon itself. As I approached the steep rock face, my heart raced with a mixture of excitement and trepidation. The ascent required a combination of physical strength, mental focus, and a touch of courage. With each handhold and foothold, I pulled myself higher, the canyon floor receding below me. The sense of accomplishment upon reaching the top was overwhelming, as I stood atop the rim and gazed out over the vast expanse of the canyon. For me, the climb was a personal triumph, a testament to the resilience of the human spirit in the face of nature's challenges. However, it is important to note that climbing out of the canyon is not for everyone. Several other hikers struggled with the ascent, serving as a reminder that each individual must assess their own capabilities and make informed decisions based on their skill level and comfort zone. Whether you choose to climb or not, the view from above is an unforgettable sight, offering a fresh perspective on the breathtaking beauty of Coyote Gulch.",
-        "images": ["photos/countries/united-states/utah/coyote-gulch/hiker-walking-above-red-rock-canyon"]
+        "images": [
+          "photos/countries/united-states/utah/coyote-gulch/hiker-walking-above-red-rock-canyon"
+        ]
       }
     ]
   }

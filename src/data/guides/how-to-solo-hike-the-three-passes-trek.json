@@ -5,6 +5,13 @@
   "description": "Everything you need to know to plan your own Three Passes Trek.",
   "image": "photos/countries/nepal/three-passes-trek/mount-everest-from-kala-patthar",
   "tags": ["nepal", "three-passes-trek", "hiking"],
+  "location": {
+    "name": "Three Passes Trek",
+    "region": "Khumbu",
+    "country": "Nepal",
+    "latitude": "27.807516",
+    "longitude": "86.711805"
+  },
   "short_name": "three-passes-trek",
   "youtube": "lji8NyYSIrE",
   "introduction": "Step into the embrace of <a href='/galleries/nepal'>Nepal</a>, a realm where mountains touch the sky with regal grace, culture weaves a tapestry of richness, warm-hearted souls extend open arms, and beauty stands unrivaled. As a voyager seasoned by trails ventured and horizons conquered, Nepal has etched a sanctuary within my soul. Time and again, I've graced this enchanting land, and with each footfall, I've gathered not just memories that refuse to fade, but a treasury of wisdom to impart to you. Today, I stand ready to be your guide, to equip you for your very own escapade along one of Nepal's most monumental passages—the Three Passes Trek.",
@@ -87,12 +94,16 @@
         {
           "title": "Where to start?",
           "description": "Lukla is the typical starting point of many treks in the Khumbu region. However, you have a couple of options to reach here. You can either take a jeep to a village lower in the Solukhumbu valley and walk to Lukla, or you can fly directly to Lukla from Kathmandu. Flying is faster and more convenient, but flights are weather-dependent, can be subject to delays and cancellations, and are more expensive. If you have a few extra days and wish for a more authentic experience, consider starting your trek from lower in the Solukhumbu Valley. This path allows you to explore lesser-visited villages, witness the majestic summit of Pikey Peak, and save some money by avoiding the flight to Lukla. I chose this option to immerse myself in the local culture and discover hidden gems. The typical starting points are Jiri, Salleri, Dhap, or Phaplu. Most hotels in Thamel, Kathmandu, can help you organize your journey to the starting point. Check out my <a href='/guides/how-to-solo-hike-the-pikey-peak-trek' target='blank'>Pikey Peak Trek</a> for more information.",
-          "images": ["photos/countries/nepal/three-passes-trek/plane-landing-at-lukla"]
+          "images": [
+            "photos/countries/nepal/three-passes-trek/plane-landing-at-lukla"
+          ]
         },
         {
           "title": "Which way to go?",
           "description": "Next, you'll have to decide whether to go clockwise or counter-clockwise on your journey. After reaching Namche Bazaar, the path splits. Going clockwise will offer you quieter trails and tea houses, and if Everest Base Camp is your main destination, you'll save it for last, building up the excitement. Additionally, the views of Everest, Ama Dablam, and Gokyo Lake as you descend from the passes are truly awe-inspiring. On the other hand, going counter-clockwise provides a gentler elevation gain and a slightly more defined acclimatization schedule. Personally, I opted to go clockwise for fewer crowds and better vistas, and I was not disappointed.",
-          "images": ["photos/countries/nepal/three-passes-trek/hiker-above-gokyo-lake-and-everest"]
+          "images": [
+            "photos/countries/nepal/three-passes-trek/hiker-above-gokyo-lake-and-everest"
+          ]
         },
         {
           "title": "Does it Matter?",
@@ -136,7 +147,9 @@
         "description": "From Namche Bazaar, we trek through a breathtaking valley towards Thame. Along the way, take in all of the beauty this valley has to offer. I suggest taking a brief detour to Lawudo Monastery, a place where few wander, yet the additional hike will assist in acclimatization, while the views offer truly rewarding moments of serenity.",
         "distance": 10,
         "elevation": 3774,
-        "images": ["photos/countries/nepal/three-passes-trek/hiking-above-thame"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/hiking-above-thame"
+        ]
       },
       {
         "title": "Rest Day in Thame",
@@ -185,7 +198,9 @@
         "description": "From Gokyo Lake, we proceed to Dragnag over a constantly changing glacial path. This is a relatively short walk, but it can be a bit unstable due to glacial till. Exercise caution and embrace the adventure.",
         "distance": 4,
         "elevation": 4699,
-        "images": ["photos/countries/nepal/three-passes-trek/hiker-crossing-glacier"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/hiker-crossing-glacier"
+        ]
       },
       {
         "title": "Dragnag to Dzongla (via Cho Pass)",
@@ -224,7 +239,9 @@
         "description": "If you decided to spend the night at Gorek Shep, I recommend only hiking back to Lobuche to give youself extra time to cross Kongma Pass. Personally, I decided to hike back to Lobuche on the previous day for a more peaceful and cozy night's rest. Tea houses in Gorek Shep can get crowded, and the night might be cold and uncomfortable.",
         "distance": 5,
         "elevation": 4953,
-        "images": ["photos/countries/nepal/three-passes-trek/way-to-everest-base-camp"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/way-to-everest-base-camp"
+        ]
       },
       {
         "title": "Lobuche to Chukhung (via Kongma Pass)",
@@ -244,7 +261,9 @@
         "description": "Chukhung is a quaint village surrounded by towering peaks. You have the option to rest. If you're up for it, summit Chukhung Ri for even more spectacular views.",
         "distance": 0,
         "elevation": 4730,
-        "images": ["photos/countries/nepal/three-passes-trek/hiker-ama-dablam-in-chukhung"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/hiker-ama-dablam-in-chukhung"
+        ]
       },
       {
         "title": "Chukhung to Pangboche",
@@ -261,7 +280,9 @@
         "description": "While resting in Pangboche, consider making an optional visit to Ama Dablam Base Camp. Although I did not personally venture here, it's a chance to witness more of the Himalayan beauty.",
         "distance": 9,
         "elevation": 4580,
-        "images": ["photos/countries/nepal/three-passes-trek/ama-dablam-at-sunrise"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/ama-dablam-at-sunrise"
+        ]
       },
       {
         "title": "Pangboche to Phortse",
@@ -275,7 +296,9 @@
         "description": "Enjoy this beautiful valley trek as you get ever closer to your rest day in Namche Bazaar",
         "distance": 10,
         "elevation": 3435,
-        "images": ["photos/countries/nepal/three-passes-trek/hiker-towards-namche-bazaar"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/hiker-towards-namche-bazaar"
+        ]
       },
       {
         "title": "Rest Day at Namche Bazaar",
@@ -293,14 +316,18 @@
         "description": "As we near the end of this incredible journey, our path retraces towards Lukla. Make sure to catch the planes landing and taking off, a fascinating sight that begins around 7 in the morning. These aerial voyages carry fellow adventurers, their recollections akin to your own, creating a tapestry of shared experiences among the skyward-bound.",
         "distance": 19,
         "elevation": 2845,
-        "images": ["photos/countries/nepal/three-passes-trek/hiker-crossing-suspension-bridge"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/hiker-crossing-suspension-bridge"
+        ]
       },
       {
         "title": "Lukla to Kathmandu",
         "description": "After reaching Lukla, you have the option to walk down to a village lower in the valley, like Tham Dada, Kharikhola, or Salleri, and take a jeep back to Kathmandu. However, I personally recommend taking a flight back for a more comfortable journey. The local jeeps can be long and bumpy, and you've already had an adventure of a lifetime. Nonetheless, if you're looking to explore more lesser-visited villages, this could be the perfect opportunity to do so.",
         "distance": 160,
         "elevation": 1400,
-        "images": ["photos/countries/nepal/three-passes-trek/porters-hiking-in-the-valley"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/porters-hiking-in-the-valley"
+        ]
       }
     ]
   },
@@ -316,7 +343,9 @@
       {
         "title": "Renjo Pass",
         "description": "Easily my favorite of the three passes, Renjo stands out for its breathtaking views of Mount Everest and Gokyo Lake. As I walked down towards Gokyo, I couldn't keep my eyes away.",
-        "images": ["photos/countries/nepal/three-passes-trek/gokyo-lake-mount-everest-prayer-flags"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/gokyo-lake-mount-everest-prayer-flags"
+        ]
       },
       {
         "title": "Thame",
@@ -339,12 +368,16 @@
       {
         "title": "Kongma Pass",
         "description": "At the zenith of Kongma Pass, a spectacle of unparalleled grandeur unfolds. Behold a realm where frozen lakes shimmer like jewels, and colossal mountains stand as sentinels of the heavens. This is a vista that ignites the spirit and commands reverence, a testament to the indomitable spirit of nature and humanity intertwined.",
-        "images": ["photos/countries/nepal/three-passes-trek/hiker-sitting-on-kongma-pass"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/hiker-sitting-on-kongma-pass"
+        ]
       },
       {
         "title": "Dzongla to Lobuche",
         "description": "As you traverse this path adorned by the majestic presence of Ama Dablam and other Himalayan giants, you will be enveloped in a profound sense of wonder. These moments of tranquil exploration have etched themselves as cherished memories in my heart.",
-        "images": ["photos/countries/nepal/three-passes-trek/hiker-walking-towards-ama-dablam"]
+        "images": [
+          "photos/countries/nepal/three-passes-trek/hiker-walking-towards-ama-dablam"
+        ]
       }
     ]
   },
