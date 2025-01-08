@@ -4,12 +4,13 @@ import Image from "../components/image-kit/Image";
 import Text from "../components/ui/Text";
 import Page from "../layouts/Page.astro";
 import TextContainer from "../components/ui/TextContainer";
+import AboutSEO from "../seo/AboutSEO.astro";
+
+const title = "About";
+const description = "Husband, Photographer, Film-maker, and Adventurer";
 ---
 
-<Page
-  title="About"
-  description="Husband, Photographer, Film-maker, and Adventurer"
->
+<Page title={title} description={description}>
   <div class="flex justify-center">
     <Image
       className="w-32 sm:w-48 rounded-full aspect-square shadow-lg"
@@ -77,4 +78,5 @@ import TextContainer from "../components/ui/TextContainer";
       >
     </TextContainer>
   </ResponsiveWidth>
+  <AboutSEO name={title} description={description} />
 </Page>

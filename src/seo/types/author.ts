@@ -18,5 +18,10 @@ export function authorFrom({ url }: AuthorProps): Person {
         "https://ik.imagekit.io/qn1gkawvy/tr:w-640/"
       ).toString(),
     },
+    sameAs: [
+      "https://www.youtube.com/NicholasEager",
+      "https://www.instagram.com/nicholas.eager/",
+      "https://www.facebook.com/nicholas.eager.photo",
+    ],
   };
 }

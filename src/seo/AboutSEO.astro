@@ -1,0 +1,24 @@
+---
+import Script from "./Script.astro";
+import { authorFrom } from "./types/author";
+import { aboutPageFrom } from "./types/about-page";
+
+interface Props {
+  name: string;
+  description: string;
+}
+
+const { name, description } = Astro.props;
+const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<Script
+  graph={[
+    authorFrom({ url: currentPageCanonicalURL }),
+    aboutPageFrom({
+      name: name,
+      description: description,
+      url: currentPageCanonicalURL,
+    }),
+  ]}
+/>
