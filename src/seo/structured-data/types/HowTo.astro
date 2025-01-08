@@ -1,0 +1,60 @@
+---
+interface Props {
+  id: string;
+  name: string;
+  url: string;
+  totalTime?: string;
+  steps?: {
+    title: string;
+    description?: string;
+    image?: string;
+  }[];
+  tools?: {
+    title: string;
+    url: string;
+  }[];
+}
+
+const { id, name, url, totalTime, steps, tools } = Astro.props;
+
+const jsonLd = {
+  "@id": id,
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name,
+  url,
+  ...(totalTime && { totalTime }),
+  ...(steps && {
+    step: steps.map((step, index) => ({
+      "@type": "HowToStep",
+      name: `Step ${index + 1}: ${step.title}`,
+      text: step.description,
+      ...(step.image && {
+        image: {
+          "@type": "ImageObject",
+          url: new URL(
+            step.image + ".jpg",
+            "https://ik.imagekit.io/qn1gkawvy/tr:w-1280/"
+          ).toString(),
+          height: "1280",
+          width: "1280",
+          caption: `Image for ${step.title}`,
+        },
+      }),
+    })),
+  }),
+  ...(tools && {
+    tool: tools.map((tool) => ({
+      "@type": "HowToTool",
+      name: tool.title,
+      url: tool.url,
+    })),
+  }),
+};
+---
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(jsonLd)}
+/>

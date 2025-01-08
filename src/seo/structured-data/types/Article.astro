@@ -1,0 +1,80 @@
+---
+interface Props {
+  id: string;
+  name: string;
+  headline: string;
+  abstract: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  author: {
+    name: string;
+    url: string | URL;
+  };
+  image?: {
+    url: string;
+    caption: string;
+  };
+  keywords: string[];
+}
+
+const {
+  id,
+  name,
+  headline,
+  abstract,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  author,
+  image,
+  keywords,
+} = Astro.props;
+
+const jsonLd = {
+  "@id": id,
+  "@context": "https://schema.org",
+  "@type": "Article",
+  name,
+  headline,
+  abstract,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  author: {
+    "@type": "Person",
+    name: author.name,
+    url: author.url,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Nicholas Eager Photography, LLC",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://ik.imagekit.io/qn1gkawvy/tr:w-480/profile-square_7r8XDOfQj.jpg",
+    },
+  },
+  ...(image && {
+    image: {
+      "@type": "ImageObject",
+      url: new URL(
+        image.url + ".jpg",
+        "https://ik.imagekit.io/qn1gkawvy/tr:w-1280/"
+      ).toString(),
+      height: "1280",
+      width: "1280",
+      caption: image.caption,
+    },
+  }),
+  keywords: keywords,
+};
+---
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(jsonLd)}
+/>

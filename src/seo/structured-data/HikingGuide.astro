@@ -1,6 +1,10 @@
 ---
 import { type CollectionEntry } from "astro:content";
 import gear from "../../data/gear.json";
+import HowTo from "./types/HowTo.astro";
+import Article from "./types/Article.astro";
+import CreativeWork from "./types/CreativeWork.astro";
+import Guide from "./types/Guide.astro";
 
 interface Props {
   guide: CollectionEntry<"guides">["data"];
@@ -14,88 +18,89 @@ const authorURL = new URL("/about", Astro.site);
 const tools = guide.gear?.trip
   ? gear.filter((g) => g.trips.includes(guide.gear!.trip))
   : [];
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["HowTo", "Article", "CreativeWork", "Guide"],
-  name: guide.title,
-  headline: guide.title,
-  abstract: guide.introduction,
-  description: guide.introduction,
-  url: currentPageCanonicalURL.toString(),
-  datePublished: guide.date,
-  dateModified: guide.modified_date,
-  audience: {
-    "@type": "Audience",
-    audienceType: "Intermediate Hikers",
-  },
-  educationalLevel: "Intermediate",
-  author: {
-    "@type": "Person",
-    name: authorName,
-    url: authorURL,
-  },
-  image: {
-    "@type": "ImageObject",
-    url: new URL(
-      guide.image + ".jpg",
-      "https://ik.imagekit.io/qn1gkawvy/tr:w-1280/"
-    ).toString(),
-    height: "1280",
-    width: "1280",
-    caption: `Main image for ${guide.title}`,
-  },
-  ...(guide.location && {
-    contentLocation: {
-      "@type": "Place",
-      name: guide.location.name,
-      ...(guide.location && {
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: guide.location.latitude,
-          longitude: guide.location.longitude,
-        },
-      }),
-      ...(guide.map && {
-        map: `https://www.google.com/maps/d/viewer?mid=${guide.map.id}`,
-      }),
-    },
-  }),
-  ...(guide.itinerary && {
-    totalTime: guide.itinerary.duration,
-    step: guide.itinerary.phases.map((phase, index) => {
-      return {
-        "@type": "HowToStep",
-        name: `${guide.itinerary?.units?.phase ?? "Day"} ${index + 1}: ${phase.title}`,
-        text: phase.description,
-        ...(phase.images &&
-          phase.images.length > 0 && {
-            image: {
-              "@type": "ImageObject",
-              url: new URL(
-                phase.images[0] + ".jpg",
-                "https://ik.imagekit.io/qn1gkawvy/tr:w-1280/"
-              ).toString(),
-              height: "1280",
-              width: "1280",
-              caption: `Image for ${phase.title}`,
-            },
-          }),
-      };
-    }),
-  }),
-  tool: tools.map((tool) => {
-    return {
-      "@type": "HowToTool",
-      name: tool.title,
-      url: tool.url,
-    };
-  }),
-};
 ---
 
-<script
-  is:inline
-  type="application/ld+json"
-  set:html={JSON.stringify(jsonLd)}
+<HowTo
+  id={currentPageCanonicalURL.toString()}
+  name={guide.title}
+  url={currentPageCanonicalURL.toString()}
+  totalTime={guide.itinerary?.duration}
+  steps={guide.itinerary?.phases.map((phase) => ({
+    title: phase.title,
+    description: phase.description,
+    image: phase.images?.[0],
+  }))}
+  tools={tools}
+/>
+
+<Article
+  id={currentPageCanonicalURL.toString()}
+  name={guide.title}
+  headline={guide.title}
+  abstract={guide.introduction}
+  description={guide.introduction}
+  url={currentPageCanonicalURL.toString()}
+  datePublished={guide.date.toString()}
+  dateModified={guide.modified_date.toString()}
+  author={{
+    name: authorName,
+    url: authorURL,
+  }}
+  ,
+  image={{
+    url: guide.image,
+    caption: `Main image for ${guide.title}`,
+  }}
+  keywords={guide.tags.map((tag) =>
+    tag
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ")
+  )}
+/>
+
+<CreativeWork
+  id={currentPageCanonicalURL.toString()}
+  name={guide.title}
+  url={currentPageCanonicalURL.toString()}
+  datePublished={guide.date.toString()}
+  dateModified={guide.modified_date.toString()}
+  author={{
+    name: authorName,
+    url: authorURL,
+  }}
+  audience={{
+    type: "Intermediate Hikers",
+  }}
+  educationalLevel="Intermediate"
+  location={guide.location && {
+    name: guide.location.name,
+    latitude: guide.location.latitude,
+    longitude: guide.location.longitude,
+    mapId: guide.map?.id,
+  }}
+/>
+
+<Guide
+  id={currentPageCanonicalURL.toString()}
+  name={guide.title}
+  url={currentPageCanonicalURL.toString()}
+  datePublished={guide.date.toString()}
+  dateModified={guide.modified_date.toString()}
+  description={guide.introduction}
+  author={{
+    name: authorName,
+    url: authorURL,
+  }}
+  image={{
+    url: guide.image,
+    caption: `Main image for ${guide.title}`,
+  }}
+  location={guide.location && {
+    name: guide.location.name,
+    latitude: guide.location.latitude,
+    longitude: guide.location.longitude,
+    mapId: guide.map?.id,
+  }}
+  targetAudience="Intermediate Hikers"
 />
