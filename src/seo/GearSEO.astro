@@ -1,0 +1,32 @@
+---
+import Script from "./Script.astro";
+import gear from "../data/gear.json";
+import { itemListFrom } from "./types/item-list";
+
+interface Props {}
+
+const {} = Astro.props;
+const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<Script
+  graph={[
+    itemListFrom({
+      name: "Gear",
+      description: "",
+      url: currentPageCanonicalURL,
+      items: gear.map((g) => {
+        return {
+          name: g.title,
+          description: g.description,
+          url: new URL(g.url),
+          image: new URL(g.img),
+          review: {
+            rating: 5,
+            body: g.description,
+          },
+        };
+      }),
+    }),
+  ]}
+/>
