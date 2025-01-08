@@ -1,7 +1,6 @@
 ---
 import { type CollectionEntry } from "astro:content";
 import gear from "../data/gear.json";
-import BaseSEO from "./BaseSEO.astro";
 import Script from "./Script.astro";
 import { howToFrom } from "./types/how-to";
 import { articleFrom } from "./types/article";
@@ -19,12 +18,6 @@ const tools = guide.gear?.trip
   ? gear.filter((g) => g.trips.includes(guide.gear!.trip))
   : [];
 ---
-
-<BaseSEO
-  title={guide.title}
-  description={guide.introduction}
-  image={guide.image}
-/>
 
 <Script
   graph={[
