@@ -5,7 +5,7 @@ import HowTo from "./types/HowTo.astro";
 import Article from "./types/Article.astro";
 import CreativeWork from "./types/CreativeWork.astro";
 import Guide from "./types/Guide.astro";
-import BasePage from "./BasePage.astro";
+import BaseSEO from "./BaseSEO.astro";
 
 interface Props {
   guide: CollectionEntry<"guides">["data"];
@@ -25,7 +25,7 @@ const tools = guide.gear?.trip
   : [];
 ---
 
-<BasePage
+<BaseSEO
   title={guide.title}
   description={guide.introduction}
   imageURL={absoluteImageUrl}

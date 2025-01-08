@@ -15,7 +15,7 @@ import { getSimilarGuides } from "../utils/similarity";
 import BaseSwiper from "../components/ui/BaseSwiper";
 
 import TableOfContents from "../components/toc/TableOfContents.tsx";
-import HikingGuide from "../seo/HikingGuide.astro";
+import HikingGuideSEO from "../seo/HikingGuideSEO.astro";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -58,7 +58,7 @@ const tableOfContents: TableOfContentsItem[] = [
 ---
 
 <Layout navStyle="transparent">
-  <HikingGuide
+  <HikingGuideSEO
     slot="seo"
     guide={Astro.props}
   />
