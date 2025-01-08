@@ -14,10 +14,6 @@ interface Props {
 
 const { guide } = Astro.props;
 const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
-const absoluteImageUrl = new URL(
-  guide.image + ".jpg",
-  "https://ik.imagekit.io/qn1gkawvy/tr:w-1280/"
-);
 
 const tools = guide.gear?.trip
   ? gear.filter((g) => g.trips.includes(guide.gear!.trip))
@@ -27,9 +23,7 @@ const tools = guide.gear?.trip
 <BaseSEO
   title={guide.title}
   description={guide.introduction}
-  imageURL={absoluteImageUrl}
-  datePublished={guide.date.toISOString()}
-  dateModified={guide.modified_date.toISOString()}
+  image={guide.image}
 />
 
 <Script

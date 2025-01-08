@@ -5,11 +5,12 @@ import type {
   BreadcrumbList,
   ListItem,
 } from "schema-dts";
+import { imageFromPath } from "./image";
 
 export interface WebPageSchemaProps {
   title: string;
   description: string;
-  imageURL: URL;
+  image: string;
   url: URL;
   siteName: string;
 }
@@ -44,7 +45,7 @@ function generateBreadcrumbs(basePath: string, path: string): ListItem[] {
 export function webPageFrom({
   title,
   description,
-  imageURL,
+  image,
   url,
   siteName,
 }: WebPageSchemaProps): WebPage {
@@ -73,9 +74,6 @@ export function webPageFrom({
         "@id": `${url}#webpage`,
       },
     } as WebPageElement,
-    primaryImageOfPage: {
-      "@type": "ImageObject",
-      url: imageURL.toString(),
-    } as ImageObject,
+    primaryImageOfPage: imageFromPath(url, image),
   };
 }
