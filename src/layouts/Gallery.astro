@@ -6,6 +6,7 @@ import Text from "../components/ui/Text";
 import Layout from "../layouts/Layout.astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
+import GallerySEO from "../seo/GallerySEO.astro";
 
 type Props = CollectionEntry<"galleries">["data"];
 
@@ -38,4 +39,10 @@ const filteredPhotoPaths = photos
       </ResponsiveWidth>
     </div>
   </main>
+  <GallerySEO
+    title={title}
+    description={description}
+    image={image}
+    images={filteredPhotoPaths}
+  />
 </Layout>

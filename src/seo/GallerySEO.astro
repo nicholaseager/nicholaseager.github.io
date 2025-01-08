@@ -1,0 +1,31 @@
+---
+import Script from "./Script.astro";
+import { imageFromPath } from "./types/image";
+import { imageGalleryFrom } from "./types/image-gallery";
+
+interface Props {
+  title: string;
+  image: string;
+  description: string;
+  images: string[];
+}
+
+const { title, image, description, images } = Astro.props;
+const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<Script
+  graph={[
+    imageFromPath(
+      currentPageCanonicalURL,
+      image,
+      `${currentPageCanonicalURL}#primaryImage`
+    ),
+    imageGalleryFrom({
+      name: title,
+      description: description,
+      images: images,
+      url: currentPageCanonicalURL,
+    }),
+  ]}
+/>
