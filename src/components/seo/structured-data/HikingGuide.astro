@@ -45,26 +45,22 @@ const jsonLd = {
     width: "1280",
     caption: `Main image for ${guide.title}`,
   },
-  // TODO
-  contentLocation: {
-    "@type": "Place",
-    name: "Mount Example Trail",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Example City",
-      addressRegion: "State",
-      addressCountry: "US",
+  ...(guide.location && {
+    contentLocation: {
+      "@type": "Place",
+      name: guide.location.name,
+      ...(guide.location && {
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: guide.location.latitude,
+          longitude: guide.location.longitude,
+        },
+      }),
+      ...(guide.map && {
+        map: `https://www.google.com/maps/d/viewer?mid=${guide.map.id}`,
+      }),
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "27.7103",
-      longitude: "85.3222",
-      elevation: "3500 m",
-    },
-    ...(guide.map && {
-      map: `https://www.google.com/maps/d/viewer?mid=${guide.map.id}`,
-    }),
-  },
+  }),
   // TODO
   totalTime: "P21D", // ISO 8601 duration format for 21 days
   ...(guide.itinerary && {
