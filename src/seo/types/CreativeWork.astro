@@ -1,67 +1,59 @@
 ---
 interface Props {
-  id: string;
   name: string;
   url: string;
   datePublished: string;
   dateModified: string;
-  description?: string;
   author: {
     name: string;
     url: string | URL;
   };
-  image?: {
-    url: string;
-    caption: string;
+  audience?: {
+    type: string;
   };
+  educationalLevel?: string;
   location?: {
     name: string;
     latitude?: string;
     longitude?: string;
     mapId?: string;
   };
-  targetAudience?: string;
 }
 
 const {
-  id,
   name,
   url,
   datePublished,
   dateModified,
-  description,
   author,
-  image,
+  audience,
+  educationalLevel,
   location,
-  targetAudience,
 } = Astro.props;
 
 const jsonLd = {
-  "@id": id,
+  "@id": `${url}#creativeWork`,
   "@context": "https://schema.org",
-  "@type": "Guide",
+  "@type": "CreativeWork",
+  isPartOf: {
+    "@id": `${url}#webpage`,
+  },
   name,
   url,
   datePublished,
   dateModified,
-  ...(description && { description }),
   author: {
     "@type": "Person",
     name: author.name,
     url: author.url,
   },
-  ...(image && {
-    image: {
-      "@type": "ImageObject",
-      url: new URL(
-        image.url + ".jpg",
-        "https://ik.imagekit.io/qn1gkawvy/tr:w-1280/"
-      ).toString(),
-      height: "1280",
-      width: "1280",
-      caption: image.caption,
+  ...(audience && {
+    audience: {
+      "@type": "Audience",
+      audienceType: audience.type,
     },
   }),
+  ...(educationalLevel && { educationalLevel }),
   ...(location && {
     contentLocation: {
       "@type": "Place",
@@ -77,12 +69,6 @@ const jsonLd = {
       ...(location.mapId && {
         map: `https://www.google.com/maps/d/viewer?mid=${location.mapId}`,
       }),
-    },
-  }),
-  ...(targetAudience && {
-    audience: {
-      "@type": "Audience",
-      audienceType: targetAudience,
     },
   }),
 };

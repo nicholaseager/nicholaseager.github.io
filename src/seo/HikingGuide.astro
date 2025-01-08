@@ -1,10 +1,11 @@
 ---
 import { type CollectionEntry } from "astro:content";
-import gear from "../../data/gear.json";
+import gear from "../data/gear.json";
 import HowTo from "./types/HowTo.astro";
 import Article from "./types/Article.astro";
 import CreativeWork from "./types/CreativeWork.astro";
 import Guide from "./types/Guide.astro";
+import BasePage from "./BasePage.astro";
 
 interface Props {
   guide: CollectionEntry<"guides">["data"];
@@ -12,6 +13,10 @@ interface Props {
 
 const { guide } = Astro.props;
 const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
+const absoluteImageUrl = new URL(
+  guide.image + ".jpg",
+  "https://ik.imagekit.io/qn1gkawvy/tr:w-1280/"
+);
 const authorName = "Nicholas Eager";
 const authorURL = new URL("/about", Astro.site);
 
@@ -20,10 +25,19 @@ const tools = guide.gear?.trip
   : [];
 ---
 
+<BasePage
+  title={guide.title}
+  description={guide.introduction}
+  imageURL={absoluteImageUrl}
+  datePublished={guide.date.toISOString()}
+  dateModified={guide.modified_date.toISOString()}
+/>
+
 <HowTo
-  id={currentPageCanonicalURL.toString()}
   name={guide.title}
   url={currentPageCanonicalURL.toString()}
+  datePublished={guide.date.toISOString()}
+  dateModified={guide.modified_date.toISOString()}
   totalTime={guide.itinerary?.duration}
   steps={guide.itinerary?.phases.map((phase) => ({
     title: phase.title,
@@ -34,14 +48,13 @@ const tools = guide.gear?.trip
 />
 
 <Article
-  id={currentPageCanonicalURL.toString()}
   name={guide.title}
   headline={guide.title}
   abstract={guide.introduction}
   description={guide.introduction}
   url={currentPageCanonicalURL.toString()}
-  datePublished={guide.date.toString()}
-  dateModified={guide.modified_date.toString()}
+  datePublished={guide.date.toISOString()}
+  dateModified={guide.modified_date.toISOString()}
   author={{
     name: authorName,
     url: authorURL,
@@ -60,11 +73,10 @@ const tools = guide.gear?.trip
 />
 
 <CreativeWork
-  id={currentPageCanonicalURL.toString()}
   name={guide.title}
   url={currentPageCanonicalURL.toString()}
-  datePublished={guide.date.toString()}
-  dateModified={guide.modified_date.toString()}
+  datePublished={guide.date.toISOString()}
+  dateModified={guide.modified_date.toISOString()}
   author={{
     name: authorName,
     url: authorURL,
@@ -82,11 +94,10 @@ const tools = guide.gear?.trip
 />
 
 <Guide
-  id={currentPageCanonicalURL.toString()}
   name={guide.title}
   url={currentPageCanonicalURL.toString()}
-  datePublished={guide.date.toString()}
-  dateModified={guide.modified_date.toString()}
+  datePublished={guide.date.toISOString()}
+  dateModified={guide.modified_date.toISOString()}
   description={guide.introduction}
   author={{
     name: authorName,

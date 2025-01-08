@@ -4,16 +4,25 @@ interface Props {
   description: string;
   imageURL: URL;
   url: URL;
+  datePublished: string;
+  dateModified: string;
   siteName: string;
 }
 
-const { title, description, imageURL, url, siteName } = Astro.props;
+const {
+  title,
+  description,
+  datePublished,
+  dateModified,
+  imageURL,
+  url,
+  siteName,
+} = Astro.props;
 const basePath = url.origin;
 const relativePath = url.pathname;
 
 // Generate breadcrumbs based on currentPath
 const generateBreadcrumbs = (path: string) => {
-  // TODO: Photos urls do not include a page at every part
   const parts = path.split("/").filter(Boolean);
   return [
     {
@@ -25,13 +34,17 @@ const generateBreadcrumbs = (path: string) => {
     ...parts.map((part, index) => ({
       "@type": "ListItem",
       position: index + 2,
-      name: part.charAt(0).toUpperCase() + part.slice(1),
+      name: part
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" "),
       item: new URL(parts.slice(0, index + 1).join("/"), basePath).toString(),
     })),
   ];
 };
 
 const jsonLd = {
+  "@id": `${url}#webpage`,
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: title,
@@ -39,6 +52,7 @@ const jsonLd = {
   url: url.toString(),
   isPartOf: {
     "@type": "WebSite",
+    "@id": `${basePath}/#website`,
     name: siteName,
     url: basePath,
   },
@@ -49,7 +63,7 @@ const jsonLd = {
   mainContentOfPage: {
     "@type": "WebPageElement",
     isPartOf: {
-      "@id": basePath,
+      "@id": `${url}#webpage`,
     },
   },
   primaryImageOfPage: {

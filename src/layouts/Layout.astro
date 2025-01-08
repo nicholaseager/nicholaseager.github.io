@@ -2,7 +2,6 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer.astro";
 import KofiWidget from "../components/KoFiWidget.astro";
-import SEO from "../seo/SEO.astro";
 
 interface Props {
   navStyle?: "opaque" | "transparent";
@@ -18,18 +17,15 @@ const { navStyle = "opaque" } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <!-- TODO: Site title and description -->
-    <SEO
-      title="Site Title"
-      description="Site Description"
-      image="photos/countries/canada/vancouver-island/west-coast-trail/hiker-crossing-rocky-beach-waves"
-    >
-      <slot name="structured-data" />
-    </SEO>
-  </head><body>
+    <!-- SEO -->
+    <slot name="seo" />
+    <!-- End SEO -->
+  </head>
+  <body>
     <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
     <slot />
-  </body><KofiWidget />
+  </body>
+  <KofiWidget />
   <Footer />
   <!-- Spacing for kofi widget -->
   <div class="h-16"></div>

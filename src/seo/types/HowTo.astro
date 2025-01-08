@@ -1,8 +1,9 @@
 ---
 interface Props {
-  id: string;
   name: string;
   url: string;
+  datePublished: string;
+  dateModified: string;
   totalTime?: string;
   steps?: {
     title: string;
@@ -15,12 +16,16 @@ interface Props {
   }[];
 }
 
-const { id, name, url, totalTime, steps, tools } = Astro.props;
+const { name, url, datePublished, dateModified, totalTime, steps, tools } =
+  Astro.props;
 
 const jsonLd = {
-  "@id": id,
+  "@id": `${url}#howto`,
   "@context": "https://schema.org",
   "@type": "HowTo",
+  isPartOf: {
+    "@id": `${url}#webpage`,
+  },
   name,
   url,
   ...(totalTime && { totalTime }),
