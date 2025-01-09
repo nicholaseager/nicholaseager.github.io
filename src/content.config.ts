@@ -1,7 +1,6 @@
 import { glob, file } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 import photosData from "./data/photos.json";
-import galleriesData from "./data/galleries.json";
 
 const guides = defineCollection({
   loader: glob({ base: "./src/data/guides", pattern: "**/*.json" }),
@@ -167,29 +166,6 @@ const films = defineCollection({
   schema: z.object({
     id: z.string(),
     tags: z.string(),
-  }),
-});
-
-interface GalleryItem {
-  title: string;
-  tags: string[];
-  description: string;
-  image: string;
-}
-
-const galleries = defineCollection({
-  loader: () => {
-    return (galleriesData as GalleryItem[]).map((gallery) => ({
-      id: gallery.title.toLowerCase().replace(/\s+/g, "-"),
-      ...gallery,
-    }));
-  },
-  schema: z.object({
-    id: z.string(),
-    title: z.string(),
-    tags: z.array(z.string()),
-    description: z.string(),
-    image: z.string(),
   }),
 });
 
@@ -396,7 +372,6 @@ export const collections = {
   guides,
   photos,
   films,
-  galleries,
   photoLocations,
   photoThemes,
 };

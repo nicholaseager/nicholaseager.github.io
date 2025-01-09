@@ -1,8 +1,6 @@
 ---
 import Page from "../../layouts/Page.astro";
 import PhotoGrid from "../../components/photos/PhotoGrid";
-import LinkButton from "../../components/ui/LinkButton";
-import BaseSwiper from "../../components/ui/BaseSwiper";
 
 import { getCollection } from "astro:content";
 import Text from "../../components/ui/Text";
@@ -16,13 +14,10 @@ const showcasePhotoPaths = photos
   .filter((photo) => photo.data.tags.includes("showcase"))
   .map((photo) => photo.data.path);
 
-const galleries = await getCollection("galleries");
-const galleryItems = galleries.map((gallery) => ({
-  id: gallery.id,
-  title: gallery.data.title,
-  description: gallery.data.description,
-  image: gallery.data.image,
-}));
+const themes = await getCollection("photoThemes");
+const sortedThemes = themes.sort((a, b) =>
+  a.data.photos.length > b.data.photos.length ? -1 : 1
+);
 
 const locations = await getCollection("photoLocations");
 const countries = locations
@@ -38,7 +33,7 @@ const countries = locations
     <ResponsiveWidth>
       <Text variant="body">
         Browse by <a class="underline" href="/photos/countries/">place</a> or
-        <a class="underline" href="/galleries/">theme</a>, or just keep
+        <a class="underline" href="/photos/themes/">theme</a>, or just keep
         scrolling :)
       </Text>
     </ResponsiveWidth>
@@ -68,11 +63,11 @@ const countries = locations
     <ResponsiveWidth size="full">
       <Grid>
         {
-          galleryItems.map((gallery) => (
+          sortedThemes.map((theme) => (
             <HeroCard
-              title={gallery.title}
-              imagePath={gallery.image}
-              href={`/galleries/${gallery.id}`}
+              title={theme.data.title}
+              imagePath={theme.data.previewImage}
+              href={`/photos/themes/${theme.id}`}
             />
           ))
         }
