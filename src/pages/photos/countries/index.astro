@@ -9,7 +9,7 @@ import Text from "../../../components/ui/Text";
 const locations = await getCollection("photoLocations");
 const countries = locations
   .filter((location) => location.data.type === "country")
-  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+  .sort((a, b) => (a.data.photos.length > b.data.photos.length ? -1 : 1));
 ---
 
 <Page
@@ -20,19 +20,29 @@ const countries = locations
     <Grid>
       {
         countries.map((country) => (
-          <Card>
-            <a href={`/photos/countries/${country.data.path}`}>
-              <div class="w-full h-full">
-                <Text variant="h2">{country.data.name}</Text>
-                <Text variant="caption">
-                  {country.data.photos.length} photo
-                  {country.data.photos.length !== 1 ? "s" : ""}
-                </Text>
-              </div>
+          <Card className="w-full h-64">
+            <a
+              href={`/photos/countries/${country.data.path}`}
+              class="relative block w-full h-full"
+            >
               <Image
                 path={country.data.previewImage}
-                className="w-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
               />
+              <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white">
+                <Text
+                  variant="h2"
+                  className="font-bold uppercase text-white shadow-md"
+                >
+                  {country.data.name}
+                </Text>
+                <Text
+                  variant="caption"
+                  className="uppercase text-white shadow-md"
+                >
+                  {`${country.data.photos.length} photo${country.data.photos.length !== 1 ? "s" : ""}`}
+                </Text>
+              </div>
             </a>
           </Card>
         ))
