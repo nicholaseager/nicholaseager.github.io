@@ -34,29 +34,5 @@
     "tags": ["minimalism"],
     "description": "Photography is not about trying to capture something. Instead it is about what we try to not capture that makes a photograph great.",
     "image": "photos/countries/vietnam/da-nang/single-purple-shell-on-beach"
-  },
-  {
-    "title": "Nepal",
-    "tags": ["nepal"],
-    "description": "A breathtakingly beautiful country with stunning mountain vistas, lush forests, rolling hills, majestic waterfalls, fascinating culture, ancient temples and monasteries, picturesque villages, and varied, colorful landscapes.",
-    "image": "photos/countries/nepal/mardi-himal/frozen-prayer-flags-in-front-of-fishtail-mountain"
-  },
-  {
-    "title": "Vietnam",
-    "tags": ["vietnam"],
-    "description": "Stunning natural beauty, breathtaking rice terraces, lush green mountains, crystal-clear beaches, and bustling cities.",
-    "image": "photos/countries/vietnam/hanoi/banana-farm-from-above"
-  },
-  {
-    "title": "United States",
-    "tags": ["united-states"],
-    "description": "Seemingly infinite land, diverse natural beauty, and a wide range of landscapes including mountains, forests, beaches, deserts, and more.",
-    "image": "photos/countries/united-states/wyoming/cascading-rocky-mountains-at-dawn"
-  },
-  {
-    "title": "Tanzania",
-    "tags": ["tanzania"],
-    "description": "Witness the raw beauty and majesty of nature as you explore the vast and diverse landscapes, from the rolling grasslands of the savanna to the dense forests and winding rivers, and encounter a myriad of exotic and endangered animals in their natural habitats.",
-    "image": "photos/countries/tanzania/serengeti/acacia-silhouettes-at-sunset"
   }
 ]
