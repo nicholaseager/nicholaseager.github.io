@@ -203,28 +203,49 @@ interface LocationItem {
   previewImage: string;
 }
 
+/**
+ * Collection for managing hierarchical photo locations (countries, regions, localities)
+ * Each location tracks its photos and maintains parent/child relationships
+ *
+ * Examples of paths and their corresponding types:
+ * - "france" (country)
+ * - "france/chamonix" (region)
+ * - "france/chamonix/argentiere" (locality)
+ */
 const photoLocations = defineCollection({
   loader: () => {
+    // Map to store unique locations keyed by their path
+    // This prevents duplicates and allows easy updates when photos share locations
     const locationMap = new Map<string, LocationItem>();
 
-    // Helper to create or update location
+    /**
+     * Creates a new location or adds a photo to an existing one
+     * @param path - The location path (e.g. "france" or "france/chamonix")
+     * @param type - The location type (country, region, or locality)
+     * @param photoPath - Full path of the photo to add to this location
+     */
     const addLocation = (
       path: string,
       type: LocationItem["type"],
       photoPath: string
     ) => {
+      // If location exists, just add the photo to it
       const existingLocation = locationMap.get(path);
       if (existingLocation) {
         existingLocation.photos.push(photoPath);
         return;
       }
 
+      // Create new location
       const parts = path.split("/");
+      // Convert kebab-case to Title Case (e.g. "new-zealand" -> "New Zealand")
       const name = parts[parts.length - 1]
         .split("-")
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
         .join(" ");
 
+      // Parent path is everything before the last segment
+      // e.g. for "france/chamonix/argentiere", parent is "france/chamonix"
       const parentPath = parts.length > 1 ? parts.slice(0, -1).join("/") : null;
 
       locationMap.set(path, {
@@ -234,26 +255,35 @@ const photoLocations = defineCollection({
         name,
         parentPath,
         photos: [photoPath],
-        previewImage: photoPath, // First photo becomes preview by default
+        previewImage: photoPath, // Use first photo as preview (could be enhanced to pick best photo)
       });
     };
 
-    // Process all photos to build location hierarchy
+    // Process each photo to build the complete location hierarchy
     (photosData as PhotoItem[]).forEach((photo) => {
+      // Extract location parts from photo path, removing prefix and the photo name
       const parts = photo.path.replace(/^photos\/countries\//, "").split("/");
-      // Skip the last part as it's the photo itself
-      parts.pop();
+      parts.pop(); // Remove the actual photo name from the path
 
+      // Build locations for each level of the hierarchy
       let currentPath = "";
       parts.forEach((part, index) => {
+        // Build up the path one segment at a time
         currentPath = currentPath ? `${currentPath}/${part}` : part;
+
+        // Determine location type based on depth in hierarchy
         const type =
-          index === 0 ? "country" : index === 1 ? "region" : "locality";
+          index === 0
+            ? "country" // First level is always country
+            : index === 1
+            ? "region" // Second level is region
+            : "locality"; // Everything deeper is a locality
 
         addLocation(currentPath, type, photo.path);
       });
     });
 
+    // Convert map to array for Astro collection
     return Array.from(locationMap.values());
   },
   schema: z.object({
