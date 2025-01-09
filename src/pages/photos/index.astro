@@ -8,6 +8,7 @@ import ResponsiveWidth from "../../components/layout/ResponsiveWidth.astro";
 import PhotosSEO from "../../seo/PhotosSEO.astro";
 import HeroCard from "../../components/ui/HeroCard";
 import Grid from "../../components/ui/Grid";
+import Link from "../../components/ui/Link";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
@@ -32,9 +33,8 @@ const countries = locations
   <div class="space-y-8">
     <ResponsiveWidth>
       <Text variant="body">
-        Browse by <a class="underline" href="/photos/countries/">place</a> or
-        <a class="underline" href="/photos/themes/">theme</a>, or just keep
-        scrolling :)
+        Browse by <Link href="/photos/countries/">place</Link> or
+        <Link href="/photos/themes/">theme</Link>, or just keep scrolling :)
       </Text>
     </ResponsiveWidth>
     <ResponsiveWidth size="full">

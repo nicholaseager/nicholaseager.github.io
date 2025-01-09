@@ -55,6 +55,14 @@ export default {
               lineHeight: "1.6",
               color: "rgb(71 85 105)", // text-slate-600
             },
+            a: {
+              fontSize: ["15px", null, "17px", "19px"],
+              fontWeight: "600",
+              letterSpacing: "0",
+              lineHeight: "1.6",
+              color: "rgb(71 85 105)", // text-slate-600
+              textDecoration: "underline",
+            },
             blockquote: {
               fontSize: ["25px", null, "35px", "45px"],
               fontWeight: "300",
