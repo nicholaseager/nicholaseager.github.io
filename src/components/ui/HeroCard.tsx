@@ -6,7 +6,7 @@ import Text from "./Text.tsx";
 interface HeroCardProps {
   imagePath: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   href?: string;
 }
 
@@ -24,15 +24,14 @@ const HeroCard: React.FC<HeroCardProps> = ({
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white">
-          <Text
-            variant="h2"
-            className="font-bold uppercase text-white shadow-md"
-          >
+          <Text variant="h2" className="font-bold uppercase text-white">
             {title}
           </Text>
-          <Text variant="caption" className="uppercase text-white shadow-md">
-            {subtitle}
-          </Text>
+          {subtitle && (
+            <Text variant="caption" className="uppercase text-white">
+              {subtitle}
+            </Text>
+          )}
         </div>
       </a>
     </Card>
