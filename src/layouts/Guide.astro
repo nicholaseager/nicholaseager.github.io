@@ -31,6 +31,7 @@ const {
   weather,
   basics,
   map,
+  extra_sections,
   itinerary,
   highlights,
   gear,
@@ -157,6 +158,50 @@ const tableOfContents: TableOfContentsItem[] = [
           <ResponsiveWidth size="lg">
             <GoogleMap mapId={map.id} />
           </ResponsiveWidth>
+        </>
+      )
+    }
+
+    <!-- Extra Sections -->
+
+    {
+      extra_sections && extra_sections.length > 0 && (
+        <>
+          {
+            extra_sections.map((section) => {
+              return (
+                <>
+                <ResponsiveWidth size="md">
+                  <Text variant="h2" spacing="normal" id="map">{section.title}</Text>
+                  {section.description && <Text variant="body">{section.description}</Text>}
+                </ResponsiveWidth>
+
+                {
+                  section.sections?.map((subsection) => {
+                    return (
+                    <>
+                      <ResponsiveWidth size="md">
+                        <Text variant="h3" spacing="normal" id="map">{subsection.title}</Text>
+                      </ResponsiveWidth>
+                      {
+                        subsection.images && (
+                        <ResponsiveWidth size="lg">
+                          <ImagesSwiper imagePaths={subsection.images}/>
+                        </ResponsiveWidth>
+                        )
+                      }
+                      <ResponsiveWidth size="md">
+                        {subsection.description && <Text variant="body">{subsection.description}</Text>}
+                      </ResponsiveWidth>
+                    </>
+                    )
+                  })
+                }
+
+                </>
+              )
+            })
+          }
         </>
       )
     }

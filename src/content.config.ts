@@ -108,6 +108,7 @@ const guides = defineCollection({
               z.object({
                 title: z.string(),
                 description: z.string(),
+                images: z.array(z.string()).optional(),
               })
             )
             .optional(),
