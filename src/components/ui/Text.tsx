@@ -46,7 +46,7 @@ function Text({
     caption:
       "text-slate-600 text-[13px] md:text-[15px] lg:text-[17px] font-[300] tracking-[0] leading-[1.6] italic",
 
-    custom: className, // Allow custom classes to be passed in
+    custom: "", // Only uses custom class
   };
 
   // Add spacing variants
@@ -67,7 +67,7 @@ function Text({
 
   return (
     <Component
-      className={`${variants[variant]} ${spacingVariants[spacing]}`}
+      className={`${variants[variant]} ${spacingVariants[spacing]} ${className}`}
       {...props}
     >
       {children}
