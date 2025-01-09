@@ -23,6 +23,7 @@ const {
   title,
   youtube,
   introduction,
+  links,
   description,
   conclusion,
   image,
@@ -69,6 +70,26 @@ const tableOfContents: TableOfContentsItem[] = [
       videoId={youtube ?? ""}
     />
   </div>
+
+  <!-- Links -->
+  {
+    links && (
+      <ResponsiveWidth size="md">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 mb-8">
+          <Text variant="h6">Quick Links:</Text>
+          {links.map((l) => {
+            return (
+              <h1>
+                <LinkButton href={l.url} variant="secondary" size="sm">
+                  {l.title}
+                </LinkButton>
+              </h1>
+            )
+          })}
+        </div>
+      </ResponsiveWidth>
+    )
+  }
 
   <!-- Table of Contents -->
   <TableOfContents client:load items={tableOfContents} />
