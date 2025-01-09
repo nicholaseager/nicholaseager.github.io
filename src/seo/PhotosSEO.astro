@@ -3,18 +3,20 @@ import Script from "./Script.astro";
 import { imageGalleryFrom } from "./types/image-gallery";
 
 interface Props {
+  name: string;
+  description: string;
   images: string[];
 }
 
-const { images } = Astro.props;
+const { name, description, images } = Astro.props;
 const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <Script
   graph={[
     imageGalleryFrom({
-      name: "Photos Showcase",
-      description: "Nicholas Eager's Photos",
+      name: name,
+      description: description,
       images: images,
       url: currentPageCanonicalURL,
     }),

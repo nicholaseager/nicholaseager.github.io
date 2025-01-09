@@ -1,0 +1,62 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Page from "../../../layouts/Page.astro";
+import PhotoGrid from "../../../components/photos/PhotoGrid";
+import PhotosSEO from "../../../seo/PhotosSEO.astro";
+
+export async function getStaticPaths() {
+  const allPhotos = await getCollection("photos");
+
+  return allPhotos.flatMap((photo) => {
+    let photoPathParts = photo.data.path
+      .replace(/^photos\/countries\//, "")
+      .split("/")
+      .slice(0, -1);
+    const result = [];
+
+    while (photoPathParts.length > 0) {
+      const filteredPhotos = allPhotos.filter((photo) => {
+        return photo.data.path.startsWith(
+          `photos/countries/${photoPathParts.join("/")}`
+        );
+      });
+      const location = photoPathParts
+        .map((part) =>
+          part
+            .split("-")
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ")
+        )
+        .reverse()
+        .join(", ");
+
+      result.push({
+        params: { slug: photoPathParts.join("/") },
+        props: {
+          title: photoPathParts[photoPathParts.length - 1]
+            .split("-")
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" "),
+          description: `Photos from ${location}`,
+          photos: filteredPhotos.map((photo) => photo.data.path),
+        },
+      });
+      photoPathParts = photoPathParts.slice(0, -1);
+    }
+
+    return result;
+  });
+}
+type Props = {
+  title: string;
+  description: string;
+  photos: string[];
+};
+
+const { title, description, photos } = Astro.props;
+---
+
+<Page title={title} description={description}>
+  <PhotoGrid photos={photos} />
+  <PhotosSEO name={title} description={description} images={photos} />
+</Page>

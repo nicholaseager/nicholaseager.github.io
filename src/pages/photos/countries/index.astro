@@ -1,0 +1,56 @@
+---
+import Page from "../../../layouts/Page.astro";
+import LinkButton from "../../../components/ui/LinkButton";
+
+import { getCollection } from "astro:content";
+import Image from "../../../components/image-kit/Image";
+import Card from "../../../components/ui/Card";
+import Grid from "../../../components/ui/Grid";
+import Text from "../../../components/ui/Text";
+
+const photos = await getCollection("photos");
+const countryPathsSet = new Set<string>();
+for (const photo of photos) {
+  const countryPathComponent = photo.data.path.split("/")[2];
+  countryPathsSet.add(countryPathComponent);
+}
+const countryPaths = Array.from(countryPathsSet);
+const countries = countryPaths.map((path) => {
+  const name = path
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+  const firstImagePath = photos.findLast((p) => p.data.path.includes(path))
+    ?.data.path;
+  return { name: name, path: path, image: firstImagePath };
+});
+---
+
+<Page
+  title="Countries"
+  description="Sometimes a single photo is all you need to tell a story. Browse my most unique stories."
+>
+  <div class="space-y-8">
+    <Grid>
+      {
+        countries.map((country) => {
+          return (
+            <Card>
+              <a href={`/photos/countries/${country.path}`}>
+                <div class="w-full h-full">
+                  <Text variant="h2">{country.name}</Text>
+                </div>
+                {country.image && (
+                  <Image
+                    path={country.image}
+                    className="w-full h-full object-cover"
+                  />
+                )}
+              </a>
+            </Card>
+          );
+        })
+      }
+    </Grid>
+  </div>
+</Page>
