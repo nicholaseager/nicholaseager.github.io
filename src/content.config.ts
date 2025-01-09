@@ -147,13 +147,38 @@ interface PhotoItem {
 
 const photos = defineCollection({
   loader: () => {
-    return (photosData as PhotoItem[]).map((photo, index) => ({
-      id: photo.path.replace(/^photos\//, ""),
-      ...photo,
-    }));
+    return (photosData as PhotoItem[]).map((photo) => {
+      const pathParts = photo.path.split("/");
+
+      // Parse title from the last part of the path
+      const title = pathParts[pathParts.length - 1]
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+
+      // Parse location from the path parts between "photos/countries" and filename
+      const location = pathParts
+        .slice(2, -1) // Skip "photos" and "countries" prefix, and exclude the filename
+        .map((part) =>
+          part
+            .split("-")
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ")
+        )
+        .join(" / ");
+
+      return {
+        id: photo.path.replace(/^photos\//, ""),
+        title,
+        location,
+        ...photo,
+      };
+    });
   },
   schema: z.object({
     path: z.string(),
+    title: z.string(),
+    location: z.string(),
     description: z.string(),
     tags: z.array(z.string()),
     "darkroom-id": z.union([z.string(), z.number()]).optional(),
