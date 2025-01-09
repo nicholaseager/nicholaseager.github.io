@@ -314,4 +314,89 @@ const photoLocations = defineCollection({
   }),
 });
 
-export const collections = { guides, photos, films, galleries, photoLocations };
+interface ThemeItem {
+  id: string;
+  path: string;
+  title: string;
+  photos: string[];
+  previewImage: string;
+}
+
+/**
+ * Collection for organizing photos by their themes/tags
+ * Each theme tracks its associated photos
+ *
+ * Example:
+ * For photo with tags ["mountains", "landscapes"], creates:
+ * {
+ *   "mountains": {
+ *     title: "Mountains",
+ *     photos: ["photos/countries/nepal/everest.jpg"]
+ *   },
+ *   "landscapes": {
+ *     title: "Landscapes",
+ *     photos: ["photos/countries/nepal/everest.jpg"]
+ *   }
+ * }
+ */
+const photoThemes = defineCollection({
+  loader: () => {
+    // Map to store unique themes keyed by tag name
+    const themeMap = new Map<string, ThemeItem>();
+
+    /**
+     * Creates a new theme or adds a photo to an existing one
+     * @param tag - The tag name (e.g. "mountains" or "landscapes")
+     * @param photoPath - Full path of the photo to add to this theme
+     */
+    const addTheme = (tag: string, photoPath: string) => {
+      // If theme exists, just add the photo to it
+      const existingTheme = themeMap.get(tag);
+      if (existingTheme) {
+        existingTheme.photos.push(photoPath);
+        return;
+      }
+
+      // Convert kebab-case to Title Case (e.g. "night-sky" -> "Night Sky")
+      const title = tag
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+
+      themeMap.set(tag, {
+        id: tag,
+        path: tag,
+        title,
+        photos: [photoPath],
+        previewImage: photoPath, // Use first photo as preview
+      });
+    };
+
+    // Process each photo to build the themes
+    (photosData as PhotoItem[]).forEach((photo) => {
+      // Add photo to each of its tags/themes
+      photo.tags.forEach((tag) => {
+        addTheme(tag, photo.path);
+      });
+    });
+
+    // Convert map to array for Astro collection
+    return Array.from(themeMap.values());
+  },
+  schema: z.object({
+    id: z.string(),
+    path: z.string(),
+    title: z.string(),
+    photos: z.array(z.string()),
+    previewImage: z.string(),
+  }),
+});
+
+export const collections = {
+  guides,
+  photos,
+  films,
+  galleries,
+  photoLocations,
+  photoThemes,
+};

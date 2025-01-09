@@ -1,0 +1,32 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Page from "../../../layouts/Page.astro";
+import PhotoGrid from "../../../components/photos/PhotoGrid";
+import PhotosSEO from "../../../seo/PhotosSEO.astro";
+
+export async function getStaticPaths() {
+  const themes = await getCollection("photoThemes");
+
+  return themes.map((theme) => ({
+    params: { slug: theme.data.path },
+    props: {
+      title: theme.data.title,
+      description: `A collection of ${theme.data.title.toLowerCase()} photography`,
+      photos: theme.data.photos,
+    },
+  }));
+}
+
+type Props = {
+  title: string;
+  description: string;
+  photos: string[];
+};
+
+const { title, description, photos } = Astro.props;
+---
+
+<Page title={title} description={description}>
+  <PhotoGrid client:visible photos={photos} />
+  <PhotosSEO name={title} description={description} images={photos} />
+</Page>
