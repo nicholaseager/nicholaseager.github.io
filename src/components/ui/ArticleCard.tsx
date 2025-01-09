@@ -1,15 +1,15 @@
 import React from "react";
 import Card from "./Card.tsx";
-import Image from "../image-kit/Image.jsx";
+import Image from "../image-kit/Image.js";
 
-interface BaseCardProps {
+interface ArticleCardProps {
   imagePath: string;
   title: string;
   description: string;
   href?: string;
 }
 
-const BaseCard: React.FC<BaseCardProps> = ({
+const ArticleCard: React.FC<ArticleCardProps> = ({
   imagePath,
   title,
   description,
@@ -28,4 +28,4 @@ const BaseCard: React.FC<BaseCardProps> = ({
   );
 };
 
-export default BaseCard;
+export default ArticleCard;

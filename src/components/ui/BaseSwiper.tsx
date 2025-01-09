@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import BaseCard from "./BaseCard";
+import ArticleCard from "./ArticleCard";
 
 interface BaseItem {
   id: string;
@@ -28,7 +28,7 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({ items, urlPrefix }) => {
     >
       {items.map((item, index) => (
         <SwiperSlide key={index}>
-          <BaseCard
+          <ArticleCard
             href={`${urlPrefix}/${item.id}/`}
             imagePath={item.image}
             title={item.title}

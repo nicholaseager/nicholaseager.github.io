@@ -1,5 +1,5 @@
 ---
-import BaseCard from "../../components/ui/BaseCard";
+import ArticleCard from "../../components/ui/ArticleCard";
 import Grid from "../../components/ui/Grid";
 import Page from "../../layouts/Page.astro";
 
@@ -15,7 +15,7 @@ const galleries = await getCollection("galleries");
   <Grid>
     {
       galleries.map((item) => (
-        <BaseCard
+        <ArticleCard
           href={`/galleries/${item.id}/`}
           imagePath={item.data.image}
           title={item.data.title}

@@ -29,6 +29,6 @@ const { title, description, photos } = Astro.props;
 ---
 
 <Page title={title} description={description}>
-  <PhotoGrid photos={photos} />
+  <PhotoGrid client:visible photos={photos} />
   <PhotosSEO name={title} description={description} images={photos} />
 </Page>

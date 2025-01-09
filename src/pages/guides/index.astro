@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Grid from "../../components/ui/Grid.tsx";
 import Page from "../../layouts/Page.astro";
-import BaseCard from "../../components/ui/BaseCard";
+import ArticleCard from "../../components/ui/ArticleCard.tsx";
 
 const guides = (await getCollection("guides")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -16,7 +16,7 @@ const guides = (await getCollection("guides")).sort(
   <Grid>
     {
       guides.map((item) => (
-        <BaseCard
+        <ArticleCard
           href={`/guides/${item.id}/`}
           imagePath={item.data.image}
           title={item.data.title}
