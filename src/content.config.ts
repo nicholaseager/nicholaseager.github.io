@@ -137,6 +137,14 @@ const guides = defineCollection({
   }),
 });
 
+const films = defineCollection({
+  loader: file("./src/data/films.json"),
+  schema: z.object({
+    id: z.string(),
+    tags: z.string(),
+  }),
+});
+
 interface PhotoItem {
   path: string;
   description: string;
@@ -145,6 +153,22 @@ interface PhotoItem {
   "youtube-id"?: string;
 }
 
+/**
+ * Collection for managing photos with their metadata
+ * Each photo has a path, title, location, description and tags
+ *
+ * Example:
+ * For photo path "photos/countries/france/chamonix/mountain.jpg", creates:
+ * {
+ *   id: "countries/france/chamonix/mountain.jpg",
+ *   title: "Mountain",
+ *   location: "France / Chamonix",
+ *   description: "Mountain vista in Chamonix",
+ *   tags: ["mountains", "landscapes"],
+ *   darkroom-id: "123", // Optional darkroom reference
+ *   youtube-id: "abc123" // Optional related video
+ * }
+ */
 const photos = defineCollection({
   loader: () => {
     return (photosData as PhotoItem[]).map((photo) => {
@@ -183,14 +207,6 @@ const photos = defineCollection({
     tags: z.array(z.string()),
     "darkroom-id": z.union([z.string(), z.number()]).optional(),
     "youtube-id": z.string().optional(),
-  }),
-});
-
-const films = defineCollection({
-  loader: file("./src/data/films.json"),
-  schema: z.object({
-    id: z.string(),
-    tags: z.string(),
   }),
 });
 
