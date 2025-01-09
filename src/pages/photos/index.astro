@@ -8,6 +8,8 @@ import { getCollection } from "astro:content";
 import Text from "../../components/ui/Text";
 import ResponsiveWidth from "../../components/layout/ResponsiveWidth.astro";
 import PhotosSEO from "../../seo/PhotosSEO.astro";
+import HeroCard from "../../components/ui/HeroCard";
+import Grid from "../../components/ui/Grid";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
@@ -21,6 +23,11 @@ const galleryItems = galleries.map((gallery) => ({
   description: gallery.data.description,
   image: gallery.data.image,
 }));
+
+const locations = await getCollection("photoLocations");
+const countries = locations
+  .filter((location) => location.data.type === "country")
+  .sort((a, b) => (a.data.photos.length > b.data.photos.length ? -1 : 1));
 ---
 
 <Page
@@ -28,11 +35,35 @@ const galleryItems = galleries.map((gallery) => ({
   description="Sometimes a single photo is all you need to tell a story. Browse my most unique stories."
 >
   <div class="space-y-8">
+    <ResponsiveWidth>
+      <Text variant="body">
+        Browse by <a class="underline" href="/photos/countries/">location</a> or
+        <a class="underline" href="/galleries/">theme</a>, or just keep
+        scrolling :)
+      </Text>
+    </ResponsiveWidth>
     <ResponsiveWidth size="full">
       <PhotoGrid client:visible photos={showcasePhotoPaths} />
     </ResponsiveWidth>
     <ResponsiveWidth>
-      <Text variant="h2">Photo Galleries</Text>
+      <Text variant="h2">Places</Text>
+    </ResponsiveWidth>
+    <ResponsiveWidth size="full">
+      <Grid>
+        {
+          countries.map((country) => (
+            <HeroCard
+              title={country.data.name}
+              subtitle={`${country.data.photos.length} photo${country.data.photos.length !== 1 ? "s" : ""}`}
+              imagePath={country.data.previewImage}
+              href={`/photos/countries/${country.data.path}`}
+            />
+          ))
+        }
+      </Grid>
+    </ResponsiveWidth>
+    <ResponsiveWidth>
+      <Text variant="h2">Themes</Text>
     </ResponsiveWidth>
     <ResponsiveWidth size="lg">
       <BaseSwiper client:visible items={galleryItems} urlPrefix="galleries" />
