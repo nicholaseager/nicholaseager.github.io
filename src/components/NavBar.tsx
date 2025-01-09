@@ -35,7 +35,7 @@ export default function NavBar({ pathname, style }: NavBarProps) {
   return (
     <header role="banner">
       <nav className={`${backgroundColor} p-4 ${positioning} z-50 w-full`}>
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="mx-auto flex items-center justify-between">
           <div className={`flex-shrink-0 ${textColor} text-2xl`}>
             <h1>
               <a href="/">Nicholas Eager</a>
