@@ -37,7 +37,7 @@ const countries = locations
   <div class="space-y-8">
     <ResponsiveWidth>
       <Text variant="body">
-        Browse by <a class="underline" href="/photos/countries/">location</a> or
+        Browse by <a class="underline" href="/photos/countries/">place</a> or
         <a class="underline" href="/galleries/">theme</a>, or just keep
         scrolling :)
       </Text>
@@ -65,9 +65,18 @@ const countries = locations
     <ResponsiveWidth>
       <Text variant="h2">Themes</Text>
     </ResponsiveWidth>
-    <ResponsiveWidth size="lg">
-      <BaseSwiper client:visible items={galleryItems} urlPrefix="galleries" />
-      <LinkButton href="/galleries">View all galleries</LinkButton>
+    <ResponsiveWidth size="full">
+      <Grid>
+        {
+          galleryItems.map((gallery) => (
+            <HeroCard
+              title={gallery.title}
+              imagePath={gallery.image}
+              href={`/galleries/${gallery.id}`}
+            />
+          ))
+        }
+      </Grid>
     </ResponsiveWidth>
   </div>
 
