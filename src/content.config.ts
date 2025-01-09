@@ -207,6 +207,23 @@ interface LocationItem {
  * Collection for managing hierarchical photo locations (countries, regions, localities)
  * Each location tracks its photos and maintains parent/child relationships
  *
+ * Example:
+ * For photo path "photos/countries/france/chamonix/mountain.jpg", creates:
+ * {
+ *   "france": {
+ *     type: "country",
+ *     name: "France",
+ *     parentPath: null,
+ *     photos: ["photos/countries/france/chamonix/mountain.jpg"]
+ *   },
+ *   "france/chamonix": {
+ *     type: "region",
+ *     name: "Chamonix",
+ *     parentPath: "france",
+ *     photos: ["photos/countries/france/chamonix/mountain.jpg"]
+ *   }
+ * }
+ *
  * Examples of paths and their corresponding types:
  * - "france" (country)
  * - "france/chamonix" (region)
