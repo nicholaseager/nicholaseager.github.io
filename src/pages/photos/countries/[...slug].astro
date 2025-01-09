@@ -1,73 +1,30 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { getCollection } from "astro:content";
 import Page from "../../../layouts/Page.astro";
 import PhotoGrid from "../../../components/photos/PhotoGrid";
 import PhotosSEO from "../../../seo/PhotosSEO.astro";
 
-type PathProps = {
+export async function getStaticPaths() {
+  const locations = await getCollection("photoLocations");
+
+  return locations.map((location) => ({
+    params: { slug: location.data.path },
+    props: {
+      title: location.data.name,
+      description: `Photos from ${location.data.name}`,
+      photos: location.data.photos,
+      type: location.data.type,
+      parentPath: location.data.parentPath,
+    },
+  }));
+}
+
+type Props = {
   title: string;
   description: string;
   photos: string[];
 };
 
-function capitalizeWords(text: string): string {
-  return text
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-}
-
-function buildLocation(pathParts: string[]): string {
-  return pathParts
-    .map((part) => capitalizeWords(part))
-    .reverse()
-    .join(", ");
-}
-
-function generatePhotoPath(parts: string[]): string {
-  return `photos/countries/${parts.join("/")}`;
-}
-
-export async function getStaticPaths() {
-  const allPhotos = await getCollection("photos");
-
-  return allPhotos.flatMap((photo) => {
-    const photoPathParts = photo.data.path
-      .replace(/^photos\/countries\//, "")
-      .split("/")
-      .slice(0, -1);
-
-    const paths = [];
-    let currentPath = [...photoPathParts];
-
-    while (currentPath.length > 0) {
-      const basePath = generatePhotoPath(currentPath);
-      const filteredPhotos = allPhotos.filter((photo) =>
-        photo.data.path.startsWith(basePath)
-      );
-
-      const currentTitle = capitalizeWords(currentPath[currentPath.length - 1]);
-      const location = buildLocation(currentPath);
-
-      paths.push({
-        params: {
-          slug: currentPath.join("/"),
-        },
-        props: {
-          title: currentTitle,
-          description: `Photos from ${location}`,
-          photos: filteredPhotos.map((photo) => photo.data.path),
-        } satisfies PathProps,
-      });
-
-      currentPath = currentPath.slice(0, -1);
-    }
-
-    return paths;
-  });
-}
-
-type Props = PathProps;
 const { title, description, photos } = Astro.props;
 ---
 

@@ -193,4 +193,78 @@ const galleries = defineCollection({
   }),
 });
 
-export const collections = { guides, photos, films, galleries };
+interface LocationItem {
+  id: string;
+  path: string;
+  type: "country" | "region" | "locality";
+  name: string;
+  parentPath: string | null;
+  photos: string[];
+  previewImage: string;
+}
+
+const photoLocations = defineCollection({
+  loader: () => {
+    const locationMap = new Map<string, LocationItem>();
+
+    // Helper to create or update location
+    const addLocation = (
+      path: string,
+      type: LocationItem["type"],
+      photoPath: string
+    ) => {
+      const existingLocation = locationMap.get(path);
+      if (existingLocation) {
+        existingLocation.photos.push(photoPath);
+        return;
+      }
+
+      const parts = path.split("/");
+      const name = parts[parts.length - 1]
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+
+      const parentPath = parts.length > 1 ? parts.slice(0, -1).join("/") : null;
+
+      locationMap.set(path, {
+        id: path,
+        path,
+        type,
+        name,
+        parentPath,
+        photos: [photoPath],
+        previewImage: photoPath, // First photo becomes preview by default
+      });
+    };
+
+    // Process all photos to build location hierarchy
+    (photosData as PhotoItem[]).forEach((photo) => {
+      const parts = photo.path.replace(/^photos\/countries\//, "").split("/");
+      // Skip the last part as it's the photo itself
+      parts.pop();
+
+      let currentPath = "";
+      parts.forEach((part, index) => {
+        currentPath = currentPath ? `${currentPath}/${part}` : part;
+        const type =
+          index === 0 ? "country" : index === 1 ? "region" : "locality";
+
+        addLocation(currentPath, type, photo.path);
+      });
+    });
+
+    return Array.from(locationMap.values());
+  },
+  schema: z.object({
+    id: z.string(),
+    path: z.string(),
+    type: z.enum(["country", "region", "locality"]),
+    name: z.string(),
+    parentPath: z.string().nullable(),
+    photos: z.array(z.string()),
+    previewImage: z.string(),
+  }),
+});
+
+export const collections = { guides, photos, films, galleries, photoLocations };
