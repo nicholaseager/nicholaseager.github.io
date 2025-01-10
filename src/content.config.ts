@@ -1,6 +1,7 @@
 import { glob, file } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 import photosData from "./data/photos.json";
+import photoTagDefinitionsData from "./data/photo-tag-definitions.json";
 
 const guides = defineCollection({
   loader: glob({ base: "./src/data/guides", pattern: "**/*.json" }),
@@ -335,23 +336,29 @@ interface ThemeItem {
   id: string;
   path: string;
   title: string;
+  description: string;
   photos: string[];
   previewImage: string;
+  sortOrder?: number;
 }
 
 /**
  * Collection for organizing photos by their themes/tags
- * Each theme tracks its associated photos
+ * Each theme tracks its associated photos and uses metadata from photo-tag-definitions.json
  *
  * Example:
  * For photo with tags ["mountains", "landscapes"], creates:
  * {
  *   "mountains": {
- *     title: "Mountains",
+ *     title: "Mountain Photography",
+ *     description: "Majestic peaks and dramatic mountain ranges reaching into the sky",
+ *     sortOrder: 2,
  *     photos: ["photos/countries/nepal/everest.jpg"]
  *   },
  *   "landscapes": {
- *     title: "Landscapes",
+ *     title: "Landscape Photography",
+ *     description: "Captivating natural vistas and scenic views from around the world",
+ *     sortOrder: 1,
  *     photos: ["photos/countries/nepal/everest.jpg"]
  *   }
  * }
@@ -374,16 +381,33 @@ const photoThemes = defineCollection({
         return;
       }
 
-      // Convert kebab-case to Title Case (e.g. "night-sky" -> "Night Sky")
-      const title = tag
+      // Get tag definition if it exists
+      const tagDef = (
+        photoTagDefinitionsData as Record<
+          string,
+          {
+            title?: string;
+            description?: string;
+            sortOrder?: number;
+          }
+        >
+      )[tag];
+
+      // Convert kebab-case to Title Case as fallback if no title defined
+      const fallbackTitle = tag
         .split("-")
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
         .join(" ");
 
+      const title = tagDef?.title || fallbackTitle;
+      const fallbackDescription = `A collection of ${title.toLowerCase()} from around the world`;
+
       themeMap.set(tag, {
         id: tag,
         path: tag,
-        title,
+        title: title,
+        description: tagDef?.description || fallbackDescription,
+        sortOrder: tagDef?.sortOrder,
         photos: [photoPath],
         previewImage: photoPath, // Use first photo as preview
       });
@@ -404,6 +428,8 @@ const photoThemes = defineCollection({
     id: z.string(),
     path: z.string(),
     title: z.string(),
+    description: z.string().optional(),
+    sortOrder: z.number().optional(),
     photos: z.array(z.string()),
     previewImage: z.string(),
   }),

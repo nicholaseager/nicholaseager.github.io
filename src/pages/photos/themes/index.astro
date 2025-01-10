@@ -7,7 +7,7 @@ import Grid from "../../../components/ui/Grid";
 
 const themes = await getCollection("photoThemes");
 const sortedThemes = themes.sort((a, b) =>
-  a.data.photos.length > b.data.photos.length ? -1 : 1
+  (a.data.sortOrder ?? 99) < (b.data.sortOrder ?? 99) ? -1 : 1
 );
 ---
 
