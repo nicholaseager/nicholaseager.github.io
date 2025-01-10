@@ -12,7 +12,7 @@ export async function getStaticPaths() {
     params: { slug: location.id },
     props: {
       title: location.data.name,
-      description: `Photos from ${location.data.name}`,
+      description: location.data.description,
       photos: location.data.photos,
       type: location.data.type,
       parentPath: location.data.parentPath,

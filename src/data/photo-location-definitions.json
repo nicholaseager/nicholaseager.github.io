@@ -1,0 +1,143 @@
+{
+  "countries": {
+    "france": {
+      "title": "France",
+      "locations": {
+        "chamonix": {
+          "title": "Chamonix",
+          "description": "A picturesque town at the foot of Mont Blanc in the French Alps"
+        }
+      }
+    },
+    "italy": {
+      "title": "Italy",
+      "locations": {
+        "cinque-terre": {
+          "title": "Cinque Terre",
+          "description": "Five colorful coastal villages along the Italian Riviera"
+        },
+        "dolomites": {
+          "title": "Dolomites",
+          "description": "Dramatic mountain range in northeastern Italy"
+        },
+        "florence": {
+          "title": "Florence",
+          "description": "Historic city in the heart of Tuscany"
+        }
+      }
+    },
+    "nepal": {
+      "title": "Nepal",
+      "locations": {
+        "kathmandu": {
+          "title": "Kathmandu",
+          "description": "The capital and largest city of Nepal"
+        },
+        "manaslu-circuit": {
+          "title": "Manaslu Circuit",
+          "description": "A remote trek around Mount Manaslu, the world's eighth highest mountain"
+        },
+        "mardi-himal": {
+          "title": "Mardi Himal",
+          "description": "A trek offering spectacular views of the Annapurna range"
+        },
+        "pokhara": {
+          "title": "Pokhara",
+          "description": "Lakeside city gateway to the Annapurna Circuit"
+        },
+        "three-passes-trek": {
+          "title": "Three Passes Trek",
+          "description": "A challenging trek crossing three high passes in the Everest region"
+        }
+      }
+    },
+    "south-korea": {
+      "title": "South Korea",
+      "locations": {
+        "seoul": {
+          "title": "Seoul",
+          "description": "The capital city blending ancient traditions with modern life"
+        }
+      }
+    },
+    "tanzania": {
+      "title": "Tanzania",
+      "locations": {
+        "lake-eyasi": {
+          "title": "Lake Eyasi",
+          "description": "A seasonal salt lake in the Great Rift Valley"
+        },
+        "ngorongoro-crater": {
+          "title": "Ngorongoro Crater",
+          "description": "The world's largest intact volcanic caldera"
+        },
+        "serengeti": {
+          "title": "Serengeti",
+          "description": "Vast savanna known for its annual wildlife migration"
+        },
+        "tarangire": {
+          "title": "Tarangire",
+          "description": "National park famous for its ancient baobab trees and elephants"
+        }
+      }
+    },
+    "united-states": {
+      "title": "United States",
+      "locations": {
+        "alaska": {
+          "title": "Alaska",
+          "description": "America's last frontier with vast wilderness and snow-capped peaks"
+        },
+        "arizona": {
+          "title": "Arizona",
+          "description": "Home to the magnificent Grand Canyon and desert landscapes"
+        },
+        "colorado": {
+          "title": "Colorado",
+          "description": "Rocky Mountain state known for outdoor adventure"
+        },
+        "missouri": {
+          "title": "Missouri",
+          "description": "The Show-Me State with diverse landscapes from forests to prairies"
+        },
+        "utah": {
+          "title": "Utah",
+          "description": "Red rock country with dramatic desert formations"
+        },
+        "washington": {
+          "title": "Washington",
+          "description": "Pacific Northwest state with mountains, rainforests and coastline"
+        },
+        "wyoming": {
+          "title": "Wyoming",
+          "description": "Home to Yellowstone and Grand Teton National Parks"
+        }
+      }
+    },
+    "vietnam": {
+      "title": "Vietnam",
+      "locations": {
+        "da-nang": {
+          "title": "Da Nang",
+          "description": "Coastal city known for its sandy beaches and dragon bridge"
+        },
+        "hanoi": {
+          "title": "Hanoi",
+          "description": "Vietnam's capital city with ancient temples and French colonial architecture"
+        },
+        "hoi-an": {
+          "title": "Hoi An",
+          "description": "Ancient town known for its well-preserved architecture and cuisine"
+        },
+        "sapa": {
+          "title": "Sapa",
+          "description": "Mountain town surrounded by rice terraces and ethnic villages"
+        },
+        "cat-ba": {
+          "title": "Cat Ba",
+          "description": "Largest island in Ha Long Bay known for its limestone cliffs"
+        }
+      }
+    }
+  }
+}

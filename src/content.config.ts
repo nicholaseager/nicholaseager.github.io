@@ -2,6 +2,7 @@ import { glob, file } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 import photosData from "./data/photos.json";
 import photoTagDefinitionsData from "./data/photo-tag-definitions.json";
+import photoLocationDefinitionsData from "./data/photo-location-definitions.json";
 
 const guides = defineCollection({
   loader: glob({ base: "./src/data/guides", pattern: "**/*.json" }),
@@ -216,6 +217,7 @@ interface LocationItem {
   path: string;
   type: "country" | "region" | "locality";
   name: string;
+  description: string;
   parentPath: string | null;
   photos: string[];
   previewImage: string;
@@ -254,6 +256,53 @@ const photoLocations = defineCollection({
     const locationMap = new Map<string, LocationItem>();
 
     /**
+     * Gets location metadata from definitions file
+     * @param path - The location path (e.g. "france" or "france/chamonix")
+     * @returns Location metadata with fallbacks
+     */
+    const getLocationMetadata = (path: string) => {
+      const parts = path.split("/");
+      const country = parts[0];
+      const location = parts[1];
+
+      // Get country data
+      const countryData = (
+        photoLocationDefinitionsData.countries as Record<string, any>
+      )[country];
+
+      // If this is a country-level path
+      if (parts.length === 1) {
+        // Convert kebab-case to Title Case for fallback
+        const fallbackTitle = country
+          .split("-")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" ");
+
+        return {
+          title: countryData?.title || fallbackTitle,
+          description:
+            countryData?.description || `Photos from ${fallbackTitle}`,
+        };
+      }
+
+      // If this is a location within a country
+      const locationData = countryData?.locations?.[location];
+
+      // Convert kebab-case to Title Case for fallback
+      const fallbackTitle = location
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+
+      return {
+        title: locationData?.title || fallbackTitle,
+        description:
+          locationData?.description ||
+          `Photos from ${fallbackTitle}, ${countryData?.title || country}`,
+      };
+    };
+
+    /**
      * Creates a new location or adds a photo to an existing one
      * @param path - The location path (e.g. "france" or "france/chamonix")
      * @param type - The location type (country, region, or locality)
@@ -272,6 +321,7 @@ const photoLocations = defineCollection({
       }
 
       // Create new location
+      const { title, description } = getLocationMetadata(path);
       const parts = path.split("/");
       // Convert kebab-case to Title Case (e.g. "new-zealand" -> "New Zealand")
       const name = parts[parts.length - 1]
@@ -287,7 +337,8 @@ const photoLocations = defineCollection({
         id: path,
         path,
         type,
-        name,
+        name: title,
+        description,
         parentPath,
         photos: [photoPath],
         previewImage: photoPath, // Use first photo as preview (could be enhanced to pick best photo)
@@ -326,6 +377,7 @@ const photoLocations = defineCollection({
     path: z.string(),
     type: z.enum(["country", "region", "locality"]),
     name: z.string(),
+    description: z.string(),
     parentPath: z.string().nullable(),
     photos: z.array(z.string()),
     previewImage: z.string(),
