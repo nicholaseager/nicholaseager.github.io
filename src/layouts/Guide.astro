@@ -5,7 +5,7 @@ import Banner from "../components/Banner.astro";
 import Text from "../components/ui/Text.tsx";
 import LinkButton from "../components/ui/LinkButton.tsx";
 import Intro from "../components/guide/Intro.astro";
-import Itinerary from "../components/guide/Itinerary.tsx";
+import ItineraryTable from "../components/guide/ItineraryTable.tsx";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import ImagesSwiper from "../components/guide/ThumbsSwiper.tsx";
 import GoogleMap from "../components/GoogleMap.astro";
@@ -116,7 +116,10 @@ const tableOfContents = sections.map((section) => ({
               )}
 
               {section.content.type === "itinerary" && (
-                <Itinerary client:visible itinerary={section.content.phases} />
+                <ItineraryTable
+                  client:visible
+                  itinerary={section.content.phases}
+                />
               )}
 
               {section.content.type === "gear" && (
