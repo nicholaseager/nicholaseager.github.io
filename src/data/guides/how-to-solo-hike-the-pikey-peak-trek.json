@@ -45,11 +45,11 @@
       },
       {
         "title": "Navigation",
-        "description": "For proper navigation, you should always carry a paper map and compass and know how to use them in an emergency. You can pick up any number of paper maps in Thamel, Kathmandu when you arrive. Additionally, I typically use a gps app on my phone like maps.me or AllTrails. Check out the <a href='#map'>map</a> for my entire route."
+        "description": "For proper navigation, you should always carry a paper map and compass and know how to use them in an emergency. You can pick up any number of paper maps in Thamel, Kathmandu when you arrive. Additionally, I typically use a gps app on my phone like maps.me or AllTrails. Check out the map for my entire route."
       },
       {
         "title": "Transportation",
-        "description": "Most hotel owners in Kathmandu can help you arrange Jeep or plane transportation to your chosen <a href='#options'>starting point</a>."
+        "description": "Most hotel owners in Kathmandu can help you arrange Jeep or plane transportation to your chosen starting point."
       },
       {
         "title": "Accommodation",
@@ -57,7 +57,7 @@
       },
       {
         "title": "Cash",
-        "description": "It's crucial to bring enough cash with you from Kathmandu to cover <a href='#cost'>your expenses</a> during the hike. You will be hiking through remote villages with no option to withdraw cash."
+        "description": "It's crucial to bring enough cash with you from Kathmandu to cover your expenses during the hike. You will be hiking through remote villages with no option to withdraw cash."
       },
       {
         "title": "Permits",
@@ -102,14 +102,14 @@
       "sections": [
         {
           "title": "Where to start?",
-          "description": "Hikers can choose to start their journey from Dhap, Jiri, Salleri, or Phaplu, each offering its own unique charm and challenges. For those seeking a longer and more adventurous experience, the hike can be extended from Junbesi to Surke, serving as a gateway to the renowned Everest Base Camp or the challenging <a href='/guides/how-to-solo-hike-the-three-passes-trek' target='blank'>Three Passes Trek</a>.",
+          "description": "Hikers can choose to start their journey from Dhap, Jiri, Salleri, or Phaplu, each offering its own unique charm and challenges. For those seeking a longer and more adventurous experience, the hike can be extended from Junbesi to Surke, serving as a gateway to the renowned Everest Base Camp or the challenging Three Passes Trek.",
           "images": [
             "photos/countries/nepal/pikey-peak/person-hiking-dog-on-dirt-path"
           ]
         },
         {
           "title": "My Recommendation",
-          "description": "Personally, I decided to start from Dhap and continue northward up to the Khumbu (Everest) region to start my <a href='/guides/how-to-solo-hike-the-three-passes-trek' target='blank'>Three Passes Trek</a>. However, if you're just doing roundtrip, I would recommend starting from Dhap, summiting Pikey Peak, and then coming back to Salleri/Phaplu or Jiri.",
+          "description": "Personally, I decided to start from Dhap and continue northward up to the Khumbu (Everest) region to start my Three Passes Trek. However, if you're just doing roundtrip, I would recommend starting from Dhap, summiting Pikey Peak, and then coming back to Salleri/Phaplu or Jiri.",
           "images": [
             "photos/countries/nepal/pikey-peak/stone-cairn-on-snowy-mountain"
           ]
@@ -118,7 +118,7 @@
     }
   ],
   "itinerary": {
-    "introduction": "The trek typically takes around 4-7 days to complete, depending on the route and your pace. You have a couple <a href='#options'>options</a> to make this itinerary your own. Personally I extended my hike to 8-9 days in order to continue up to the Everest region for the <a href='/guides/how-to-solo-hike-the-three-passes-trek' target='blank'>Three Passes Trek</a>.",
+    "introduction": "The trek typically takes around 4-7 days to complete, depending on the route and your pace. You have a couple options to make this itinerary your own. Personally I extended my hike to 8-9 days in order to continue up to the Everest region for the Three Passes Trek.",
     "units": {
       "phase": "Day",
       "distance": "Distance",
@@ -242,7 +242,7 @@
       },
       {
         "title": "Junbesi Village",
-        "description": "Junbesi quickly became my favorite village along the hike. The unique architecture, friendly locals, and nearby monasteries, Thubten Choling and Phugmoche, captured my heart. I spent hours exploring the village, engaging with the locals, and immersing myself in the rich Sherpa culture. The authentic experiences and genuine connections I made in Junbesi will stay with me forever. If you're looking for a place to stay, I can't recommend <a href='https://www.facebook.com/junbesihomestay'>Junbesi Homestay</a> enough :)",
+        "description": "Junbesi quickly became my favorite village along the hike. The unique architecture, friendly locals, and nearby monasteries, Thubten Choling and Phugmoche, captured my heart. I spent hours exploring the village, engaging with the locals, and immersing myself in the rich Sherpa culture. The authentic experiences and genuine connections I made in Junbesi will stay with me forever. If you're looking for a place to stay, I can't recommend Junbesi Homestay enough :)",
         "images": [
           "photos/countries/nepal/pikey-peak/family-eating-meal-together-rustic-kitchen",
           "photos/countries/nepal/pikey-peak/rural-house-surrounded-by-lush-vegetation",
@@ -267,7 +267,7 @@
       {
         "title": "Transportation",
         "cost": "$18 one way",
-        "description": "Jeep transportation from Kathmandu to your chosen <a href='#options'>starting point</a> typically costs around $18 one way."
+        "description": "Jeep transportation from Kathmandu to your chosen starting point typically costs around $18 one way."
       },
       {
         "title": "Food",
@@ -282,7 +282,7 @@
       {
         "title": "Permits",
         "cost": "Varies",
-        "description": "The cost of permits varies depending on your <a href='#options'>starting point</a>. Be sure to research the current permit requirements and fees for your specific route."
+        "description": "The cost of permits varies depending on your starting point. Be sure to research the current permit requirements and fees for your specific route."
       },
       {
         "title": "Local Guide",

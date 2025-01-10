@@ -28,7 +28,7 @@
     }
   ],
   "overview": {
-    "summary": "The Kanchenjunga Base Camp Trek offers a perfect blend of cultural immersion and high-altitude adventure in one of Nepal's more remote regions. This 24-day journey visits both North and South Base Camps, with highlights including the challenging <a href='#highlights'>Drohmo Ri summit</a>, authentic Tibetan village life in Phale and Ghunsa, and spectacular mountain views from Sele Le. While my <a href='#itinerary'>itinerary</a> suggests certain side trips and rest days, the route's flexibility allows trekkers to craft their own experience – whether that means more acclimatization hikes, cultural exploration, or pushing straight through to the base camps.",
+    "summary": "The Kanchenjunga Base Camp Trek offers a perfect blend of cultural immersion and high-altitude adventure in one of Nepal's more remote regions. This 24-day journey visits both North and South Base Camps, with highlights including the challenging Drohmo Ri summit, authentic Tibetan village life in Phale and Ghunsa, and spectacular mountain views from Sele Le. While my itinerary suggests certain side trips and rest days, the route's flexibility allows trekkers to craft their own experience – whether that means more acclimatization hikes, cultural exploration, or pushing straight through to the base camps.",
     "images": [
       "photos/countries/nepal/kanchenjunga-base-camp-trek/buddhist-temple-kanchenjunga-view",
       "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-hiking-trail-yellow-larch-trees",
@@ -249,7 +249,7 @@
       },
       {
         "title": "Tibetan Heritage - Rest Day at Ghunsa (Optional)",
-        "description": "Ghunsa's larger setting provides multiple cultural opportunities, from visiting Tashi Chhyoling Monastery to hiking Ghunsa Viewpoint. For ambitious trekkers, the route to Olanchung Gola via Nango La pass offers an extended adventure into what was once a major Tibet-Nepal trading post. Check out my <a href='#map'>interactive map</a> for more.",
+        "description": "Ghunsa's larger setting provides multiple cultural opportunities, from visiting Tashi Chhyoling Monastery to hiking Ghunsa Viewpoint. For ambitious trekkers, the route to Olanchung Gola via Nango La pass offers an extended adventure into what was once a major Tibet-Nepal trading post. Check out my interactive map for more.",
         "distance": 0,
         "elevation": 3450,
         "images": [
@@ -352,14 +352,14 @@
       "sections": [
         {
           "title": "My Recommended Trekking Agency",
-          "description": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at <a href='mailto:info@himalayan-masters.com'>info@himalayan-masters.com</a> and use the code <b>EAGER</b> to enjoy a 5% discount on your trip."
+          "description": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at info@himalayan-masters.com and use the code <b>EAGER</b> to enjoy a 5% discount on your trip."
         }
       ]
     }
   ],
   "partnership": {
     "title": "My Recommended Trekking Agency",
-    "description": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at <a href='mailto:info@himalayan-masters.com'>info@himalayan-masters.com</a> and use the code <b>EAGER</b> to enjoy a 5% discount on your trip.",
+    "description": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at info@himalayan-masters.com and use the code <b>EAGER</b> to enjoy a 5% discount on your trip.",
     "logo": "/src/assets/company-logos/himalayan-masters-logo.svg",
     "link": "https://himalayan-masters.com/"
   },
