@@ -5,7 +5,6 @@
   "description": "An extensive guide to a diverse trek to Huchuy Qosqo, offering insights into multiple routes, key highlights, and essential tips for an enriching Andean adventure.",
   "image": "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-on-rice-terraces",
   "tags": ["peru", "huchuy-qosqo-trek", "sacred-valley", "hiking"],
-  "short_name": "huchuy-qosqo",
   "location": {
     "name": "Huchuy Qosqo Day Hike",
     "region": "Cusco",
@@ -13,6 +12,7 @@
     "latitude": "-13.366281",
     "longitude": "-71.944982"
   },
+  "short_name": "huchuy-qosqo",
   "youtube": "RnRsKrmCBW0",
   "introduction": "Nestled amidst the Peruvian Andes lies a hidden gem, a journey that takes you from the bustling streets of Cusco to the ancient ruins of Huchuy Qosqo. As an intrepid traveler, I embarked on this adventure, trekking through varied landscapes, encountering Inca trails, quaint villages, and breathtaking vistas along the way.",
   "conclusion": "Embarking on this trek from Cusco to Huchuy Qosqo unveiled a tapestry of natural beauty, historical richness, and cultural experiences. Whether starting from the heart of Cusco or opting for shorter routes, this journey offers a glimpse into the Andean landscape's grandeur. As you plan your own adventure, may your trek be filled with wonder and discovery, immersing you in the captivating allure of Peru's ancient past and majestic scenery. Looking to extend your hike? Consider continuing onward to hike the Lares Valley Trek.",
@@ -22,51 +22,38 @@
       "url": "/gear"
     }
   ],
-  "map": {
-    "introduction": "The map below outlines various routes to Huchuy Qosqo, with a primary path starting from the main square in Cusco. Additionally, alternative routes stemming from different starting points, including Tambomachay, Tauca, and Calca, are depicted. These alternative paths offer options for shorter distances or varied starting points, allowing hikers to tailor their journey based on preferences or time constraints.",
-    "id": "1gOJVniK3Gev5PxuFNcU6dNvrQIB7StE"
-  },
-  "overview": {
-    "summary": "The hike to Huchuy Qosqo is an enthralling journey that navigates through the stunning landscapes and historical treasures of the Sacred Valley in Peru. Offering multiple starting points, the hike can commence from Cusco's Main Square or alternative locations like Tambomachay, Tauca, Lamay, or Calca, each presenting distinct advantages and unique perspectives along the route. Traversing approximately marathon-length distances, the trail leads through captivating highlights such as the rarely-visited Inca Trail sections, serene viewpoints of the Sacred Valley, and encounters with quaint villages like Pucamarca Adobe Village. The awe-inspiring pinnacle of this trek lies at the historical ruins of Huchuy Qosqo itself, perched atop a scenic hill, where explorers can delve into the rich Incan history while enjoying panoramic vistas. Offering affordability and versatility, this hike is an invitation to discover the cultural heritage and natural splendor of the Andean region.",
-    "items": [
-      {
-        "title": "TIP",
-        "description": "Looking to extend your hike? Consider continuing onward to hike the Lares Valley Trek."
-      }
-    ],
-    "images": [
-      "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-next-to-incan-ruins",
-      "photos/countries/peru/huchuy-qosqo-hike/hiker-silhouette-overlooking-valley",
-      "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-adobe-village",
-      "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-though-valley"
-    ]
-  },
-  "gear": {
-    "introduction": "For a day hike like this, it's essential to pack lightweight and versatile gear. Layered clothing, including a moisture-wicking base layer, insulating mid-layer, and weatherproof outer shell, ensures adaptability to changing weather conditions, especially in the Andean regions. Carrying ample water is crucial; although water sources are available along the route, using water purification methods is advisable for safety. Additionally, basic essentials like sturdy footwear, a daypack, sunscreen, a hat, snacks, a first aid kit, and a map or navigation tools are essential. However, if planning an overnight stay, the gear list extends to include camping essentials such as a tent, sleeping bag, stove, and additional provisions for comfort and safety during the extended trek.",
-    "trip": "huchuy-qosqo"
-  },
-  "weather": {
-    "introduction": "For an optimal trekking experience near Cusco, it's crucial to consider the distinct rainy and dry seasons that shape the region's climate. The dry season, spanning from May to October, stands out as the ideal period for hiking enthusiasts.",
-    "seasons": [
-      {
-        "title": "Dry Season (May to October)",
-        "description": "Ideal for hiking near Cusco with stable weather, minimal rainfall, and clear skies, providing optimal conditions for breathtaking views and comfortable exploration."
-      },
-      {
-        "title": "Rainy Season (November to April)",
-        "description": "Presents challenges with intermittent heavy rainfall, muddy trails, and reduced visibility, but offers a unique perspective with lush, vibrant landscapes for those seeking an adventurous experience."
-      }
-    ]
-  },
-  "extra_sections": [
+  "sections": [
     {
-      "title": "Choosing a Starting Point",
+      "id": "overview",
+      "title": "Overview",
+      "introduction": "The hike to Huchuy Qosqo is an enthralling journey that navigates through the stunning landscapes and historical treasures of the Sacred Valley in Peru. Offering multiple starting points, the hike can commence from Cusco's Main Square or alternative locations like Tambomachay, Tauca, Lamay, or Calca, each presenting distinct advantages and unique perspectives along the route. Traversing approximately marathon-length distances, the trail leads through captivating highlights such as the rarely-visited Inca Trail sections, serene viewpoints of the Sacred Valley, and encounters with quaint villages like Pucamarca Adobe Village. The awe-inspiring pinnacle of this trek lies at the historical ruins of Huchuy Qosqo itself, perched atop a scenic hill, where explorers can delve into the rich Incan history while enjoying panoramic vistas. Offering affordability and versatility, this hike is an invitation to discover the cultural heritage and natural splendor of the Andean region.",
+      "content": {
+        "type": "images",
+        "paths": [
+          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-next-to-incan-ruins",
+          "photos/countries/peru/huchuy-qosqo-hike/hiker-silhouette-overlooking-valley",
+          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-adobe-village",
+          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-though-valley"
+        ]
+      }
+    },
+    {
+      "id": "map",
+      "title": "Route Map",
+      "introduction": "The map below outlines various routes to Huchuy Qosqo, with a primary path starting from the main square in Cusco. Additionally, alternative routes stemming from different starting points, including Tambomachay, Tauca, and Calca, are depicted. These alternative paths offer options for shorter distances or varied starting points, allowing hikers to tailor their journey based on preferences or time constraints.",
+      "content": {
+        "type": "google-map",
+        "mapId": "1gOJVniK3Gev5PxuFNcU6dNvrQIB7StE"
+      }
+    },
+    {
       "id": "starting",
-      "description": "Choosing the starting point for your trek to Huchuy Qosqo is akin to selecting the prologue to an enthralling adventure through the Peruvian Andes. Each embarkation point offers its own unique tapestry of experiences, catering to varying preferences in distance, scenic allure, and cultural immersion. Explore the narrative of each starting point to discern the ideal launchpad for your unforgettable journey to the enigmatic ruins of Huchuy Qosqo.",
-      "sections": [
+      "title": "Choosing a Starting Point",
+      "introduction": "Choosing the starting point for your trek to Huchuy Qosqo is akin to selecting the prologue to an enthralling adventure through the Peruvian Andes. Each embarkation point offers its own unique tapestry of experiences, catering to varying preferences in distance, scenic allure, and cultural immersion. Explore the narrative of each starting point to discern the ideal launchpad for your unforgettable journey to the enigmatic ruins of Huchuy Qosqo.",
+      "subsections": [
         {
           "title": "Cusco Main Square: Starting Your Journey from the Heart of Cusco",
-          "description": "Embarking on your Huchuy Qosqo adventure from Cusco's Main Square offers a thrilling start, as you rely solely on your feet to traverse the distance. With this choice, you'll tread along a stunning section of the Inca trail, catching glimpses of the lesser-explored Tambomachay Ruins and Village. As you progress, the panorama of the Sacred Valley unfolds, treating you to breathtaking vistas. However, it's essential to note that setting off from here entails an arduous day-long hike, approximately akin to running a marathon. To commence your journey, simply begin walking – an early start, like 4:30 am, allows witnessing the sunrise over Cusco."
+          "description": "Embarking on your Huchuy Qosqo adventure from Cusco's Main Square offers a thrilling start, as you rely solely on your feet to traverse the distance. With this choice, you'll tread along a stunning section of the Inca trail, catching glimpses of the lesser-explored Tambomachay Ruins and Village. As you progress, the panorama of the Sacred Valley unfolds, treating you to breathtaking vistas. However, it's essential to note that setting off from here entails an arduous day-long hike, approximately akin to running a marathon. To commence your journey, simply begin walking \u2013 an early start, like 4:30 am, allows witnessing the sunrise over Cusco."
         },
         {
           "title": "Tambomachay Village: A Slightly Shorter Route with Scenic Wonders",
@@ -81,141 +68,179 @@
           "description": "For those seeking a shorter hike, commencing from Lamay or Calca is a viable option. These cities are in close proximity to Huchuy Qosqo, making the journey achievable within a couple of hours. However, this choice means bypassing a scenic portion of the Inca trail, missing out on a captivating view of the Sacred Valley, and navigating public transportation in the early hours. To get there, take a colectivo directly to either village, as indicated on the map."
         }
       ]
+    },
+    {
+      "id": "itinerary",
+      "title": "Itinerary",
+      "introduction": "Embarking on the trek to Huchuy Qosqo offers various starting points and customizable options, providing an adaptable experience tailored to individual preferences. Commencing from the bustling Main Square in Cusco, my chosen route ensures a comprehensive exploration, yet it remains flexible for those seeking shorter distances or camping stops en route.",
+      "content": {
+        "type": "itinerary",
+        "duration": "P1D",
+        "phases": [
+          {
+            "title": "Exploring Cusco to Tambomachay Village",
+            "description": "Starting from Cusco's Main Square, the journey kicks off amidst the distinctive architectural wonders of the city. Ascending through the San Blas art district and local neighborhoods, the path unveils smaller Incan sites before culminating in the charming Tambomachay village. Here, visitors can immerse themselves in village life, interact with locals, and explore the Tambomachay Ruins. For those seeking alternative routes or shorter walks, options from Tauca, Lamay, or Calca are available, as depicted on the map.",
+            "images": [
+              "photos/countries/peru/cusco/stairs-at-night",
+              "photos/countries/peru/cusco/hiker-walking-up-stairs-san-blas",
+              "photos/countries/peru/cusco/hiker-ascending-staircase-in-local-neighborhood",
+              "photos/countries/peru/cusco/hiker-ascending-staircase"
+            ],
+            "distance": 6,
+            "elevation": 3800
+          },
+          {
+            "title": "Ascending to Mount Katunki",
+            "description": "Continuing the hike, the path ascends sharply towards Mount Katunki, a brief yet steep climb. Reaching this point offers a serene spot to enjoy breakfast while gazing over Cusco, likely with minimal company at the summit.",
+            "images": [
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-summiting-mount-katunki",
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-climbing-golden-hill-blue-sky"
+            ],
+            "distance": 4.5,
+            "elevation": 4176
+          },
+          {
+            "title": "Traverse to Pucamarca Adobe Village",
+            "description": "The journey progresses along a mix of ascending and descending trails, leading through picturesque valleys populated by alpacas, llamas, and serene lakes. This leg culminates at the Pucamarca Adobe Village, a community living in traditional mud-brick homes. Options for a more scenic or culturally immersive route are available through the 'Alternative Route from Tauca' or the 'My Route from Tambomachay' paths on the map.",
+            "images": [
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-though-valley",
+              "photos/countries/peru/huchuy-qosqo-hike/unshaven-llama",
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-adobe-village",
+              "photos/countries/peru/huchuy-qosqo-hike/adobe-brick-stack",
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-overlooking-puca-marca"
+            ],
+            "distance": 21.5,
+            "elevation": 4300
+          },
+          {
+            "title": "Inca Trail to Huchuy Qosqo",
+            "description": "Following the path from Pucamarca Adobe Village, the hike ventures into a breathtaking stretch of the Inca trail, weaving through a canyon and showcasing the grandeur of the 'Queen of the Andes' plants. As the trail progresses, a stunning viewpoint reveals unparalleled vistas of the Sacred Valley before finally reaching the awe-inspiring site of Huchuy Qosqo. Take time to explore this historical gem before proceeding further.",
+            "images": [
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-ascending-into-gorge",
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-incan-gate",
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-across-bridge"
+            ],
+            "distance": 5.5,
+            "elevation": 4150
+          },
+          {
+            "title": "Descending to Lamay",
+            "description": "Descending from Huchuy Qosqo involves navigating steep switchbacks, offering a challenging but rewarding downhill journey, culminating in the town of Lamay.",
+            "images": [
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-descending-trail-to-city"
+            ],
+            "distance": 5.5,
+            "elevation": 3651
+          },
+          {
+            "title": "Returning to Cusco",
+            "description": "Concluding the adventure, travelers from Lamay or Calca can easily catch a colectivo (minibus) back to Cusco by flagging down a bus labeled 'Cusco' on the correct side of the road, marking the end of an enriching and diverse hiking experience.",
+            "images": [
+              "photos/countries/peru/huchuy-qosqo-hike/hiker-waiting-for-colectivo",
+              "photos/countries/peru/huchuy-qosqo-hike/view-from-inside-colectivo-to-cusco"
+            ],
+            "distance": 5.5,
+            "elevation": 3330
+          }
+        ]
+      }
+    },
+    {
+      "id": "highlights",
+      "title": "Personal Highlights",
+      "introduction": "While the journey to Huchuy Qosqo boasts numerous highlights, these stand out as personal favorites. The Sacred Valley Viewpoint offers breathtaking sunset vistas, the seldom-explored Inca Trail reveals historical remnants, and the Pucamarca Adobe Village showcases a serene, traditional way of life.",
+      "subsections": [
+        {
+          "title": "Sacred Valley Viewpoint: A Sunset Spectacle",
+          "description": "Discovering the Sacred Valley Viewpoint offers an awe-inspiring spectacle, particularly as the sun begins its descent. This vista stands among my cherished scenes within the Sacred Valley. From this vantage point, the landscape unveils its beauty in a panoramic display, showcasing the undulating terrain, the serpentine river, and the verdant expanses painted in hues of twilight.",
+          "images": [
+            "photos/countries/peru/huchuy-qosqo-hike/hiker-silhouette-overlooking-valley",
+            "photos/countries/peru/huchuy-qosqo-hike/hiker-overlooking-sacred-valley",
+            "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-on-rice-terraces"
+          ]
+        },
+        {
+          "title": "Inca Trail Exploration: Unveiling a Hidden Path",
+          "description": "Traversing a segment of the Inca Trail unveils a hidden gem rarely explored by many. As the hike progresses, the trail leads to a secluded section adorned with historical remnants\u2014a gate and a series of bridges\u2014winding alongside a meandering river coursing through a majestic canyon. The trail echoes with the whispers of history, offering a glimpse into the ancient paths traversed by the Incas.",
+          "images": [
+            "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-incan-gate",
+            "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-across-bridge"
+          ]
+        },
+        {
+          "title": "Pucamarca Adobe Village: A Glimpse of Simplicity",
+          "description": "Nestled along the route, the Pucamarca Adobe Village captivates with its simplicity and traditional architecture. Every dwelling in this quaint village is crafted from adobe, creating a rustic charm that defines the essence of simple living. Observing the daily life here provides an eye-opening experience, offering insight into a lifestyle steeped in tradition and harmony with nature.",
+          "images": [
+            "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-adobe-village",
+            "photos/countries/peru/huchuy-qosqo-hike/hiker-overlooking-puca-marca",
+            "photos/countries/peru/huchuy-qosqo-hike/adobe-brick-stack"
+          ]
+        },
+        {
+          "title": "Huchuy Qosqo",
+          "description": "The Incan ruins themselves stand as an enchanting gem. Perched atop a picturesque hill, these ruins boast rich historical significance and archaeological wonders. During my visit, I had the privilege of exploring these ancient remnants in solitude, immersing myself in their historical allure and the serene beauty of the surrounding landscape. Huchuy Qosqo offers an opportunity for profound exploration and discovery amidst its stunning hilltop setting.",
+          "images": [
+            "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-next-to-incan-ruins",
+            "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-around-incan-ruins"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Weather and Seasons",
+      "introduction": "For an optimal trekking experience near Cusco, it's crucial to consider the distinct rainy and dry seasons that shape the region's climate. The dry season, spanning from May to October, stands out as the ideal period for hiking enthusiasts.",
+      "content": {
+        "type": "list",
+        "items": [
+          {
+            "title": "Dry Season (May to October)",
+            "description": "Ideal for hiking near Cusco with stable weather, minimal rainfall, and clear skies, providing optimal conditions for breathtaking views and comfortable exploration."
+          },
+          {
+            "title": "Rainy Season (November to April)",
+            "description": "Presents challenges with intermittent heavy rainfall, muddy trails, and reduced visibility, but offers a unique perspective with lush, vibrant landscapes for those seeking an adventurous experience."
+          }
+        ]
+      }
+    },
+    {
+      "id": "gear",
+      "title": "Recommended Gear",
+      "introduction": "For a day hike like this, it's essential to pack lightweight and versatile gear. Layered clothing, including a moisture-wicking base layer, insulating mid-layer, and weatherproof outer shell, ensures adaptability to changing weather conditions, especially in the Andean regions. Carrying ample water is crucial; although water sources are available along the route, using water purification methods is advisable for safety. Additionally, basic essentials like sturdy footwear, a daypack, sunscreen, a hat, snacks, a first aid kit, and a map or navigation tools are essential. However, if planning an overnight stay, the gear list extends to include camping essentials such as a tent, sleeping bag, stove, and additional provisions for comfort and safety during the extended trek.",
+      "content": {
+        "type": "gear",
+        "trip": "huchuy-qosqo"
+      }
+    },
+    {
+      "id": "costs",
+      "title": "Costs",
+      "content": {
+        "type": "list",
+        "items": [
+          {
+            "title": "Colectivo/Taxi to Starting Point",
+            "description": "$2-$4"
+          },
+          {
+            "title": "Food",
+            "description": "~$8"
+          },
+          {
+            "title": "Huchuy Qosqo Entrance Fee",
+            "description": "~$3"
+          },
+          {
+            "title": "Returning Colectivo to Cusco from Lamay",
+            "description": "$2-$3"
+          },
+          {
+            "title": "Total",
+            "description": "$16-$19"
+          }
+        ]
+      }
     }
-  ],
-  "itinerary": {
-    "introduction": "Embarking on the trek to Huchuy Qosqo offers various starting points and customizable options, providing an adaptable experience tailored to individual preferences. Commencing from the bustling Main Square in Cusco, my chosen route ensures a comprehensive exploration, yet it remains flexible for those seeking shorter distances or camping stops en route.",
-    "duration": "P1D",
-    "phases": [
-      {
-        "title": "Exploring Cusco to Tambomachay Village",
-        "description": "Starting from Cusco's Main Square, the journey kicks off amidst the distinctive architectural wonders of the city. Ascending through the San Blas art district and local neighborhoods, the path unveils smaller Incan sites before culminating in the charming Tambomachay village. Here, visitors can immerse themselves in village life, interact with locals, and explore the Tambomachay Ruins. For those seeking alternative routes or shorter walks, options from Tauca, Lamay, or Calca are available, as depicted on the map.",
-        "images": [
-          "photos/countries/peru/cusco/stairs-at-night",
-          "photos/countries/peru/cusco/hiker-walking-up-stairs-san-blas",
-          "photos/countries/peru/cusco/hiker-ascending-staircase-in-local-neighborhood",
-          "photos/countries/peru/cusco/hiker-ascending-staircase"
-        ],
-        "distance": 6,
-        "elevation": 3800
-      },
-      {
-        "title": "Ascending to Mount Katunki",
-        "description": "Continuing the hike, the path ascends sharply towards Mount Katunki, a brief yet steep climb. Reaching this point offers a serene spot to enjoy breakfast while gazing over Cusco, likely with minimal company at the summit.",
-        "images": [
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-summiting-mount-katunki",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-climbing-golden-hill-blue-sky"
-        ],
-        "distance": 4.5,
-        "elevation": 4176
-      },
-      {
-        "title": "Traverse to Pucamarca Adobe Village",
-        "description": "The journey progresses along a mix of ascending and descending trails, leading through picturesque valleys populated by alpacas, llamas, and serene lakes. This leg culminates at the Pucamarca Adobe Village, a community living in traditional mud-brick homes. Options for a more scenic or culturally immersive route are available through the 'Alternative Route from Tauca' or the 'My Route from Tambomachay' paths on the map.",
-        "images": [
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-though-valley",
-          "photos/countries/peru/huchuy-qosqo-hike/unshaven-llama",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-adobe-village",
-          "photos/countries/peru/huchuy-qosqo-hike/adobe-brick-stack",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-overlooking-puca-marca"
-        ],
-        "distance": 21.5,
-        "elevation": 4300
-      },
-      {
-        "title": "Inca Trail to Huchuy Qosqo",
-        "description": "Following the path from Pucamarca Adobe Village, the hike ventures into a breathtaking stretch of the Inca trail, weaving through a canyon and showcasing the grandeur of the 'Queen of the Andes' plants. As the trail progresses, a stunning viewpoint reveals unparalleled vistas of the Sacred Valley before finally reaching the awe-inspiring site of Huchuy Qosqo. Take time to explore this historical gem before proceeding further.",
-        "images": [
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-ascending-into-gorge",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-incan-gate",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-across-bridge"
-        ],
-        "distance": 5.5,
-        "elevation": 4150
-      },
-      {
-        "title": "Descending to Lamay",
-        "description": "Descending from Huchuy Qosqo involves navigating steep switchbacks, offering a challenging but rewarding downhill journey, culminating in the town of Lamay.",
-        "images": [
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-descending-trail-to-city"
-        ],
-        "distance": 5.5,
-        "elevation": 3651
-      },
-      {
-        "title": "Returning to Cusco",
-        "description": "Concluding the adventure, travelers from Lamay or Calca can easily catch a colectivo (minibus) back to Cusco by flagging down a bus labeled 'Cusco' on the correct side of the road, marking the end of an enriching and diverse hiking experience.",
-        "images": [
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-waiting-for-colectivo",
-          "photos/countries/peru/huchuy-qosqo-hike/view-from-inside-colectivo-to-cusco"
-        ],
-        "distance": 5.5,
-        "elevation": 3330
-      }
-    ]
-  },
-  "highlights": {
-    "introduction": "While the journey to Huchuy Qosqo boasts numerous highlights, these stand out as personal favorites. The Sacred Valley Viewpoint offers breathtaking sunset vistas, the seldom-explored Inca Trail reveals historical remnants, and the Pucamarca Adobe Village showcases a serene, traditional way of life.",
-    "items": [
-      {
-        "title": "Sacred Valley Viewpoint: A Sunset Spectacle",
-        "description": "Discovering the Sacred Valley Viewpoint offers an awe-inspiring spectacle, particularly as the sun begins its descent. This vista stands among my cherished scenes within the Sacred Valley. From this vantage point, the landscape unveils its beauty in a panoramic display, showcasing the undulating terrain, the serpentine river, and the verdant expanses painted in hues of twilight.",
-        "images": [
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-silhouette-overlooking-valley",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-overlooking-sacred-valley",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-on-rice-terraces"
-        ]
-      },
-      {
-        "title": "Inca Trail Exploration: Unveiling a Hidden Path",
-        "description": "Traversing a segment of the Inca Trail unveils a hidden gem rarely explored by many. As the hike progresses, the trail leads to a secluded section adorned with historical remnants—a gate and a series of bridges—winding alongside a meandering river coursing through a majestic canyon. The trail echoes with the whispers of history, offering a glimpse into the ancient paths traversed by the Incas.",
-        "images": [
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-incan-gate",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-across-bridge"
-        ]
-      },
-      {
-        "title": "Pucamarca Adobe Village: A Glimpse of Simplicity",
-        "description": "Nestled along the route, the Pucamarca Adobe Village captivates with its simplicity and traditional architecture. Every dwelling in this quaint village is crafted from adobe, creating a rustic charm that defines the essence of simple living. Observing the daily life here provides an eye-opening experience, offering insight into a lifestyle steeped in tradition and harmony with nature.",
-        "images": [
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-through-adobe-village",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-overlooking-puca-marca",
-          "photos/countries/peru/huchuy-qosqo-hike/adobe-brick-stack"
-        ]
-      },
-      {
-        "title": "Huchuy Qosqo",
-        "description": "The Incan ruins themselves stand as an enchanting gem. Perched atop a picturesque hill, these ruins boast rich historical significance and archaeological wonders. During my visit, I had the privilege of exploring these ancient remnants in solitude, immersing myself in their historical allure and the serene beauty of the surrounding landscape. Huchuy Qosqo offers an opportunity for profound exploration and discovery amidst its stunning hilltop setting.",
-        "images": [
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-next-to-incan-ruins",
-          "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-around-incan-ruins"
-        ]
-      }
-    ]
-  },
-  "cost": {
-    "introduction": "Embarking on the hike to Huchuy Qosqo is an affordable adventure. Transportation costs to the starting point via colectivo or taxi, along with food expenses during the hike, are budget-friendly. The entrance fee to Huchuy Qosqo is nominal. Returning to Cusco from Lamay via colectivo adds to the overall economical nature of the journey. Overall, the total expenses for this trek are affordable and can vary based on individual choices, such as camping or additional stays at starting points.",
-    "items": [
-      {
-        "title": "Colectivo/Taxi to Starting Point",
-        "cost": "$2-$4"
-      },
-      {
-        "title": "Food",
-        "cost": "~$8"
-      },
-      {
-        "title": "Huchuy Qosqo Entrance Fee",
-        "cost": "~$3"
-      },
-      {
-        "title": "Returning Colectivo to Cusco from Lamay",
-        "cost": "$2-$3"
-      },
-      {
-        "title": "Total",
-        "cost": "$16-$19"
-      }
-    ]
-  }
+  ]
 }

@@ -25,71 +25,90 @@
       "url": "/gear"
     }
   ],
-  "map": {
-    "id": "1YJ8_vtF8zNt3VZMqpZAdAha_uPkV63s"
-  },
-  "weather": {
-    "introduction": "I've been to Cat Ba and the surrounding area a few times. From my experience, the best time to visit Cat Ba Island and Lan Ha Bay in Vietnam is during the fall season, particularly in September and October. The weather is perfect for outdoor activities, with comfortable temperatures and clear skies. The sea is also calm, making it perfect for kayaking, boat tours and swimming. During this time of the year, the island and the bay are less crowded, and you can enjoy the natural beauty and serenity of the place without the crowds. Plus, you'll see the island and the bay in its full glory with lush green vegetation and the colors of the fall.",
-    "conclusion": "If you prefer to avoid the peak season and crowds, I suggest visiting between February and April. The weather is still pleasant and you can enjoy most of the outdoor activities. On the other hand, if you're not a fan of rain and the heat, I would recommend avoiding the monsoon season which runs from May to August. The heavy rain and strong winds can make some activities difficult or even impossible. Of course the best time to visit will depend on your priorities and preferences, but I hope this gives you a good idea.",
-    "seasons": [
-      {
-        "title": "Dry Season (November to April)",
-        "description": "Dry, sunny and cool, with clear skies and calm waters ideal for water-based activities such as kayaking, swimming, and snorkeling."
-      },
-      {
-        "title": "Rainy Season (May to October)",
-        "description": "Frequent showers and storms, making it less ideal for kayaking, swimming, and snorkeling. However, the rain can bring new life to the bay, making it a great time for nature lovers to visit."
+  "sections": [
+    {
+      "id": "map",
+      "title": "Route Map",
+      "introduction": "",
+      "content": {
+        "type": "google-map",
+        "mapId": "1YJ8_vtF8zNt3VZMqpZAdAha_uPkV63s"
       }
-    ]
-  },
-  "itinerary": {
-    "introduction": "There is so much to do on and around Cat Ba island that coming up with an exact itinerary to suit your personal needs would be impossible. However I would recommend spending at least a week here with a few days on the island and a few days in the bay.",
-    "duration": "P4D",
-    "phases": [
-      {
-        "title": "Hanoi to Haiphong to Cat Ba",
-        "description": "The most common way to get to Cat Ba is by taking a ferry from Haiphong or Hai Phong City which can be reached by bus or train from Hanoi.\nAfter flying into Hanoi, take a bus or train to Haiphong. From there, you can take a ferry to Cat Ba Island. This is a convenient option if you want to save time, as the ferry ride takes around 2-3 hours. You could fly to Cat Bi International Airport in Haiphong if you want to save even more time."
-      },
-      {
-        "title": "Cat Ba Countryside Homestay",
-        "description": "We stayed here and loved it! From this homestay, you can rent a motorbike to explore the island, or go hiking. Check out more info on the Points of Interest map."
-      },
-      {
-        "title": "Floating House",
-        "description": "Spend a couple nights on a floating house, you won't regret it! There are lots of options available. Check out more info on the Points of Interest map."
-      },
-      {
-        "title": "Return to Hanoi"
-      }
-    ]
-  },
-  "highlights": {
-    "introduction": "Of course there are a variety of things you could do here. But here are some of my favorites.",
-    "items": [
-      {
-        "title": "Kayaking the Bay",
-        "description": "Kayaking around the different islands and lagoons is a great way to see the diverse landscapes and wildlife of the area. You can paddle through hidden caves and lagoons, discover secluded beaches, visit fishing villages, and witness the unique limestone formations. Each islets offers a unique and picturesque view. You can take a leisurely paddle around the island, or you can also explore the more remote and uninhabited islands. Go for a swim in the crystal clear and warm water, or go climbing if you like. You can also stop for lunch on one of the many secluded beaches. The view of the bay while eating a delicious seafood lunch is an unforgettable experience.",
-        "images": [
-          "photos/countries/vietnam/cat-ba/kayaks-sunset-in-lan-ha-bay",
-          "photos/countries/vietnam/cat-ba/eating-lunch-in-lan-ha-bay",
-          "photos/countries/vietnam/cat-ba/kayaking-around-lan-ha-bay",
-          "photos/countries/vietnam/cat-ba/kayaking-around-floating-house-in-lan-ha-bay"
-        ]
-      },
-      {
-        "title": "Hiking in the Jungle",
-        "description": "Hiking through Cat Ba National Park is a great way to explore the island's natural beauty. A popular route is to hike to Frog Pond and Viet Hai village. The hike starts at the park entrance, and it takes around 4-5 hours, passing through lush jungle, towering limestone cliffs and dense vegetation. Along the way, you'll reach the peaceful Frog Pond, a small lake set in a lush clearing, take a break and have a snack. After that, the trail continues to climb, passing through a dense forest, and reaching the picturesque Viet Hai village. The hike is considered moderate and offers great views and the opportunity to learn about the local culture and lifestyle.",
-        "images": [
-          "photos/countries/vietnam/cat-ba/hiking-through-taro-leaves-on-cat-ba"
-        ]
-      },
-      {
-        "title": "Staying on a Floating House",
-        "description": "Being surrounded by the beauty of the bay while the sun sets is truly magical. The colors of the sky change and the sound of the water creates a peaceful ambiance.\nThe floating houses are usually equipped with basic amenities, such as a bed, bathroom, and a small kitchen. They offer a unique and secluded way to experience the bay and to sleep in the middle of nature.\nThe floating houses are usually anchored in the secluded areas of the bay, so you can enjoy the peace and quiet and the tranquility of the bay.",
-        "images": [
-          "photos/countries/vietnam/cat-ba/enjoying-the-sunset-on-the-floating-house"
+    },
+    {
+      "id": "itinerary",
+      "title": "Itinerary",
+      "introduction": "There is so much to do on and around Cat Ba island that coming up with an exact itinerary to suit your personal needs would be impossible. However I would recommend spending at least a week here with a few days on the island and a few days in the bay.",
+      "content": {
+        "type": "itinerary",
+        "duration": "P4D",
+        "phases": [
+          {
+            "title": "Hanoi to Haiphong to Cat Ba",
+            "description": "The most common way to get to Cat Ba is by taking a ferry from Haiphong or Hai Phong City which can be reached by bus or train from Hanoi.\nAfter flying into Hanoi, take a bus or train to Haiphong. From there, you can take a ferry to Cat Ba Island. This is a convenient option if you want to save time, as the ferry ride takes around 2-3 hours. You could fly to Cat Bi International Airport in Haiphong if you want to save even more time."
+          },
+          {
+            "title": "Cat Ba Countryside Homestay",
+            "description": "We stayed here and loved it! From this homestay, you can rent a motorbike to explore the island, or go hiking. Check out more info on the Points of Interest map."
+          },
+          {
+            "title": "Floating House",
+            "description": "Spend a couple nights on a floating house, you won't regret it! There are lots of options available. Check out more info on the Points of Interest map."
+          },
+          {
+            "title": "Return to Hanoi"
+          }
         ]
       }
-    ]
-  }
+    },
+    {
+      "id": "highlights",
+      "title": "Personal Highlights",
+      "introduction": "Of course there are a variety of things you could do here. But here are some of my favorites.",
+      "subsections": [
+        {
+          "title": "Kayaking the Bay",
+          "description": "Kayaking around the different islands and lagoons is a great way to see the diverse landscapes and wildlife of the area. You can paddle through hidden caves and lagoons, discover secluded beaches, visit fishing villages, and witness the unique limestone formations. Each islets offers a unique and picturesque view. You can take a leisurely paddle around the island, or you can also explore the more remote and uninhabited islands. Go for a swim in the crystal clear and warm water, or go climbing if you like. You can also stop for lunch on one of the many secluded beaches. The view of the bay while eating a delicious seafood lunch is an unforgettable experience.",
+          "images": [
+            "photos/countries/vietnam/cat-ba/kayaks-sunset-in-lan-ha-bay",
+            "photos/countries/vietnam/cat-ba/eating-lunch-in-lan-ha-bay",
+            "photos/countries/vietnam/cat-ba/kayaking-around-lan-ha-bay",
+            "photos/countries/vietnam/cat-ba/kayaking-around-floating-house-in-lan-ha-bay"
+          ]
+        },
+        {
+          "title": "Hiking in the Jungle",
+          "description": "Hiking through Cat Ba National Park is a great way to explore the island's natural beauty. A popular route is to hike to Frog Pond and Viet Hai village. The hike starts at the park entrance, and it takes around 4-5 hours, passing through lush jungle, towering limestone cliffs and dense vegetation. Along the way, you'll reach the peaceful Frog Pond, a small lake set in a lush clearing, take a break and have a snack. After that, the trail continues to climb, passing through a dense forest, and reaching the picturesque Viet Hai village. The hike is considered moderate and offers great views and the opportunity to learn about the local culture and lifestyle.",
+          "images": [
+            "photos/countries/vietnam/cat-ba/hiking-through-taro-leaves-on-cat-ba"
+          ]
+        },
+        {
+          "title": "Staying on a Floating House",
+          "description": "Being surrounded by the beauty of the bay while the sun sets is truly magical. The colors of the sky change and the sound of the water creates a peaceful ambiance.\nThe floating houses are usually equipped with basic amenities, such as a bed, bathroom, and a small kitchen. They offer a unique and secluded way to experience the bay and to sleep in the middle of nature.\nThe floating houses are usually anchored in the secluded areas of the bay, so you can enjoy the peace and quiet and the tranquility of the bay.",
+          "images": [
+            "photos/countries/vietnam/cat-ba/enjoying-the-sunset-on-the-floating-house"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Weather and Seasons",
+      "introduction": "I've been to Cat Ba and the surrounding area a few times. From my experience, the best time to visit Cat Ba Island and Lan Ha Bay in Vietnam is during the fall season, particularly in September and October. The weather is perfect for outdoor activities, with comfortable temperatures and clear skies. The sea is also calm, making it perfect for kayaking, boat tours and swimming. During this time of the year, the island and the bay are less crowded, and you can enjoy the natural beauty and serenity of the place without the crowds. Plus, you'll see the island and the bay in its full glory with lush green vegetation and the colors of the fall.",
+      "content": {
+        "type": "list",
+        "items": [
+          {
+            "title": "Dry Season (November to April)",
+            "description": "Dry, sunny and cool, with clear skies and calm waters ideal for water-based activities such as kayaking, swimming, and snorkeling."
+          },
+          {
+            "title": "Rainy Season (May to October)",
+            "description": "Frequent showers and storms, making it less ideal for kayaking, swimming, and snorkeling. However, the rain can bring new life to the bay, making it a great time for nature lovers to visit."
+          }
+        ]
+      }
+    }
+  ]
 }

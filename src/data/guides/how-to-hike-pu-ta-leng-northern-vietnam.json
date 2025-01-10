@@ -25,87 +25,106 @@
       "url": "/gear"
     }
   ],
-  "map": {
-    "id": "1n5X4E7mhyiZVvwEpGhEOL0bRg9V375U"
-  },
-  "weather": {
-    "introduction": "The weather in Lao Cai is generally pleasant throughout the year, but it can get quite cold in the winter months (December to February), with temperatures dropping to around 10°C (50°F). The summer months (June to August) can be quite hot and humid, with temperatures reaching as high as 35°C (95°F).\nYou might enjoy cooler months or the warmer months. It's worth considering the weather and the conditions of the trails when planning your trip."
-  },
-  "itinerary": {
-    "units": {
-      "distance": "Distance",
-      "elevation": "Elevation"
+  "sections": [
+    {
+      "id": "weather",
+      "title": "Best Time to Go",
+      "introduction": "The weather in Lao Cai is generally pleasant throughout the year, but it can get quite cold in the winter months (December to February), with temperatures dropping to around 10°C (50°F). The summer months (June to August) can be quite hot and humid, with temperatures reaching as high as 35°C (95°F).\nYou might enjoy cooler months or the warmer months. It's worth considering the weather and the conditions of the trails when planning your trip."
     },
-    "duration": "P4D",
-    "phases": [
-      {
-        "title": "Drive to Lai Chau from Sapa"
-      },
-      {
-        "title": "Lai Chau to Shelter",
-        "distance": 9,
-        "elevation": 2408
-      },
-      {
-        "title": "Shelter to Pu Ta Leng Summit",
-        "distance": 4,
-        "elevation": 3049
-      },
-      {
-        "title": "Pu Ta Leng Summit to Shelter",
-        "distance": 4,
-        "elevation": 2408
-      },
-      {
-        "title": "Shelter to Lai Chau",
-        "distance": 9,
-        "elevation": 1500
-      },
-      {
-        "title": "Drive to Sapa from Lai Chau"
+    {
+      "id": "map",
+      "title": "Route Map",
+      "introduction": "",
+      "content": {
+        "type": "google-map",
+        "mapId": "1n5X4E7mhyiZVvwEpGhEOL0bRg9V375U"
       }
-    ]
-  },
-  "highlights": {
-    "items": [
-      {
-        "title": "Staying at Our Guide's Home",
-        "description": "Our only guide, Báo, lives just in the foothills of the same mountain we set out to climb. We stayed at his place with his family before and after the hike, eating delicious dinners, getting to know each other, and playing with all of his animals. In addition to being a trekking guide, Báo and his family grow rice and corn in terraces, and cardamom in the jungle. The Dao is an ethnic minority group in Vietnam, known for their colorful traditional clothing and rich cultural traditions. Dao women are known for their brightly colored embroidered clothing, which is often worn on special occasions. The clothing is usually made of indigo-dyed cloth and features intricate patterns and designs. Dao men may also wear traditional clothing, such as loose-fitting pants and a long tunic.",
-        "images": [
-          "photos/countries/vietnam/pu-ta-leng/four-people-in-trekking-guides-home",
-          "photos/countries/vietnam/pu-ta-leng/duck-standing-on-top-of-fence"
-        ]
-      },
-      {
-        "title": "Going to A Highland Market",
-        "description": "We grabbed some pork, veggies, and other goodies from a local highland market and cooked a delicious dinner that evening. The Dao people have a distinctive cuisine that is based on locally-sourced ingredients, such as rice, vegetables, and meats. Some dishes that may be served at a special dinner for the Dao include braised chicken with ginger, stir-fried pork with lemongrass, and spicy boiled fish.",
-        "images": [
-          "photos/countries/vietnam/pu-ta-leng/pile-of-red-chili-peppers-at-market"
-        ]
-      },
-      {
-        "title": "Climbing the Mountain",
-        "description": "We started off walking through local villages, farms, and rivers. Eventually we started the steep seemingly endless climb up the mountain.",
-        "images": [
-          "photos/countries/vietnam/pu-ta-leng/two-people-climbing-through-bamboo-tunnel",
-          "photos/countries/vietnam/pu-ta-leng/girl-hiking-through-corn-farm-in-the-mountains",
-          "photos/countries/vietnam/pu-ta-leng/dense-forest-in-fog",
-          "photos/countries/vietnam/pu-ta-leng/camera-hanging-on-tree",
-          "photos/countries/vietnam/pu-ta-leng/girl-hiking-in-misty-cardamom-jungle"
-        ]
-      },
-      {
-        "title": "Staying at the Shelter",
-        "description": "We spent the night at a quaint trekker’s shelter run by two friendly Dao women, who built the shelter two years ago to help trekkers brace the elements such as heavy rain and landslides. Our dinner that night consisted of our supplies from the market as well as some cardamom picked from the jungle along the way. Everyone got to know each other around the fire through Vietnamese, Dao, and a little English. We were so tired that we went to bed at 19:30.",
-        "images": [
-          "photos/countries/vietnam/pu-ta-leng/jungle-shelter",
-          "photos/countries/vietnam/pu-ta-leng/two-plates-of-pork-on-dinner-mat",
-          "photos/countries/vietnam/pu-ta-leng/cutting-meat-with-herbs",
-          "photos/countries/vietnam/pu-ta-leng/cooking-meat-in-large-wok",
-          "photos/countries/vietnam/pu-ta-leng/grilling-pork-over-fire-close-up",
-          "photos/countries/vietnam/pu-ta-leng/grilling-pork-over-fire"
+    },
+    {
+      "id": "itinerary",
+      "title": "Itinerary",
+      "introduction": "",
+      "content": {
+        "type": "itinerary",
+        "duration": "P4D",
+        "units": {
+          "distance": "Distance",
+          "elevation": "Elevation"
+        },
+        "phases": [
+          {
+            "title": "Drive to Lai Chau from Sapa"
+          },
+          {
+            "title": "Lai Chau to Shelter",
+            "distance": 9,
+            "elevation": 2408
+          },
+          {
+            "title": "Shelter to Pu Ta Leng Summit",
+            "distance": 4,
+            "elevation": 3049
+          },
+          {
+            "title": "Pu Ta Leng Summit to Shelter",
+            "distance": 4,
+            "elevation": 2408
+          },
+          {
+            "title": "Shelter to Lai Chau",
+            "distance": 9,
+            "elevation": 1500
+          },
+          {
+            "title": "Drive to Sapa from Lai Chau"
+          }
         ]
       }
-    ]
-  }
+    },
+    {
+      "id": "highlights",
+      "title": "Personal Highlights",
+      "introduction": "",
+      "subsections": [
+        {
+          "title": "Staying at Our Guide's Home",
+          "description": "Our only guide, B\u00e1o, lives just in the foothills of the same mountain we set out to climb. We stayed at his place with his family before and after the hike, eating delicious dinners, getting to know each other, and playing with all of his animals. In addition to being a trekking guide, B\u00e1o and his family grow rice and corn in terraces, and cardamom in the jungle. The Dao is an ethnic minority group in Vietnam, known for their colorful traditional clothing and rich cultural traditions. Dao women are known for their brightly colored embroidered clothing, which is often worn on special occasions. The clothing is usually made of indigo-dyed cloth and features intricate patterns and designs. Dao men may also wear traditional clothing, such as loose-fitting pants and a long tunic.",
+          "images": [
+            "photos/countries/vietnam/pu-ta-leng/four-people-in-trekking-guides-home",
+            "photos/countries/vietnam/pu-ta-leng/duck-standing-on-top-of-fence"
+          ]
+        },
+        {
+          "title": "Going to A Highland Market",
+          "description": "We grabbed some pork, veggies, and other goodies from a local highland market and cooked a delicious dinner that evening. The Dao people have a distinctive cuisine that is based on locally-sourced ingredients, such as rice, vegetables, and meats. Some dishes that may be served at a special dinner for the Dao include braised chicken with ginger, stir-fried pork with lemongrass, and spicy boiled fish.",
+          "images": [
+            "photos/countries/vietnam/pu-ta-leng/pile-of-red-chili-peppers-at-market"
+          ]
+        },
+        {
+          "title": "Climbing the Mountain",
+          "description": "We started off walking through local villages, farms, and rivers. Eventually we started the steep seemingly endless climb up the mountain.",
+          "images": [
+            "photos/countries/vietnam/pu-ta-leng/two-people-climbing-through-bamboo-tunnel",
+            "photos/countries/vietnam/pu-ta-leng/girl-hiking-through-corn-farm-in-the-mountains",
+            "photos/countries/vietnam/pu-ta-leng/dense-forest-in-fog",
+            "photos/countries/vietnam/pu-ta-leng/camera-hanging-on-tree",
+            "photos/countries/vietnam/pu-ta-leng/girl-hiking-in-misty-cardamom-jungle"
+          ]
+        },
+        {
+          "title": "Staying at the Shelter",
+          "description": "We spent the night at a quaint trekker\u2019s shelter run by two friendly Dao women, who built the shelter two years ago to help trekkers brace the elements such as heavy rain and landslides. Our dinner that night consisted of our supplies from the market as well as some cardamom picked from the jungle along the way. Everyone got to know each other around the fire through Vietnamese, Dao, and a little English. We were so tired that we went to bed at 19:30.",
+          "images": [
+            "photos/countries/vietnam/pu-ta-leng/jungle-shelter",
+            "photos/countries/vietnam/pu-ta-leng/two-plates-of-pork-on-dinner-mat",
+            "photos/countries/vietnam/pu-ta-leng/cutting-meat-with-herbs",
+            "photos/countries/vietnam/pu-ta-leng/cooking-meat-in-large-wok",
+            "photos/countries/vietnam/pu-ta-leng/grilling-pork-over-fire-close-up",
+            "photos/countries/vietnam/pu-ta-leng/grilling-pork-over-fire"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -25,34 +25,28 @@
       "url": "/gear"
     }
   ],
-  "overview": {
-    "summary": "Hiking in Italy is very popular. That being said, at certain times and places there are a lot of people, and there is loads of infrastructure (i.e. paved roads, cable cars) placed around hiking. Depending on your hiking style, this may be a good thing or a bad thing. In you're more of a wild hiker, no worries. It is still possible to get out to areas with less people and development. If you do a little bit of work beforehand, you will have a great trip.",
-    "images": ["photos/countries/italy/dolomites/man-sitting-on-a-cliff"]
-  },
-  "extra_sections": [
+  "sections": [
     {
+      "id": "overview",
+      "title": "Overview",
+      "introduction": "Hiking in Italy is very popular. That being said, at certain times and places there are a lot of people, and there is loads of infrastructure (i.e. paved roads, cable cars) placed around hiking. Depending on your hiking style, this may be a good thing or a bad thing. In you're more of a wild hiker, no worries. It is still possible to get out to areas with less people and development. If you do a little bit of work beforehand, you will have a great trip.",
+      "content": {
+        "type": "images",
+        "paths": ["photos/countries/italy/dolomites/man-sitting-on-a-cliff"]
+      }
+    },
+    {
+      "id": "types",
       "title": "Types",
-      "position": "top",
-      "description": "Not all mountain huts in Italy are created equal. Depending on your personal preferences and hiking style, you may want to stay at a certain type.",
-      "sections": [
+      "introduction": "Not all mountain huts in Italy are created equal. Depending on your personal preferences and hiking style, you may want to stay at a certain type.",
+      "subsections": [
         {
           "title": "Rifugi",
-          "description": "Rifugi are fully-equipped, fully-staffed, and ready to cater to your every need with kitchens that prepare delicious traditional food, wine, beer, and of course espresso. Some of my favorite rifugios even made their own beer or wine! You can find a very comfy bed to sleep in at night. Rifugios are typically easy to reach with a short hike, cable car, or even by car. This of course makes them popular, and they fill up far in advance.\nYou can never go wrong with ordering food at a rifugio. Some of the best food I have had in Italy has been at a mountain hut. Nothing beats some warm dumplings and a refreshing beer after a long day of hiking.",
-          "images": [
-            "photos/countries/italy/dolomites/locatelli-hut-tre-cime-sheep",
-            "photos/countries/italy/dolomites/locatelli-hut-tre-cime",
-            "photos/countries/italy/dolomites/alta-via-piscadu-hut",
-            "photos/countries/italy/dolomites/apple-strudel",
-            "photos/countries/italy/dolomites/cafe-macchiato",
-            "photos/countries/italy/dolomites/spinach-dumplings-carbonara-dinner"
-          ]
+          "description": "Rifugi are fully-equipped, fully-staffed, and ready to cater to your every need with kitchens that prepare delicious traditional food, wine, beer, and of course espresso. Some of my favorite rifugios even made their own beer or wine! You can find a very comfy bed to sleep in at night. Rifugios are typically easy to reach with a short hike, cable car, or even by car. This of course makes them popular, and they fill up far in advance.\nYou can never go wrong with ordering food at a rifugio. Some of the best food I have had in Italy has been at a mountain hut. Nothing beats some warm dumplings and a refreshing beer after a long day of hiking."
         },
         {
           "title": "Bivacco",
-          "description": "Bivacco are small and not staffed, but quite nice nonetheless. They usually come with a few beds with thin mattresses and sometimes blankets and a wood-burning stove. Personally, I love Bivacco because they are usually off of the beaten path and very well-designed. If you're used to solo hiking and camping, this will feel like luxury to you. If you prefer to stay in hotels and don't like camping, I'd go for the rifugi.",
-          "images": [
-            "photos/countries/italy/dolomites/man-standing-next-to-bivvaco-aerial"
-          ]
+          "description": "Bivacco are small and not staffed, but quite nice nonetheless. They usually come with a few beds with thin mattresses and sometimes blankets and a wood-burning stove. Personally, I love Bivacco because they are usually off of the beaten path and very well-designed. If you're used to solo hiking and camping, this will feel like luxury to you. If you prefer to stay in hotels and don't like camping, I'd go for the rifugi."
         },
         {
           "title": "Others",
@@ -61,45 +55,43 @@
       ]
     },
     {
+      "id": "booking",
       "title": "Booking",
-      "position": "top",
-      "description": "Unfortunately, as of writing this post there is no centralized booking system for mountain huts in Italy. Usually there is a different website to visit or phone number to call for every hut. If you know a trail you'd like to hike, finding a Cicerone Guidebook, or a quick google search for huts along the trail or in the area usually comes up with some options. If you know the name or location of a hut you'd like to visit, you can usually find the hut on Google Maps. However, if you want to discover something new, it is a bit more difficult. For Rifugio owned by CAI, you can find a list on the CAI website For less official sources but easier to follow, there are some curated social media accounts you can follow like Il Bivacco Alpino."
+      "introduction": "Unfortunately, as of writing this post there is no centralized booking system for mountain huts in Italy. Usually there is a different website to visit or phone number to call for every hut. If you know a trail you'd like to hike, finding a Cicerone Guidebook, or a quick google search for huts along the trail or in the area usually comes up with some options. If you know the name or location of a hut you'd like to visit, you can usually find the hut on Google Maps. However, if you want to discover something new, it is a bit more difficult. For Rifugio owned by CAI, you can find a list on the CAI website For less official sources but easier to follow, there are some curated social media accounts you can follow like Il Bivacco Alpino.",
+      "subsections": []
     },
     {
+      "id": "cost",
       "title": "Cost",
-      "position": "top",
-      "description": "Well, that depends on which hut, the type of hut, the area, and what you choose to eat. Rifugi usually offer half-board and bed-only options. Half-board means you book your bed along with a three-course dinner and breakfast. Personally, I like to book the bed and meal separately. Rifugi have very different costs for half-board, usually ranging from $50 to $150 per person per night. A single bed can cost as little as $30. Bivacco tend to be free, but of course they are smaller with limited beds, and there are no services or meals.\nIf you'd like discounts on mountain huts, consider joining an alpine club such as CAI or SAT. For about $45, you can get discounts of up to 50% sometimes. To register, you usually need to find a physical office in the city you're staying."
+      "introduction": "Well, that depends on which hut, the type of hut, the area, and what you choose to eat. Rifugi usually offer half-board and bed-only options. Half-board means you book your bed along with a three-course dinner and breakfast. Personally, I like to book the bed and meal separately. Rifugi have very different costs for half-board, usually ranging from $50 to $150 per person per night. A single bed can cost as little as $30. Bivacco tend to be free, but of course they are smaller with limited beds, and there are no services or meals.\nIf you'd like discounts on mountain huts, consider joining an alpine club such as CAI or SAT. For about $45, you can get discounts of up to 50% sometimes. To register, you usually need to find a physical office in the city you're staying.",
+      "subsections": []
     },
     {
+      "id": "facilities",
       "title": "Facilities",
-      "position": "top",
-      "description": "When it comes to food, water, and facilities, of course this depends on the location and type of hut. At a bivacco, you will always need to bring your own food, usually find water on your own, and make a toilet on your own. Delicious food is always available at rifugi, even if some require an advanced booking. At some rifugio, water is scarce or not potable. You have the option to buy water, but it comes in plastic and can cost quite a bit. I always prefer to use the tap or a natural source and treat, if available. Rifugios often have toilet facilities as well.",
-      "images": ["photos/countries/italy/dolomites/refilling-water"]
+      "introduction": "When it comes to food, water, and facilities, of course this depends on the location and type of hut. At a bivacco, you will always need to bring your own food, usually find water on your own, and make a toilet on your own. Delicious food is always available at rifugi, even if some require an advanced booking. At some rifugio, water is scarce or not potable. You have the option to buy water, but it comes in plastic and can cost quite a bit. I always prefer to use the tap or a natural source and treat, if available. Rifugios often have toilet facilities as well.",
+      "subsections": []
     },
     {
+      "id": "routes",
       "title": "Routes",
-      "position": "top",
-      "description": "In Italy there are tons of different types of hiking and climbing you can do. While some trails just require your own two feet, others require technical skill or equipment.",
-      "sections": [
+      "introduction": "In Italy there are tons of different types of hiking and climbing you can do. While some trails just require your own two feet, others require technical skill or equipment.",
+      "subsections": [
         {
           "title": "Alta Via",
-          "description": "Alta Via is just a name for trekking routes that go up higher into the mountains. 'Alta Via' literally means 'High Street'. Some of the route on alta vias is rocky, steep, and exposed. Additionally, they can include ladders, chains, or iron ropes. However, you usually do not need any equipment. In the Dolomites, there are more well-known longer Alta Via, creatively named Alta Via 1, Alta Via 2, Alta Via 3, and so on. The most famous are the first two, with Alta Via 2 being slightly more difficult and less-traveled.",
-          "images": ["photos/countries/italy/dolomites/alta-via-sign"]
+          "description": "Alta Via is just a name for trekking routes that go up higher into the mountains. 'Alta Via' literally means 'High Street'. Some of the route on alta vias is rocky, steep, and exposed. Additionally, they can include ladders, chains, or iron ropes. However, you usually do not need any equipment. In the Dolomites, there are more well-known longer Alta Via, creatively named Alta Via 1, Alta Via 2, Alta Via 3, and so on. The most famous are the first two, with Alta Via 2 being slightly more difficult and less-traveled."
         },
         {
           "title": "Via Ferrata",
-          "description": "Via Ferrata are routes where experience and equipment is necessary. These routes are essentially vertical climbing routes with steel ropes, rungs, and ladders stuck into the side of the mountain. These routes were established during the first world war to help soldiers cross the mountain ranges easier. Via Ferrata can be a lot of fun. If you decide to try your hand at these, make sure to do your own research and rent the right equipment or go with a guide.",
-          "images": [
-            "photos/countries/italy/dolomites/man-climbing-via-ferrata"
-          ]
+          "description": "Via Ferrata are routes where experience and equipment is necessary. These routes are essentially vertical climbing routes with steel ropes, rungs, and ladders stuck into the side of the mountain. These routes were established during the first world war to help soldiers cross the mountain ranges easier. Via Ferrata can be a lot of fun. If you decide to try your hand at these, make sure to do your own research and rent the right equipment or go with a guide."
         }
       ]
     },
     {
+      "id": "camping",
       "title": "Camping",
-      "position": "top",
-      "description": "In short, not really. But if you setup camp around sunset, pack up at sunrise, be respectful of nature, and follow leave-no-trace principles, it is generally tolerated. In more popular areas, sometimes rangers come around and give people fines. But if you're hiking a long Alta Via and are keeping a distance from huts or popular areas, you will be fine. Sometimes we have seen people even camping right next to very popular huts with no issue.",
-      "images": ["photos/countries/italy/dolomites/camping-tre-cime-dusk"]
+      "introduction": "In short, not really. But if you setup camp around sunset, pack up at sunrise, be respectful of nature, and follow leave-no-trace principles, it is generally tolerated. In more popular areas, sometimes rangers come around and give people fines. But if you're hiking a long Alta Via and are keeping a distance from huts or popular areas, you will be fine. Sometimes we have seen people even camping right next to very popular huts with no issue.",
+      "subsections": []
     }
   ]
 }

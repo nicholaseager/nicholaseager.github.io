@@ -20,81 +20,95 @@
       "url": "/gear"
     }
   ],
-  "overview": {
-    "summary": "The Great Wall is long. There are parts that are well-preserved and maintained as tourist attractions, but there are also sections that are in disrepair and are not maintained by the government. These sections of the Great Wall are often referred to as the 'wild' or 'unmaintained' sections. There are many wild sections of the Great Wall, such as Jiankou, Huanghuacheng, Gubeikou, Jinshanling, and Simatai. This guide will take you to a section close to Jiankou, but the same principles can be applied to other sections."
-  },
-  "map": {
-    "id": "11oQ9G8H2Vn0fv65wToQxsS6tew9eU6c"
-  },
-  "weather": {
-    "introduction": "The weather in China can vary significantly depending on the region and the time of year. Generally, the best time to hike the Great Wall is in the fall (September to November) or spring (March to May), when the weather is cooler and more comfortable for outdoor activities. The summer months (June to August) can be very hot and humid, while the winter months (December to February) can be cold and dry, with temperatures often dropping below freezing at night.\nThe Great Wall is a popular tourist destination, and some sections can get very crowded, especially during peak season. If you want to avoid crowds, you may want to consider visiting during the off-season or midweek."
-  },
-  "itinerary": {
-    "units": {
-      "distance": "Distance"
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "introduction": "The Great Wall is long. There are parts that are well-preserved and maintained as tourist attractions, but there are also sections that are in disrepair and are not maintained by the government. These sections of the Great Wall are often referred to as the 'wild' or 'unmaintained' sections. There are many wild sections of the Great Wall, such as Jiankou, Huanghuacheng, Gubeikou, Jinshanling, and Simatai. This guide will take you to a section close to Jiankou, but the same principles can be applied to other sections.",
+      "content": {
+        "type": "images",
+        "paths": []
+      }
     },
-    "duration": "P3D",
-    "phases": [
-      {
-        "title": "Beijing to Xizhazi",
-        "images": [
-          "photos/countries/china/jiankou/bus-station-timetable",
-          "photos/countries/china/jiankou/h25-bus",
-          "photos/countries/china/jiankou/inside-a-bus",
-          "photos/countries/china/jiankou/leave-nothing-but-footprints"
-        ],
-        "description": "You will start your trip off in Beijing. To get to Xizhazi, you can take a couple of buses, or a taxi. However, buses are always more prone to adventure. But you will have to navigate your way around by signs all in Chinese. Catch the first bus to Huairou, a city north of Beijing. Then you can take a local bus (H25) to Xizhazi. You will most likely be the only foreigner on the bus. This section of wall you will hike is not popular with foreign tourists. So, the only people on the bus were locals of the village. You can see the bus stations in the map. If you leave from Beijing early, you can hike during the first day. You can find a few guest houses in Xizhazi to spend the night."
-      },
-      {
-        "title": "Round trip to Explore the Wild Wall",
-        "images": [
-          "photos/countries/china/jiankou/window-in-the-wild-great-wall",
-          "photos/countries/china/jiankou/person-climbing-the-wild-great-wall",
-          "photos/countries/china/jiankou/many-people-climbing-the-wild-great-wall",
-          "photos/countries/china/jiankou/wild-great-wall",
-          "photos/countries/china/jiankou/hikers-on-the-wild-great-wall",
-          "photos/countries/china/jiankou/people-climbing-the-wild-great-wall"
-        ],
-        "description": "There are many beautiful and ancient sections of the wild wall, such as the Beijing Knot, the The Eagle Flies Facing Upward, and the Sky Stairs. Explore around to your heart's content and then head back to Xizhazi for a huge dinner and a good night's rest.",
-        "distance": 15
-      },
-      {
-        "title": "Dinner in Xizhazi",
-        "images": [
-          "photos/countries/china/jiankou/group-dinner-table",
-          "photos/countries/china/jiankou/group-of-people-eating-dinner-cheers"
-        ],
-        "description": "At our guest house, there was an enormous table, with an equally as large lazy-suzan. The table fit eleven people, and the lazy-suzan fit all of the food. In China, it is customary for everyone to share the food. From the rotating lazy-suzan. All of the dining utensils, including plates, bowls, chopsticks, and teacups were individually wrapped in plastic. Apparently, many Chinese restaurants outsource dishwashing, and the outsourced company returns the dishes wrapped. When the food actually came, I was stunned by the intoxicating aromas of so many dishes. I can't remember any of the names, but all of the flavors were so vivid. Except when I accidentally took a bite of fermented tofu. As a toast to new friends, we drank Chinese rice wine. Once finished, we rested up for our big hike tomorrow."
-      },
-      {
-        "title": "Hike from Xizhazi to Mutianyu",
-        "images": [
-          "photos/countries/china/jiankou/looking-over-the-wild-great-wall",
-          "photos/countries/china/jiankou/two-people-walking-on-the-great-wall",
-          "photos/countries/china/jiankou/eight-people-sitting-on-the-great-wall",
-          "photos/countries/china/jiankou/group-of-people-hiking-the-wild-great-wall",
-          "photos/countries/china/jiankou/wild-great-wall-climbing",
-          "photos/countries/china/jiankou/side-of-the-wild-great-wall"
-        ],
-        "description": "In the morning, have a quick breakfast before starting your journey. Mutianyu is the the touristy and restored section of the wall. Once you arrive, you'll see the difference. The wall is completely restored, and there are hoards of people. It might be nice to see if you'd like to understand the impact of tourism.",
-        "distance": 25
-      },
-      {
-        "title": "Mutianyu to Beijing",
-        "description": "You can catch one of the frequent tourist bus back to Beijing. There are several bus companies that operate regular bus service between Mutianyu and Beijing. The journey takes about two hours, depending on traffic. You can purchase tickets at the bus station or online."
+    {
+      "id": "map",
+      "title": "Route Map",
+      "introduction": "",
+      "content": {
+        "type": "google-map",
+        "mapId": "11oQ9G8H2Vn0fv65wToQxsS6tew9eU6c"
       }
-    ]
-  },
-  "useful_info": {
-    "items": [
-      {
-        "title": "Finding a Guide",
-        "description": "Once you arrive in Xizhazi, you can hire a local guide to take you to the Great Wall and help you navigate the unmaintained section. Going without a guide is more adventurous. But guides will know the best routes to take and can provide helpful information about the history and culture of the area. Although I went without one, I met a group along the way and I was so happy I did."
-      },
-      {
-        "title": "Safety",
-        "description": "The wild sections can be more challenging to hike due to the rough terrain and lack of facilities. It is important to be well-prepared and to take necessary precautions when hiking on the unmaintained section of the Great Wall, such as wearing proper clothing and shoes, carrying enough food and water, and being aware of your surroundings."
+    },
+    {
+      "id": "itinerary",
+      "title": "Itinerary",
+      "introduction": "",
+      "content": {
+        "type": "itinerary",
+        "duration": "P3D",
+        "units": {
+          "distance": "Distance"
+        },
+        "phases": [
+          {
+            "title": "Beijing to Xizhazi",
+            "images": [
+              "photos/countries/china/jiankou/bus-station-timetable",
+              "photos/countries/china/jiankou/h25-bus",
+              "photos/countries/china/jiankou/inside-a-bus",
+              "photos/countries/china/jiankou/leave-nothing-but-footprints"
+            ],
+            "description": "You will start your trip off in Beijing. To get to Xizhazi, you can take a couple of buses, or a taxi. However, buses are always more prone to adventure. But you will have to navigate your way around by signs all in Chinese. Catch the first bus to Huairou, a city north of Beijing. Then you can take a local bus (H25) to Xizhazi. You will most likely be the only foreigner on the bus. This section of wall you will hike is not popular with foreign tourists. So, the only people on the bus were locals of the village. You can see the bus stations in the map. If you leave from Beijing early, you can hike during the first day. You can find a few guest houses in Xizhazi to spend the night."
+          },
+          {
+            "title": "Round trip to Explore the Wild Wall",
+            "images": [
+              "photos/countries/china/jiankou/window-in-the-wild-great-wall",
+              "photos/countries/china/jiankou/person-climbing-the-wild-great-wall",
+              "photos/countries/china/jiankou/many-people-climbing-the-wild-great-wall",
+              "photos/countries/china/jiankou/wild-great-wall",
+              "photos/countries/china/jiankou/hikers-on-the-wild-great-wall",
+              "photos/countries/china/jiankou/people-climbing-the-wild-great-wall"
+            ],
+            "description": "There are many beautiful and ancient sections of the wild wall, such as the Beijing Knot, the The Eagle Flies Facing Upward, and the Sky Stairs. Explore around to your heart's content and then head back to Xizhazi for a huge dinner and a good night's rest.",
+            "distance": 15
+          },
+          {
+            "title": "Dinner in Xizhazi",
+            "images": [
+              "photos/countries/china/jiankou/group-dinner-table",
+              "photos/countries/china/jiankou/group-of-people-eating-dinner-cheers"
+            ],
+            "description": "At our guest house, there was an enormous table, with an equally as large lazy-suzan. The table fit eleven people, and the lazy-suzan fit all of the food. In China, it is customary for everyone to share the food. From the rotating lazy-suzan. All of the dining utensils, including plates, bowls, chopsticks, and teacups were individually wrapped in plastic. Apparently, many Chinese restaurants outsource dishwashing, and the outsourced company returns the dishes wrapped. When the food actually came, I was stunned by the intoxicating aromas of so many dishes. I can't remember any of the names, but all of the flavors were so vivid. Except when I accidentally took a bite of fermented tofu. As a toast to new friends, we drank Chinese rice wine. Once finished, we rested up for our big hike tomorrow."
+          },
+          {
+            "title": "Hike from Xizhazi to Mutianyu",
+            "images": [
+              "photos/countries/china/jiankou/looking-over-the-wild-great-wall",
+              "photos/countries/china/jiankou/two-people-walking-on-the-great-wall",
+              "photos/countries/china/jiankou/eight-people-sitting-on-the-great-wall",
+              "photos/countries/china/jiankou/group-of-people-hiking-the-wild-great-wall",
+              "photos/countries/china/jiankou/wild-great-wall-climbing",
+              "photos/countries/china/jiankou/side-of-the-wild-great-wall"
+            ],
+            "description": "In the morning, have a quick breakfast before starting your journey. Mutianyu is the the touristy and restored section of the wall. Once you arrive, you'll see the difference. The wall is completely restored, and there are hoards of people. It might be nice to see if you'd like to understand the impact of tourism.",
+            "distance": 25
+          },
+          {
+            "title": "Mutianyu to Beijing",
+            "description": "You can catch one of the frequent tourist bus back to Beijing. There are several bus companies that operate regular bus service between Mutianyu and Beijing. The journey takes about two hours, depending on traffic. You can purchase tickets at the bus station or online."
+          }
+        ]
       }
-    ]
-  }
+    },
+    {
+      "id": "weather",
+      "title": "Weather and Seasons",
+      "introduction": "The weather in China can vary significantly depending on the region and the time of year. Generally, the best time to hike the Great Wall is in the fall (September to November) or spring (March to May), when the weather is cooler and more comfortable for outdoor activities. The summer months (June to August) can be very hot and humid, while the winter months (December to February) can be cold and dry, with temperatures often dropping below freezing at night.\nThe Great Wall is a popular tourist destination, and some sections can get very crowded, especially during peak season. If you want to avoid crowds, you may want to consider visiting during the off-season or midweek.",
+      "content": {
+        "type": "list",
+        "items": []
+      }
+    }
+  ]
 }

@@ -27,366 +27,398 @@
       "url": "/gear"
     }
   ],
-  "overview": {
-    "summary": "The Kanchenjunga Base Camp Trek offers a perfect blend of cultural immersion and high-altitude adventure in one of Nepal's more remote regions. This 24-day journey visits both North and South Base Camps, with highlights including the challenging Drohmo Ri summit, authentic Tibetan village life in Phale and Ghunsa, and spectacular mountain views from Sele Le. While my itinerary suggests certain side trips and rest days, the route's flexibility allows trekkers to craft their own experience – whether that means more acclimatization hikes, cultural exploration, or pushing straight through to the base camps.",
-    "images": [
-      "photos/countries/nepal/kanchenjunga-base-camp-trek/buddhist-temple-kanchenjunga-view",
-      "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-hiking-trail-yellow-larch-trees",
-      "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-prayer-flags",
-      "photos/countries/nepal/kanchenjunga-base-camp-trek/mossy-forest-trail-kanchenjunga"
-    ]
-  },
-  "map": {
-    "introduction": "This interactive map highlights the complete Kanchenjunga Base Camp Trek route, with the main trail marked in dark blue, optional side trips in light blue, and alternative routes in green. Icons indicate teahouses, viewpoints, and points of interest along the way. From Taplejung to both North and South Base Camps, every significant stop and scenic detour is clearly marked for easy route planning.",
-    "id": "1gvl0gvbYXEdExMZ7xI62RwYe7EO_j8o"
-  },
-  "basics": {
-    "items": [
-      {
-        "title": "Permits are required",
-        "description": "They must be arranged in Kathmandu - you'll need both the Kanchenjunga Conservation Area Permit (KCAP) and a Restricted Area Permit, which requires trekking with at least one other person."
-      },
-      {
-        "title": "This trek is remote",
-        "description": "Expect simple accommodations, limited menu options, and no internet or reliable electricity after Taplejung. Carry extra cash as there are no ATMs on the route."
-      },
-      {
-        "title": "Proper acclimatization is crucial",
-        "description": "The trek reaches high altitudes and multiple nights above 4000m or even 5000m. Build in rest days and side trips to adjust safely, and know the signs of altitude sickness."
-      },
-      {
-        "title": "Physical preparation is essential",
-        "description": "This is a challenging trek with long days, steep ascents/descents, and rough terrain. Prior high-altitude trekking experience is highly recommended."
-      }
-    ]
-  },
-  "gear": {
-    "introduction": "Prepare for the remote Kanchenjunga Base Camp Trek with essential gear for extreme conditions. Pack a quality sleeping bag rated to at least -10°C (14°F), as teahouses at higher elevations are unheated. Layer your clothing with thermal base layers, a warm fleece, and a waterproof down jacket for unpredictable mountain weather. Sturdy hiking boots and trekking poles are crucial for challenging terrain. Carry water purification tablets, a headlamp with spare batteries, and a comprehensive first-aid kit as medical facilities are scarce. A reliable camera and substantial power bank are worth their weight, while flip-flops offer welcome relief after long hiking days. Don't forget sun protection - quality sunglasses, sunscreen, and a wide-brimmed hat are essential at high altitudes.",
-    "trip": "kanchenjunga"
-  },
-  "weather": {
-    "introduction": "While peak seasons offer the most reliable conditions for the Kanchenjunga Base Camp Trek, shoulder seasons present an intriguing alternative for adventurous trekkers. Early March or late November into December can reward the well-prepared hiker with solitude and unique experiences. You'll find empty trails, lower teahouse prices, and a raw beauty that peak-season trekkers miss. However, weather becomes more unpredictable - expect deeper snow at higher elevations, colder temperatures, and more frequent storms. Some teahouses may be closing or just opening for the season, so flexibility with your itinerary is essential. If you're experienced in winter hiking and don't mind carrying extra warm layers, shoulder season trekking offers an authentic glimpse into the harsh beauty of the Himalayas.",
-    "seasons": [
-      {
-        "title": "Spring (March to May)",
-        "description": "Clear mornings with afternoon clouds rolling in. Rhododendrons and wildflowers paint the lower valleys in vibrant colors. Expect occasional rain showers at lower elevations and possible snow at higher camps. Generally stable conditions make this the most popular trekking season."
-      },
-      {
-        "title": "Fall (October to November)",
-        "description": "The most reliable weather with crystal-clear mountain views. Crisp, cold nights and sunny days. Larch forests turn golden, creating stunning landscapes. Minimal precipitation, though sudden snowfall is possible at higher elevations. Temperatures drop significantly after sunset."
-      },
-      {
-        "title": "Winter (December to February)",
-        "description": "Bitterly cold conditions with frequent snowfall at higher elevations. Clear, sunny days when storms pass, offering spectacular mountain photography. Many teahouses close and high passes may become impassable. Only recommended for experienced winter trekkers."
-      },
-      {
-        "title": "Monsoon (June to September)",
-        "description": "Heavy rainfall at lower elevations makes trails slippery and leech-infested. Thick clouds often obscure mountain views. Higher elevations experience afternoon storms. Landslide risk increases significantly. Trekking during this season is not recommended."
-      }
-    ]
-  },
-  "itinerary": {
-    "introduction": "This challenging 24-day trek explores both the north and south base camps of Kanchenjunga, the world's third-highest peak. The journey weaves through Tibetan villages, rhododendron forests, and glacial valleys, offering cultural immersion and stunning mountain views. Multiple acclimatization options and side trips allow for a personalized adventure.",
-    "units": {
-      "phase": "Day",
-      "distance": "Distance",
-      "elevation": "Elevation"
-    },
-    "duration": "P24D",
-    "phases": [
-      {
-        "title": "Gateway to Adventure - Arrive in Kathmandu",
-        "description": "Your Kanchenjunga journey begins in the vibrant capital of Nepal. Take this day to acclimate to the bustling energy of Kathmandu, exploring ancient temples and narrow alleyways while gathering any last-minute supplies. The city's rich cultural heritage provides the perfect prelude to your upcoming trek.",
-        "distance": 0,
-        "elevation": 1355,
-        "images": [
-          "photos/countries/nepal/kathmandu/many-colorful-prayer-flags-thamel"
-        ]
-      },
-      {
-        "title": "Tea Country Bound - Fly to Bhadrapur, Drive to Fikkal",
-        "description": "Begin your day with an exhilarating 45-minute flight to Bhadrapur, where the Himalayas reveal themselves to left-side window seat passengers. The subsequent 4-hour jeep ride takes you through the verdant hills to Fikkal, a region renowned for its sprawling tea estates that mirror the famous gardens of nearby Darjeeling. The rolling hills covered in neat rows of tea bushes offer a serene introduction to eastern Nepal.",
-        "distance": 350,
-        "elevation": 1678
-      },
-      {
-        "title": "Mountain Roads - Drive to Taplejung",
-        "description": "Today's 7-8 hour jeep journey winds through the foothills on mostly well-maintained but serpentine roads. Taplejung serves as your last major hub before the trek, making it crucial to withdraw cash and stock up on supplies. The town's position offers your first real taste of mountain life and serves as a gateway to the higher reaches of Kanchenjunga.",
-        "distance": 178,
-        "elevation": 1442,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/jeep-transport-kanchenjunga-trek"
-        ]
-      },
-      {
-        "title": "Sacred Heights - Visit Pathibhara Devi Temple (Optional)",
-        "description": "For those seeking both spiritual enlightenment and acclimatization, this detour to Pathibhara Devi Temple at 3,800m is invaluable. The journey involves a two-hour bumpy jeep ride followed by a 10km round-trip hike. This sacred Hindu shrine not only offers religious significance but also serves as an excellent acclimatization opportunity with stunning mountain views.",
-        "distance": 10,
-        "elevation": 3800
-      },
-      {
-        "title": "River Valley Entry - Drive to Sekathum, Hike to Lamatar",
-        "description": "The adventure intensifies with a four-hour bumpy jeep ride followed by your first real trek - a 7km hike along the Ghunse Khola river. The path, while somewhat precarious, weaves through enchanting bamboo forests before reaching Lamatar. This small settlement, with its handful of teahouses perched near the rushing river, provides a peaceful first night on the trail.",
-        "distance": 7,
-        "elevation": 2018,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-lush-vegetation-river",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/wooden-bridge-mountain-stream",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/mountain-river-valley-houses",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/local-woman-chopping-firewood"
-        ]
-      },
-      {
-        "title": "Riverside Ascent - Hike to Gyabla",
-        "description": "Today's 13km trek follows the melodic Ghunse Khola, alternating between moss-draped stone steps and elevated paths above the river. Gyabla welcomes you with basic teahouses, but the optional 2km detour to Gyabla Old Village rewards adventurous souls with a magnificent stupa and authentic wooden Nepali architecture.",
-        "distance": 13,
-        "elevation": 2735,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/evening-campfire-teahouse",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-crossing-rocky-river",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-houses"
-        ]
-      },
-      {
-        "title": "Tibetan Haven - Hike to Phale",
-        "description": "An 8km journey continues along the Ghunse Khola, with more moss-covered stone steps creating a fairy-tale atmosphere. The path leads to Phale, a fascinating Tibetan refugee settlement that offers your first real glimpse into high-mountain culture.",
-        "distance": 8,
-        "elevation": 3256,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/mossy-forest-hiking-trail",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/stone-steps-kanchenjunga-trek-nepal",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/prayer-wheel-mani-stone-nepal"
-        ]
-      },
-      {
-        "title": "Cultural Immersion - Rest Day at Phale (Optional)",
-        "description": "This optional rest day in Phale provides an authentic window into Tibetan life. Witness morning Puja rituals at the local monastery, interact with refugees who've made this their home, and explore traditional wooden houses. While similar experiences await in Ghunsa, Phale's more intimate setting offers unique cultural insights.",
-        "distance": 0,
-        "elevation": 3256,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-prayer-flags",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/sorting-grains-mountain-village",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/buddhist-monastery-interior",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/cooking-dal-bhat-mountain-lodge",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/local-villagers-weaving-nets",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/local-woman-puja-burning",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/sifting-grains-bamboo-basket",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-grain-shelling-nepal",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/teahouse-kitchen-local-cooking",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-grain-mill-nepal"
-        ]
-      },
-      {
-        "title": "Forest to Peak Views - Hike to Khangpachen",
-        "description": "A challenging 18km day takes you through spectacular Larch forest, particularly stunning in autumn when the trees burst with orange hues. The steep ascent rewards with magnificent views of Jannu peak. Khangpachen's White Guest House offers both superior views and surprisingly good pizza - a welcome treat at this altitude.",
-        "distance": 18,
-        "elevation": 4111,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-hiking-trail-yellow-larch-trees",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-colors-mountain-river",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-hiking-trail-river",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/colorful-mountain-lodges-kanchenjunga"
-        ]
-      },
-      {
-        "title": "Jannu's Glory - Hike to Jannu Viewpoint (Optional)",
-        "description": "This 11km round-trip serves as an ideal acclimatization day, offering breathtaking views of Jannu's imposing face. The moderate difficulty makes it accessible while still providing essential altitude adaptation.",
-        "distance": 11,
-        "elevation": 4565
-      },
-      {
-        "title": "Hidden Gem - Hike to Nupchu Lake (Optional)",
-        "description": "A demanding 14km round-trip following unmarked yak trails and loose scree leads to the pristine Nupchu Lake. This less-traveled route offers solitude and stunning views of both the lake and Jannu, though it requires careful navigation and strong hiking skills.",
-        "distance": 14,
-        "elevation": 4856
-      },
-      {
-        "title": "Glacier Gateway - Hike to Lhonak",
-        "description": "The 11km trek to Lhonak provides your first glimpse of the massive Kanchenjunga Glacier. This smaller settlement offers several side-trip opportunities, from casual walks to the glacier's rim to exploring nearby sand dunes formed by Lhonak Glacier.",
-        "distance": 11,
-        "elevation": 4766,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-hiker-snowy-mountains",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/glacial-lake-kanchenjunga-trek",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-mountain-viewpoint-kanchenjunga",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hikers-silhouette-mountain-face",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-hiker-kanchenjunga-sunset"
-        ]
-      },
-      {
-        "title": "Northern Base Camp - Hike to Pangpema",
-        "description": "The 10km journey to Pangpema unfolds alongside the magnificent Kanchenjunga Glacier, though landslide areas require careful navigation. The simple accommodation - a rustic lodge with a few rooms and tents - requires advance planning, but the proximity to Kanchenjunga makes overnight stays worthwhile.",
-        "distance": 10,
-        "elevation": 5162,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-kanchenjunga-panorama",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-kanchenjunga-glacier-view",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-yellow-jacket-mountains",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/kanchenjunga-base-camp-tent"
-        ]
-      },
-      {
-        "title": "Summit Glory - Early Morning Summit of Drohmo Ri (Optional)",
-        "description": "This challenging 5km pre-dawn scramble to 6000m demands an early start (3-4am) but delivers perhaps the finest Himalayan panorama you'll ever witness. The technical ascent requires careful navigation in darkness, but sunrise views of Kanchenjunga justify every careful step. Depending on how you are feeling, you could return to Lhonak or Khangpachen (an extra 11-18km), or spend another night in Pangpema.",
-        "distance": 5,
-        "elevation": 5959,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-overlooking-kanchenjunga-mountains",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-yellow-jacket-cloud-sea",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-viewing-kanchenjunga-glacier-yellow-jacket",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/rocky-ridge-kanchenjunga-trek"
-        ]
-      },
-      {
-        "title": "Valley Return - Hike to Ghunsa",
-        "description": "This 20km descent from Lhonak to Ghunsa (shorter if starting from Khangpachen) offers a chance to reflect on your base camp achievement while enjoying relatively easier terrain. The long distance can be broken up with an extra night in Khangpachen if needed.",
-        "distance": 20,
-        "elevation": 4768,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-silhouette-mountain-peaks",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/himalayan-blue-sheep-grazing"
-        ]
-      },
-      {
-        "title": "Tibetan Heritage - Rest Day at Ghunsa (Optional)",
-        "description": "Ghunsa's larger setting provides multiple cultural opportunities, from visiting Tashi Chhyoling Monastery to hiking Ghunsa Viewpoint. For ambitious trekkers, the route to Olanchung Gola via Nango La pass offers an extended adventure into what was once a major Tibet-Nepal trading post. Check out my interactive map for more.",
-        "distance": 0,
-        "elevation": 3450,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-village-kanchenjunga-region",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/drying-tibetan-yak-dung",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/himalayan-mountain-goat",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-nepali-house-windows"
-        ]
-      },
-      {
-        "title": "Forest Ascent - Hike to Sele Le",
-        "description": "A moderate climb through rhododendron forests (spectacular in spring) leads to Sele Le's riverside teahouses. An optional 3km sunset hike to the ridge offers cloud-top views and another perspective of Jannu.",
-        "distance": 9,
-        "elevation": 4239,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/mossy-forest-path-kanchenjunga",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-steep-mountain-trail",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-wooden-bridge-mountain-stream",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/golden-sunset-clouds-himalayan-mountains",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-above-clouds-mountains",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/kanchenjunga-mountain-range-view"
-        ]
-      },
-      {
-        "title": "Pass Hopping - Hike to Tseram",
-        "description": "This 12km route traverses multiple passes, with a unique yurt teahouse en route. Watch for Makalu views and a stunning mountain lake before descending to Tseram's valley-nestled teahouses.",
-        "distance": 12,
-        "elevation": 4711,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/kanchenjunga-valley-glacier-view",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/alpine-lake-kanchenjunga-reflection"
-        ]
-      },
-      {
-        "title": "Glacier Views - Hike to Ramche",
-        "description": "An 8km gentle ascent along Yalung Glacier leads to Ramche, perfectly positioned for sunset views of snow-capped peaks. The nearby glacier rim offers an excellent evening excursion.",
-        "distance": 8,
-        "elevation": 4482,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-silhouette-kanchenjunga-peak",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-prayer-flags-mountains",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/kanchenjunga-glacier-valley",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/teahouse-cooking-fire-kanchenjunga-trek",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/teahouse-view-kanchenjunga-mountains"
-        ]
-      },
-      {
-        "title": "Southern Base Camp - Hike to Okhordung",
-        "description": "This 9km round-trip journey from Ramche follows the Yalung Glacier to South Base Camp, offering a completely different perspective of Kanchenjunga. After soaking in the majestic views, return to collect your gear at Ramche before descending back to Tseram for a well-earned rest.",
-        "distance": 17,
-        "elevation": 4785,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/buddhist-temple-kanchenjunga-view",
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-trekker-sunrise-mountains"
-        ]
-      },
-      {
-        "title": "Forest Descent - Hike to Tortong",
-        "description": "A gentler 9km day follows the Simbuwa Khola river through rhododendron forests. Tortong's riverside teahouses provide a tranquil setting to rest and reflect on the journey thus far.",
-        "distance": 9,
-        "elevation": 2995,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/porters-carrying-supplies-trek"
-        ]
-      },
-      {
-        "title": "Village Exploration - Hike to Hellok via Yalung Village",
-        "description": "This demanding 17km day features steep ridge traverses along the Simbuwa Khola. Yalung Village offers cultural insights worth exploring, and the spread-out settlement of Hellok awaits with its Dream Hotel, strategically located for tomorrow's jeep departure.",
-        "distance": 17,
-        "elevation": 2979,
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/green-valley-kanchenjunga-trek"
-        ]
-      },
-      {
-        "title": "Return Journey Begins - Drive to Taplejung",
-        "description": "A four-hour bumpy jeep ride marks your return to civilization as you retrace your path to Taplejung. The transition from trail to road offers time to reflect on your high-altitude adventures while readjusting to motorized transport.",
-        "distance": 0,
-        "elevation": 1442
-      },
-      {
-        "title": "Lowland Return - Drive to Birtamod or Bhadrapur",
-        "description": "Today's seven-hour journey on winding but paved roads takes you back to the terai (lowlands). The dramatic descent from mountains to plains provides a visual summary of Nepal's diverse geography.",
-        "distance": 178,
-        "elevation": 98
-      },
-      {
-        "title": "Journey's End - Fly to Kathmandu",
-        "description": "Your final mountain experience comes from the right-side window seat, offering (weather permitting) a farewell glimpse of the peaks you've come to know intimately over the past weeks. The flight to Kathmandu marks the end of your Kanchenjunga circuit, leaving you with memories of one of the Himalayas' most remarkable treks.",
-        "distance": 300,
-        "elevation": 1355
-      }
-    ]
-  },
-  "extra_sections": [
-    {
-      "title": "Hiring the Right Guide",
-      "id": "guide",
-      "description": "While the Kanchenjunga Base Camp Trek is possible without a guide - as evidenced by the occasional solo trekkers I encountered - I strongly recommend hiring one. A knowledgeable guide not only enhances safety and handles logistics like securing rooms at remote teahouses (crucial at places like North Base Camp), but also provides invaluable cultural insights and local connections that transform a challenging trek into a deeply enriching journey.",
-      "sections": [
-        {
-          "title": "My Recommended Trekking Agency",
-          "description": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at info@himalayan-masters.com and use the code <b>EAGER</b> to enjoy a 5% discount on your trip."
-        }
-      ]
-    }
-  ],
   "partnership": {
     "title": "My Recommended Trekking Agency",
     "description": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at info@himalayan-masters.com and use the code <b>EAGER</b> to enjoy a 5% discount on your trip.",
     "logo": "/src/assets/company-logos/himalayan-masters-logo.svg",
     "link": "https://himalayan-masters.com/"
   },
-  "highlights": {
-    "introduction": "",
-    "items": [
-      {
-        "title": "Drohmo Ri: A Summit I'll Never Forget",
-        "description": "Standing atop Drohmo Ri at sunrise remains one of my most treasured Himalayan moments. After a grueling pre-dawn scramble by headlamp, I reached the summit just as the first rays painted Kanchenjunga in brilliant orange. The 360-degree panorama of 8000m peaks piercing through a sea of clouds left me breathless – both literally and figuratively. Despite the biting wind and extreme altitude, I stayed for nearly an hour, mesmerized by the interplay of light and shadow across the world's third-highest mountain.",
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-yellow-jacket-kanchenjunga-cloud-sea"
-        ]
-      },
-      {
-        "title": "A Day in the Life of Phale",
-        "description": "My unplanned rest day in Phale transformed into an intimate glimpse of Tibetan Buddhist culture. Dawn found me huddled in the monastery's dim interior, watching crimson-robed monks perform their morning puja. The mystical echo of horns and chanting filled the small space as butter lamps flickered. Later, a local family invited me to help prepare tsampa in their traditional water mill. The rhythmic sound of grinding barley and the grandmother's weathered hands showing me the proper roasting technique created a connection that transcended our language barrier. That evening, sharing butter tea and a homemade meal around their hearth, I felt less like a trekker and more like a welcomed guest.",
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-prayer-flags"
-        ]
-      },
-      {
-        "title": "Sunset Above the Clouds at Sele Le",
-        "description": "After a challenging day's trek, I almost skipped the evening hike above Sele Le - a decision I'm thankful I reversed. The short but steep climb brought me to a ridge where the world seemed to fall away. As the sun descended, clouds filled the valleys below like a cotton sea, with only the mighty peaks of Jannu and Kanchenjunga rising above. The alpenglow transformed the snow-capped summits into burning bronze while prayer flags snapped in the wind. It was one of those perfect moments when time seems to stand still, and you realize why you trek in the first place.",
-        "images": [
-          "photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-trekker-cloud-sea"
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "introduction": "The Kanchenjunga Base Camp Trek offers a perfect blend of cultural immersion and high-altitude adventure in one of Nepal's more remote regions. This 24-day journey visits both North and South Base Camps, with highlights including the challenging Drohmo Ri summit, authentic Tibetan village life in Phale and Ghunsa, and spectacular mountain views from Sele Le. While my itinerary suggests certain side trips and rest days, the route's flexibility allows trekkers to craft their own experience \u2013 whether that means more acclimatization hikes, cultural exploration, or pushing straight through to the base camps.",
+      "content": {
+        "type": "images",
+        "paths": [
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/buddhist-temple-kanchenjunga-view",
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-hiking-trail-yellow-larch-trees",
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-prayer-flags",
+          "photos/countries/nepal/kanchenjunga-base-camp-trek/mossy-forest-trail-kanchenjunga"
         ]
       }
-    ]
-  }
+    },
+    {
+      "id": "basics",
+      "title": "Essential Information",
+      "content": {
+        "type": "list",
+        "items": [
+          {
+            "title": "Permits are required",
+            "description": "They must be arranged in Kathmandu - you'll need both the Kanchenjunga Conservation Area Permit (KCAP) and a Restricted Area Permit, which requires trekking with at least one other person."
+          },
+          {
+            "title": "This trek is remote",
+            "description": "Expect simple accommodations, limited menu options, and no internet or reliable electricity after Taplejung. Carry extra cash as there are no ATMs on the route."
+          },
+          {
+            "title": "Proper acclimatization is crucial",
+            "description": "The trek reaches high altitudes and multiple nights above 4000m or even 5000m. Build in rest days and side trips to adjust safely, and know the signs of altitude sickness."
+          },
+          {
+            "title": "Physical preparation is essential",
+            "description": "This is a challenging trek with long days, steep ascents/descents, and rough terrain. Prior high-altitude trekking experience is highly recommended."
+          }
+        ]
+      }
+    },
+    {
+      "id": "map",
+      "title": "Route Map",
+      "introduction": "This interactive map highlights the complete Kanchenjunga Base Camp Trek route, with the main trail marked in dark blue, optional side trips in light blue, and alternative routes in green. Icons indicate teahouses, viewpoints, and points of interest along the way. From Taplejung to both North and South Base Camps, every significant stop and scenic detour is clearly marked for easy route planning.",
+      "content": {
+        "type": "google-map",
+        "mapId": "1gvl0gvbYXEdExMZ7xI62RwYe7EO_j8o"
+      }
+    },
+    {
+      "id": "guide",
+      "title": "Hiring the Right Guide",
+      "introduction": "While the Kanchenjunga Base Camp Trek is possible without a guide - as evidenced by the occasional solo trekkers I encountered - I strongly recommend hiring one. A knowledgeable guide not only enhances safety and handles logistics like securing rooms at remote teahouses (crucial at places like North Base Camp), but also provides invaluable cultural insights and local connections that transform a challenging trek into a deeply enriching journey.",
+      "subsections": [
+        {
+          "title": "My Recommended Trekking Agency",
+          "description": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at info@himalayan-masters.com and use the code <b>EAGER</b> to enjoy a 5% discount on your trip."
+        }
+      ]
+    },
+    {
+      "id": "itinerary",
+      "title": "Itinerary",
+      "introduction": "This challenging 24-day trek explores both the north and south base camps of Kanchenjunga, the world's third-highest peak. The journey weaves through Tibetan villages, rhododendron forests, and glacial valleys, offering cultural immersion and stunning mountain views. Multiple acclimatization options and side trips allow for a personalized adventure.",
+      "content": {
+        "type": "itinerary",
+        "duration": "P24D",
+        "units": {
+          "phase": "Day",
+          "distance": "Distance",
+          "elevation": "Elevation"
+        },
+        "phases": [
+          {
+            "title": "Gateway to Adventure - Arrive in Kathmandu",
+            "description": "Your Kanchenjunga journey begins in the vibrant capital of Nepal. Take this day to acclimate to the bustling energy of Kathmandu, exploring ancient temples and narrow alleyways while gathering any last-minute supplies. The city's rich cultural heritage provides the perfect prelude to your upcoming trek.",
+            "distance": 0,
+            "elevation": 1355,
+            "images": [
+              "photos/countries/nepal/kathmandu/many-colorful-prayer-flags-thamel"
+            ]
+          },
+          {
+            "title": "Tea Country Bound - Fly to Bhadrapur, Drive to Fikkal",
+            "description": "Begin your day with an exhilarating 45-minute flight to Bhadrapur, where the Himalayas reveal themselves to left-side window seat passengers. The subsequent 4-hour jeep ride takes you through the verdant hills to Fikkal, a region renowned for its sprawling tea estates that mirror the famous gardens of nearby Darjeeling. The rolling hills covered in neat rows of tea bushes offer a serene introduction to eastern Nepal.",
+            "distance": 350,
+            "elevation": 1678
+          },
+          {
+            "title": "Mountain Roads - Drive to Taplejung",
+            "description": "Today's 7-8 hour jeep journey winds through the foothills on mostly well-maintained but serpentine roads. Taplejung serves as your last major hub before the trek, making it crucial to withdraw cash and stock up on supplies. The town's position offers your first real taste of mountain life and serves as a gateway to the higher reaches of Kanchenjunga.",
+            "distance": 178,
+            "elevation": 1442,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/jeep-transport-kanchenjunga-trek"
+            ]
+          },
+          {
+            "title": "Sacred Heights - Visit Pathibhara Devi Temple (Optional)",
+            "description": "For those seeking both spiritual enlightenment and acclimatization, this detour to Pathibhara Devi Temple at 3,800m is invaluable. The journey involves a two-hour bumpy jeep ride followed by a 10km round-trip hike. This sacred Hindu shrine not only offers religious significance but also serves as an excellent acclimatization opportunity with stunning mountain views.",
+            "distance": 10,
+            "elevation": 3800
+          },
+          {
+            "title": "River Valley Entry - Drive to Sekathum, Hike to Lamatar",
+            "description": "The adventure intensifies with a four-hour bumpy jeep ride followed by your first real trek - a 7km hike along the Ghunse Khola river. The path, while somewhat precarious, weaves through enchanting bamboo forests before reaching Lamatar. This small settlement, with its handful of teahouses perched near the rushing river, provides a peaceful first night on the trail.",
+            "distance": 7,
+            "elevation": 2018,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-lush-vegetation-river",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/wooden-bridge-mountain-stream",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/mountain-river-valley-houses",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/local-woman-chopping-firewood"
+            ]
+          },
+          {
+            "title": "Riverside Ascent - Hike to Gyabla",
+            "description": "Today's 13km trek follows the melodic Ghunse Khola, alternating between moss-draped stone steps and elevated paths above the river. Gyabla welcomes you with basic teahouses, but the optional 2km detour to Gyabla Old Village rewards adventurous souls with a magnificent stupa and authentic wooden Nepali architecture.",
+            "distance": 13,
+            "elevation": 2735,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/evening-campfire-teahouse",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-crossing-rocky-river",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-houses"
+            ]
+          },
+          {
+            "title": "Tibetan Haven - Hike to Phale",
+            "description": "An 8km journey continues along the Ghunse Khola, with more moss-covered stone steps creating a fairy-tale atmosphere. The path leads to Phale, a fascinating Tibetan refugee settlement that offers your first real glimpse into high-mountain culture.",
+            "distance": 8,
+            "elevation": 3256,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/mossy-forest-hiking-trail",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/stone-steps-kanchenjunga-trek-nepal",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/prayer-wheel-mani-stone-nepal"
+            ]
+          },
+          {
+            "title": "Cultural Immersion - Rest Day at Phale (Optional)",
+            "description": "This optional rest day in Phale provides an authentic window into Tibetan life. Witness morning Puja rituals at the local monastery, interact with refugees who've made this their home, and explore traditional wooden houses. While similar experiences await in Ghunsa, Phale's more intimate setting offers unique cultural insights.",
+            "distance": 0,
+            "elevation": 3256,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-prayer-flags",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/sorting-grains-mountain-village",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/buddhist-monastery-interior",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/cooking-dal-bhat-mountain-lodge",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/local-villagers-weaving-nets",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/local-woman-puja-burning",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/sifting-grains-bamboo-basket",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-grain-shelling-nepal",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/teahouse-kitchen-local-cooking",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-grain-mill-nepal"
+            ]
+          },
+          {
+            "title": "Forest to Peak Views - Hike to Khangpachen",
+            "description": "A challenging 18km day takes you through spectacular Larch forest, particularly stunning in autumn when the trees burst with orange hues. The steep ascent rewards with magnificent views of Jannu peak. Khangpachen's White Guest House offers both superior views and surprisingly good pizza - a welcome treat at this altitude.",
+            "distance": 18,
+            "elevation": 4111,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-hiking-trail-yellow-larch-trees",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-colors-mountain-river",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-hiking-trail-river",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/colorful-mountain-lodges-kanchenjunga"
+            ]
+          },
+          {
+            "title": "Jannu's Glory - Hike to Jannu Viewpoint (Optional)",
+            "description": "This 11km round-trip serves as an ideal acclimatization day, offering breathtaking views of Jannu's imposing face. The moderate difficulty makes it accessible while still providing essential altitude adaptation.",
+            "distance": 11,
+            "elevation": 4565
+          },
+          {
+            "title": "Hidden Gem - Hike to Nupchu Lake (Optional)",
+            "description": "A demanding 14km round-trip following unmarked yak trails and loose scree leads to the pristine Nupchu Lake. This less-traveled route offers solitude and stunning views of both the lake and Jannu, though it requires careful navigation and strong hiking skills.",
+            "distance": 14,
+            "elevation": 4856
+          },
+          {
+            "title": "Glacier Gateway - Hike to Lhonak",
+            "description": "The 11km trek to Lhonak provides your first glimpse of the massive Kanchenjunga Glacier. This smaller settlement offers several side-trip opportunities, from casual walks to the glacier's rim to exploring nearby sand dunes formed by Lhonak Glacier.",
+            "distance": 11,
+            "elevation": 4766,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-hiker-snowy-mountains",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/glacial-lake-kanchenjunga-trek",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-mountain-viewpoint-kanchenjunga",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hikers-silhouette-mountain-face",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-hiker-kanchenjunga-sunset"
+            ]
+          },
+          {
+            "title": "Northern Base Camp - Hike to Pangpema",
+            "description": "The 10km journey to Pangpema unfolds alongside the magnificent Kanchenjunga Glacier, though landslide areas require careful navigation. The simple accommodation - a rustic lodge with a few rooms and tents - requires advance planning, but the proximity to Kanchenjunga makes overnight stays worthwhile.",
+            "distance": 10,
+            "elevation": 5162,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-kanchenjunga-panorama",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-kanchenjunga-glacier-view",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-yellow-jacket-mountains",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/kanchenjunga-base-camp-tent"
+            ]
+          },
+          {
+            "title": "Summit Glory - Early Morning Summit of Drohmo Ri (Optional)",
+            "description": "This challenging 5km pre-dawn scramble to 6000m demands an early start (3-4am) but delivers perhaps the finest Himalayan panorama you'll ever witness. The technical ascent requires careful navigation in darkness, but sunrise views of Kanchenjunga justify every careful step. Depending on how you are feeling, you could return to Lhonak or Khangpachen (an extra 11-18km), or spend another night in Pangpema.",
+            "distance": 5,
+            "elevation": 5959,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-overlooking-kanchenjunga-mountains",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-yellow-jacket-cloud-sea",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-viewing-kanchenjunga-glacier-yellow-jacket",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/rocky-ridge-kanchenjunga-trek"
+            ]
+          },
+          {
+            "title": "Valley Return - Hike to Ghunsa",
+            "description": "This 20km descent from Lhonak to Ghunsa (shorter if starting from Khangpachen) offers a chance to reflect on your base camp achievement while enjoying relatively easier terrain. The long distance can be broken up with an extra night in Khangpachen if needed.",
+            "distance": 20,
+            "elevation": 4768,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-silhouette-mountain-peaks",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/himalayan-blue-sheep-grazing"
+            ]
+          },
+          {
+            "title": "Tibetan Heritage - Rest Day at Ghunsa (Optional)",
+            "description": "Ghunsa's larger setting provides multiple cultural opportunities, from visiting Tashi Chhyoling Monastery to hiking Ghunsa Viewpoint. For ambitious trekkers, the route to Olanchung Gola via Nango La pass offers an extended adventure into what was once a major Tibet-Nepal trading post. Check out my interactive map for more.",
+            "distance": 0,
+            "elevation": 3450,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-village-kanchenjunga-region",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/drying-tibetan-yak-dung",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/himalayan-mountain-goat",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-nepali-house-windows"
+            ]
+          },
+          {
+            "title": "Forest Ascent - Hike to Sele Le",
+            "description": "A moderate climb through rhododendron forests (spectacular in spring) leads to Sele Le's riverside teahouses. An optional 3km sunset hike to the ridge offers cloud-top views and another perspective of Jannu.",
+            "distance": 9,
+            "elevation": 4239,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/mossy-forest-path-kanchenjunga",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-steep-mountain-trail",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/autumn-wooden-bridge-mountain-stream",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/golden-sunset-clouds-himalayan-mountains",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-above-clouds-mountains",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/kanchenjunga-mountain-range-view"
+            ]
+          },
+          {
+            "title": "Pass Hopping - Hike to Tseram",
+            "description": "This 12km route traverses multiple passes, with a unique yurt teahouse en route. Watch for Makalu views and a stunning mountain lake before descending to Tseram's valley-nestled teahouses.",
+            "distance": 12,
+            "elevation": 4711,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/kanchenjunga-valley-glacier-view",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/alpine-lake-kanchenjunga-reflection"
+            ]
+          },
+          {
+            "title": "Glacier Views - Hike to Ramche",
+            "description": "An 8km gentle ascent along Yalung Glacier leads to Ramche, perfectly positioned for sunset views of snow-capped peaks. The nearby glacier rim offers an excellent evening excursion.",
+            "distance": 8,
+            "elevation": 4482,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-silhouette-kanchenjunga-peak",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/hiker-prayer-flags-mountains",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/kanchenjunga-glacier-valley",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/teahouse-cooking-fire-kanchenjunga-trek",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/teahouse-view-kanchenjunga-mountains"
+            ]
+          },
+          {
+            "title": "Southern Base Camp - Hike to Okhordung",
+            "description": "This 9km round-trip journey from Ramche follows the Yalung Glacier to South Base Camp, offering a completely different perspective of Kanchenjunga. After soaking in the majestic views, return to collect your gear at Ramche before descending back to Tseram for a well-earned rest.",
+            "distance": 17,
+            "elevation": 4785,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/buddhist-temple-kanchenjunga-view",
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-trekker-sunrise-mountains"
+            ]
+          },
+          {
+            "title": "Forest Descent - Hike to Tortong",
+            "description": "A gentler 9km day follows the Simbuwa Khola river through rhododendron forests. Tortong's riverside teahouses provide a tranquil setting to rest and reflect on the journey thus far.",
+            "distance": 9,
+            "elevation": 2995,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/porters-carrying-supplies-trek"
+            ]
+          },
+          {
+            "title": "Village Exploration - Hike to Hellok via Yalung Village",
+            "description": "This demanding 17km day features steep ridge traverses along the Simbuwa Khola. Yalung Village offers cultural insights worth exploring, and the spread-out settlement of Hellok awaits with its Dream Hotel, strategically located for tomorrow's jeep departure.",
+            "distance": 17,
+            "elevation": 2979,
+            "images": [
+              "photos/countries/nepal/kanchenjunga-base-camp-trek/green-valley-kanchenjunga-trek"
+            ]
+          },
+          {
+            "title": "Return Journey Begins - Drive to Taplejung",
+            "description": "A four-hour bumpy jeep ride marks your return to civilization as you retrace your path to Taplejung. The transition from trail to road offers time to reflect on your high-altitude adventures while readjusting to motorized transport.",
+            "distance": 0,
+            "elevation": 1442
+          },
+          {
+            "title": "Lowland Return - Drive to Birtamod or Bhadrapur",
+            "description": "Today's seven-hour journey on winding but paved roads takes you back to the terai (lowlands). The dramatic descent from mountains to plains provides a visual summary of Nepal's diverse geography.",
+            "distance": 178,
+            "elevation": 98
+          },
+          {
+            "title": "Journey's End - Fly to Kathmandu",
+            "description": "Your final mountain experience comes from the right-side window seat, offering (weather permitting) a farewell glimpse of the peaks you've come to know intimately over the past weeks. The flight to Kathmandu marks the end of your Kanchenjunga circuit, leaving you with memories of one of the Himalayas' most remarkable treks.",
+            "distance": 300,
+            "elevation": 1355
+          }
+        ]
+      }
+    },
+    {
+      "id": "highlights",
+      "title": "Personal Highlights",
+      "introduction": "",
+      "subsections": [
+        {
+          "title": "Drohmo Ri: A Summit I'll Never Forget",
+          "description": "Standing atop Drohmo Ri at sunrise remains one of my most treasured Himalayan moments. After a grueling pre-dawn scramble by headlamp, I reached the summit just as the first rays painted Kanchenjunga in brilliant orange. The 360-degree panorama of 8000m peaks piercing through a sea of clouds left me breathless \u2013 both literally and figuratively. Despite the biting wind and extreme altitude, I stayed for nearly an hour, mesmerized by the interplay of light and shadow across the world's third-highest mountain.",
+          "images": [
+            "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-yellow-jacket-kanchenjunga-cloud-sea"
+          ]
+        },
+        {
+          "title": "A Day in the Life of Phale",
+          "description": "My unplanned rest day in Phale transformed into an intimate glimpse of Tibetan Buddhist culture. Dawn found me huddled in the monastery's dim interior, watching crimson-robed monks perform their morning puja. The mystical echo of horns and chanting filled the small space as butter lamps flickered. Later, a local family invited me to help prepare tsampa in their traditional water mill. The rhythmic sound of grinding barley and the grandmother's weathered hands showing me the proper roasting technique created a connection that transcended our language barrier. That evening, sharing butter tea and a homemade meal around their hearth, I felt less like a trekker and more like a welcomed guest.",
+          "images": [
+            "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-prayer-flags"
+          ]
+        },
+        {
+          "title": "Sunset Above the Clouds at Sele Le",
+          "description": "After a challenging day's trek, I almost skipped the evening hike above Sele Le - a decision I'm thankful I reversed. The short but steep climb brought me to a ridge where the world seemed to fall away. As the sun descended, clouds filled the valleys below like a cotton sea, with only the mighty peaks of Jannu and Kanchenjunga rising above. The alpenglow transformed the snow-capped summits into burning bronze while prayer flags snapped in the wind. It was one of those perfect moments when time seems to stand still, and you realize why you trek in the first place.",
+          "images": [
+            "photos/countries/nepal/kanchenjunga-base-camp-trek/silhouette-trekker-cloud-sea"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Weather and Seasons",
+      "introduction": "While peak seasons offer the most reliable conditions for the Kanchenjunga Base Camp Trek, shoulder seasons present an intriguing alternative for adventurous trekkers. Early March or late November into December can reward the well-prepared hiker with solitude and unique experiences. You'll find empty trails, lower teahouse prices, and a raw beauty that peak-season trekkers miss. However, weather becomes more unpredictable - expect deeper snow at higher elevations, colder temperatures, and more frequent storms. Some teahouses may be closing or just opening for the season, so flexibility with your itinerary is essential. If you're experienced in winter hiking and don't mind carrying extra warm layers, shoulder season trekking offers an authentic glimpse into the harsh beauty of the Himalayas.",
+      "content": {
+        "type": "list",
+        "items": [
+          {
+            "title": "Spring (March to May)",
+            "description": "Clear mornings with afternoon clouds rolling in. Rhododendrons and wildflowers paint the lower valleys in vibrant colors. Expect occasional rain showers at lower elevations and possible snow at higher camps. Generally stable conditions make this the most popular trekking season."
+          },
+          {
+            "title": "Fall (October to November)",
+            "description": "The most reliable weather with crystal-clear mountain views. Crisp, cold nights and sunny days. Larch forests turn golden, creating stunning landscapes. Minimal precipitation, though sudden snowfall is possible at higher elevations. Temperatures drop significantly after sunset."
+          },
+          {
+            "title": "Winter (December to February)",
+            "description": "Bitterly cold conditions with frequent snowfall at higher elevations. Clear, sunny days when storms pass, offering spectacular mountain photography. Many teahouses close and high passes may become impassable. Only recommended for experienced winter trekkers."
+          },
+          {
+            "title": "Monsoon (June to September)",
+            "description": "Heavy rainfall at lower elevations makes trails slippery and leech-infested. Thick clouds often obscure mountain views. Higher elevations experience afternoon storms. Landslide risk increases significantly. Trekking during this season is not recommended."
+          }
+        ]
+      }
+    },
+    {
+      "id": "gear",
+      "title": "Recommended Gear",
+      "introduction": "Prepare for the remote Kanchenjunga Base Camp Trek with essential gear for extreme conditions. Pack a quality sleeping bag rated to at least -10\u00b0C (14\u00b0F), as teahouses at higher elevations are unheated. Layer your clothing with thermal base layers, a warm fleece, and a waterproof down jacket for unpredictable mountain weather. Sturdy hiking boots and trekking poles are crucial for challenging terrain. Carry water purification tablets, a headlamp with spare batteries, and a comprehensive first-aid kit as medical facilities are scarce. A reliable camera and substantial power bank are worth their weight, while flip-flops offer welcome relief after long hiking days. Don't forget sun protection - quality sunglasses, sunscreen, and a wide-brimmed hat are essential at high altitudes.",
+      "content": {
+        "type": "gear",
+        "trip": "kanchenjunga"
+      }
+    }
+  ]
 }
