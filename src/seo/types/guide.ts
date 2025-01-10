@@ -41,7 +41,11 @@ export function guideFrom({
     ...(description && { description }),
     author: authorFrom({ url }),
     ...(image && {
-      image: imageFromPath(url, image),
+      image: imageFromPath(
+        url,
+        image,
+        new URL("#primaryImage", url).toString()
+      ),
     }),
     ...(location && {
       contentLocation: {

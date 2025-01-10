@@ -42,7 +42,11 @@ export function articleFrom({
     author: authorFrom({ url }),
     publisher: organizationFrom({ url }),
     ...(image && {
-      image: imageFromPath(url, image),
+      image: imageFromPath(
+        url,
+        image,
+        new URL("#primaryImage", url).toString()
+      ),
     }),
     keywords,
   };
