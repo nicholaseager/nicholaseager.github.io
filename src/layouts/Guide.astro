@@ -36,11 +36,6 @@ const {
 const guides = await getCollection("guides");
 const guidesWithSimilarity = getSimilarGuides(guides, tags);
 
-interface TableOfContentsItem {
-  title: string;
-  id: string;
-}
-
 // Generate table of contents from sections
 const tableOfContents = sections.map((section) => ({
   title: section.id,
