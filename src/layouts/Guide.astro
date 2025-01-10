@@ -23,21 +23,14 @@ const {
   title,
   youtube,
   introduction,
-  links,
   description,
   conclusion,
   image,
   modified_date,
-  overview,
-  weather,
-  basics,
-  map,
-  extra_sections,
-  itinerary,
-  highlights,
-  gear,
   tags,
+  links,
   partnership,
+  sections,
 } = Astro.props;
 
 const guides = await getCollection("guides");
@@ -48,19 +41,19 @@ interface TableOfContentsItem {
   id: string;
 }
 
-// Generate table of contents based on available sections
-const tableOfContents: TableOfContentsItem[] = [
-  { title: "Overview", id: "overview", enabled: !!overview },
-  { title: "Basic Information", id: "basics", enabled: !!basics },
-  { title: "Weather", id: "weather", enabled: !!weather },
-  { title: "Map", id: "map", enabled: !!map },
-  { title: "Itinerary", id: "itinerary", enabled: !!itinerary },
-  { title: "Highlights", id: "highlights", enabled: !!highlights },
-  { title: "Gear", id: "gear", enabled: !!gear },
-].filter((item) => item.enabled);
+// Generate table of contents from sections
+const tableOfContents = sections.map((section) => ({
+  title: section.id,
+  id: section.id,
+}));
 ---
 
-<Layout title={title} description={description} image={image} navStyle="transparent">
+<Layout
+  title={title}
+  description={description}
+  image={image}
+  navStyle="transparent"
+>
   <Banner title={title} type="image" media={image} />
   <div class="my-8">
     <Intro
@@ -84,7 +77,7 @@ const tableOfContents: TableOfContentsItem[] = [
                   {l.title}
                 </LinkButton>
               </h1>
-            )
+            );
           })}
         </div>
       </ResponsiveWidth>
@@ -94,22 +87,84 @@ const tableOfContents: TableOfContentsItem[] = [
   <!-- Table of Contents -->
   <TableOfContents client:load items={tableOfContents} />
 
+  <!-- Sections -->
   <div class="space-y-4 md:space-y-8 my-8 md:my-16">
-    <!-- Overview -->
     {
-      overview && (
+      sections.map((section) => (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal" id="overview">Overview</Text>
+            <Text variant="h2" spacing="normal" id={section.id}>
+              {section.title}
+            </Text>
+            {section.introduction && (
+              <Text variant="body">{section.introduction}</Text>
+            )}
           </ResponsiveWidth>
-          <ResponsiveWidth size="lg">
-            <ImagesSwiper client:visible imagePaths={overview.images ?? []} />
-          </ResponsiveWidth>
-          <ResponsiveWidth size="md">
-            <Text variant="body">{overview.summary}</Text>
-          </ResponsiveWidth>
+
+          {section.content && (
+            <ResponsiveWidth
+              size={section.content.type === "list" ? "md" : "lg"}
+            >
+              {/* Handle different content types */}
+              {section.content.type === "images" && (
+                <ImagesSwiper
+                  client:visible
+                  imagePaths={section.content.paths}
+                />
+              )}
+
+              {section.content.type === "google-map" && (
+                <GoogleMap mapId={section.content.mapId} />
+              )}
+
+              {section.content.type === "itinerary" && (
+                <Itinerary client:visible itinerary={section.content.phases} />
+              )}
+
+              {section.content.type === "gear" && (
+                <GearSwiper client:visible trip={section.content.trip} />
+              )}
+
+              {section.content.type === "list" &&
+                section.content.items.map((item) => (
+                  <Text variant="body">
+                    <b>{item.title}: </b>
+                    {item.description}
+                  </Text>
+                ))}
+            </ResponsiveWidth>
+          )}
+
+          {section.subsections &&
+            section.subsections.length > 0 &&
+            section.subsections.map((subsection) => (
+              <>
+                <ResponsiveWidth size="md">
+                  <Text variant="h3" spacing="normal">
+                    {subsection.title}
+                  </Text>
+                </ResponsiveWidth>
+                {subsection.images && (
+                  <ResponsiveWidth size="lg">
+                    <ImagesSwiper
+                      client:visible
+                      imagePaths={subsection.images}
+                    />
+                  </ResponsiveWidth>
+                )}
+                <ResponsiveWidth size="md">
+                  <Text variant="body">{subsection.description}</Text>
+                </ResponsiveWidth>
+              </>
+            ))}
+
+          {section.conclusion && (
+            <ResponsiveWidth size="md">
+              <Text variant="body">{section.conclusion}</Text>
+            </ResponsiveWidth>
+          )}
         </>
-      )
+      ))
     }
 
     <!-- Partnership -->
@@ -117,172 +172,19 @@ const tableOfContents: TableOfContentsItem[] = [
       partnership && (
         <div class="bg-background-alt p-8">
           <ResponsiveWidth size="lg">
-          <Text variant="h2" spacing="normal">{partnership.title}</Text>
-          <Text variant="body" spacing="normal" id="overview">{partnership.description}</Text>
-          <div class="flex justify-center">
-            <a href={partnership.link} target="_blank">
-              <img src={partnership.logo} class="max-w-sm w-full h-full" />
-            </a>
-          </div>
+            <Text variant="h2" spacing="normal">
+              {partnership.title}
+            </Text>
+            <Text variant="body" spacing="normal" id="overview">
+              {partnership.description}
+            </Text>
+            <div class="flex justify-center">
+              <a href={partnership.link} target="_blank">
+                <img src={partnership.logo} class="max-w-sm w-full h-full" />
+              </a>
+            </div>
           </ResponsiveWidth>
         </div>
-      )
-    }
-
-    <!-- Basics -->
-    {
-      basics && (
-        <>
-          <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal" id="basics">Basic Information</Text>
-          </ResponsiveWidth>
-          {basics.items.map((item) => (
-            <ResponsiveWidth size="md">
-              <Text variant="body">
-                <b>{item.title}: </b>
-                {item.description}
-              </Text>
-            </ResponsiveWidth>
-          ))}
-        </>
-      )
-    }
-
-    <!-- Weather -->
-    {
-      weather && (
-        <>
-          <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal" id="weather">Weather</Text>
-            {weather.introduction && <Text variant="body">{weather.introduction}</Text>}
-          </ResponsiveWidth>
-          {weather.seasons?.map((item) => (
-            <ResponsiveWidth size="md">
-              <Text variant="body">
-                <b>{item.title}: </b>
-                {item.description}
-              </Text>
-            </ResponsiveWidth>
-          ))}
-        </>
-      )
-    }
-
-    <!-- Map -->
-    {
-      map && (
-        <>
-          <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal" id="map">Map</Text>
-            {map.introduction && <Text variant="body">{map.introduction}</Text>}
-          </ResponsiveWidth>
-          <ResponsiveWidth size="lg">
-            <GoogleMap mapId={map.id} />
-          </ResponsiveWidth>
-        </>
-      )
-    }
-
-    <!-- Extra Sections -->
-
-    {
-      extra_sections && extra_sections.length > 0 && (
-        <>
-          {
-            extra_sections.map((section) => {
-              return (
-                <>
-                <ResponsiveWidth size="md">
-                  <Text variant="h2" spacing="normal" id="map">{section.title}</Text>
-                  {section.description && <Text variant="body">{section.description}</Text>}
-                </ResponsiveWidth>
-
-                {
-                  section.sections?.map((subsection) => {
-                    return (
-                    <>
-                      <ResponsiveWidth size="md">
-                        <Text variant="h3" spacing="normal" id="map">{subsection.title}</Text>
-                      </ResponsiveWidth>
-                      {
-                        subsection.images && (
-                        <ResponsiveWidth size="lg">
-                          <ImagesSwiper imagePaths={subsection.images}/>
-                        </ResponsiveWidth>
-                        )
-                      }
-                      <ResponsiveWidth size="md">
-                        {subsection.description && <Text variant="body">{subsection.description}</Text>}
-                      </ResponsiveWidth>
-                    </>
-                    )
-                  })
-                }
-
-                </>
-              )
-            })
-          }
-        </>
-      )
-    }
-
-    <!-- Itinerary -->
-    {
-      itinerary && (
-        <>
-          <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal" id="itinerary">Itinerary</Text>
-            {itinerary.introduction && <Text variant="body">{itinerary.introduction}</Text>}
-          </ResponsiveWidth>
-          <ResponsiveWidth size="lg">
-            <Itinerary client:visible itinerary={itinerary.phases} />
-          </ResponsiveWidth>
-        </>
-      )
-    }
-
-    <!-- Highlights -->
-    {
-      highlights && (
-        <>
-          <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal" id="highlights">Highlights</Text>
-            {highlights.introduction && <Text variant="body">{highlights.introduction}</Text>}
-          </ResponsiveWidth>
-          {highlights.items.map((item) => (
-            <ResponsiveWidth size="md">
-              <Text variant="h3" spacing="normal">{item.title}</Text>
-            </ResponsiveWidth>
-            <ResponsiveWidth size="lg">
-              {item.images && (
-                <ImagesSwiper client:visible imagePaths={item.images} />
-              )}
-            </ResponsiveWidth>
-            <ResponsiveWidth size="md">
-              <Text variant="body">{item.description}</Text>
-            </ResponsiveWidth>
-          ))}
-        </>
-      )
-    }
-
-    <!-- Gear -->
-    {
-      gear && (
-        <>
-          <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal" id="gear">Gear</Text>
-            {gear.introduction && <Text variant="body">{gear.introduction}</Text>}
-          </ResponsiveWidth>
-          <ResponsiveWidth size="lg">
-            <GearSwiper client:visible trip={gear.trip} />
-          </ResponsiveWidth>
-          <ResponsiveWidth size="md">
-            <Text variant="body">The provided gear list is a suggestion, tailor it to your needs. Prioritize safety by packing and preparing well for a happy, adventurous hike. Interested in all of my gear recommendations? Click the button below to see what I recommend for filming, travel, and fun :)</Text>
-            <div class="mt-4"><LinkButton href="/gear">Explore All Gear</LinkButton></div>
-          </ResponsiveWidth>
-        </>
       )
     }
 
@@ -291,7 +193,9 @@ const tableOfContents: TableOfContentsItem[] = [
       conclusion && (
         <>
           <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal">Conclusion</Text>
+            <Text variant="h2" spacing="normal">
+              Conclusion
+            </Text>
             <Text variant="body">{conclusion}</Text>
           </ResponsiveWidth>
         </>
@@ -304,39 +208,47 @@ const tableOfContents: TableOfContentsItem[] = [
         <Text variant="h3" spacing="normal">You Might Also Like</Text>
       </ResponsiveWidth>
       <ResponsiveWidth size="lg">
-        <BaseSwiper client:visible items={guidesWithSimilarity} urlPrefix="guides" />
+        <BaseSwiper
+          client:visible
+          items={guidesWithSimilarity}
+          urlPrefix="guides"
+        />
       </ResponsiveWidth>
     </div>
 
     <!-- Comment -->
     <ResponsiveWidth size="md">
-      <Text variant="body">My site does not support public comments. Please use the form below to send a comment directly to me if you want to ask questions; I am happy to help.</Text>
+      <Text variant="body"
+        >My site does not support public comments. Please use the form below to
+        send a comment directly to me if you want to ask questions; I am happy
+        to help.</Text
+      >
     </ResponsiveWidth>
     <ResponsiveWidth size="lg">
-      <CommentForm/>
+      <CommentForm />
     </ResponsiveWidth>
 
     <!-- Disclosure -->
     <ResponsiveWidth size="md">
       <div class="space-y-4">
         <Text variant="custom" className="text-sm italic">
-          <span class="underline font-bold">
-            Safety Disclosure:
-          </span>
+          <span class="underline font-bold"> Safety Disclosure: </span>
           <span>
-            This travel guide is intended for educational purposes only. Readers are urged to conduct their due diligence,
-            verify current conditions, and research the most recent information independently. Conditions along trails and relevant
-            details may change, necessitating the confirmation of accurate and updated information from reliable sources or local
-            authorities before undertaking any travel or outdoor activities.
+            This travel guide is intended for educational purposes only. Readers
+            are urged to conduct their due diligence, verify current conditions,
+            and research the most recent information independently. Conditions
+            along trails and relevant details may change, necessitating the
+            confirmation of accurate and updated information from reliable
+            sources or local authorities before undertaking any travel or
+            outdoor activities.
           </span>
         </Text>
         <Text variant="custom" className="text-sm italic">
-          <span class="underline font-bold">
-            Affiliate Disclosure: 
-          </span>
-          <span>  
-            This travel guide contains affiliate links, which means I may earn a commission for purchases made through these
-            links at no cost to you. Your support helps sustain the creation of more content.
+          <span class="underline font-bold"> Affiliate Disclosure: </span>
+          <span>
+            This travel guide contains affiliate links, which means I may earn a
+            commission for purchases made through these links at no cost to you.
+            Your support helps sustain the creation of more content.
           </span>
         </Text>
       </div>

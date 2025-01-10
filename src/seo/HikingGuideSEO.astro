@@ -14,8 +14,31 @@ interface Props {
 const { guide } = Astro.props;
 const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const tools = guide.gear?.trip
-  ? gear.filter((g) => g.trips.includes(guide.gear!.trip))
+// Find the itinerary section
+const itinerarySection = guide.sections.find(
+  (section) => section.content?.type === "itinerary"
+);
+const itineraryContent =
+  itinerarySection?.content?.type === "itinerary"
+    ? itinerarySection.content
+    : undefined;
+
+// Find the gear section
+const gearSection = guide.sections.find(
+  (section) => section.content?.type === "gear"
+);
+const gearContent =
+  gearSection?.content?.type === "gear" ? gearSection.content : undefined;
+
+// Find the map section
+const mapSection = guide.sections.find(
+  (section) => section.content?.type === "google-map"
+);
+const mapContent =
+  mapSection?.content?.type === "google-map" ? mapSection.content : undefined;
+
+const tools = gearContent?.trip
+  ? gear.filter((g) => g.trips.includes(gearContent.trip))
   : [];
 ---
 
@@ -26,8 +49,8 @@ const tools = guide.gear?.trip
       url: currentPageCanonicalURL,
       datePublished: guide.date.toISOString(),
       dateModified: guide.modified_date.toISOString(),
-      totalTime: guide.itinerary?.duration,
-      steps: guide.itinerary?.phases.map((phase) => ({
+      totalTime: itineraryContent?.duration,
+      steps: itineraryContent?.phases.map((phase) => ({
         title: phase.title,
         description: phase.description,
         image: phase.images?.[0],
@@ -63,7 +86,7 @@ const tools = guide.gear?.trip
         name: guide.location.name,
         latitude: guide.location.latitude,
         longitude: guide.location.longitude,
-        mapId: guide.map?.id,
+        mapId: mapContent?.mapId,
       },
     }),
     guideFrom({
@@ -77,7 +100,7 @@ const tools = guide.gear?.trip
         name: guide.location.name,
         latitude: guide.location.latitude,
         longitude: guide.location.longitude,
-        mapId: guide.map?.id,
+        mapId: mapContent?.mapId,
       },
       targetAudience: "Intermediate Hikers",
     }),
