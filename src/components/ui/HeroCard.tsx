@@ -22,6 +22,8 @@ const HeroCard: React.FC<HeroCardProps> = ({
         <Image
           path={imagePath}
           className="absolute inset-0 w-full h-full object-cover"
+          // This assumes that the card is always used in a grid
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
         />
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white">
           <Text variant="h2" className="font-bold uppercase text-white">

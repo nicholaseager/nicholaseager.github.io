@@ -28,7 +28,11 @@ const ImagesSwiper: React.FC<ImagesSwiperProps> = ({ imagePaths }) => {
         {imagePaths.map((path, index) => (
           <SwiperSlide key={index}>
             <div className="rounded-lg shadow-lg overflow-hidden aspect-[16/9]">
-              <Image path={path} className="w-full h-full object-cover" />
+              <Image
+                path={path}
+                className="w-full h-full object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 85vw, 1080px"
+              />
             </div>
           </SwiperSlide>
         ))}
@@ -49,6 +53,7 @@ const ImagesSwiper: React.FC<ImagesSwiperProps> = ({ imagePaths }) => {
                 <Image
                   path={path}
                   className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity [.swiper-slide-thumb-active_&]:opacity-100"
+                  sizes="(max-width: 640px) 25vw, 160px"
                 />
               </div>
             </SwiperSlide>

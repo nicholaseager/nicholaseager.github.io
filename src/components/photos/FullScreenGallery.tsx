@@ -108,6 +108,7 @@ export default function FullScreenGallery({
               <Image
                 path={photo}
                 className="max-h-[100vh] max-w-[100vw] w-auto h-auto object-fill"
+                sizes="100vw"
               />
             </div>
           </SwiperSlide>

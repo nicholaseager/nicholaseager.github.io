@@ -32,6 +32,7 @@ export const GoogleMapModalWrapper: React.FC<GoogleMapModalWrapperProps> = ({
         <Image
           className="w-32 rounded-full aspect-square shadow-lg"
           path="profile-square_7r8XDOfQj"
+          sizes="128px"
         />
       </div>
       <h2 className="text-xl font-bold">Support Creator</h2>

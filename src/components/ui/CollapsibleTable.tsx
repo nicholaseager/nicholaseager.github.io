@@ -117,6 +117,7 @@ const CollapsibleTable: React.FC<Props> = ({
                               <Image
                                 path={img}
                                 className="w-full h-full object-cover rounded"
+                                sizes="(min-width: 640px) 96px, 80px"
                               />
                             </div>
                           ))}

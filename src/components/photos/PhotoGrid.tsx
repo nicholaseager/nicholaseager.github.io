@@ -31,7 +31,11 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos, onPhotoClick }) => {
               className="break-inside-avoid cursor-pointer"
               onClick={() => handlePhotoClick(index)}
             >
-              <Image path={photo} className="w-full h-auto object-cover" />
+              <Image
+                path={photo}
+                className="w-full h-auto object-cover"
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              />
             </div>
           </Card>
         ))}
