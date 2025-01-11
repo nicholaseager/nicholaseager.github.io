@@ -135,6 +135,14 @@ const tableOfContents = sections.map((section) => ({
                     {item.description}
                   </Text>
                 ))}
+
+              {section.content.type === "partnership" && (
+                <div class="flex justify-center">
+                  <a href={section.content.link} target="_blank">
+                    <img src={section.content.logo} class="max-w-sm w-full h-full" />
+                  </a>
+                </div>
+              )}
             </ResponsiveWidth>
           )}
 

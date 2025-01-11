@@ -27,12 +27,6 @@
       "url": "/gear"
     }
   ],
-  "partnership": {
-    "title": "My Recommended Trekking Agency",
-    "description": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at info@himalayan-masters.com and use the code <b>EAGER</b> to enjoy a 5% discount on your trip.",
-    "logo": "/src/assets/company-logos/himalayan-masters-logo.svg",
-    "link": "https://himalayan-masters.com/"
-  },
   "sections": [
     {
       "id": "overview",
@@ -46,6 +40,18 @@
           "photos/countries/nepal/kanchenjunga-base-camp-trek/traditional-mountain-village-prayer-flags",
           "photos/countries/nepal/kanchenjunga-base-camp-trek/mossy-forest-trail-kanchenjunga"
         ]
+      }
+    },
+    {
+      "id": "partnership",
+      "toc": false,
+      "background": "dark",
+      "title": "My Recommended Trekking Agency",
+      "introduction": "I collaborated with <b>Himalayan Masters</b> for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at info@himalayan-masters.com and use the code <b>EAGER</b> to enjoy a 5% discount on your trip.",
+      "content": {
+        "type": "partnership",
+        "logo": "/src/assets/company-logos/himalayan-masters-logo.svg",
+        "link": "https://himalayan-masters.com/"
       }
     },
     {

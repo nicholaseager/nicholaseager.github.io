@@ -125,6 +125,13 @@ const guides = defineCollection({
                 })
               ),
             }),
+
+            // Partnership
+            z.object({
+              type: z.literal("partnership"),
+              logo: z.string(),
+              link: z.string().url(),
+            }),
           ])
           .optional(),
       })
