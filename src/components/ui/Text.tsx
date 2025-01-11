@@ -52,9 +52,9 @@ function Text({
   // Add spacing variants
   const spacingVariants: Record<NonNullable<TextProps["spacing"]>, string> = {
     none: "",
-    normal: "mb-6 last:mb-0",
-    loose: "mb-8 last:mb-0",
-    tight: "mb-4 last:mb-0",
+    normal: "mb-4 last:mb-0",
+    loose: "mb-6 last:mb-0",
+    tight: "mb-2 last:mb-0",
   };
 
   // Dynamically determine which HTML element to render based on the variant
