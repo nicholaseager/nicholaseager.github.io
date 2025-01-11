@@ -2,6 +2,8 @@
 import TextInput from "./TextInput.astro";
 import Form from "./Form.astro";
 import Text from "../ui/Text";
+
+const { photo } = Astro.props;
 ---
 
 <Form
@@ -39,5 +41,6 @@ import Text from "../ui/Text";
     size="sm"
   />
 
-  <input type="hidden" name="_image" value={Astro.request.url} />
+  <input type="hidden" name="_subject" value=`Order print submission` />
+  <input type="hidden" name="_photo" value=`${photo}` />
 </Form>

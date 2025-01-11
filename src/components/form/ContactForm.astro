@@ -5,8 +5,6 @@ import Form from "./Form.astro";
 
 <Form
   action="https://formspree.io/f/mvolakjj"
-  emailSubject="Contact form submission"
-  confirmationUrl="/thanks"
   submitButtonText="Send Message"
   size="lg"
 >
@@ -31,4 +29,6 @@ import Form from "./Form.astro";
     multiline={true}
     size="lg"
   />
+
+  <input type="hidden" name="_subject" value="Contact submission" />
 </Form>

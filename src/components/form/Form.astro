@@ -1,12 +1,6 @@
 ---
 import Button from "../ui/Button";
-const {
-  action,
-  confirmationUrl,
-  emailSubject,
-  submitButtonText = "Submit",
-  size = "md",
-} = Astro.props;
+const { action, submitButtonText = "Submit", size = "md" } = Astro.props;
 
 type Size = "sm" | "md" | "lg";
 const sizes: Record<Size, string> = {
@@ -19,18 +13,8 @@ const sizes: Record<Size, string> = {
 <div
   class={`bg-background-alt rounded-lg shadow-lg mx-auto w-full ${sizes[size as Size]}`}
 >
-  <form method="post" action={action} class="space-y-4">
+  <form method="POST" action={action} class="space-y-4">
     <slot />
-
-    <input type="hidden" name="_next" value={confirmationUrl} />
-    <input type="hidden" name="_subject" value={emailSubject} />
-    <input
-      type="text"
-      name="_gotcha"
-      class="hidden"
-      tabindex="-1"
-      autocomplete="off"
-    />
 
     <Button type="submit" variant="primary" size={size}>
       {submitButtonText}

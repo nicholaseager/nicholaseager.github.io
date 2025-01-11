@@ -65,7 +65,7 @@ const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
                 </LinkButton>
               </div>
             ) : (
-              <OrderForm />
+              <OrderForm photo={path} />
             )
           }
           <Text variant="body">

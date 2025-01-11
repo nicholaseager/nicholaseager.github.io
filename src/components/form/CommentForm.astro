@@ -1,6 +1,8 @@
 ---
 import TextInput from "./TextInput.astro";
 import Form from "./Form.astro";
+
+const { guide = "Hiking Guide" } = Astro.props;
 ---
 
 <Form
@@ -28,5 +30,6 @@ import Form from "./Form.astro";
     multiline={true}
   />
 
-  <input type="hidden" name="_page" value={Astro.request.url} />
+  <input type="hidden" name="_subject" value=`Comment submission` />
+  <input type="hidden" name="_guide" value=`${guide}` />
 </Form>
