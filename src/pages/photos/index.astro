@@ -66,6 +66,7 @@ const countries = locations
           sortedThemes.map((theme) => (
             <HeroCard
               title={theme.data.title}
+              subtitle={`${theme.data.photos.length} photo${theme.data.photos.length !== 1 ? "s" : ""}`}
               imagePath={theme.data.previewImage}
               href={`/photos/themes/${theme.id}`}
             />
