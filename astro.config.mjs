@@ -8,7 +8,6 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.nicholaseager.com",
-  base: "/website/",
   integrations: [react(), sitemap(), tailwind(), mdx()],
   experimental: {
     svg: true,
