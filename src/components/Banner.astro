@@ -1,7 +1,8 @@
 ---
-import ReactImage from "./image-kit/Image.tsx";
+import Image from "./image-kit/Image.tsx";
 import Video from "./image-kit/Video.tsx";
-const { title, subtitle, media, type } = Astro.props;
+const { title, subtitle, media, type, videoPlaceholder, videoLowRes } =
+  Astro.props;
 ---
 
 <section
@@ -10,15 +11,27 @@ const { title, subtitle, media, type } = Astro.props;
 >
   {
     type === "image" && (
-      <ReactImage path={media} className="object-cover w-full h-full" />
+      <Image
+        path={media}
+        className="object-cover w-full h-full"
+        sizes="100vw"
+      />
     )
   }
   {
     type === "video" && (
-      <Video
-        path={media}
-        className="absolute top-0 w-full h-full object-cover"
-      />
+      <>
+        <Image
+          path={videoPlaceholder}
+          className="absolute top-0 w-full h-full object-cover"
+          sizes="100vw"
+        />
+        <Video
+          path={media}
+          lowResPath={videoLowRes}
+          className="absolute top-0 w-full h-full object-cover"
+        />
+      </>
     )
   }
   <div
