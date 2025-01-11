@@ -257,23 +257,31 @@
       "title": "Weather and Seasons",
       "introduction": "The weather on the Pikey Peak Trek varies by season. Regardless of season, layers are essential as temperatures fluctuate.",
       "content": {
-        "type": "list",
-        "items": [
+        "type": "weather",
+        "seasons": [
           {
-            "title": "Spring",
-            "description": "The best time to hike the Pikey Peak to see the area in bloom is in the spring, from March to May. The rhododendrons, Nepal's national flower, are in full bloom, and the weather is mild. Additionally, there are fewer people on the trails, which makes for a more tranquil trekking experience."
+            "name": "Spring",
+            "months": "March to May",
+            "conditions": "Mild weather with rhododendrons in bloom",
+            "bestFor": ["Photography", "Solitude", "Flowers"]
           },
           {
-            "title": "Autumn",
-            "description": "The most well-liked trekking season in Nepal is the autumn (September to November), and for good reason. The ideal conditions for trekking are provided by the clear, dry weather. Great views of the mountains are also made possible by the clear skies. But be aware that the trails might be very busy at this time."
+            "name": "Autumn",
+            "months": "September to November",
+            "conditions": "Clear, dry weather with great mountain views",
+            "bestFor": ["Views", "Trekking"]
           },
           {
-            "title": "Winter",
-            "description": "It is not advised to trek the Pikey Peak during the winter (December-February) because the trails can be icy and snow-covered, which makes them dangerous. In addition, it is extremely cold outside, and there is a lot of snow up higher, making trekking more difficult. However, going in the shoulder season or off season has its benefits."
+            "name": "Winter",
+            "months": "December to February",
+            "conditions": "Cold with snow and ice, dangerous conditions",
+            "bestFor": ["Low crowds"]
           },
           {
-            "title": "Summer",
-            "description": "The Pikey Peak should not be hiked during Nepal's monsoon season, which lasts from June-August. Since the trails are frequently muddy and slippery, it can be challenging and unpleasant to hike when it rains heavily. The trails may also become impassable in some areas due to landslides and flooding brought on by the heavy rain."
+            "name": "Summer",
+            "months": "June to August",
+            "conditions": "Heavy rain with muddy and slippery trails",
+            "bestFor": ["Budget trips"]
           }
         ]
       }

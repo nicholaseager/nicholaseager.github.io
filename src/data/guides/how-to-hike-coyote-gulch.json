@@ -135,21 +135,26 @@
     {
       "id": "weather",
       "title": "Weather and Seasons",
-      "introduction": "",
+      "conclusion": "The best times to visit Coyote Gulch are during spring and fall when temperatures are mild and the landscape is at its most beautiful. Spring brings vibrant wildflowers, while fall offers crisp weather and colorful foliage. Summer can be dangerously hot with temperatures soaring and frequent afternoon thunderstorms, requiring extra precaution and early morning starts.",
       "content": {
-        "type": "list",
-        "items": [
+        "type": "weather",
+        "seasons": [
           {
-            "title": "Spring (March to May)",
-            "description": "Spring in Coyote Gulch brings mild temperatures and occasional rain showers. The canyon comes alive with vibrant wildflowers and lush vegetation. While the weather is generally pleasant, be prepared for cool evenings and the possibility of rain."
+            "name": "Spring",
+            "months": "March to May",
+            "conditions": "Mild temps with occasional rain showers",
+            "bestFor": ["Wildflowers", "Photography", "Hiking"]
           },
           {
-            "title": "Fall (September to November)",
-            "description": "Fall offers perfect weather for hiking in Coyote Gulch. The scorching summer heat gives way to crisp, clear days and cool nights. The changing leaves add a splash of color to the already stunning landscape. This is a popular time to visit, so expect to encounter more fellow hikers on the trail."
+            "name": "Fall",
+            "months": "September to November",
+            "conditions": "Clear, crisp days with cool nights",
+            "bestFor": ["Hiking", "Camping", "Photography"]
           },
           {
-            "title": "Summer (June to August)",
-            "description": "Summers in Coyote Gulch are hot and dry, with intense sunlight reflecting off the red rock walls. The heat can be oppressive during midday, making early morning and late afternoon hikes more comfortable. Thunderstorms are common in the afternoons, so be mindful of the weather and seek shelter if necessary."
+            "name": "Summer",
+            "months": "June to August",
+            "conditions": "Hot and dry with afternoon thunderstorms"
           }
         ]
       }

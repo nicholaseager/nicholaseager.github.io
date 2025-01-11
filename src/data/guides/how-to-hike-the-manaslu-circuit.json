@@ -250,23 +250,31 @@
       "title": "Weather and Seasons",
       "introduction": "Depending on your personal preferences and the kind of trekking experience you're looking for, there is no one best time to hike the Manaslu Circuit. The two main trekking seasons in Nepal are, however, generally the spring (March to May) and the fall (September to November) seasons.",
       "content": {
-        "type": "list",
-        "items": [
+        "type": "weather",
+        "seasons": [
           {
-            "title": "Spring",
-            "description": "The best time to hike the Manaslu Circuit to see the area in bloom is in the spring, from March to May. The rhododendrons, Nepal's national flower, are in full bloom, and the weather is mild. Additionally, there are fewer people on the trails, which makes for a more tranquil trekking experience."
+            "name": "Spring",
+            "months": "March to May",
+            "conditions": "Mild weather, blooming rhododendrons, fewer trekkers",
+            "bestFor": ["Flowers", "Peace", "Photos"]
           },
           {
-            "title": "Autumn",
-            "description": "The most well-liked trekking season in Nepal is the autumn (September to November), and for good reason. The ideal conditions for trekking are provided by the clear, dry weather. Great views of the mountains are also made possible by the clear skies. But be aware that the trails might be very busy at this time."
+            "name": "Autumn",
+            "months": "September to November",
+            "conditions": "Clear dry weather, best mountain views, busy trails",
+            "bestFor": ["Views", "Weather"]
           },
           {
-            "title": "Winter",
-            "description": "It is not advised to trek the Manaslu Circuit during the winter (December-February) because the trails can be icy and snow-covered, which makes them dangerous. In addition, it is extremely cold outside, and there is a lot of snow up higher, making trekking more difficult. However, going in the shoulder season or off season has its benefits. We went in December and couldn't have been happier because we had clear skies and few people but you might still encounter deep snow in Larka Pass. "
+            "name": "Winter",
+            "months": "December to February",
+            "conditions": "Cold temps, icy trails, deep snow at high altitude",
+            "bestFor": ["Few crowds"]
           },
           {
-            "title": "Summer",
-            "description": "The Manaslu Circuit should not be hiked during Nepal's monsoon season, which lasts from June-August. Since the trails are frequently muddy and slippery, it can be challenging and unpleasant to hike when it rains heavily. The trails may also become impassable in some areas due to landslides and flooding brought on by the heavy rain."
+            "name": "Summer",
+            "months": "June to August",
+            "conditions": "Heavy rain, muddy trails, landslide risk",
+            "bestFor": ["Budget travel"]
           }
         ]
       }

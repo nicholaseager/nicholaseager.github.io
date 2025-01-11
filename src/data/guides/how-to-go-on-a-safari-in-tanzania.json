@@ -238,17 +238,21 @@
     {
       "id": "weather",
       "title": "Weather and Seasons",
-      "introduction": "The best time to visit Tanzania depends on your interests and what you hope to see and do while you are there. Depending on the season, Tanzania's weather can change dramatically.",
+      "conclusion": "The best time to visit Tanzania depends on your interests and what you hope to see and do while you are there. Depending on the season, Tanzania's weather can change dramatically.",
       "content": {
-        "type": "list",
-        "items": [
+        "type": "weather",
+        "seasons": [
           {
-            "title": "Dry Season",
-            "description": "From June to October, there is a dry season marked by little to no rain and clear skies. The vegetation is scarce at this time of year, which makes it easier to see wildlife, making it the best time to go on a safari in Tanzania."
+            "name": "Dry Season",
+            "months": "June to October",
+            "conditions": "Little rain, clear skies, scarce vegetation",
+            "bestFor": ["Wildlife", "Safari", "Visibility"]
           },
           {
-            "title": "Wet Season",
-            "description": "The wet season, which lasts from November to May, is distinguished by torrential downpours, thunderstorms, and sporadic flooding. Even though going on a safari during this time of year may be less convenient, it is still possible to see wildlife, and the lush green surroundings can be quite lovely."
+            "name": "Wet Season",
+            "months": "November to May",
+            "conditions": "Heavy rain, thunderstorms, occasional flooding",
+            "bestFor": ["Photography", "Scenery", "Low crowds"]
           }
         ]
       }

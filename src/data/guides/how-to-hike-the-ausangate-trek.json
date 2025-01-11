@@ -176,15 +176,19 @@
       "title": "Weather and Seasons",
       "introduction": "Embarking on the Ausangate Trek means navigating through diverse weather conditions dictated by the Andean seasons. From the crisp freshness of Spring to the snowy landscapes of Winter, each season brings a unique charm to this high-altitude adventure.",
       "content": {
-        "type": "list",
-        "items": [
+        "type": "weather",
+        "seasons": [
           {
-            "title": "Dry Season (May to September)",
-            "description": "Stable, dry weather prevails. Days are sunny and warm, ideal for trekking. Nights get cold, often below freezing."
+            "name": "Dry Season",
+            "months": "May to September",
+            "conditions": "Sunny days, clear skies, freezing nights",
+            "bestFor": ["Photography", "Hiking", "Camping"]
           },
           {
-            "title": "Wet Season (October to April)",
-            "description": "Increased rainfall, especially from November to March. Expect rain, mist, and fog. Trails may become muddy and slippery. Lush greenery and blooming flowers enhance scenery."
+            "name": "Wet Season",
+            "months": "October to April",
+            "conditions": "Frequent rain, mist and fog, muddy trails",
+            "bestFor": ["Wildflowers", "Greenery"]
           }
         ]
       }

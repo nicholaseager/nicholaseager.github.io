@@ -394,25 +394,33 @@
     {
       "id": "weather",
       "title": "Weather and Seasons",
-      "introduction": "While peak seasons offer the most reliable conditions for the Kanchenjunga Base Camp Trek, shoulder seasons present an intriguing alternative for adventurous trekkers. Early March or late November into December can reward the well-prepared hiker with solitude and unique experiences. You'll find empty trails, lower teahouse prices, and a raw beauty that peak-season trekkers miss. However, weather becomes more unpredictable - expect deeper snow at higher elevations, colder temperatures, and more frequent storms. Some teahouses may be closing or just opening for the season, so flexibility with your itinerary is essential. If you're experienced in winter hiking and don't mind carrying extra warm layers, shoulder season trekking offers an authentic glimpse into the harsh beauty of the Himalayas.",
+      "conclusion": "While peak seasons offer the most reliable conditions for the Kanchenjunga Base Camp Trek, shoulder seasons present an intriguing alternative for adventurous trekkers. Early March or late November into December can reward the well-prepared hiker with solitude and unique experiences. You'll find empty trails, lower teahouse prices, and a raw beauty that peak-season trekkers miss. However, weather becomes more unpredictable - expect deeper snow at higher elevations, colder temperatures, and more frequent storms. Some teahouses may be closing or just opening for the season, so flexibility with your itinerary is essential. If you're experienced in winter hiking and don't mind carrying extra warm layers, shoulder season trekking offers an authentic glimpse into the harsh beauty of the Himalayas.",
       "content": {
-        "type": "list",
-        "items": [
+        "type": "weather",
+        "seasons": [
           {
-            "title": "Spring (March to May)",
-            "description": "Clear mornings with afternoon clouds rolling in. Rhododendrons and wildflowers paint the lower valleys in vibrant colors. Expect occasional rain showers at lower elevations and possible snow at higher camps. Generally stable conditions make this the most popular trekking season."
+            "name": "Spring",
+            "months": "March to May",
+            "conditions": "Clear mornings, afternoon clouds, occasional rain/snow",
+            "bestFor": ["Photography", "Wildflowers", "Mild weather"]
           },
           {
-            "title": "Fall (October to November)",
-            "description": "The most reliable weather with crystal-clear mountain views. Crisp, cold nights and sunny days. Larch forests turn golden, creating stunning landscapes. Minimal precipitation, though sudden snowfall is possible at higher elevations. Temperatures drop significantly after sunset."
+            "name": "Fall",
+            "months": "October to November",
+            "conditions": "Clear skies, cold nights, minimal precipitation",
+            "bestFor": ["Mountain views", "Golden forests", "Stable weather"]
           },
           {
-            "title": "Winter (December to February)",
-            "description": "Bitterly cold conditions with frequent snowfall at higher elevations. Clear, sunny days when storms pass, offering spectacular mountain photography. Many teahouses close and high passes may become impassable. Only recommended for experienced winter trekkers."
+            "name": "Winter",
+            "months": "December to February",
+            "conditions": "Bitterly cold with frequent snow at high elevations",
+            "bestFor": ["Photography", "Solitude", "Low costs"]
           },
           {
-            "title": "Monsoon (June to September)",
-            "description": "Heavy rainfall at lower elevations makes trails slippery and leech-infested. Thick clouds often obscure mountain views. Higher elevations experience afternoon storms. Landslide risk increases significantly. Trekking during this season is not recommended."
+            "name": "Monsoon",
+            "months": "June to September",
+            "conditions": "Heavy rain, clouds, high landslide risk",
+            "bestFor": ["Budget travel", "Local culture", "Greenery"]
           }
         ]
       }

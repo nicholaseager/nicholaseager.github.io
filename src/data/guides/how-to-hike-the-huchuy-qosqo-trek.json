@@ -191,15 +191,19 @@
       "title": "Weather and Seasons",
       "introduction": "For an optimal trekking experience near Cusco, it's crucial to consider the distinct rainy and dry seasons that shape the region's climate. The dry season, spanning from May to October, stands out as the ideal period for hiking enthusiasts.",
       "content": {
-        "type": "list",
-        "items": [
+        "type": "weather",
+        "seasons": [
           {
-            "title": "Dry Season (May to October)",
-            "description": "Ideal for hiking near Cusco with stable weather, minimal rainfall, and clear skies, providing optimal conditions for breathtaking views and comfortable exploration."
+            "name": "Dry Season",
+            "months": "May to October",
+            "conditions": "Stable weather, minimal rain, clear skies",
+            "bestFor": ["Photography", "Hiking", "Views"]
           },
           {
-            "title": "Rainy Season (November to April)",
-            "description": "Presents challenges with intermittent heavy rainfall, muddy trails, and reduced visibility, but offers a unique perspective with lush, vibrant landscapes for those seeking an adventurous experience."
+            "name": "Rainy Season",
+            "months": "November to April",
+            "conditions": "Heavy rain, muddy trails, reduced visibility",
+            "bestFor": ["Green scenery", "Waterfalls"]
           }
         ]
       }
