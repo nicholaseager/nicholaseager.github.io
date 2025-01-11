@@ -50,6 +50,7 @@ const guides = defineCollection({
         title: z.string(),
         introduction: z.string().optional(),
         conclusion: z.string().optional(),
+        background: z.enum(["default", "dark"]).optional(),
         subsections: z
           .array(
             z.object({

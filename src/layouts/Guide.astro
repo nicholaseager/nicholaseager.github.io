@@ -89,7 +89,9 @@ const tableOfContents = sections.map((section) => ({
   <div class="space-y-4 md:space-y-8 my-8 md:my-16">
     {
       sections.map((section) => (
-        <>
+        <div
+          class=`${section.background === "dark" ? "bg-background-alt py-8" : ""} space-y-4 md:space-y-8`
+        >
           <ResponsiveWidth size="md">
             <Text variant="h2" spacing="normal" id={section.id}>
               {section.title}
@@ -164,7 +166,7 @@ const tableOfContents = sections.map((section) => ({
               <Text variant="body">{section.conclusion}</Text>
             </ResponsiveWidth>
           )}
-        </>
+        </div>
       ))
     }
 
