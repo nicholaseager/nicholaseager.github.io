@@ -207,7 +207,7 @@ const tableOfContents = sections
     }
 
     <!-- Similar Guides -->
-    <div>
+    <div class="space-y-4 md:space-y-8">
       <ResponsiveWidth size="md">
         <Text variant="h3" spacing="normal">You Might Also Like</Text>
       </ResponsiveWidth>
@@ -215,7 +215,7 @@ const tableOfContents = sections
         <BaseSwiper
           client:visible
           items={guidesWithSimilarity}
-          urlPrefix="guides"
+          urlPrefix="/guides"
         />
       </ResponsiveWidth>
     </div>
