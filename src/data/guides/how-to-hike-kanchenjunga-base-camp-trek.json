@@ -51,7 +51,10 @@
       "content": {
         "type": "partnership",
         "logo": "/company-logos/himalayan-masters-logo.svg",
-        "link": "https://himalayan-masters.com/"
+        "cta": {
+          "title": "Book Your Trip (using code 'EAGER')",
+          "url": "https://himalayan-masters.com/trip/kanchenjunga-circuit-trek/"
+        }
       }
     },
     {
@@ -97,7 +100,11 @@
           "title": "My Recommended Trekking Agency",
           "description": "I collaborated with Himalayan Masters for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable. To book your own trek, contact them via email at info@himalayan-masters.com and use the code EAGER to enjoy a 5% discount on your trip."
         }
-      ]
+      ],
+      "cta": {
+        "title": "Book Your Trip (using code 'EAGER')",
+        "url": "https://himalayan-masters.com/trip/kanchenjunga-circuit-trek/"
+      }
     },
     {
       "id": "itinerary",

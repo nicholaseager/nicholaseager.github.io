@@ -165,13 +165,22 @@ const tableOfContents = sections
                 ))}
 
               {section.content.type === "partnership" && (
-                <div class="flex justify-center">
-                  <a href={section.content.link} target="_blank">
+                <div class="flex flex-col gap-8 justify-center items-center">
+                  <a href={section.content.cta?.url} target="_blank">
                     <img
                       src={section.content.logo}
                       class="max-w-sm w-full h-full"
                     />
                   </a>
+                  {section.content.cta && (
+                    <LinkButton
+                      href={section.content.cta?.url}
+                      target="_blank"
+                      size="sm"
+                    >
+                      {section.content.cta?.title}
+                    </LinkButton>
+                  )}
                 </div>
               )}
 
@@ -186,7 +195,7 @@ const tableOfContents = sections
             section.subsections.map((subsection) => (
               <>
                 <ResponsiveWidth size="md">
-                  <Text variant="h3" spacing="normal">
+                  <Text variant="h3" spacing="tight">
                     {subsection.title}
                   </Text>
                 </ResponsiveWidth>
@@ -207,6 +216,14 @@ const tableOfContents = sections
           {section.conclusion && (
             <ResponsiveWidth size="md">
               <Text variant="body">{section.conclusion}</Text>
+            </ResponsiveWidth>
+          )}
+
+          {section.cta && (
+            <ResponsiveWidth size="md">
+              <LinkButton href={section.cta.url} target="_blank" size="md">
+                {section.cta.title}
+              </LinkButton>
             </ResponsiveWidth>
           )}
         </div>

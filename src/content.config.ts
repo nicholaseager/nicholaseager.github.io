@@ -44,6 +44,12 @@ const guides = defineCollection({
         conclusion: z.string().optional(),
         background: z.enum(["default", "dark"]).optional(),
         toc: z.boolean().optional(),
+        cta: z
+          .object({
+            title: z.string(),
+            url: z.string().url(),
+          })
+          .optional(),
         subsections: z
           .array(
             z.object({
@@ -110,7 +116,12 @@ const guides = defineCollection({
             z.object({
               type: z.literal("partnership"),
               logo: z.string(),
-              link: z.string().url(),
+              cta: z
+                .object({
+                  title: z.string(),
+                  url: z.string().url(),
+                })
+                .optional(),
             }),
 
             // Weather

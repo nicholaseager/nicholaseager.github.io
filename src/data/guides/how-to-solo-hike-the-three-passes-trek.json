@@ -48,7 +48,10 @@
       "content": {
         "type": "partnership",
         "logo": "/company-logos/himalayan-masters-logo.svg",
-        "link": "https://himalayan-masters.com/"
+        "cta": {
+          "title": "Book Your Trip (using code 'EAGER')",
+          "url": "https://himalayan-masters.com/trip/kanchenjunga-circuit-trek/"
+        }
       }
     },
     {
