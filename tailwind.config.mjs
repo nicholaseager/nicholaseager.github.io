@@ -125,7 +125,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Poppins", "sans-serif"],
+        sans: ["Poppins", "system-ui", "sans-serif"],
+        title: ["Poppins", "system-ui", "sans-serif"],
       },
     },
   },

@@ -1,8 +1,4 @@
 ---
-// Import the fonts.css file here so that it is included on
-// all pages through the use of the <Layout /> component.
-import "../styles/fonts.css";
-
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer.astro";
 import KofiWidget from "../components/KoFiWidget.astro";
@@ -29,57 +25,13 @@ const {
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Global Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-
-    <!-- Font preloads -->
-    <link
-      rel="preload"
-      href="/fonts/poppins/poppins-bold-webfont.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <link
-      rel="preload"
-      href="/fonts/poppins/poppins-light-webfont.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <link
-      rel="preload"
-      href="/fonts/poppins/poppins-medium-webfont.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <link
-      rel="preload"
-      href="/fonts/poppins/poppins-regular-webfont.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <link
-      rel="preload"
-      href="/fonts/poppins/poppins-semibold-webfont.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
     <!-- SEO -->
     <Head title={title} description={description} image={image} />
-
-    <!-- Analytics -->
+    <!-- End SEO -->
     <GoogleAnalytics />
   </head>
   <body>
