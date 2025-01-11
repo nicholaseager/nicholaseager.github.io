@@ -121,7 +121,7 @@ const guides = defineCollection({
                   name: z.string(),
                   months: z.string(),
                   conditions: z.string(),
-                  bestFor: z.array(z.string()),
+                  bestFor: z.array(z.string()).optional(),
                 })
               ),
             }),

@@ -6,7 +6,7 @@ export interface Season {
   name: string;
   months: string;
   conditions: string;
-  bestFor: string[];
+  bestFor?: string[];
 }
 
 interface HikingSeasonsGridProps {
@@ -26,18 +26,20 @@ const HikingSeasonsGrid: React.FC<HikingSeasonsGridProps> = ({ seasons }) => {
             <Text variant="body" spacing="tight">
               {season.conditions}
             </Text>
-            <div className="mt-auto">
-              <Text variant="h6">Best For:</Text>
-              <ul className="list-disc list-inside text-slate-500">
-                {season.bestFor.map((activity) => (
-                  <li key={activity}>
-                    <Text variant="body" className="inline text-slate-500">
-                      {activity}
-                    </Text>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {season.bestFor && (
+              <div className="mt-auto">
+                <Text variant="h6">Best For:</Text>
+                <ul className="list-disc list-inside text-slate-500">
+                  {season.bestFor.map((activity) => (
+                    <li key={activity}>
+                      <Text variant="body" className="inline text-slate-500">
+                        {activity}
+                      </Text>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </Card>
       ))}
