@@ -10,21 +10,27 @@ interface ItineraryPhase {
 }
 
 interface Props {
+  phaseLabel?: string;
   itinerary: ItineraryPhase[];
 }
 
-const ItineraryTable: React.FC<Props> = ({ itinerary }) => {
+const ItineraryTable: React.FC<Props> = ({
+  itinerary,
+  phaseLabel = "Phase",
+}) => {
   const columns = [
-    { id: "day", label: "Day", width: "20%" },
+    { id: "phase", label: phaseLabel, width: "20%" },
     { id: "itinerary", label: "Itinerary", width: "55%" },
     { id: "details", label: "Details", width: "25%" },
   ];
 
   const rows = itinerary.map((phase, index) => ({
     cells: {
-      day: (
+      phase: (
         <>
-          <span className="hidden sm:block">Day {index + 1}</span>
+          <span className="hidden sm:block">
+            {phaseLabel} {index + 1}
+          </span>
           <span className="block sm:hidden">{index + 1}</span>
         </>
       ),
