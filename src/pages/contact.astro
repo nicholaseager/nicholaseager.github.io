@@ -1,5 +1,6 @@
 ---
 import ContactForm from "../components/form/ContactForm.astro";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import Page from "../layouts/Page.astro";
 import ContactSEO from "../seo/ContactSEO.astro";
 
@@ -9,6 +10,8 @@ const description =
 ---
 
 <Page title={title} description={description}>
-  <ContactForm />
+  <ResponsiveWidth>
+    <ContactForm />
+  </ResponsiveWidth>
   <ContactSEO name={title} description={description} />
 </Page>
