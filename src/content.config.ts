@@ -35,14 +35,6 @@ const guides = defineCollection({
         })
       )
       .optional(),
-    partnership: z
-      .object({
-        title: z.string(),
-        description: z.string(),
-        logo: z.string(),
-        link: z.string(),
-      })
-      .optional(),
 
     sections: z.array(
       z.object({
@@ -63,19 +55,6 @@ const guides = defineCollection({
           .optional(),
         content: z
           .discriminatedUnion("type", [
-            // Links
-            z.object({
-              type: z.literal("links"),
-              links: z
-                .array(
-                  z.object({
-                    title: z.string(),
-                    url: z.string(),
-                  })
-                )
-                .optional(),
-            }),
-
             // Image gallery
             z.object({
               type: z.literal("images"),

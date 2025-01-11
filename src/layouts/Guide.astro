@@ -29,7 +29,6 @@ const {
   modified_date,
   tags,
   links,
-  partnership,
   sections,
 } = Astro.props;
 
@@ -176,27 +175,6 @@ const tableOfContents = sections.filter((s) => s.toc !== false).map((section) =>
           )}
         </div>
       ))
-    }
-
-    <!-- Partnership -->
-    {
-      partnership && (
-        <div class="bg-background-alt p-8">
-          <ResponsiveWidth size="lg">
-            <Text variant="h2" spacing="normal">
-              {partnership.title}
-            </Text>
-            <Text variant="body" spacing="normal" id="overview">
-              {partnership.description}
-            </Text>
-            <div class="flex justify-center">
-              <a href={partnership.link} target="_blank">
-                <img src={partnership.logo} class="max-w-sm w-full h-full" />
-              </a>
-            </div>
-          </ResponsiveWidth>
-        </div>
-      )
     }
 
     <!-- Conclusion -->
