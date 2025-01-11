@@ -4,6 +4,7 @@ import Layout from "./Layout.astro";
 import Banner from "../components/Banner.astro";
 import Text from "../components/ui/Text.tsx";
 import LinkButton from "../components/ui/LinkButton.tsx";
+import Link from "../components/ui/Link.tsx";
 import Intro from "../components/guide/Intro.astro";
 import ItineraryTable from "../components/guide/ItineraryTable.tsx";
 import HikingSeasonsGrid from "../components/guide/HikingSeasonsGrid.tsx";
@@ -117,6 +118,9 @@ const tableOfContents = sections
 
               {section.content.type === "google-map" && (
                 <GoogleMap mapId={section.content.mapId} />
+                <Text variant="caption" className="mt-4 mx-8">
+                  Learn how to download the map for your own offline use by reading <Link href="/navigating-on-the-trail" target="_blank">how I navigate on the trail</Link>.
+                </Text>
               )}
 
               {section.content.type === "itinerary" && (
