@@ -14,7 +14,7 @@ import GoogleMap from "../components/GoogleMap.astro";
 import GearSwiper from "../components/gear/GearSwiper.tsx";
 import CommentForm from "../components/form/CommentForm.astro";
 import { getSimilarGuides } from "../utils/similarity";
-import BaseSwiper from "../components/ui/BaseSwiper";
+import ArticleSwiper from "../components/ui/ArticleSwiper";
 
 import TableOfContents from "../components/toc/TableOfContents.tsx";
 import HikingGuideSEO from "../seo/HikingGuideSEO.astro";
@@ -212,7 +212,7 @@ const tableOfContents = sections
         <Text variant="h3" spacing="normal">You Might Also Like</Text>
       </ResponsiveWidth>
       <ResponsiveWidth size="lg">
-        <BaseSwiper
+        <ArticleSwiper
           client:visible
           items={guidesWithSimilarity}
           urlPrefix="/guides"

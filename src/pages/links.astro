@@ -6,7 +6,7 @@ import Page from "../layouts/Page.astro";
 import YouTubeVideo from "../components/YouTubeVideo.astro";
 import { getCollection } from "astro:content";
 import { getLatestFilm, getLatestGuides } from "../utils/latest";
-import BaseSwiper from "../components/ui/BaseSwiper";
+import ArticleSwiper from "../components/ui/ArticleSwiper";
 import Image from "../components/image-kit/Image";
 
 const guides = await getCollection("guides");
@@ -39,7 +39,7 @@ const latestFilm = getLatestFilm(films);
     <Text variant="h1">Latest Travel Guides</Text>
   </ResponsiveWidth>
   <ResponsiveWidth size="lg">
-    <BaseSwiper client:visible items={latestGuides} urlPrefix="/guides" />
+    <ArticleSwiper client:visible items={latestGuides} urlPrefix="/guides" />
   </ResponsiveWidth>
 
   <ResponsiveWidth size="md">

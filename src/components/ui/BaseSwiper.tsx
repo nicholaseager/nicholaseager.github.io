@@ -2,21 +2,12 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import "swiper/css";
-import ArticleCard from "./ArticleCard";
-
-interface BaseItem {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-}
 
 interface BaseSwiperProps {
-  items: BaseItem[];
-  urlPrefix: string;
+  children: React.ReactNode[];
 }
 
-const BaseSwiper: React.FC<BaseSwiperProps> = ({ items, urlPrefix }) => {
+const BaseSwiper: React.FC<BaseSwiperProps> = ({ children }) => {
   const swiperRef = useRef<SwiperType | undefined>(undefined);
 
   const slidePrev = () => {
@@ -63,15 +54,8 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({ items, urlPrefix }) => {
           grabCursor={true}
           style={{ overflow: "visible" }}
         >
-          {items.map((item, index) => (
-            <SwiperSlide key={index}>
-              <ArticleCard
-                href={`${urlPrefix}/${item.id}/`}
-                imagePath={item.image}
-                title={item.title}
-                description={item.description}
-              />
-            </SwiperSlide>
+          {React.Children.map(children, (child, index) => (
+            <SwiperSlide key={index}>{child}</SwiperSlide>
           ))}
         </Swiper>
       </div>

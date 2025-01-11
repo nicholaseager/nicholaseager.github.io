@@ -8,7 +8,7 @@ import YouTubeVideo from "../components/YouTubeVideo.astro";
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import { getLatestFilm, getLatestGuides } from "../utils/latest";
-import BaseSwiper from "../components/ui/BaseSwiper";
+import ArticleSwiper from "../components/ui/ArticleSwiper";
 import YouTubeIcon from "/src/assets/icons/YouTube.svg";
 import Image from "../components/image-kit/Image";
 import ResponsiveColumnLayout from "../components/layout/ResponsiveColumnLayout.astro";
@@ -86,7 +86,11 @@ const latestFilm = getLatestFilm(films);
         <Text variant="h2">Latest Travel Guides</Text>
       </ResponsiveWidth>
       <ResponsiveWidth size="lg">
-        <BaseSwiper client:visible items={latestGuides} urlPrefix="/guides" />
+        <ArticleSwiper
+          client:visible
+          items={latestGuides}
+          urlPrefix="/guides"
+        />
       </ResponsiveWidth>
 
       <ResponsiveWidth size="md">
