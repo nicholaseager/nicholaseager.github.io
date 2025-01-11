@@ -1,10 +1,10 @@
+import { CDN_BASE_URL } from "../../constants/cdn";
+
 interface ImageProps {
   path: string;
   className?: string;
   sizes?: string;
 }
-
-const CDN_BASE_URL = import.meta.env.PUBLIC_CDN_BASE_URL;
 
 const Image = ({
   path,

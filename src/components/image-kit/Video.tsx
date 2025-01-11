@@ -1,10 +1,10 @@
+import { CDN_BASE_URL } from "../../constants/cdn";
+
 interface VideoProps {
   path: string;
   lowResPath?: string;
   className?: string;
 }
-
-const CDN_BASE_URL = import.meta.env.PUBLIC_CDN_BASE_URL;
 
 const Video = ({ path, lowResPath, className }: VideoProps) => {
   return (
