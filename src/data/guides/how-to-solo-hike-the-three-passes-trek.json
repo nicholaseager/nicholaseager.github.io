@@ -25,12 +25,6 @@
       "url": "/gear"
     }
   ],
-  "partnership": {
-    "title": "My Recommended Trekking Agency",
-    "description": "While I did my Three Passes trek solo, I collaborated with Himalayan Masters for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable.<br><br>To book your own trek, contact them via email at info@himalayan-masters.com and use the code EAGER to enjoy a 5% discount on your trip.",
-    "logo": "/src/assets/company-logos/himalayan-masters-logo.svg",
-    "link": "https://himalayan-masters.com/"
-  },
   "sections": [
     {
       "id": "overview",
@@ -43,6 +37,18 @@
           "photos/countries/nepal/three-passes-trek/hiker-walking-towards-ama-dablam",
           "photos/countries/nepal/three-passes-trek/stupa-and-snowy-mountains"
         ]
+      }
+    },
+    {
+      "id": "partnership",
+      "toc": false,
+      "background": "dark",
+      "title": "My Recommended Trekking Agency",
+      "introduction": "I collaborated with Himalayan Masters for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable. To book your own trek, contact them via email at info@himalayan-masters.com and use the code EAGER to enjoy a 5% discount on your trip.",
+      "content": {
+        "type": "partnership",
+        "logo": "/src/assets/company-logos/himalayan-masters-logo.svg",
+        "link": "https://himalayan-masters.com/"
       }
     },
     {
