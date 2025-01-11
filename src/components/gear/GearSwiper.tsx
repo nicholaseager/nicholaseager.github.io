@@ -1,8 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Grid } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/grid";
 
 import GearCard from "./GearCard.tsx";
 import gear from "../../data/gear.json";
@@ -16,32 +14,21 @@ const GearSwiper: React.FC<ImagesSwiperProps> = ({ trip }) => {
 
   return (
     <Swiper
-      grid={{
-        fill: "row",
-        rows: 2,
-      }}
-      modules={[Grid]}
       breakpoints={{
-        // Mobile
         320: {
           slidesPerView: 2,
-          grid: {
-            rows: 1,
-          },
         },
-        // Tablet
-        768: {
+        // sm
+        640: {
           slidesPerView: 3,
-          grid: {
-            rows: 2,
-          },
         },
-        // Desktop
+        // md
+        768: {
+          slidesPerView: 4,
+        },
+        // lg
         1024: {
           slidesPerView: 5,
-          grid: {
-            rows: 2,
-          },
         },
       }}
       spaceBetween={20}
