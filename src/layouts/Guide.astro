@@ -36,13 +36,15 @@ const guides = await getCollection("guides");
 const guidesWithSimilarity = getSimilarGuides(guides, tags);
 
 // Generate table of contents from sections
-const tableOfContents = sections.filter((s) => s.toc !== false).map((section) => ({
-  title: section.id
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-    .join(" "),
-  id: section.id,
-}));
+const tableOfContents = sections
+  .filter((s) => s.toc !== false)
+  .map((section) => ({
+    title: section.id
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" "),
+    id: section.id,
+  }));
 ---
 
 <Layout
@@ -89,7 +91,7 @@ const tableOfContents = sections.filter((s) => s.toc !== false).map((section) =>
     {
       sections.map((section) => (
         <div
-          class=`${section.background === "dark" ? "bg-background-alt py-8" : ""} space-y-4 md:space-y-8`
+          class={`${section.background === "dark" ? "bg-background-alt py-8" : ""} space-y-4 md:space-y-8`}
         >
           <ResponsiveWidth size="md">
             <Text variant="h2" spacing="normal" id={section.id}>
@@ -138,7 +140,10 @@ const tableOfContents = sections.filter((s) => s.toc !== false).map((section) =>
               {section.content.type === "partnership" && (
                 <div class="flex justify-center">
                   <a href={section.content.link} target="_blank">
-                    <img src={section.content.logo} class="max-w-sm w-full h-full" />
+                    <img
+                      src={section.content.logo}
+                      class="max-w-sm w-full h-full"
+                    />
                   </a>
                 </div>
               )}
