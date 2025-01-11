@@ -6,6 +6,7 @@ import Text from "../components/ui/Text.tsx";
 import LinkButton from "../components/ui/LinkButton.tsx";
 import Intro from "../components/guide/Intro.astro";
 import ItineraryTable from "../components/guide/ItineraryTable.tsx";
+import HikingSeasonsGrid from "../components/guide/HikingSeasonsGrid.tsx";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import ImagesSwiper from "../components/guide/ThumbsSwiper.tsx";
 import GoogleMap from "../components/GoogleMap.astro";
@@ -146,6 +147,10 @@ const tableOfContents = sections
                     />
                   </a>
                 </div>
+              )}
+
+              {section.content.type === "weather" && (
+                <HikingSeasonsGrid seasons={section.content.seasons} />
               )}
             </ResponsiveWidth>
           )}

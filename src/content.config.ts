@@ -112,6 +112,19 @@ const guides = defineCollection({
               logo: z.string(),
               link: z.string().url(),
             }),
+
+            // Weather
+            z.object({
+              type: z.literal("weather"),
+              seasons: z.array(
+                z.object({
+                  name: z.string(),
+                  months: z.string(),
+                  conditions: z.string(),
+                  bestFor: z.array(z.string()),
+                })
+              ),
+            }),
           ])
           .optional(),
       })
