@@ -1,0 +1,39 @@
+<script>
+  // Prevent right-click
+  document.addEventListener("contextmenu", (e) => {
+    if (e.target instanceof HTMLImageElement) {
+      e.preventDefault();
+    }
+  });
+
+  // Prevent drag and drop
+  document.addEventListener("dragstart", (e) => {
+    if (e.target instanceof HTMLImageElement) {
+      e.preventDefault();
+    }
+  });
+
+  // Prevent keyboard shortcuts
+  document.addEventListener("keydown", (e) => {
+    // Prevent Ctrl+S, Ctrl+U, Ctrl+I, Ctrl+Shift+I
+    if (
+      (e.ctrlKey && e.key === "s") ||
+      (e.ctrlKey && e.key === "u") ||
+      (e.ctrlKey && e.key === "i") ||
+      (e.ctrlKey && e.shiftKey && e.key === "I")
+    ) {
+      e.preventDefault();
+    }
+  });
+</script>
+
+<style>
+  /* Disable user-select on images */
+  img {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+  }
+</style>
