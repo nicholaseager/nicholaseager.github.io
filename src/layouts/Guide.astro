@@ -117,10 +117,17 @@ const tableOfContents = sections
               )}
 
               {section.content.type === "google-map" && (
-                <GoogleMap mapId={section.content.mapId} />
-                <Text variant="caption" className="mt-4 mx-8">
-                  Learn how to download the map for your own offline use by reading <Link href="/navigating-on-the-trail" target="_blank">how I navigate on the trail</Link>.
-                </Text>
+                <>
+                  <GoogleMap mapId={section.content.mapId} />
+                  <Text variant="caption" className="mt-4 mx-8">
+                    Learn how to download the map for your own offline use by
+                    reading{" "}
+                    <Link href="/navigating-on-the-trail" target="_blank">
+                      how I navigate on the trail
+                    </Link>
+                    .
+                  </Text>
+                </>
               )}
 
               {section.content.type === "itinerary" && (
