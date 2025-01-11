@@ -16,12 +16,14 @@ const guides = (await getCollection("guides")).sort(
   <Grid>
     {
       guides.map((item) => (
-        <ArticleCard
-          href={`/guides/${item.id}/`}
-          imagePath={item.data.image}
-          title={item.data.title}
-          description={item.data.description}
-        />
+        <div class="break-inside-avoid">
+          <ArticleCard
+            href={`/guides/${item.id}/`}
+            imagePath={item.data.image}
+            title={item.data.title}
+            description={item.data.description}
+          />
+        </div>
       ))
     }
   </Grid>
