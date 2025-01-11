@@ -3,6 +3,7 @@ import FormattedDate from "../FormattedDate.astro";
 import SocialShare from "../social-share/SocialShare.astro";
 import YouTubeVideo from "../YouTubeVideo.astro";
 import Text from "../ui/Text.tsx";
+import TextContainer from "../ui/TextContainer";
 
 // Intro.astro
 interface Props {
@@ -19,13 +20,15 @@ const { title, lastUpdated, description, videoId } = Astro.props;
   <div class="lg:grid lg:grid-cols-2 lg:gap-8">
     <!-- Left Column: Text Content -->
     <div class="space-y-6">
-      <Text variant="h1">
-        {title}
-      </Text>
+      <TextContainer spacing="tight">
+        <Text variant="h1">
+          {title}
+        </Text>
 
-      <Text variant="caption">
-        Last updated: <FormattedDate date={lastUpdated} />
-      </Text>
+        <Text variant="caption">
+          Last updated: <FormattedDate date={lastUpdated} />
+        </Text>
+      </TextContainer>
 
       <div class="flex flex-wrap gap-2">
         <SocialShare url={Astro.request.url} title={title} />
