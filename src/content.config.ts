@@ -51,6 +51,7 @@ const guides = defineCollection({
         introduction: z.string().optional(),
         conclusion: z.string().optional(),
         background: z.enum(["default", "dark"]).optional(),
+        toc: z.boolean().optional(),
         subsections: z
           .array(
             z.object({
