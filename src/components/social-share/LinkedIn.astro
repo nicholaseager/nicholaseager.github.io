@@ -7,7 +7,8 @@ interface Props {
 
 const { url } = Astro.props;
 
-let URL = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+const encoded_url = encodeURIComponent(url);
+let URL = `https://www.linkedin.com/sharing/share-offsite/?url=${encoded_url}`;
 ---
 
 <LinkButton

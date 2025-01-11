@@ -10,7 +10,8 @@ interface Props {
 
 const { url = Astro.request.url, description, via } = Astro.props;
 
-let URL = `https://x.com/intent/tweet?url=${url}`;
+const encoded_url = encodeURIComponent(url);
+let URL = `https://x.com/intent/tweet?url=${encoded_url}`;
 
 if (description) URL += `&text=${description}`;
 if (via) URL += `&via=${via}`;

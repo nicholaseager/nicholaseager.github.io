@@ -7,7 +7,8 @@ interface Props {
 
 const { url = Astro.request.url } = Astro.props;
 
-let URL = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+const encoded_url = encodeURIComponent(url);
+let URL = `https://www.facebook.com/sharer/sharer.php?u=${encoded_url}`;
 ---
 
 <LinkButton
