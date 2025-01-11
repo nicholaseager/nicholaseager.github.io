@@ -5,9 +5,27 @@ import "swiper/css";
 
 interface BaseSwiperProps {
   children: React.ReactNode[];
+  breakpoints?: {
+    xs?: number; // 320px
+    sm?: number; // 640px
+    md?: number; // 768px
+    lg?: number; // 1024px
+    xl?: number; // 1280px
+    "2xl"?: number; // 1536px
+  };
 }
 
-const BaseSwiper: React.FC<BaseSwiperProps> = ({ children }) => {
+const BaseSwiper: React.FC<BaseSwiperProps> = ({
+  children,
+  breakpoints = {
+    xs: 1,
+    sm: 1,
+    md: 2,
+    lg: 3,
+    xl: 3,
+    "2xl": 3,
+  },
+}) => {
   const swiperRef = useRef<SwiperType | undefined>(undefined);
 
   const slidePrev = () => {
@@ -46,9 +64,12 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({ children }) => {
             swiperRef.current = swiper;
           }}
           breakpoints={{
-            320: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            0: { slidesPerView: breakpoints.xs || "auto" },
+            640: { slidesPerView: breakpoints.sm || "auto" },
+            768: { slidesPerView: breakpoints.md || "auto" },
+            1024: { slidesPerView: breakpoints.lg || "auto" },
+            1280: { slidesPerView: breakpoints.xl || "auto" },
+            1536: { slidesPerView: breakpoints["2xl"] || "auto" },
           }}
           spaceBetween={30}
           grabCursor={true}
