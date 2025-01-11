@@ -139,7 +139,21 @@ const tableOfContents = sections
               )}
 
               {section.content.type === "gear" && (
-                <GearSwiper client:visible trip={section.content.trip} />
+                <>
+                  <GearSwiper client:visible trip={section.content.trip} />
+                  <div class="mt-4 mx-8 space-y-4">
+                    <Text variant="caption">
+                      The provided gear list is a suggestion, tailor it to your
+                      needs. Prioritize safety by packing and preparing well for
+                      a happy, adventurous hike. Interested in all of my gear
+                      recommendations? Click the button below to see what I
+                      recommend for filming, travel, and fun :)
+                    </Text>
+                    <LinkButton href="/gear" size="md">
+                      Explore All Gear
+                    </LinkButton>
+                  </div>
+                </>
               )}
 
               {section.content.type === "list" &&
