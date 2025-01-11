@@ -1,0 +1,17 @@
+---
+// Only include analytics in production
+const isProd = import.meta.env.PROD;
+const googleAnalyticsId = 'G-MGV277DE08';
+---
+
+{isProd && (
+  <>
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}></script>
+    <script define:vars={{ googleAnalyticsId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', googleAnalyticsId);
+    </script>
+  </>
+)}

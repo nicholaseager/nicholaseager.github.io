@@ -5,6 +5,7 @@ import KofiWidget from "../components/KoFiWidget.astro";
 import Head from "../seo/Head.astro";
 import BaseSEO from "../seo/BaseSEO.astro";
 import DisableImages from "../scripts/DisableImages.astro";
+import GoogleAnalytics from "../scripts/GoogleAnalytics.astro";
 
 interface Props {
   title: string;
@@ -31,6 +32,7 @@ const {
     <!-- SEO -->
     <Head title={title} description={description} image={image} />
     <!-- End SEO -->
+    <GoogleAnalytics />
   </head>
   <body>
     <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
