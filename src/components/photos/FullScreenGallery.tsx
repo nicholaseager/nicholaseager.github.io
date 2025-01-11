@@ -11,12 +11,14 @@ import "swiper/css/navigation";
 interface FullScreenGalleryProps {
   photos: string[];
   startIndex: number;
+  showOrderPrintButton?: boolean;
   onClose?: () => void;
 }
 
 export default function FullScreenGallery({
   photos,
   startIndex,
+  showOrderPrintButton = true,
   onClose,
 }: FullScreenGalleryProps) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
@@ -58,13 +60,15 @@ export default function FullScreenGallery({
     <div className="fixed inset-0 w-screen h-screen z-[1000]">
       <div className="absolute inset-0 bg-black" />
 
-      <LinkButton
-        variant="custom"
-        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-gray-200 hover:bg-gray-300 text-slate-900"
-        onClick={handleOrderPrint}
-      >
-        Order Print
-      </LinkButton>
+      {showOrderPrintButton && (
+        <LinkButton
+          variant="custom"
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-gray-200 hover:bg-gray-300 text-slate-900"
+          onClick={handleOrderPrint}
+        >
+          Order Print
+        </LinkButton>
+      )}
 
       {onClose && (
         <button
