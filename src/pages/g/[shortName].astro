@@ -1,14 +1,19 @@
 ---
 import { getCollection } from "astro:content";
+import Redirect from "../../layouts/Redirect.astro";
 
 export async function getStaticPaths() {
   const guides = await getCollection("guides");
   return guides.map((guide) => ({
     params: { shortName: guide.data.short_name },
-    props: { fullPath: `/guides/${guide.id}` },
+    props: {
+      fullPath: `/guides/${guide.id}`,
+      shortPath: guide.data.short_name,
+    },
   }));
 }
 
-const { fullPath } = Astro.props;
-return Astro.redirect(fullPath);
+const { fullPath, shortPath } = Astro.props;
 ---
+
+<Redirect fromUrl={shortPath} toUrl={fullPath} timing={0} />

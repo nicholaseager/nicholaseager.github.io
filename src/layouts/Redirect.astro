@@ -1,0 +1,25 @@
+---
+interface Props {
+  fromUrl: string;
+  toUrl: string;
+  timing?: number;
+}
+
+const { fromUrl, toUrl, timing = 0 } = Astro.props;
+---
+
+<meta http-equiv="refresh" content={`${timing};url=${toUrl}`} />
+
+<title>
+  Redirecting to:
+  {toUrl}
+</title>
+
+<meta name="robots" content="noindex" />
+<link rel="canonical" href={toUrl} />
+
+<body>
+  <a href={toUrl}>
+    Redirecting from <code>{fromUrl}</code> to <code>{toUrl}</code>
+  </a>
+</body>

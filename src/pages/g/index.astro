@@ -1,3 +1,5 @@
 ---
-return Astro.redirect("/guides");
+import Redirect from "../../layouts/Redirect.astro";
 ---
+
+<Redirect fromUrl={"/g"} toUrl={"/guides"} timing={0} />
