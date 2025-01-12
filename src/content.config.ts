@@ -1,5 +1,6 @@
 import { glob, file } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
+import { getPhotoLocationParts } from "./utils/photo-paths";
 import photosData from "./data/photos.json";
 import photoTagDefinitionsData from "./data/photo-tag-definitions.json";
 import photoLocationDefinitionsData from "./data/photo-location-definitions.json";
@@ -351,9 +352,7 @@ const photoLocations = defineCollection({
 
     // Process each photo to build the complete location hierarchy
     (photosData as PhotoItem[]).forEach((photo) => {
-      // Extract location parts from photo path, removing prefix and the photo name
-      const parts = photo.path.replace(/^photos\/countries\//, "").split("/");
-      parts.pop(); // Remove the actual photo name from the path
+      const parts = getPhotoLocationParts(photo.path);
 
       // Build locations for each level of the hierarchy
       let currentPath = "";
