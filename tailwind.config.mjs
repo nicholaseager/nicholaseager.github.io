@@ -95,10 +95,10 @@ export default {
           light: "#abb7b7",
         },
         accent: {
-          DEFAULT: "#4ecdc4",
+          DEFAULT: "#20605B",
         },
         overlay: {
-          bg: "#4ecdc4",
+          bg: "#20605B",
           text: "#ffffff",
           accent: "#2a2f36",
         },

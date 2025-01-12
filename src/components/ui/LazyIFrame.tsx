@@ -27,7 +27,7 @@ export default function LazyIframe({
         <div
           className={`absolute inset-0 ${backgroundColor} animate-pulse flex items-center justify-center rounded-lg shadow-lg`}
         >
-          <span className="text-gray-500">Loading...</span>
+          <span className="text-slate-900">Loading...</span>
         </div>
       )}
       {showIframe && (
