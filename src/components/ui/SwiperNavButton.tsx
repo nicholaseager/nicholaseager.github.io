@@ -3,20 +3,25 @@ import React from "react";
 interface SwiperNavButtonProps {
   direction: "prev" | "next";
   onClick: () => void;
+  disabled?: boolean;
 }
 
 const SwiperNavButton: React.FC<SwiperNavButtonProps> = ({
   direction,
   onClick,
+  disabled = false,
 }) => {
   const isNext = direction === "next";
 
   return (
     <button
       onClick={onClick}
+      disabled={disabled}
       className={`absolute ${
         isNext ? "-right-2 lg:-right-12" : "-left-2 lg:-left-12"
-      } top-1/2 z-10 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white transition-colors`}
+      } top-1/2 z-10 -translate-y-1/2 bg-white p-2 rounded-full shadow-md transition-colors ${
+        disabled ? "opacity-50 cursor-not-allowed" : ""
+      }`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import SwiperNavButton from "./SwiperNavButton";
@@ -28,6 +28,8 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({
   },
 }) => {
   const swiperRef = useRef<SwiperType | undefined>(undefined);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
 
   const slidePrev = () => {
     swiperRef.current?.slidePrev();
@@ -39,12 +41,22 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({
 
   return (
     <div className="relative group">
-      <SwiperNavButton direction="prev" onClick={slidePrev} />
+      <SwiperNavButton
+        direction="prev"
+        onClick={slidePrev}
+        disabled={isBeginning}
+      />
 
       <div className="p-4 overflow-hidden">
         <Swiper
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
+            setIsBeginning(swiper.isBeginning);
+            setIsEnd(swiper.isEnd);
+          }}
+          onSlideChange={(swiper) => {
+            setIsBeginning(swiper.isBeginning);
+            setIsEnd(swiper.isEnd);
           }}
           breakpoints={{
             0: { slidesPerView: breakpoints.xs || "auto" },
@@ -64,7 +76,7 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({
         </Swiper>
       </div>
 
-      <SwiperNavButton direction="next" onClick={slideNext} />
+      <SwiperNavButton direction="next" onClick={slideNext} disabled={isEnd} />
     </div>
   );
 };
