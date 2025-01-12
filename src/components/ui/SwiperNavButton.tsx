@@ -4,28 +4,42 @@ interface SwiperNavButtonProps {
   direction: "prev" | "next";
   onClick: () => void;
   disabled?: boolean;
+  variant?: "default" | "fullscreen";
 }
 
 const SwiperNavButton: React.FC<SwiperNavButtonProps> = ({
   direction,
   onClick,
   disabled = false,
+  variant = "default",
 }) => {
   const isNext = direction === "next";
+
+  const positionClasses = {
+    default: isNext ? "-right-2 lg:-right-12" : "-left-2 lg:-left-12",
+    fullscreen: isNext ? "right-4 lg:right-8" : "left-4 lg:left-8",
+  };
+
+  const styleClasses = {
+    default: "bg-white shadow-md",
+    fullscreen: "bg-white/10 hover:bg-white/20 backdrop-blur-sm",
+  };
+
+  const iconColorClass = variant === "fullscreen" ? "text-white" : "";
 
   return (
     <button
       onClick={onClick}
       disabled={disabled}
       className={`absolute ${
-        isNext ? "-right-2 lg:-right-12" : "-left-2 lg:-left-12"
-      } top-1/2 z-10 -translate-y-1/2 bg-white p-2 rounded-full shadow-md transition-colors ${
-        disabled ? "opacity-50 cursor-not-allowed" : ""
-      }`}
+        positionClasses[variant]
+      } top-1/2 z-50 -translate-y-1/2 p-2 rounded-full transition-colors ${
+        styleClasses[variant]
+      } ${disabled ? "opacity-50 cursor-not-allowed" : ""}`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
+        className={`h-6 w-6 ${iconColorClass}`}
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"

@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Keyboard } from "swiper/modules";
+import { Keyboard } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import Image from "../image-kit/Image";
 import LinkButton from "../ui/LinkButton";
+import SwiperNavButton from "../ui/SwiperNavButton";
 
 import "swiper/css";
-import "swiper/css/navigation";
 
 interface FullScreenGalleryProps {
   photos: string[];
@@ -23,6 +23,18 @@ export default function FullScreenGallery({
 }: FullScreenGalleryProps) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
   const [currentIndex, setCurrentIndex] = useState(startIndex);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+
+  const handlePrev = useCallback(() => {
+    if (!swiper) return;
+    swiper.slidePrev();
+  }, [swiper]);
+
+  const handleNext = useCallback(() => {
+    if (!swiper) return;
+    swiper.slideNext();
+  }, [swiper]);
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -59,6 +71,20 @@ export default function FullScreenGallery({
   return (
     <div className="fixed inset-0 w-screen h-screen z-[1000]">
       <div className="absolute inset-0 bg-black" />
+
+      <SwiperNavButton
+        direction="prev"
+        onClick={handlePrev}
+        disabled={isBeginning}
+        variant="fullscreen"
+      />
+
+      <SwiperNavButton
+        direction="next"
+        onClick={handleNext}
+        disabled={isEnd}
+        variant="fullscreen"
+      />
 
       {showOrderPrintButton && (
         <LinkButton
@@ -107,11 +133,14 @@ export default function FullScreenGallery({
       )}
 
       <Swiper
-        modules={[Navigation, Keyboard]}
-        navigation
+        modules={[Keyboard]}
         keyboard
         onSwiper={setSwiper}
-        onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}
+        onSlideChange={(swiper) => {
+          setCurrentIndex(swiper.activeIndex);
+          setIsBeginning(swiper.isBeginning);
+          setIsEnd(swiper.isEnd);
+        }}
         slidesPerView={1}
         speed={300}
         loop={false}
