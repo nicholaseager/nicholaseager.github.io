@@ -27,6 +27,7 @@ const { title, subtitle, media, type, videoPlaceholder, videoLowRes } =
           sizes="100vw"
         />
         <Video
+          client:visible
           path={media}
           lowResPath={videoLowRes}
           className="absolute top-0 w-full h-full object-cover"
