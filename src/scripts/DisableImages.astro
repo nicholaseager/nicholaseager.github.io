@@ -26,19 +26,25 @@
     }
   });
 
-  // Prevent touch events (for all mobile devices)
-  const touchEvents = ["touchstart", "touchmove", "touchend"];
+  // Prevent long press to save on mobile devices
+  let touchTimeout: number;
 
-  touchEvents.forEach((eventType) => {
-    document.addEventListener(
-      eventType,
-      (e) => {
-        if (e.target instanceof HTMLImageElement) {
+  document.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.target instanceof HTMLImageElement) {
+        touchTimeout = window.setTimeout(() => {
           e.preventDefault();
-        }
-      },
-      { passive: false }
-    );
+        }, 500); // Prevent only after 500ms (long press)
+      }
+    },
+    { passive: true }
+  );
+
+  document.addEventListener("touchend", () => {
+    if (touchTimeout) {
+      clearTimeout(touchTimeout);
+    }
   });
 </script>
 
