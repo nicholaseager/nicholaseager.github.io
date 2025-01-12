@@ -30,6 +30,7 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({
   const swiperRef = useRef<SwiperType | undefined>(undefined);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+  const [hasMultipleSlides, setHasMultipleSlides] = useState(false);
 
   const slidePrev = () => {
     swiperRef.current?.slidePrev();
@@ -41,11 +42,13 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({
 
   return (
     <div className="relative group">
-      <SwiperNavButton
-        direction="prev"
-        onClick={slidePrev}
-        disabled={isBeginning}
-      />
+      {hasMultipleSlides && (
+        <SwiperNavButton
+          direction="prev"
+          onClick={slidePrev}
+          disabled={isBeginning}
+        />
+      )}
 
       <div className="p-4 overflow-hidden">
         <Swiper
@@ -53,6 +56,7 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({
             swiperRef.current = swiper;
             setIsBeginning(swiper.isBeginning);
             setIsEnd(swiper.isEnd);
+            setHasMultipleSlides(swiper.slides.length > 1);
           }}
           onSlideChange={(swiper) => {
             setIsBeginning(swiper.isBeginning);
@@ -76,7 +80,13 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({
         </Swiper>
       </div>
 
-      <SwiperNavButton direction="next" onClick={slideNext} disabled={isEnd} />
+      {hasMultipleSlides && (
+        <SwiperNavButton
+          direction="next"
+          onClick={slideNext}
+          disabled={isEnd}
+        />
+      )}
     </div>
   );
 };
