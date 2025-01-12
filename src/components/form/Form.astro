@@ -11,7 +11,7 @@ const sizes: Record<Size, string> = {
 ---
 
 <div
-  class={`bg-background-alt rounded-lg shadow-lg mx-auto w-full ${sizes[size as Size]}`}
+  class={`bg-surface-secondary rounded-lg shadow-lg mx-auto w-full ${sizes[size as Size]}`}
 >
   <form method="POST" action={action} class="space-y-4">
     <slot />

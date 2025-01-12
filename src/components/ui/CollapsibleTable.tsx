@@ -61,7 +61,7 @@ const CollapsibleTable: React.FC<Props> = ({
         className={`overflow-x-auto shadow-md rounded-lg max-w-full ${className}`}
       >
         <table className="table-fixed w-full text-sm text-left">
-          <thead className="text-xs text-slate-700 uppercase bg-gray-50">
+          <thead className="text-xs text-content-strong uppercase bg-surface-secondary">
             <tr>
               {columns.map((column) => (
                 <th
@@ -115,7 +115,7 @@ const CollapsibleTable: React.FC<Props> = ({
                 {expandedRows.has(index) && row.expandedContent && (
                   <tr className="bg-gray-50">
                     <td colSpan={columns.length} className="px-2 sm:px-6 py-4">
-                      <div className="text-slate-700">
+                      <div className="text-content-light">
                         {row.expandedContent.description && (
                           <p className="text-sm break-words">
                             {row.expandedContent.description}

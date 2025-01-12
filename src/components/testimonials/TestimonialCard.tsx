@@ -10,7 +10,7 @@ interface CardProps {
 
 const TestimonialCard: React.FC<CardProps> = ({ quote, author, url }) => {
   return (
-    <Card backgroundColor="background-alt">
+    <Card backgroundColor="bg-surface-secondary">
       <a href={url} target="_blank">
         <div className="p-4 sm:p-6 space-y-4">
           <Text variant="h6">{quote}</Text>

@@ -10,14 +10,14 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({
   children,
   className = "",
-  backgroundColor = "white",
+  backgroundColor = "bg-surface",
   animate = true,
 }) => {
   const animateClass =
     "transform transition-transform duration-200 hover:scale-105 hover:shadow-xl";
   return (
     <div
-      className={`rounded-lg shadow-lg overflow-hidden bg-${backgroundColor} ${
+      className={`rounded-lg shadow-lg overflow-hidden ${backgroundColor} ${
         animate ? animateClass : ""
       } ${className}`}
     >

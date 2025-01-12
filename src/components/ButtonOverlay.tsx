@@ -11,7 +11,7 @@ export const ButtonOverlay: React.FC<ButtonOverlayProps> = ({
   buttonText,
 }) => {
   return (
-    <div className="absolute inset-0 bg-background bg-opacity-60 flex items-center justify-center">
+    <div className="absolute inset-0 bg-surface bg-opacity-60 flex items-center justify-center">
       <div className="shadow-lg">
         <Button size="lg" onClick={onButtonClick}>
           <div className="flex flex-rows gap-2 p-1 sm:p-2">

@@ -23,7 +23,9 @@ const inputSizes: Record<Size, string> = {
 ---
 
 <div>
-  <label class={`block font-[700] text-slate-600 ${labelSizes[size as Size]}`}>
+  <label
+    class={`block font-[700] text-content-strong ${labelSizes[size as Size]}`}
+  >
     {label}
   </label>
   {
@@ -31,14 +33,14 @@ const inputSizes: Record<Size, string> = {
       <textarea
         name={name}
         placeholder={placeholder}
-        class={`w-full mt-2 border-2 border-gray-200 rounded bg-white text-slate-900 transition-colors duration-150 ease-in-out focus:outline-none focus:border-accent min-h-[200px] resize-none ${inputSizes[size as Size]}`}
+        class={`w-full mt-2 border-2 border-gray-200 rounded bg-surface text-content-light transition-colors duration-150 ease-in-out focus:outline-none focus:border-primary min-h-[200px] resize-none ${inputSizes[size as Size]}`}
       />
     ) : (
       <input
         type={type}
         name={name}
         placeholder={placeholder}
-        class={`w-full mt-2 border-2 border-gray-200 rounded bg-white text-slate-900 transition-colors duration-150 ease-in-out focus:outline-none focus:border-accent ${inputSizes[size as Size]}`}
+        class={`w-full mt-2 border-2 border-gray-200 rounded bg-surface text-content-light transition-colors duration-150 ease-in-out focus:outline-none focus:border-primary ${inputSizes[size as Size]}`}
       />
     )
   }

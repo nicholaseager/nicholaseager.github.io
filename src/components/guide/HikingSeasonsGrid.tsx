@@ -17,7 +17,7 @@ const HikingSeasonsGrid: React.FC<HikingSeasonsGridProps> = ({ seasons }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
       {seasons.map((season) => (
-        <Card key={season.name} backgroundColor="background-alt">
+        <Card key={season.name} backgroundColor="bg-surface-secondary">
           <div className="relative z-20 p-6 h-full flex flex-col">
             <Text variant="h4">{season.name}</Text>
             <Text variant="body" spacing="tight">
@@ -29,10 +29,13 @@ const HikingSeasonsGrid: React.FC<HikingSeasonsGridProps> = ({ seasons }) => {
             {season.bestFor && (
               <div className="mt-auto">
                 <Text variant="h6">Best For:</Text>
-                <ul className="list-disc list-inside text-slate-500">
+                <ul className="list-disc list-inside text-content-light">
                   {season.bestFor.map((activity) => (
                     <li key={activity}>
-                      <Text variant="body" className="inline text-slate-500">
+                      <Text
+                        variant="body"
+                        className="inline text-content-light"
+                      >
                         {activity}
                       </Text>
                     </li>

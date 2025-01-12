@@ -12,8 +12,6 @@ interface DropdownProps {
   currentLabel: string;
   onItemClick?: (id: string) => void;
   className?: string;
-  selectedClassName?: string;
-  unselectedClassName?: string;
 }
 
 const Dropdown: React.FC<DropdownProps> = ({
@@ -22,8 +20,6 @@ const Dropdown: React.FC<DropdownProps> = ({
   currentLabel,
   onItemClick,
   className = "",
-  selectedClassName = "text-slate-600 bg-slate-100",
-  unselectedClassName = "text-slate-700 hover:bg-slate-50",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -56,7 +52,7 @@ const Dropdown: React.FC<DropdownProps> = ({
     <div className={className} ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between px-4 py-2 text-md font-medium text-slate-700 bg-white border border-slate-200 rounded-full hover:bg-slate-50"
+        className="bg-secondary hover:bg-secondary-hover text-md font-medium text-secondary-content w-full flex items-center justify-between px-4 py-2 border border-border rounded-full"
       >
         <span>{currentLabel}</span>
         <svg
@@ -77,23 +73,25 @@ const Dropdown: React.FC<DropdownProps> = ({
       </button>
 
       {isOpen && (
-        <div className="absolute left-4 right-4 mt-2 py-1 bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-          {items.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => handleItemSelection(item.id, item.href)}
-              className={`
-                block w-full text-left px-4 py-2 text-lg
-                ${
-                  activeItemId === item.id
-                    ? selectedClassName
-                    : unselectedClassName
-                }
-              `}
-            >
-              {item.label}
-            </button>
-          ))}
+        <div className="absolute left-4 right-4 mt-2 p-1 bg-component rounded-lg shadow-lg">
+          <div className="flex flex-col space-y-1">
+            {items.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => handleItemSelection(item.id, item.href)}
+                className={`
+                  block w-full text-left px-4 py-2 text-lg text-content-strong rounded-lg transition-all whitespace-nowrap
+                  ${
+                    activeItemId === item.id
+                      ? "bg-component-active shadow-sm"
+                      : "hover:bg-component-hover"
+                  }
+                `}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </div>

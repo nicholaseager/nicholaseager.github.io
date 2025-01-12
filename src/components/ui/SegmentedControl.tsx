@@ -12,14 +12,18 @@ const SegmentedControl: React.FC<SegmentedControlProps> = ({
   onItemClick,
 }) => {
   return (
-    <div className="inline-flex p-1 space-x-1 bg-slate-100 rounded-full">
+    <div className="inline-flex p-1 space-x-1 bg-component rounded-full">
       {items.map((item) => (
         <button
           key={item.id}
           onClick={() => onItemClick(item.id)}
           className={`
-            px-4 py-2 text-sm font-medium text-slate-700 rounded-full transition-all whitespace-nowrap
-            ${activeId === item.id ? "bg-white shadow-sm" : "hover:bg-white/50"}
+            px-4 py-2 text-sm font-medium text-content-strong rounded-full transition-all whitespace-nowrap
+            ${
+              activeId === item.id
+                ? "bg-component-active shadow-sm"
+                : "hover:bg-component-hover"
+            }
           `}
         >
           {item.title}

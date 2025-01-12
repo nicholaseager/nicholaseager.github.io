@@ -15,13 +15,15 @@ const links = [
 
 export default function NavBar({ pathname, style }: NavBarProps) {
   const isTransparent = style === "transparent";
-  const textColor = isTransparent ? "text-white" : "text-slate-600";
+  const textColor = isTransparent ? "text-content-inverse" : "text-content";
   const positioning = isTransparent ? "absolute" : "relative";
-  const backgroundColor = isTransparent ? "bg-transparent" : "bg-white";
-  const selectedColor = isTransparent ? "bg-slate-900" : "bg-slate-100";
+  const backgroundColor = isTransparent ? "bg-transparent" : "bg-surface";
+  const selectedColor = isTransparent
+    ? "bg-surface-tertiary/20"
+    : "bg-surface-secondary";
   const hoverColor = isTransparent
-    ? "hover:bg-slate-900"
-    : "hover:bg-slate-100";
+    ? "hover:bg-surface-secondary/20"
+    : "hover:bg-surface-secondary";
 
   const dropdownItems = links.map((link) => ({
     id: link.href,

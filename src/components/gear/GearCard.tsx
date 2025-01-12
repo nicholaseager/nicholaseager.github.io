@@ -10,11 +10,11 @@ interface CardProps {
 
 const GearCard: React.FC<CardProps> = ({ title, description, url, img }) => {
   return (
-    <Card backgroundColor="background-alt">
+    <Card backgroundColor="bg-surface-secondary">
       <div className="p-4">
         <a href={url} target="_blank">
           <div className="space-y-4">
-            <div className="bg-white rounded-xl p-4 aspect-square flex justify-center items-center">
+            <div className="bg-surface rounded-xl p-4 aspect-square flex justify-center items-center">
               <img
                 src={img}
                 alt={title}
@@ -24,10 +24,10 @@ const GearCard: React.FC<CardProps> = ({ title, description, url, img }) => {
             </div>
 
             <div className="space-y-2">
-              <h2 className="text-slate-700 text-lg sm:text-xl font-medium leading-tight">
+              <h2 className="text-content-strong text-lg sm:text-xl font-medium leading-tight">
                 {title}
               </h2>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed line-clamp-5">
+              <p className="text-content text-xs sm:text-sm leading-relaxed line-clamp-5">
                 {description}
               </p>
             </div>

@@ -7,7 +7,7 @@ interface LazyIframeProps extends IframeHTMLAttributes<HTMLIFrameElement> {
 
 export default function LazyIframe({
   className = "",
-  backgroundColor = "bg-background-alt",
+  backgroundColor = "bg-surface-secondary",
   ...iframeProps
 }: LazyIframeProps) {
   const [showIframe, setShowIframe] = useState(false);
@@ -27,7 +27,7 @@ export default function LazyIframe({
         <div
           className={`absolute inset-0 ${backgroundColor} animate-pulse flex items-center justify-center rounded-lg shadow-lg`}
         >
-          <span className="text-slate-900">Loading...</span>
+          <span className="text-content-strong">Loading...</span>
         </div>
       )}
       {showIframe && (

@@ -89,7 +89,7 @@ export default function FullScreenGallery({
       {showOrderPrintButton && (
         <LinkButton
           variant="custom"
-          className="absolute top-4 left-4 z-50 bg-gray-200 hover:bg-gray-300 text-slate-900 flex items-center gap-2 cursor-pointer"
+          className="absolute top-4 left-4 z-50 bg-gray-200 hover:bg-gray-300 text-content-string flex items-center gap-2 cursor-pointer"
           onClick={handleOrderPrint}
         >
           <svg

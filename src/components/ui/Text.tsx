@@ -34,17 +34,17 @@ function Text({
   // Using arbitrary values ([size]) to match exact pixel specifications
   // Responsive prefixes (md:, lg:) provide different styles at different breakpoints
   const variants: Record<TextVariant, string> = {
-    h1: "text-slate-700 text-[25px] md:text-[35px] lg:text-[45px] font-[500] tracking-[-0.02em] leading-[1.2]",
-    h2: "text-slate-700 text-[24px] md:text-[30px] lg:text-[35px] font-[500] tracking-[-0.02em] leading-[1.2]",
-    h3: "text-slate-700 text-[20px] md:text-[25px] lg:text-[30px] font-[500] tracking-[-0.02em] leading-[1.3]",
-    h4: "text-slate-700 text-[17px] md:text-[22px] lg:text-[22px] font-[500] tracking-[0] leading-[1.6]",
-    h5: "text-slate-700 text-[16px] md:text-[19px] lg:text-[20px] font-[500] tracking-[0] leading-[1.6]",
-    h6: "text-slate-700 text-[15px] md:text-[17px] lg:text-[18px] font-[500] tracking-[0] leading-[1.6]",
-    body: "text-slate-600 text-[15px] md:text-[17px] lg:text-[19px] font-[300] tracking-[0] leading-[1.6]",
+    h1: "text-content-strong text-[25px] md:text-[35px] lg:text-[45px] font-[500] tracking-[-0.02em] leading-[1.2]",
+    h2: "text-content-strong text-[24px] md:text-[30px] lg:text-[35px] font-[500] tracking-[-0.02em] leading-[1.2]",
+    h3: "text-content-strong text-[20px] md:text-[25px] lg:text-[30px] font-[500] tracking-[-0.02em] leading-[1.3]",
+    h4: "text-content-strong text-[17px] md:text-[22px] lg:text-[22px] font-[500] tracking-[0] leading-[1.6]",
+    h5: "text-content-strong text-[16px] md:text-[19px] lg:text-[20px] font-[500] tracking-[0] leading-[1.6]",
+    h6: "text-content-strong text-[15px] md:text-[17px] lg:text-[18px] font-[500] tracking-[0] leading-[1.6]",
+    body: "text-content text-[15px] md:text-[17px] lg:text-[19px] font-[300] tracking-[0] leading-[1.6]",
     blockquote:
-      "text-slate-600 text-[25px] md:text-[35px] lg:text-[45px] font-[300] tracking-[-0.02em] leading-[1.6]",
+      "text-content text-[25px] md:text-[35px] lg:text-[45px] font-[300] tracking-[-0.02em] leading-[1.6]",
     caption:
-      "text-slate-600 text-[13px] md:text-[15px] lg:text-[17px] font-[300] tracking-[0] leading-[1.6] italic",
+      "text-content text-[13px] md:text-[15px] lg:text-[17px] font-[300] tracking-[0] leading-[1.6] italic",
 
     custom: "", // Only uses custom class
   };

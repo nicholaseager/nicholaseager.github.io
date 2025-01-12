@@ -92,7 +92,7 @@ const tableOfContents = sections
     {
       sections.map((section) => (
         <div
-          class={`${section.background === "dark" ? "bg-background-alt py-8" : ""} space-y-4 md:space-y-8`}
+          class={`${section.background === "dark" ? "bg-surface-secondary py-8" : ""} space-y-4 md:space-y-8`}
         >
           <ResponsiveWidth size="md">
             <Text variant="h2" spacing="normal" id={section.id}>
@@ -270,7 +270,7 @@ const tableOfContents = sections
     <!-- Disclosure -->
     <ResponsiveWidth size="md">
       <div class="space-y-4">
-        <Text variant="custom" className="text-xs italic text-gray-500">
+        <Text variant="caption">
           <span class="underline font-[700]"> Safety Disclosure: </span>
           <span>
             This travel guide is intended for educational purposes only. Readers
@@ -282,7 +282,7 @@ const tableOfContents = sections
             outdoor activities.
           </span>
         </Text>
-        <Text variant="custom" className="text-xs italic text-gray-500">
+        <Text variant="caption">
           <span class="underline font-[700]"> Affiliate Disclosure: </span>
           <span>
             This travel guide contains affiliate links, which means I may earn a

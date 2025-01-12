@@ -19,8 +19,8 @@ function IconButton({
   ...props
 }: IconButtonProps) {
   const variants: Record<IconButtonVariant, string> = {
-    primary: "bg-accent hover:brightness-90 text-white",
-    secondary: "bg-gray-200 hover:bg-gray-300 text-slate-900",
+    primary: "bg-primary text-primary-content hover:bg-primary-hover",
+    secondary: "bg-secondary text-secondary-content hover:bg-secondary-hover",
     custom: className,
   };
 
