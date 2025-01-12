@@ -17,6 +17,10 @@ export default defineConfig({
           return false;
         }
 
+        if (page.endsWith("/links/")) {
+          return false;
+        }
+
         return true;
       },
     }),
