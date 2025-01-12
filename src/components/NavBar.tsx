@@ -20,7 +20,7 @@ export default function NavBar({ pathname, style }: NavBarProps) {
   const backgroundColor = isTransparent ? "bg-transparent" : "bg-surface";
   const selectedColor = isTransparent
     ? "bg-surface-tertiary/20"
-    : "bg-surface-secondary";
+    : "bg-surface-tertiary";
   const hoverColor = isTransparent
     ? "hover:bg-surface-secondary/20"
     : "hover:bg-surface-secondary";
