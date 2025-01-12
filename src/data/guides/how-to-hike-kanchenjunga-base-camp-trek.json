@@ -43,21 +43,6 @@
       }
     },
     {
-      "id": "partnership",
-      "toc": false,
-      "background": "dark",
-      "title": "My Recommended Trekking Agency",
-      "introduction": "I collaborated with Himalayan Masters for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable. To book your own trek, contact them via email at info@himalayan-masters.com and use the code EAGER to enjoy a 5% discount on your trip.",
-      "content": {
-        "type": "partnership",
-        "logo": "/company-logos/himalayan-masters-logo.svg",
-        "cta": {
-          "title": "Book Your Trip (using code 'EAGER')",
-          "url": "https://himalayan-masters.com/trip/kanchenjunga-circuit-trek/"
-        }
-      }
-    },
-    {
       "id": "basics",
       "title": "Essential Information",
       "content": {
@@ -83,27 +68,27 @@
       }
     },
     {
+      "id": "partnership",
+      "toc": false,
+      "background": "dark",
+      "title": "My Recommended Trekking Agency",
+      "introduction": "I collaborated with Himalayan Masters for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable. To book your own trek, contact them via email at info@himalayan-masters.com and use the code EAGER to enjoy a 5% discount on your trip.",
+      "content": {
+        "type": "partnership",
+        "logo": "/company-logos/himalayan-masters-logo.svg",
+        "cta": {
+          "title": "Book Your Trip (using code 'EAGER')",
+          "url": "https://himalayan-masters.com/trip/kanchenjunga-circuit-trek/"
+        }
+      }
+    },
+    {
       "id": "map",
       "title": "Route Map",
       "introduction": "This interactive map highlights the complete Kanchenjunga Base Camp Trek route, with the main trail marked in dark blue, optional side trips in light blue, and alternative routes in green. Icons indicate teahouses, viewpoints, and points of interest along the way. From Taplejung to both North and South Base Camps, every significant stop and scenic detour is clearly marked for easy route planning.",
       "content": {
         "type": "google-map",
         "mapId": "1gvl0gvbYXEdExMZ7xI62RwYe7EO_j8o"
-      }
-    },
-    {
-      "id": "guide",
-      "title": "Hiring the Right Guide",
-      "introduction": "While the Kanchenjunga Base Camp Trek is possible without a guide - as evidenced by the occasional solo trekkers I encountered - I strongly recommend hiring one. A knowledgeable guide not only enhances safety and handles logistics like securing rooms at remote teahouses (crucial at places like North Base Camp), but also provides invaluable cultural insights and local connections that transform a challenging trek into a deeply enriching journey.",
-      "subsections": [
-        {
-          "title": "My Recommended Trekking Agency",
-          "description": "I collaborated with Himalayan Masters for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable. To book your own trek, contact them via email at info@himalayan-masters.com and use the code EAGER to enjoy a 5% discount on your trip."
-        }
-      ],
-      "cta": {
-        "title": "Book Your Trip (using code 'EAGER')",
-        "url": "https://himalayan-masters.com/trip/kanchenjunga-circuit-trek/"
       }
     },
     {
@@ -397,6 +382,21 @@
           ]
         }
       ]
+    },
+    {
+      "id": "guide",
+      "title": "Hiring the Right Guide",
+      "introduction": "While the Kanchenjunga Base Camp Trek is possible without a guide - as evidenced by the occasional solo trekkers I encountered - I strongly recommend hiring one. A knowledgeable guide not only enhances safety and handles logistics like securing rooms at remote teahouses (crucial at places like North Base Camp), but also provides invaluable cultural insights and local connections that transform a challenging trek into a deeply enriching journey.",
+      "subsections": [
+        {
+          "title": "My Recommended Trekking Agency",
+          "description": "I collaborated with Himalayan Masters for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable. To book your own trek, contact them via email at info@himalayan-masters.com and use the code EAGER to enjoy a 5% discount on your trip."
+        }
+      ],
+      "cta": {
+        "title": "Book Your Trip (using code 'EAGER')",
+        "url": "https://himalayan-masters.com/trip/kanchenjunga-circuit-trek/"
+      }
     },
     {
       "id": "weather",

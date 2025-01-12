@@ -40,21 +40,6 @@
       }
     },
     {
-      "id": "partnership",
-      "toc": false,
-      "background": "dark",
-      "title": "My Recommended Trekking Agency",
-      "introduction": "I collaborated with Himalayan Masters for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable. To book your own trek, contact them via email at info@himalayan-masters.com and use the code EAGER to enjoy a 5% discount on your trip.",
-      "content": {
-        "type": "partnership",
-        "logo": "/company-logos/himalayan-masters-logo.svg",
-        "cta": {
-          "title": "Book Your Trip (using code 'EAGER')",
-          "url": "https://himalayan-masters.com/trip/everest-three-passes-trek/"
-        }
-      }
-    },
-    {
       "id": "basics",
       "title": "Essential Information",
       "content": {
@@ -110,6 +95,21 @@
           "description": "No matter where you choose to start or which direction you go, get ready for an adventure that will leave you in awe."
         }
       ]
+    },
+    {
+      "id": "partnership",
+      "toc": false,
+      "background": "dark",
+      "title": "My Recommended Trekking Agency",
+      "introduction": "I collaborated with Himalayan Masters for my Kanchenjunga and Upper Dolpo treks, and their expertise was truly invaluable. To book your own trek, contact them via email at info@himalayan-masters.com and use the code EAGER to enjoy a 5% discount on your trip.",
+      "content": {
+        "type": "partnership",
+        "logo": "/company-logos/himalayan-masters-logo.svg",
+        "cta": {
+          "title": "Book Your Trip (using code 'EAGER')",
+          "url": "https://himalayan-masters.com/trip/everest-three-passes-trek/"
+        }
+      }
     },
     {
       "id": "itinerary",
