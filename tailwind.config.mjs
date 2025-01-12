@@ -88,21 +88,9 @@ export default {
           DEFAULT: "#ffffff",
           alt: "#f4f5f6",
         },
-        border: "#dddddd",
-        text: {
-          dark: "#2a2f36",
-          medium: "#6c7a89",
-          light: "#abb7b7",
-        },
         accent: {
           DEFAULT: "#20605B",
         },
-        overlay: {
-          bg: "#20605B",
-          text: "#ffffff",
-          accent: "#2a2f36",
-        },
-        error: "#d64541",
         social: {
           facebook: {
             DEFAULT: "#1877F2",
