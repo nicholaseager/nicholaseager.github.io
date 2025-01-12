@@ -130,7 +130,7 @@ export default {
           light: "rgb(254 226 226)", // red-100
           content: "rgb(185 28 28)", // red-700
         },
-        // Feedback colors
+        // Backdrop colors
         backdrop: {
           // For behind modals, dimming content, etc.
           DEFAULT: "rgba(15, 23, 42, 0.5)", // slate-900 with 50% opacity
