@@ -1,9 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import Image from "../image-kit/Image";
 import RoomDisplay from "./RoomDisplay";
+import Card from "../ui/Card";
 
 interface PrintDisplayProps {
   artworkPath: string;
@@ -114,15 +115,25 @@ const roomDisplays = [
 
 const PrintDisplay: React.FC<PrintDisplayProps> = ({ artworkPath }) => {
   return (
-    <Swiper className="w-full">
+    <Swiper
+      className="w-full"
+      modules={[Autoplay]}
+      spaceBetween={20}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: true,
+      }}
+    >
       {roomDisplays.map((room, index) => (
         <SwiperSlide key={index}>
-          <RoomDisplay
-            artworkPath={artworkPath}
-            background={room.background}
-            aspectRatio={room.aspectRatio}
-            artworkPosition={room.artworkPosition}
-          />
+          <Card animate={false}>
+            <RoomDisplay
+              artworkPath={artworkPath}
+              background={room.background}
+              aspectRatio={room.aspectRatio}
+              artworkPosition={room.artworkPosition}
+            />
+          </Card>
         </SwiperSlide>
       ))}
     </Swiper>
