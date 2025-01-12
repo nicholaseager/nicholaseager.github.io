@@ -2,26 +2,52 @@ import type { CollectionEntry } from "astro:content";
 
 export function getSimilarPhotos(
   photos: CollectionEntry<"photos">[],
-  tags: string[],
+  currentPhoto: CollectionEntry<"photos">,
   limit: number = 10
 ) {
-  return (
-    photos
-      // Calculate similarity score based on number of matching tags
-      .map((photo) => ({
+  // Extract location parts from the current photo path
+  const currentLocationParts = currentPhoto.data.path
+    .replace(/^photos\/countries\//, "")
+    .split("/")
+    .slice(0, -1); // Remove filename
+
+  return photos
+    .map((photo) => {
+      // Skip the current photo
+      if (photo.data.path === currentPhoto.data.path) {
+        return { ...photo.data, similarity: -1 };
+      }
+
+      // Calculate tag similarity (number of matching tags)
+      const tagSimilarity = photo.data.tags.filter((tag: string) =>
+        currentPhoto.data.tags.includes(tag)
+      ).length;
+
+      // Extract location parts from compared photo
+      const photoLocationParts = photo.data.path
+        .replace(/^photos\/countries\//, "")
+        .split("/")
+        .slice(0, -1); // Remove filename
+
+      // Calculate location similarity (number of matching location parts)
+      const locationSimilarity = photoLocationParts.reduce(
+        (score, part, index) => {
+          return score + (part === currentLocationParts[index] ? 1 : 0);
+        },
+        0
+      );
+
+      // Combined similarity score - weight location matches more heavily
+      const similarity = tagSimilarity + locationSimilarity * 2;
+
+      return {
         ...photo.data,
-        similarity: photo.data.tags.filter((tag: string) => tags.includes(tag))
-          .length,
-      }))
-      // Filter out photos with no matching tags
-      .filter((photo) => photo.similarity > 0)
-      // Sort by similarity score (highest first)
-      .sort((a, b) => b.similarity - a.similarity)
-      // Remove first photo since it will be the current photo
-      .slice(1)
-      // Limit
-      .slice(0, limit)
-  );
+        similarity,
+      };
+    })
+    .filter((photo) => photo.similarity > 0)
+    .sort((a, b) => b.similarity - a.similarity)
+    .slice(0, limit);
 }
 
 export function getSimilarGuides(

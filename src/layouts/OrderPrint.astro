@@ -31,7 +31,8 @@ const organizationName = "Nicholas Eager Photography";
 const currentYear = new Date().getFullYear();
 
 const photos = await getCollection("photos");
-const similarPhotoPaths = getSimilarPhotos(photos, tags, 10).map(
+const currentPhoto = photos.find((photo) => photo.data.path === path)!;
+const similarPhotoPaths = getSimilarPhotos(photos, currentPhoto, 10).map(
   (photo) => photo.path
 );
 ---
