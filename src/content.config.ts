@@ -7,7 +7,11 @@ import photoTagDefinitionsData from "./data/photo-tag-definitions.json";
 import photoLocationDefinitionsData from "./data/photo-location-definitions.json";
 
 const guides = defineCollection({
-  loader: glob({ base: "./src/data/guides", pattern: "**/*.json" }),
+  loader: glob({
+    base: "./src/data/guides",
+    // Include subfolders (i.e. /drafts) in dev and ignore them in prod
+    pattern: import.meta.env.PROD ? "*.json" : "**/*.json",
+  }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
