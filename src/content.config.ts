@@ -1,6 +1,7 @@
 import { glob, file } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 import { getPhotoLocationParts } from "./utils/photo-paths";
+import { kebabToTitleCase } from "./utils/kebab";
 import photosData from "./data/photos.json";
 import photoTagDefinitionsData from "./data/photo-tag-definitions.json";
 import photoLocationDefinitionsData from "./data/photo-location-definitions.json";
@@ -182,20 +183,12 @@ const photos = defineCollection({
       const pathParts = photo.path.split("/");
 
       // Parse title from the last part of the path
-      const title = pathParts[pathParts.length - 1]
-        .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
+      const title = kebabToTitleCase(pathParts[pathParts.length - 1]);
 
       // Parse location from the path parts between "photos/countries" and filename
       const location = pathParts
         .slice(2, -1) // Skip "photos" and "countries" prefix, and exclude the filename
-        .map((part) =>
-          part
-            .split("-")
-            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(" ")
-        )
+        .map((part) => kebabToTitleCase(part))
         .join(" / ");
 
       return {
@@ -278,10 +271,7 @@ const photoLocations = defineCollection({
       // If this is a country-level path
       if (parts.length === 1) {
         // Convert kebab-case to Title Case for fallback
-        const fallbackTitle = country
-          .split("-")
-          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(" ");
+        const fallbackTitle = kebabToTitleCase(country);
 
         return {
           title: countryData?.title || fallbackTitle,
@@ -294,10 +284,7 @@ const photoLocations = defineCollection({
       const locationData = countryData?.locations?.[location];
 
       // Convert kebab-case to Title Case for fallback
-      const fallbackTitle = location
-        .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
+      const fallbackTitle = kebabToTitleCase(location);
 
       return {
         title: locationData?.title || fallbackTitle,
@@ -328,11 +315,6 @@ const photoLocations = defineCollection({
       // Create new location
       const { title, description } = getLocationMetadata(path);
       const parts = path.split("/");
-      // Convert kebab-case to Title Case (e.g. "new-zealand" -> "New Zealand")
-      const name = parts[parts.length - 1]
-        .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
 
       // Parent path is everything before the last segment
       // e.g. for "france/chamonix/argentiere", parent is "france/chamonix"
@@ -449,10 +431,7 @@ const photoThemes = defineCollection({
       )[tag];
 
       // Convert kebab-case to Title Case as fallback if no title defined
-      const fallbackTitle = tag
-        .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
+      const fallbackTitle = kebabToTitleCase(tag);
 
       const title = tagDef?.title || fallbackTitle;
       const fallbackDescription = `A collection of ${title.toLowerCase()} from around the world`;

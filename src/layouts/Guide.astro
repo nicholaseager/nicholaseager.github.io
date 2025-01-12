@@ -18,6 +18,7 @@ import ArticleSwiper from "../components/ui/ArticleSwiper";
 
 import TableOfContents from "../components/toc/TableOfContents.tsx";
 import HikingGuideSEO from "../seo/HikingGuideSEO.astro";
+import { kebabToTitleCase } from "../utils/kebab";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -41,10 +42,7 @@ const guidesWithSimilarity = getSimilarGuides(guides, tags);
 const tableOfContents = sections
   .filter((s) => s.toc !== false)
   .map((section) => ({
-    title: section.id
-      .split("-")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(" "),
+    title: kebabToTitleCase(section.id),
     id: section.id,
   }));
 ---

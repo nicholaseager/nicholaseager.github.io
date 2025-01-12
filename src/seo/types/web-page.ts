@@ -6,6 +6,7 @@ import type {
   ListItem,
 } from "schema-dts";
 import { imageFromPath } from "./image";
+import { kebabToTitleCase } from "../../utils/kebab";
 
 export interface WebPageSchemaProps {
   title: string;
@@ -29,10 +30,7 @@ function generateBreadcrumbs(basePath: string, path: string): ListItem[] {
         ({
           "@type": "ListItem",
           position: index + 2,
-          name: part
-            .split("-")
-            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(" "),
+          name: kebabToTitleCase(part),
           item: new URL(
             parts.slice(0, index + 1).join("/"),
             basePath

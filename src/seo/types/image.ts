@@ -1,6 +1,7 @@
 import type { ImageObject } from "schema-dts";
 import { authorFrom } from "./author";
 import { organizationFrom } from "./organization";
+import { kebabToTitleCase } from "../../utils/kebab";
 
 interface ImageProps {
   url?: string | URL;
@@ -16,12 +17,7 @@ export function imageFromPath(
   relativePath: string,
   id?: string
 ): ImageObject {
-  const name = relativePath
-    .split("/")
-    .pop()!
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+  const name = kebabToTitleCase(relativePath.split("/").pop()!);
 
   return {
     ...(id && { "@id": id }),
