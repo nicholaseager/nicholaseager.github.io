@@ -6,11 +6,11 @@ interface NavBarProps {
 }
 
 const links = [
-  { name: "Photos", href: "/photos" },
-  { name: "Guides", href: "/guides" },
-  { name: "Gear", href: "/gear" },
-  { name: "Contact", href: "/contact" },
-  { name: "About", href: "/about" },
+  { name: "Photos", href: "/photos/" },
+  { name: "Guides", href: "/guides/" },
+  { name: "Gear", href: "/gear/" },
+  { name: "Contact", href: "/contact/" },
+  { name: "About", href: "/about/" },
 ];
 
 export default function NavBar({ pathname, style }: NavBarProps) {
