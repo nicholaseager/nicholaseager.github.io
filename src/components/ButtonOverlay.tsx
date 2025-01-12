@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./ui/LinkButton";
+import Button from "./ui/Button";
 
 interface ButtonOverlayProps {
   onButtonClick: () => void;
