@@ -24,11 +24,10 @@ const RoomDisplay: React.FC<RoomDisplayProps> = ({
       {/* Background container with aspect ratio */}
       <div className="relative w-full" style={{ aspectRatio: aspectRatio }}>
         {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(https://ik.imagekit.io/qn1gkawvy/prints/backgrounds/${background}.jpg)`,
-          }}
+        <Image
+          path={`prints/backgrounds/${background}`}
+          className="absolute inset-0 object-cover w-full h-full"
+          sizes="50vw"
         />
 
         {/* Artwork Overlay */}
@@ -41,6 +40,7 @@ const RoomDisplay: React.FC<RoomDisplayProps> = ({
           <Image
             path={artworkPath}
             className="shadow-xl border-4 sm:border-8 border-white object-contain w-auto h-auto max-w-full max-h-full"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
           />
         </div>
       </div>
