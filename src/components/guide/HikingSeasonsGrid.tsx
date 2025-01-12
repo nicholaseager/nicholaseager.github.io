@@ -20,7 +20,7 @@ const HikingSeasonsGrid: React.FC<HikingSeasonsGridProps> = ({ seasons }) => {
         <Card key={season.name} backgroundColor="background-alt">
           <div className="relative z-20 p-6 h-full flex flex-col">
             <Text variant="h4">{season.name}</Text>
-            <Text variant="body" spacing="tight" className="font-[400]">
+            <Text variant="body" spacing="tight">
               {season.months}
             </Text>
             <Text variant="body" spacing="tight">

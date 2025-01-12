@@ -28,7 +28,7 @@ const HeroCard: React.FC<HeroCardProps> = ({
         <div className="absolute inset-0 p-4 bg-black/50 flex flex-col items-center justify-center text-white">
           <Text
             variant="h2"
-            className="font-bold uppercase text-white text-center"
+            className="font-[700] uppercase text-white text-center"
           >
             {title}
           </Text>

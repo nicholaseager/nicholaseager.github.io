@@ -35,7 +35,7 @@ export const GoogleMapModalWrapper: React.FC<GoogleMapModalWrapperProps> = ({
           sizes="128px"
         />
       </div>
-      <h2 className="text-xl font-bold">Support Creator</h2>
+      <h2 className="text-xl font-[700]">Support Creator</h2>
       <p>
         Creating content requires time and resources. If you find this helpful,
         please consider making a donation.
