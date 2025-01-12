@@ -19,6 +19,7 @@ import ArticleSwiper from "../components/ui/ArticleSwiper";
 import TableOfContents from "../components/toc/TableOfContents.tsx";
 import HikingGuideSEO from "../seo/HikingGuideSEO.astro";
 import { kebabToTitleCase } from "../utils/kebab";
+import TextContainer from "../components/ui/TextContainer";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -154,13 +155,16 @@ const tableOfContents = sections
                 </>
               )}
 
-              {section.content.type === "list" &&
-                section.content.items.map((item) => (
-                  <Text variant="body">
-                    <b>{item.title}: </b>
-                    {item.description}
-                  </Text>
-                ))}
+              {section.content.type === "list" && (
+                <TextContainer spacing="loose">
+                  {section.content.items.map((item) => (
+                    <Text variant="body">
+                      <b>{item.title}: </b>
+                      {item.description}
+                    </Text>
+                  ))}
+                </TextContainer>
+              )}
 
               {section.content.type === "partnership" && (
                 <div class="flex flex-col gap-8 justify-center items-center">
