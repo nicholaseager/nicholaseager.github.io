@@ -41,26 +41,26 @@ const roomDisplays = [
       right: "20%",
     },
   },
-  {
-    background: "white-wall-wooden-floor-dog",
-    aspectRatio: "0.72733333",
-    artworkPosition: {
-      top: "10%",
-      bottom: "50%",
-      left: "10%",
-      right: "40%",
-    },
-  },
-  {
-    background: "brick-wall-bicycle",
-    aspectRatio: "0.886",
-    artworkPosition: {
-      top: "5%",
-      bottom: "55%",
-      left: "20%",
-      right: "20%",
-    },
-  },
+  // {
+  //   background: "white-wall-wooden-floor-dog",
+  //   aspectRatio: "0.72733333",
+  //   artworkPosition: {
+  //     top: "10%",
+  //     bottom: "50%",
+  //     left: "10%",
+  //     right: "40%",
+  //   },
+  // },
+  // {
+  //   background: "brick-wall-bicycle",
+  //   aspectRatio: "0.886",
+  //   artworkPosition: {
+  //     top: "5%",
+  //     bottom: "55%",
+  //     left: "20%",
+  //     right: "20%",
+  //   },
+  // },
   {
     background: "brown-wall-wooden-furntiure",
     aspectRatio: "1.00874243",
@@ -91,26 +91,26 @@ const roomDisplays = [
       right: "23%",
     },
   },
-  {
-    background: "white-wall-gray-couch-dog",
-    aspectRatio: "1.5",
-    artworkPosition: {
-      top: "10%",
-      bottom: "60%",
-      left: "45%",
-      right: "25%",
-    },
-  },
-  {
-    background: "dark-grey-wall-wooden-dresser",
-    aspectRatio: "1.08303249",
-    artworkPosition: {
-      top: "10%",
-      bottom: "40%",
-      left: "35%",
-      right: "15%",
-    },
-  },
+  // {
+  //   background: "white-wall-gray-couch-dog",
+  //   aspectRatio: "1.5",
+  //   artworkPosition: {
+  //     top: "10%",
+  //     bottom: "60%",
+  //     left: "45%",
+  //     right: "25%",
+  //   },
+  // },
+  // {
+  //   background: "dark-grey-wall-wooden-dresser",
+  //   aspectRatio: "1.08303249",
+  //   artworkPosition: {
+  //     top: "10%",
+  //     bottom: "40%",
+  //     left: "35%",
+  //     right: "15%",
+  //   },
+  // },
 ];
 
 const PrintDisplay: React.FC<PrintDisplayProps> = ({ artworkPath }) => {
