@@ -9,7 +9,6 @@ import Intro from "../components/guide/Intro.astro";
 import ItineraryTable from "../components/guide/ItineraryTable.tsx";
 import HikingSeasonsGrid from "../components/guide/HikingSeasonsGrid.tsx";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
-import ImagesSwiper from "../components/guide/ThumbsSwiper.tsx";
 import GoogleMap from "../components/GoogleMap.astro";
 import GearSwiper from "../components/gear/GearSwiper.tsx";
 import CommentForm from "../components/form/CommentForm.astro";
@@ -20,6 +19,7 @@ import TableOfContents from "../components/toc/TableOfContents.tsx";
 import HikingGuideSEO from "../seo/HikingGuideSEO.astro";
 import { kebabToTitleCase } from "../utils/kebab";
 import TextContainer from "../components/ui/TextContainer";
+import PhotoSwiper from "../components/photos/PhotoSwiper";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -109,10 +109,7 @@ const tableOfContents = sections
             >
               {/* Handle different content types */}
               {section.content.type === "images" && (
-                <ImagesSwiper
-                  client:visible
-                  imagePaths={section.content.paths}
-                />
+                <PhotoSwiper client:visible photos={section.content.paths} />
               )}
 
               {section.content.type === "google-map" && (
@@ -203,10 +200,7 @@ const tableOfContents = sections
                 </ResponsiveWidth>
                 {subsection.images && (
                   <ResponsiveWidth size="lg">
-                    <ImagesSwiper
-                      client:visible
-                      imagePaths={subsection.images}
-                    />
+                    <PhotoSwiper client:visible photos={subsection.images} />
                   </ResponsiveWidth>
                 )}
                 <ResponsiveWidth size="md">

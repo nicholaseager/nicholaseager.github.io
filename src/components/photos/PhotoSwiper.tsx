@@ -7,6 +7,7 @@ import FullScreenGallery from "./FullScreenGallery";
 import "swiper/css";
 import "swiper/css/navigation";
 import Card from "../ui/Card";
+import BaseSwiper from "../ui/BaseSwiper";
 
 interface PhotoSwiperProps {
   photos: string[];
@@ -31,43 +32,22 @@ export default function PhotoSwiper({
 
   return (
     <>
-      <div className={className}>
-        <Swiper
-          modules={[Navigation]}
-          navigation
-          slidesPerView={1}
-          breakpoints={{
-            640: {
-              slidesPerView: "auto",
-            },
-          }}
-          spaceBetween={30}
-          speed={300}
-          loop={false}
-          className="h-[300px] w-full"
-        >
-          {photos.map((photo, index) => (
-            <SwiperSlide
-              key={index}
-              onClick={() => handlePhotoClick(index)}
-              className="sm:!w-auto flex justify-center"
-            >
-              <Card className="w-fit sm:max-w-none mx-auto sm:mx-0">
-                <Image
-                  path={photo}
-                  className="max-h-[calc(300px-2rem)] w-auto object-contain"
-                />
-              </Card>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      <BaseSwiper breakpoints={{ xs: 1 }}>
+        {photos.map((photo, index) => (
+          <Card animate={false}>
+            <div onClick={() => handlePhotoClick(index)}>
+              <Image className="w-full h-full" path={photo}></Image>
+            </div>
+          </Card>
+        ))}
+      </BaseSwiper>
 
       {selectedPhotoIndex !== null && (
         <FullScreenGallery
           photos={photos}
           startIndex={selectedPhotoIndex}
           onClose={handleCloseGallery}
+          showOrderPrintButton={false}
         />
       )}
     </>
