@@ -11,17 +11,17 @@ export default {
               fontWeight: "500",
               letterSpacing: "-0.02em",
               lineHeight: "1.2",
-              color: "rgb(51 65 85)", // text-slate-700
+              color: "rgb(51 65 85)",
             },
             h2: {
-              fontSize: ["22px", null, "30px", "35px"],
+              fontSize: ["24px", null, "30px", "35px"],
               fontWeight: "500",
               letterSpacing: "-0.02em",
               lineHeight: "1.2",
               color: "rgb(51 65 85)",
             },
             h3: {
-              fontSize: ["22px", null, "25px", "30px"],
+              fontSize: ["20px", null, "25px", "30px"],
               fontWeight: "500",
               letterSpacing: "-0.02em",
               lineHeight: "1.3",
@@ -35,14 +35,14 @@ export default {
               color: "rgb(51 65 85)",
             },
             h5: {
-              fontSize: ["17px", null, "20px", "20px"],
+              fontSize: ["16px", null, "19px", "20px"],
               fontWeight: "500",
               letterSpacing: "0",
               lineHeight: "1.6",
               color: "rgb(51 65 85)",
             },
             h6: {
-              fontSize: ["17px", null, "20px", "20px"],
+              fontSize: ["15px", null, "17px", "18px"],
               fontWeight: "500",
               letterSpacing: "0",
               lineHeight: "1.6",
