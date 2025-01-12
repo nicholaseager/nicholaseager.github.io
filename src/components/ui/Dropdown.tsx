@@ -22,7 +22,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   currentLabel,
   onItemClick,
   className = "",
-  selectedClassName = "text-blue-600 bg-blue-50",
+  selectedClassName = "text-slate-600 bg-slate-100",
   unselectedClassName = "text-slate-700 hover:bg-slate-50",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +56,7 @@ const Dropdown: React.FC<DropdownProps> = ({
     <div className={className} ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-200 rounded-full hover:bg-slate-50"
+        className="w-full flex items-center justify-between px-4 py-2 text-md font-medium text-slate-700 bg-white border border-slate-200 rounded-full hover:bg-slate-50"
       >
         <span>{currentLabel}</span>
         <svg
@@ -83,7 +83,7 @@ const Dropdown: React.FC<DropdownProps> = ({
               key={item.id}
               onClick={() => handleItemSelection(item.id, item.href)}
               className={`
-                block w-full text-left px-4 py-2 text-sm
+                block w-full text-left px-4 py-2 text-lg
                 ${
                   activeItemId === item.id
                     ? selectedClassName
