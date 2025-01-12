@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
+import SwiperNavButton from "./SwiperNavButton";
 import "swiper/css";
 
 interface BaseSwiperProps {
@@ -38,25 +39,7 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({
 
   return (
     <div className="relative group">
-      <button
-        onClick={slidePrev}
-        className="absolute -left-2 lg:-left-12 top-1/2 z-10 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white transition-colors"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-      </button>
+      <SwiperNavButton direction="prev" onClick={slidePrev} />
 
       <div className="p-4 overflow-hidden">
         <Swiper
@@ -81,25 +64,7 @@ const BaseSwiper: React.FC<BaseSwiperProps> = ({
         </Swiper>
       </div>
 
-      <button
-        onClick={slideNext}
-        className="absolute -right-2 lg:-right-12 top-1/2 z-10 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white transition-colors"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </button>
+      <SwiperNavButton direction="next" onClick={slideNext} />
     </div>
   );
 };
