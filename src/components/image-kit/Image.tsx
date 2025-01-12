@@ -27,7 +27,7 @@ const Image = ({
           ${CDN_BASE_URL}/tr:w-1280/${path}.jpg 1280w
         `}
       sizes={sizes}
-      src={`${CDN_BASE_URL}/tr:w-640/${path}.jpg`}
+      src={`${CDN_BASE_URL}/tr:w-10,bl-10/${path}.jpg`}
       alt={alt}
       loading="lazy"
       decoding="async"
