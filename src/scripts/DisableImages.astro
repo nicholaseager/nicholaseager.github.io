@@ -3,6 +3,8 @@
   document.addEventListener("contextmenu", (e) => {
     if (e.target instanceof HTMLImageElement) {
       e.preventDefault();
+      // stop long touch hold from poping up context menus
+      return false;
     }
   });
 
@@ -23,27 +25,6 @@
       (e.ctrlKey && e.shiftKey && e.key === "I")
     ) {
       e.preventDefault();
-    }
-  });
-
-  // Prevent long press to save on mobile devices
-  let touchTimeout: number;
-
-  document.addEventListener(
-    "touchstart",
-    (e) => {
-      if (e.target instanceof HTMLImageElement) {
-        touchTimeout = window.setTimeout(() => {
-          e.preventDefault();
-        }, 500); // Prevent only after 500ms (long press)
-      }
-    },
-    { passive: true }
-  );
-
-  document.addEventListener("touchend", () => {
-    if (touchTimeout) {
-      clearTimeout(touchTimeout);
     }
   });
 </script>
