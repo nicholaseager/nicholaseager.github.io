@@ -25,6 +25,21 @@
       e.preventDefault();
     }
   });
+
+  // Prevent touch events (for all mobile devices)
+  const touchEvents = ["touchstart", "touchmove", "touchend"];
+
+  touchEvents.forEach((eventType) => {
+    document.addEventListener(
+      eventType,
+      (e) => {
+        if (e.target instanceof HTMLImageElement) {
+          e.preventDefault();
+        }
+      },
+      { passive: false }
+    );
+  });
 </script>
 
 <style>

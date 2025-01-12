@@ -16,7 +16,7 @@ const Image = ({
 
   return (
     <img
-      className={`${className} select-none`}
+      className={`${className} select-none [-webkit-touch-callout:none]`}
       srcSet={`
           ${CDN_BASE_URL}/tr:w-96/${path}.jpg 96w,
           ${CDN_BASE_URL}/tr:w-160/${path}.jpg 160w,
