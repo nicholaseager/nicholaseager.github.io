@@ -1,0 +1,42 @@
+---
+import ResponsiveWidth from "../../components/layout/ResponsiveWidth.astro";
+import Card from "../../components/ui/Card";
+import Grid from "../../components/ui/Grid";
+import Link from "../../components/ui/Link";
+import LinkButton from "../../components/ui/LinkButton";
+import Page from "../../layouts/Page.astro";
+import { kebabToTitleCase } from "../../utils/kebab";
+
+// Helper function to get all unique locations
+function getAllLocations() {
+  const files = import.meta.glob("/src/data/maps/**/*.json", { eager: true });
+  const locations: Set<string> = new Set();
+
+  Object.keys(files).forEach((file) => {
+    const location: string = file.split("/")[4];
+    locations.add(location);
+  });
+
+  return Array.from(locations);
+}
+
+const locations = getAllLocations();
+---
+
+<Page title="All Hiking Maps" description="">
+  <ResponsiveWidth>
+    <div class="space-y-8 flex flex-col">
+      <ul class="space-y-4">
+        {
+          locations.map((location) => (
+            <li>
+              <LinkButton variant="secondary" href={`/maps/${location}`}>
+                {kebabToTitleCase(location)}
+              </LinkButton>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </ResponsiveWidth>
+</Page>
