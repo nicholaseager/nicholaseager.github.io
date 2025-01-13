@@ -12,6 +12,12 @@ export interface ArticleSchemaProps {
   datePublished: string;
   dateModified: string;
   image?: string;
+  location?: {
+    name: string;
+    latitude?: string;
+    longitude?: string;
+    mapId?: string;
+  };
   keywords: string[];
 }
 
@@ -24,6 +30,7 @@ export function articleFrom({
   datePublished,
   dateModified,
   image,
+  location,
   keywords,
 }: ArticleSchemaProps): Article {
   return {
@@ -47,6 +54,23 @@ export function articleFrom({
         image,
         new URL("#primaryImage", url).toString()
       ),
+    }),
+    ...(location && {
+      contentLocation: {
+        "@type": "Place",
+        name: location.name,
+        ...(location.latitude &&
+          location.longitude && {
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: location.latitude,
+              longitude: location.longitude,
+            },
+          }),
+        ...(location.mapId && {
+          map: `https://www.google.com/maps/d/viewer?mid=${location.mapId}`,
+        }),
+      },
     }),
     keywords,
   };

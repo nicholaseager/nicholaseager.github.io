@@ -68,37 +68,12 @@ const tools = gearContent?.trip
       dateModified: guide.modified_date.toISOString(),
       image: guide.image,
       keywords: guide.tags.map((tag) => kebabToTitleCase(tag)),
-    }),
-    creativeWorkFrom({
-      name: guide.title,
-      url: currentPageCanonicalURL,
-      datePublished: guide.date.toISOString(),
-      dateModified: guide.modified_date.toISOString(),
-      audience: {
-        type: "Intermediate Hikers",
-      },
-      educationalLevel: "Intermediate",
       location: guide.location && {
         name: guide.location.name,
         latitude: guide.location.latitude,
         longitude: guide.location.longitude,
         mapId: mapContent?.mapId,
       },
-    }),
-    guideFrom({
-      name: guide.title,
-      url: currentPageCanonicalURL,
-      datePublished: guide.date.toISOString(),
-      dateModified: guide.modified_date.toISOString(),
-      description: guide.introduction,
-      image: guide.image,
-      location: guide.location && {
-        name: guide.location.name,
-        latitude: guide.location.latitude,
-        longitude: guide.location.longitude,
-        mapId: mapContent?.mapId,
-      },
-      targetAudience: "Intermediate Hikers",
     }),
   ]}
 />
