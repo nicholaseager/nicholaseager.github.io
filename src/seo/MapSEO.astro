@@ -1,0 +1,37 @@
+---
+import { type CollectionEntry } from "astro:content";
+import Script from "./Script.astro";
+import { articleFrom } from "./types/article";
+import { kebabToTitleCase } from "../utils/kebab";
+
+interface Props {
+  title: string;
+  headline: string;
+  map: CollectionEntry<"maps">["data"];
+}
+
+const { title, headline, map } = Astro.props;
+const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<Script
+  graph={[
+    articleFrom({
+      name: title,
+      headline: headline,
+      abstract: map.description,
+      description: headline,
+      url: currentPageCanonicalURL,
+      datePublished: map.date.toISOString(),
+      dateModified: map.modified_date.toISOString(),
+      image: map.image,
+      location: map.location && {
+        name: map.location.name,
+        latitude: map.location.latitude,
+        longitude: map.location.longitude,
+        mapId: map.mapId,
+      },
+      keywords: map.tags.map((tag) => kebabToTitleCase(tag)),
+    }),
+  ]}
+/>

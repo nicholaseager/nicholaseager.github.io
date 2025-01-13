@@ -1,0 +1,108 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import GoogleMap from "../components/GoogleMap.astro";
+import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
+import Text from "../components/ui/Text";
+import TextContainer from "../components/ui/TextContainer";
+import Link from "../components/ui/Link";
+import MapSEO from "../seo/MapSEO.astro";
+import CommentForm from "../components/form/CommentForm.astro";
+import Disclosure from "../components/Disclosure.astro";
+import Image from "../components/image-kit/Image";
+import Card from "../components/ui/Card";
+import QuickLinks from "../components/QuickLinks.astro";
+
+type Props = CollectionEntry<"maps">["data"];
+
+const map = Astro.props;
+const title = `${map.name} Map (GPS Route)`;
+const headline = `Interactive hiking map and GPS route for the ${map.name}`;
+---
+
+<Layout title={title} description={headline} image={map.image}>
+  <section class="my-8">
+    <ResponsiveWidth>
+      <div class="flex items-center justify-center mb-8">
+        <Card animate={false}>
+          <Image path={map.image} />
+        </Card>
+      </div>
+      <TextContainer>
+        <Text variant="h1" className="text-center">{title}</Text>
+        <Text variant="body" className="text-center">
+          {headline}
+        </Text>
+      </TextContainer>
+    </ResponsiveWidth>
+  </section>
+  <section>
+    <ResponsiveWidth size="md">
+      <QuickLinks links={map.links} />
+    </ResponsiveWidth>
+  </section>
+  <main class="space-y-8 my-8 md:my-16">
+    <ResponsiveWidth>
+      <TextContainer>
+        <Text variant="h2">Introduction</Text>
+        <Text variant="body">
+          Welcome to my interactive hiking map! I've carefully crafted this
+          resource to help you explore the {map.name} just as I experienced it during
+          my filming. The colored lines represent different route options: the main
+          trail, alternate routes, and/or optional side trips. I've also marked key
+          points of interest with custom icons - from breathtaking viewpoints to
+          hidden gems and cultural landmarks that made this adventure truly special.
+        </Text>
+        <Text variant="body">
+          Feel free to zoom, pan, and click on any marker to learn more about
+          that specific location. Each point includes my personal observations
+          and practical tips that didn't make it into my video but could enhance
+          your own journey.
+        </Text>
+      </TextContainer>
+    </ResponsiveWidth>
+    <ResponsiveWidth size="md">
+      <TextContainer>
+        <Text variant="h2">
+          {title}
+        </Text>
+        <Text variant="body">
+          {map.description}
+        </Text>
+      </TextContainer>
+    </ResponsiveWidth>
+    <ResponsiveWidth size="lg">
+      <GoogleMap mapId={map.mapId} />
+    </ResponsiveWidth>
+    <ResponsiveWidth>
+      <TextContainer>
+        <Text variant="h2">Conclusion</Text>
+        <Text variant="body">
+          I hope this interactive map helps you visualize and plan your own
+          adventure on the {map.name}. Remember that conditions can change, and
+          while I strive to provide accurate information, always check current
+          conditions, bring appropriate gear, and follow local guidelines and
+          Leave No Trace principles.
+        </Text>
+        <Text variant="body">
+          If you found this resource helpful, consider
+          <Link href="/support">supporting me</Link> for more immersive hiking films
+          and trail guides. Have you hiked the {map.name} or plan to? I'd love to
+          hear about your experience in the comments below!
+        </Text>
+      </TextContainer>
+    </ResponsiveWidth>
+  </main>
+  <section class="space-y-8 my-8 md:my-16">
+    <!-- Comment -->
+    <ResponsiveWidth size="lg">
+      <CommentForm page={title} />
+    </ResponsiveWidth>
+
+    <!-- Disclosure -->
+    <ResponsiveWidth size="md">
+      <Disclosure />
+    </ResponsiveWidth>
+  </section>
+  <MapSEO title={title} headline={headline} map={map} />
+</Layout>
