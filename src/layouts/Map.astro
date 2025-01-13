@@ -6,6 +6,7 @@ import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import Text from "../components/ui/Text";
 import TextContainer from "../components/ui/TextContainer";
 import Link from "../components/ui/Link";
+import LinkButton from "../components/ui/LinkButton";
 import MapSEO from "../seo/MapSEO.astro";
 import CommentForm from "../components/form/CommentForm.astro";
 import Disclosure from "../components/Disclosure.astro";
@@ -73,6 +74,37 @@ const headline = `Interactive hiking map and GPS route for the ${map.name}`;
     </ResponsiveWidth>
     <ResponsiveWidth size="lg">
       <GoogleMap mapId={map.mapId} />
+    </ResponsiveWidth>
+    <ResponsiveWidth>
+      <TextContainer>
+        <Text variant="h2">Download this Map</Text>
+        <Text variant="body">
+          While this interactive map is great for planning your {map.name},
+          having offline access during your hike is essential for safety and
+          navigation. I've created a downloadable GPS file (available below)
+          that's compatible with popular hiking apps like Maps.me, Gaia GPS, and
+          Google Earth. Simply download the file and import it into your
+          preferred app before hitting the trail.
+        </Text>
+        <Text variant="body">
+          <b>Pro tip:</b> I recommend downloading both the map and the surrounding
+          area in your chosen app while you still have internet access. This ensures
+          you'll have detailed topographic data even in areas with no cell service.
+        </Text>
+        <div class="flex gap-2">
+          <LinkButton
+            href=`https://www.google.com/maps/d/u/0/kml?mid=${map.mapId}&resourcekey&forcekml=1`
+          >
+            Download this Map
+          </LinkButton>
+          <LinkButton
+            href="https://ko-fi.com/nicholaseager"
+            variant="secondary"
+          >
+            Buy Me a Coffee ☕️
+          </LinkButton>
+        </div>
+      </TextContainer>
     </ResponsiveWidth>
     <ResponsiveWidth>
       <TextContainer>
