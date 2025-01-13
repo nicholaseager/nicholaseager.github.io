@@ -223,7 +223,7 @@ const photos = defineCollection({
  * Collection for managing photo locations
  */
 const photoLocations = defineCollection({
-  loader: file("./src/data/photo-location-definitions.json"),
+  loader: file("./src/data/photo-locations.json"),
   schema: z.object({
     id: z.string(),
     title: z.string(),
@@ -235,7 +235,7 @@ const photoLocations = defineCollection({
  * Collection for organizing photos by their themes/tags
  */
 const photoThemes = defineCollection({
-  loader: file("./src/data/photo-tag-definitions.json"),
+  loader: file("./src/data/photo-themes.json"),
   schema: z.object({
     id: z.string(),
     title: z.string(),
