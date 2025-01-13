@@ -3,8 +3,11 @@ import { getCollection } from "astro:content";
 import ResponsiveWidth from "../../components/layout/ResponsiveWidth.astro";
 import LinkButton from "../../components/ui/LinkButton";
 import Page from "../../layouts/Page.astro";
+import { kebabToTitleCase } from "../../utils/kebab";
 
-const locations = await getCollection("mapLocations");
+const maps = await getCollection("maps");
+// Get unique countries
+const countries = [...new Set(maps.map((map) => map.id.split("/")[0]))];
 ---
 
 <Page title="All Hiking Maps">
@@ -12,13 +15,10 @@ const locations = await getCollection("mapLocations");
     <div class="space-y-8 flex flex-col">
       <ul class="space-y-4">
         {
-          locations.map((location) => (
+          countries.map((country) => (
             <li>
-              <LinkButton
-                variant="secondary"
-                href={`/maps/${location.data.id}`}
-              >
-                {location.data.name}
+              <LinkButton variant="secondary" href={`/maps/${country}`}>
+                {kebabToTitleCase(country)}
               </LinkButton>
             </li>
           ))

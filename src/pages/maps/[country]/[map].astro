@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import MapLayout from "../../../layouts/Map.astro";
+
+export async function getStaticPaths() {
+  const maps = await getCollection("maps");
+
+  return maps.map((map) => {
+    const [country, mapSlug] = map.id.split("/");
+    return {
+      params: { country, map: mapSlug },
+      props: { map },
+    };
+  });
+}
+
+const { map } = Astro.props;
+---
+
+<MapLayout {...map.data} />

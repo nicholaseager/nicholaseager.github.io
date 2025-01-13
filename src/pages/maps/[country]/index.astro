@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import Page from "../../../layouts/Page.astro";
+import ResponsiveWidth from "../../../components/layout/ResponsiveWidth.astro";
+import Link from "../../../components/ui/Link";
+import LinkButton from "../../../components/ui/LinkButton";
+import { kebabToTitleCase } from "../../../utils/kebab";
+
+export async function getStaticPaths() {
+  const maps = await getCollection("maps");
+
+  // Get unique countries
+  const countries = [...new Set(maps.map((map) => map.id.split("/")[0]))];
+
+  return countries.map((country) => ({
+    params: { country },
+    props: {
+      title: `Hikes in ${kebabToTitleCase(country)}`,
+      maps: maps.filter((map) => map.id.startsWith(country + "/")),
+    },
+  }));
+}
+
+const { title, maps } = Astro.props;
+---
+
+<Page title={title}>
+  <ResponsiveWidth>
+    <div class="space-y-8">
+      <Link href="/maps">← Back to All Locations</Link>
+      <ul class="space-y-4">
+        {
+          maps.map((map) => (
+            <li>
+              <LinkButton variant="secondary" href={`/maps/${map.id}`}>
+                {map.data.name}
+              </LinkButton>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </ResponsiveWidth>
+</Page>
