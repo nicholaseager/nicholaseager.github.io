@@ -1,10 +1,6 @@
 import { glob, file } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
-import {
-  getPhotoItems,
-  getPhotoLocations,
-  getPhotoThemes,
-} from "./utils/photo-collections";
+import { kebabToTitleCase } from "./utils/kebab";
 
 const guides = defineCollection({
   loader: glob({
@@ -194,32 +190,44 @@ const maps = defineCollection({
  * Collection for managing photos with their metadata
  */
 const photos = defineCollection({
-  loader: getPhotoItems,
-  schema: z.object({
-    path: z.string(),
-    title: z.string(),
-    location: z.string(),
-    description: z.string(),
-    tags: z.array(z.string()),
-    "darkroom-id": z.union([z.string(), z.number()]).optional(),
-    "youtube-id": z.string().optional(),
-  }),
+  loader: file("./src/data/photos.json"),
+  schema: z
+    .object({
+      slug: z.string(),
+      description: z.string(),
+      tags: z.array(z.string()),
+      "darkroom-id": z.union([z.string(), z.number()]).optional(),
+      "youtube-id": z.string().optional(),
+    })
+    .transform((data) => {
+      const pathParts = data.slug.split("/");
+
+      // Parse title from the last part of the path
+      const title = kebabToTitleCase(pathParts[pathParts.length - 1]);
+
+      // Parse location from the path parts between "photos/countries" and filename
+      const location = pathParts
+        .slice(2, -1)
+        .map((part) => kebabToTitleCase(part))
+        .join(" / ");
+
+      return {
+        ...data,
+        title,
+        location,
+      };
+    }),
 });
 
 /**
- * Collection for managing hierarchical photo locations (countries, regions, localities)
+ * Collection for managing photo locations
  */
 const photoLocations = defineCollection({
-  loader: getPhotoLocations,
+  loader: file("./src/data/photo-location-definitions.json"),
   schema: z.object({
     id: z.string(),
-    path: z.string(),
-    type: z.enum(["country", "region", "locality"]),
-    name: z.string(),
+    title: z.string(),
     description: z.string(),
-    parentPath: z.string().nullable(),
-    photos: z.array(z.string()),
-    previewImage: z.string(),
   }),
 });
 
@@ -227,15 +235,12 @@ const photoLocations = defineCollection({
  * Collection for organizing photos by their themes/tags
  */
 const photoThemes = defineCollection({
-  loader: getPhotoThemes,
+  loader: file("./src/data/photo-tag-definitions.json"),
   schema: z.object({
     id: z.string(),
-    path: z.string(),
     title: z.string(),
     description: z.string().optional(),
     sortOrder: z.number().optional(),
-    photos: z.array(z.string()),
-    previewImage: z.string(),
   }),
 });
 

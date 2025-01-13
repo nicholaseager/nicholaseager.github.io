@@ -17,11 +17,10 @@ import OrderPrintSEO from "../seo/OrderPrintSEO.astro";
 type Props = CollectionEntry<"photos">["data"];
 
 const {
-  path,
+  slug,
   title,
   location,
   description,
-  tags,
   "youtube-id": youtubeId,
   "darkroom-id": darkroomId,
 } = Astro.props;
@@ -31,21 +30,21 @@ const organizationName = "Nicholas Eager Photography";
 const currentYear = new Date().getFullYear();
 
 const photos = await getCollection("photos");
-const currentPhoto = photos.find((photo) => photo.data.path === path)!;
+const currentPhoto = photos.find((photo) => photo.data.slug === slug)!;
 const similarPhotoPaths = getSimilarPhotos(photos, currentPhoto, 10).map(
-  (photo) => photo.path
+  (photo) => photo.slug
 );
 ---
 
 <Page
   title={title}
   description={`${description} - By ${authorName}`}
-  image={path}
+  image={slug}
 >
   <section>
     <ResponsiveWidth size="lg">
       <ResponsiveColumnLayout>
-        <RoomDisplaySwiper client:load artworkPath={path} />
+        <RoomDisplaySwiper client:load artworkPath={slug} />
         <div class="w-full space-y-2">
           {
             darkroomId ? (
@@ -66,7 +65,7 @@ const similarPhotoPaths = getSimilarPhotos(photos, currentPhoto, 10).map(
                 </LinkButton>
               </div>
             ) : (
-              <OrderForm photo={path} />
+              <OrderForm photo={slug} />
             )
           }
           <Text variant="body">
@@ -130,7 +129,7 @@ const similarPhotoPaths = getSimilarPhotos(photos, currentPhoto, 10).map(
   <OrderPrintSEO
     title={title}
     description={description}
-    image={path}
+    image={slug}
     darkroomId={darkroomId}
     youtubeId={youtubeId}
   />

@@ -9,21 +9,39 @@ import PhotosSEO from "../../seo/PhotosSEO.astro";
 import HeroCard from "../../components/ui/HeroCard";
 import Grid from "../../components/ui/Grid";
 import Link from "../../components/ui/Link";
+import {
+  mergePhotoLocationMetadata,
+  mergePhotoTagsMetadata,
+} from "../../utils/photo-collections";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
   .filter((photo) => photo.data.tags.includes("showcase"))
-  .map((photo) => photo.data.path);
+  .map((photo) => photo.data.slug);
 
-const themes = await getCollection("photoThemes");
+const themesMetadata = await getCollection("photoThemes");
+const themes = themesMetadata
+  .map((t) => t.id)
+  .map((id) => mergePhotoTagsMetadata(id, photos, themesMetadata));
 const sortedThemes = themes.sort((a, b) =>
-  a.data.photos.length > b.data.photos.length ? -1 : 1
+  a.photos.length > b.photos.length ? -1 : 1
 );
 
-const locations = await getCollection("photoLocations");
-const countries = locations
-  .filter((location) => location.data.type === "country")
-  .sort((a, b) => (a.data.photos.length > b.data.photos.length ? -1 : 1));
+const locationsMetadata = await getCollection("photoLocations");
+
+// Get unique countries
+const countryIds = [
+  ...new Set(
+    photos.map(
+      (photo) =>
+        photo.data.slug.replace(/^photos\/countries\//, "").split("/")[0]
+    )
+  ),
+];
+
+const countries = countryIds.map((id) => {
+  return mergePhotoLocationMetadata(id, photos, locationsMetadata);
+});
 ---
 
 <Page
@@ -48,10 +66,10 @@ const countries = locations
         {
           countries.map((country) => (
             <HeroCard
-              title={country.data.name}
-              subtitle={`${country.data.photos.length} photo${country.data.photos.length !== 1 ? "s" : ""}`}
-              imagePath={country.data.previewImage}
-              href={`/photos/countries/${country.data.path}`}
+              title={country.title}
+              subtitle={`${country.photos.length} photo${country.photos.length !== 1 ? "s" : ""}`}
+              imagePath={country.previewImage}
+              href={`/photos/countries/${country.id}`}
             />
           ))
         }
@@ -65,9 +83,9 @@ const countries = locations
         {
           sortedThemes.map((theme) => (
             <HeroCard
-              title={theme.data.title}
-              subtitle={`${theme.data.photos.length} photo${theme.data.photos.length !== 1 ? "s" : ""}`}
-              imagePath={theme.data.previewImage}
+              title={theme.title}
+              subtitle={`${theme.photos.length} photo${theme.photos.length !== 1 ? "s" : ""}`}
+              imagePath={theme.previewImage}
               href={`/photos/themes/${theme.id}`}
             />
           ))

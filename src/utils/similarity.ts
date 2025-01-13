@@ -6,12 +6,12 @@ export function getSimilarPhotos(
   currentPhoto: CollectionEntry<"photos">,
   limit: number = 10
 ) {
-  const currentLocationParts = getPhotoLocationParts(currentPhoto.data.path);
+  const currentLocationParts = getPhotoLocationParts(currentPhoto.data.slug);
 
   return photos
     .map((photo) => {
       // Skip the current photo
-      if (photo.data.path === currentPhoto.data.path) {
+      if (photo.data.slug === currentPhoto.data.slug) {
         return { ...photo.data, similarity: -1 };
       }
 
@@ -20,7 +20,7 @@ export function getSimilarPhotos(
         currentPhoto.data.tags.includes(tag)
       ).length;
 
-      const photoLocationParts = getPhotoLocationParts(photo.data.path);
+      const photoLocationParts = getPhotoLocationParts(photo.data.slug);
 
       // Calculate location similarity (number of matching location parts)
       const locationSimilarity = photoLocationParts.reduce(

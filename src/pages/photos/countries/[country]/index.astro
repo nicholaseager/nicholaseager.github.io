@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+
+import PhotoGrid from "../../../../components/photos/PhotoGrid";
+import Page from "../../../../layouts/Page.astro";
+import GallerySEO from "../../../../seo/GallerySEO.astro";
+import { kebabToTitleCase } from "../../../../utils/kebab";
+import { mergePhotoLocationMetadata } from "../../../../utils/photo-collections";
+
+export async function getStaticPaths() {
+  const photos = await getCollection("photos");
+  const photoLocations = await getCollection("photoLocations");
+
+  // Get unique countries
+  const countryIds = [
+    ...new Set(
+      photos.map(
+        (photo) =>
+          photo.data.slug.replace(/^photos\/countries\//, "").split("/")[0]
+      )
+    ),
+  ];
+
+  const countries = countryIds.map((id) => {
+    return mergePhotoLocationMetadata(id, photos, photoLocations);
+  });
+
+  return countries.map((country) => {
+    const id = country.id;
+    return {
+      params: { country: id },
+      props: {
+        ...country,
+      },
+    };
+  });
+}
+
+const { title, description, photos, previewImage } = Astro.props;
+---
+
+<Page title={title} description={description}>
+  <PhotoGrid client:visible photos={photos} />
+  <GallerySEO
+    title={title}
+    description={description}
+    images={photos}
+    image={previewImage}
+  />
+</Page>
