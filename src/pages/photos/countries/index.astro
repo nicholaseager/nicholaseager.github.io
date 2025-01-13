@@ -6,6 +6,7 @@ import HeroCard from "../../../components/ui/HeroCard";
 
 const photoLocations = await getCollection("photoLocations");
 
+// Filter to only get country locations (those without country/region format in id)
 const countries = photoLocations
   .filter((l) => !l.data.id.includes("/"))
   .map((l) => l.data);

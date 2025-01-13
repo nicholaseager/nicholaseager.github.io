@@ -8,10 +8,12 @@ import GallerySEO from "../../../../../seo/GallerySEO.astro";
 export async function getStaticPaths() {
   const photoLocations = await getCollection("photoLocations");
 
+  // Filter to only get region locations (those with country/region format in id)
   const locations = photoLocations
     .filter((l) => l.data.id.includes("/"))
     .map((l) => l.data);
 
+  // Transform locations into Astro path params
   const uniquePaths = locations.map((location) => {
     const [country, region] = location.id.split("/");
     return {

@@ -21,6 +21,7 @@ const sortedThemes = themes
   .map((t) => t.data);
 
 const locations = await getCollection("photoLocations");
+// Filter to only get country locations (those without country/region format in id)
 const countries = locations
   .filter((l) => !l.data.id.includes("/"))
   .map((l) => l.data);

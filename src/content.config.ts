@@ -222,6 +222,17 @@ const photos = defineCollection({
 
 /**
  * Collection for organizing photo by their locations
+ * @example Result after transform:
+ * {
+ *   id: "italy/cinque-terre",
+ *   title: "Cinque Terre",
+ *   description: "Photos from the Italian Riviera's famous five villages",
+ *   photos: [
+ *     "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas",
+ *     "photos/countries/italy/cinque-terre/vernazza-harbor-sunset"
+ *   ],
+ *   previewImage: "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas"
+ * }
  */
 const photoLocations = defineCollection({
   loader: file("./src/data/photo-locations.json"),
@@ -248,6 +259,17 @@ const photoLocations = defineCollection({
 
 /**
  * Collection for organizing photos by their themes/tags
+ * @example Result after transform:
+ * {
+ *   id: "coastal",
+ *   title: "Coastal",
+ *   description: "Scenes from the world's coastlines",
+ *   photos: [
+ *     "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas",
+ *     "photos/countries/greece/santorini/oia-white-buildings-sunset"
+ *   ],
+ *   previewImage: "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas"
+ * }
  */
 const photoThemes = defineCollection({
   loader: file("./src/data/photo-themes.json"),
