@@ -2,67 +2,56 @@
   {
     "id": "landscapes",
     "title": "Landscape",
-    "description": "Captivating natural vistas and scenic views from around the world",
-    "sortOrder": 1
+    "description": "Captivating natural vistas and scenic views from around the world"
   },
   {
     "id": "mountains",
     "title": "Mountains",
-    "description": "Majestic peaks and dramatic mountain ranges reaching into the sky",
-    "sortOrder": 2
+    "description": "Majestic peaks and dramatic mountain ranges reaching into the sky"
   },
   {
     "id": "adventure",
     "description": "Capturing the spirit of exploration and outdoor pursuits",
-    "sortOrder": 3,
     "title": "Adventure"
   },
   {
     "id": "showcase",
     "title": "Featured Work",
-    "description": "A curated collection of my finest photographs",
-    "sortOrder": 0
+    "description": "A curated collection of my finest photographs"
   },
   {
     "id": "city",
     "title": "Urban",
-    "description": "Exploring cityscapes, architecture, and urban life around the globe",
-    "sortOrder": 4
+    "description": "Exploring cityscapes, architecture, and urban life around the globe"
   },
   {
     "id": "animals",
     "title": "Wildlife",
-    "description": "Intimate portraits of wildlife and animal encounters in their natural habitats",
-    "sortOrder": 5
+    "description": "Intimate portraits of wildlife and animal encounters in their natural habitats"
   },
   {
     "id": "minimalism",
     "description": "Simple compositions that emphasize beauty through simplicity and negative space",
-    "sortOrder": 6,
     "title": "Minimalism"
   },
   {
     "id": "astrophotography",
     "title": "Night Sky",
-    "description": "Capturing the beauty of stars, celestial events, and nighttime landscapes",
-    "sortOrder": 7
+    "description": "Capturing the beauty of stars, celestial events, and nighttime landscapes"
   },
   {
     "id": "snow",
     "title": "Winter",
-    "description": "Scenes of winter wonderlands and snow-covered landscapes",
-    "sortOrder": 8
+    "description": "Scenes of winter wonderlands and snow-covered landscapes"
   },
   {
     "id": "nature",
     "description": "Close-up details and intimate perspectives of the natural world",
-    "sortOrder": 9,
     "title": "Nature"
   },
   {
     "id": "aerial",
     "title": "Aerial",
-    "description": "Bird's eye views and unique perspectives from above",
-    "sortOrder": 10
+    "description": "Bird's eye views and unique perspectives from above"
   }
 ]

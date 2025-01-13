@@ -1,28 +1,19 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import { kebabToTitleCase } from "./kebab";
 
-export type PhotoLocation = {
+export type PhotoCollection = {
   id: string;
   title: string;
   description: string;
   photos: string[];
   previewImage: string;
-};
-
-export type PhotoTag = {
-  id: string;
-  title: string;
-  description: string;
-  photos: string[];
-  previewImage: string;
-  sortOrder?: number;
 };
 
 export function mergePhotoLocationMetadata(
   id: string,
   photos: CollectionEntry<"photos">[],
   metadata: CollectionEntry<"photoLocations">[]
-): PhotoLocation {
+): PhotoCollection {
   const location = metadata.find((pl) => pl.data.id === id)?.data;
   const title =
     location?.title ?? kebabToTitleCase(id.split("/").reverse().join(" "));
@@ -47,7 +38,7 @@ export function mergePhotoTagsMetadata(
   id: string,
   photos: CollectionEntry<"photos">[],
   metadata: CollectionEntry<"photoThemes">[]
-): PhotoTag {
+): PhotoCollection {
   const location = metadata.find((pl) => pl.data.id === id)?.data;
   const title =
     location?.title ?? kebabToTitleCase(id.split("/").reverse().join(" "));
@@ -62,6 +53,5 @@ export function mergePhotoTagsMetadata(
     description,
     photos: photoPaths,
     previewImage: photoPaths[0],
-    sortOrder: location?.sortOrder ?? 99,
   };
 }

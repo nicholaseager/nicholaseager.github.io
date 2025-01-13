@@ -240,7 +240,6 @@ const photoThemes = defineCollection({
     id: z.string(),
     title: z.string(),
     description: z.string().optional(),
-    sortOrder: z.number().optional(),
   }),
 });
 

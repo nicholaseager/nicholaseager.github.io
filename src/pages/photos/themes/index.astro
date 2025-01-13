@@ -13,7 +13,7 @@ const themes = themesMetadata
   .map((t) => t.id)
   .map((id) => mergePhotoTagsMetadata(id, photos, themesMetadata));
 const sortedThemes = themes.sort((a, b) =>
-  (a.sortOrder ?? 99) < (b.sortOrder ?? 99) ? -1 : 1
+  a.photos.length > b.photos.length ? -1 : 1
 );
 ---
 
