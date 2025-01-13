@@ -79,7 +79,7 @@
     },
     {
       "id": "map",
-      "title": "Route Map",
+      "title": "Pikey Peak Trek Map (GPS Route)",
       "introduction": "",
       "content": {
         "type": "google-map",

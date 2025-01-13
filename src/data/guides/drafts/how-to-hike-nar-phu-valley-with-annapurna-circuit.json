@@ -62,7 +62,7 @@
     },
     {
       "id": "map",
-      "title": "Route Map",
+      "title": "Extended Nar Phu Valley Trek Map (GPS Route)",
       "introduction": "This interactive map highlights the complete Nar Phu Valley and Annapurna Circuit Trek route, with the main trail marked in blue and alternative routes in green. The green paths show optional routes either returning to Koto from Ngawal or detouring through Lupra and Kagbeni to Jomsom. Icons indicate teahouses, monasteries, mountain passes, and points of interest along the way. From Koto through the restricted Nar Phu Valley, over Kang La pass, and continuing along the Annapurna Circuit to Jomsom, every significant stop and scenic detour is clearly marked for easy route planning.",
       "content": {
         "type": "google-map",

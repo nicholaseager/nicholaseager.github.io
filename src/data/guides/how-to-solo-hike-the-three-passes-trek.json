@@ -70,7 +70,7 @@
     },
     {
       "id": "map",
-      "title": "Route Map",
+      "title": "Three Passes Trek Map (GPS Route)",
       "introduction": "",
       "content": {
         "type": "google-map",

@@ -84,7 +84,7 @@
     },
     {
       "id": "map",
-      "title": "Route Map",
+      "title": "Kanchenjunga Base Camp Trek Map (GPS Route)",
       "introduction": "This interactive map highlights the complete Kanchenjunga Base Camp Trek route, with the main trail marked in dark blue, optional side trips in light blue, and alternative routes in green. Icons indicate teahouses, viewpoints, and points of interest along the way. From Taplejung to both North and South Base Camps, every significant stop and scenic detour is clearly marked for easy route planning.",
       "content": {
         "type": "google-map",

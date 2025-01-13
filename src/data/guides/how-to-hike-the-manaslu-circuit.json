@@ -87,7 +87,7 @@
     },
     {
       "id": "map",
-      "title": "Route Map",
+      "title": "Manaslu Circuit Trek Map (GPS Route)",
       "introduction": "",
       "content": {
         "type": "google-map",

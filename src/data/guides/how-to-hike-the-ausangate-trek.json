@@ -61,7 +61,7 @@
     },
     {
       "id": "map",
-      "title": "Route Map",
+      "title": "Ausangate Trek Map (GPS Route)",
       "introduction": "Below is an illustrative map encompassing the main circuit of the Ausangate trek, outlining the primary trail, side trips to Rainbow Mountain, and an alternative shortcut for the return journey. This visual aid highlights essential waypoints, campsites, notable passes, and key landmarks along the route, offering a comprehensive overview of the trek's terrain and points of interest. The map serves as a valuable resource for trekkers, aiding in itinerary planning, navigation, and understanding the diverse landscapes encountered throughout this remarkable journey. Embrace the adventure, visualize the trail, and explore the splendor of the Ausangate trek through this informative and guiding map.",
       "content": {
         "type": "google-map",

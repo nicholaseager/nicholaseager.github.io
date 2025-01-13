@@ -62,7 +62,7 @@
     },
     {
       "id": "map",
-      "title": "Route Map",
+      "title": "Coyote Gulch Map (GPS Route)",
       "introduction": "As you can see from the map below, Coyote Gulch offers several routes to explore this stunning canyon. The most popular options include the Hurricane Wash trailhead, which provides a longer but more gradual approach, and the Crack in the Wall and Coyote Gulch trailheads, which offer more direct access but require a 4WD vehicle and some climbing experience. Once inside the canyon, you'll have the opportunity to discover the main Coyote Gulch, with its breathtaking arches and natural wonders. When it's time to leave, you can choose to hike or climb out, depending on your preferred route and skill level.",
       "content": {
         "type": "google-map",
