@@ -4,10 +4,13 @@ import Link from "../../components/ui/Link";
 import LinkButton from "../../components/ui/LinkButton";
 import Page from "../../layouts/Page.astro";
 import { kebabToTitleCase } from "../../utils/kebab";
-import { type HikingMapData, getAllHikesByLocation } from "../../utils/maps";
+import {
+  type HikingMapData,
+  getAllHikingMapsByLocation,
+} from "../../utils/maps";
 
 export async function getStaticPaths() {
-  const { locations, locationMap } = getAllHikesByLocation();
+  const { locations, locationMap } = getAllHikingMapsByLocation();
 
   return Array.from(locations).map((location) => ({
     params: { location },
