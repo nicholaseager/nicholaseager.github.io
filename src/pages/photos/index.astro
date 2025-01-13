@@ -9,39 +9,21 @@ import PhotosSEO from "../../seo/PhotosSEO.astro";
 import HeroCard from "../../components/ui/HeroCard";
 import Grid from "../../components/ui/Grid";
 import Link from "../../components/ui/Link";
-import {
-  mergePhotoLocationMetadata,
-  mergePhotoTagsMetadata,
-} from "../../utils/photo-collections";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
   .filter((photo) => photo.data.tags.includes("showcase"))
   .map((photo) => photo.data.slug);
 
-const themesMetadata = await getCollection("photoThemes");
-const themes = themesMetadata
-  .map((t) => t.id)
-  .map((id) => mergePhotoTagsMetadata(id, photos, themesMetadata));
-const sortedThemes = themes.sort((a, b) =>
-  a.photos.length > b.photos.length ? -1 : 1
-);
+const themes = await getCollection("photoThemes");
+const sortedThemes = themes
+  .sort((a, b) => (a.data.photos.length > b.data.photos.length ? -1 : 1))
+  .map((t) => t.data);
 
-const locationsMetadata = await getCollection("photoLocations");
-
-// Get unique countries
-const countryIds = [
-  ...new Set(
-    photos.map(
-      (photo) =>
-        photo.data.slug.replace(/^photos\/countries\//, "").split("/")[0]
-    )
-  ),
-];
-
-const countries = countryIds.map((id) => {
-  return mergePhotoLocationMetadata(id, photos, locationsMetadata);
-});
+const locations = await getCollection("photoLocations");
+const countries = locations
+  .filter((l) => !l.data.id.includes("/"))
+  .map((l) => l.data);
 ---
 
 <Page

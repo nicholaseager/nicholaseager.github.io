@@ -3,24 +3,12 @@ import Page from "../../../layouts/Page.astro";
 import { getCollection } from "astro:content";
 import Grid from "../../../components/ui/Grid";
 import HeroCard from "../../../components/ui/HeroCard";
-import { mergePhotoLocationMetadata } from "../../../utils/photo-collections";
 
-const photos = await getCollection("photos");
 const photoLocations = await getCollection("photoLocations");
 
-// Get unique countries
-const countryIds = [
-  ...new Set(
-    photos.map(
-      (photo) =>
-        photo.data.slug.replace(/^photos\/countries\//, "").split("/")[0]
-    )
-  ),
-];
-
-const countries = countryIds.map((id) => {
-  return mergePhotoLocationMetadata(id, photos, photoLocations);
-});
+const countries = photoLocations
+  .filter((l) => !l.data.id.includes("/"))
+  .map((l) => l.data);
 ---
 
 <Page

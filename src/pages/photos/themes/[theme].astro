@@ -3,23 +3,18 @@ import { getCollection } from "astro:content";
 import Page from "../../../layouts/Page.astro";
 import PhotoGrid from "../../../components/photos/PhotoGrid";
 import GallerySEO from "../../../seo/GallerySEO.astro";
-import { mergePhotoTagsMetadata } from "../../../utils/photo-collections";
 
 export async function getStaticPaths() {
   const photos = await getCollection("photos");
-  const themesMetadata = await getCollection("photoThemes");
-
-  const themes = themesMetadata
-    .map((t) => t.id)
-    .map((id) => mergePhotoTagsMetadata(id, photos, themesMetadata));
+  const themes = await getCollection("photoThemes");
 
   return themes.map((theme) => ({
     params: { theme: theme.id },
     props: {
-      title: theme.title,
-      description: theme.description,
-      photos: theme.photos,
-      primaryImage: theme.previewImage,
+      title: theme.data.title,
+      description: theme.data.description,
+      photos: theme.data.photos,
+      primaryImage: theme.data.previewImage,
     },
   }));
 }

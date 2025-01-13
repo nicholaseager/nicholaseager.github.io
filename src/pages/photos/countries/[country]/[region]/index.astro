@@ -4,26 +4,13 @@ import { getCollection } from "astro:content";
 import PhotoGrid from "../../../../../components/photos/PhotoGrid";
 import Page from "../../../../../layouts/Page.astro";
 import GallerySEO from "../../../../../seo/GallerySEO.astro";
-import { mergePhotoLocationMetadata } from "../../../../../utils/photo-collections";
 
 export async function getStaticPaths() {
-  const photos = await getCollection("photos");
   const photoLocations = await getCollection("photoLocations");
 
-  // Get unique country/region combinations
-  const countryRegionPairs = photos.map((photo) => {
-    const [country, region] = photo.data.slug
-      .replace(/^photos\/countries\//, "")
-      .split("/");
-    return { country, region };
-  });
-  const uniqueCountryRegionPaths = Array.from(
-    new Set(countryRegionPairs.map((p) => `${p.country}/${p.region}`))
-  );
-
-  const locations = uniqueCountryRegionPaths.map((path) => {
-    return mergePhotoLocationMetadata(path, photos, photoLocations);
-  });
+  const locations = photoLocations
+    .filter((l) => l.data.id.includes("/"))
+    .map((l) => l.data);
 
   const uniquePaths = locations.map((location) => {
     const [country, region] = location.id.split("/");

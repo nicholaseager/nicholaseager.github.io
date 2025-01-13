@@ -1,6 +1,7 @@
 import { glob, file } from "astro/loaders";
-import { defineCollection, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content";
 import { kebabToTitleCase } from "./utils/kebab";
+import photosData from "./data/photos.json";
 
 const guides = defineCollection({
   loader: glob({
@@ -220,15 +221,29 @@ const photos = defineCollection({
 });
 
 /**
- * Collection for managing photo locations
+ * Collection for organizing photo by their locations
  */
 const photoLocations = defineCollection({
   loader: file("./src/data/photo-locations.json"),
-  schema: z.object({
-    id: z.string(),
-    title: z.string(),
-    description: z.string(),
-  }),
+  schema: z
+    .object({
+      id: z.string(),
+      title: z.string(),
+      description: z.string(),
+    })
+    .transform((data) => {
+      const photoPaths = photosData
+        .filter((photo) =>
+          photo.slug.replace(/^photos\/countries\//, "").startsWith(data.id)
+        )
+        .map((photo) => photo.slug);
+
+      return {
+        ...data,
+        photos: photoPaths,
+        previewImage: photoPaths[0],
+      };
+    }),
 });
 
 /**
@@ -236,11 +251,23 @@ const photoLocations = defineCollection({
  */
 const photoThemes = defineCollection({
   loader: file("./src/data/photo-themes.json"),
-  schema: z.object({
-    id: z.string(),
-    title: z.string(),
-    description: z.string().optional(),
-  }),
+  schema: z
+    .object({
+      id: z.string(),
+      title: z.string(),
+      description: z.string(),
+    })
+    .transform((data) => {
+      const photoPaths = photosData
+        .filter((photo) => photo.tags.includes(data.id))
+        .map((photo) => photo.slug);
+
+      return {
+        ...data,
+        photos: photoPaths,
+        previewImage: photoPaths[0],
+      };
+    }),
 });
 
 export const collections = {
