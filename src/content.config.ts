@@ -6,6 +6,8 @@ import {
   getPhotoThemes,
 } from "./utils/photo-collections";
 
+import { getHikingMapLocations } from "./utils/map-collections";
+
 const guides = defineCollection({
   loader: glob({
     base: "./src/data/guides",
@@ -149,6 +151,17 @@ const guides = defineCollection({
   }),
 });
 
+const films = defineCollection({
+  loader: file("./src/data/films.json"),
+  schema: z.object({
+    id: z.string(),
+    tags: z.string(),
+  }),
+});
+
+/**
+ * Collection for managing maps with their metadata
+ */
 const maps = defineCollection({
   loader: glob({
     base: "./src/data/maps",
@@ -179,11 +192,20 @@ const maps = defineCollection({
   }),
 });
 
-const films = defineCollection({
-  loader: file("./src/data/films.json"),
+/**
+ * Collection for managing hierarchical maps locations (countries)
+ */
+const mapLocations = defineCollection({
+  loader: getHikingMapLocations,
   schema: z.object({
     id: z.string(),
-    tags: z.string(),
+    name: z.string(),
+    maps: z.array(
+      z.object({
+        id: z.string(),
+        name: z.string(),
+      })
+    ),
   }),
 });
 
@@ -238,9 +260,10 @@ const photoThemes = defineCollection({
 
 export const collections = {
   guides,
-  maps,
-  photos,
   films,
+  maps,
+  mapLocations,
+  photos,
   photoLocations,
   photoThemes,
 };

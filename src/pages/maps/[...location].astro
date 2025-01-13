@@ -1,26 +1,25 @@
 ---
+import { getCollection } from "astro:content";
 import ResponsiveWidth from "../../components/layout/ResponsiveWidth.astro";
 import Link from "../../components/ui/Link";
 import LinkButton from "../../components/ui/LinkButton";
 import Page from "../../layouts/Page.astro";
 import { kebabToTitleCase } from "../../utils/kebab";
-import {
-  type HikingMapData,
-  getAllHikingMapsByLocation,
-} from "../../utils/map-collections";
 
 export async function getStaticPaths() {
-  const { locations, locationMap } = getAllHikingMapsByLocation();
+  const locations = await getCollection("mapLocations");
 
-  return Array.from(locations).map((location) => ({
-    params: { location },
-    props: { hikes: locationMap[location] },
+  return locations.map((location) => ({
+    params: { location: location.id },
+    props: {
+      title: `Hikes in ${kebabToTitleCase(location.data.name)}`,
+      maps: location.data.maps,
+    },
   }));
 }
 
 const { location } = Astro.params;
-const { hikes } = Astro.props as { hikes: HikingMapData[] };
-const title = `Hikes in ${kebabToTitleCase(location)}`;
+const { title, maps } = Astro.props;
 ---
 
 <Page title={title}>
@@ -29,13 +28,13 @@ const title = `Hikes in ${kebabToTitleCase(location)}`;
       <Link href="/maps">← Back to All Locations</Link>
       <ul class="space-y-4">
         {
-          hikes.map((hike) => (
+          maps.map((map) => (
             <li>
               <LinkButton
                 variant="secondary"
-                href={`/maps/${location}/${hike.slug}`}
+                href={`/maps/${location}/${map.id}`}
               >
-                {hike.name}
+                {map.name}
               </LinkButton>
             </li>
           ))

@@ -1,11 +1,10 @@
 ---
+import { getCollection } from "astro:content";
 import ResponsiveWidth from "../../components/layout/ResponsiveWidth.astro";
 import LinkButton from "../../components/ui/LinkButton";
 import Page from "../../layouts/Page.astro";
-import { kebabToTitleCase } from "../../utils/kebab";
-import { getAllLocations } from "../../utils/map-collections";
 
-const locations = getAllLocations();
+const locations = await getCollection("mapLocations");
 ---
 
 <Page title="All Hiking Maps">
@@ -15,8 +14,11 @@ const locations = getAllLocations();
         {
           locations.map((location) => (
             <li>
-              <LinkButton variant="secondary" href={`/maps/${location}`}>
-                {kebabToTitleCase(location)}
+              <LinkButton
+                variant="secondary"
+                href={`/maps/${location.data.id}`}
+              >
+                {location.data.name}
               </LinkButton>
             </li>
           ))
