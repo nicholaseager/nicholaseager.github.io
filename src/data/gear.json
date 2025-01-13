@@ -136,6 +136,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -153,6 +154,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -171,6 +173,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -211,6 +214,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -228,6 +232,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -246,6 +251,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -264,6 +270,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -280,6 +287,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -313,6 +321,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -331,6 +340,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -347,6 +357,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -361,7 +372,14 @@
     "url": "https://amzn.to/46OS6iu",
     "img": "https://ik.imagekit.io/qn1gkawvy/tr:w-320/gear/carhartt-men's-knit-beanie.jpg?updatedAt=1719848045338",
     "tags": ["hiking"],
-    "trips": ["three-passes", "kanchenjunga", "manaslu", "ausangate", "lares"]
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "nar-phu",
+      "manaslu",
+      "ausangate",
+      "lares"
+    ]
   },
   {
     "title": "Shoes",
@@ -372,6 +390,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -404,6 +423,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -421,6 +441,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -439,6 +460,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -454,7 +476,14 @@
     "url": "https://amzn.to/3tmyk07",
     "img": "https://ik.imagekit.io/qn1gkawvy/tr:w-320/gear/havaianas-men's.jpg?updatedAt=1719848048549",
     "tags": ["hiking"],
-    "trips": ["three-passes", "kanchenjunga", "manaslu", "ausangate", "lares"]
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "nar-phu",
+      "manaslu",
+      "ausangate",
+      "lares"
+    ]
   },
   {
     "title": "Light Gloves",
@@ -462,7 +491,14 @@
     "url": "https://amzn.to/419gl9P",
     "img": "https://ik.imagekit.io/qn1gkawvy/tr:w-320/gear/under-armour-men's-storm-liner.jpg?updatedAt=1719848052504",
     "tags": ["hiking"],
-    "trips": ["three-passes", "kanchenjunga", "manaslu", "ausangate", "lares"]
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "nar-phu",
+      "manaslu",
+      "ausangate",
+      "lares"
+    ]
   },
   {
     "title": "Sunglasses",
@@ -473,6 +509,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
@@ -488,7 +525,14 @@
     "url": "https://amzn.to/4aWjzl6",
     "img": "https://ik.imagekit.io/qn1gkawvy/tr:w-320/gear/garmin-fenix-7-pro-solar.jpg?updatedAt=1719848047470",
     "tags": ["hiking"],
-    "trips": ["three-passes", "kanchenjunga", "manaslu", "ausangate", "lares"]
+    "trips": [
+      "three-passes",
+      "kanchenjunga",
+      "nar-phu",
+      "manaslu",
+      "ausangate",
+      "lares"
+    ]
   },
   {
     "title": "Powerbank",
@@ -499,6 +543,7 @@
     "trips": [
       "three-passes",
       "kanchenjunga",
+      "nar-phu",
       "manaslu",
       "ausangate",
       "lares",
