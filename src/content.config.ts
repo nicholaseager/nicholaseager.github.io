@@ -1,10 +1,10 @@
 import { glob, file } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
-import { getPhotoLocationParts } from "./utils/photo-paths";
-import { kebabToTitleCase } from "./utils/kebab";
-import photosData from "./data/photos.json";
-import photoTagDefinitionsData from "./data/photo-tag-definitions.json";
-import photoLocationDefinitionsData from "./data/photo-location-definitions.json";
+import {
+  getPhotoItems,
+  getPhotoLocations,
+  getPhotoThemes,
+} from "./utils/photo-collections";
 
 const guides = defineCollection({
   loader: glob({
@@ -187,52 +187,11 @@ const films = defineCollection({
   }),
 });
 
-interface PhotoItem {
-  path: string;
-  description: string;
-  tags: string[];
-  "darkroom-id"?: string | number;
-  "youtube-id"?: string;
-}
-
 /**
  * Collection for managing photos with their metadata
- * Each photo has a path, title, location, description and tags
- *
- * Example:
- * For photo path "photos/countries/france/chamonix/mountain.jpg", creates:
- * {
- *   id: "countries/france/chamonix/mountain.jpg",
- *   title: "Mountain",
- *   location: "France / Chamonix",
- *   description: "Mountain vista in Chamonix",
- *   tags: ["mountains", "landscapes"],
- *   darkroom-id: "123", // Optional darkroom reference
- *   youtube-id: "abc123" // Optional related video
- * }
  */
 const photos = defineCollection({
-  loader: () => {
-    return (photosData as PhotoItem[]).map((photo) => {
-      const pathParts = photo.path.split("/");
-
-      // Parse title from the last part of the path
-      const title = kebabToTitleCase(pathParts[pathParts.length - 1]);
-
-      // Parse location from the path parts between "photos/countries" and filename
-      const location = pathParts
-        .slice(2, -1) // Skip "photos" and "countries" prefix, and exclude the filename
-        .map((part) => kebabToTitleCase(part))
-        .join(" / ");
-
-      return {
-        id: photo.path.replace(/^photos\//, ""),
-        title,
-        location,
-        ...photo,
-      };
-    });
-  },
+  loader: getPhotoItems,
   schema: z.object({
     path: z.string(),
     title: z.string(),
@@ -244,153 +203,11 @@ const photos = defineCollection({
   }),
 });
 
-interface LocationItem {
-  id: string;
-  path: string;
-  type: "country" | "region" | "locality";
-  name: string;
-  description: string;
-  parentPath: string | null;
-  photos: string[];
-  previewImage: string;
-}
-
 /**
  * Collection for managing hierarchical photo locations (countries, regions, localities)
- * Each location tracks its photos and maintains parent/child relationships
- *
- * Example:
- * For photo path "photos/countries/france/chamonix/mountain.jpg", creates:
- * {
- *   "france": {
- *     type: "country",
- *     name: "France",
- *     parentPath: null,
- *     photos: ["photos/countries/france/chamonix/mountain.jpg"]
- *   },
- *   "france/chamonix": {
- *     type: "region",
- *     name: "Chamonix",
- *     parentPath: "france",
- *     photos: ["photos/countries/france/chamonix/mountain.jpg"]
- *   }
- * }
- *
- * Examples of paths and their corresponding types:
- * - "france" (country)
- * - "france/chamonix" (region)
- * - "france/chamonix/argentiere" (locality)
  */
 const photoLocations = defineCollection({
-  loader: () => {
-    // Map to store unique locations keyed by their path
-    // This prevents duplicates and allows easy updates when photos share locations
-    const locationMap = new Map<string, LocationItem>();
-
-    /**
-     * Gets location metadata from definitions file
-     * @param path - The location path (e.g. "france" or "france/chamonix")
-     * @returns Location metadata with fallbacks
-     */
-    const getLocationMetadata = (path: string) => {
-      const parts = path.split("/");
-      const country = parts[0];
-      const location = parts[1];
-
-      // Get country data
-      const countryData = (
-        photoLocationDefinitionsData.countries as Record<string, any>
-      )[country];
-
-      // If this is a country-level path
-      if (parts.length === 1) {
-        // Convert kebab-case to Title Case for fallback
-        const fallbackTitle = kebabToTitleCase(country);
-
-        return {
-          title: countryData?.title || fallbackTitle,
-          description:
-            countryData?.description || `Photos from ${fallbackTitle}`,
-        };
-      }
-
-      // If this is a location within a country
-      const locationData = countryData?.locations?.[location];
-
-      // Convert kebab-case to Title Case for fallback
-      const fallbackTitle = kebabToTitleCase(location);
-
-      return {
-        title: locationData?.title || fallbackTitle,
-        description:
-          locationData?.description ||
-          `Photos from ${fallbackTitle}, ${countryData?.title || country}`,
-      };
-    };
-
-    /**
-     * Creates a new location or adds a photo to an existing one
-     * @param path - The location path (e.g. "france" or "france/chamonix")
-     * @param type - The location type (country, region, or locality)
-     * @param photoPath - Full path of the photo to add to this location
-     */
-    const addLocation = (
-      path: string,
-      type: LocationItem["type"],
-      photoPath: string
-    ) => {
-      // If location exists, just add the photo to it
-      const existingLocation = locationMap.get(path);
-      if (existingLocation) {
-        existingLocation.photos.push(photoPath);
-        return;
-      }
-
-      // Create new location
-      const { title, description } = getLocationMetadata(path);
-      const parts = path.split("/");
-
-      // Parent path is everything before the last segment
-      // e.g. for "france/chamonix/argentiere", parent is "france/chamonix"
-      const parentPath = parts.length > 1 ? parts.slice(0, -1).join("/") : null;
-
-      locationMap.set(path, {
-        id: path,
-        path,
-        type,
-        name: title,
-        description,
-        parentPath,
-        photos: [photoPath],
-        previewImage: photoPath, // Use first photo as preview (could be enhanced to pick best photo)
-      });
-    };
-
-    // Process each photo to build the complete location hierarchy
-    (photosData as PhotoItem[]).forEach((photo) => {
-      const parts = getPhotoLocationParts(photo.path);
-
-      // Build locations for each level of the hierarchy
-      let currentPath = "";
-      parts.forEach((part, index) => {
-        // Build up the path one segment at a time
-        currentPath = currentPath ? `${currentPath}/${part}` : part;
-
-        // Determine location type based on depth in hierarchy
-        const type =
-          index === 0
-            ? "country" // First level is always country
-            : index === 1
-            ? "region" // Second level is region
-            : "locality"; // Everything deeper is a locality
-
-        addLocation(currentPath, type, photo.path);
-      });
-    });
-
-    // Convert map to array for Astro collection
-    return Array.from(locationMap.values());
-  },
+  loader: getPhotoLocations,
   schema: z.object({
     id: z.string(),
     path: z.string(),
@@ -403,95 +220,11 @@ const photoLocations = defineCollection({
   }),
 });
 
-interface ThemeItem {
-  id: string;
-  path: string;
-  title: string;
-  description: string;
-  photos: string[];
-  previewImage: string;
-  sortOrder?: number;
-}
-
 /**
  * Collection for organizing photos by their themes/tags
- * Each theme tracks its associated photos and uses metadata from photo-tag-definitions.json
- *
- * Example:
- * For photo with tags ["mountains", "landscapes"], creates:
- * {
- *   "mountains": {
- *     title: "Mountain Photography",
- *     description: "Majestic peaks and dramatic mountain ranges reaching into the sky",
- *     sortOrder: 2,
- *     photos: ["photos/countries/nepal/everest.jpg"]
- *   },
- *   "landscapes": {
- *     title: "Landscape Photography",
- *     description: "Captivating natural vistas and scenic views from around the world",
- *     sortOrder: 1,
- *     photos: ["photos/countries/nepal/everest.jpg"]
- *   }
- * }
  */
 const photoThemes = defineCollection({
-  loader: () => {
-    // Map to store unique themes keyed by tag name
-    const themeMap = new Map<string, ThemeItem>();
-
-    /**
-     * Creates a new theme or adds a photo to an existing one
-     * @param tag - The tag name (e.g. "mountains" or "landscapes")
-     * @param photoPath - Full path of the photo to add to this theme
-     */
-    const addTheme = (tag: string, photoPath: string) => {
-      // If theme exists, just add the photo to it
-      const existingTheme = themeMap.get(tag);
-      if (existingTheme) {
-        existingTheme.photos.push(photoPath);
-        return;
-      }
-
-      // Get tag definition if it exists
-      const tagDef = (
-        photoTagDefinitionsData as Record<
-          string,
-          {
-            title?: string;
-            description?: string;
-            sortOrder?: number;
-          }
-        >
-      )[tag];
-
-      // Convert kebab-case to Title Case as fallback if no title defined
-      const fallbackTitle = kebabToTitleCase(tag);
-
-      const title = tagDef?.title || fallbackTitle;
-      const fallbackDescription = `A collection of ${title.toLowerCase()} from around the world`;
-
-      themeMap.set(tag, {
-        id: tag,
-        path: tag,
-        title: title,
-        description: tagDef?.description || fallbackDescription,
-        sortOrder: tagDef?.sortOrder,
-        photos: [photoPath],
-        previewImage: photoPath, // Use first photo as preview
-      });
-    };
-
-    // Process each photo to build the themes
-    (photosData as PhotoItem[]).forEach((photo) => {
-      // Add photo to each of its tags/themes
-      photo.tags.forEach((tag) => {
-        addTheme(tag, photo.path);
-      });
-    });
-
-    // Convert map to array for Astro collection
-    return Array.from(themeMap.values());
-  },
+  loader: getPhotoThemes,
   schema: z.object({
     id: z.string(),
     path: z.string(),
