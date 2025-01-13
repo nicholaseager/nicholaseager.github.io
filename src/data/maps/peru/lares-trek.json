@@ -1,0 +1,22 @@
+{
+  "name": "Lares Trek",
+  "description": "Explore the Lares Valley with a detailed map highlighting its diverse wonders. The itinerary, including alternative starting points, unfolds vividly, guiding adventurers through alpaca-filled valleys and over challenging mountain passes. Discover points of interest such as Quishuarani, with its cultural richness, and Huacahuasi, a village nestled in the Andean tapestry. Navigate alternative routes, each offering a unique perspective on the breathtaking landscapes. A comprehensive map becomes your trusted companion, unveiling the Lares Trek's secrets, ensuring a seamless journey through Peru's high-altitude wonders.",
+  "image": "photos/countries/peru/lares-trek/weaving-loom",
+  "mapId": "1KmthxstF11i0WmqKldDm22IypSLOGU4",
+  "date": "2025-01-13",
+  "modified_date": "2025-01-13",
+  "tags": ["peru", "lares-valley-trek", "sacred-valley", "hiking"],
+  "location": {
+    "name": "Lares Trek",
+    "region": "Cusco",
+    "country": "Peru",
+    "latitude": "-13.106295",
+    "longitude": "-72.045189"
+  },
+  "links": [
+    {
+      "title": "Hiking Guide",
+      "url": "/guides/how-to-hike-the-lares-trek"
+    }
+  ]
+}

@@ -149,6 +149,36 @@ const guides = defineCollection({
   }),
 });
 
+const maps = defineCollection({
+  loader: glob({
+    base: "./src/data/maps",
+    pattern: "**/*.json",
+  }),
+  schema: z.object({
+    name: z.string(),
+    description: z.string(),
+    image: z.string(),
+    mapId: z.string(),
+    date: z.coerce.date(),
+    modified_date: z.coerce.date(),
+    tags: z.array(z.string()),
+    location: z.object({
+      name: z.string(),
+      locality: z.string().optional(),
+      region: z.string().optional(),
+      country: z.string(),
+      latitude: z.string(),
+      longitude: z.string(),
+    }),
+    links: z.array(
+      z.object({
+        title: z.string(),
+        url: z.string(),
+      })
+    ),
+  }),
+});
+
 const films = defineCollection({
   loader: file("./src/data/films.json"),
   schema: z.object({
@@ -475,6 +505,7 @@ const photoThemes = defineCollection({
 
 export const collections = {
   guides,
+  maps,
   photos,
   films,
   photoLocations,

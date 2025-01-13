@@ -1,0 +1,22 @@
+{
+  "name": "Ausangate Trek",
+  "description": "Below is an illustrative map encompassing the main circuit of the Ausangate trek, outlining the primary trail, side trips to Rainbow Mountain, and an alternative shortcut for the return journey. This visual aid highlights essential waypoints, campsites, notable passes, and key landmarks along the route, offering a comprehensive overview of the trek's terrain and points of interest. The map serves as a valuable resource for trekkers, aiding in itinerary planning, navigation, and understanding the diverse landscapes encountered throughout this remarkable journey. Embrace the adventure, visualize the trail, and explore the splendor of the Ausangate trek through this informative and guiding map.",
+  "image": "photos/countries/peru/ausangate-trek/two-hikers-in-front-of-ausangate-mountain",
+  "mapId": "1dRDc3UKVNcmcYqSabk-4mDnefbgIAuY",
+  "date": "2025-01-13",
+  "modified_date": "2025-01-13",
+  "tags": ["peru", "ausangate-trek", "hiking"],
+  "location": {
+    "name": "Ausangate Trek",
+    "locality": "Nevado Auzangate",
+    "country": "Peru",
+    "latitude": "-13.790806",
+    "longitude": "-71.232445"
+  },
+  "links": [
+    {
+      "title": "Hiking Guide",
+      "url": "/guides/how-to-hike-the-ausangate-trek"
+    }
+  ]
+}

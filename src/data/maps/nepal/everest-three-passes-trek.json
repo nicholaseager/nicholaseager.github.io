@@ -1,0 +1,26 @@
+{
+  "name": "Three Passes Trek",
+  "description": "",
+  "image": "photos/countries/nepal/three-passes-trek/mount-everest-from-kala-patthar",
+  "mapId": "1oAOx1pOeMl1QyJJ2_LfTm9elaSQ6urc",
+  "date": "2025-01-13",
+  "modified_date": "2025-01-13",
+  "tags": ["nepal", "three-passes-trek", "hiking"],
+  "location": {
+    "name": "Three Passes Trek",
+    "region": "Khumbu",
+    "country": "Nepal",
+    "latitude": "27.807516",
+    "longitude": "86.711805"
+  },
+  "links": [
+    {
+      "title": "Hiking Guide",
+      "url": "/guides/how-to-solo-hike-the-three-passes-trek"
+    },
+    {
+      "title": "Photo Gallery",
+      "url": "/photos/countries/nepal"
+    }
+  ]
+}

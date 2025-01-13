@@ -1,0 +1,22 @@
+{
+  "name": "Huchuy Qosqo Day Hike",
+  "description": "The map below outlines various routes to Huchuy Qosqo, with a primary path starting from the main square in Cusco. Additionally, alternative routes stemming from different starting points, including Tambomachay, Tauca, and Calca, are depicted. These alternative paths offer options for shorter distances or varied starting points, allowing hikers to tailor their journey based on preferences or time constraints.",
+  "image": "photos/countries/peru/huchuy-qosqo-hike/hiker-walking-on-rice-terraces",
+  "mapId": "1gOJVniK3Gev5PxuFNcU6dNvrQIB7StE",
+  "date": "2025-01-13",
+  "modified_date": "2025-01-13",
+  "tags": ["peru", "huchuy-qosqo-trek", "sacred-valley", "hiking"],
+  "location": {
+    "name": "Huchuy Qosqo Day Hike",
+    "region": "Cusco",
+    "country": "Peru",
+    "latitude": "-13.366281",
+    "longitude": "-71.944982"
+  },
+  "links": [
+    {
+      "title": "Hiking Guide",
+      "url": "/guides/how-to-hike-the-huchuy-qosqo-trek"
+    }
+  ]
+}

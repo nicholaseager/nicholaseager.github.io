@@ -1,0 +1,27 @@
+{
+  "name": "Coyote Gulch",
+  "description": "As you can see from the map below, Coyote Gulch offers several routes to explore this stunning canyon. The most popular options include the Hurricane Wash trailhead, which provides a longer but more gradual approach, and the Crack in the Wall and Coyote Gulch trailheads, which offer more direct access but require a 4WD vehicle and some climbing experience. Once inside the canyon, you'll have the opportunity to discover the main Coyote Gulch, with its breathtaking arches and natural wonders. When it's time to leave, you can choose to hike or climb out, depending on your preferred route and skill level.",
+  "image": "photos/countries/united-states/utah/coyote-gulch/hiker-standing-red-sandstone-cliff-blue-sky",
+  "mapId": "1suSoY2QvTlnpzWAYSqgklmz0J2kbEjY",
+  "date": "2025-01-13",
+  "modified_date": "2025-01-13",
+  "tags": ["united-states", "utah", "canyon", "desert", "hiking"],
+  "location": {
+    "name": "Coyote Gulch Hiking Trail",
+    "locality": "Glen Canyon National Recreation Area",
+    "region": "Utah",
+    "country": "USA",
+    "latitude": "37.429300",
+    "longitude": "-110.984117"
+  },
+  "links": [
+    {
+      "title": "Hiking Guide",
+      "url": "/guides/how-to-hike-coyote-gulch"
+    },
+    {
+      "title": "Photo Gallery",
+      "url": "/photos/countries/united-states"
+    }
+  ]
+}

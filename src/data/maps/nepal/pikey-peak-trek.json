@@ -1,0 +1,26 @@
+{
+  "name": "Pikey Peak Trek",
+  "description": "",
+  "image": "photos/countries/nepal/pikey-peak/person-hiking-in-snowy-mountains",
+  "mapId": "13mWsdDrqaxyVe1jEAhXkZBTymDhEN0I",
+  "date": "2025-01-13",
+  "modified_date": "2025-01-13",
+  "tags": ["nepal", "pikey-peak-trek", "hiking"],
+  "location": {
+    "name": "Pikey Peak Trek",
+    "region": "Solukhumbu",
+    "country": "Nepal",
+    "latitude": "27.534455",
+    "longitude": "86.474218"
+  },
+  "links": [
+    {
+      "title": "Hiking Guide",
+      "url": "/guides/how-to-solo-hike-the-pikey-peak-trek"
+    },
+    {
+      "title": "Photo Gallery",
+      "url": "/photos/countries/nepal"
+    }
+  ]
+}

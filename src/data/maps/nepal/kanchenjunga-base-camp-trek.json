@@ -1,0 +1,27 @@
+{
+  "name": "Kanchenjunga Base Camp Trek",
+  "description": "This interactive map highlights the complete Kanchenjunga Base Camp Trek route, with the main trail marked in dark blue, optional side trips in light blue, and alternative routes in green. Icons indicate teahouses, viewpoints, and points of interest along the way. From Taplejung to both North and South Base Camps, every significant stop and scenic detour is clearly marked for easy route planning.",
+  "image": "photos/countries/nepal/kanchenjunga-base-camp-trek/trekker-yellow-jacket-kanchenjunga-cloud-sea",
+  "mapId": "1gvl0gvbYXEdExMZ7xI62RwYe7EO_j8o",
+  "date": "2025-01-13",
+  "modified_date": "2025-01-13",
+  "tags": ["nepal", "kanchenjunga", "hiking"],
+  "location": {
+    "name": "Kanchenjunga Base Camp Trek",
+    "locality": "Kanchenjunga Conservation Area",
+    "region": "Kanchenjunga",
+    "country": "Nepal",
+    "latitude": "27.627631",
+    "longitude": "87.932306"
+  },
+  "links": [
+    {
+      "title": "Hiking Guide",
+      "url": "/guides/how-to-hike-kanchenjunga-base-camp-trek"
+    },
+    {
+      "title": "Photo Gallery",
+      "url": "/photos/countries/nepal"
+    }
+  ]
+}

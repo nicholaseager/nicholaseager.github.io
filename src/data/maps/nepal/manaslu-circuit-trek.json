@@ -1,0 +1,27 @@
+{
+  "name": "Manaslu Circuit Trek",
+  "description": "",
+  "image": "photos/countries/nepal/manaslu-circuit/manaslu-mountain-at-sunset",
+  "mapId": "1TCjAXIRU9I_m8TlicRF3dCQYSAa_cGc",
+  "date": "2025-01-13",
+  "modified_date": "2025-01-13",
+  "tags": ["nepal", "manaslu-circuit", "hiking"],
+  "location": {
+    "name": "Manaslu Circuit Trek",
+    "locality": "Manaslu Conservation Area",
+    "region": "Manaslu",
+    "country": "Nepal",
+    "latitude": "28.587185",
+    "longitude": "84.645502"
+  },
+  "links": [
+    {
+      "title": "Hiking Guide",
+      "url": "/guides/how-to-hike-the-manaslu-circuit"
+    },
+    {
+      "title": "Photo Gallery",
+      "url": "/photos/countries/nepal"
+    }
+  ]
+}

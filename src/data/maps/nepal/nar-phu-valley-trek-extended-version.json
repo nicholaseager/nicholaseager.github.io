@@ -1,0 +1,27 @@
+{
+  "name": "Extended Nar Phu Valley Trek",
+  "description": "This interactive map highlights the complete Nar Phu Valley and Annapurna Circuit Trek route, with the main trail marked in blue and alternative routes in green. The green paths show optional routes either returning to Koto from Ngawal or detouring through Lupra and Kagbeni to Jomsom. Icons indicate teahouses, monasteries, mountain passes, and points of interest along the way. From Koto through the restricted Nar Phu Valley, over Kang La pass, and continuing along the Annapurna Circuit to Jomsom, every significant stop and scenic detour is clearly marked for easy route planning.",
+  "image": "photos/countries/nepal/nar-phu-valley-trek/ancient-buddhist-stupa-snow-mountains",
+  "mapId": "1br747OposWxkWDcX9c8WgWeqQHqHW5E",
+  "date": "2025-01-13",
+  "modified_date": "2025-01-13",
+  "tags": ["nepal", "nar-phu-valley-trek", "hiking"],
+  "location": {
+    "name": "Nar Phu Valley Trek",
+    "locality": "Annapurna Conservation Area",
+    "region": "Annapurna",
+    "country": "Nepal",
+    "latitude": "28.552904",
+    "longitude": "84.259434"
+  },
+  "links": [
+    {
+      "title": "Hiking Guide",
+      "url": "/guides/how-to-hike-nar-phu-valley-trek-extended-version"
+    },
+    {
+      "title": "Photo Gallery",
+      "url": "/photos/countries/nepal"
+    }
+  ]
+}
