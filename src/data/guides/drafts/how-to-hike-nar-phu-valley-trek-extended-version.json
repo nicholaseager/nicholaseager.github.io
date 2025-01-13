@@ -4,7 +4,15 @@
   "modified_date": "2025-01-01",
   "description": "Everything you need to know about combining Nepal's Annapurna Circuit with the remote Nar Phu Valley Trek.",
   "image": "photos/countries/nepal/nar-phu-valley-trek/ancient-buddhist-stupa-snow-mountains",
-  "tags": ["nepal", "annapurna", "nar-phu", "hiking"],
+  "tags": ["nepal", "nar-phu-valley-trek", "hiking"],
+  "location": {
+    "name": "Nar Phu Valley Trek",
+    "locality": "Annapurna Conservation Area",
+    "region": "Annapurna",
+    "country": "Nepal",
+    "latitude": "28.552904",
+    "longitude": "84.259434"
+  },
   "short_name": "nar-phu",
   "youtube": "uea5-JRCGJk",
   "introduction": "My extended Nar Phu Valley Trek combines Nepal's most dramatic restricted area with the classic Annapurna Circuit, offering an unparalleled journey through hidden Tibetan villages and high Himalayan passes. This 17-day adventure takes you deep into a valley where ancient Buddhist culture thrives, then connects with the famous Circuit via the challenging Kang La pass. Along the way, you'll explore medieval villages perched on hillsides, sleep in remote monasteries, and cross two of Nepal's highest trekking passes. It's a perfect blend of cultural immersion and high-altitude hiking that showcases the best of Nepal's hidden corners and celebrated trails.",
