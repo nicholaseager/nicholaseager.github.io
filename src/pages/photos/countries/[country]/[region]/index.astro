@@ -1,5 +1,4 @@
 ---
-import { getCollection, getEntry, getEntries } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
 import Page from "../../../../../layouts/Page.astro";
@@ -8,6 +7,7 @@ import Text from "../../../../../components/ui/Text";
 import ResponsiveWidth from "../../../../../components/layout/ResponsiveWidth.astro";
 import Image from "../../../../../components/image-kit/Image";
 import Card from "../../../../../components/ui/Card";
+import { resolveCollection } from "../../../../../utils/collection-resolver";
 
 interface Props {
   title: string;
@@ -17,31 +17,21 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const photoLocations = await getCollection("photoLocations");
+  const photoLocations = await resolveCollection("photoLocations");
 
   // Filter to only get region locations (those with country/region format in id)
-  const locations = photoLocations
-    .filter((l) => l.data.id.includes("/"))
-    .map((l) => l.data);
+  const locations = photoLocations.filter((l) => l.id.includes("/"));
 
   // Transform locations into Astro path params
-  const uniquePaths = await Promise.all(
-    locations.map(async (location) => {
-      const [country, region] = location.id.split("/");
-      const photos = await getEntries(location.photos);
-      const previewPhoto = await getEntry(location.previewPhoto);
-      return {
-        params: { country, region },
-        props: {
-          title: location.title,
-          description: location.description,
-          photos: photos.map((p) => p.data),
-          previewPhoto: previewPhoto.data,
-        },
-      };
-    })
-  );
-
+  const uniquePaths = locations.map((location) => {
+    const [country, region] = location.id.split("/");
+    return {
+      params: { country, region },
+      props: {
+        ...location,
+      },
+    };
+  });
   return uniquePaths;
 }
 
