@@ -33,20 +33,7 @@ const { title, description, content, photos, previewPhoto }: Props =
           </TextContainer>
         )
       }
-      <TextContainer>
-        <Text variant="h2">A Collection of Moments</Text>
-        <Text variant="body">
-          Below, you'll find a collection of moments captured through my lens
-          during this incredible journey. Each image tells its own story,
-          documenting not just the breathtaking landscapes, but the raw
-          emotions, unexpected encounters, and quiet contemplations that defined
-          this adventure. I've carefully curated these photographs to transport
-          you along the trail with me, sharing both the grand vistas and
-          intimate details that caught my eye. As you scroll through, I hope
-          these visual stories inspire your own wanderlust and offer a genuine
-          glimpse into the experience of exploring this remarkable place.
-        </Text>
-      </TextContainer>
+      <slot name="content" />
     </div>
   </ResponsiveWidth>
   <ResponsiveWidth size="lg">
