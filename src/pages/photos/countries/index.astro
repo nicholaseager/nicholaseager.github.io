@@ -1,24 +1,13 @@
 ---
 import Page from "../../../layouts/Page.astro";
-import { getCollection, getEntry, getEntries } from "astro:content";
 import Grid from "../../../components/ui/Grid";
 import HeroCard from "../../../components/ui/HeroCard";
+import { getPhotoLocations } from "../../../utils/photo-locations";
 
-const photoLocations = await getCollection("photoLocations");
+const photoLocations = await getPhotoLocations();
 
 // Filter to only get country locations (those without country/region format in id)
-const countries = await Promise.all(
-  photoLocations
-    .filter((l) => !l.data.id.includes("/"))
-    .map((l) => l.data)
-    .map(async (data) => {
-      return {
-        ...data,
-        photos: (await getEntries(data.photos)).map((p) => p.data),
-        previewPhoto: (await getEntry(data.previewPhoto)).data,
-      };
-    })
-);
+const countries = photoLocations.filter((l) => !l.id.includes("/"));
 ---
 
 <Page
