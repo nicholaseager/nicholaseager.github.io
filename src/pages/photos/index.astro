@@ -17,7 +17,7 @@ const showcasePhotoPaths = photos
 
 const locations = await getCollection("locations");
 const countries = locations.filter(
-  (location) => location.data.slug.split("/").length === 1
+  (location) => location.data.parts.length === 1
 );
 
 const themes = await getCollection("themes");

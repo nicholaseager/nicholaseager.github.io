@@ -10,7 +10,7 @@ export async function getStaticPaths() {
     props: {
       gallery: gallery.data,
       photos: photos
-        .filter((photo) => photo.data.slug.includes(gallery.id))
+        .filter((photo) => gallery.data.photoSlugs.includes(photo.data.slug))
         .map((p) => p.data),
     },
   }));

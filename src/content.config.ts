@@ -247,6 +247,7 @@ const locations = defineCollection({
 
       return {
         ...data,
+        parts: data.slug.split("/"),
         photoSlugs: matchingPhotos.map((photo) => photo.slug),
         previewPhotoSlug: matchingPhotos[0].slug,
       };
