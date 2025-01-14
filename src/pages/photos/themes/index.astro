@@ -6,6 +6,9 @@ import Grid from "../../../components/ui/Grid";
 import { getCollection } from "astro:content";
 
 const themes = await getCollection("themes");
+const sortedThemes = themes.sort(
+  (a, b) => b.data.photoSlugs.length - a.data.photoSlugs.length
+);
 ---
 
 <Page
@@ -15,7 +18,7 @@ const themes = await getCollection("themes");
   <div class="space-y-8">
     <Grid>
       {
-        themes.map((theme) => (
+        sortedThemes.map((theme) => (
           <HeroCard
             title={theme.data.title}
             subtitle={`${theme.data.photoSlugs.length} photo${theme.data.photoSlugs.length !== 1 ? "s" : ""}`}

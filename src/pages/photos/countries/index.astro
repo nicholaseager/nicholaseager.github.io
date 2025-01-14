@@ -5,7 +5,9 @@ import HeroCard from "../../../components/ui/HeroCard";
 import { getCollection } from "astro:content";
 
 const locations = await getCollection("locations");
-const countries = locations.filter((l) => l.data.parts.length === 1)
+const countries = locations
+  .filter((l) => l.data.parts.length === 1)
+  .sort((a, b) => b.data.photoSlugs.length - a.data.photoSlugs.length);
 ---
 
 <Page
@@ -20,7 +22,7 @@ const countries = locations.filter((l) => l.data.parts.length === 1)
             title={location.data.title}
             subtitle={`${location.data.photoSlugs.length} photo${location.data.photoSlugs.length !== 1 ? "s" : ""}`}
             imagePath={location.data.previewPhotoSlug}
-            href={location.data.slug}}
+            href={location.data.slug}
           />
         ))
       }
