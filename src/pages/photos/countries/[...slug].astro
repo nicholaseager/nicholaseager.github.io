@@ -5,26 +5,37 @@ import Gallery from "../../../layouts/Gallery.astro";
 export async function getStaticPaths() {
   const locations = await getCollection("locations");
   const photos = await getCollection("photos");
-  return locations.map((gallery) => ({
-    params: { slug: gallery.id },
-    props: {
-      gallery: gallery.data,
-      photos: photos
-        .filter((photo) => gallery.data.photoSlugs.includes(photo.data.slug))
-        .map((p) => p.data),
-    },
-  }));
+  return locations.map((location) => {
+    const children = locations.filter(
+      (l) =>
+        l.data.parts.length === location.data.parts.length + 1 &&
+        l.data.slug.startsWith(location.data.slug)
+    );
+    return {
+      params: { slug: location.data.slug },
+      props: {
+        location: location.data,
+        children: children
+          .map((l) => l.data)
+          .sort((a, b) => b.photoSlugs.length - a.photoSlugs.length),
+        photos: photos
+          .filter((photo) => location.data.photoSlugs.includes(photo.data.slug))
+          .map((p) => p.data),
+      },
+    };
+  });
 }
 
-const { gallery, photos } = Astro.props;
+const { location, children, photos } = Astro.props;
 ---
 
 <Gallery
-  title={gallery.title}
-  description={gallery.description}
-  content={gallery.content}
-  date={gallery.date}
-  modified_date={gallery.modified_date}
+  title={location.title}
+  description={location.description}
+  content={location.content}
+  date={location.date}
+  modified_date={location.modified_date}
+  children={children}
   photos={photos}
   previewPhoto={photos[0]}
 />

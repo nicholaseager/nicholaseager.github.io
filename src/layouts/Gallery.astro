@@ -7,6 +7,9 @@ import Image from "../components/image-kit/Image";
 import Card from "../components/ui/Card";
 import TextContainer from "../components/ui/TextContainer";
 import type { CollectionEntry } from "astro:content";
+import Grid from "../components/ui/Grid";
+import HeroCard from "../components/ui/HeroCard";
+import Link from "../components/ui/Link";
 
 interface Props {
   title: string;
@@ -14,6 +17,7 @@ interface Props {
   content?: string;
   date: Date;
   modified_date: Date;
+  children: CollectionEntry<"locations">["data"][];
   photos: CollectionEntry<"photos">["data"][];
   previewPhoto: CollectionEntry<"photos">["data"];
 }
@@ -26,6 +30,7 @@ const {
   date,
   modified_date,
   previewPhoto,
+  children,
 }: Props = Astro.props;
 ---
 
@@ -45,11 +50,31 @@ const {
       <slot name="content" />
     </div>
   </ResponsiveWidth>
+  {
+    children.length > 0 && (
+      <>
+        <ResponsiveWidth>
+          <Text variant="h2">Galleries</Text>
+        </ResponsiveWidth>
+        <Grid>
+          {children.map((location) => (
+            <HeroCard
+              title={location.name}
+              subtitle={`${location.photoSlugs.length} photo${location.photoSlugs.length !== 1 ? "s" : ""}`}
+              imagePath={location.previewPhotoSlug}
+              href={`/photos/countries/${location.slug}`}
+            />
+          ))}
+        </Grid>
+      </>
+    )
+  }
   <ResponsiveWidth size="lg">
     <div class="space-y-8">
       {
         photos.map((photo) => (
           <>
+            <hr />
             <Text variant="h3" className="text-center">
               {photo.title}
             </Text>
@@ -61,7 +86,6 @@ const {
               </Card>
             </div>
             <Text variant="body">{photo.description}</Text>
-            <hr />
           </>
         ))
       }

@@ -22,7 +22,7 @@ const countries = locations
             title={location.data.name}
             subtitle={`${location.data.photoSlugs.length} photo${location.data.photoSlugs.length !== 1 ? "s" : ""}`}
             imagePath={location.data.previewPhotoSlug}
-            href={location.data.slug}
+            href={`/photos/countries/${location.data.slug}`}
           />
         ))
       }
