@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import OrderPrint from "../../layouts/OrderPrint.astro";
+import OrderPrint from "../layouts/OrderPrint.astro";
 
 export async function getStaticPaths() {
   const photos = await getCollection("photos");
