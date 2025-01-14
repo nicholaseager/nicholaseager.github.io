@@ -33,6 +33,39 @@ class ClaudeClient:
         """
         return cls()
 
+    def get_completion(self, prompt: str) -> Dict[str, Any]:
+        """
+        Get a text completion response from Claude.
+        Args:
+            prompt: Text prompt to send to Claude
+        Returns: Dictionary containing response text and usage statistics
+        """
+        message = self.client.messages.create(
+            model="claude-3-opus-20240229",
+            max_tokens=1000,
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+        )
+
+        # Calculate costs
+        input_cost = (message.usage.input_tokens / 1_000_000) * 15
+        output_cost = (message.usage.output_tokens / 1_000_000) * 75
+
+        return {
+            "text": message.content[0].text,
+            "usage": {
+                "input_tokens": message.usage.input_tokens,
+                "output_tokens": message.usage.output_tokens,
+                "input_cost": input_cost,
+                "output_cost": output_cost,
+                "total_cost": input_cost + output_cost,
+            },
+        }
+
     def get_vision_response(
         self, prompt: str, base64_images: List[str]
     ) -> Dict[str, Any]:

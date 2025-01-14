@@ -1,10 +1,10 @@
 """
-Script to generate article content and titles for photo locations using Claude Vision API.
+Script to generate article content and titles for photo locations using photo descriptions.
 
 This script:
 1. Loads photo location and photo data
 2. For each location, finds matching photos 
-3. Uses Claude Vision API to generate article content and title based on the photos
+3. Uses the photo descriptions to generate article content and title
 4. Updates the photo locations JSON with the new content and title
 """
 
@@ -12,7 +12,6 @@ import json
 from pathlib import Path
 from typing import Dict, List, Tuple
 from utils.claude_client import ClaudeClient
-from utils.image_utils import ImageUtils
 
 
 class LocationContentGenerator:
@@ -27,20 +26,19 @@ class LocationContentGenerator:
         with open(self.locations_path) as f:
             self.locations = json.load(f)
 
-    def format_photo_info(self, slug: str):
+    def format_photo_info(self, photo: Dict) -> str:
+        """Format a photo's info including description."""
         # Remove 'photos/' prefix and split into parts
-        parts = slug.replace("photos/", "").split("/")
+        parts = photo["slug"].replace("photos/", "").split("/")
 
         # Extract location parts and photo name
         location_parts = parts[
             1:-1
         ]  # Get all parts except first ('countries') and last (photo name)
         photo_name = parts[-1].replace("-", " ").title()
-
-        # Format location as readable string
         location = ", ".join(part.title() for part in location_parts)
 
-        return f"'{photo_name}' located in '{location}'"
+        return f"Photo: '{photo_name}' Location: '{location}' Description: '{photo['description']}'"
 
     def get_location_photos(self, location_id: str) -> List[Dict]:
         """Get all photos matching a location ID."""
@@ -56,40 +54,32 @@ class LocationContentGenerator:
         self, location_id: str, photos: List[Dict]
     ) -> Tuple[str, str]:
         """
-        Generate article content and title for a location using Claude Vision API.
+        Generate article content and title for a location using photo descriptions.
         Returns: (title, content)
         """
         if not photos:
             return "", ""
 
-        # Download and encode images
-        image_data = []
-        photo_info = []
-        for photo in photos[:3]:  # Limit to 3 photos to keep context window manageable
-            data = ImageUtils.download_photo_slug(photo["slug"])
-            if data:
-                base64_image, _, _ = ImageUtils.encode_image(data)
-                image_data.append(base64_image)
-                photo_info.append(photo["slug"])
-
-        if not image_data:
-            return "", ""
-
         # Get base location name from ID
         base_name = location_id.split("/")[-1].replace("-", " ").title()
 
-        prompt = f"""You are a skilled travel writer crafting engaging location descriptions for a photography website.
+        # Format photo info for prompt
+        photo_info = [
+            self.format_photo_info(photo) for photo in photos[:10]
+        ]  # Limit to 10 photos
+
+        prompt = f"""
+        You are a skilled travel writer crafting engaging location descriptions for a photography website.
         
-        Location: {base_name}
-        Photos from this location:
-        {chr(10).join(f"- {self.format_photo_info(slug)}" for slug in photo_info)}
+        Based on these photo descriptions:
+        {chr(10).join(photo_info)}
         
-        Looking at the provided images, please provide:
+        Please provide:
 
         1. An engaging title for this location that captures its photographic appeal (format: "Title: <your title>")
         2. A 2-3 paragraph article about this location that:
            - Describes the visual character and photographic opportunities
-           - Incorporates specific details from the images shown
+           - Incorporates specific details from the photo descriptions
            - Provides context about what makes this location special for photography
            - Uses vivid, descriptive language that brings the scene to life
            - Maintains a personal, authentic voice
@@ -97,11 +87,9 @@ class LocationContentGenerator:
         Keep the tone warm and conversational while being informative.
         Focus on the visual and photographic aspects rather than general travel tips.
         
-        Start your response with the title on one line, followed by two newlines, then the article content.
-        
-        Please analyze the images and write an appropriate title and article."""
+        Start your response with the title on one line, followed by two newlines, then the article content."""
 
-        response = self.claude_client.get_vision_response(prompt, image_data)
+        response = self.claude_client.get_completion(prompt)
 
         print(f"\nProcessing: {location_id}")
         print(
@@ -130,33 +118,36 @@ class LocationContentGenerator:
 
         for location in self.locations:
             if "/" in location["id"]:  # Only process country/region locations
-                photos = self.get_location_photos(location["id"])
-                if photos:
-                    try:
-                        title, content = self.generate_location_content(
-                            location["id"], photos
-                        )
-                        if content:
-                            location["title"] = title
-                            location["content"] = content
-                            updated = True
-                            print(
-                                f"Added title and content for location {location['id']}"
+                if "content" not in location:
+                    photos = self.get_location_photos(location["id"])
+                    if photos:
+                        try:
+                            title, content = self.generate_location_content(
+                                location["id"], photos
                             )
+                            if content:
+                                location["title"] = title
+                                location["content"] = content
+                                updated = True
+                                print(
+                                    f"Added title and content for location {location['id']}"
+                                )
 
-                            # Save after each successful update
-                            with open(self.locations_path, "w") as f:
-                                json.dump(self.locations, f, indent=2)
-                    except Exception as e:
-                        print(f"Error processing location {location['id']}: {str(e)}")
+                                # Save after each successful update
+                                with open(self.locations_path, "w") as f:
+                                    json.dump(self.locations, f, indent=2)
+                        except Exception as e:
+                            print(
+                                f"Error processing location {location['id']}: {str(e)}"
+                            )
 
         return updated
 
 
 def main():
     generator = LocationContentGenerator(
-        photos_path="../src/data/photos.json",
-        locations_path="../src/data/photo-locations.json",
+        photos_path="./src/data/photos.json",
+        locations_path="./src/data/photo-locations.json",
     )
     generator.update_locations()
 
