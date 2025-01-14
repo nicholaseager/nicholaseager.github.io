@@ -2,56 +2,78 @@
   {
     "id": "landscapes",
     "title": "Landscape",
-    "description": "Captivating natural vistas and scenic views from around the world"
+    "description": "Captivating natural vistas and scenic views from around the world",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "mountains",
     "title": "Mountains",
-    "description": "Majestic peaks and dramatic mountain ranges reaching into the sky"
+    "description": "Majestic peaks and dramatic mountain ranges reaching into the sky",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "adventure",
     "description": "Capturing the spirit of exploration and outdoor pursuits",
-    "title": "Adventure"
+    "title": "Adventure",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "showcase",
     "title": "Featured Work",
-    "description": "A curated collection of my finest photographs"
+    "description": "A curated collection of my finest photographs",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "city",
     "title": "Urban",
-    "description": "Exploring cityscapes, architecture, and urban life around the globe"
+    "description": "Exploring cityscapes, architecture, and urban life around the globe",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "animals",
     "title": "Wildlife",
-    "description": "Intimate portraits of wildlife and animal encounters in their natural habitats"
+    "description": "Intimate portraits of wildlife and animal encounters in their natural habitats",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "minimalism",
     "description": "Simple compositions that emphasize beauty through simplicity and negative space",
-    "title": "Minimalism"
+    "title": "Minimalism",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "astrophotography",
     "title": "Night Sky",
-    "description": "Capturing the beauty of stars, celestial events, and nighttime landscapes"
+    "description": "Capturing the beauty of stars, celestial events, and nighttime landscapes",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "snow",
     "title": "Winter",
-    "description": "Scenes of winter wonderlands and snow-covered landscapes"
+    "description": "Scenes of winter wonderlands and snow-covered landscapes",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "nature",
     "description": "Close-up details and intimate perspectives of the natural world",
-    "title": "Nature"
+    "title": "Nature",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   },
   {
     "id": "aerial",
     "title": "Aerial",
-    "description": "Bird's eye views and unique perspectives from above"
+    "description": "Bird's eye views and unique perspectives from above",
+    "date": "2025-01-14",
+    "modified_date": "2025-01-14"
   }
 ]

@@ -12,12 +12,21 @@ interface Props {
   title: string;
   description: string;
   content?: string;
+  date: Date;
+  modified_date: Date;
   photos: CollectionEntry<"photos">["data"][];
   previewPhoto: CollectionEntry<"photos">["data"];
 }
 
-const { title, description, content, photos, previewPhoto }: Props =
-  Astro.props;
+const {
+  title,
+  description,
+  content,
+  photos,
+  date,
+  modified_date,
+  previewPhoto,
+}: Props = Astro.props;
 ---
 
 <Page title={title} description={description}>
@@ -78,6 +87,9 @@ const { title, description, content, photos, previewPhoto }: Props =
   <GallerySEO
     title={title}
     description={description}
+    date={date}
+    modified_date={modified_date}
+    tags={[]}
     images={photos.map((p) => p.slug)}
     image={previewPhoto.slug}
   />

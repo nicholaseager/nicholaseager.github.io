@@ -247,6 +247,8 @@ const photoLocations = defineCollection({
       id: z.string(),
       title: z.string(),
       description: z.string(),
+      date: z.coerce.date(),
+      modified_date: z.coerce.date(),
       content: z.string().optional(),
     })
     .transform((data) => {
@@ -285,6 +287,8 @@ const photoThemes = defineCollection({
       id: z.string(),
       title: z.string(),
       description: z.string(),
+      date: z.coerce.date(),
+      modified_date: z.coerce.date(),
     })
     .transform((data) => {
       const matchingPhotoRefs = photosData

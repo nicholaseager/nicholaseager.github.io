@@ -1,5 +1,7 @@
 ---
+import { kebabToTitleCase } from "../utils/kebab";
 import Script from "./Script.astro";
+import { articleFrom } from "./types/article";
 import { imageFromPath } from "./types/image";
 import { imageGalleryFrom } from "./types/image-gallery";
 
@@ -7,10 +9,14 @@ interface Props {
   title: string;
   image: string;
   description: string;
+  date: Date;
+  modified_date: Date;
   images: string[];
+  tags: string[];
 }
 
-const { title, image, description, images } = Astro.props;
+const { title, image, description, date, modified_date, images, tags } =
+  Astro.props;
 const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -26,6 +32,17 @@ const currentPageCanonicalURL = new URL(Astro.url.pathname, Astro.site);
       description: description,
       images: images,
       url: currentPageCanonicalURL,
+    }),
+    articleFrom({
+      name: title,
+      headline: title,
+      abstract: description,
+      description: description,
+      url: currentPageCanonicalURL,
+      datePublished: date.toISOString(),
+      dateModified: modified_date.toISOString(),
+      image: image,
+      keywords: tags.map((tag) => kebabToTitleCase(tag)),
     }),
   ]}
 />
