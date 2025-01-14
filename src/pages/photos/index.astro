@@ -9,7 +9,7 @@ import PhotosSEO from "../../seo/PhotosSEO.astro";
 import HeroCard from "../../components/ui/HeroCard";
 import Grid from "../../components/ui/Grid";
 import Link from "../../components/ui/Link";
-import { resolveCollection } from "../../utils/collection-resolver";
+import { getPhotoLocations } from "../../utils/photo-locations";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
@@ -21,7 +21,7 @@ const sortedThemes = themes
   .sort((a, b) => (a.data.photos.length > b.data.photos.length ? -1 : 1))
   .map((t) => t.data);
 
-const locations = await resolveCollection("photoLocations");
+const locations = await getPhotoLocations();
 // Filter to only get country locations (those without country/region format in id)
 const countries = locations.filter((entry) => !entry.id.includes("/"));
 ---

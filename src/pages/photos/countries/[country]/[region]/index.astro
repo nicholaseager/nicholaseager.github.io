@@ -7,7 +7,7 @@ import Text from "../../../../../components/ui/Text";
 import ResponsiveWidth from "../../../../../components/layout/ResponsiveWidth.astro";
 import Image from "../../../../../components/image-kit/Image";
 import Card from "../../../../../components/ui/Card";
-import { resolveCollection } from "../../../../../utils/collection-resolver";
+import { getPhotoLocations } from "../../../../../utils/photo-locations";
 
 interface Props {
   title: string;
@@ -17,7 +17,7 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const photoLocations = await resolveCollection("photoLocations");
+  const photoLocations = await getPhotoLocations();
 
   // Filter to only get region locations (those with country/region format in id)
   const locations = photoLocations.filter((l) => l.id.includes("/"));

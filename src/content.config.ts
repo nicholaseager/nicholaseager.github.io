@@ -249,7 +249,7 @@ const photoLocations = defineCollection({
       description: z.string(),
     })
     .transform((data) => {
-      const locationPhotos = photosData
+      const matchingPhotoRefs = photosData
         .filter((photo) =>
           photo.slug.replace(/^photos\/countries\//, "").startsWith(data.id)
         )
@@ -257,8 +257,8 @@ const photoLocations = defineCollection({
 
       return {
         ...data,
-        photos: z.array(reference("photos")).parse(locationPhotos),
-        previewPhoto: reference("photos").parse(locationPhotos[0]),
+        photos: z.array(reference("photos")).parse(matchingPhotoRefs),
+        previewPhoto: reference("photos").parse(matchingPhotoRefs[0]),
       };
     }),
 });

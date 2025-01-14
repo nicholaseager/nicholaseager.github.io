@@ -2,9 +2,9 @@
 import Page from "../../../layouts/Page.astro";
 import Grid from "../../../components/ui/Grid";
 import HeroCard from "../../../components/ui/HeroCard";
-import { resolveCollection } from "../../../utils/collection-resolver";
+import { getPhotoLocations } from "../../../utils/photo-locations";
 
-const photoLocations = await resolveCollection("photoLocations");
+const photoLocations = await getPhotoLocations();
 
 // Filter to only get country locations (those without country/region format in id)
 const countries = photoLocations.filter((l) => !l.id.includes("/"));
