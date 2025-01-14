@@ -241,15 +241,27 @@ const galleries = defineCollection({
       content: z.string().optional(),
     })
     .transform((data) => {
-      const parts = data.slug.split("/");
-      const type = parts.shift();
+      const tags = data.slug.split("/");
+      const type = tags.shift();
+      const matchingPhotoRefs = photosData
+        .filter((photo) => {
+          if (type === "themes") {
+            return photo.tags.includes(tags[0]);
+          }
+
+          const photoTags = photo.slug.split("/");
+          return tags.every((t) => photoTags.includes(t));
+        })
+        .map((photo) => ({ id: photo.slug, collection: "photos" }));
 
       return {
         ...data,
         type: z
           .enum(["theme", "location"])
           .parse(type === "themes" ? "theme" : "location"),
-        tags: parts,
+        tags: tags,
+        photos: z.array(reference("photos")).parse(matchingPhotoRefs),
+        previewPhoto: reference("photos").parse(matchingPhotoRefs[0]),
       };
     }),
 });

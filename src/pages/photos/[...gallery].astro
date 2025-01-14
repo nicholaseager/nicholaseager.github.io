@@ -1,37 +1,16 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
 import Gallery from "../../layouts/Gallery.astro";
+import { getGalleries } from "../../utils/galleries";
 
 export async function getStaticPaths() {
-  const galleries = await getCollection("galleries");
+  const galleries = await getGalleries();
   return galleries.map((gallery) => ({
-    params: { gallery: gallery.id },
+    params: { gallery: gallery.slug },
     props: gallery,
   }));
 }
-type Props = CollectionEntry<"galleries">;
 
 const gallery = Astro.props;
-const photos = await getCollection("photos");
-const parts = gallery.id.split("/");
-const filteredPhotos = photos
-  .filter((photo) => {
-    if (parts[0] === "themes") {
-      return photo.data.tags.includes(parts[1]);
-    }
-
-    const locationTags = parts.slice(1);
-    return locationTags.every((t) => photo.data.tags.includes(t));
-  })
-  .map((p) => p.data);
 ---
 
-<Gallery
-  title={gallery.data.title}
-  description={gallery.data.description}
-  content={gallery.data.content}
-  date={gallery.data.date}
-  modified_date={gallery.data.modified_date}
-  photos={filteredPhotos}
-  previewPhoto={filteredPhotos[0]}
-/>
+<Gallery {...gallery} />

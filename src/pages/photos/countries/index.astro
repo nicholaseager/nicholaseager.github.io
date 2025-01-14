@@ -2,25 +2,12 @@
 import Page from "../../../layouts/Page.astro";
 import Grid from "../../../components/ui/Grid";
 import HeroCard from "../../../components/ui/HeroCard";
-import { getCollection } from "astro:content";
-import { undefined } from "astro:schema";
+import { getGalleries } from "../../../utils/galleries";
 
-const galleries = await getCollection("galleries");
-const photos = await getCollection("photos");
-const filteredGalleries = galleries
-  .filter((g) => {
-    return g.data.type === "location" && g.data.tags.length === 1;
-  })
-  .map((g) => {
-    const filteredPhotos = photos
-      .filter((p) => p.data.slug.includes(g.data.slug))
-      .map((p) => p.data);
-    return {
-      ...g.data,
-      photos: filteredPhotos,
-      previewPhoto: filteredPhotos[0],
-    };
-  });
+const galleries = await getGalleries();
+const filteredGalleries = galleries.filter((g) => {
+  return g.type === "location" && g.tags.length === 1;
+});
 ---
 
 <Page

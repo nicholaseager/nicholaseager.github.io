@@ -9,42 +9,21 @@ import PhotosSEO from "../../seo/PhotosSEO.astro";
 import HeroCard from "../../components/ui/HeroCard";
 import Grid from "../../components/ui/Grid";
 import Link from "../../components/ui/Link";
+import { getGalleries } from "../../utils/galleries";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
   .filter((photo) => photo.data.tags.includes("showcase"))
   .map((photo) => photo.data.slug);
 
-const galleries = await getCollection("galleries");
-const countries = galleries
-  .filter((g) => {
-    return g.data.type === "location" && g.data.tags.length === 1;
-  })
-  .map((g) => {
-    const filteredPhotos = photos
-      .filter((p) => p.data.slug.includes(g.data.slug))
-      .map((p) => p.data);
-    return {
-      ...g.data,
-      photos: filteredPhotos,
-      previewPhoto: filteredPhotos[0],
-    };
-  });
+const galleries = await getGalleries();
+const countries = galleries.filter((g) => {
+  return g.type === "location" && g.tags.length === 1;
+});
 
-const themes = galleries
-  .filter((g) => {
-    return g.data.type === "theme";
-  })
-  .map((g) => {
-    const filteredPhotos = photos
-      .filter((p) => g.data.tags.every((t) => p.data.tags.includes(t)))
-      .map((p) => p.data);
-    return {
-      ...g.data,
-      photos: filteredPhotos,
-      previewPhoto: filteredPhotos[0],
-    };
-  });
+const themes = galleries.filter((g) => {
+  return g.type === "theme";
+});
 ---
 
 <Page
