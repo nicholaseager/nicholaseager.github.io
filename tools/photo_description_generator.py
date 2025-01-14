@@ -1,3 +1,25 @@
+"""
+A tool for automatically generating photo descriptions using Claude Vision API.
+
+This module processes the photos.json file used by the Astro website to populate
+photo gallery pages. It uses Claude Vision API to analyze photos and generate
+natural language descriptions that are then saved back to photos.json.
+
+Example photos.json structure:
+{
+  "slug": "photos/countries/spain/barcelona/sagrada-familia",
+  "description": "The towering spires of the Sagrada Familia pierce the blue Barcelona sky...",
+  ...
+}
+
+The tool will:
+1. Load the existing photos.json
+2. Find entries without descriptions
+3. Download and analyze the corresponding images
+4. Generate natural descriptions using Claude Vision
+5. Update photos.json with the new descriptions
+"""
+
 import json
 from pathlib import Path
 from typing import Optional

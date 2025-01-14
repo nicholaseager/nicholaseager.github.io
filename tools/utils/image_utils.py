@@ -1,3 +1,9 @@
+"""
+Utility class for image processing operations including encoding, downloading,
+and optimizing images. Provides methods for converting images to base64 strings,
+downloading from URLs, and handling image slugs.
+"""
+
 from pathlib import Path
 from PIL import Image
 import base64
@@ -60,5 +66,8 @@ class ImageUtils:
     def download_photo_slug(
         photo_slug: str, base_url: str = "https://ik.imagekit.io/qn1gkawvy/tr:w-600/"
     ) -> Optional[io.BytesIO]:
+        """
+        Download image using a photo slug from a configured base URL.
+        """
         url = f"{base_url}{photo_slug}.jpg"
         return ImageUtils.download_image(url)

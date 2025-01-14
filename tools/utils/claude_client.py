@@ -4,6 +4,15 @@ from typing import Dict, Any
 
 
 class ClaudeClient:
+    """
+    A client for interacting with Anthropic's Claude AI model.
+    Provides methods for making API calls to Claude, particularly for vision/image analysis tasks.
+
+    Attributes:
+        api_key (str): The Anthropic API key used for authentication
+        client (anthropic.Anthropic): The underlying Anthropic client instance
+    """
+
     def __init__(self, api_key: str = None):
         """
         Initialize Claude client with optional API key.
