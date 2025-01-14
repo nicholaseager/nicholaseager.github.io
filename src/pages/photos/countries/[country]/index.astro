@@ -1,12 +1,5 @@
 ---
-import type { CollectionEntry } from "astro:content";
-
-import Page from "../../../../layouts/Page.astro";
-import GallerySEO from "../../../../seo/GallerySEO.astro";
-import Text from "../../../../components/ui/Text";
-import ResponsiveWidth from "../../../../components/layout/ResponsiveWidth.astro";
-import Image from "../../../../components/image-kit/Image";
-import Card from "../../../../components/ui/Card";
+import Gallery from "../../../../layouts/Gallery.astro";
 import { getPhotoLocations } from "../../../../utils/photo-locations";
 
 export async function getStaticPaths() {
@@ -21,39 +14,13 @@ export async function getStaticPaths() {
     return {
       params: { country: id },
       props: {
-        ...country,
+        country,
       },
     };
   });
 }
 
-const { title, description, photos, previewPhoto } = Astro.props;
+const { country } = Astro.props;
 ---
 
-<Page title={title} description={description}>
-  <ResponsiveWidth size="lg">
-    <div class="space-y-8">
-      {
-        photos.map((photo) => (
-          <>
-            <div class="flex flex-row items-center justify-center w-full">
-              <Card>
-                <a href={`/${photo.slug}`}>
-                  <Image path={photo.slug} />
-                </a>
-              </Card>
-            </div>
-            <Text variant="body">{photo.description}</Text>
-            <hr />
-          </>
-        ))
-      }
-    </div>
-  </ResponsiveWidth>
-  <GallerySEO
-    title={title}
-    description={description}
-    images={photos.map((p) => p.slug)}
-    image={previewPhoto.slug}
-  />
-</Page>
+<Gallery {...country} />

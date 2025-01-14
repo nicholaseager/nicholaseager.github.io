@@ -1,8 +1,6 @@
 ---
-import Page from "../../../layouts/Page.astro";
-import PhotoGrid from "../../../components/photos/PhotoGrid";
-import GallerySEO from "../../../seo/GallerySEO.astro";
 import { getPhotoThemes } from "../../../utils/photo-themes";
+import Gallery from "../../../layouts/Gallery.astro";
 
 export async function getStaticPaths() {
   const themes = await getPhotoThemes();
@@ -10,20 +8,12 @@ export async function getStaticPaths() {
   return themes.map((theme) => ({
     params: { theme: theme.id },
     props: {
-      ...theme,
+      theme,
     },
   }));
 }
 
-const { title, description, photos, previewPhoto } = Astro.props;
+const { theme } = Astro.props;
 ---
 
-<Page title={title} description={description}>
-  <PhotoGrid client:visible photos={photos.map((p) => p.slug)} />
-  <GallerySEO
-    title={title}
-    description={description}
-    images={photos.map((p) => p.slug)}
-    image={previewPhoto.slug}
-  />
-</Page>
+<Gallery {...theme} />

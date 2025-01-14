@@ -1,14 +1,6 @@
 ---
-import type { CollectionEntry } from "astro:content";
-
-import Page from "../../../../../layouts/Page.astro";
-import GallerySEO from "../../../../../seo/GallerySEO.astro";
-import Text from "../../../../../components/ui/Text";
-import ResponsiveWidth from "../../../../../components/layout/ResponsiveWidth.astro";
-import Image from "../../../../../components/image-kit/Image";
-import Card from "../../../../../components/ui/Card";
+import Gallery from "../../../../../layouts/Gallery.astro";
 import { getPhotoLocations } from "../../../../../utils/photo-locations";
-import TextContainer from "../../../../../components/ui/TextContainer";
 
 export async function getStaticPaths() {
   const photoLocations = await getPhotoLocations();
@@ -22,88 +14,14 @@ export async function getStaticPaths() {
     return {
       params: { country, region },
       props: {
-        ...location,
+        location,
       },
     };
   });
   return uniquePaths;
 }
 
-const { title, description, content, photos, previewPhoto } = Astro.props;
+const { location } = Astro.props;
 ---
 
-<Page title={title} description={description}>
-  <ResponsiveWidth>
-    <div class="space-y-8">
-      {
-        content && (
-          <TextContainer>
-            <Text variant="h2">Introduction</Text>
-            <Text variant="body">
-              <Fragment set:html={content.replaceAll("\n", "<br>")} />
-            </Text>
-          </TextContainer>
-        )
-      }
-      <TextContainer>
-        <Text variant="h2">A Collection of Moments</Text>
-        <Text variant="body">
-          Below, you'll find a collection of moments captured through my lens
-          during this incredible journey. Each image tells its own story,
-          documenting not just the breathtaking landscapes, but the raw
-          emotions, unexpected encounters, and quiet contemplations that defined
-          this adventure. I've carefully curated these photographs to transport
-          you along the trail with me, sharing both the grand vistas and
-          intimate details that caught my eye. As you scroll through, I hope
-          these visual stories inspire your own wanderlust and offer a genuine
-          glimpse into the experience of exploring this remarkable place.
-        </Text>
-      </TextContainer>
-    </div>
-  </ResponsiveWidth>
-  <ResponsiveWidth size="lg">
-    <div class="space-y-8">
-      {
-        photos.map((photo) => (
-          <>
-            <Text variant="h3" className="text-center">
-              {photo.title}
-            </Text>
-            <div class="flex flex-row items-center justify-center w-full">
-              <Card>
-                <a href={`/${photo.slug}`}>
-                  <Image path={photo.slug} />
-                </a>
-              </Card>
-            </div>
-            <Text variant="body">{photo.description}</Text>
-            <hr />
-          </>
-        ))
-      }
-    </div>
-  </ResponsiveWidth>
-  <ResponsiveWidth>
-    <TextContainer>
-      <Text variant="h2">Conclusion</Text>
-      <Text variant="body">
-        Thank you for taking the time to journey through these images with me.
-        Each photograph represents a moment that has left an indelible mark on
-        my soul, and I'm grateful to share these experiences with you. If you've
-        enjoyed this visual story, consider subscribing to my YouTube channel
-        where I bring these adventures to life through cinematic films, or
-        follow me on Instagram for daily doses of wanderlust and
-        behind-the-scenes moments. Remember, these trails and wild places are
-        out there waiting for all of us - sometimes the hardest part is just
-        taking that first step. Until the next adventure, keep exploring and
-        stay curious.
-      </Text>
-    </TextContainer>
-  </ResponsiveWidth>
-  <GallerySEO
-    title={title}
-    description={description}
-    images={photos.map((p) => p.slug)}
-    image={previewPhoto.slug}
-  />
-</Page>
+<Gallery {...location} />
