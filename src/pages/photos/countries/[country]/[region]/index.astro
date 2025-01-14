@@ -1,9 +1,20 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntry, getEntries } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 
-import PhotoGrid from "../../../../../components/photos/PhotoGrid";
 import Page from "../../../../../layouts/Page.astro";
 import GallerySEO from "../../../../../seo/GallerySEO.astro";
+import Text from "../../../../../components/ui/Text";
+import ResponsiveWidth from "../../../../../components/layout/ResponsiveWidth.astro";
+import Image from "../../../../../components/image-kit/Image";
+import Card from "../../../../../components/ui/Card";
+
+interface Props {
+  title: string;
+  description: string;
+  photos: CollectionEntry<"photos">["data"][];
+  previewPhoto: CollectionEntry<"photos">["data"];
+}
 
 export async function getStaticPaths() {
   const photoLocations = await getCollection("photoLocations");
@@ -14,28 +25,53 @@ export async function getStaticPaths() {
     .map((l) => l.data);
 
   // Transform locations into Astro path params
-  const uniquePaths = locations.map((location) => {
-    const [country, region] = location.id.split("/");
-    return {
-      params: { country, region },
-      props: {
-        ...location,
-      },
-    };
-  });
+  const uniquePaths = await Promise.all(
+    locations.map(async (location) => {
+      const [country, region] = location.id.split("/");
+      const photos = await getEntries(location.photos);
+      const previewPhoto = await getEntry(location.previewPhoto);
+      return {
+        params: { country, region },
+        props: {
+          title: location.title,
+          description: location.description,
+          photos: photos.map((p) => p.data),
+          previewPhoto: previewPhoto.data,
+        },
+      };
+    })
+  );
 
   return uniquePaths;
 }
 
-const { title, description, photos, previewImage } = Astro.props;
+const { title, description, photos, previewPhoto }: Props = Astro.props;
 ---
 
 <Page title={title} description={description}>
-  <PhotoGrid client:visible photos={photos} />
+  <ResponsiveWidth size="lg">
+    <div class="space-y-8">
+      {
+        photos.map((photo) => (
+          <>
+            <div class="flex flex-row items-center justify-center w-full">
+              <Card>
+                <a href={`/${photo.slug}`}>
+                  <Image path={photo.slug} />
+                </a>
+              </Card>
+            </div>
+            <Text variant="body">{photo.description}</Text>
+            <hr />
+          </>
+        ))
+      }
+    </div>
+  </ResponsiveWidth>
   <GallerySEO
     title={title}
     description={description}
-    images={photos}
-    image={previewImage}
+    images={photos.map((p) => p.slug)}
+    image={previewPhoto.slug}
   />
 </Page>

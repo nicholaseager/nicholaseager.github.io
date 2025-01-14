@@ -9,6 +9,8 @@ import PhotosSEO from "../../seo/PhotosSEO.astro";
 import HeroCard from "../../components/ui/HeroCard";
 import Grid from "../../components/ui/Grid";
 import Link from "../../components/ui/Link";
+import { getEntries } from "astro:content";
+import { getEntry } from "astro:content";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
@@ -22,9 +24,18 @@ const sortedThemes = themes
 
 const locations = await getCollection("photoLocations");
 // Filter to only get country locations (those without country/region format in id)
-const countries = locations
-  .filter((l) => !l.data.id.includes("/"))
-  .map((l) => l.data);
+const countries = await Promise.all(
+  locations
+    .filter((l) => !l.data.id.includes("/"))
+    .map((l) => l.data)
+    .map(async (country) => {
+      return {
+        ...country,
+        photos: (await getEntries(country.photos)).map((p) => p.data),
+        previewPhoto: (await getEntry(country.previewPhoto)).data,
+      };
+    })
+);
 ---
 
 <Page
@@ -51,7 +62,7 @@ const countries = locations
             <HeroCard
               title={country.title}
               subtitle={`${country.photos.length} photo${country.photos.length !== 1 ? "s" : ""}`}
-              imagePath={country.previewImage}
+              imagePath={country.previewPhoto.slug}
               href={`/photos/countries/${country.id}`}
             />
           ))

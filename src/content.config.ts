@@ -221,17 +221,23 @@ const photos = defineCollection({
 });
 
 /**
- * Collection for organizing photo by their locations
+ * Collection for organizing photos by their locations
  * @example Result after transform:
  * {
  *   id: "italy/cinque-terre",
  *   title: "Cinque Terre",
  *   description: "Photos from the Italian Riviera's famous five villages",
- *   photos: [
- *     "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas",
- *     "photos/countries/italy/cinque-terre/vernazza-harbor-sunset"
- *   ],
- *   previewImage: "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas"
+ *   photos: [{
+ *     slug: "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas",
+ *     title: "Monterosso Blue White Beach Umbrellas",
+ *     description: "...",
+ *     location: "Italy / Cinque Terre",
+ *     tags: ["beach", "summer"],
+ *     ... other photo properties
+ *   }],
+ *   previewPhoto: {
+ *     full photo object for the preview
+ *   }
  * }
  */
 const photoLocations = defineCollection({
@@ -243,16 +249,16 @@ const photoLocations = defineCollection({
       description: z.string(),
     })
     .transform((data) => {
-      const photoPaths = photosData
+      const locationPhotos = photosData
         .filter((photo) =>
           photo.slug.replace(/^photos\/countries\//, "").startsWith(data.id)
         )
-        .map((photo) => photo.slug);
+        .map((photo) => ({ id: photo.slug, collection: "photos" }));
 
       return {
         ...data,
-        photos: photoPaths,
-        previewImage: photoPaths[0],
+        photos: z.array(reference("photos")).parse(locationPhotos),
+        previewPhoto: reference("photos").parse(locationPhotos[0]),
       };
     }),
 });
