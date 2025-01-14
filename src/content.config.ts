@@ -202,20 +202,24 @@ const photos = defineCollection({
     })
     .transform((data) => {
       const pathParts = data.slug.split("/");
+      const locationParts = pathParts.slice(2, -1);
 
       // Parse title from the last part of the path
       const title = kebabToTitleCase(pathParts[pathParts.length - 1]);
 
       // Parse location from the path parts between "photos/countries" and filename
-      const location = pathParts
-        .slice(2, -1)
+      const location = locationParts
         .map((part) => kebabToTitleCase(part))
         .join(" / ");
+
+      // Combine location and existing theme tags
+      const allTags = locationParts.concat(data.tags);
 
       return {
         ...data,
         title,
         location,
+        tags: allTags,
       };
     }),
 });

@@ -1,13 +1,10 @@
 import type { CollectionEntry } from "astro:content";
-import { getPhotoLocationParts } from "./photo-paths";
 
 export function getSimilarPhotos(
   photos: CollectionEntry<"photos">[],
   currentPhoto: CollectionEntry<"photos">,
   limit: number = 10
 ) {
-  const currentLocationParts = getPhotoLocationParts(currentPhoto.data.slug);
-
   return photos
     .map((photo) => {
       // Skip the current photo
@@ -15,23 +12,10 @@ export function getSimilarPhotos(
         return { ...photo.data, similarity: -1 };
       }
 
-      // Calculate tag similarity (number of matching tags)
-      const tagSimilarity = photo.data.tags.filter((tag: string) =>
+      // Calculate similarity (number of matching tags)
+      const similarity = photo.data.tags.filter((tag: string) =>
         currentPhoto.data.tags.includes(tag)
       ).length;
-
-      const photoLocationParts = getPhotoLocationParts(photo.data.slug);
-
-      // Calculate location similarity (number of matching location parts)
-      const locationSimilarity = photoLocationParts.reduce(
-        (score, part, index) => {
-          return score + (part === currentLocationParts[index] ? 1 : 0);
-        },
-        0
-      );
-
-      // Combined similarity score - weight location matches more heavily
-      const similarity = tagSimilarity + locationSimilarity * 2;
 
       return {
         ...photo.data,
