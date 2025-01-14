@@ -68,7 +68,7 @@ class PhotoDescriptionGenerator:
         
         Please analyze the image and write an appropriate caption."""
 
-        response = self.claude_client.get_vision_response(prompt, base64_image)
+        response = self.claude_client.get_vision_response(prompt, [base64_image])
 
         print(f"\nProcessing: {photo_info}")
         print(

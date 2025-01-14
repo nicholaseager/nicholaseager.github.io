@@ -1,6 +1,6 @@
 import anthropic
 import os
-from typing import Dict, Any
+from typing import Dict, Any, List
 
 
 class ClaudeClient:
@@ -33,33 +33,40 @@ class ClaudeClient:
         """
         return cls()
 
-    def get_vision_response(self, prompt: str, base64_image: str) -> Dict[str, Any]:
+    def get_vision_response(
+        self, prompt: str, base64_images: List[str]
+    ) -> Dict[str, Any]:
         """
-        Get a response from Claude for an image-based prompt.
+        Get a response from Claude for multiple image-based prompts.
+        Args:
+            prompt: Text prompt to send to Claude
+            base64_images: List of base64 encoded image strings
         Returns: Dictionary containing response text and usage statistics
         """
+        content = []
+        for base64_image in base64_images:
+            content.append(
+                {
+                    "type": "image",
+                    "source": {
+                        "type": "base64",
+                        "media_type": "image/jpeg",
+                        "data": base64_image,
+                    },
+                }
+            )
+
+        content.append(
+            {
+                "type": "text",
+                "text": prompt,
+            }
+        )
+
         message = self.client.messages.create(
             model="claude-3-opus-20240229",
             max_tokens=1000,
-            messages=[
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "image",
-                            "source": {
-                                "type": "base64",
-                                "media_type": "image/jpeg",
-                                "data": base64_image,
-                            },
-                        },
-                        {
-                            "type": "text",
-                            "text": prompt,
-                        },
-                    ],
-                }
-            ],
+            messages=[{"role": "user", "content": content}],
         )
 
         # Calculate costs
