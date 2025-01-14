@@ -245,9 +245,12 @@ const locations = defineCollection({
         photo.slug.includes(data.slug)
       );
 
+      const parts = data.slug.split("/");
+
       return {
         ...data,
-        parts: data.slug.split("/"),
+        name: kebabToTitleCase(parts[parts.length - 1]),
+        parts: parts,
         photoSlugs: matchingPhotos.map((photo) => photo.slug),
         previewPhotoSlug: matchingPhotos[0].slug,
       };

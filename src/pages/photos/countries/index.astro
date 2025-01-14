@@ -19,7 +19,7 @@ const countries = locations
       {
         countries.map((location) => (
           <HeroCard
-            title={location.data.title}
+            title={location.data.name}
             subtitle={`${location.data.photoSlugs.length} photo${location.data.photoSlugs.length !== 1 ? "s" : ""}`}
             imagePath={location.data.previewPhotoSlug}
             href={location.data.slug}
