@@ -1,22 +1,15 @@
-import argparse
 import json
 from pathlib import Path
 from typing import Optional
+from io import BytesIO
 from utils.image_utils import ImageUtils
 from utils.claude_client import ClaudeClient
 
 
 class PhotoDescriptionGenerator:
-    def __init__(self, photos_dir: str, json_path: str):
+    def __init__(self, json_path: str):
         self.claude_client = ClaudeClient.from_env()
-        self.photos_dir = Path(photos_dir)
         self.json_path = Path(json_path)
-
-    def find_photo_path(self, photo_slug: str) -> Optional[Path]:
-        """Search for a photo with the given slug in the photos directory structure."""
-        relative_path = photo_slug + ".jpg"
-        photo_path = self.photos_dir / relative_path
-        return photo_path if photo_path.exists() else None
 
     def format_photo_info(self, slug: str):
         # Remove 'photos/' prefix and split into parts
@@ -33,10 +26,10 @@ class PhotoDescriptionGenerator:
 
         return f"Photo: {photo_name}\nLocation: {location}"
 
-    def get_image_description(self, image_path: Path, photo_info: str) -> str:
+    def get_image_description(self, image_data: BytesIO, photo_info: str) -> str:
         """Get image description from Anthropic API."""
         base64_image, original_size, compressed_size = ImageUtils.encode_image(
-            image_path
+            image_data
         )
 
         prompt = f"""You are a creative caption writer for a personal website. I'll provide you with an image and context about it. 
@@ -78,11 +71,11 @@ class PhotoDescriptionGenerator:
         # Process each photo
         for photo in data:
             if not photo["description"]:
-                photo_path = self.find_photo_path(photo["slug"])
-                if photo_path:
+                image_data = ImageUtils.download_photo_slug(photo["slug"])
+                if image_data:
                     try:
                         info = self.format_photo_info(photo["slug"])
-                        description = self.get_image_description(photo_path, info)
+                        description = self.get_image_description(image_data, info)
                         photo["description"] = description
                         print(f"Added description for photo {photo['slug']}")
 
@@ -96,22 +89,9 @@ class PhotoDescriptionGenerator:
 
 
 def main():
-    import argparse
-
-    # Set up argument parser
-    parser = argparse.ArgumentParser(description="Generate descriptions for images")
-    parser.add_argument(
-        "--photos-dir", required=True, help="Directory containing photos"
-    )
-    parser.add_argument("--json-path", required=True, help="Path to output JSON file")
-
-    # Parse arguments
-    args = parser.parse_args()
-
-    # Initialize the generator with command line args
+    # Initialize the generator
     generator = PhotoDescriptionGenerator(
-        photos_dir=args.photos_dir,
-        json_path=args.json_path,
+        json_path="../src/data/photos.json",
     )
 
     # Process all photos
