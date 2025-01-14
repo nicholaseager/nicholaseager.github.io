@@ -247,6 +247,7 @@ const photoLocations = defineCollection({
       id: z.string(),
       title: z.string(),
       description: z.string(),
+      content: z.string().optional(),
     })
     .transform((data) => {
       const matchingPhotoRefs = photosData
