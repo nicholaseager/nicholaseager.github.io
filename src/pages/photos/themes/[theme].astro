@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Page from "../../../layouts/Page.astro";
+import PhotoGrid from "../../../components/photos/PhotoGrid";
+
+export async function getStaticPaths() {
+  const themes = await getCollection("themes");
+  return themes.map((theme) => ({
+    params: { theme: theme.id },
+    props: theme.data,
+  }));
+}
+
+const theme = Astro.props;
+---
+
+<Page title={theme.title} description={theme.description}>
+  <PhotoGrid photos={theme.photoSlugs} />
+</Page>

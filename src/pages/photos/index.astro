@@ -9,21 +9,18 @@ import PhotosSEO from "../../seo/PhotosSEO.astro";
 import HeroCard from "../../components/ui/HeroCard";
 import Grid from "../../components/ui/Grid";
 import Link from "../../components/ui/Link";
-import { getGalleries } from "../../utils/galleries";
 
 const photos = await getCollection("photos");
 const showcasePhotoPaths = photos
   .filter((photo) => photo.data.tags.includes("showcase"))
   .map((photo) => photo.data.slug);
 
-const galleries = await getGalleries();
-const countries = galleries.filter((g) => {
-  return g.type === "location" && g.tags.length === 1;
-});
+const locations = await getCollection("locations");
+const countries = locations.filter(
+  (location) => location.data.slug.split("/").length === 1
+);
 
-const themes = galleries.filter((g) => {
-  return g.type === "theme";
-});
+const themes = await getCollection("themes");
 ---
 
 <Page
@@ -48,10 +45,10 @@ const themes = galleries.filter((g) => {
         {
           countries.map((country) => (
             <HeroCard
-              title={country.title}
-              subtitle={`${country.photos.length} photo${country.photos.length !== 1 ? "s" : ""}`}
-              imagePath={country.previewPhoto.slug}
-              href={`/photos/${country.slug}`}
+              title={country.data.title}
+              subtitle={`${country.data.photoSlugs.length} photo${country.data.photoSlugs.length !== 1 ? "s" : ""}`}
+              imagePath={country.data.previewPhotoSlug}
+              href={`/photos/${country.data.slug}`}
             />
           ))
         }
@@ -65,10 +62,10 @@ const themes = galleries.filter((g) => {
         {
           themes.map((theme) => (
             <HeroCard
-              title={theme.title}
-              subtitle={`${theme.photos.length} photo${theme.photos.length !== 1 ? "s" : ""}`}
-              imagePath={theme.previewPhoto.slug}
-              href={`/photos/${theme.slug}`}
+              title={theme.data.title}
+              subtitle={`${theme.data.photoSlugs.length} photo${theme.data.photoSlugs.length !== 1 ? "s" : ""}`}
+              imagePath={theme.data.previewPhotoSlug}
+              href={`/photos/${theme.data.slug}`}
             />
           ))
         }

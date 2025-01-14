@@ -229,8 +229,8 @@ const photos = defineCollection({
     }),
 });
 
-const galleries = defineCollection({
-  loader: file("./src/data/galleries.json"),
+const locations = defineCollection({
+  loader: file("./src/data/locations.json"),
   schema: z
     .object({
       slug: z.string(),
@@ -241,27 +241,36 @@ const galleries = defineCollection({
       content: z.string().optional(),
     })
     .transform((data) => {
-      const tags = data.slug.split("/");
-      const type = tags.shift();
-      const matchingPhotoRefs = photosData
-        .filter((photo) => {
-          if (type === "themes") {
-            return photo.tags.includes(tags[0]);
-          }
-
-          const photoTags = photo.slug.split("/");
-          return tags.every((t) => photoTags.includes(t));
-        })
-        .map((photo) => ({ id: photo.slug, collection: "photos" }));
+      const matchingPhotos = photosData.filter((photo) =>
+        photo.slug.includes(data.slug)
+      );
 
       return {
         ...data,
-        type: z
-          .enum(["theme", "location"])
-          .parse(type === "themes" ? "theme" : "location"),
-        tags: tags,
-        photos: z.array(reference("photos")).parse(matchingPhotoRefs),
-        previewPhoto: reference("photos").parse(matchingPhotoRefs[0]),
+        photoSlugs: matchingPhotos.map((photo) => photo.slug),
+        previewPhotoSlug: matchingPhotos[0].slug,
+      };
+    }),
+});
+
+const themes = defineCollection({
+  loader: file("./src/data/themes.json"),
+  schema: z
+    .object({
+      slug: z.string(),
+      title: z.string(),
+      description: z.string(),
+    })
+    .transform((data) => {
+      const tag = data.slug;
+      const matchingPhotos = photosData.filter((photo) =>
+        photo.tags.includes(tag)
+      );
+
+      return {
+        ...data,
+        photoSlugs: matchingPhotos.map((photo) => photo.slug),
+        previewPhotoSlug: matchingPhotos[0].slug,
       };
     }),
 });
@@ -271,5 +280,6 @@ export const collections = {
   films,
   maps,
   photos,
-  galleries,
+  locations,
+  themes,
 };

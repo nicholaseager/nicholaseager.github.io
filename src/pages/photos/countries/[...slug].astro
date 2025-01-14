@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import Gallery from "../../../layouts/Gallery.astro";
+
+export async function getStaticPaths() {
+  const locations = await getCollection("locations");
+  const photos = await getCollection("photos");
+  return locations.map((gallery) => ({
+    params: { slug: gallery.id },
+    props: {
+      gallery: gallery.data,
+      photos: photos
+        .filter((photo) => photo.data.slug.includes(gallery.id))
+        .map((p) => p.data),
+    },
+  }));
+}
+
+const { gallery, photos } = Astro.props;
+---
+
+<Gallery
+  title={gallery.title}
+  description={gallery.description}
+  content={gallery.content}
+  date={gallery.date}
+  modified_date={gallery.modified_date}
+  photos={photos}
+  previewPhoto={photos[0]}
+/>

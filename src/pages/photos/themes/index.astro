@@ -3,12 +3,9 @@ import HeroCard from "../../../components/ui/HeroCard";
 
 import Page from "../../../layouts/Page.astro";
 import Grid from "../../../components/ui/Grid";
-import { getGalleries } from "../../../utils/galleries";
+import { getCollection } from "astro:content";
 
-const galleries = await getGalleries();
-const filteredGalleries = galleries.filter((g) => {
-  return g.type === "theme";
-});
+const themes = await getCollection("themes");
 ---
 
 <Page
@@ -18,12 +15,12 @@ const filteredGalleries = galleries.filter((g) => {
   <div class="space-y-8">
     <Grid>
       {
-        filteredGalleries.map((gallery) => (
+        themes.map((theme) => (
           <HeroCard
-            title={gallery.title}
-            subtitle={`${gallery.photos.length} photo${gallery.photos.length !== 1 ? "s" : ""}`}
-            imagePath={gallery.previewPhoto.slug}
-            href={`/photos/${gallery.slug}`}
+            title={theme.data.title}
+            subtitle={`${theme.data.photoSlugs.length} photo${theme.data.photoSlugs.length !== 1 ? "s" : ""}`}
+            imagePath={theme.data.previewPhotoSlug}
+            href={theme.data.slug}
           />
         ))
       }

@@ -2,12 +2,10 @@
 import Page from "../../../layouts/Page.astro";
 import Grid from "../../../components/ui/Grid";
 import HeroCard from "../../../components/ui/HeroCard";
-import { getGalleries } from "../../../utils/galleries";
+import { getCollection } from "astro:content";
 
-const galleries = await getGalleries();
-const filteredGalleries = galleries.filter((g) => {
-  return g.type === "location" && g.tags.length === 1;
-});
+const locations = await getCollection("locations");
+const countries = locations.filter((l) => l.data.slug.split("/").length === 1)
 ---
 
 <Page
@@ -17,12 +15,12 @@ const filteredGalleries = galleries.filter((g) => {
   <div class="space-y-8">
     <Grid>
       {
-        filteredGalleries.map((gallery) => (
+        countries.map((location) => (
           <HeroCard
-            title={gallery.title}
-            subtitle={`${gallery.photos.length} photo${gallery.photos.length !== 1 ? "s" : ""}`}
-            imagePath={gallery.previewPhoto.slug}
-            href={`/photos/${gallery.slug}`}
+            title={location.data.title}
+            subtitle={`${location.data.photoSlugs.length} photo${location.data.photoSlugs.length !== 1 ? "s" : ""}`}
+            imagePath={location.data.previewPhotoSlug}
+            href={location.data.slug}}
           />
         ))
       }

@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "landscapes",
+    "title": "Landscape",
+    "description": "Captivating natural vistas and scenic views from around the world"
+  },
+  {
+    "slug": "mountains",
+    "title": "Mountains",
+    "description": "Majestic peaks and dramatic mountain ranges reaching into the sky"
+  },
+  {
+    "slug": "adventure",
+    "description": "Capturing the spirit of exploration and outdoor pursuits",
+    "title": "Adventure"
+  },
+  {
+    "slug": "showcase",
+    "title": "Featured Work",
+    "description": "A curated collection of my finest photographs"
+  },
+  {
+    "slug": "city",
+    "title": "Urban",
+    "description": "Exploring cityscapes, architecture, and urban life around the globe"
+  },
+  {
+    "slug": "animals",
+    "title": "Wildlife",
+    "description": "Intimate portraits of wildlife and animal encounters in their natural habitats"
+  },
+  {
+    "slug": "minimalism",
+    "description": "Simple compositions that emphasize beauty through simplicity and negative space",
+    "title": "Minimalism"
+  },
+  {
+    "slug": "astrophotography",
+    "title": "Night Sky",
+    "description": "Capturing the beauty of stars, celestial events, and nighttime landscapes"
+  },
+  {
+    "slug": "snow",
+    "title": "Winter",
+    "description": "Scenes of winter wonderlands and snow-covered landscapes"
+  },
+  {
+    "slug": "nature",
+    "description": "Close-up details and intimate perspectives of the natural world",
+    "title": "Nature"
+  },
+  {
+    "slug": "aerial",
+    "title": "Aerial",
+    "description": "Bird's eye views and unique perspectives from above"
+  }
+]
