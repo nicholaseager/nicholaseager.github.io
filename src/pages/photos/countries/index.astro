@@ -2,12 +2,25 @@
 import Page from "../../../layouts/Page.astro";
 import Grid from "../../../components/ui/Grid";
 import HeroCard from "../../../components/ui/HeroCard";
-import { getPhotoLocations } from "../../../utils/photo-locations";
+import { getCollection } from "astro:content";
+import { undefined } from "astro:schema";
 
-const photoLocations = await getPhotoLocations();
-
-// Filter to only get country locations (those without country/region format in id)
-const countries = photoLocations.filter((l) => !l.slug.includes("/"));
+const galleries = await getCollection("galleries");
+const photos = await getCollection("photos");
+const filteredGalleries = galleries
+  .filter((g) => {
+    return g.data.type === "location" && g.data.tags.length === 1;
+  })
+  .map((g) => {
+    const filteredPhotos = photos
+      .filter((p) => p.data.slug.includes(g.data.slug))
+      .map((p) => p.data);
+    return {
+      ...g.data,
+      photos: filteredPhotos,
+      previewPhoto: filteredPhotos[0],
+    };
+  });
 ---
 
 <Page
@@ -17,12 +30,12 @@ const countries = photoLocations.filter((l) => !l.slug.includes("/"));
   <div class="space-y-8">
     <Grid>
       {
-        countries.map((country) => (
+        filteredGalleries.map((gallery) => (
           <HeroCard
-            title={country.title}
-            subtitle={`${country.photos.length} photo${country.photos.length !== 1 ? "s" : ""}`}
-            imagePath={country.previewPhoto.slug}
-            href={`/photos/countries/${country.slug}`}
+            title={gallery.title}
+            subtitle={`${gallery.photos.length} photo${gallery.photos.length !== 1 ? "s" : ""}`}
+            imagePath={gallery.previewPhoto.slug}
+            href={`/photos/${gallery.slug}`}
           />
         ))
       }

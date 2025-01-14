@@ -3,12 +3,24 @@ import HeroCard from "../../../components/ui/HeroCard";
 
 import Page from "../../../layouts/Page.astro";
 import Grid from "../../../components/ui/Grid";
-import { getPhotoThemes } from "../../../utils/photo-themes";
+import { getCollection } from "astro:content";
 
-const themes = await getPhotoThemes();
-const sortedThemes = themes.sort((a, b) =>
-  a.photos.length > b.photos.length ? -1 : 1
-);
+const galleries = await getCollection("galleries");
+const photos = await getCollection("photos");
+const filteredGalleries = galleries
+  .filter((g) => {
+    return g.data.type === "theme";
+  })
+  .map((g) => {
+    const filteredPhotos = photos
+      .filter((p) => g.data.tags.every((t) => p.data.tags.includes(t)))
+      .map((p) => p.data);
+    return {
+      ...g.data,
+      photos: filteredPhotos,
+      previewPhoto: filteredPhotos[0],
+    };
+  });
 ---
 
 <Page
@@ -18,12 +30,12 @@ const sortedThemes = themes.sort((a, b) =>
   <div class="space-y-8">
     <Grid>
       {
-        sortedThemes.map((theme) => (
+        filteredGalleries.map((gallery) => (
           <HeroCard
-            title={theme.title}
-            subtitle={`${theme.photos.length} photo${theme.photos.length !== 1 ? "s" : ""}`}
-            imagePath={theme.previewPhoto.slug}
-            href={`/photos/themes/${theme.slug}`}
+            title={gallery.title}
+            subtitle={`${gallery.photos.length} photo${gallery.photos.length !== 1 ? "s" : ""}`}
+            imagePath={gallery.previewPhoto.slug}
+            href={`/photos/${gallery.slug}`}
           />
         ))
       }

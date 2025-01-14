@@ -1,16 +1,12 @@
 ---
 import { getCollection } from "astro:content";
-import OrderPrint from "../../../../../layouts/OrderPrint.astro";
+import OrderPrint from "../../layouts/OrderPrint.astro";
 
 export async function getStaticPaths() {
   const photos = await getCollection("photos");
-
   return photos.map((photo) => {
-    const [country, region, photoSlug] = photo.data.slug
-      .replace(/^photos\/countries\//, "")
-      .split("/");
     return {
-      params: { country, region, photo: photoSlug },
+      params: { photo: photo.data.slug },
       props: { photo },
     };
   });

@@ -1,5 +1,10 @@
 import { glob, file } from "astro/loaders";
-import { defineCollection, reference, z } from "astro:content";
+import {
+  defineCollection,
+  reference,
+  z,
+  type CollectionEntry,
+} from "astro:content";
 import { kebabToTitleCase } from "./utils/kebab";
 import photosData from "./data/photos.json";
 
@@ -224,28 +229,8 @@ const photos = defineCollection({
     }),
 });
 
-/**
- * Collection for organizing photos by their locations
- * @example Result after transform:
- * {
- *   id: "italy/cinque-terre",
- *   title: "Cinque Terre",
- *   description: "Photos from the Italian Riviera's famous five villages",
- *   photos: [{
- *     slug: "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas",
- *     title: "Monterosso Blue White Beach Umbrellas",
- *     description: "...",
- *     location: "Italy / Cinque Terre",
- *     tags: ["beach", "summer"],
- *     ... other photo properties
- *   }],
- *   previewPhoto: {
- *     full photo object for the preview
- *   }
- * }
- */
-const photoLocations = defineCollection({
-  loader: file("./src/data/photo-locations.json"),
+const galleries = defineCollection({
+  loader: file("./src/data/galleries.json"),
   schema: z
     .object({
       slug: z.string(),
@@ -256,53 +241,15 @@ const photoLocations = defineCollection({
       content: z.string().optional(),
     })
     .transform((data) => {
-      const matchingPhotoRefs = photosData
-        .filter((photo) =>
-          photo.slug.replace(/^photos\/countries\//, "").startsWith(data.slug)
-        )
-        .map((photo) => ({ id: photo.slug, collection: "photos" }));
+      const parts = data.slug.split("/");
+      const type = parts.shift();
 
       return {
         ...data,
-        photos: z.array(reference("photos")).parse(matchingPhotoRefs),
-        previewPhoto: reference("photos").parse(matchingPhotoRefs[0]),
-      };
-    }),
-});
-
-/**
- * Collection for organizing photos by their themes/tags
- * @example Result after transform:
- * {
- *   id: "coastal",
- *   title: "Coastal",
- *   description: "Scenes from the world's coastlines",
- *   photos: [
- *     "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas",
- *     "photos/countries/greece/santorini/oia-white-buildings-sunset"
- *   ],
- *   previewImage: "photos/countries/italy/cinque-terre/monterosso-blue-white-beach-umbrellas"
- * }
- */
-const photoThemes = defineCollection({
-  loader: file("./src/data/photo-themes.json"),
-  schema: z
-    .object({
-      slug: z.string(),
-      title: z.string(),
-      description: z.string(),
-      date: z.coerce.date(),
-      modified_date: z.coerce.date(),
-    })
-    .transform((data) => {
-      const matchingPhotoRefs = photosData
-        .filter((photo) => photo.tags.includes(data.slug))
-        .map((photo) => ({ id: photo.slug, collection: "photos" }));
-
-      return {
-        ...data,
-        photos: z.array(reference("photos")).parse(matchingPhotoRefs),
-        previewPhoto: reference("photos").parse(matchingPhotoRefs[0]),
+        type: z
+          .enum(["theme", "location"])
+          .parse(type === "themes" ? "theme" : "location"),
+        tags: parts,
       };
     }),
 });
@@ -312,6 +259,5 @@ export const collections = {
   films,
   maps,
   photos,
-  photoLocations,
-  photoThemes,
+  galleries,
 };
