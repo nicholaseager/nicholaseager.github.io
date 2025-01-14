@@ -9,13 +9,6 @@ import Image from "../../../../../components/image-kit/Image";
 import Card from "../../../../../components/ui/Card";
 import { getPhotoLocations } from "../../../../../utils/photo-locations";
 
-interface Props {
-  title: string;
-  description: string;
-  photos: CollectionEntry<"photos">["data"][];
-  previewPhoto: CollectionEntry<"photos">["data"];
-}
-
 export async function getStaticPaths() {
   const photoLocations = await getPhotoLocations();
 
@@ -35,7 +28,7 @@ export async function getStaticPaths() {
   return uniquePaths;
 }
 
-const { title, description, photos, previewPhoto }: Props = Astro.props;
+const { title, description, photos, previewPhoto } = Astro.props;
 ---
 
 <Page title={title} description={description}>
