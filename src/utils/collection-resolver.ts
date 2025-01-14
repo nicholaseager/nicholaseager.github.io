@@ -6,6 +6,25 @@ import {
   type CollectionKey,
 } from "astro:content";
 
+/**
+ * Resolves a collection's entries and their references to other collections.
+ *
+ * @param collectionName - The name of the collection to resolve
+ * @param options - Optional configuration object
+ * @param options.filter - Optional function to filter collection entries
+ * @returns Promise that resolves to an array of collection entries with their references resolved
+ *
+ * @example
+ * ```ts
+ * // Get all blog posts with resolved author references
+ * const posts = await resolveCollection('blog');
+ *
+ * // Get only published posts with resolved references
+ * const publishedPosts = await resolveCollection('blog', {
+ *   filter: (entry) => entry.data.status === 'published'
+ * });
+ * ```
+ */
 export async function resolveCollection<T extends CollectionKey>(
   collectionName: T,
   options?: {
@@ -24,6 +43,30 @@ export async function resolveCollection<T extends CollectionKey>(
   );
 }
 
+/**
+ * Recursively resolves all references in the provided data object.
+ * Handles both single references and arrays of references.
+ *
+ * @param data - Object containing potential references to other collections
+ * @returns Promise that resolves to the same object with all references resolved to their actual data
+ *
+ * @example
+ * ```ts
+ * // Input data
+ * const data = {
+ *   author: { collection: 'authors', id: 'john-doe' },
+ *   tags: [
+ *     { collection: 'tags', id: 'typescript' },
+ *     { collection: 'tags', id: 'javascript' }
+ *   ]
+ * };
+ *
+ * // After resolution
+ * const resolved = await resolveReferences(data);
+ * // resolved.author -> { name: 'John Doe', ... }
+ * // resolved.tags -> [{ name: 'TypeScript', ... }, { name: 'JavaScript', ... }]
+ * ```
+ */
 async function resolveReferences<T extends Record<string, any>>(
   data: T
 ): Promise<T> {
