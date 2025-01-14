@@ -48,7 +48,7 @@ const themes = await getCollection("themes");
               title={country.data.title}
               subtitle={`${country.data.photoSlugs.length} photo${country.data.photoSlugs.length !== 1 ? "s" : ""}`}
               imagePath={country.data.previewPhotoSlug}
-              href={`/photos/${country.data.slug}`}
+              href={`/photos/countries/${country.data.slug}`}
             />
           ))
         }
@@ -65,7 +65,7 @@ const themes = await getCollection("themes");
               title={theme.data.title}
               subtitle={`${theme.data.photoSlugs.length} photo${theme.data.photoSlugs.length !== 1 ? "s" : ""}`}
               imagePath={theme.data.previewPhotoSlug}
-              href={`/photos/${theme.data.slug}`}
+              href={`/photos/themes/${theme.data.slug}`}
             />
           ))
         }
