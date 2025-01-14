@@ -286,14 +286,14 @@ const photoThemes = defineCollection({
       description: z.string(),
     })
     .transform((data) => {
-      const photoPaths = photosData
+      const matchingPhotoRefs = photosData
         .filter((photo) => photo.tags.includes(data.id))
-        .map((photo) => photo.slug);
+        .map((photo) => ({ id: photo.slug, collection: "photos" }));
 
       return {
         ...data,
-        photos: photoPaths,
-        previewImage: photoPaths[0],
+        photos: z.array(reference("photos")).parse(matchingPhotoRefs),
+        previewPhoto: reference("photos").parse(matchingPhotoRefs[0]),
       };
     }),
 });

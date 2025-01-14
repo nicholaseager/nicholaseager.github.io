@@ -1,14 +1,14 @@
 ---
 import HeroCard from "../../../components/ui/HeroCard";
 
-import { getCollection } from "astro:content";
 import Page from "../../../layouts/Page.astro";
 import Grid from "../../../components/ui/Grid";
+import { getPhotoThemes } from "../../../utils/photo-themes";
 
-const themes = await getCollection("photoThemes");
-const sortedThemes = themes
-  .sort((a, b) => (a.data.photos.length > b.data.photos.length ? -1 : 1))
-  .map((t) => t.data);
+const themes = await getPhotoThemes();
+const sortedThemes = themes.sort((a, b) =>
+  a.photos.length > b.photos.length ? -1 : 1
+);
 ---
 
 <Page
@@ -22,7 +22,7 @@ const sortedThemes = themes
           <HeroCard
             title={theme.title}
             subtitle={`${theme.photos.length} photo${theme.photos.length !== 1 ? "s" : ""}`}
-            imagePath={theme.previewImage}
+            imagePath={theme.previewPhoto.slug}
             href={`/photos/themes/${theme.id}`}
           />
         ))
