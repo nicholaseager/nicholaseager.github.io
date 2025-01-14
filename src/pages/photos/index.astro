@@ -24,7 +24,7 @@ const sortedThemes = themes.sort((a, b) =>
 
 const locations = await getPhotoLocations();
 // Filter to only get country locations (those without country/region format in id)
-const countries = locations.filter((entry) => !entry.id.includes("/"));
+const countries = locations.filter((entry) => !entry.slug.includes("/"));
 ---
 
 <Page
@@ -52,7 +52,7 @@ const countries = locations.filter((entry) => !entry.id.includes("/"));
               title={country.title}
               subtitle={`${country.photos.length} photo${country.photos.length !== 1 ? "s" : ""}`}
               imagePath={country.previewPhoto.slug}
-              href={`/photos/countries/${country.id}`}
+              href={`/photos/countries/${country.slug}`}
             />
           ))
         }
@@ -69,7 +69,7 @@ const countries = locations.filter((entry) => !entry.id.includes("/"));
               title={theme.title}
               subtitle={`${theme.photos.length} photo${theme.photos.length !== 1 ? "s" : ""}`}
               imagePath={theme.previewPhoto.slug}
-              href={`/photos/themes/${theme.id}`}
+              href={`/photos/themes/${theme.slug}`}
             />
           ))
         }

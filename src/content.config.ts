@@ -244,7 +244,7 @@ const photoLocations = defineCollection({
   loader: file("./src/data/photo-locations.json"),
   schema: z
     .object({
-      id: z.string(),
+      slug: z.string(),
       title: z.string(),
       description: z.string(),
       date: z.coerce.date(),
@@ -254,7 +254,7 @@ const photoLocations = defineCollection({
     .transform((data) => {
       const matchingPhotoRefs = photosData
         .filter((photo) =>
-          photo.slug.replace(/^photos\/countries\//, "").startsWith(data.id)
+          photo.slug.replace(/^photos\/countries\//, "").startsWith(data.slug)
         )
         .map((photo) => ({ id: photo.slug, collection: "photos" }));
 
@@ -284,7 +284,7 @@ const photoThemes = defineCollection({
   loader: file("./src/data/photo-themes.json"),
   schema: z
     .object({
-      id: z.string(),
+      slug: z.string(),
       title: z.string(),
       description: z.string(),
       date: z.coerce.date(),
@@ -292,7 +292,7 @@ const photoThemes = defineCollection({
     })
     .transform((data) => {
       const matchingPhotoRefs = photosData
-        .filter((photo) => photo.tags.includes(data.id))
+        .filter((photo) => photo.tags.includes(data.slug))
         .map((photo) => ({ id: photo.slug, collection: "photos" }));
 
       return {

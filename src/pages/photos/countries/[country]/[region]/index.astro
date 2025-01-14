@@ -8,11 +8,11 @@ export async function getStaticPaths() {
   const photoLocations = await getPhotoLocations();
 
   // Filter to only get region locations (those with country/region format in id)
-  const locations = photoLocations.filter((l) => l.id.includes("/"));
+  const locations = photoLocations.filter((l) => l.slug.includes("/"));
 
   // Transform locations into Astro path params
   const uniquePaths = locations.map((location) => {
-    const [country, region] = location.id.split("/");
+    const [country, region] = location.slug.split("/");
     return {
       params: { country, region },
       props: {

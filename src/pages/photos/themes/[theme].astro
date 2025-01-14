@@ -6,7 +6,7 @@ export async function getStaticPaths() {
   const themes = await getPhotoThemes();
 
   return themes.map((theme) => ({
-    params: { theme: theme.id },
+    params: { theme: theme.slug },
     props: {
       theme,
     },

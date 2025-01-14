@@ -7,7 +7,7 @@ import { getPhotoLocations } from "../../../utils/photo-locations";
 const photoLocations = await getPhotoLocations();
 
 // Filter to only get country locations (those without country/region format in id)
-const countries = photoLocations.filter((l) => !l.id.includes("/"));
+const countries = photoLocations.filter((l) => !l.slug.includes("/"));
 ---
 
 <Page
@@ -22,7 +22,7 @@ const countries = photoLocations.filter((l) => !l.id.includes("/"));
             title={country.title}
             subtitle={`${country.photos.length} photo${country.photos.length !== 1 ? "s" : ""}`}
             imagePath={country.previewPhoto.slug}
-            href={`/photos/countries/${country.id}`}
+            href={`/photos/countries/${country.slug}`}
           />
         ))
       }
