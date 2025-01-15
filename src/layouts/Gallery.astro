@@ -75,13 +75,11 @@ const { location, photos, previewPhoto, parent, children }: Props = Astro.props;
             <Text variant="h3" className="text-center">
               {photo.title}
             </Text>
-            <div class="flex flex-row items-center justify-center w-full">
-              <Card>
-                <a href={`/${photo.slug}`}>
-                  <Image path={photo.slug} />
-                </a>
-              </Card>
-            </div>
+            <Card>
+              <a href={`/${photo.slug}`}>
+                <Image path={photo.slug} className="w-full" />
+              </a>
+            </Card>
             <Text variant="body">{photo.description}</Text>
           </>
         ))
