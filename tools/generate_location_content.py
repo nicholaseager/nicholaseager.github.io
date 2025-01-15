@@ -43,10 +43,16 @@ class LocationContentGenerator:
     def get_location_photos(self, location_id: str) -> List[Dict]:
         """Get all photos matching a location ID."""
         photos = []
+        location_to_match = f"countries/{location_id}"
+
         for photo in self.photos:
-            # Remove photos/ prefix and get location part
-            location_part = "/".join(photo["slug"].split("/")[1:4])
-            if location_part == f"countries/{location_id}":
+            # Remove photos/ prefix and get path components
+            photo_path = "/".join(
+                photo["slug"].split("/")[1:]
+            )  # Remove 'photos/' prefix
+
+            # Check if the photo's path starts with our location path
+            if photo_path.startswith(location_to_match):
                 photos.append(photo)
         return photos
 
@@ -122,29 +128,26 @@ class LocationContentGenerator:
         updated = False
 
         for location in self.locations:
-            if "/" in location["id"]:  # Only process country/region locations
-                if "content" not in location:
-                    photos = self.get_location_photos(location["id"])
-                    if photos:
-                        try:
-                            title, content = self.generate_location_content(
-                                location["id"], photos
-                            )
-                            if content:
-                                location["title"] = title
-                                location["content"] = content
-                                updated = True
-                                print(
-                                    f"Added title and content for location {location['id']}"
-                                )
-
-                                # Save after each successful update
-                                with open(self.locations_path, "w") as f:
-                                    json.dump(self.locations, f, indent=2)
-                        except Exception as e:
+            if "content" not in location or location["content"] == "":
+                photos = self.get_location_photos(location["slug"])
+                if photos:
+                    try:
+                        title, content = self.generate_location_content(
+                            location["slug"], photos
+                        )
+                        if content:
+                            location["title"] = title
+                            location["content"] = content
+                            updated = True
                             print(
-                                f"Error processing location {location['id']}: {str(e)}"
+                                f"Added title and content for location {location['slug']}"
                             )
+
+                            # Save after each successful update
+                            with open(self.locations_path, "w") as f:
+                                json.dump(self.locations, f, indent=2)
+                    except Exception as e:
+                        print(f"Error processing location {location['slug']}: {str(e)}")
 
         return updated
 
@@ -152,7 +155,7 @@ class LocationContentGenerator:
 def main():
     generator = LocationContentGenerator(
         photos_path="./src/data/photos.json",
-        locations_path="./src/data/photo-locations.json",
+        locations_path="./src/data/locations.json",
     )
     generator.update_locations()
 
