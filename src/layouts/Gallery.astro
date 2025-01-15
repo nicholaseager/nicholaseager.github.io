@@ -7,9 +7,7 @@ import Image from "../components/image-kit/Image";
 import Card from "../components/ui/Card";
 import TextContainer from "../components/ui/TextContainer";
 import type { CollectionEntry } from "astro:content";
-import Grid from "../components/ui/Grid";
-import HeroCard from "../components/ui/HeroCard";
-import Link from "../components/ui/Link";
+import HeroSwiper from "../components/ui/HeroSwiper";
 
 interface Props {
   title: string;
@@ -56,16 +54,21 @@ const {
         <ResponsiveWidth>
           <Text variant="h2">Galleries</Text>
         </ResponsiveWidth>
-        <Grid>
-          {children.map((location) => (
-            <HeroCard
-              title={location.name}
-              subtitle={`${location.photoSlugs.length} photo${location.photoSlugs.length !== 1 ? "s" : ""}`}
-              imagePath={location.previewPhotoSlug}
-              href={`/photos/countries/${location.slug}`}
-            />
-          ))}
-        </Grid>
+        <ResponsiveWidth size="lg">
+          <HeroSwiper
+            client:visible
+            items={children.map((location) => {
+              return {
+                slug: location.slug,
+                title: location.name,
+                subtitle: `${location.photoSlugs.length} photo${location.photoSlugs.length !== 1 ? "s" : ""}`,
+                image: location.previewPhotoSlug,
+                href: `/photos/countries/${location.slug}`,
+              };
+            })}
+            urlPrefix="/photos/countries"
+          />
+        </ResponsiveWidth>
       </>
     )
   }
