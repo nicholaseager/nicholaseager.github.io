@@ -45,7 +45,7 @@ const themes = await getCollection("themes");
         {
           countries.map((country) => (
             <HeroCard
-              title={country.data.title}
+              title={country.data.name}
               subtitle={`${country.data.photoSlugs.length} photo${country.data.photoSlugs.length !== 1 ? "s" : ""}`}
               imagePath={country.data.previewPhotoSlug}
               href={`/photos/countries/${country.data.slug}`}
