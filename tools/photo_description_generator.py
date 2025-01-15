@@ -113,7 +113,7 @@ class PhotoDescriptionGenerator:
 def main():
     # Initialize the generator
     generator = PhotoDescriptionGenerator(
-        json_path="../src/data/photos.json",
+        json_path="./src/data/photos.json",
     )
 
     # Process all photos
