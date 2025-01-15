@@ -36,11 +36,7 @@ const { location, parent, children, photos } = Astro.props;
 ---
 
 <Gallery
-  title={location.title}
-  description={location.description}
-  content={location.content}
-  date={location.date}
-  modified_date={location.modified_date}
+  location={location}
   parent={parent}
   children={children}
   photos={photos}

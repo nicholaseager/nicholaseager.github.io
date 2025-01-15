@@ -11,31 +11,17 @@ import HeroSwiper from "../components/ui/HeroSwiper";
 import Link from "../components/ui/Link";
 
 interface Props {
-  title: string;
-  description: string;
-  content?: string;
-  date: Date;
-  modified_date: Date;
+  location: CollectionEntry<"locations">["data"];
   parent?: CollectionEntry<"locations">["data"];
   children: CollectionEntry<"locations">["data"][];
   photos: CollectionEntry<"photos">["data"][];
   previewPhoto: CollectionEntry<"photos">["data"];
 }
 
-const {
-  title,
-  description,
-  content,
-  photos,
-  date,
-  modified_date,
-  previewPhoto,
-  parent,
-  children,
-}: Props = Astro.props;
+const { location, photos, previewPhoto, parent, children }: Props = Astro.props;
 ---
 
-<Page title={title} description={description}>
+<Page title={location.title} description={location.description}>
   <ResponsiveWidth>
     <Link href={`/photos/countries/${parent?.slug ?? ""}`}>
       ← All {parent?.name ? `${parent.name} Photos` : "Countries"}
@@ -44,11 +30,11 @@ const {
   <ResponsiveWidth>
     <div class="space-y-8">
       {
-        content && (
+        location.content && (
           <TextContainer>
             <Text variant="h2">Introduction</Text>
             <Text variant="body">
-              <Fragment set:html={content.replaceAll("\n", "<br>")} />
+              <Fragment set:html={location.content.replaceAll("\n", "<br>")} />
             </Text>
           </TextContainer>
         )
@@ -120,10 +106,10 @@ const {
     </TextContainer>
   </ResponsiveWidth>
   <GallerySEO
-    title={title}
-    description={description}
-    date={date}
-    modified_date={modified_date}
+    title={location.title}
+    description={location.description}
+    date={location.date}
+    modified_date={location.modified_date}
     tags={[]}
     images={photos.map((p) => p.slug)}
     image={previewPhoto.slug}
