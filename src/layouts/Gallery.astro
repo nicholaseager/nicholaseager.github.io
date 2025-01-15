@@ -8,6 +8,7 @@ import Card from "../components/ui/Card";
 import TextContainer from "../components/ui/TextContainer";
 import type { CollectionEntry } from "astro:content";
 import HeroSwiper from "../components/ui/HeroSwiper";
+import Link from "../components/ui/Link";
 
 interface Props {
   title: string;
@@ -15,6 +16,7 @@ interface Props {
   content?: string;
   date: Date;
   modified_date: Date;
+  parent?: CollectionEntry<"locations">["data"];
   children: CollectionEntry<"locations">["data"][];
   photos: CollectionEntry<"photos">["data"][];
   previewPhoto: CollectionEntry<"photos">["data"];
@@ -28,11 +30,17 @@ const {
   date,
   modified_date,
   previewPhoto,
+  parent,
   children,
 }: Props = Astro.props;
 ---
 
 <Page title={title} description={description}>
+  <ResponsiveWidth>
+    <Link href={`/photos/countries/${parent?.slug ?? ""}`}>
+      ← All {parent?.name ? `${parent.name} Photos` : "Countries"}
+    </Link>
+  </ResponsiveWidth>
   <ResponsiveWidth>
     <div class="space-y-8">
       {
