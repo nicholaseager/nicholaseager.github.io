@@ -64,9 +64,14 @@ class LocationContentGenerator:
         base_name = location_id.split("/")[-1].replace("-", " ").title()
 
         # Format photo info for prompt
-        photo_info = [
-            self.format_photo_info(photo) for photo in photos[:10]
-        ]  # Limit to 10 photos
+        if len(photos) > 10:
+            # Calculate indices for even distribution
+            step = len(photos) // 10
+            selected_photos = photos[::step][:10]  # Take every nth item, up to 10 items
+        else:
+            selected_photos = photos
+
+        photo_info = [self.format_photo_info(photo) for photo in selected_photos]
 
         prompt = f"""
         You are a skilled travel writer crafting engaging location descriptions for a photography website.
