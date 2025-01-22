@@ -64,7 +64,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ items }) => {
   return (
     <div
       data-toc
-      className="sticky top-0 z-50 py-4 bg-white/80 backdrop-blur-sm"
+      className="sticky top-0 z-[100] py-4 bg-white/80 backdrop-blur-sm"
     >
       <MobileTableOfContents
         items={items}
