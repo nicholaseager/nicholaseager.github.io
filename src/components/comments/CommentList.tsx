@@ -1,6 +1,9 @@
 import type { CollectionEntry } from "astro:content";
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { ProfilePicture } from "../ProfilePicture";
+import Button from "../ui/Button";
+import CommentForm from "./CommentForm";
+import Text from "../ui/Text";
 
 type CommentList = CollectionEntry<"comments">["data"];
 
@@ -21,6 +24,7 @@ const CommentItem: React.FC<CommentItemProps> = ({
   level,
   getReplies,
 }) => {
+  const [isReplying, setIsReplying] = useState(false);
   const maxLevel = 4; // Maximum nesting level
   const indentLevel = Math.min(level, maxLevel);
 
@@ -46,28 +50,41 @@ const CommentItem: React.FC<CommentItemProps> = ({
           </div>
 
           {/* Comment Content */}
-          <div className="flex-1">
-            <div className="flex items-center gap-2">
-              <h4 className="text-content-strong font-medium">
-                {comment.createdBy.fullName}
-              </h4>
+          <div className="flex-1 space-y-4">
+            <div className="flex justify-between gap-2">
+              <div className="space-y-2">
+                <h4 className="text-content-strong font-medium">
+                  {comment.createdBy.fullName}
+                </h4>
+                <p className="text-content text-[15px]">{comment.text}</p>
+
+                {/* Comment Actions */}
+                {!isReplying && (
+                  <div className="flex items-center gap-4">
+                    <button
+                      className="text-sm text-gray-500 hover:text-gray-700"
+                      onClick={() => setIsReplying(!isReplying)}
+                    >
+                      Reply
+                    </button>
+                    <button className="text-sm text-gray-500 hover:text-gray-700">
+                      Share
+                    </button>
+                  </div>
+                )}
+              </div>
               <span className="text-sm text-content-light">
                 {new Date(comment.createdAt).toLocaleDateString()}
               </span>
             </div>
-            <p className="mt-1 text-content text-[15px] leading-relaxed">
-              {comment.text}
-            </p>
 
-            {/* Comment Actions */}
-            <div className="mt-2 flex items-center gap-4">
-              <button className="text-sm text-primary hover:text-primary-hover">
-                Reply
-              </button>
-              <button className="text-sm text-content-light hover:text-content">
-                Share
-              </button>
-            </div>
+            {/* Reply Form */}
+            {isReplying && (
+              <CommentForm
+                parentId={comment.id}
+                onCancel={() => setIsReplying(!isReplying)}
+              />
+            )}
           </div>
         </div>
       </div>
@@ -125,6 +142,12 @@ const CommentList: React.FC<CommentListProps> = ({ comments }) => {
           getReplies={organizedComments.getReplies}
         />
       ))}
+      <Text variant="h4" spacing="normal">
+        Leave A Comment
+      </Text>
+      <div className="bg-surface rounded-lg p-4 shadow-sm border border-border">
+        <CommentForm />
+      </div>
     </div>
   );
 };
