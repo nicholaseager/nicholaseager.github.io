@@ -71,9 +71,18 @@ const CommentItem: React.FC<CommentItemProps> = ({
                   </div>
                 )}
               </div>
-              <span className="text-sm text-content-light">
-                {new Date(comment.createdAt).toLocaleDateString()}
-              </span>
+              <time
+                className="text-sm text-content-light"
+                dateTime={comment.createdAt.toISOString()}
+              >
+                {comment.createdAt.toLocaleDateString("en-us", {
+                  month: "short",
+                  day: "numeric",
+                  year: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
+              </time>
             </div>
 
             {/* Reply Form */}
