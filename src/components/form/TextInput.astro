@@ -34,6 +34,7 @@ const inputSizes: Record<Size, string> = {
         name={name}
         placeholder={placeholder}
         class={`w-full mt-2 border-2 border-gray-200 rounded bg-surface text-content-light transition-colors duration-150 ease-in-out focus:outline-none focus:border-primary min-h-[200px] resize-none ${inputSizes[size as Size]}`}
+        required
       />
     ) : (
       <input
@@ -41,6 +42,7 @@ const inputSizes: Record<Size, string> = {
         name={name}
         placeholder={placeholder}
         class={`w-full mt-2 border-2 border-gray-200 rounded bg-surface text-content-light transition-colors duration-150 ease-in-out focus:outline-none focus:border-primary ${inputSizes[size as Size]}`}
+        required
       />
     )
   }
