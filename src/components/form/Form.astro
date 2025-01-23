@@ -30,6 +30,7 @@ const sizes: Record<Size, string> = {
     name={name}
     id={name}
     class="space-y-4"
+    data-form-name={name}
     data-netlify="true"
     netlify-honeypot="url-field"
   >
@@ -68,5 +69,8 @@ const sizes: Record<Size, string> = {
   };
 
   // @ts-ignore
-  document.querySelector(`#${name}`).addEventListener("submit", handleSubmit);
+  // Get all forms and attach event listeners
+  document.querySelectorAll("form[data-form-name]").forEach((form) => {
+    form.addEventListener("submit", handleSubmit);
+  });
 </script>
