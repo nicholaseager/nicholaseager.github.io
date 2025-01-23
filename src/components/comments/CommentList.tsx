@@ -76,11 +76,9 @@ const CommentItem: React.FC<CommentItemProps> = ({
                 dateTime={comment.createdAt.toISOString()}
               >
                 {comment.createdAt.toLocaleDateString("en-us", {
+                  year: "numeric",
                   month: "short",
                   day: "numeric",
-                  year: "numeric",
-                  hour: "2-digit",
-                  minute: "2-digit",
                 })}
               </time>
             </div>
