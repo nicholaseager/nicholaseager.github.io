@@ -1,13 +1,20 @@
 ---
 import Button from "../ui/Button";
 import type { ButtonSize } from "../ui/Button";
+import Checkmark from "../../assets/icons/Checkmark.svg";
 interface Props {
   name: string;
   submitButtonText?: string;
+  successMessage?: string;
   size?: "md" | string;
 }
 
-const { name, submitButtonText = "Submit", size = "md" } = Astro.props;
+const {
+  name,
+  submitButtonText = "Submit",
+  successMessage = "Thank you! Your form has been submitted successfully.",
+  size = "md",
+} = Astro.props;
 
 type Size = "sm" | "md" | "lg";
 const sizes: Record<Size, string> = {
@@ -25,6 +32,17 @@ const sizes: Record<Size, string> = {
 <div
   class={`bg-surface-secondary rounded-lg shadow-lg mx-auto w-full ${sizes[size as Size]}`}
 >
+  <!-- Success Message -->
+  <div
+    id="success-message"
+    class="hidden mb-4 p-4 bg-success-light rounded-md flex items-center space-x-2"
+  >
+    <Checkmark />
+    <span class="text-success-content font-sans">
+      {successMessage}
+    </span>
+  </div>
+
   <!-- Netlify Form Configuration
        - data-netlify="true" enables Netlify form handling
        - netlify-honeypot adds spam protection
@@ -67,6 +85,8 @@ const sizes: Record<Size, string> = {
 
     const myForm = event.target;
     const formData = new FormData(myForm);
+    const successMessage =
+      myForm.parentElement?.querySelector("#success-message");
 
     // Submit to Netlify forms endpoint
     // Note: CORS error is expected but can be ignored as submission still works
@@ -76,7 +96,16 @@ const sizes: Record<Size, string> = {
       body: new URLSearchParams(formData.entries()).toString(),
     }).finally(() => {
       myForm.reset();
-      // Handle any success UI updates here
+
+      // Show success message
+      if (successMessage) {
+        successMessage.classList.remove("hidden");
+
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          successMessage.classList.add("hidden");
+        }, 5000);
+      }
     });
   };
 
