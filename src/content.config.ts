@@ -279,6 +279,26 @@ const themes = defineCollection({
     }),
 });
 
+const comments = defineCollection({
+  loader: glob({
+    base: "./src/data/comments",
+    pattern: "**/*.json",
+  }),
+  schema: z.array(
+    z.object({
+      id: z.string(),
+      parentId: z.string().optional(),
+      createdBy: z.object({
+        fullName: z.string(),
+        email: z.string(),
+        profilePictureUrl: z.string().url().optional(),
+      }),
+      text: z.string(),
+      createdAt: z.coerce.date(),
+    })
+  ),
+});
+
 export const collections = {
   guides,
   films,
@@ -286,4 +306,5 @@ export const collections = {
   photos,
   locations,
   themes,
+  comments,
 };
