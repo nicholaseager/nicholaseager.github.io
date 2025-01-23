@@ -33,13 +33,14 @@ const sizes: Record<Size, string> = {
     data-netlify="true"
     netlify-honeypot="url-field"
   >
-    <slot />
-
+    <input type="hidden" name="form-name" value={name} />
     <input type="hidden" name="url" value={Astro.url.toString()} />
     <p class="your-website-here">
       <label for="url-field">URL</label>
       <input type="url" name="url-field" id="url-field" />
     </p>
+
+    <slot />
 
     <Button type="submit" variant="primary" size={size as ButtonSize}>
       {submitButtonText}
