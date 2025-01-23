@@ -27,8 +27,8 @@ const sizes: Record<Size, string> = {
 >
   <form
     method="POST"
-    action={`https://extraordinary-sherbet-37382c.netlify.app${Astro.url.pathname}`}
     name={name}
+    id={name}
     class="space-y-4"
     data-netlify="true"
     netlify-honeypot="url-field"
@@ -46,3 +46,26 @@ const sizes: Record<Size, string> = {
     </Button>
   </form>
 </div>
+<script>
+  // @ts-nocheck
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("https://extraordinary-sherbet-37382c.netlify.app", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData.entries()).toString(),
+    })
+      .then(() => {
+        myForm.reset();
+        // Handle the success case
+      })
+      .catch((error) => alert(error));
+  };
+
+  // @ts-ignore
+  document.querySelector(`#${name}`).addEventListener("submit", handleSubmit);
+</script>
