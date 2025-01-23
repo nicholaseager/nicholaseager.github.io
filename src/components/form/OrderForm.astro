@@ -2,17 +2,9 @@
 import TextInput from "./TextInput.astro";
 import Form from "./Form.astro";
 import Text from "../ui/Text";
-
-const { photo } = Astro.props;
 ---
 
-<Form
-  action="https://formspree.io/f/mqkoakkg"
-  emailSubject="Order form submission"
-  confirmationUrl="/thanks"
-  submitButtonText="Send Request"
-  size="sm"
->
+<Form name="order" submitButtonText="Send Request" size="sm">
   <Text variant="h6">Request a Print</Text>
   <Text variant="caption"
     >No Commitment 🎉 I'll be in touch shortly after you fill out the form
@@ -40,7 +32,4 @@ const { photo } = Astro.props;
     multiline={true}
     size="sm"
   />
-
-  <input type="hidden" name="_subject" value=`Order print submission` />
-  <input type="hidden" name="_photo" value=`${photo}` />
 </Form>

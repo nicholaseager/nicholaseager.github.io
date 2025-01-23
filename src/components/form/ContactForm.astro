@@ -3,11 +3,7 @@ import TextInput from "./TextInput.astro";
 import Form from "./Form.astro";
 ---
 
-<Form
-  action="https://formspree.io/f/mvolakjj"
-  submitButtonText="Send Message"
-  size="lg"
->
+<Form name="contact" submitButtonText="Send Message" size="lg">
   <TextInput
     label="Email Address *"
     type="email"
@@ -29,6 +25,4 @@ import Form from "./Form.astro";
     multiline={true}
     size="lg"
   />
-
-  <input type="hidden" name="_subject" value="Contact submission" />
 </Form>

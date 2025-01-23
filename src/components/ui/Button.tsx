@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes } from "react";
 import type { ButtonVariant } from "./LinkButton";
 
-type ButtonSize = "sm" | "md" | "lg";
+export type ButtonSize = "sm" | "md" | "lg";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;

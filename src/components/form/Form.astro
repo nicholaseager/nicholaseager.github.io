@@ -1,6 +1,13 @@
 ---
 import Button from "../ui/Button";
-const { action, submitButtonText = "Submit", size = "md" } = Astro.props;
+import type { ButtonSize } from "../ui/Button";
+interface Props {
+  name: string;
+  submitButtonText?: string;
+  size?: "md" | string;
+}
+
+const { name, submitButtonText = "Submit", size = "md" } = Astro.props;
 
 type Size = "sm" | "md" | "lg";
 const sizes: Record<Size, string> = {
@@ -10,13 +17,31 @@ const sizes: Record<Size, string> = {
 };
 ---
 
+<style>
+  .your-website-here {
+    display: none;
+  }
+</style>
 <div
   class={`bg-surface-secondary rounded-lg shadow-lg mx-auto w-full ${sizes[size as Size]}`}
 >
-  <form method="POST" action={action} class="space-y-4">
+  <form
+    method="POST"
+    action="https://extraordinary-sherbet-37382c.netlify.app/"
+    name={name}
+    class="space-y-4"
+    data-netlify="true"
+    netlify-honeypot="url-field"
+  >
     <slot />
 
-    <Button type="submit" variant="primary" size={size}>
+    <input type="hidden" name="url" value={Astro.url.toString()} />
+    <p class="your-website-here">
+      <label for="url-field">URL</label>
+      <input type="url" name="url-field" id="url-field" />
+    </p>
+
+    <Button type="submit" variant="primary" size={size as ButtonSize}>
       {submitButtonText}
     </Button>
   </form>
