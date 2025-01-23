@@ -25,6 +25,11 @@ const sizes: Record<Size, string> = {
 <div
   class={`bg-surface-secondary rounded-lg shadow-lg mx-auto w-full ${sizes[size as Size]}`}
 >
+  <!-- Netlify Form Configuration
+       - data-netlify="true" enables Netlify form handling
+       - netlify-honeypot adds spam protection
+       - data-form-name is used for JS form handling
+  -->
   <form
     method="POST"
     name={name}
@@ -34,15 +39,22 @@ const sizes: Record<Size, string> = {
     data-netlify="true"
     netlify-honeypot="url-field"
   >
+    <!-- Required hidden field for Netlify forms -->
     <input type="hidden" name="form-name" value={name} />
+
+    <!-- Hidden field to track form submission source URL -->
     <input type="hidden" name="url" value={Astro.url.toString()} />
+
+    <!-- Honeypot field to catch spam bots -->
     <p class="your-website-here">
       <label for="url-field">URL</label>
       <input type="url" name="url-field" id="url-field" />
     </p>
 
+    <!-- Custom form fields injected via slot -->
     <slot />
 
+    <!-- Submit button -->
     <Button type="submit" variant="primary" size={size as ButtonSize}>
       {submitButtonText}
     </Button>
@@ -56,6 +68,8 @@ const sizes: Record<Size, string> = {
     const myForm = event.target;
     const formData = new FormData(myForm);
 
+    // Submit to Netlify forms endpoint
+    // Note: CORS error is expected but can be ignored as submission still works
     fetch("https://extraordinary-sherbet-37382c.netlify.app", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
