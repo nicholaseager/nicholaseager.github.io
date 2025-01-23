@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NetlifyForm from "../form/NetlifyForm";
 import Button from "../ui/Button";
+import SuccessMessage from "../form/SuccessMessage";
 
 interface CommentFormProps {
   parentId?: string;
@@ -16,14 +17,22 @@ const CommentForm: React.FC<CommentFormProps> = ({
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSuccess = () => {
     // Reset form state
     setName("");
     setEmail("");
     setComment("");
+    setShowSuccess(true);
     onSuccess?.();
   };
+
+  if (showSuccess) {
+    return (
+      <SuccessMessage message="Thanks for submitting your comment! It will appear here after it has been approved." />
+    );
+  }
 
   return (
     <NetlifyForm name="comment" onSuccess={handleSuccess}>
