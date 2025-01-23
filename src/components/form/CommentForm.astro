@@ -1,9 +1,16 @@
 ---
 import TextInput from "./TextInput.astro";
 import Form from "./Form.astro";
+
+interface Props {
+  parentId?: string;
+}
+
+const { parentId }: Props = Astro.props;
 ---
 
 <Form name="comment" submitButtonText="Send Comment">
+  <input type="hidden" name="parentId" value={parentId} />
   <TextInput
     label="Email Address *"
     type="email"
