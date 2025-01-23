@@ -60,12 +60,10 @@ const sizes: Record<Size, string> = {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData.entries()).toString(),
-    })
-      .then(() => {
-        myForm.reset();
-        // Handle the success case
-      })
-      .catch((error) => alert(error));
+    }).finally(() => {
+      myForm.reset();
+      // Handle any success UI updates here
+    });
   };
 
   // @ts-ignore
