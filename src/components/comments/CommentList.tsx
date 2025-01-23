@@ -4,6 +4,7 @@ import { ProfilePicture } from "../ProfilePicture";
 import Button from "../ui/Button";
 import CommentForm from "./CommentForm";
 import Text from "../ui/Text";
+import TextButton from "../ui/TextButton";
 
 type CommentList = CollectionEntry<"comments">["data"];
 
@@ -61,15 +62,12 @@ const CommentItem: React.FC<CommentItemProps> = ({
                 {/* Comment Actions */}
                 {!isReplying && (
                   <div className="flex items-center gap-4">
-                    <button
-                      className="text-sm text-gray-500 hover:text-gray-700"
+                    <TextButton
+                      size="sm"
                       onClick={() => setIsReplying(!isReplying)}
                     >
                       Reply
-                    </button>
-                    <button className="text-sm text-gray-500 hover:text-gray-700">
-                      Share
-                    </button>
+                    </TextButton>
                   </div>
                 )}
               </div>
