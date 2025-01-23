@@ -27,7 +27,7 @@ const sizes: Record<Size, string> = {
 >
   <form
     method="POST"
-    action="https://extraordinary-sherbet-37382c.netlify.app/"
+    action={`https://extraordinary-sherbet-37382c.netlify.app${Astro.url.pathname}`}
     name={name}
     class="space-y-4"
     data-netlify="true"
