@@ -173,10 +173,28 @@ export default {
             hover: "#095196",
             content: "white",
           },
+          kofi: {
+            DEFAULT: "#72a4f2",
+            hover: "#5b83c2",
+            content: "white",
+          },
         },
       },
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+      },
+      keyframes: {
+        "kofi-shake": {
+          "0%": { transform: "scale(1)" },
+          "10%": { transform: "scale(1.2)" },
+          "20%": { transform: "rotate(-10deg) scale(1.2)" },
+          "30%": { transform: "rotate(10deg) scale(1.2)" },
+          "40%": { transform: "rotate(-10deg) scale(1.2)" },
+          "50%": { transform: "rotate(10deg) scale(1.2)" },
+          "60%": { transform: "rotate(0) scale(1.2)" },
+          "70%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1)" }, // 30% pause before repeating
+        },
       },
     },
   },

@@ -4,6 +4,7 @@ import { ButtonOverlay } from "./ButtonOverlay";
 import { Modal } from "./Modal";
 import Button from "./ui/Button";
 import Image from "./image-kit/Image";
+import { KoFiButton } from "./KoFiButton";
 
 interface GoogleMapModalWrapperProps {
   children: ReactNode;
@@ -18,7 +19,7 @@ export const GoogleMapModalWrapper: React.FC<GoogleMapModalWrapperProps> = ({
   const handleDonate = () => {
     setIsModalOpen(false);
     setShowButtonOverlay(false);
-    window.open("/support", "_blank");
+    window.open("https://ko-fi.com/nicholaseager", "_blank");
   };
 
   const handleClose = () => {
@@ -41,7 +42,7 @@ export const GoogleMapModalWrapper: React.FC<GoogleMapModalWrapperProps> = ({
         please consider making a donation.
       </p>
       <div className="flex gap-4">
-        <Button onClick={handleDonate}>Support Me</Button>
+        <KoFiButton onClick={handleDonate} />
         <Button variant="secondary" onClick={handleClose}>
           No, thanks
         </Button>
