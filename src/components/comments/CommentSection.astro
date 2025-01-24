@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import ResponsiveWidth from "../layout/ResponsiveWidth.astro";
+import Text from "../ui/Text";
+import CommentList from "./CommentList";
+import CommentForm from "./CommentForm";
+
+const { pathname } = Astro.url;
+const commentsCollection = await getCollection("comments", ({ data }) => {
+  return data.pathname === pathname;
+});
+const comments = commentsCollection.map((c) => c.data);
+---
+
+{
+  comments.length > 0 && (
+    <div class="space-y-4 md:space-y-8">
+      <ResponsiveWidth size="md">
+        <Text variant="h3" spacing="normal">
+          Comments
+        </Text>
+        <CommentList client:visible comments={comments} />
+      </ResponsiveWidth>
+    </div>
+  )
+}
+
+<ResponsiveWidth size="lg">
+  <Text variant="h3" spacing="normal">Leave A Comment</Text>
+  <CommentForm client:visible />
+</ResponsiveWidth>
