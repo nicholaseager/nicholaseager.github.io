@@ -28,7 +28,6 @@ const CommentItem: React.FC<CommentItemProps> = ({
   const [isReplying, setIsReplying] = useState(false);
   const maxLevel = 4; // Maximum nesting level
   const indentLevel = Math.min(level, maxLevel);
-
   const indentClasses: Record<number, string> = {
     0: "",
     1: "ml-4",
@@ -38,65 +37,57 @@ const CommentItem: React.FC<CommentItemProps> = ({
   };
 
   return (
-    <div className={`${indentClasses[indentLevel]} mb-4`}>
-      <div className="bg-surface rounded-lg p-4 shadow-sm border border-border">
-        <div className="flex items-start gap-3">
-          {/* Profile Picture */}
-          <div className="flex-shrink-0">
-            <ProfilePicture
-              fullName={comment.createdBy.fullName}
-              profilePictureUrl={comment.createdBy.profilePictureUrl}
-              className="w-10 h-10"
-            />
+    <div className={`${indentClasses[indentLevel]} space-y-4`}>
+      <div className="flex items-start gap-3">
+        {/* Profile Picture */}
+        <div className="flex-shrink-0">
+          <ProfilePicture
+            fullName={comment.createdBy.fullName}
+            profilePictureUrl={comment.createdBy.profilePictureUrl}
+            className="w-10 h-10"
+          />
+        </div>
+
+        {/* Comment Content */}
+        <div className="flex-1 space-y-2">
+          <div className="flex justify-between gap-2">
+            <h4 className="text-content-strong font-medium">
+              {comment.createdBy.fullName}
+            </h4>
+            <time
+              className="flex-shrink-0 text-sm text-content-light"
+              dateTime={comment.createdAt.toISOString()}
+            >
+              {comment.createdAt.toLocaleDateString("en-us", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })}
+            </time>
           </div>
 
-          {/* Comment Content */}
-          <div className="flex-1 space-y-4">
-            <div className="flex justify-between gap-2">
-              <div className="space-y-2">
-                <h4 className="text-content-strong font-medium">
-                  {comment.createdBy.fullName}
-                </h4>
-                <p className="text-content text-[15px]">{comment.text}</p>
+          <p className="text-content text-[15px]">{comment.text}</p>
 
-                {/* Comment Actions */}
-                {!isReplying && (
-                  <div className="flex items-center gap-4">
-                    <TextButton
-                      size="sm"
-                      onClick={() => setIsReplying(!isReplying)}
-                    >
-                      Reply
-                    </TextButton>
-                  </div>
-                )}
-              </div>
-              <time
-                className="text-sm text-content-light"
-                dateTime={comment.createdAt.toISOString()}
-              >
-                {comment.createdAt.toLocaleDateString("en-us", {
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
-                })}
-              </time>
-            </div>
-
-            {/* Reply Form */}
-            {isReplying && (
-              <CommentForm
-                parentId={comment.id}
-                onCancel={() => setIsReplying(!isReplying)}
-              />
-            )}
-          </div>
+          {/* Comment Actions */}
+          {!isReplying && (
+            <TextButton size="sm" onClick={() => setIsReplying(!isReplying)}>
+              Reply
+            </TextButton>
+          )}
         </div>
       </div>
 
+      {/* Reply Form */}
+      {isReplying && (
+        <CommentForm
+          parentId={comment.id}
+          onCancel={() => setIsReplying(!isReplying)}
+        />
+      )}
+
       {/* Nested Replies */}
       {replies.length > 0 && (
-        <div className="mt-2">
+        <div className="pt-4 border-t border-border">
           {replies.map((reply) => (
             <CommentItem
               key={reply.id}
@@ -139,13 +130,15 @@ const CommentList: React.FC<CommentListProps> = ({ comments }) => {
   return (
     <div className="space-y-4">
       {organizedComments.topLevelComments.map((comment) => (
-        <CommentItem
-          key={comment.id}
-          comment={comment}
-          replies={organizedComments.getReplies(comment.id)}
-          level={0}
-          getReplies={organizedComments.getReplies}
-        />
+        <div className="bg-surface rounded-lg p-4 shadow-sm border border-border">
+          <CommentItem
+            key={comment.id}
+            comment={comment}
+            replies={organizedComments.getReplies(comment.id)}
+            level={0}
+            getReplies={organizedComments.getReplies}
+          />
+        </div>
       ))}
       <Text variant="h4" spacing="normal">
         Leave A Comment
