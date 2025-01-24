@@ -57,202 +57,204 @@ const tableOfContents = sections
   navStyle="transparent"
 >
   <Banner slot="header" title={title} type="image" media={image} />
-  <div class="my-8">
-    <Intro
-      title={title}
-      lastUpdated={modified_date}
-      description={introduction}
-      videoId={youtube ?? ""}
-    />
-  </div>
+  <article>
+    <div class="my-8">
+      <Intro
+        title={title}
+        lastUpdated={modified_date}
+        description={introduction}
+        videoId={youtube ?? ""}
+      />
+    </div>
 
-  <!-- Links -->
-  {
-    links && (
-      <ResponsiveWidth size="md">
-        <QuickLinks links={links} />
-      </ResponsiveWidth>
-    )
-  }
-
-  <!-- Table of Contents -->
-  <TableOfContents client:load items={tableOfContents} />
-
-  <!-- Sections -->
-  <article class="space-y-4 md:space-y-8 my-8 md:my-16">
+    <!-- Links -->
     {
-      sections.map((section) => (
-        <div
-          class={`${section.background === "dark" ? "bg-surface-secondary py-8" : ""} space-y-4 md:space-y-8`}
-        >
-          <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal" id={section.id}>
-              {section.title}
-            </Text>
-            {section.introduction && (
-              <Text variant="body">{section.introduction}</Text>
-            )}
-          </ResponsiveWidth>
-
-          {section.content && (
-            <ResponsiveWidth
-              size={section.content.type === "list" ? "md" : "lg"}
-            >
-              {/* Handle different content types */}
-              {section.content.type === "images" && (
-                <PhotoSwiper client:visible photos={section.content.paths} />
-              )}
-
-              {section.content.type === "google-map" && (
-                <>
-                  <GoogleMap mapId={section.content.mapId} />
-                  <Text variant="caption" className="mt-4 mx-8">
-                    Learn how to download the map for your own offline use by
-                    reading{" "}
-                    <Link href="/navigating-on-the-trail" target="_blank">
-                      how I navigate on the trail
-                    </Link>
-                    .
-                  </Text>
-                </>
-              )}
-
-              {section.content.type === "itinerary" && (
-                <ItineraryTable
-                  client:visible
-                  itinerary={section.content.phases}
-                  phaseLabel={section.content.units?.phase}
-                />
-              )}
-
-              {section.content.type === "gear" && (
-                <>
-                  <GearSwiper client:visible trip={section.content.trip} />
-                  <div class="mt-4 mx-8 space-y-4">
-                    <Text variant="caption">
-                      The provided gear list is a suggestion, tailor it to your
-                      needs. Prioritize safety by packing and preparing well for
-                      a happy, adventurous hike. Interested in all of my gear
-                      recommendations?{" "}
-                      <Link href="/gear" target="_blank">
-                        Explore all gear
-                      </Link>
-                      to see what I recommend for filming, travel, and fun :)
-                    </Text>
-                  </div>
-                </>
-              )}
-
-              {section.content.type === "list" && (
-                <TextContainer spacing="loose">
-                  {section.content.items.map((item) => (
-                    <Text variant="body">
-                      <b>{item.title}: </b>
-                      {item.description}
-                    </Text>
-                  ))}
-                </TextContainer>
-              )}
-
-              {section.content.type === "partnership" && (
-                <div class="flex flex-col gap-8 justify-center items-center">
-                  <a href={section.content.cta?.url} target="_blank">
-                    <img
-                      src={section.content.logo}
-                      class="max-w-sm w-full h-full"
-                      alt="partnership logo"
-                    />
-                  </a>
-                  {section.content.cta && (
-                    <LinkButton
-                      href={section.content.cta?.url}
-                      target="_blank"
-                      size="sm"
-                    >
-                      {section.content.cta?.title}
-                    </LinkButton>
-                  )}
-                </div>
-              )}
-
-              {section.content.type === "weather" && (
-                <HikingSeasonsGrid seasons={section.content.seasons} />
-              )}
-            </ResponsiveWidth>
-          )}
-
-          {section.subsections &&
-            section.subsections.length > 0 &&
-            section.subsections.map((subsection) => (
-              <>
-                <ResponsiveWidth size="md">
-                  <Text variant="h3" spacing="tight">
-                    {subsection.title}
-                  </Text>
-                </ResponsiveWidth>
-                {subsection.images && (
-                  <ResponsiveWidth size="lg">
-                    <PhotoSwiper client:visible photos={subsection.images} />
-                  </ResponsiveWidth>
-                )}
-                <ResponsiveWidth size="md">
-                  <Text variant="body">{subsection.description}</Text>
-                </ResponsiveWidth>
-              </>
-            ))}
-
-          {section.conclusion && (
-            <ResponsiveWidth size="md">
-              <Text variant="body">{section.conclusion}</Text>
-            </ResponsiveWidth>
-          )}
-
-          {section.cta && (
-            <ResponsiveWidth size="md">
-              <LinkButton href={section.cta.url} target="_blank" size="md">
-                {section.cta.title}
-              </LinkButton>
-            </ResponsiveWidth>
-          )}
-        </div>
-      ))
-    }
-
-    <!-- Conclusion -->
-    {
-      conclusion && (
-        <>
-          <ResponsiveWidth size="md">
-            <Text variant="h2" spacing="normal">
-              Conclusion
-            </Text>
-            <Text variant="body">{conclusion}</Text>
-          </ResponsiveWidth>
-        </>
+      links && (
+        <ResponsiveWidth size="md">
+          <QuickLinks links={links} />
+        </ResponsiveWidth>
       )
     }
 
-    <!-- Similar Guides -->
-    <div class="space-y-4 md:space-y-8">
+    <!-- Table of Contents -->
+    <TableOfContents client:load items={tableOfContents} />
+
+    <!-- Sections -->
+    <div class="space-y-4 md:space-y-8 my-8 md:my-16">
+      {
+        sections.map((section) => (
+          <div
+            class={`${section.background === "dark" ? "bg-surface-secondary py-8" : ""} space-y-4 md:space-y-8`}
+          >
+            <ResponsiveWidth size="md">
+              <Text variant="h2" spacing="normal" id={section.id}>
+                {section.title}
+              </Text>
+              {section.introduction && (
+                <Text variant="body">{section.introduction}</Text>
+              )}
+            </ResponsiveWidth>
+
+            {section.content && (
+              <ResponsiveWidth
+                size={section.content.type === "list" ? "md" : "lg"}
+              >
+                {/* Handle different content types */}
+                {section.content.type === "images" && (
+                  <PhotoSwiper client:visible photos={section.content.paths} />
+                )}
+
+                {section.content.type === "google-map" && (
+                  <>
+                    <GoogleMap mapId={section.content.mapId} />
+                    <Text variant="caption" className="mt-4 mx-8">
+                      Learn how to download the map for your own offline use by
+                      reading{" "}
+                      <Link href="/navigating-on-the-trail" target="_blank">
+                        how I navigate on the trail
+                      </Link>
+                      .
+                    </Text>
+                  </>
+                )}
+
+                {section.content.type === "itinerary" && (
+                  <ItineraryTable
+                    client:visible
+                    itinerary={section.content.phases}
+                    phaseLabel={section.content.units?.phase}
+                  />
+                )}
+
+                {section.content.type === "gear" && (
+                  <>
+                    <GearSwiper client:visible trip={section.content.trip} />
+                    <div class="mt-4 mx-8 space-y-4">
+                      <Text variant="caption">
+                        The provided gear list is a suggestion, tailor it to
+                        your needs. Prioritize safety by packing and preparing
+                        well for a happy, adventurous hike. Interested in all of
+                        my gear recommendations?{" "}
+                        <Link href="/gear" target="_blank">
+                          Explore all gear
+                        </Link>
+                        to see what I recommend for filming, travel, and fun :)
+                      </Text>
+                    </div>
+                  </>
+                )}
+
+                {section.content.type === "list" && (
+                  <TextContainer spacing="loose">
+                    {section.content.items.map((item) => (
+                      <Text variant="body">
+                        <b>{item.title}: </b>
+                        {item.description}
+                      </Text>
+                    ))}
+                  </TextContainer>
+                )}
+
+                {section.content.type === "partnership" && (
+                  <div class="flex flex-col gap-8 justify-center items-center">
+                    <a href={section.content.cta?.url} target="_blank">
+                      <img
+                        src={section.content.logo}
+                        class="max-w-sm w-full h-full"
+                        alt="partnership logo"
+                      />
+                    </a>
+                    {section.content.cta && (
+                      <LinkButton
+                        href={section.content.cta?.url}
+                        target="_blank"
+                        size="sm"
+                      >
+                        {section.content.cta?.title}
+                      </LinkButton>
+                    )}
+                  </div>
+                )}
+
+                {section.content.type === "weather" && (
+                  <HikingSeasonsGrid seasons={section.content.seasons} />
+                )}
+              </ResponsiveWidth>
+            )}
+
+            {section.subsections &&
+              section.subsections.length > 0 &&
+              section.subsections.map((subsection) => (
+                <>
+                  <ResponsiveWidth size="md">
+                    <Text variant="h3" spacing="tight">
+                      {subsection.title}
+                    </Text>
+                  </ResponsiveWidth>
+                  {subsection.images && (
+                    <ResponsiveWidth size="lg">
+                      <PhotoSwiper client:visible photos={subsection.images} />
+                    </ResponsiveWidth>
+                  )}
+                  <ResponsiveWidth size="md">
+                    <Text variant="body">{subsection.description}</Text>
+                  </ResponsiveWidth>
+                </>
+              ))}
+
+            {section.conclusion && (
+              <ResponsiveWidth size="md">
+                <Text variant="body">{section.conclusion}</Text>
+              </ResponsiveWidth>
+            )}
+
+            {section.cta && (
+              <ResponsiveWidth size="md">
+                <LinkButton href={section.cta.url} target="_blank" size="md">
+                  {section.cta.title}
+                </LinkButton>
+              </ResponsiveWidth>
+            )}
+          </div>
+        ))
+      }
+
+      <!-- Conclusion -->
+      {
+        conclusion && (
+          <>
+            <ResponsiveWidth size="md">
+              <Text variant="h2" spacing="normal">
+                Conclusion
+              </Text>
+              <Text variant="body">{conclusion}</Text>
+            </ResponsiveWidth>
+          </>
+        )
+      }
+
+      <!-- Similar Guides -->
+      <div class="space-y-4 md:space-y-8">
+        <ResponsiveWidth size="md">
+          <Text variant="h3" spacing="normal">You Might Also Like</Text>
+        </ResponsiveWidth>
+        <ResponsiveWidth size="lg">
+          <ArticleSwiper
+            client:visible
+            items={guidesWithSimilarity}
+            urlPrefix="/guides"
+          />
+        </ResponsiveWidth>
+      </div>
+
+      <!-- Comment -->
+      <CommentSection />
+
+      <!-- Disclosure -->
       <ResponsiveWidth size="md">
-        <Text variant="h3" spacing="normal">You Might Also Like</Text>
-      </ResponsiveWidth>
-      <ResponsiveWidth size="lg">
-        <ArticleSwiper
-          client:visible
-          items={guidesWithSimilarity}
-          urlPrefix="/guides"
-        />
+        <Disclosure />
       </ResponsiveWidth>
     </div>
-
-    <!-- Comment -->
-    <CommentSection />
-
-    <!-- Disclosure -->
-    <ResponsiveWidth size="md">
-      <Disclosure />
-    </ResponsiveWidth>
   </article>
   <HikingGuideSEO guide={Astro.props} />
 </Layout>
