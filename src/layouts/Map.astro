@@ -13,6 +13,7 @@ import Disclosure from "../components/Disclosure.astro";
 import Image from "../components/image-kit/Image";
 import Card from "../components/ui/Card";
 import QuickLinks from "../components/QuickLinks.astro";
+import CommentForm from "../components/comments/CommentForm";
 
 type Props = CollectionEntry<"maps">["data"];
 
@@ -148,8 +149,13 @@ const comments = commentsCollection.map((c) => c.data);
   </main>
   <section class="space-y-8 my-8 md:my-16">
     <!-- Comment -->
-    <ResponsiveWidth size="lg">
+    <ResponsiveWidth size="md">
       <CommentList client:visible comments={comments} />
+    </ResponsiveWidth>
+
+    <ResponsiveWidth size="lg">
+      <Text variant="h3" spacing="normal">Leave A Comment</Text>
+      <CommentForm />
     </ResponsiveWidth>
 
     <!-- Disclosure -->

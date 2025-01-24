@@ -140,12 +140,6 @@ const CommentList: React.FC<CommentListProps> = ({ comments }) => {
           />
         </div>
       ))}
-      <Text variant="h4" spacing="normal">
-        Leave A Comment
-      </Text>
-      <div className="bg-surface rounded-lg p-4 shadow-sm border border-border">
-        <CommentForm />
-      </div>
     </div>
   );
 };

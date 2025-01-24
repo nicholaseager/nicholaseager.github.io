@@ -22,6 +22,7 @@ import PhotoSwiper from "../components/photos/PhotoSwiper";
 import Disclosure from "../components/Disclosure.astro";
 import QuickLinks from "../components/QuickLinks.astro";
 import CommentList from "../components/comments/CommentList.tsx";
+import CommentForm from "../components/comments/CommentForm";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -265,6 +266,11 @@ const comments = commentsCollection.map((c) => c.data);
         </div>
       )
     }
+
+    <ResponsiveWidth size="lg">
+      <Text variant="h3" spacing="normal">Leave A Comment</Text>
+      <CommentForm />
+    </ResponsiveWidth>
 
     <!-- Disclosure -->
     <ResponsiveWidth size="md">
