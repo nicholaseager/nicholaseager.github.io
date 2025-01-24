@@ -25,7 +25,7 @@ const SuccessMessage: React.FC<SuccessMessageProps> = ({
           clip-rule="evenodd"
         ></path>
       </svg>
-      <span className="text-success-content">{message}</span>
+      <span className="text-sm text-success-content">{message}</span>
     </div>
   );
 };
