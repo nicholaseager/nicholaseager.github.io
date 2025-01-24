@@ -42,7 +42,10 @@ const {
     <GoogleAnalytics />
   </head>
   <body>
-    <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
+    <header role="banner">
+      <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
+      <slot name="header" />
+    </header>
     <main>
       <slot />
     </main>
