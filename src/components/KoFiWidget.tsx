@@ -9,7 +9,7 @@ export const KoFiWidget = () => {
       <div className="relative">
         <KoFiButton
           text="Support Me"
-          className="shadow-lg !rounded-full"
+          className="shadow-lg !rounded-full select-none"
           size="lg"
           animated={false}
           onClick={() => setIsOpen(!isOpen)}
@@ -19,7 +19,7 @@ export const KoFiWidget = () => {
 
         <div
           id="ko-fi-iframe"
-          className={`absolute bottom-0 left-0 w-[350px] h-[650px] bg-white rounded-lg shadow-2xl transition-all duration-300 origin-bottom-left ${
+          className={`absolute bottom-16 left-0 w-[350px] h-[650px] bg-white rounded-lg shadow-2xl transition-all duration-300 origin-bottom-left ${
             isOpen
               ? "opacity-100 translate-y-0 scale-100"
               : "opacity-0 translate-y-8 scale-95 pointer-events-none"
@@ -27,7 +27,7 @@ export const KoFiWidget = () => {
         >
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-2 right-2 p-1 rounded-full bg-gray-100 transition-colors"
+            className="absolute top-2 right-2 p-1 rounded-full bg-gray-100 transition-colors hover:bg-gray-200"
             aria-label="Close Ko-fi widget"
           >
             <svg
