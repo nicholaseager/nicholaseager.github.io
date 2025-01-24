@@ -9,6 +9,8 @@ export const KoFiWidget = () => {
       <div className="relative">
         <KoFiButton
           text="Support Me"
+          className="shadow-lg !rounded-full"
+          size="lg"
           animated={false}
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}

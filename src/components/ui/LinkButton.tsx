@@ -1,7 +1,7 @@
 import type { AnchorHTMLAttributes } from "react";
 
 export type ButtonVariant = "primary" | "secondary" | "custom";
-type ButtonSize = "sm" | "md" | "lg";
+export type ButtonSize = "sm" | "md" | "lg";
 
 interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: ButtonVariant;

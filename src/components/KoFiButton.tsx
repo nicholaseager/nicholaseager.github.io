@@ -1,16 +1,20 @@
-import LinkButton from "./ui/LinkButton";
+import LinkButton, { type ButtonSize } from "./ui/LinkButton";
 import { type AnchorHTMLAttributes } from "react";
 
 interface KoFiButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   text?: string;
   animated?: Boolean;
   onClick?: () => void;
+  className?: string;
+  size?: ButtonSize;
 }
 
 export const KoFiButton = ({
   text = "Buy Me a Coffee",
   animated = true,
   onClick,
+  className,
+  size,
   ...props
 }: KoFiButtonProps) => {
   const animateClassName =
@@ -18,7 +22,8 @@ export const KoFiButton = ({
   return (
     <LinkButton
       variant="custom"
-      className="bg-social-kofi hover:bg-social-kofi-hover text-social-kofi-content"
+      className={`${className} bg-social-kofi hover:bg-social-kofi-hover text-social-kofi-content`}
+      size={size}
       onClick={onClick}
       {...props}
     >
