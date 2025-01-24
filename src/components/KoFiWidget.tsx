@@ -19,8 +19,10 @@ export const KoFiWidget = () => {
 
         <div
           id="ko-fi-iframe"
-          className={`absolute bottom-0 left-0 w-[350px] h-[650px] bg-white rounded-lg shadow-2xl transform transition-all duration-300 origin-bottom-left ${
-            isOpen ? "scale-y-100" : "scale-y-0"
+          className={`absolute bottom-0 left-0 w-[350px] h-[650px] bg-white rounded-lg shadow-2xl transition-all duration-300 origin-bottom-left ${
+            isOpen
+              ? "opacity-100 translate-y-0 scale-100"
+              : "opacity-0 translate-y-8 scale-95 pointer-events-none"
           }`}
         >
           <button
