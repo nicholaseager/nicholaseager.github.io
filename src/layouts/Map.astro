@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import GoogleMap from "../components/GoogleMap.astro";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
@@ -8,7 +8,7 @@ import TextContainer from "../components/ui/TextContainer";
 import Link from "../components/ui/Link";
 import LinkButton from "../components/ui/LinkButton";
 import MapSEO from "../seo/MapSEO.astro";
-import CommentForm from "../components/form/CommentForm.astro";
+import CommentList from "../components/comments/CommentList";
 import Disclosure from "../components/Disclosure.astro";
 import Image from "../components/image-kit/Image";
 import Card from "../components/ui/Card";
@@ -19,6 +19,12 @@ type Props = CollectionEntry<"maps">["data"];
 const map = Astro.props;
 const title = `${map.name} Map (GPS Route)`;
 const headline = `Interactive hiking map and GPS route for the ${map.name}`;
+
+const { pathname: rawPathname } = Astro.url;
+// Trim slashes from the beginning and end of the pathname
+const pathname = rawPathname.replace(/^\/+|\/+$/g, "");
+const commentsEntry = await getEntry("comments", pathname);
+const comments = commentsEntry?.data ?? [];
 ---
 
 <Layout title={title} description={headline} image={map.image}>
@@ -143,7 +149,7 @@ const headline = `Interactive hiking map and GPS route for the ${map.name}`;
   <section class="space-y-8 my-8 md:my-16">
     <!-- Comment -->
     <ResponsiveWidth size="lg">
-      <CommentForm />
+      <CommentList client:visible comments={comments} />
     </ResponsiveWidth>
 
     <!-- Disclosure -->
