@@ -1,5 +1,5 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
 import Layout from "./Layout.astro";
 import Banner from "../components/Banner.astro";
 import Text from "../components/ui/Text.tsx";
@@ -11,7 +11,6 @@ import HikingSeasonsGrid from "../components/guide/HikingSeasonsGrid.tsx";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
 import GoogleMap from "../components/GoogleMap.astro";
 import GearSwiper from "../components/gear/GearSwiper.tsx";
-import CommentForm from "../components/form/CommentForm.astro";
 import { getSimilarGuides } from "../utils/similarity";
 import ArticleSwiper from "../components/ui/ArticleSwiper";
 
@@ -22,6 +21,7 @@ import TextContainer from "../components/ui/TextContainer";
 import PhotoSwiper from "../components/photos/PhotoSwiper";
 import Disclosure from "../components/Disclosure.astro";
 import QuickLinks from "../components/QuickLinks.astro";
+import CommentList from "../components/comments/CommentList.tsx";
 
 type Props = CollectionEntry<"guides">["data"];
 
@@ -48,6 +48,12 @@ const tableOfContents = sections
     title: kebabToTitleCase(section.id),
     id: section.id,
   }));
+
+const { pathname: rawPathname } = Astro.url;
+// Trim slashes from the beginning and end of the pathname
+const pathname = rawPathname.replace(/^\/+|\/+$/g, "");
+const commentsEntry = await getEntry("comments", pathname);
+const comments = commentsEntry?.data ?? [];
 ---
 
 <Layout
@@ -247,16 +253,18 @@ const tableOfContents = sections
     </div>
 
     <!-- Comment -->
-    <ResponsiveWidth size="md">
-      <Text variant="body"
-        >My site does not support public comments. Please use the form below to
-        send a comment directly to me if you want to ask questions; I am happy
-        to help.</Text
-      >
-    </ResponsiveWidth>
-    <ResponsiveWidth size="lg">
-      <CommentForm />
-    </ResponsiveWidth>
+    {
+      comments.length > 0 && (
+        <div id="comments" class="space-y-4 md:space-y-8">
+          <ResponsiveWidth size="md">
+            <Text variant="h3" spacing="normal">
+              Comments
+            </Text>
+            <CommentList client:visible comments={comments} />
+          </ResponsiveWidth>
+        </div>
+      )
+    }
 
     <!-- Disclosure -->
     <ResponsiveWidth size="md">
