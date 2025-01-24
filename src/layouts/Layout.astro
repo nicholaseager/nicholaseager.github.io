@@ -5,7 +5,7 @@ import "@fontsource/poppins/700.css";
 
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer.astro";
-import KofiWidget from "../components/KoFiWidget.astro";
+import { KoFiWidget } from "../components/KoFiWidget";
 import Head from "../seo/Head.astro";
 import BaseSEO from "../seo/BaseSEO.astro";
 import DisableImages from "../scripts/DisableImages.astro";
@@ -51,8 +51,8 @@ const {
     </main>
     <BaseSEO title={title} description={description} image={image} />
     <DisableImages />
-  </body><KofiWidget />
+  </body><KoFiWidget client:load />
   <Footer />
   <!-- Spacing for kofi widget -->
-  <div class="h-16"></div>
+  <div class="h-10"></div>
 </html>
