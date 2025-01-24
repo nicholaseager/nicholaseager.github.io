@@ -51,9 +51,7 @@ const CommentItem: React.FC<CommentItemProps> = ({
         {/* Comment Content */}
         <div className="flex-1 space-y-2">
           <div className="flex justify-between gap-2">
-            <h4 className="text-content-strong font-medium">
-              {comment.createdBy.fullName}
-            </h4>
+            <Text variant="h6">{comment.createdBy.fullName}</Text>
             <time
               className="flex-shrink-0 text-sm text-content-light"
               dateTime={comment.createdAt.toISOString()}
@@ -66,7 +64,7 @@ const CommentItem: React.FC<CommentItemProps> = ({
             </time>
           </div>
 
-          <p className="text-content text-[15px]">{comment.text}</p>
+          <Text variant="body">{comment.text}</Text>
 
           {/* Comment Actions */}
           {!isReplying && (
