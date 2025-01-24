@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, getEntry } from "astro:content";
+import { type CollectionEntry, getCollection, getEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import GoogleMap from "../components/GoogleMap.astro";
 import ResponsiveWidth from "../components/layout/ResponsiveWidth.astro";
@@ -20,11 +20,11 @@ const map = Astro.props;
 const title = `${map.name} Map (GPS Route)`;
 const headline = `Interactive hiking map and GPS route for the ${map.name}`;
 
-const { pathname: rawPathname } = Astro.url;
-// Trim slashes from the beginning and end of the pathname
-const pathname = rawPathname.replace(/^\/+|\/+$/g, "");
-const commentsEntry = await getEntry("comments", pathname);
-const comments = commentsEntry?.data ?? [];
+const { pathname } = Astro.url;
+const commentsCollection = await getCollection("comments", ({ data }) => {
+  return data.pathname === pathname;
+});
+const comments = commentsCollection.map((c) => c.data);
 ---
 
 <Layout title={title} description={headline} image={map.image}>

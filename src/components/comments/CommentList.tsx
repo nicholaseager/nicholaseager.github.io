@@ -6,7 +6,7 @@ import CommentForm from "./CommentForm";
 import Text from "../ui/Text";
 import TextButton from "../ui/TextButton";
 
-type CommentList = CollectionEntry<"comments">["data"];
+type CommentList = CollectionEntry<"comments">["data"][];
 
 interface CommentListProps {
   comments: CommentList;

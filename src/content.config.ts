@@ -280,23 +280,19 @@ const themes = defineCollection({
 });
 
 const comments = defineCollection({
-  loader: glob({
-    base: "./src/data/comments",
-    pattern: "**/*.json",
+  loader: file("./src/data/comments.json"),
+  schema: z.object({
+    id: z.string(),
+    pathname: z.string(),
+    parentId: z.string().optional(),
+    createdBy: z.object({
+      fullName: z.string(),
+      email: z.string(),
+      profilePictureUrl: z.string().url().optional(),
+    }),
+    text: z.string(),
+    createdAt: z.coerce.date(),
   }),
-  schema: z.array(
-    z.object({
-      id: z.string(),
-      parentId: z.string().optional(),
-      createdBy: z.object({
-        fullName: z.string(),
-        email: z.string(),
-        profilePictureUrl: z.string().url().optional(),
-      }),
-      text: z.string(),
-      createdAt: z.coerce.date(),
-    })
-  ),
 });
 
 export const collections = {

@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 
 NETLIFY_ACCESS_TOKEN = os.environ["NETLIFY_ACCESS_TOKEN"]
 NETLIFY_COMMENT_FORM_ID = os.environ["NETLIFY_COMMENT_FORM_ID"]
-BASE_PATH = "src/data/comments"
+COMMENTS_FILE = "src/data/comments.json"
 
 
 def fetch_submissions():
@@ -16,36 +16,30 @@ def fetch_submissions():
     return response.json()
 
 
-def load_existing_comments(pathname):
-    file_path = os.path.join(BASE_PATH, f"{pathname}.json")
-    if os.path.exists(file_path):
-        with open(file_path, "r") as f:
+def load_existing_comments():
+    if os.path.exists(COMMENTS_FILE):
+        with open(COMMENTS_FILE, "r") as f:
             return json.load(f)
     return []
 
 
 def process_comments(submissions):
-    comments_by_pathname = {}
+    comments = load_existing_comments()
 
     for submission in submissions:
         data = submission["data"]
         url = data.get("url", "")
         parsed_url = urlparse(url)
-        pathname = parsed_url.path.strip("/")
-
-        # Load existing comments for this pathname
-        if pathname not in comments_by_pathname:
-            comments_by_pathname[pathname] = load_existing_comments(pathname)
+        pathname = parsed_url.path
 
         # Skip if comment already exists
         submission_id = submission["id"]
-        if any(
-            comment["id"] == submission_id for comment in comments_by_pathname[pathname]
-        ):
+        if any(comment["id"] == submission_id for comment in comments):
             continue
 
         comment = {
             "id": submission_id,
+            "pathname": pathname,
             "createdBy": {
                 "fullName": data.get("name"),
                 "email": data.get("email"),
@@ -56,25 +50,21 @@ def process_comments(submissions):
         if data.get("parentId"):
             comment["parentId"] = data["parentId"]
 
-        comments_by_pathname[pathname].append(comment)
+        comments.append(comment)
 
-    return comments_by_pathname
+    return comments
 
 
-def save_comments(comments_by_pathname):
-    os.makedirs(BASE_PATH, exist_ok=True)
-
-    for pathname, comments in comments_by_pathname.items():
-        file_path = os.path.join(BASE_PATH, f"{pathname}.json")
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
-        with open(file_path, "w") as f:
-            json.dump(comments, f, indent=2)
+def save_comments(comments):
+    os.makedirs(os.path.dirname(COMMENTS_FILE), exist_ok=True)
+    with open(COMMENTS_FILE, "w") as f:
+        json.dump(comments, f, indent=2)
 
 
 def main():
     submissions = fetch_submissions()
-    comments_by_pathname = process_comments(submissions)
-    save_comments(comments_by_pathname)
+    comments = process_comments(submissions)
+    save_comments(comments)
 
 
 if __name__ == "__main__":

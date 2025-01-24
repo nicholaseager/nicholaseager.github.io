@@ -49,11 +49,11 @@ const tableOfContents = sections
     id: section.id,
   }));
 
-const { pathname: rawPathname } = Astro.url;
-// Trim slashes from the beginning and end of the pathname
-const pathname = rawPathname.replace(/^\/+|\/+$/g, "");
-const commentsEntry = await getEntry("comments", pathname);
-const comments = commentsEntry?.data ?? [];
+const { pathname } = Astro.url;
+const commentsCollection = await getCollection("comments", ({ data }) => {
+  return data.pathname === pathname;
+});
+const comments = commentsCollection.map((c) => c.data);
 ---
 
 <Layout
