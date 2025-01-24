@@ -13,6 +13,7 @@ import Image from "../components/image-kit/Image";
 import Card from "../components/ui/Card";
 import QuickLinks from "../components/QuickLinks.astro";
 import CommentSection from "../components/comments/CommentSection.astro";
+import { KoFiButton } from "../components/KoFiButton";
 
 type Props = CollectionEntry<"maps">["data"];
 
@@ -98,12 +99,7 @@ const headline = `Interactive hiking map and GPS route for the ${map.name}`;
           >
             Download this Map
           </LinkButton>
-          <LinkButton
-            href="https://ko-fi.com/nicholaseager"
-            variant="secondary"
-          >
-            Buy Me a Coffee ☕️
-          </LinkButton>
+          <KoFiButton href="https://ko-fi.com/nicholaseager" target="_blank" />
         </div>
       </TextContainer>
     </ResponsiveWidth>

@@ -1,15 +1,17 @@
-import Button from "./ui/Button";
+import LinkButton from "./ui/LinkButton";
+import { type AnchorHTMLAttributes } from "react";
 
-interface KoFiButtonProps {
-  onClick: () => void;
+interface KoFiButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  onClick?: () => void;
 }
 
-export const KoFiButton = ({ onClick }: KoFiButtonProps) => {
+export const KoFiButton = ({ onClick, ...props }: KoFiButtonProps) => {
   return (
-    <Button
+    <LinkButton
       variant="custom"
       className="bg-social-kofi hover:bg-social-kofi-hover text-social-kofi-content"
       onClick={onClick}
+      {...props}
     >
       <div className="flex flex-row gap-2">
         <img
@@ -17,8 +19,8 @@ export const KoFiButton = ({ onClick }: KoFiButtonProps) => {
           src="/kofi-cup-border.webp"
           alt="Ko-Fi donation"
         />
-        Support Me on Ko-Fi
+        Buy Me a Coffee
       </div>
-    </Button>
+    </LinkButton>
   );
 };
