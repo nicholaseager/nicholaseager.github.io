@@ -1,6 +1,8 @@
 name: Fetch Comments
 
 on:
+  repository_dispatch:
+    types: [fetch-comments]
   workflow_dispatch: # Allow manual triggering
 
 permissions:
