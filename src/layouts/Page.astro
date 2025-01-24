@@ -8,22 +8,19 @@ const { title, description, image } = Astro.props;
 ---
 
 <Layout title={title} description={description} image={image}>
-  <slot name="seo" />
-  <main>
-    <div class="my-8 md:my-16">
-      <section class="mb-8 text-center">
-        <ResponsiveWidth size="md">
-          <TextContainer>
-            <Text variant="h1">{title}</Text>
-            <Text variant="body">{description}</Text>
-          </TextContainer>
-        </ResponsiveWidth>
-      </section>
-      <ResponsiveWidth size="full">
-        <div class="space-y-8">
-          <slot />
-        </div>
+  <div class="my-8 md:my-16">
+    <section class="mb-8 text-center">
+      <ResponsiveWidth size="md">
+        <TextContainer>
+          <Text variant="h1">{title}</Text>
+          <Text variant="body">{description}</Text>
+        </TextContainer>
       </ResponsiveWidth>
-    </div>
-  </main>
+    </section>
+    <ResponsiveWidth size="full">
+      <div class="space-y-8">
+        <slot />
+      </div>
+    </ResponsiveWidth>
+  </div>
 </Layout>

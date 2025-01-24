@@ -12,17 +12,15 @@ const { frontmatter } = Astro.props;
   description={frontmatter.description}
   image={frontmatter.image}
 >
-  <main>
-    <div class="my-8 md:my-16">
-      <ResponsiveWidth>
-        <Text variant="h1">{frontmatter.title}</Text>
-        <Text variant="body">{frontmatter.description}</Text>
-        <article class="prose prose-slate max-w-none">
-          <TextContainer spacing="tight">
-            <slot />
-          </TextContainer>
-        </article>
-      </ResponsiveWidth>
-    </div>
-  </main>
+  <article class="my-8 md:my-16">
+    <ResponsiveWidth>
+      <Text variant="h1">{frontmatter.title}</Text>
+      <Text variant="body">{frontmatter.description}</Text>
+      <div class="prose prose-slate max-w-none">
+        <TextContainer spacing="tight">
+          <slot />
+        </TextContainer>
+      </div>
+    </ResponsiveWidth>
+  </article>
 </Layout>

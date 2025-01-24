@@ -43,7 +43,9 @@ const {
   </head>
   <body>
     <NavBar client:load pathname={Astro.url.pathname} style={navStyle} />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <BaseSEO title={title} description={description} image={image} />
     <DisableImages />
   </body><KofiWidget />

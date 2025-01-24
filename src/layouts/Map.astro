@@ -42,7 +42,7 @@ const headline = `Interactive hiking map and GPS route for the ${map.name}`;
       <QuickLinks links={map.links} />
     </ResponsiveWidth>
   </section>
-  <main class="space-y-8 my-8 md:my-16">
+  <article class="space-y-8 my-8 md:my-16">
     <ResponsiveWidth>
       <TextContainer>
         <Text variant="h2">Introduction</Text>
@@ -139,15 +139,15 @@ const headline = `Interactive hiking map and GPS route for the ${map.name}`;
         </Text>
       </TextContainer>
     </ResponsiveWidth>
-  </main>
-  <section class="space-y-8 my-8 md:my-16">
-    <!-- Comment -->
-    <CommentSection />
+    <section class="space-y-8 my-8 md:my-16">
+      <!-- Comment -->
+      <CommentSection />
 
-    <!-- Disclosure -->
-    <ResponsiveWidth size="md">
-      <Disclosure />
-    </ResponsiveWidth>
-  </section>
+      <!-- Disclosure -->
+      <ResponsiveWidth size="md">
+        <Disclosure />
+      </ResponsiveWidth>
+    </section>
+  </article>
   <MapSEO title={title} headline={headline} map={map} />
 </Layout>

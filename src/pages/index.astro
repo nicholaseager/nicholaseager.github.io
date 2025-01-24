@@ -36,87 +36,79 @@ const latestFilm = getLatestFilm(films);
     videoLowRes="/home-intro-low.mp4"
   />
 
-  <main>
-    <div class="my-8 md:my-16 space-y-8">
-      <ResponsiveWidth size="sm">
-        <div
-          class="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full items-center justify-center"
-        >
-          <Image
-            className="w-32 h-32 sm:w-48 sm:h-48 rounded-full shadow-lg"
-            path="profile-square_7r8XDOfQj"
-            sizes="128px"
-          />
-          <TextContainer spacing="tight">
-            <Text variant="h2">Hi, folks!</Text>
-            <Text variant="body">
-              I am an international adventure film-maker and photographer. I
-              specialize in documenting all of the tiny, special moments from
-              off the beaten path adventures around the world.
-            </Text>
-          </TextContainer>
-        </div>
-      </ResponsiveWidth>
-      <ResponsiveWidth size="lg">
-        <hr class="my-8 md:my-16" />
-      </ResponsiveWidth>
-      <ResponsiveWidth size="md">
-        <Text variant="h2">Latest YouTube</Text>
-      </ResponsiveWidth>
-      <ResponsiveWidth size="lg">
-        <YouTubeVideo videoId={latestFilm.id} />
-      </ResponsiveWidth>
-      <ResponsiveWidth size="md">
-        <Text spacing="tight" variant="body"
-          >I spend a lot of my time exploring and documenting exciting and
-          unique locations, activities, and cultures. I am responsible for all
-          aspects of the filmmaking process, including planning and executing
-          shoots, as well as editing and post-production work. Want to come
-          along? Subscribe to my channel on YouTube.</Text
-        >
-        <div class="flex flex-col items-center justify-center">
-          <Text spacing="tight" variant="h4">Want to come along?</Text>
-          <LinkButton
-            href="https://www.youtube.com/NicholasEager"
-            target="_blank"
-            variant="primary"
-          >
-            <div class="flex items-center justify-center gap-2">
-              <YouTubeIcon />
-              Subscribe on YouTube
-            </div>
-          </LinkButton>
-        </div>
-      </ResponsiveWidth>
-
-      <ResponsiveWidth size="md">
-        <Text variant="h2">Latest Travel Guides</Text>
-      </ResponsiveWidth>
-      <ResponsiveWidth size="lg">
-        <ArticleSwiper
-          client:visible
-          items={latestGuides}
-          urlPrefix="/guides"
+  <article class="my-8 md:my-16 space-y-8">
+    <ResponsiveWidth size="sm">
+      <div
+        class="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full items-center justify-center"
+      >
+        <Image
+          className="w-32 h-32 sm:w-48 sm:h-48 rounded-full shadow-lg"
+          path="profile-square_7r8XDOfQj"
+          sizes="128px"
         />
-      </ResponsiveWidth>
-
-      <ResponsiveWidth size="md">
-        <Text variant="h2">What They Say</Text>
-      </ResponsiveWidth>
-      <ResponsiveWidth size="lg">
-        <TestimonialSwiper client:visible />
-      </ResponsiveWidth>
-
-      <ResponsiveWidth size="md">
-        <Text variant="h2" spacing="tight">Ready to Work Together?</Text>
-        <Text variant="body" spacing="tight">
-          For business inquiries, such as a collaboration or licensing, please
-          contact me.
-        </Text>
-        <LinkButton href="/contact" variant="primary">
-          Get in touch
+        <TextContainer spacing="tight">
+          <Text variant="h2">Hi, folks!</Text>
+          <Text variant="body">
+            I am an international adventure film-maker and photographer. I
+            specialize in documenting all of the tiny, special moments from off
+            the beaten path adventures around the world.
+          </Text>
+        </TextContainer>
+      </div>
+    </ResponsiveWidth>
+    <ResponsiveWidth size="lg">
+      <hr class="my-8 md:my-16" />
+    </ResponsiveWidth>
+    <ResponsiveWidth size="md">
+      <Text variant="h2">Latest YouTube</Text>
+    </ResponsiveWidth>
+    <ResponsiveWidth size="lg">
+      <YouTubeVideo videoId={latestFilm.id} />
+    </ResponsiveWidth>
+    <ResponsiveWidth size="md">
+      <Text spacing="tight" variant="body"
+        >I spend a lot of my time exploring and documenting exciting and unique
+        locations, activities, and cultures. I am responsible for all aspects of
+        the filmmaking process, including planning and executing shoots, as well
+        as editing and post-production work. Want to come along? Subscribe to my
+        channel on YouTube.</Text
+      >
+      <div class="flex flex-col items-center justify-center">
+        <Text spacing="tight" variant="h4">Want to come along?</Text>
+        <LinkButton
+          href="https://www.youtube.com/NicholasEager"
+          target="_blank"
+          variant="primary"
+        >
+          <div class="flex items-center justify-center gap-2">
+            <YouTubeIcon />
+            Subscribe on YouTube
+          </div>
         </LinkButton>
-      </ResponsiveWidth>
-    </div>
-  </main>
+      </div>
+    </ResponsiveWidth>
+
+    <ResponsiveWidth size="md">
+      <Text variant="h2">Latest Travel Guides</Text>
+    </ResponsiveWidth>
+    <ResponsiveWidth size="lg">
+      <ArticleSwiper client:visible items={latestGuides} urlPrefix="/guides" />
+    </ResponsiveWidth>
+
+    <ResponsiveWidth size="md">
+      <Text variant="h2">What They Say</Text>
+    </ResponsiveWidth>
+    <ResponsiveWidth size="lg">
+      <TestimonialSwiper client:visible />
+    </ResponsiveWidth>
+
+    <ResponsiveWidth size="md">
+      <Text variant="h2" spacing="tight">Ready to Work Together?</Text>
+      <Text variant="body" spacing="tight">
+        For business inquiries, such as a collaboration or licensing, please
+        contact me.
+      </Text>
+      <LinkButton href="/contact" variant="primary"> Get in touch </LinkButton>
+    </ResponsiveWidth>
+  </article>
 </Layout>

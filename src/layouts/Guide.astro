@@ -79,7 +79,7 @@ const tableOfContents = sections
   <TableOfContents client:load items={tableOfContents} />
 
   <!-- Sections -->
-  <main class="space-y-4 md:space-y-8 my-8 md:my-16">
+  <article class="space-y-4 md:space-y-8 my-8 md:my-16">
     {
       sections.map((section) => (
         <div
@@ -253,6 +253,6 @@ const tableOfContents = sections
     <ResponsiveWidth size="md">
       <Disclosure />
     </ResponsiveWidth>
-  </main>
+  </article>
   <HikingGuideSEO guide={Astro.props} />
 </Layout>
