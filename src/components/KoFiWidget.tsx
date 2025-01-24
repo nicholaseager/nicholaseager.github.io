@@ -49,7 +49,7 @@ export const KoFiWidget = () => {
           {isOpen && (
             <iframe
               title="Ko-fi donations"
-              src="https://ko-fi.com/nicholaseager/?hidefeed=true&widget=true&embed=true"
+              src="https://ko-fi.com/nicholaseager/?widget=true&embed=true"
               className="w-full h-full rounded-lg"
               allow="payment"
             />
