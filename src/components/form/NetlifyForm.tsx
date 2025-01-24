@@ -27,7 +27,7 @@ const NetlifyForm: React.FC<NetlifyFormProps> = ({
 
     // Submit to Netlify forms endpoint
     // Note: CORS error is expected but can be ignored as submission still works
-    fetch("https://extraordinary-sherbet-37382c.netlify.app", {
+    fetch("https://nicholaseager.netlify.app", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formObject).toString(),
