@@ -3,6 +3,10 @@ name: Fetch Comments
 on:
   workflow_dispatch: # Allow manual triggering
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   fetch-comments:
     runs-on: ubuntu-latest
