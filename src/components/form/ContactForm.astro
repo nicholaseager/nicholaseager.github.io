@@ -1,9 +1,9 @@
 ---
-import TextInput from "./TextInput.astro";
-import Form from "./Form.astro";
+import TextInput from "./TextInput";
+import Form from "./Form";
 ---
 
-<Form name="contact" submitButtonText="Send Message" size="lg">
+<Form client:visible name="contact" submitButtonText="Send Message" size="lg">
   <TextInput
     label="Email Address *"
     type="email"

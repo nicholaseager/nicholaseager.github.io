@@ -1,10 +1,10 @@
 ---
-import TextInput from "./TextInput.astro";
-import Form from "./Form.astro";
+import TextInput from "./TextInput";
+import Form from "./Form";
 import Text from "../ui/Text";
 ---
 
-<Form name="order" submitButtonText="Send Request" size="sm">
+<Form client:visible name="order" submitButtonText="Send Request" size="sm">
   <Text variant="h6">Request a Print</Text>
   <Text variant="caption"
     >No Commitment 🎉 I'll be in touch shortly after you fill out the form

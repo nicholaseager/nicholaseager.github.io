@@ -3,12 +3,14 @@ import { type ReactNode, type FormEvent } from "react";
 interface NetlifyFormProps {
   name: string;
   children: ReactNode;
+  className?: string;
   onSuccess?: () => void;
 }
 
 const NetlifyForm: React.FC<NetlifyFormProps> = ({
   name,
   children,
+  className,
   onSuccess,
 }: NetlifyFormProps) => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -51,6 +53,7 @@ const NetlifyForm: React.FC<NetlifyFormProps> = ({
   }
   return (
     <form
+      className={className}
       method="POST"
       name={name}
       id={name}

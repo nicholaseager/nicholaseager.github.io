@@ -10,7 +10,9 @@ const SuccessMessage: React.FC<SuccessMessageProps> = ({
   message,
 }) => {
   return (
-    <div className="mb-4 p-4 bg-success-light rounded-md flex items-center space-x-2">
+    <div
+      className={`${className} mb-4 p-4 bg-success-light rounded-md flex items-center space-x-2`}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="flex-shrink-0 h-5 w-5 text-success-content"
