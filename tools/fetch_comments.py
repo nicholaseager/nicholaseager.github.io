@@ -59,6 +59,7 @@ def save_comments(comments):
     os.makedirs(os.path.dirname(COMMENTS_FILE), exist_ok=True)
     with open(COMMENTS_FILE, "w") as f:
         json.dump(comments, f, indent=2, ensure_ascii=False)
+        f.write("\n")
 
 
 def main():
