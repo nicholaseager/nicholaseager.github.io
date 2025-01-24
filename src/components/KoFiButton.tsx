@@ -14,7 +14,7 @@ export const KoFiButton = ({ onClick }: KoFiButtonProps) => {
       <div className="flex flex-row gap-2">
         <img
           className="w-8 object-contain flex-shrink-0 animate-[kofi-shake_2s_ease-in-out_infinite] motion-safe:transition-transform"
-          src="https://storage.ko-fi.com/cdn/cup-border.png"
+          src="/kofi-cup-border.webp"
           alt="Ko-Fi donation"
         />
         Support Me on Ko-Fi
