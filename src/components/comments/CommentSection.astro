@@ -9,7 +9,9 @@ const { pathname } = Astro.url;
 const commentsCollection = await getCollection("comments", ({ data }) => {
   return data.pathname === pathname;
 });
-const comments = commentsCollection.map((c) => c.data);
+const comments = commentsCollection
+  .map((c) => c.data)
+  .sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
 ---
 
 {
